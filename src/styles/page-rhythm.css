@@ -1,0 +1,197 @@
+/* Module spacing is distinct from spacing inside a card or technical paragraph. */
+body.porcelain-site.reference-site {
+  --module-space: 80px;
+  --heading-space: 28px;
+  --reading-space: 56px;
+}
+body.porcelain-site.reference-site #main :is(.home-selected, .review-product-directory) {
+  --module-space: 88px;
+  --heading-space: 36px;
+  --reading-space: 56px;
+}
+
+body.porcelain-site.reference-site #main .home-selected :is(.selected-products, .selected-match, .selected-applications, .selected-production, .selected-resources) {
+  padding-block: var(--module-space);
+}
+body.porcelain-site.reference-site #main .home-selected .selected-inquiry.inquiry-compact {
+  padding-block: 80px;
+}
+body.porcelain-site.reference-site #main .home-selected .selected-intro {
+  margin-bottom: 48px;
+}
+body.porcelain-site.reference-site #main .home-selected .selected-production-heading {
+  display: block;
+  margin-bottom: var(--heading-space);
+}
+body.porcelain-site.reference-site #main .home-selected :is(.selected-application-grid, .selected-resource-layout) {
+  margin-top: var(--heading-space);
+}
+body.porcelain-site.reference-site #main .home-selected .selected-hero-copy h1 {
+  margin-bottom: 36px;
+}
+body.porcelain-site.reference-site #main .home-selected .selected-match-stage {
+  margin-top: 24px;
+}
+
+/* Directory pages and support pages use the same exterior rhythm. */
+body.porcelain-site.reference-site #main .review-resource-library .task-guide-row {
+  grid-template-columns: minmax(0, 1fr);
+  padding-block: 24px;
+}
+body.porcelain-site.reference-site #main .home-selected .selected-resource-list > a {
+  padding-block: 28px;
+}
+body.porcelain-site.reference-site #main .home-selected .selected-resource-list h3 {
+  margin: 0;
+}
+body.porcelain-site.reference-site #main :is(.page-hero, .procurement-hero, .rfq-hero) {
+  padding-block: 52px;
+}
+body.porcelain-site.reference-site #main .review-product-directory .catalog-page-hero {
+  padding-block: 64px;
+}
+body.porcelain-site.reference-site #main :is(.review-resource-page, .review-faq-page, .review-rfq-page, .procurement-page, .reference-utility) :is(.page-hero, .procurement-hero, .rfq-hero),
+body.porcelain-site.reference-site #main .contact-page-heading {
+  padding-block: 52px;
+}
+body.porcelain-site.reference-site #main :is(.section, .procurement-section),
+body.porcelain-site.reference-site #main .procurement-page .procurement-section,
+body.porcelain-site.reference-site #main .review-resource-library .resource-library,
+body.porcelain-site.reference-site #main .review-photo-library .section,
+body.porcelain-site.reference-site #main .review-rfq-page :is(.rfq-message, .rfq-field-notes),
+body.porcelain-site.reference-site #main .review-faq-page > .section,
+body.porcelain-site.reference-site #main .contact-form-section,
+body.porcelain-site.reference-site #main .reference-utility .section {
+  padding-block: var(--module-space);
+}
+body.porcelain-site.reference-site #main :is(.procurement-page .procurement-close.inquiry-compact, .catalog-next-steps.inquiry-compact, .application-directory-next.inquiry-compact) {
+  padding-block: var(--module-space);
+}
+body.porcelain-site.reference-site #main article:is(.pdr-reference, .hvr-reference) :is(.pdr-hero, .hvr-hero) {
+  padding-block: 48px 56px;
+}
+body.porcelain-site.reference-site #main article:is(.pdr-reference, .hvr-reference) :is(.pdr-section, .hvr-section, .pdr-related) {
+  padding-block: var(--module-space);
+}
+body.porcelain-site.reference-site #main article.pdr-reference .pdr-rfq {
+  margin-top: 0;
+  padding-block: var(--reading-space);
+}
+body.porcelain-site.reference-site #main article.pdr-reference .pdr-key-facts {
+  margin-top: var(--heading-space);
+}
+body.porcelain-site.reference-site #main article.pdr-reference :is(.pdr-document-list, .pdr-purchase-list) dd {
+  max-width: 64ch;
+}
+
+/* Major headings open onto the module, without a second summary line. */
+body.porcelain-site.reference-site #main article.pdr-reference :is(.pdr-section, .pdr-related) > h2,
+body.porcelain-site.reference-site #main article.hvr-reference .hvr-section > h2,
+body.porcelain-site.reference-site #main .procurement-page .procurement-section > .container > h2,
+body.porcelain-site.reference-site #main .review-rfq-page :is(.rfq-message, .rfq-field-notes) > .container > h2,
+body.porcelain-site.reference-site #main .review-resource-library :is(.resource-group, .review-supplier-records) > h2,
+body.porcelain-site.reference-site #main .review-faq-list .faq-group > h2 {
+  margin-bottom: var(--heading-space);
+}
+body.porcelain-site.reference-site #main article.pdr-reference :is(.pdr-spec-groups, .pdr-sample-configurations, .pdr-document-list, .pdr-purchase-list, .pdr-applications),
+body.porcelain-site.reference-site #main article.hvr-reference :is(.hvr-circuit-paths, .hvr-check-layout, .hvr-table-wrap) {
+  margin-top: 0;
+}
+body.porcelain-site.reference-site #main .technical-body-copy {
+  margin-block: 24px;
+  max-width: 64ch;
+}
+body.porcelain-site.reference-site #main :is(.procurement-oem-hero, .rfq-hero-copy) h1 + :is(a, .button),
+body.porcelain-site.reference-site #main .contact-quick-links {
+  margin-top: 20px;
+}
+body.porcelain-site.reference-site #main .review-resource-library .resource-group {
+  margin-top: var(--module-space);
+}
+body.porcelain-site.reference-site #main .review-resource-library .resource-group:first-child {
+  margin-top: 0;
+}
+body.porcelain-site.reference-site #main .review-supplier-records {
+  margin-top: var(--module-space);
+  padding-top: var(--reading-space);
+}
+body.porcelain-site.reference-site #main .review-guide-body {
+  padding-block: var(--module-space);
+}
+body.porcelain-site.reference-site #main .review-guide-section {
+  margin-bottom: var(--reading-space);
+}
+body.porcelain-site.reference-site #main .review-guide-article h2 {
+  margin-bottom: 28px;
+}
+body.porcelain-site.reference-site #main .article-overview {
+  margin: 0 0 var(--reading-space);
+}
+body.porcelain-site.reference-site #main :is(.review-guide-inquiry, .review-guide-references, .review-guide-related) {
+  margin-top: var(--reading-space);
+  padding-top: 40px;
+}
+body.porcelain-site.reference-site #main .procurement-page .procurement-process-stage {
+  margin-top: 48px;
+  padding-top: 40px;
+}
+body.porcelain-site.reference-site #main .procurement-page .procurement-privacy-body {
+  padding-block: var(--module-space);
+}
+body.porcelain-site.reference-site #main .procurement-page .procurement-privacy-body section + section {
+  margin-top: 48px;
+  padding-top: 40px;
+}
+body.porcelain-site.reference-site .site-footer,
+body.porcelain-site.reference-site:has(.home-selected) .site-footer {
+  padding-block: 64px 32px;
+}
+body.porcelain-site.reference-site .footer-main {
+  row-gap: 40px;
+}
+
+@media (max-width: 800px) {
+  body.porcelain-site.reference-site {
+    --module-space: 48px;
+    --heading-space: 22px;
+    --reading-space: 32px;
+  }
+  body.porcelain-site.reference-site #main :is(.home-selected, .review-product-directory) {
+    --module-space: 48px;
+    --heading-space: 28px;
+    --reading-space: 40px;
+  }
+  body.porcelain-site.reference-site #main :is(.page-hero, .procurement-hero, .rfq-hero),
+  body.porcelain-site.reference-site #main :is(.review-resource-page, .review-faq-page, .review-rfq-page, .procurement-page, .reference-utility) :is(.page-hero, .procurement-hero, .rfq-hero),
+  body.porcelain-site.reference-site #main .contact-page-heading {
+    padding-block: 36px;
+  }
+  body.porcelain-site.reference-site #main .review-product-directory .catalog-page-hero {
+    padding-block: 40px;
+  }
+  body.porcelain-site.reference-site #main article:is(.pdr-reference, .hvr-reference) :is(.pdr-hero, .hvr-hero) {
+    padding-block: 36px 42px;
+    row-gap: 30px;
+  }
+  body.porcelain-site.reference-site #main .home-selected .selected-inquiry.inquiry-compact {
+    padding-block: 56px;
+  }
+  body.porcelain-site.reference-site #main .home-selected .selected-intro {
+    margin-bottom: 32px;
+  }
+  body.porcelain-site.reference-site #main .home-selected :is(.selected-product-grid, .selected-application-grid) {
+    row-gap: 36px;
+  }
+  body.porcelain-site.reference-site #main .procurement-page .procurement-process-stage {
+    margin-top: 36px;
+    padding-top: 32px;
+  }
+  body.porcelain-site.reference-site #main :is(.review-guide-inquiry, .review-guide-references, .review-guide-related) {
+    padding-top: 32px;
+  }
+  body.porcelain-site.reference-site .site-footer,
+  body.porcelain-site.reference-site:has(.home-selected) .site-footer {
+    padding-block: 48px 28px;
+  }
+  body.porcelain-site.reference-site .footer-main { row-gap: 32px; }
+}

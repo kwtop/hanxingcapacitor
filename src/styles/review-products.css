@@ -1,0 +1,203 @@
+/* Confirmed content/layout review: product and application modules only. */
+.porcelain-site #main .review-product-directory .catalog-heading { align-items:flex-start; }
+.porcelain-site #main .review-product-directory .catalog-heading .lead { margin:18px 0 0; font-size:18px; }
+.porcelain-site #main .catalog-photo-link { display:inline-flex; flex-direction:column; gap:4px; align-items:flex-start; min-height:44px; padding:8px 0; color:var(--accent); text-decoration:underline; text-underline-offset:4px; font-size:16px; }
+.porcelain-site #main .catalog-photo-link span { color:var(--muted); font-size:14px; text-decoration:none; }
+.porcelain-site #main .review-product-directory .catalog-section { padding-top:16px; }
+.porcelain-site #main .review-product-directory .series-catalog { grid-template-columns:repeat(4,minmax(0,1fr)); gap:28px; }
+.porcelain-site #main .review-product-directory .series-catalog .sample-catalog-image { aspect-ratio:4/3; }
+.porcelain-site #main .review-product-directory .series-catalog .sample-catalog-image > img[src],
+.porcelain-site #main .review-product-directory .series-catalog .sample-catalog-image:hover > img[src] { width:100%; height:100%; object-fit:contain; object-position:center; transform:none; }
+.porcelain-site #main .review-product-directory .series-catalog .card-body { padding-top:18px; }
+.porcelain-site #main .review-product-directory .series-catalog .catalog-duty { margin:0 0 8px; color:var(--accent); font-size:14px; }
+.porcelain-site #main .review-product-directory .series-catalog h2 { margin-bottom:12px; font-size:30px; }
+.porcelain-site #main .review-product-directory .series-catalog .catalog-purpose { margin-bottom:14px; }
+.porcelain-site #main .review-product-directory .catalog-ratings { width:100%; margin:0 0 20px; }
+.porcelain-site #main .review-product-directory .catalog-ratings > div { display:block; padding:10px 0; border-top:1px solid var(--line); }
+.porcelain-site #main .review-product-directory .catalog-ratings dt { margin-bottom:3px; color:var(--muted); font-size:14px; }
+.porcelain-site #main .review-product-directory .catalog-ratings dd { margin:0; font-size:16px; line-height:1.55; }
+.porcelain-site #main .catalog-ratings dd span { display:block; }
+.porcelain-site #main .review-product-directory .compare-table { min-width:900px; }
+.porcelain-site #main .review-product-directory .compare-table :is(th,td) { font-size:16px; white-space:normal; }
+.porcelain-site #main .review-product-directory .compare-table th:first-child { min-width:155px; }
+.porcelain-site #main .review-product-directory .compare-scroll-hint { display:none; }
+.porcelain-site #main .catalog-next-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:48px; }
+.porcelain-site #main .catalog-next-grid > div { border-top:1px solid var(--line); padding-top:24px; }
+.porcelain-site #main .catalog-next-grid h2 { font-size:30px; }
+.porcelain-site #main .catalog-next-grid .catalog-photo-link { display:flex; margin-top:12px; }
+
+.porcelain-site #main article.pdr-reference .pdr-hero { grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); }
+.porcelain-site #main article.pdr-reference .pdr-key-facts { grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
+.porcelain-site #main article.pdr-reference .pdr-key-facts dt { font-size:14px; margin:0 0 6px; }
+.porcelain-site #main article.pdr-reference .pdr-key-facts dd { font-size:24px; line-height:1.35; white-space:normal; margin:0; }
+.porcelain-site #main article.pdr-reference .pdr-key-facts small { display:block; font-size:14px; line-height:1.5; margin-top:6px; color:var(--muted); }
+.porcelain-site #main article.pdr-reference .pdr-hero-scope a { color:var(--accent); text-decoration:underline; text-underline-offset:3px; }
+.porcelain-site #main article.pdr-reference .pdr-main-photo { aspect-ratio:4/3; max-height:540px; }
+.porcelain-site #main article.pdr-reference :is(.pdr-main-photo,.pdr-detail-photo,.pdr-thumbnails button,.pdr-photo-grid button) img { object-fit:contain; object-position:center; transform:none; }
+.porcelain-site #main article.pdr-reference .pdr-section-nav { flex-wrap:wrap; gap:0 30px; }
+.porcelain-site #main article.pdr-reference .pdr-section-nav a { font-size:16px; min-height:50px; }
+.porcelain-site #main article.pdr-reference :is(.pdr-section,.pdr-rfq,.pdr-data-table th[id]) { scroll-margin-top:110px; }
+.porcelain-site #main article.pdr-reference .pdr-spec-groups { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:32px; margin-top:28px; }
+.porcelain-site #main article.pdr-reference .pdr-specifications { grid-template-columns:1fr; margin-top:14px; }
+.porcelain-site #main article.pdr-reference .pdr-specifications > div { grid-template-columns:34% 66%; border-right:0; border-bottom:1px solid var(--line); }
+.porcelain-site #main article.pdr-reference .pdr-specifications > div:last-child { border-bottom:0; }
+.porcelain-site #main article.pdr-reference .pdr-specifications :is(dt,dd) { font-size:16px; line-height:1.6; padding:14px; overflow-wrap:anywhere; }
+.porcelain-site #main .pdr-variant-specifications { margin-top:28px; }
+.porcelain-site #main .pdr-table-wrap { overflow-x:auto; margin-top:16px; border:1px solid var(--line); }
+.porcelain-site #main .pdr-data-table { border-collapse:collapse; width:100%; min-width:650px; font-size:16px; line-height:1.55; }
+.porcelain-site #main .pdr-data-table :is(th,td) { text-align:left; padding:14px 18px; vertical-align:top; border-bottom:1px solid var(--line); border-right:1px solid var(--line); }
+.porcelain-site #main .pdr-data-table th { background:var(--cream); font-weight:500; }
+.porcelain-site #main .pdr-data-table tr:last-child :is(th,td) { border-bottom:0; }
+.porcelain-site #main .pdr-data-table :is(th,td):last-child { border-right:0; }
+.porcelain-site #main .pdr-table-hint { display:none; }
+.porcelain-site #main .pdr-model-confirmation { margin-top:28px; }
+.porcelain-site #main .pdr-model-confirmation > p { margin-top:10px; }
+.porcelain-site #main .pdr-sample-configurations { margin-top:28px; }
+.porcelain-site #main .pdr-sample-configuration { display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr); align-items:start; gap:32px; }
+.porcelain-site #main .pdr-sample-pair { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:36px; }
+.porcelain-site #main .pdr-sample-pair .pdr-sample-configuration { grid-template-columns:1fr; gap:20px; }
+.porcelain-site #main article.pdr-reference .pdr-detail-photo { aspect-ratio:4/3; max-height:350px; }
+.porcelain-site #main article.pdr-reference .pdr-detail-photo img { height:100%; object-fit:contain; transform:none; object-position:center; }
+.porcelain-site #main .pdr-original-link { display:inline-flex; align-items:center; min-height:44px; color:var(--accent); text-decoration:underline; text-underline-offset:4px; font-size:14px; }
+.porcelain-site #main .pdr-sample-copy dl { margin:16px 0; }
+.porcelain-site #main .pdr-sample-copy dl > div { padding:10px 0; border-top:1px solid var(--line); }
+.porcelain-site #main .pdr-sample-copy dt { font-size:14px; color:var(--muted); }
+.porcelain-site #main .pdr-sample-copy dd { margin-top:4px; font-size:16px; }
+.porcelain-site #main .pdr-sample-copy ul { padding-left:20px; }
+.porcelain-site #main .pdr-sample-copy li + li { margin-top:8px; }
+.porcelain-site #main .pdr-sample-copy .pdr-secondary { margin-top:18px; }
+.porcelain-site #main .pdr-fit-record { margin-top:36px; padding-top:28px; border-top:1px solid var(--line); }
+.porcelain-site #main .pdr-fit-record .pdr-fit-list { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:28px; margin-top:20px; padding:0; list-style:none; }
+.porcelain-site #main .pdr-fit-record .pdr-fit-list li { padding:0; }
+.porcelain-site #main .pdr-fit-record .pdr-fit-list li::before { content:none; }
+.porcelain-site #main .pdr-fit-record h4 { margin:0 0 8px; font-size:16px; font-weight:500; }
+.porcelain-site #main article.pdr-reference .pdr-applications { grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px 32px; }
+.porcelain-site #main article.pdr-reference .pdr-applications li { border:0; border-top:1px solid var(--line); padding:18px 0 0; font-weight:400; }
+.porcelain-site #main article.pdr-reference .pdr-applications h3 { font-size:22px; }
+.porcelain-site #main article.pdr-reference .pdr-applications p { margin-top:8px; font-size:16px; }
+.porcelain-site #main :is(.pdr-document-list,.pdr-purchase-list) { margin-top:24px; border-top:1px solid var(--line); }
+.porcelain-site #main :is(.pdr-document-list,.pdr-purchase-list) > div { display:grid; grid-template-columns:30% minmax(0,1fr); gap:24px; padding:18px 0; border-bottom:1px solid var(--line); }
+.porcelain-site #main :is(.pdr-document-list,.pdr-purchase-list) dt { font-weight:500; }
+.porcelain-site #main :is(.pdr-document-list,.pdr-purchase-list) dd { color:var(--muted); font-size:16px; }
+.porcelain-site #main .pdr-rfq-row { align-items:flex-start; }
+.porcelain-site #main .pdr-rfq-checks { flex:1; padding-left:20px; }
+.porcelain-site #main .pdr-rfq-checks li + li { margin-top:8px; }
+.porcelain-site #main .pdr-related-grid img { height:100px; }
+.porcelain-site #main .pdr-related-grid > a { align-items:center; }
+.porcelain-site #main .pdr-viewer-inquiry { display:flex; justify-content:center; padding-top:12px; flex:none; }
+
+.porcelain-site #main .review-photo-library .section { padding-top:12px; }
+.porcelain-site #main .sample-library-reference-note { max-width:90ch; margin:0 0 24px; color:var(--muted); font-size:16px; }
+.porcelain-site #main .sample-library-grid img { object-fit:contain; transform:none; }
+.porcelain-site #main .sample-library-grid figcaption strong { display:block; margin-bottom:3px; font-size:16px; font-weight:500; }
+.porcelain-site #main .sample-library-grid figcaption span { margin-bottom:3px; font-size:14px; }
+.porcelain-site #main .sample-lightbox { width:min(1100px,calc(100vw - 24px)); height:min(950px,calc(100dvh - 24px)); max-height:calc(100dvh - 24px); box-sizing:border-box; overflow-y:auto; }
+.porcelain-site #main .sample-lightbox[open] { display:flex; flex-direction:column; }
+.porcelain-site #main .sample-lightbox-toolbar { position:sticky; top:0; background:var(--paper); z-index:1; flex:none; align-items:flex-start; padding-bottom:8px; border-bottom:1px solid var(--line); }
+.porcelain-site #main .sample-lightbox-toolbar > div { min-width:0; }
+.porcelain-site #main .sample-lightbox-toolbar strong { display:block; font-size:16px; line-height:1.5; font-weight:500; }
+.porcelain-site #main .sample-lightbox-toolbar span { display:block; margin-top:4px; color:var(--muted); font-size:14px; }
+.porcelain-site #main .sample-lightbox-toolbar button { flex:none; white-space:nowrap; }
+.porcelain-site #main .sample-lightbox > img { flex:1; min-height:100px; height:auto; max-height:calc(100dvh - 245px); width:100%; object-fit:contain; }
+.porcelain-site #main .sample-lightbox-controls { flex:none; flex-wrap:wrap; }
+.porcelain-site #main .sample-original-link { display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:8px 12px; border:1px solid var(--line); color:var(--accent); text-decoration:none; font-size:14px; }
+.porcelain-site #main .sample-lightbox-inquiry { display:flex; justify-content:center; margin-top:14px; padding-bottom:4px; flex:none; }
+
+.porcelain-site #main .review-application-directory .application-directory { padding-top:16px; }
+.porcelain-site #main .review-application-directory .application-directory .grid.two { grid-template-columns:repeat(2,minmax(0,1fr)); gap:44px 36px; }
+.porcelain-site #main .review-application-directory .application-card-image img { display:block; width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; }
+.porcelain-site #main .review-application-directory .app-card .card-body { display:block; padding-top:20px; }
+.porcelain-site #main .review-application-directory .app-card .application-series { margin:0 0 10px; font-size:16px; }
+.porcelain-site #main .review-application-directory .app-card .card-link { margin-top:12px; }
+.porcelain-site #main .application-directory-note { margin-top:28px; color:var(--muted); }
+.porcelain-site #main .application-next-links { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:32px; }
+.porcelain-site #main .application-next-links > div { padding-top:24px; border-top:1px solid var(--line); }
+.porcelain-site #main .application-next-links h2 { font-size:28px; }
+.porcelain-site #main .application-next-links p { font-size:14px; margin-top:12px; }
+.porcelain-site #main .review-application-reference .hvr-hero { grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr); align-items:start; }
+.porcelain-site #main .review-application-reference .hvr-hero-photo { padding-top:28px; }
+.porcelain-site #main .review-application-reference .hvr-hero-photo img { aspect-ratio:16/9; object-fit:contain; object-position:center; background:var(--cream); }
+.porcelain-site #main .review-application-reference .hvr-question { margin:0 0 14px; font-size:18px; line-height:1.6; }
+.porcelain-site #main .review-application-reference .hvr-actions { margin-top:24px; gap:12px; }
+.porcelain-site #main .hvr-circuit-paths { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:28px; margin-top:24px; }
+.porcelain-site #main .hvr-reference[data-application="pumps-and-water-systems"] .hvr-circuit-paths { grid-template-columns:repeat(4,minmax(0,1fr)); }
+.porcelain-site #main .hvr-circuit-paths > div { border-top:1px solid var(--line); padding-top:20px; }
+.porcelain-site #main .hvr-circuit-paths p { margin-top:12px; }
+.porcelain-site #main .hvr-path-link { display:inline-flex; align-items:center; min-height:44px; margin-top:12px; color:var(--accent); text-decoration:underline; text-underline-offset:4px; }
+.porcelain-site #main .review-application-reference .hvr-sample-photo { display:block; height:150px; max-height:150px; overflow:hidden; background:var(--cream); }
+.porcelain-site #main .review-application-reference .hvr-sample-photo img,
+.porcelain-site #main .review-application-reference .hvr-sample-photo[data-series] img { display:block; width:100%; height:100%; object-fit:contain; object-position:center; transform:none; }
+.porcelain-site #main .review-application-reference .hvr-sample-pair { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+.porcelain-site #main .review-application-reference .hvr-sample-pair:has(>figure:only-child) { grid-template-columns:1fr; }
+.porcelain-site #main .review-application-reference .hvr-sample-row td { padding:14px; }
+.porcelain-site #main .hvr-mobile-comparison { display:none; }
+.porcelain-site #main .hvr-series-summary { padding-top:24px; border-top:1px solid var(--line); }
+.porcelain-site #main .hvr-series-summary dl { margin:16px 0; }
+.porcelain-site #main .hvr-series-summary dl > div { padding:12px 0; border-top:1px solid var(--line); }
+.porcelain-site #main .hvr-series-summary dt { font-size:14px; color:var(--muted); margin-bottom:6px; }
+.porcelain-site #main .hvr-series-summary dd { margin:0; font-size:16px; }
+.porcelain-site #main .hvr-series-summary .hvr-series-link { margin-top:16px; }
+.porcelain-site #main .hvr-other-formats { margin-top:28px; padding-top:24px; border-top:1px solid var(--line); scroll-margin-top:110px; }
+.porcelain-site #main .hvr-other-formats p { margin:12px 0 18px; max-width:90ch; }
+.porcelain-site #main .review-application-reference .hvr-check-layout { grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr); }
+.porcelain-site #main .review-application-reference .hvr-fit-photo > a { aspect-ratio:4/3; }
+.porcelain-site #main .review-application-reference .hvr-fit-photo img { width:100%; height:100%; object-fit:contain; object-position:center; transform:none; }
+.porcelain-site #main .hvr-fit-guides { display:flex; flex-wrap:wrap; gap:12px; }
+.porcelain-site #main .hvr-fit-guides .hvr-guide { margin-top:0; }
+.porcelain-site #main .hvr-rfq-fields { margin:24px 0 0; padding-left:20px; max-width:85ch; }
+.porcelain-site #main .hvr-rfq-fields li + li { margin-top:10px; }
+
+@media(max-width:1100px) {
+  .porcelain-site #main .review-product-directory .series-catalog { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .porcelain-site #main .hvr-reference[data-application="pumps-and-water-systems"] .hvr-circuit-paths { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .porcelain-site #main article.pdr-reference .pdr-key-facts { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .porcelain-site #main article.pdr-reference .pdr-duty-fact { grid-column:1/-1; }
+}
+@media(max-width:760px) {
+  .porcelain-site #main .review-product-directory .catalog-heading { flex-direction:column; gap:12px; }
+  .porcelain-site #main .review-product-directory .compare-scroll-hint,
+  .porcelain-site #main .pdr-table-hint { display:block; font-size:14px; margin:12px 0 0; }
+  .porcelain-site #main article.pdr-reference .pdr-hero { grid-template-columns:1fr; }
+  .porcelain-site #main article.pdr-reference .pdr-key-facts { grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+  .porcelain-site #main article.pdr-reference .pdr-key-facts dd { font-size:23px; }
+  .porcelain-site #main article.pdr-reference .pdr-main-photo { max-height:420px; }
+  .porcelain-site #main article.pdr-reference .pdr-section-nav { flex-wrap:nowrap; gap:24px; overflow-x:auto; padding:0; }
+  .porcelain-site #main article.pdr-reference .pdr-section-nav a { flex:none; font-size:14px; }
+  .porcelain-site #main article.pdr-reference .pdr-spec-groups,
+  .porcelain-site #main .pdr-sample-configuration,
+  .porcelain-site #main .pdr-sample-pair { grid-template-columns:1fr; }
+  .porcelain-site #main article.pdr-reference .pdr-specifications > div { grid-template-columns:1fr; }
+  .porcelain-site #main article.pdr-reference .pdr-specifications dt { padding:12px 14px 6px; }
+  .porcelain-site #main article.pdr-reference .pdr-specifications dd { padding:6px 14px 14px; }
+  .porcelain-site #main .pdr-fit-record .pdr-fit-list { grid-template-columns:1fr; gap:20px; }
+  .porcelain-site #main article.pdr-reference .pdr-applications,
+  .porcelain-site #main .catalog-next-grid,
+  .porcelain-site #main .application-next-links { grid-template-columns:1fr; }
+  .porcelain-site #main :is(.pdr-document-list,.pdr-purchase-list) > div { grid-template-columns:1fr; gap:8px; }
+  .porcelain-site #main .pdr-rfq-row { flex-direction:column; }
+  .porcelain-site #main .pdr-table-wrap .pdr-data-table th:first-child { position:sticky; left:0; z-index:1; }
+  .porcelain-site #main .review-application-reference .hvr-hero { grid-template-columns:1fr; }
+  .porcelain-site #main .review-application-reference .hvr-hero-photo { padding-top:0; }
+  .porcelain-site #main .review-application-reference .hvr-hero-photo img { max-height:220px; }
+  .porcelain-site #main .hvr-circuit-paths,
+  .porcelain-site #main .hvr-reference[data-application="pumps-and-water-systems"] .hvr-circuit-paths { grid-template-columns:1fr; gap:24px; }
+  .porcelain-site #main .review-application-reference .hvr-check-layout { grid-template-columns:1fr; }
+}
+@media(max-width:650px) {
+  .porcelain-site #main .review-application-directory .application-directory .grid.two { grid-template-columns:1fr; gap:36px; }
+  .porcelain-site #main .review-application-reference .hvr-desktop-comparison { display:none; }
+  .porcelain-site #main .hvr-mobile-comparison { display:grid; grid-template-columns:1fr; gap:28px; margin-top:24px; }
+  .porcelain-site #main .sample-lightbox-controls { gap:8px; }
+  .porcelain-site #main .sample-original-link { order:3; width:100%; }
+  .porcelain-site #main .sample-lightbox > img { max-height:calc(100dvh - 315px); }
+}
+@media(max-width:480px) {
+  .porcelain-site #main .review-product-directory .series-catalog { grid-template-columns:1fr; gap:32px; }
+  .porcelain-site #main .review-product-directory .series-catalog .sample-catalog-image { aspect-ratio:4/3; }
+  .porcelain-site #main article.pdr-reference .pdr-key-facts dd { font-size:21px; }
+  .porcelain-site #main .sample-library-filters button { padding:8px 10px; }
+  .porcelain-site #main .sample-library-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .porcelain-site #main .sample-lightbox-toolbar strong { font-size:14px; }
+  .porcelain-site #main .sample-lightbox-toolbar button { padding-inline:10px; }
+  .porcelain-site #main .sample-lightbox-inquiry .button { width:100%; }
+}

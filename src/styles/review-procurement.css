@@ -1,0 +1,176 @@
+/* Procurement and company pages: task order, readable records and original media. */
+.porcelain-site #main .procurement-page { color:var(--ink); background:var(--paper); }
+.porcelain-site #main .procurement-page .procurement-hero { padding:36px 0 32px; border-bottom:1px solid var(--line); }
+.porcelain-site #main .procurement-page .procurement-hero h1 { font-size:clamp(42px,3.8vw,56px); line-height:1.12; margin:0; max-width:25ch; }
+.porcelain-site #main .procurement-page .procurement-lead { font-size:18px; line-height:1.65; max-width:65ch; margin:18px 0 0; }
+.porcelain-site #main .procurement-page .procurement-section { padding:48px 0; border-bottom:1px solid var(--line); }
+.porcelain-site #main .procurement-page .procurement-section h2 { font-size:clamp(32px,2.7vw,40px); line-height:1.2; margin:0 0 22px; }
+.porcelain-site #main .procurement-page p { font-size:16px; line-height:1.7; }
+.porcelain-site #main .procurement-page .procurement-section-intro { max-width:64ch; margin:0 0 24px; }
+.porcelain-site #main .procurement-page .procurement-section-intro:last-child { margin-bottom:0; }
+.porcelain-site #main .procurement-page .procurement-readable { max-width:760px; }
+.porcelain-site #main .procurement-page .procurement-actions { display:flex; flex-wrap:wrap; align-items:center; gap:12px 20px; margin-top:24px; }
+.porcelain-site #main .procurement-page .procurement-hero > .container > .procurement-caption { max-width:64ch; margin-top:20px; }
+.porcelain-site #main .procurement-page :is(.procurement-caption,figcaption) { font:400 14px/1.6 var(--font-body); color:var(--muted); margin:10px 0 0; }
+.porcelain-site #main .procurement-page figure { margin:0; }
+.porcelain-site #main .procurement-page img { display:block; width:100%; height:auto; }
+.porcelain-site #main .procurement-page .procurement-file-link { display:block; width:fit-content; color:var(--accent); font-size:14px; line-height:1.6; text-decoration:underline; text-underline-offset:4px; padding:8px 0; }
+.porcelain-site #main .procurement-page .procurement-file-link:hover { color:var(--accent-hover); }
+.porcelain-site #main .procurement-page :is(.procurement-section,.procurement-process-stage) { scroll-margin-top:100px; }
+
+/* Three distinct routes, without a shared decorative image slot. */
+.porcelain-site #main .procurement-page .procurement-routes { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:36px; }
+.porcelain-site #main .procurement-page .procurement-routes > article { min-width:0; }
+.porcelain-site #main .procurement-page .procurement-routes h2 { font-size:30px; margin-bottom:16px; }
+.porcelain-site #main .procurement-page .procurement-routes p { margin:0 0 18px; }
+.porcelain-site #main .procurement-page .procurement-routes .procurement-route-photo { margin-top:24px; }
+.porcelain-site #main .procurement-page .procurement-route-photo img { aspect-ratio:16/9; object-fit:cover; }
+.porcelain-site #main .procurement-page .procurement-route-photo--sample { max-width:260px; }
+.porcelain-site #main .procurement-page .procurement-route-photo--sample img { aspect-ratio:4/3; object-fit:contain; background:var(--cream); }
+.porcelain-site #main .procurement-page .procurement-record-links { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:32px; }
+.porcelain-site #main .procurement-page .procurement-record-links a { display:block; padding:20px 24px 20px 0; border-top:1px solid var(--line); color:var(--ink); text-decoration:none; }
+.porcelain-site #main .procurement-page .procurement-record-links strong { display:flex; justify-content:space-between; gap:12px; font:500 18px/1.5 var(--font-body); }
+.porcelain-site #main .procurement-page .procurement-record-links strong::after { content:'→'; color:var(--accent); }
+.porcelain-site #main .procurement-page .procurement-record-links span { display:block; font-size:16px; line-height:1.65; color:var(--muted); margin-top:10px; }
+.porcelain-site #main .procurement-page .procurement-record-links a:hover strong { color:var(--accent); }
+.porcelain-site #main .procurement-page .procurement-related { border-bottom:0; }
+
+/* Original sample, configuration requirements and the four approval steps. */
+.porcelain-site #main .procurement-page .procurement-oem-hero { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr); gap:48px; align-items:center; }
+.porcelain-site #main .procurement-page .procurement-oem-photo { max-width:480px; justify-self:end; }
+.porcelain-site #main .procurement-page .procurement-oem-photo img { aspect-ratio:4/3; object-fit:contain; max-height:340px; background:var(--cream); }
+.porcelain-site #main .procurement-page .procurement-table { width:100%; table-layout:fixed; border-collapse:collapse; margin:24px 0; font:400 16px/1.65 var(--font-body); }
+.porcelain-site #main .procurement-page .procurement-table :is(th,td) { padding:18px 20px; text-align:left; vertical-align:top; border:0; border-bottom:1px solid var(--line); overflow-wrap:anywhere; background:transparent; color:var(--ink); }
+.porcelain-site #main .procurement-page .procurement-table thead th { background:var(--cream); font-weight:500; }
+.porcelain-site #main .procurement-page .procurement-table tbody th { font-weight:500; }
+.porcelain-site #main .procurement-page .procurement-table tbody th > strong { font-weight:500; }
+.porcelain-site #main .procurement-page .procurement-table tbody th > span { display:block; margin-top:8px; font-weight:400; color:var(--muted); }
+.porcelain-site #main .procurement-page .procurement-mobile-label { display:none; }
+.porcelain-site #main .procurement-page .procurement-configuration-table th:first-child { width:52%; }
+.porcelain-site #main .procurement-page .procurement-approval-steps { list-style:none; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:28px; margin:24px 0 0; padding:0; }
+.porcelain-site #main .procurement-page .procurement-approval-steps li { min-width:0; border-top:1px solid var(--line); padding:18px 0 0; }
+.porcelain-site #main .procurement-page .procurement-step-number { display:block; font-size:14px; color:var(--muted); font-variant-numeric:tabular-nums; }
+.porcelain-site #main .procurement-page .procurement-approval-steps h3 { font-size:26px; margin:10px 0 14px; }
+.porcelain-site #main .procurement-page .procurement-approval-steps p { margin:0 0 20px; }
+.porcelain-site #main .procurement-page .procurement-approval-steps .card-link { font-size:14px; }
+.porcelain-site #main .procurement-page .procurement-terms { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 40px; margin:0 0 24px; }
+.porcelain-site #main .procurement-page .procurement-terms > div { display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr); gap:20px; padding:16px 0; border-top:1px solid var(--line); }
+.porcelain-site #main .procurement-page :is(.procurement-terms,.procurement-company-records,.procurement-handover-records) dt { font-weight:500; color:var(--ink); font-size:16px; }
+.porcelain-site #main .procurement-page :is(.procurement-terms,.procurement-company-records,.procurement-handover-records) dd { margin:0; color:var(--muted); font-size:16px; line-height:1.65; }
+.porcelain-site #main .procurement-page .procurement-close { background:var(--cream); border-bottom:0; }
+.porcelain-site #main .procurement-page .procurement-close > .container { display:flex; justify-content:space-between; align-items:center; gap:40px; }
+.porcelain-site #main .procurement-page .procurement-close > .container > div { max-width:760px; }
+.porcelain-site #main .procurement-page .procurement-close h2 { margin-bottom:16px; }
+.porcelain-site #main .procurement-page .procurement-close p { margin:0 0 16px; }
+.porcelain-site #main .procurement-page .procurement-close .button { flex-shrink:0; }
+
+/* Published stages and their corresponding footage share one reading sequence. */
+.porcelain-site #main .procurement-page .procurement-process-index { display:flex; flex-wrap:wrap; gap:12px 24px; border-block:1px solid var(--line); padding:12px 0; margin:24px 0 16px; }
+.porcelain-site #main .procurement-page .procurement-process-index a { font-size:15px; line-height:1.6; color:var(--accent); padding:8px 0; text-decoration:underline; text-underline-offset:4px; }
+.porcelain-site #main .procurement-page .procurement-process-stage { display:grid; grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr); gap:48px; margin-top:32px; padding-top:32px; border-top:1px solid var(--line); align-items:start; }
+.porcelain-site #main .procurement-page .procurement-process-stage h3 { font-size:28px; margin:0 0 18px; }
+.porcelain-site #main .procurement-page .procurement-process-stage p { margin:0 0 16px; }
+.porcelain-site #main .procurement-page .procurement-video-pair { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+.porcelain-site #main .procurement-page .procurement-video { min-width:0; }
+.porcelain-site #main .procurement-page .procurement-video .video-frame { width:100%; background:var(--cream); }
+.porcelain-site #main .procurement-page .procurement-video .video-frame video { object-fit:contain; }
+.porcelain-site #main .procurement-page .procurement-video .procurement-caption { margin:10px 0 0; }
+.porcelain-site #main .procurement-page .procurement-video--single { max-width:520px; }
+.porcelain-site #main .procurement-page .procurement-process-stage--text { align-items:center; }
+.porcelain-site #main .procurement-page .procurement-model-records th:first-child { width:20%; }
+.porcelain-site #main .procurement-page .procurement-model-records th:nth-child(2) { width:35%; }
+
+/* Packing fields precede footage; packout and handover remain separate records. */
+.porcelain-site #main .procurement-page .procurement-packing-requirements th:first-child { width:50%; }
+.porcelain-site #main .procurement-page .procurement-packing-footage { display:grid; grid-template-columns:minmax(0,.65fr) minmax(0,1.35fr); gap:48px; align-items:center; }
+.porcelain-site #main .procurement-page .procurement-video--portrait { max-width:280px; width:100%; justify-self:center; grid-column:1; grid-row:1; }
+.porcelain-site #main .procurement-page .procurement-video--portrait .video-frame { max-width:270px; margin-inline:auto; }
+.porcelain-site #main .procurement-page .procurement-video--portrait .procurement-file-link { margin-inline:auto; }
+.porcelain-site #main .procurement-page .procurement-packing-footage-copy { grid-column:2; grid-row:1; }
+.porcelain-site #main .procurement-page .procurement-packing-footage-copy > p { max-width:62ch; }
+.porcelain-site #main .procurement-page .procurement-packing-footage-copy ul { padding-left:20px; font-size:16px; line-height:1.7; margin:20px 0; }
+.porcelain-site #main .procurement-page .procurement-packing-footage-copy li + li { margin-top:8px; }
+.porcelain-site #main .procurement-page .procurement-handover-layout { display:grid; grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr); gap:48px; align-items:start; }
+.porcelain-site #main .procurement-page .procurement-handover-records { margin:0 0 20px; }
+.porcelain-site #main .procurement-page .procurement-handover-records > div { display:grid; grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr); gap:24px; padding:18px 0; border-top:1px solid var(--line); }
+.porcelain-site #main .procurement-page .procurement-dispatch-photo img { aspect-ratio:4/3; max-height:320px; object-fit:contain; background:var(--cream); }
+.porcelain-site #main .procurement-page .procurement-shipping-records th:first-child { width:27%; }
+.porcelain-site #main .procurement-page .procurement-references { padding-block:32px 48px; }
+.porcelain-site #main .procurement-page .procurement-references h2 { font:500 18px/1.5 var(--font-body); letter-spacing:0; margin:0 0 14px; }
+.porcelain-site #main .procurement-page .procurement-references p { font-size:14px; margin:8px 0; }
+.porcelain-site #main .procurement-page .procurement-references a { text-decoration:underline; text-underline-offset:4px; }
+
+/* Business information is the first substantive content on About. */
+.porcelain-site #main .procurement-page .procurement-company-information { padding-top:32px; }
+.porcelain-site #main .procurement-page .procurement-company-records { max-width:1100px; margin:0; }
+.porcelain-site #main .procurement-page .procurement-company-records > div { display:grid; grid-template-columns:minmax(0,.3fr) minmax(0,.7fr); gap:28px; padding:16px 20px; border-bottom:1px solid var(--line); }
+.porcelain-site #main .procurement-page .procurement-company-records > div:first-child { border-top:1px solid var(--line); }
+.porcelain-site #main .procurement-page .procurement-company-records dd { color:var(--ink); overflow-wrap:anywhere; }
+.porcelain-site #main .procurement-page .procurement-company-story { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr); gap:48px; align-items:center; }
+.porcelain-site #main .procurement-page .procurement-company-story p { max-width:64ch; margin:0 0 20px; }
+.porcelain-site #main .procurement-page .procurement-company-photo img { aspect-ratio:16/9; object-fit:contain; }
+
+/* Privacy follows the actual browser draft mechanism. */
+.porcelain-site #main .procurement-page .procurement-privacy-wrap { max-width:760px; }
+.porcelain-site #main .procurement-page .procurement-privacy-body { padding-block:40px 48px; }
+.porcelain-site #main .procurement-page .procurement-privacy-body section + section { margin-top:36px; padding-top:32px; border-top:1px solid var(--line); }
+.porcelain-site #main .procurement-page .procurement-privacy-body h2 { font-size:30px; line-height:1.25; margin:0 0 18px; }
+.porcelain-site #main .procurement-page .procurement-privacy-body p { margin:0 0 16px; }
+
+@media(max-width:1100px) {
+ .porcelain-site #main .procurement-page .procurement-routes { gap:24px; }
+ .porcelain-site #main .procurement-page .procurement-routes h2 { font-size:27px; }
+ .porcelain-site #main .procurement-page .procurement-approval-steps { grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px 32px; }
+ .porcelain-site #main .procurement-page .procurement-terms { grid-template-columns:1fr; }
+ .porcelain-site #main .procurement-page .procurement-video-pair { grid-template-columns:1fr; }
+ .porcelain-site #main .procurement-page .procurement-process-stage { gap:32px; }
+ .porcelain-site #main .procurement-page .procurement-close > .container { align-items:flex-start; }
+}
+@media(max-width:800px) {
+ .porcelain-site #main .procurement-page .procurement-hero { padding:28px 0; }
+ .porcelain-site #main .procurement-page .procurement-hero h1 { font-size:clamp(32px,7.5vw,36px); line-height:1.16; }
+ .porcelain-site #main .procurement-page .procurement-lead { font-size:16px; margin-top:16px; }
+ .porcelain-site #main .procurement-page .procurement-section { padding-block:36px; }
+ .porcelain-site #main .procurement-page .procurement-section h2 { font-size:30px; margin-bottom:20px; }
+ .porcelain-site #main .procurement-page .procurement-actions { gap:12px; }
+ .porcelain-site #main .procurement-page :is(.procurement-routes,.procurement-record-links,.procurement-oem-hero,.procurement-process-stage,.procurement-packing-footage,.procurement-handover-layout,.procurement-company-story) { grid-template-columns:1fr; gap:28px; }
+ .porcelain-site #main .procurement-page .procurement-routes > article + article { border-top:1px solid var(--line); padding-top:28px; }
+ .porcelain-site #main .procurement-page .procurement-routes h2 { font-size:28px; }
+ .porcelain-site #main .procurement-page .procurement-route-photo { max-width:480px; }
+ .porcelain-site #main .procurement-page .procurement-route-photo--sample { max-width:260px; }
+ .porcelain-site #main .procurement-page .procurement-record-links { gap:0; }
+ .porcelain-site #main .procurement-page .procurement-record-links a { padding:20px 0; }
+ .porcelain-site #main .procurement-page .procurement-oem-photo { justify-self:start; width:100%; }
+ .porcelain-site #main .procurement-page .procurement-oem-photo img { max-height:280px; }
+ .porcelain-site #main .procurement-page .procurement-close > .container { display:flex; flex-direction:column; align-items:stretch; gap:20px; }
+ .porcelain-site #main .procurement-page .procurement-close .button { align-self:flex-start; }
+ .porcelain-site #main .procurement-page .procurement-process-index { flex-direction:column; align-items:flex-start; gap:2px; }
+ .porcelain-site #main .procurement-page .procurement-process-index a { min-height:44px; }
+ .porcelain-site #main .procurement-page .procurement-process-stage h3 { font-size:26px; }
+ .porcelain-site #main .procurement-page .procurement-process-stage { margin-top:28px; padding-top:28px; }
+ .porcelain-site #main .procurement-page .procurement-packing-footage-copy { grid-column:auto; grid-row:auto; }
+ .porcelain-site #main .procurement-page .procurement-video--portrait { max-width:220px; grid-column:auto; grid-row:auto; }
+ .porcelain-site #main .procurement-page .procurement-video--portrait .video-frame { max-width:220px; }
+ .porcelain-site #main .procurement-page .procurement-handover-records > div { grid-template-columns:1fr; gap:8px; }
+ .porcelain-site #main .procurement-page .procurement-dispatch-photo { max-width:480px; }
+ .porcelain-site #main .procurement-page .procurement-company-records > div { grid-template-columns:1fr; gap:8px; padding:16px 0; }
+ .porcelain-site #main .procurement-page .procurement-company-photo { max-width:540px; }
+ .porcelain-site #main .procurement-page .procurement-privacy-body { padding-block:32px 40px; }
+ .porcelain-site #main .procurement-page .procurement-privacy-body h2 { font-size:28px; }
+ .porcelain-site #main .procurement-page .procurement-table { display:block; margin:20px 0; }
+ .porcelain-site #main .procurement-page .procurement-table thead { display:none; }
+ .porcelain-site #main .procurement-page .procurement-table tbody { display:block; width:100%; }
+ .porcelain-site #main .procurement-page .procurement-table tr { display:block; padding:18px 0; border-top:1px solid var(--line); }
+ .porcelain-site #main .procurement-page .procurement-table tr:last-child { border-bottom:1px solid var(--line); }
+ .porcelain-site #main .procurement-page .procurement-table :is(th,td) { display:block; width:100%; padding:0; border:0; }
+ .porcelain-site #main .procurement-page .procurement-table tbody th { font-size:17px; }
+ .porcelain-site #main .procurement-page .procurement-table th:first-child { width:100%; }
+ .porcelain-site #main .procurement-page .procurement-table td { margin-top:16px; }
+ .porcelain-site #main .procurement-page .procurement-mobile-label { display:block; color:var(--muted); font-size:14px; font-weight:500; margin-bottom:6px; }
+}
+@media(max-width:480px) {
+ .porcelain-site #main .procurement-page .procurement-approval-steps { grid-template-columns:1fr; gap:24px; }
+ .porcelain-site #main .procurement-page .procurement-terms > div { grid-template-columns:1fr; gap:8px; }
+ .porcelain-site #main .procurement-page .procurement-actions .button,.porcelain-site #main .procurement-page .procurement-close .button { width:100%; }
+ .porcelain-site #main .procurement-page .procurement-oem-hero .button { width:100%; }
+}

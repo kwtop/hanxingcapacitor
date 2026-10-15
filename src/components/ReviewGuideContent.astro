@@ -1,0 +1,44 @@
+---
+import PhotoDetail from './PhotoDetail.astro';
+import type { GuideSection } from '../data/guideLayouts';
+interface Props { sections: GuideSection[]; }
+const { sections } = Astro.props;
+---
+<div class="review-guide-sections">
+  {sections.map(section => <section class:list={['review-guide-section', section.layout && `is-${section.layout}`]} id={section.id}>
+    {section.aliases?.map(alias => <span id={alias} class="review-guide-anchor" aria-hidden="true"></span>)}
+    <h2>{section.heading}</h2>
+    <div class="review-guide-section-body">
+      <div class="review-guide-copy">
+        {section.paragraphs?.map(paragraph => <p>{paragraph}</p>)}
+        {section.records && <dl class="review-guide-records">{section.records.map(record => <div><dt>{record.label}</dt><dd>{record.text}</dd></div>)}</dl>}
+        {section.points && (section.orderedPoints
+          ? <ol class="review-guide-points">{section.points.map(point => <li>{point}</li>)}</ol>
+          : <ul class="review-guide-points">{section.points.map(point => <li>{point}</li>)}</ul>)}
+        {section.tables && <div class:list={['review-guide-tables', { 'has-two-tables': section.tables.length === 2 }]}>
+          {section.tables.map(table => <div class="review-guide-table-wrap"><table class="review-guide-table">
+            <caption>{table.caption}</caption>
+            <thead><tr>{table.headers.map(header => <th scope="col">{header}</th>)}</tr></thead>
+            <tbody>{table.rows.map(row => <tr>{row.map((cell, index) => index === 0
+              ? <th scope="row">{typeof cell === 'string' ? cell : <a href={cell.href}>{cell.text}</a>}</th>
+              : <td data-label={table.headers[index]}>{typeof cell === 'string' ? cell : <a href={cell.href}>{cell.text}</a>}</td>)}</tr>)}</tbody>
+          </table></div>)}
+        </div>}
+        {section.note && <p class="review-guide-note">{section.note}</p>}
+        {section.links && <nav class="review-guide-section-links" aria-label={`Further reading for ${section.heading}`}>{section.links.map(link => <a class="card-link" href={link.href}>{link.label}</a>)}</nav>}
+        {section.copyText && <div class="review-order-copy" data-copy-block>
+          <pre class="review-order-notes" id="order-notes-text" tabindex="0" aria-label="Order confirmation notes to copy"><code>{section.copyText}</code></pre>
+          <button class="button secondary" type="button" data-copy-order>Copy order notes</button>
+          <p class="review-copy-status" role="status" aria-live="polite"></p>
+        </div>}
+      </div>
+      {section.photos && <div class:list={['review-guide-photos', { 'has-three-photos': section.photos.length === 3, 'photos-before': section.photoPlacement === 'before' }]}>
+        {section.photos.map(photo => <figure class="review-guide-photo">
+          <PhotoDetail src={photo.src} alt={photo.alt} complete />
+          {photo.showLabelDetail && <div class="review-label-detail"><img src={photo.src} alt="Enlarged label area from the same CBB65 original photograph: 20 µF ±5%, 450VAC and 50/60Hz." width="2000" height="2000" loading="lazy" /></div>}
+          <figcaption><h3>{photo.title}</h3><p>{photo.text}</p></figcaption>
+        </figure>)}
+      </div>}
+    </div>
+  </section>)}
+</div>

@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HvacReference from '../../components/HvacReference.astro';
+import ApplicationReference from '../../components/ApplicationReference.astro';
+import { applications } from '../../data/site';
+export const prerender = true;
+export function getStaticPaths() { return applications.map(application => ({ params: { slug: application.slug }, props: { application } })); }
+const { application } = Astro.props;
+---
+<BaseLayout title={application.title} description={application.intro}>
+  {application.slug === 'hvac-and-refrigeration' ? <HvacReference /> : <ApplicationReference application={application} />}
+</BaseLayout>

@@ -1,0 +1,14 @@
+---
+import { sampleConfigurations } from '../data/sampleConfigurations';
+const { code } = Astro.props;
+const samples = sampleConfigurations.filter(sample => sample.series === code);
+---
+<section class="section configuration-records" id="sample-configurations"><div class="container">
+ <h2>{code} sample configurations</h2>
+ <p class="configuration-intro">These sample labels and connection views can help describe your requirement. Ask for the current model drawing, approved rating and availability in the quotation.</p>
+ <div class="sample-records">{samples.map(sample => <article class="sample-record">
+  <div><img src={sample.image} alt={`${sample.series}: ${sample.name}`} loading="lazy" width="2000" height="2000" /></div>
+  <div><h3>{sample.name}</h3><dl><div><dt>Visible rating</dt><dd>{sample.rating}</dd></div><div><dt>Physical format</dt><dd>{sample.connection}</dd></div></dl><p>{sample.note}</p><a class="card-link" href={`/contact/?series=${code}&configuration=${sample.id}&request=quote#inquiry-form`}>Ask about this sample</a></div>
+ </article>)}</div>
+
+</div></section>

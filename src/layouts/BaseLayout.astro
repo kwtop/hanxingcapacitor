@@ -1,0 +1,76 @@
+---
+import '@fontsource-variable/inter';
+import '../styles/legacy.css';
+import '../styles/system.css';
+import '../styles/homepage.css';
+import '../styles/site-editorial.css';
+import '../styles/site-upgrade.css';
+import '../styles/finesse-redesign.css';
+import '../styles/site-porcelain.css';
+import '../styles/review-products.css';
+import '../styles/review-resources.css';
+import '../styles/review-procurement.css';
+import '../styles/review-site.css';
+import '../styles/reference-system.css';
+import '../styles/reference-products.css';
+import '../styles/reference-support.css';
+import '../styles/selected-site.css';
+import '../styles/internal-links.css'; // Shared standalone actions, including the selected homepage.
+import '../styles/content-alignment.css';
+import '../styles/product-gallery.css'; // Original-photo filmstrip and responsive arrow controls.
+import '../styles/navigation.css'; // Shared overview links and submenu interaction states.
+import '../styles/inquiry-actions.css';
+import '../styles/page-rhythm.css'; // Shared module breathing room, independent of inner content spacing.
+import '../styles/application-editorial.css'; // Selected Applications index and detail hierarchy.
+import '../styles/layout-balance.css'; // Responsive image/copy proportions across existing templates.
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_NAME } from '../data/site';
+import { publicSiteReady } from '../lib/publicSite';
+import { pageBreadcrumbs } from '../lib/pageBreadcrumbs';
+import { pageSeo } from '../lib/pageSeo';
+interface Props { title: string; description: string; noindex?: boolean; }
+const { title, description, noindex = false } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+const previewOnly = !publicSiteReady(Astro.site);
+const breadcrumbs = noindex ? null : pageBreadcrumbs(Astro.url.pathname, title, canonical);
+const fullTitle = /\b(?:hanxing capacitor|han xing)\b/i.test(title) ? title : `${title} | ${SITE_NAME}`;
+const seo = pageSeo(Astro.url.pathname, fullTitle, description, canonical);
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {(noindex || previewOnly) && <meta name="robots" content="noindex,follow" />}
+    <meta property="og:type" content={seo.ogType} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content={seo.image} />
+    <meta property="og:image:alt" content={seo.imageAlt} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={seo.image} />
+    {!noindex && <script type="application/ld+json" set:html={JSON.stringify(seo.schema).replace(/</g, '\\u003c')} />}
+    {breadcrumbs && <script type="application/ld+json" set:html={JSON.stringify(breadcrumbs).replace(/</g, '\\u003c')} />}
+    <link rel="icon" href="/favicon.svg?v=hanxing" type="image/svg+xml" />
+    <slot name="head" />
+  </head>
+  <body class="porcelain-site reference-site">
+    <a class="visually-hidden" href="#main">Skip to content</a>
+    <Header />
+    <main id="main"><slot /></main>
+    <Footer />
+
+  </body>
+</html>
+
+

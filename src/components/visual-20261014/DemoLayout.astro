@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import './demo.css';
+interface Props { direction: 'a' | 'b' | 'c'; title: string; }
+const { direction, title } = Astro.props;
+---
+<BaseLayout title={`${title} | HAN XING design preview`} description="Motor run and start capacitor series, application selection, original sample photographs, production footage and inquiry preparation." noindex>
+  <div class={`visual-demo demo-${direction}`}><slot /></div>
+</BaseLayout>

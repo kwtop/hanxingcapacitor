@@ -1,0 +1,296 @@
+/* Active reference direction: neutral, compact editorial support pages.
+   Earlier review styles retain content structure; this file owns their visual finish. */
+body.porcelain-site.reference-site #main :is(.review-resource-page, .review-faq-page, .review-rfq-page, .procurement-page, .contact-page-heading, .contact-form-section, .reference-utility, .reference-typography) {
+  --paper: #fff;
+  --paper-alt: #f5f5f5;
+  --cream: #f5f5f5;
+  --ink: #111;
+  --muted: #666;
+  --line: #e5e5e5;
+  --accent: #111;
+  --accent-hover: #444;
+  color: var(--ink);
+  background: var(--paper);
+}
+body.porcelain-site.reference-site #main :is(.review-resource-page, .review-faq-page, .review-rfq-page, .procurement-page, .contact-page-heading, .contact-form-section, .reference-utility, .reference-typography) :is(h1, h2, h3, h4, summary) {
+  font-family: 'Inter Variable', Inter, Arial, sans-serif;
+  color: #111;
+  font-weight: 650;
+  letter-spacing: -.025em;
+}
+body.porcelain-site.reference-site #main :is(.review-resource-page, .review-faq-page, .review-rfq-page, .procurement-page, .contact-page-heading, .reference-utility) h1 {
+  font-size: clamp(34px, 4.2vw, 54px);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -.045em;
+  max-width: 25ch;
+}
+body.porcelain-site.reference-site #main :is(.review-resource-page, .review-faq-page, .review-rfq-page, .procurement-page, .contact-form-section, .reference-utility) h2 {
+  font-size: clamp(28px, 2.5vw, 34px);
+  line-height: 1.18;
+  letter-spacing: -.035em;
+}
+body.porcelain-site.reference-site #main :is(.review-resource-page, .review-faq-page, .review-rfq-page, .procurement-page, .contact-form-section, .reference-utility) h3 {
+  font-size: 22px;
+  line-height: 1.25;
+  letter-spacing: -.025em;
+}
+body.porcelain-site.reference-site #main :is(.review-resource-page, .review-faq-page, .review-rfq-page, .procurement-page, .contact-page-heading, .reference-utility) .breadcrumbs {
+  margin-bottom: 20px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #666;
+}
+body.porcelain-site.reference-site #main :is(.review-resource-page, .review-faq-page, .reference-utility) .page-hero,
+body.porcelain-site.reference-site #main .contact-page-heading,
+body.porcelain-site.reference-site #main .procurement-page .procurement-hero,
+body.porcelain-site.reference-site #main .review-rfq-page .rfq-hero {
+  padding-block: 36px 32px;
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+body.porcelain-site.reference-site #main :is(.review-resource-page, .procurement-page, .review-rfq-page) :is(.lead, .procurement-lead, .rfq-lead),
+body.porcelain-site.reference-site #main .contact-page-heading h1 + p {
+  font: 400 18px/1.55 'Inter Variable', Inter, Arial, sans-serif;
+  color: #666;
+  margin-top: 16px;
+  max-width: 68ch;
+}
+
+/* Resource library: readable titles and summaries, rather than repeated boxed cards. */
+body.porcelain-site.reference-site #main .review-resource-library .resource-library { padding-block: 24px 48px; }
+body.porcelain-site.reference-site #main .review-resource-shortcuts { gap: 28px; margin-bottom: 32px; padding-bottom: 24px; border-color: #e5e5e5; }
+body.porcelain-site.reference-site #main .review-resource-shortcuts a { gap: 6px; padding-block: 8px; }
+body.porcelain-site.reference-site #main .review-resource-shortcuts a strong { font-size: 20px; font-weight: 650; letter-spacing: -.02em; }
+body.porcelain-site.reference-site #main .review-resource-shortcuts a span { font-size: 14px; color: #666; }
+body.porcelain-site.reference-site #main .review-resource-shortcuts a:hover strong { text-decoration: underline; text-underline-offset: 4px; color: #111; }
+body.porcelain-site.reference-site #main .review-resource-library .resource-group { margin-top: 36px; }
+body.porcelain-site.reference-site #main .review-resource-library :is(.resource-group, .review-supplier-records) h2 { font-size: 28px; margin-bottom: 16px; }
+body.porcelain-site.reference-site #main .review-resource-library .task-guide-row { grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 36px; padding-block: 18px; }
+body.porcelain-site.reference-site #main .review-resource-library .task-guide-row .card-title { margin: 0; font-size: 20px; font-weight: 650; line-height: 1.35; }
+body.porcelain-site.reference-site #main .review-resource-library .task-guide-row .card-title .card-link { border: 0; padding: 0; min-height: 44px; justify-content: flex-start; font: inherit; color: #111; background: transparent; box-shadow: none; }
+body.porcelain-site.reference-site #main .review-resource-library .task-guide-row .card-title .card-link:hover { background: transparent; text-decoration: underline; text-underline-offset: 4px; }
+body.porcelain-site.reference-site #main .review-resource-library .task-guide-row p { font-size: 16px; line-height: 1.6; color: #666; margin: 0; }
+body.porcelain-site.reference-site #main .review-supplier-records { margin-top: 36px; padding-top: 28px; }
+body.porcelain-site.reference-site #main .review-supplier-records > p { color: #666; max-width: 68ch; }
+
+/* Technical articles retain a narrow reading column, a practical index and tables. */
+body.porcelain-site.reference-site #main .review-guide-hero .container,
+body.porcelain-site.reference-site #main .review-guide-body .review-guide-layout { width: min(calc(100% - 80px), 1120px); }
+body.porcelain-site.reference-site #main .review-guide-body { padding-block: 32px 48px; }
+body.porcelain-site.reference-site #main .review-guide-layout { grid-template-columns: minmax(0, 760px) minmax(190px, 252px); gap: 48px; }
+body.porcelain-site.reference-site #main .review-guide-navigation { top: calc(var(--nav-h) + 24px); }
+body.porcelain-site.reference-site #main .review-guide-toc { border: 0; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; padding-block: 12px; background: transparent; }
+body.porcelain-site.reference-site #main .review-guide-toc summary { font-size: 17px; line-height: 1.4; font-weight: 650; letter-spacing: -.015em; }
+body.porcelain-site.reference-site #main .review-guide-toc nav a { color: #666; font-size: 14px; padding-block: 8px; line-height: 1.5; }
+body.porcelain-site.reference-site #main .review-guide-toc nav a:hover { color: #111; text-decoration: underline; text-underline-offset: 4px; }
+body.porcelain-site.reference-site #main .review-guide-article h2 { font-size: 28px; line-height: 1.2; margin-bottom: 18px; }
+body.porcelain-site.reference-site #main .review-guide-article h3 { font-size: 19px; line-height: 1.35; font-weight: 650; }
+body.porcelain-site.reference-site #main .review-guide-article :is(p, li, dd) { font-size: 16px; line-height: 1.65; color: #444; }
+body.porcelain-site.reference-site #main .review-guide-section { margin-bottom: 36px; }
+body.porcelain-site.reference-site #main .review-guide-copy > p { margin-bottom: 18px; }
+body.porcelain-site.reference-site #main .review-guide-article li + li { margin-top: 8px; }
+body.porcelain-site.reference-site #main .review-guide-records > div { padding-block: 14px; }
+body.porcelain-site.reference-site #main .review-guide-records dt { font-size: 17px; font-weight: 650; }
+body.porcelain-site.reference-site #main .review-guide-table { font-size: 15px; line-height: 1.55; }
+body.porcelain-site.reference-site #main .review-guide-table caption { font-size: 17px; font-weight: 650; }
+body.porcelain-site.reference-site #main .review-guide-table :is(th, td) { border-color: #e5e5e5; padding: 12px; }
+body.porcelain-site.reference-site #main .review-guide-table thead th { background: #f5f5f5; font-weight: 650; }
+body.porcelain-site.reference-site #main .review-guide-table tbody th { font-weight: 600; }
+body.porcelain-site.reference-site #main .review-guide-table a { color: #111; }
+/* The reading column is capped at 760px: each dimension form needs its own row.
+   Keep units intact and allow headings to wrap only between complete words. */
+body.porcelain-site.reference-site #main .review-guide-tables.has-two-tables { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+body.porcelain-site.reference-site #main .review-guide-tables.has-two-tables .review-guide-table { table-layout: fixed; }
+body.porcelain-site.reference-site #main .review-guide-tables.has-two-tables .review-guide-table :is(th, td) { overflow-wrap: normal; word-break: normal; hyphens: none; }
+body.porcelain-site.reference-site #main .review-guide-tables.has-two-tables .review-guide-table thead th:first-child { width: 58%; }
+body.porcelain-site.reference-site #main .review-guide-tables.has-two-tables .review-guide-table thead th:nth-child(2) { width: 30%; }
+body.porcelain-site.reference-site #main .review-guide-tables.has-two-tables .review-guide-table thead th:last-child { width: 12%; }
+body.porcelain-site.reference-site #main .review-guide-tables.has-two-tables .review-guide-table tr > :last-child { white-space: nowrap; }
+body.porcelain-site.reference-site #main .review-guide-copy .review-guide-note { border-left-color: #111; color: #666; padding-left: 14px; }
+body.porcelain-site.reference-site #main .review-guide-body .review-guide-photo .photo-detail.shows-complete-photo { background: #fff; border-color: #e5e5e5; }
+body.porcelain-site.reference-site #main .review-guide-photo figcaption { padding-top: 10px; }
+body.porcelain-site.reference-site #main .review-guide-photo figcaption p { color: #666; font-size: 14px; line-height: 1.55; }
+body.porcelain-site.reference-site #main .review-label-detail { border-color: #e5e5e5; }
+body.porcelain-site.reference-site #main .review-order-notes { background: #f5f5f5; border-color: #e5e5e5; padding: 20px; font: 400 15px/1.7 'Inter Variable', Inter, Arial, sans-serif; }
+body.porcelain-site.reference-site #main :is(.review-guide-inquiry, .review-guide-references, .review-guide-related) { border-color: #e5e5e5; margin-top: 32px; padding-top: 28px; }
+body.porcelain-site.reference-site #main .review-guide-related h2 { font-size: 24px; }
+body.porcelain-site.reference-site #main .review-guide-references .review-reference-note,
+body.porcelain-site.reference-site #main .review-guide-references li { color: #666; }
+
+/* RFQ: a copyable working document and a clearly separate next action. */
+body.porcelain-site.reference-site #main .review-rfq-page .rfq-message { background: #fff; color: #111; padding-block: 32px; border-block: 1px solid #e5e5e5; border-top: 0; }
+body.porcelain-site.reference-site #main .review-rfq-page .rfq-message :is(h2, h3) { color: #111; }
+body.porcelain-site.reference-site #main .review-rfq-page .rfq-message p { color: #666; }
+body.porcelain-site.reference-site #main .review-rfq-page .rfq-message .rfq-template { background: #f5f5f5; color: #111; border: 1px solid #e5e5e5; border-radius: 0; padding: 20px; font: 400 15px/1.8 'Inter Variable', Inter, Arial, sans-serif; }
+body.porcelain-site.reference-site #main .review-rfq-page .rfq-ready { padding-left: 32px; border-left-color: #e5e5e5; }
+body.porcelain-site.reference-site #main .review-rfq-page .rfq-message .button.secondary { background: #fff; color: #111; border-color: #111; border-radius: 0; }
+body.porcelain-site.reference-site #main .review-rfq-page .rfq-message .button.secondary:hover { background: #f5f5f5; }
+body.porcelain-site.reference-site #main .review-rfq-page .rfq-field-notes { padding-block: 36px 48px; }
+body.porcelain-site.reference-site #main .review-rfq-page .rfq-field-rows > div { gap: 32px; padding-block: 22px; }
+body.porcelain-site.reference-site #main .review-rfq-sample img { background: #fff; border-color: #e5e5e5; }
+body.porcelain-site.reference-site #main .review-rfq-page .review-rfq-selection { margin-top: 32px; padding-top: 28px; }
+body.porcelain-site.reference-site #main .review-rfq-page .selection-panel--compact { background: #fff; border-radius: 0; border: 0; padding: 0; }
+body.porcelain-site.reference-site #main .review-rfq-page .selection-panel--compact .selection-option { border-radius: 0; border-color: #bdbdbd; background: #fff; color: #111; }
+body.porcelain-site.reference-site #main .review-rfq-page .selection-panel--compact .selection-option.selected { color: #fff; background: #111; border-color: #111; }
+body.porcelain-site.reference-site #main .review-rfq-page .selection-panel--compact .pill-list a { border-radius: 0; border-color: #111; color: #111; background: #fff; }
+
+/* FAQ is a sequence of questions, with useful answers and relevant exits. */
+body.porcelain-site.reference-site #main .review-faq-page > .section { padding-block: 32px 48px; }
+body.porcelain-site.reference-site #main .review-faq-list { max-width: 900px; }
+body.porcelain-site.reference-site #main .review-faq-list .faq-group + .faq-group { margin-top: 36px; }
+body.porcelain-site.reference-site #main .review-faq-list .faq-group h2 { font-size: 28px; }
+body.porcelain-site.reference-site #main .review-faq-list .faq-group details { padding: 0; border-color: #e5e5e5; background: #fff; border-radius: 0; box-shadow: none; }
+body.porcelain-site.reference-site #main .review-faq-list .faq-group summary { font-size: 19px; line-height: 1.45; font-weight: 600; letter-spacing: -.02em; padding-block: 16px; }
+body.porcelain-site.reference-site #main .review-faq-list .faq-group p { font-size: 16px; line-height: 1.65; color: #444; max-width: 74ch; }
+body.porcelain-site.reference-site #main .review-faq-list details .faq-next-step { font-size: 14px; min-height: 44px; margin-bottom: 18px; }
+
+/* OEM, process, packing, company and privacy retain their individual layouts. */
+body.porcelain-site.reference-site #main .procurement-page .procurement-section { padding-block: 36px; border-color: #e5e5e5; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-section h2 { font-size: 30px; line-height: 1.18; margin-bottom: 18px; }
+body.porcelain-site.reference-site #main .procurement-page p { font-size: 16px; line-height: 1.65; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-routes { gap: 32px; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-routes h2 { font-size: 25px; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-routes p { color: #666; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-routes .procurement-route-photo { margin-top: 20px; }
+body.porcelain-site.reference-site #main .procurement-page :is(.procurement-route-photo--sample img, .procurement-oem-photo img, .procurement-video .video-frame, .procurement-dispatch-photo img) { background: #fff; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-oem-hero { gap: 40px; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-oem-photo { max-width: 440px; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-oem-photo img { max-height: 300px; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-table { margin-block: 20px; font-size: 15px; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-table :is(th, td) { padding: 16px; border-color: #e5e5e5; color: #111; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-table thead th { background: #f5f5f5; font-weight: 650; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-table tbody th,
+body.porcelain-site.reference-site #main .procurement-page .procurement-table tbody th > strong { font-weight: 600; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-approval-steps { gap: 24px; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-approval-steps h3 { font-size: 22px; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-step-number { color: #666; font-size: 13px; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-record-links strong { font-size: 18px; font-weight: 650; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-record-links span { font-size: 15px; line-height: 1.6; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-record-links a { padding-block: 18px; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-record-links a:hover strong { text-decoration: underline; text-underline-offset: 4px; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-process-stage { gap: 40px; margin-top: 28px; padding-top: 28px; border-color: #e5e5e5; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-process-stage h3 { font-size: 24px; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-process-index { gap: 8px 24px; border-color: #e5e5e5; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-process-index a { color: #111; font-size: 14px; }
+body.porcelain-site.reference-site #main .procurement-page .video-start span { background: #111; color: #fff; border-radius: 0; }
+body.porcelain-site.reference-site #main .procurement-page .video-start:focus-visible { outline: 2px solid #111; outline-offset: -4px; }
+body.porcelain-site.reference-site #main .procurement-page :is(.procurement-packing-footage, .procurement-handover-layout, .procurement-company-story) { gap: 40px; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-company-records > div { padding: 16px 0; gap: 24px; }
+body.porcelain-site.reference-site #main .procurement-page :is(.procurement-terms, .procurement-company-records, .procurement-handover-records) dt { font-weight: 650; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-close { background: #fff; border-top: 1px solid #e5e5e5; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-close > .container { gap: 32px; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-references { padding-block: 28px 36px; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-references h2 { font: 650 18px/1.4 'Inter Variable', Inter, Arial, sans-serif; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-references p { color: #666; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-privacy-body { padding-block: 32px 40px; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-privacy-body h2 { font-size: 26px; }
+body.porcelain-site.reference-site #main .procurement-page .procurement-privacy-body section + section { margin-top: 28px; padding-top: 24px; }
+
+/* Inquiry remains the existing local draft form. Only visual presentation changes. */
+body.porcelain-site.reference-site #main .contact-form-section { padding-block: 32px 48px; }
+body.porcelain-site.reference-site #main .contact-form-layout { gap: 48px; }
+body.porcelain-site.reference-site #main .contact-form-intro { padding-top: 20px; border-color: #e5e5e5; }
+body.porcelain-site.reference-site #main .contact-direct h2 { font-size: 25px; margin-bottom: 18px; }
+body.porcelain-site.reference-site #main .contact-direct address { line-height: 1.65; color: #666; }
+body.porcelain-site.reference-site #main .contact-direct address strong { font-weight: 600; color: #111; }
+body.porcelain-site.reference-site #main .contact-context { background: #f5f5f5; border-color: #e5e5e5; padding: 18px 20px; }
+body.porcelain-site.reference-site #main .contact-context h2 { font-size: 17px; letter-spacing: -.01em; font-weight: 650; }
+body.porcelain-site.reference-site #main .contact-send-note { font-size: 16px; line-height: 1.6; color: #666; }
+body.porcelain-site.reference-site #main .contact-channel-choice { padding-bottom: 20px; margin-bottom: 24px; border-color: #e5e5e5; }
+body.porcelain-site.reference-site #main .contact-channel-choice input { accent-color: #111; }
+body.porcelain-site.reference-site #main .contact-inquiry-form .field > span { font-size: 14px; font-weight: 600; }
+body.porcelain-site.reference-site #main .contact-inquiry-form .field :is(input, select, textarea),
+body.porcelain-site.reference-site #main .draft-result textarea { border: 1px solid #bdbdbd; border-radius: 0; background: #fff; color: #111; font: 400 16px/1.5 'Inter Variable', Inter, Arial, sans-serif; box-shadow: none; }
+body.porcelain-site.reference-site #main .contact-inquiry-form .field :is(input, select) { min-height: 48px; padding: 11px 12px; }
+body.porcelain-site.reference-site #main .contact-inquiry-form .field textarea { padding: 12px; }
+body.porcelain-site.reference-site #main .contact-inquiry-form .field :is(input, select, textarea):focus,
+body.porcelain-site.reference-site #main .draft-result textarea:focus { border-color: #111; outline: 2px solid #111; outline-offset: 2px; }
+body.porcelain-site.reference-site #main .contact-order-scope { color: #666; font-size: 14px; line-height: 1.6; }
+body.porcelain-site.reference-site #main .contact-preparation { margin-top: 28px; padding-top: 20px; border-color: #e5e5e5; }
+body.porcelain-site.reference-site #main .contact-preparation h3 { font-size: 20px; }
+body.porcelain-site.reference-site #main .contact-preparation p { color: #666; font-size: 15px; line-height: 1.6; }
+body.porcelain-site.reference-site #main .draft-result { background: #f5f5f5; border-color: #e5e5e5; border-radius: 0; padding: 24px; }
+body.porcelain-site.reference-site #main .draft-result h2 { font-size: 26px; }
+body.porcelain-site.reference-site #main .draft-result summary { font-size: 16px; font-weight: 600; letter-spacing: 0; }
+body.porcelain-site.reference-site #main .draft-result textarea { padding: 14px; }
+
+/* Utility pages follow the same controls and typography, without marketing decoration. */
+body.porcelain-site.reference-site #main .reference-utility .section { padding-block: 32px 48px; }
+body.porcelain-site.reference-site #main .reference-utility :is(.feature-box, .side-panel) { background: #fff; border-radius: 0; box-shadow: none; color: #111; padding: 24px 0; }
+body.porcelain-site.reference-site #main .reference-utility .quote-help { padding: 20px 0 20px 28px; border: 0; border-left: 1px solid #e5e5e5; }
+body.porcelain-site.reference-site #main .reference-utility .quote-help a { color: #111; min-height: 44px; display: flex; align-items: center; }
+body.porcelain-site.reference-site #main .reference-utility .quote-help a:hover { text-decoration: underline; text-underline-offset: 4px; }
+body.porcelain-site.reference-site #main .reference-utility .quote-preparation li { font-size: 16px; line-height: 1.65; padding-bottom: 8px; }
+body.porcelain-site.reference-site #main .reference-typography { padding-block: 36px 48px; }
+body.porcelain-site.reference-site #main .reference-typography .type-specimens { margin-top: 32px; }
+body.porcelain-site.reference-site #main .reference-typography .type-specimen { padding-block: 24px; border-top: 1px solid #e5e5e5; }
+body.porcelain-site.reference-site #main .reference-typography .type-specimen :is(.type-display, .type-h1, .type-h2, .type-h3) { font-family: 'Inter Variable', Inter, Arial, sans-serif; font-weight: 700; color: #111; }
+body.porcelain-site.reference-site #main .reference-typography .numeric-proof { margin-top: 32px; }
+
+@media (max-width: 1100px) {
+  body.porcelain-site.reference-site #main .review-guide-layout { grid-template-columns: minmax(0, 1fr) 220px; gap: 32px; }
+  body.porcelain-site.reference-site #main .contact-form-layout { gap: 32px; }
+  body.porcelain-site.reference-site #main .procurement-page .procurement-routes { gap: 24px; }
+  body.porcelain-site.reference-site #main .procurement-page .procurement-routes h2 { font-size: 23px; }
+}
+@media (max-width: 800px) {
+  body.porcelain-site.reference-site #main :is(.review-resource-page, .review-faq-page, .reference-utility) .page-hero,
+  body.porcelain-site.reference-site #main .contact-page-heading,
+  body.porcelain-site.reference-site #main .procurement-page .procurement-hero,
+  body.porcelain-site.reference-site #main .review-rfq-page .rfq-hero { padding-block: 28px; }
+  body.porcelain-site.reference-site #main :is(.review-resource-page, .review-faq-page, .review-rfq-page, .procurement-page, .contact-page-heading, .reference-utility) h1 { font-size: clamp(32px, 7.5vw, 40px); line-height: 1.12; }
+  body.porcelain-site.reference-site #main :is(.review-resource-page, .procurement-page, .review-rfq-page) :is(.lead, .procurement-lead, .rfq-lead),
+  body.porcelain-site.reference-site #main .contact-page-heading h1 + p { font-size: 16px; }
+  body.porcelain-site.reference-site #main .review-resource-library .resource-library { padding-block: 20px 36px; }
+  body.porcelain-site.reference-site #main .review-resource-shortcuts { gap: 0; margin-bottom: 24px; padding-bottom: 16px; }
+  body.porcelain-site.reference-site #main .review-resource-shortcuts a { padding-block: 14px; }
+  body.porcelain-site.reference-site #main .review-resource-library .task-guide-row { grid-template-columns: minmax(0, 1fr); gap: 4px; padding-block: 16px; }
+  body.porcelain-site.reference-site #main .review-resource-library :is(.resource-group, .review-supplier-records) h2 { font-size: 25px; }
+  body.porcelain-site.reference-site #main .review-guide-hero .container,
+  body.porcelain-site.reference-site #main .review-guide-body .review-guide-layout { width: calc(100% - 40px); }
+  body.porcelain-site.reference-site #main .review-guide-body { padding-block: 24px 36px; }
+  body.porcelain-site.reference-site #main .review-guide-layout { display: flex; flex-direction: column; gap: 24px; }
+  body.porcelain-site.reference-site #main .review-guide-navigation { position: static; }
+  body.porcelain-site.reference-site #main .review-guide-toc { padding: 12px 0; }
+  body.porcelain-site.reference-site #main .review-guide-toc summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 44px; cursor: pointer; }
+  body.porcelain-site.reference-site #main .review-guide-toc summary::after { content: '+'; flex: 0 0 auto; font: 400 24px/1 'Inter Variable', Inter, Arial, sans-serif; color: #111; }
+  body.porcelain-site.reference-site #main .review-guide-toc[open] > summary::after { content: '−'; }
+  body.porcelain-site.reference-site #main .review-guide-article h2 { font-size: 25px; }
+  body.porcelain-site.reference-site #main .review-guide-section { margin-bottom: 28px; }
+  body.porcelain-site.reference-site #main .review-guide-table { font-size: 15px; }
+  body.porcelain-site.reference-site #main .review-order-notes { padding: 16px; }
+  body.porcelain-site.reference-site #main .review-rfq-page .rfq-message { padding-block: 28px; }
+  body.porcelain-site.reference-site #main .review-rfq-page .rfq-ready { padding: 24px 0 0; border-left: 0; border-top: 1px solid #e5e5e5; }
+  body.porcelain-site.reference-site #main .review-rfq-page .rfq-field-notes { padding-block: 28px 36px; }
+  body.porcelain-site.reference-site #main .review-rfq-page .rfq-field-rows > div { gap: 12px; padding-block: 20px; }
+  body.porcelain-site.reference-site #main .review-rfq-page .rfq-message .rfq-template { padding: 16px; }
+  body.porcelain-site.reference-site #main .review-faq-page > .section { padding-block: 24px 36px; }
+  body.porcelain-site.reference-site #main .review-faq-list .faq-group h2 { font-size: 25px; }
+  body.porcelain-site.reference-site #main .review-faq-list .faq-group summary { font-size: 18px; }
+  body.porcelain-site.reference-site #main .procurement-page .procurement-section { padding-block: 28px; }
+  body.porcelain-site.reference-site #main .procurement-page .procurement-section h2 { font-size: 26px; }
+  body.porcelain-site.reference-site #main .procurement-page .procurement-routes h2 { font-size: 25px; }
+  body.porcelain-site.reference-site #main .procurement-page :is(.procurement-routes, .procurement-record-links, .procurement-oem-hero, .procurement-process-stage, .procurement-packing-footage, .procurement-handover-layout, .procurement-company-story) { gap: 24px; }
+  body.porcelain-site.reference-site #main .procurement-page .procurement-record-links { gap: 0; }
+  body.porcelain-site.reference-site #main .procurement-page .procurement-process-stage h3 { font-size: 22px; }
+  body.porcelain-site.reference-site #main .procurement-page .procurement-company-records > div { gap: 8px; }
+  body.porcelain-site.reference-site #main .procurement-page .procurement-table :is(th, td) { padding: 0; }
+  body.porcelain-site.reference-site #main .procurement-page .procurement-close > .container { gap: 20px; }
+  body.porcelain-site.reference-site #main .contact-form-section { padding-block: 24px 36px; }
+  body.porcelain-site.reference-site #main .contact-form-layout { gap: 32px; }
+  body.porcelain-site.reference-site #main .contact-context { padding: 16px; }
+  body.porcelain-site.reference-site #main .draft-result { padding: 20px 16px; }
+  body.porcelain-site.reference-site #main .reference-utility .quote-help { padding: 24px 0 0; border-left: 0; border-top: 1px solid #e5e5e5; }
+  body.porcelain-site.reference-site #main .reference-typography .type-specimen { gap: 16px; }
+}
+@media (max-width: 650px) {
+  body.porcelain-site.reference-site #main .review-guide-table tbody th { background: #f5f5f5; }
+  body.porcelain-site.reference-site #main .review-guide-table tbody :is(th, td),
+  body.porcelain-site.reference-site #main .review-guide-tables.has-two-tables .review-guide-table tbody :is(th, td) { padding: 10px 12px; border: 0; }
+  body.porcelain-site.reference-site #main .review-guide-table tbody td + td { border-top: 1px solid #e5e5e5; }
+}
+@media (max-width: 360px) {
+  body.porcelain-site.reference-site #main .review-guide-hero .container,
+  body.porcelain-site.reference-site #main .review-guide-body .review-guide-layout { width: calc(100% - 32px); }
+}

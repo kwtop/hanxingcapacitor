@@ -1,0 +1,962 @@
+[
+  {
+    "id": "P001",
+    "series": "CBB60",
+    "label": "Black cylindrical sample",
+    "thumb": "/images/product-samples/sample-0-thumb.webp",
+    "src": "/images/product-samples/sample-0.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB60\\16.jpg",
+    "sha256": "CAB95FBA3ABB1EDE70A2A12AF6AEA6101E6A18969153A2B6C3958183CB08B188",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P002",
+    "series": "CBB60",
+    "label": "Multicolour wire leads",
+    "thumb": "/images/product-samples/sample-1-thumb.webp",
+    "src": "/images/product-samples/sample-1.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB60\\17.jpg",
+    "sha256": "2670F565FFC3F87C337586D9B5B258D67A9AAD2A13C605F23B92A3F9CF87C594",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P003",
+    "series": "CBB60",
+    "label": "Lead wires and base stud",
+    "thumb": "/images/product-samples/sample-2-thumb.webp",
+    "src": "/images/product-samples/sample-2.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB60\\18.jpg",
+    "sha256": "01D608ABF61BB2F3C251D0ACDBEB698EC2041F85291F42F6F549DCDB990F0246",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P004",
+    "series": "CBB60",
+    "label": "Paired wired samples",
+    "thumb": "/images/product-samples/sample-3-thumb.webp",
+    "src": "/images/product-samples/sample-3.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB60\\19.jpg",
+    "sha256": "AF24FA1BA116D60E66FF52901DC250971D72A0218730CC0058BFE88708A81094",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P005",
+    "series": "CBB60",
+    "label": "Case colours and markings",
+    "thumb": "/images/product-samples/sample-4-thumb.webp",
+    "src": "/images/product-samples/sample-4.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB60\\20.jpg",
+    "sha256": "73289FB4277AC840C021974632A7EF605238BDDAA59F16AB5D36B298DE77C71D",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P006",
+    "series": "CBB60",
+    "label": "Yellow end-cap detail",
+    "thumb": "/images/product-samples/sample-5-thumb.webp",
+    "src": "/images/product-samples/sample-5.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB60\\21.jpg",
+    "sha256": "DAC34B7E0AC08DFE53B1718D79031FE1B09DBD8FC89D00883F1234B69F7118BA",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P007",
+    "series": "CBB60",
+    "label": "White end-cap detail",
+    "thumb": "/images/product-samples/sample-6-thumb.webp",
+    "src": "/images/product-samples/sample-6.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB60\\22.jpg",
+    "sha256": "9508F57982AAC927678A84FAF93508A14C78B746414B5B1744527963EB2D27AF",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P008",
+    "series": "CBB60",
+    "label": "Yellow wired sample",
+    "thumb": "/images/product-samples/sample-7-thumb.webp",
+    "src": "/images/product-samples/sample-7.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB60\\23.jpg",
+    "sha256": "071DC83C9772AF7C7C1F0AEF977FFDB684B7C0264E6B06889BF99BD555B4ABF9",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P009",
+    "series": "CBB60",
+    "label": "White terminal sample",
+    "thumb": "/images/product-samples/sample-8-thumb.webp",
+    "src": "/images/product-samples/sample-8.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB60\\24.jpg",
+    "sha256": "BAC8BA4C066014BF921096022F2EEE703740BA5CB0368C86AC6B9B19812272D4",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P010",
+    "series": "CBB60",
+    "label": "White wired housing",
+    "thumb": "/images/product-samples/sample-9-thumb.webp",
+    "src": "/images/product-samples/sample-9.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB60\\34.jpg",
+    "sha256": "F2D9850008283269E5CA1781B6937494000DF24FB5F9A8E08E84B9B89911D6E5",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P011",
+    "series": "CBB60",
+    "label": "White case and blade terminals",
+    "thumb": "/images/product-samples/sample-10-thumb.webp",
+    "src": "/images/product-samples/sample-10.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB60\\35.jpg",
+    "sha256": "1A607211E62A85498DB87D2F1B74BB4170BC54C78D78A54E85DF9AB064122DC8",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P012",
+    "series": "CBB60",
+    "label": "Black lead-wire arrangement",
+    "thumb": "/images/product-samples/sample-11-thumb.webp",
+    "src": "/images/product-samples/sample-11.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB60\\40.jpg",
+    "sha256": "1E4E671548BE5FB2D702FF0C2BD4493D4EF39F9AFFAF3907A260CCF84BAC2B63",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P013",
+    "series": "Additional samples",
+    "label": "Black cylindrical wired sample",
+    "thumb": "/images/product-samples/sample-12-thumb.webp",
+    "src": "/images/product-samples/sample-12.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB60\\41.jpg",
+    "sha256": "4056DBD3404F6097C2809BFD9C8C378FD8748DBBA21F516641E99BA716EBF4EB",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P014",
+    "series": "Additional samples",
+    "label": "Multicolour lead arrangement",
+    "thumb": "/images/product-samples/sample-13-thumb.webp",
+    "src": "/images/product-samples/sample-13.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB60\\42.jpg",
+    "sha256": "02DA0EE217F74C924B84C34C18933E1E5B44782FC626AB3195E816B31EBCA3E3",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P015",
+    "series": "CBB60",
+    "label": "White case, wider view",
+    "thumb": "/images/product-samples/sample-14-thumb.webp",
+    "src": "/images/product-samples/sample-14.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB60\\DSC01162.JPG",
+    "sha256": "66771253A57D0E79963B3A13526638F7332FA917960254AC1E989FB6049D30DE",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P016",
+    "series": "CBB60",
+    "label": "Yellow case, wider view",
+    "thumb": "/images/product-samples/sample-15-thumb.webp",
+    "src": "/images/product-samples/sample-15.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB60\\DSC01171.JPG",
+    "sha256": "8EEFA3B3C4FC6B3C12DE6DC4C25746CEC1261C869F978973A624510F983BC060",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P017",
+    "series": "CBB60",
+    "label": "Black case, wider view",
+    "thumb": "/images/product-samples/sample-16-thumb.webp",
+    "src": "/images/product-samples/sample-16.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB60\\DSC01178.JPG",
+    "sha256": "42EF256510000DECCCDEB68E32D8E4ABD94074E20DBA427A2E1A363267A11AFD",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P018",
+    "series": "CBB61",
+    "label": "Three blade-terminal samples",
+    "thumb": "/images/product-samples/sample-17-thumb.webp",
+    "src": "/images/product-samples/sample-17.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB61插片\\13.jpg",
+    "sha256": "741DDB07056A70A26F63643792E43EDDF6E19D4D6E4CBBA2A20C42D472DAC5AF",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P019",
+    "series": "CBB61",
+    "label": "Blade-terminal case sizes",
+    "thumb": "/images/product-samples/sample-18-thumb.webp",
+    "src": "/images/product-samples/sample-18.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB61插片\\14.jpg",
+    "sha256": "457BDBB00E228AB42DC75D09B062C9D0AC2EEA4E48C5755025B3A9545EFB00D0",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P020",
+    "series": "CBB61",
+    "label": "Blade-terminal sample lineup",
+    "thumb": "/images/product-samples/sample-19-thumb.webp",
+    "src": "/images/product-samples/sample-19.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB61插片\\15.jpg",
+    "sha256": "2681B155AEA9B76205316DA100AC2D736054F1C5A12ED23B14B9D8720BF881D4",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P021",
+    "series": "CBB61",
+    "label": "Terminal lineup, wider view",
+    "thumb": "/images/product-samples/sample-20-thumb.webp",
+    "src": "/images/product-samples/sample-20.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB61插片\\DSC01179.JPG",
+    "sha256": "5B16184293DC21EA9B14F8AECF2CE61D4B7824ED045A61B1555D78F341B87D9D",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P022",
+    "series": "CBB61",
+    "label": "Case lineup, wider view",
+    "thumb": "/images/product-samples/sample-21-thumb.webp",
+    "src": "/images/product-samples/sample-21.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB61插片\\DSC01180.JPG",
+    "sha256": "9DBCE73EC6C3257347B6E35AE15C4455B9AD1E07E8CA1C797E0AD16EA795680E",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P023",
+    "series": "CBB61",
+    "label": "Red wire-lead housings",
+    "thumb": "/images/product-samples/sample-22-thumb.webp",
+    "src": "/images/product-samples/sample-22.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB61线\\10.jpg",
+    "sha256": "031C2D91A0145D1068757433EB2586E90A039092089666637E4535F1F6BFB42D",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P024",
+    "series": "CBB61",
+    "label": "Black wire-lead lineup",
+    "thumb": "/images/product-samples/sample-23-thumb.webp",
+    "src": "/images/product-samples/sample-23.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB61线\\11.jpg",
+    "sha256": "BECFFD86BCCF1875690AD5A90CA62770B8B4A2EFA94992A80139AE1EE47C381D",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P025",
+    "series": "CBB61",
+    "label": "Single wire-lead sample",
+    "thumb": "/images/product-samples/sample-24-thumb.webp",
+    "src": "/images/product-samples/sample-24.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB61线\\12.jpg",
+    "sha256": "42390C7B3D13A0AE2D29B3E3213FC6AB8E30334BFEFA74D58FD44F1854B43C67",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P026",
+    "series": "CBB61",
+    "label": "Single sample, wider view",
+    "thumb": "/images/product-samples/sample-25-thumb.webp",
+    "src": "/images/product-samples/sample-25.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB61线\\DSC01182.JPG",
+    "sha256": "495A5A99BEF8F4845AEDDD576FCBD7AC931B3385C611D179C4B84616CFF80BA3",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P027",
+    "series": "CBB61",
+    "label": "Wired lineup, wider view",
+    "thumb": "/images/product-samples/sample-26-thumb.webp",
+    "src": "/images/product-samples/sample-26.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB61线\\DSC01183.JPG",
+    "sha256": "C0BD008CC433C79673DCA122606D95340117A932A83DC2FDA90162AD99119427",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P028",
+    "series": "CBB61",
+    "label": "Red cases, wider view",
+    "thumb": "/images/product-samples/sample-27-thumb.webp",
+    "src": "/images/product-samples/sample-27.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB61线\\DSC01185.JPG",
+    "sha256": "BDBCDE9DFAF75A733AC7765767210CFD08B190265E1E40D20E49CD882930F600",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P029",
+    "series": "CBB65",
+    "label": "Metal-can sample",
+    "thumb": "/images/product-samples/sample-28-thumb.webp",
+    "src": "/images/product-samples/sample-28.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB65\\2.jpg",
+    "sha256": "FFF00099373941C0323B84DFDC1452F3649537FA28327A970BE5CE8EBC1376EA",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P030",
+    "series": "CBB65",
+    "label": "Sample and printed carton",
+    "thumb": "/images/product-samples/sample-29-thumb.webp",
+    "src": "/images/product-samples/sample-29.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB65\\3.jpg",
+    "sha256": "D42BF55CFD66C15C17F136499F3CBD7C795AA256FE2D9F7C8EE2198AB470EC35",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P031",
+    "series": "CBB65",
+    "label": "Carton and terminal view",
+    "thumb": "/images/product-samples/sample-30-thumb.webp",
+    "src": "/images/product-samples/sample-30.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB65\\4.jpg",
+    "sha256": "100A6B371D5567C9725F53A1774E4F05DB81F2A95912A050C763EE2C144BBE61",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P032",
+    "series": "CBB65",
+    "label": "Metal can beside carton",
+    "thumb": "/images/product-samples/sample-31-thumb.webp",
+    "src": "/images/product-samples/sample-31.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB65\\5.jpg",
+    "sha256": "CF35C0CCA7549BF7E10BC405E167DB4D817DA129E32548EE61CFE85819F29371",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P033",
+    "series": "CBB65",
+    "label": "Terminal end with protective wrapping",
+    "thumb": "/images/product-samples/sample-32-thumb.webp",
+    "src": "/images/product-samples/sample-32.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB65\\6.jpg",
+    "sha256": "DC61D8DAB3AB41AE8EE5EBB138C43328D669593F795868F0798B71B2C097C8E9",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P034",
+    "series": "CBB65",
+    "label": "Dual-run sample and carton",
+    "thumb": "/images/product-samples/sample-33-thumb.webp",
+    "src": "/images/product-samples/sample-33.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB65\\7.jpg",
+    "sha256": "F8822BC9B6F2F925FE390C0F9D51631435C17BA8C80E75CDAD3D6EF97F2087CE",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P035",
+    "series": "CBB65",
+    "label": "Alternate sample and carton",
+    "thumb": "/images/product-samples/sample-34-thumb.webp",
+    "src": "/images/product-samples/sample-34.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB65\\8.jpg",
+    "sha256": "84D566339643D7F0F7A4D3DAE1F642240844FF9926DDEEF705486282CAE3CFE9",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P036",
+    "series": "CBB65",
+    "label": "Three metal-can samples",
+    "thumb": "/images/product-samples/sample-35-thumb.webp",
+    "src": "/images/product-samples/sample-35.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB65\\9.jpg",
+    "sha256": "531922294C3770EF305F3F6B284A9C8784C08967C4C945B2EBCC41787929A526",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P037",
+    "series": "CBB65",
+    "label": "Small metal-can sample",
+    "thumb": "/images/product-samples/sample-36-thumb.webp",
+    "src": "/images/product-samples/sample-36.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CBB65\\DSC01159.JPG",
+    "sha256": "91AED58438357241A18173C9327BFB56A9D8F19F68210433DE2055927B8FEFB3",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P038",
+    "series": "CD60",
+    "label": "Grey start-capacitor sample",
+    "thumb": "/images/product-samples/sample-37-thumb.webp",
+    "src": "/images/product-samples/sample-37.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CD60\\25.jpg",
+    "sha256": "F820DD107FD169E1C16B2C9BF971CB4AD20B263AEC92DB157DFECDB62DD0881E",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P039",
+    "series": "CD60",
+    "label": "Blue case and blade terminals",
+    "thumb": "/images/product-samples/sample-38-thumb.webp",
+    "src": "/images/product-samples/sample-38.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CD60\\27.jpg",
+    "sha256": "E129195EF12C4CF6B5BEDF55A14572FB431E6881BA534A895826D4EFE65B7718",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P040",
+    "series": "CD60",
+    "label": "Blue case with cable loop",
+    "thumb": "/images/product-samples/sample-39-thumb.webp",
+    "src": "/images/product-samples/sample-39.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CD60\\28.jpg",
+    "sha256": "63ED7BA2041DFE8C6750FB74052C48EC96CE935A2C08DFF909B2D2E2A94E81A5",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P041",
+    "series": "CD60",
+    "label": "Compact blue terminal sample",
+    "thumb": "/images/product-samples/sample-40-thumb.webp",
+    "src": "/images/product-samples/sample-40.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CD60\\29.jpg",
+    "sha256": "0BB0610463A2B757CFB01B101CCDBDC711BCFC066258E7D5C29A13AF78011ACC",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P042",
+    "series": "CD60",
+    "label": "Blue wired sample",
+    "thumb": "/images/product-samples/sample-41-thumb.webp",
+    "src": "/images/product-samples/sample-41.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CD60\\36.jpg",
+    "sha256": "8F3948C6EE3873FA4F69E9B237FA4BF4123EACF0EA1C861086B764D7141F93FA",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P043",
+    "series": "CD60",
+    "label": "Blue terminal sample, wider view",
+    "thumb": "/images/product-samples/sample-42-thumb.webp",
+    "src": "/images/product-samples/sample-42.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CD60\\DSC01164.JPG",
+    "sha256": "E8628B13F530B6DD77275C4D67BC0E07F0D3F1892BB774CF917F693979729C24",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P044",
+    "series": "CD60",
+    "label": "Cable-loop sample, wider view",
+    "thumb": "/images/product-samples/sample-43-thumb.webp",
+    "src": "/images/product-samples/sample-43.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CD60\\DSC01165.JPG",
+    "sha256": "DCE304CC8C111A57C8000A02F4D75423A42BFFEC603E1639D2D2CF4833D0853A",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P045",
+    "series": "CD60",
+    "label": "Blue case, wider view",
+    "thumb": "/images/product-samples/sample-44-thumb.webp",
+    "src": "/images/product-samples/sample-44.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CD60\\DSC01166.JPG",
+    "sha256": "0EE0A3FF9028718A157733E007CE7A9AF77949B1C074CC9B239511899FADB7FC",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P046",
+    "series": "CD60",
+    "label": "Grey sample, wider view",
+    "thumb": "/images/product-samples/sample-45-thumb.webp",
+    "src": "/images/product-samples/sample-45.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\CD60\\DSC01169.JPG",
+    "sha256": "73ED21E9E44236F3FF3E658549FEB6BA1AF6981FEB75518D78E9314490B24E22",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P047",
+    "series": "Additional samples",
+    "label": "Mixed product collection",
+    "thumb": "/images/product-samples/sample-46-thumb.webp",
+    "src": "/images/product-samples/sample-46.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\1.jpg",
+    "sha256": "41BCDF752A064053F383C71C6B3466DD4881C9F0980F7286E3CF6F600D4F02A5",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P048",
+    "series": "Additional samples",
+    "label": "White housing with black top",
+    "thumb": "/images/product-samples/sample-47-thumb.webp",
+    "src": "/images/product-samples/sample-47.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\26.jpg",
+    "sha256": "1F6D3730F45302433C56D3D946F61BF1949FC2CB4B5A260478907A942A4EBD05",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P049",
+    "series": "Additional samples",
+    "label": "White cylindrical sample",
+    "thumb": "/images/product-samples/sample-48-thumb.webp",
+    "src": "/images/product-samples/sample-48.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\30.jpg",
+    "sha256": "05B32D4AF3818473022CFF78E09AAF5C0F4946D57EE5EB529B4F61E4A1A7270C",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P050",
+    "series": "Additional samples",
+    "label": "White case markings",
+    "thumb": "/images/product-samples/sample-49-thumb.webp",
+    "src": "/images/product-samples/sample-49.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\31.jpg",
+    "sha256": "925A669A384097E0B7A136D4095822C824A4AA7E45CC6C0AF833B83F2DC54FE5",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P051",
+    "series": "Additional samples",
+    "label": "Wound elements and materials",
+    "thumb": "/images/product-samples/sample-50-thumb.webp",
+    "src": "/images/product-samples/sample-50.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\32.jpg",
+    "sha256": "209686C7E7F3EAD5464C37FD3A619E848EB7B0D443C900EEF43DAA45CE7DC85A",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P052",
+    "series": "Additional samples",
+    "label": "Small labelled metal can",
+    "thumb": "/images/product-samples/sample-51-thumb.webp",
+    "src": "/images/product-samples/sample-51.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\33.jpg",
+    "sha256": "01F7B5DBBC1EE218C62A44CE32FD4F89A20165A64A1700C5348F3DD839CD2AF9",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P053",
+    "series": "Additional samples",
+    "label": "Metal housings",
+    "thumb": "/images/product-samples/sample-52-thumb.webp",
+    "src": "/images/product-samples/sample-52.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\37.jpg",
+    "sha256": "B868C47F3AE15B68CC509EDFAF784AA6242EAC0EF3DD3F4335C95AE2827AEBAF",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P054",
+    "series": "Additional samples",
+    "label": "Gold-coloured terminal sample",
+    "thumb": "/images/product-samples/sample-53-thumb.webp",
+    "src": "/images/product-samples/sample-53.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\38.jpg",
+    "sha256": "00F5462ED16745D8B9B23B69F639BB0B376BFDE2622915310EF6E84E2BD60F16",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P055",
+    "series": "Additional samples",
+    "label": "Gold-coloured case",
+    "thumb": "/images/product-samples/sample-54-thumb.webp",
+    "src": "/images/product-samples/sample-54.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\39.jpg",
+    "sha256": "1622EFB23311F9162149798A0A5C927536AE991D8AB82621A03B6A89BA53BFBF",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P056",
+    "series": "Additional samples",
+    "label": "White case and terminals",
+    "thumb": "/images/product-samples/sample-55-thumb.webp",
+    "src": "/images/product-samples/sample-55.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\43.jpg",
+    "sha256": "AD67EA0BE8BBC439C7F1F88995E445F3C959B4AFC8D03F5890E241CD0E9A5245",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P057",
+    "series": "Additional samples",
+    "label": "Black open-top housing",
+    "thumb": "/images/product-samples/sample-56-thumb.webp",
+    "src": "/images/product-samples/sample-56.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\44.jpg",
+    "sha256": "BB9811B18855C23B40D7DE26DEA080AC25FC7527C035165936495E4E7B293FCC",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P058",
+    "series": "Additional samples",
+    "label": "Wrapped labelled sample",
+    "thumb": "/images/product-samples/sample-57-thumb.webp",
+    "src": "/images/product-samples/sample-57.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\45.jpg",
+    "sha256": "C9EA5751A18F48A08AA88E7B97A6EF7C00BF467D18B00A937ABD4223828885C4",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P059",
+    "series": "Additional samples",
+    "label": "Gold-coloured cylindrical sample",
+    "thumb": "/images/product-samples/sample-58-thumb.webp",
+    "src": "/images/product-samples/sample-58.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\46.jpg",
+    "sha256": "1E2298E92CD339A359B27FE920074B92E4AA10EAAD94021035C221F622148861",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P060",
+    "series": "Additional samples",
+    "label": "Purple cylindrical sample",
+    "thumb": "/images/product-samples/sample-59-thumb.webp",
+    "src": "/images/product-samples/sample-59.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\47.jpg",
+    "sha256": "C197C53954C2EB9A11EFE18D2056D3A78456DCC99AD2EBE934BF577DC2A9896B",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P061",
+    "series": "Additional samples",
+    "label": "Blue cylindrical sample",
+    "thumb": "/images/product-samples/sample-60-thumb.webp",
+    "src": "/images/product-samples/sample-60.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\48.jpg",
+    "sha256": "785C18890FF3E8A64B5A927A65600F5B53113E2344C9EB75032B84E3659D4260",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P062",
+    "series": "Additional samples",
+    "label": "Blue sample, wider view",
+    "thumb": "/images/product-samples/sample-61-thumb.webp",
+    "src": "/images/product-samples/sample-61.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01142.JPG",
+    "sha256": "6D797FC40BCA2C7B83660989AAE74E6136BCC8E4337253CA45A725DE0D01D668",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P063",
+    "series": "Additional samples",
+    "label": "Purple sample, wider view",
+    "thumb": "/images/product-samples/sample-62-thumb.webp",
+    "src": "/images/product-samples/sample-62.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01143.JPG",
+    "sha256": "E39B701DC810AFB8B5F5CD7E78588A41F92F3737EF08101A2D4202A0741B7AF6",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P064",
+    "series": "Additional samples",
+    "label": "Gold sample, wider view",
+    "thumb": "/images/product-samples/sample-63-thumb.webp",
+    "src": "/images/product-samples/sample-63.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01144.JPG",
+    "sha256": "E766B8CAD3D51BAC259385D8C770217F47FEB21A7DB1D9CD30590C45A9A32BD5",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P065",
+    "series": "Additional samples",
+    "label": "Wrapped sample, wider view",
+    "thumb": "/images/product-samples/sample-64-thumb.webp",
+    "src": "/images/product-samples/sample-64.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01146.JPG",
+    "sha256": "44ADD8D82930C657DC907EB1E90EADB76E0FE78E19363B40C2F9083A760C9B13",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P066",
+    "series": "Additional samples",
+    "label": "Black housing, wider view",
+    "thumb": "/images/product-samples/sample-65-thumb.webp",
+    "src": "/images/product-samples/sample-65.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01147.JPG",
+    "sha256": "09FCD82A7FD0E794A446C59F1570351C293935E7DF64B9E82E6C8B73D870888C",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P067",
+    "series": "Additional samples",
+    "label": "White sample, wider view",
+    "thumb": "/images/product-samples/sample-66-thumb.webp",
+    "src": "/images/product-samples/sample-66.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01148.JPG",
+    "sha256": "C4883D53EDF7BA731492CF8EB77038E894DD3B61191B2EACC1B058C4FD449FC3",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P068",
+    "series": "Additional samples",
+    "label": "Multicolour leads, wider view",
+    "thumb": "/images/product-samples/sample-67-thumb.webp",
+    "src": "/images/product-samples/sample-67.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01149.JPG",
+    "sha256": "B4397CED0AD06E6C12C4965957423068166F7B1DDD34B12C5EC73712097D3305",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P069",
+    "series": "Additional samples",
+    "label": "Black wired case, wider view",
+    "thumb": "/images/product-samples/sample-68-thumb.webp",
+    "src": "/images/product-samples/sample-68.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01150.JPG",
+    "sha256": "D6A6F18EC043490B59E27310D4062580E9810044DBD5B49F1FE1BEB2E30F552B",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P070",
+    "series": "CBB60",
+    "label": "White wired case, wider view",
+    "thumb": "/images/product-samples/sample-69-thumb.webp",
+    "src": "/images/product-samples/sample-69.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01151.JPG",
+    "sha256": "AC54302E2E37C2826B2DC5DACCC5BB95D7B0ED6E4E0092C3B1C9BB2D8C5EF52C",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P071",
+    "series": "Additional samples",
+    "label": "Gold case detail",
+    "thumb": "/images/product-samples/sample-70-thumb.webp",
+    "src": "/images/product-samples/sample-70.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01152.JPG",
+    "sha256": "2C9EE48EE15D955F470124DDDB10BEF84DCDA75D52156E3F924B9E413DC56BA0",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P072",
+    "series": "Additional samples",
+    "label": "Gold case alternate view",
+    "thumb": "/images/product-samples/sample-71-thumb.webp",
+    "src": "/images/product-samples/sample-71.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01153.JPG",
+    "sha256": "B1FFA98A1B68C3313CF2CAD5E08E4802CD78853D4B40D9C6E3A6046625E35550",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P073",
+    "series": "Additional samples",
+    "label": "Metal housings, wider view",
+    "thumb": "/images/product-samples/sample-72-thumb.webp",
+    "src": "/images/product-samples/sample-72.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01154.JPG",
+    "sha256": "9DC145D5C290F43412BFC689F048120490B7C8C10352FA85B045DDD200707283",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P074",
+    "series": "CD60",
+    "label": "Blue wired case, wider view",
+    "thumb": "/images/product-samples/sample-73-thumb.webp",
+    "src": "/images/product-samples/sample-73.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01156.JPG",
+    "sha256": "B61598467D69E4BE71B204350221981E71AADDE745A538FD196F394B7027424E",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P075",
+    "series": "CBB60",
+    "label": "White terminal case, wider view",
+    "thumb": "/images/product-samples/sample-74-thumb.webp",
+    "src": "/images/product-samples/sample-74.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01157.JPG",
+    "sha256": "EE9FA94D29839D6500165FD498B422AFF11BB2033ABDC9E58E7BC9C386E7AE01",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P076",
+    "series": "CBB60",
+    "label": "White lead-wire case, wider view",
+    "thumb": "/images/product-samples/sample-75-thumb.webp",
+    "src": "/images/product-samples/sample-75.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01158.JPG",
+    "sha256": "89AEEAF59A40433A488E3BAB894E2F36A68C6206F1D127E83F388A1ABF5AB728",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P077",
+    "series": "Additional samples",
+    "label": "Wound elements, wider view",
+    "thumb": "/images/product-samples/sample-76-thumb.webp",
+    "src": "/images/product-samples/sample-76.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01161.JPG",
+    "sha256": "DEF63571457C77C9537984E7283176DA431C8AAA971C6302ADFA5BCA5F0D973A",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P078",
+    "series": "Additional samples",
+    "label": "White cylindrical case, wider view",
+    "thumb": "/images/product-samples/sample-77-thumb.webp",
+    "src": "/images/product-samples/sample-77.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01163.JPG",
+    "sha256": "C6E33105E4B786A7AEF61F2FF6443508F225B87742F32C08A06F8D9ADB2E39F2",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P079",
+    "series": "Additional samples",
+    "label": "Black-top housing, wider view",
+    "thumb": "/images/product-samples/sample-78-thumb.webp",
+    "src": "/images/product-samples/sample-78.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01168.JPG",
+    "sha256": "D60249D84593B0C1CEEC4883119CB3342A00D8FD8F9969D70E0D92ED63A56F44",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P080",
+    "series": "CBB60",
+    "label": "White marked case, wider view",
+    "thumb": "/images/product-samples/sample-79-thumb.webp",
+    "src": "/images/product-samples/sample-79.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01170.JPG",
+    "sha256": "3034EB6F77E90E830D6821E2DAF9B7BF1349AC578F3873630DA5B0F093B6227F",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P081",
+    "series": "CBB60",
+    "label": "White end cap, wider view",
+    "thumb": "/images/product-samples/sample-80-thumb.webp",
+    "src": "/images/product-samples/sample-80.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01172.JPG",
+    "sha256": "42E3C705E89221F5645DE939D05B9E6892E42FA52F9ABB8F717C1CD68D01E930",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P082",
+    "series": "CBB60",
+    "label": "Yellow end cap, wider view",
+    "thumb": "/images/product-samples/sample-81-thumb.webp",
+    "src": "/images/product-samples/sample-81.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01173.JPG",
+    "sha256": "B8BD34D68873C9487ABEB596727D45233DCC68295AFFE29815D3BAFB9703211B",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P083",
+    "series": "CBB60",
+    "label": "Case colour lineup, wider view",
+    "thumb": "/images/product-samples/sample-82-thumb.webp",
+    "src": "/images/product-samples/sample-82.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01174.JPG",
+    "sha256": "1948C89735A8E4A65D3BA83FFF340D6F09C3120167BED4D35841B0E62B7052A5",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P084",
+    "series": "CBB60",
+    "label": "Paired wired cases, wider view",
+    "thumb": "/images/product-samples/sample-83-thumb.webp",
+    "src": "/images/product-samples/sample-83.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01175.JPG",
+    "sha256": "E4ED3FFFADC55C73643C8A57F9F087674AD8CFD8F4609F20C17D7EBCAB9B4970",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P085",
+    "series": "CBB60",
+    "label": "Base-stud samples, wider view",
+    "thumb": "/images/product-samples/sample-84-thumb.webp",
+    "src": "/images/product-samples/sample-84.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01176.JPG",
+    "sha256": "D2850CB3D0F843A703D131EE4DFEBFB99E0CC31F4908EAED9F04ACFABF58A061",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P086",
+    "series": "CBB60",
+    "label": "Coloured leads, wider view",
+    "thumb": "/images/product-samples/sample-85-thumb.webp",
+    "src": "/images/product-samples/sample-85.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01177.JPG",
+    "sha256": "3E122BB4DBB1DED828887C9FCEC7B0B4A2B26B16320EF6AB9CBE6C3BD87489BA",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P087",
+    "series": "CBB61",
+    "label": "Three rectangular samples, wider view",
+    "thumb": "/images/product-samples/sample-86-thumb.webp",
+    "src": "/images/product-samples/sample-86.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01181.JPG",
+    "sha256": "72255FFEFAD6D856DF253C764D7AA7341E7CED97F427BE3413BE43D3A62D5F77",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P088",
+    "series": "CBB65",
+    "label": "Metal-can group, wider view",
+    "thumb": "/images/product-samples/sample-87-thumb.webp",
+    "src": "/images/product-samples/sample-87.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01186.JPG",
+    "sha256": "5893221F432E259BAF809C0175C185201E6E96ECD12CE5426F7C28B049BF3642",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P089",
+    "series": "CBB65",
+    "label": "Carton beside sample, wider view",
+    "thumb": "/images/product-samples/sample-88-thumb.webp",
+    "src": "/images/product-samples/sample-88.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01187.JPG",
+    "sha256": "50082768CC2309A98AE5F25417EA9CFEA1948C09A9EED9F0918F17DC1F5ABBEB",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P090",
+    "series": "CBB65",
+    "label": "Sample beside carton, wider view",
+    "thumb": "/images/product-samples/sample-89-thumb.webp",
+    "src": "/images/product-samples/sample-89.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01188.JPG",
+    "sha256": "238BC5B7B86A17EA8622E1195964495FB8DCC6D30381385AD98C00D238CA0706",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P091",
+    "series": "CBB65",
+    "label": "Wrapped terminal detail, wider view",
+    "thumb": "/images/product-samples/sample-90-thumb.webp",
+    "src": "/images/product-samples/sample-90.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01189.JPG",
+    "sha256": "96B107B1AAAF45CA2F2EE3CF73EF93B68EE1ADDDA74127602E71E6AC9C10B9E7",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P092",
+    "series": "CBB65",
+    "label": "Metal can and carton, wider view",
+    "thumb": "/images/product-samples/sample-91-thumb.webp",
+    "src": "/images/product-samples/sample-91.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01190.JPG",
+    "sha256": "949E6ADC95F0D0187F57A3FE319A3FDEE59B3FB1E3A570EDFDD949789F18159D",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P093",
+    "series": "CBB65",
+    "label": "Printed carton and sample, wider view",
+    "thumb": "/images/product-samples/sample-92-thumb.webp",
+    "src": "/images/product-samples/sample-92.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01191.JPG",
+    "sha256": "123CB05595097482B402484483442E11676F09D6451AFA757DA19732674B57F1",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P094",
+    "series": "CBB65",
+    "label": "Alternate carton view",
+    "thumb": "/images/product-samples/sample-93-thumb.webp",
+    "src": "/images/product-samples/sample-93.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01193.JPG",
+    "sha256": "A3FE6C887C5A9285F1C3E154F1B45137EA97B8F5E997179F627104F1F3333B55",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P095",
+    "series": "CBB65",
+    "label": "Metal-can label, wider view",
+    "thumb": "/images/product-samples/sample-94-thumb.webp",
+    "src": "/images/product-samples/sample-94.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01194.JPG",
+    "sha256": "9440E7CA4ED5E5BBC607B1EF07C76AE730448847C5FF228702C5C24DC675E906",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  },
+  {
+    "id": "P096",
+    "series": "Additional samples",
+    "label": "Full product collection",
+    "thumb": "/images/product-samples/sample-95-thumb.webp",
+    "src": "/images/product-samples/sample-95.webp",
+    "original": "D:\\Hangxing\\原始素材\\全系电容照片\\电容\\DSC01196.JPG",
+    "sha256": "C442AA0ACDF475FB8A21943BD0D6D3B7D2109F848761A0EF2E3FCD16A9CF2E2A",
+    "treatment": "WebP browsing derivatives, resized without retouching; original retained."
+  }
+]

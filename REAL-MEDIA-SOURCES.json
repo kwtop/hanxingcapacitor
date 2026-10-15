@@ -1,0 +1,183 @@
+[
+  {
+    "published": "/images/real/cbb60-16.jpg",
+    "source": "原始素材\\全系电容照片\\CBB60\\16.jpg",
+    "treatment": "Original file; CSS crop only"
+  },
+  {
+    "published": "/images/real/cbb60-17.jpg",
+    "source": "原始素材\\全系电容照片\\CBB60\\17.jpg",
+    "treatment": "Original file; CSS crop only"
+  },
+  {
+    "published": "/images/real/cbb60-18.jpg",
+    "source": "原始素材\\全系电容照片\\CBB60\\18.jpg",
+    "treatment": "Original file; CSS crop only"
+  },
+  {
+    "published": "/images/real/cbb61-13.jpg",
+    "source": "原始素材\\全系电容照片\\CBB61插片\\13.jpg",
+    "treatment": "Original file; CSS crop only"
+  },
+  {
+    "published": "/images/real/cbb61-14.jpg",
+    "source": "原始素材\\全系电容照片\\CBB61插片\\14.jpg",
+    "treatment": "Original file; CSS crop only"
+  },
+  {
+    "published": "/images/real/cbb61-leads-10.jpg",
+    "source": "原始素材\\全系电容照片\\CBB61线\\10.jpg",
+    "treatment": "Original file; CSS crop only"
+  },
+  {
+    "published": "/images/real/cbb65-2.jpg",
+    "source": "原始素材\\全系电容照片\\CBB65\\2.jpg",
+    "treatment": "Original file; CSS crop only"
+  },
+  {
+    "published": "/images/real/cbb65-3.jpg",
+    "source": "原始素材\\全系电容照片\\CBB65\\3.jpg",
+    "treatment": "Original file; CSS crop only"
+  },
+  {
+    "published": "/images/real/cbb65-4.jpg",
+    "source": "原始素材\\全系电容照片\\CBB65\\4.jpg",
+    "treatment": "Original file; CSS crop only"
+  },
+  {
+    "published": "/images/real/cd60-25.jpg",
+    "source": "原始素材\\全系电容照片\\CD60\\25.jpg",
+    "treatment": "Original file; CSS crop only"
+  },
+  {
+    "published": "/images/real/cd60-detail-69.jpg",
+    "source": "原始素材\\全系电容照片\\CD60\\DSC01169.JPG",
+    "treatment": "Original file; CSS crop only"
+  },
+  {
+    "published": "/images/real/film-rolls.jpg",
+    "source": "原始素材\\生产视频\\6A1A7121.MOV",
+    "second": 3,
+    "treatment": "Unretouched video frame"
+  },
+  {
+    "published": "/images/real/winding-equipment.jpg",
+    "source": "原始素材\\生产视频\\6A1A7125.MOV",
+    "second": 8,
+    "treatment": "Unretouched video frame"
+  },
+  {
+    "published": "/images/real/test-area.jpg",
+    "source": "原始素材\\生产视频\\6A1A7128.MOV",
+    "second": 6.1895166667,
+    "treatment": "Unretouched video frame"
+  },
+  {
+    "published": "/images/real/inspection-station.jpg",
+    "source": "原始素材\\生产视频1\\6A1A7133.MOV",
+    "second": 8,
+    "treatment": "Unretouched video frame"
+  },
+  {
+    "published": "/images/real/batch-products.jpg",
+    "source": "原始素材\\生产视频1\\6A1A7138.MOV",
+    "second": 3,
+    "treatment": "Unretouched video frame"
+  },
+  {
+    "mediaType": "video",
+    "published": "/videos/film-roll-equipment.mp4",
+    "source": "原始素材\\生产视频\\6A1A7121.MOV",
+    "treatment": "H.264 MP4 transcode; 960x540; 24 fps; original aspect ratio; audio omitted."
+  },
+  {
+    "mediaType": "video",
+    "published": "/videos/winding-equipment.mp4",
+    "source": "原始素材\\生产视频\\6A1A7125.MOV",
+    "treatment": "H.264 MP4 transcode; 960x540; 24 fps; original aspect ratio; audio omitted."
+  },
+  {
+    "mediaType": "video",
+    "published": "/videos/test-area-equipment.mp4",
+    "source": "原始素材\\生产视频\\6A1A7128.MOV",
+    "treatment": "H.264 MP4 transcode; 960x540; 24 fps; original aspect ratio; audio omitted."
+  },
+  {
+    "mediaType": "video",
+    "published": "/videos/packing-scene.mp4",
+    "source": "原始素材\\包装新\\1.mp4",
+    "treatment": "H.264 MP4 transcode; 540x960; 24 fps; original portrait aspect ratio; audio omitted."
+  },
+  {
+    "mediaType": "image",
+    "published": "/images/real/packing-scene.jpg",
+    "source": "原始素材\\包装新\\1.mp4",
+    "second": 6,
+    "treatment": "Poster frame extracted at 00:00:06 and resized to 540x960; no crop."
+  },
+  {
+    "mediaType": "image",
+    "published": "/images/illustrative/factory-process.webp",
+    "source": "Built-in ImageGen; prompt recorded in IMAGEGEN-NOTES.md",
+    "treatment": "Illustrative scene; 1536x1024 WebP, quality 86; not a photograph of Hanxing's facility or staff."
+  },
+  {
+    "mediaType": "image",
+    "published": "/images/illustrative/sample-review.webp",
+    "source": "Built-in ImageGen; prompt recorded in IMAGEGEN-NOTES.md",
+    "treatment": "Illustrative scene; 1536x1024 WebP, quality 86; not a model-specific test or approval record."
+  },
+  {
+    "mediaType": "image",
+    "published": "/images/illustrative/carton-packing.webp",
+    "source": "Built-in ImageGen; prompt recorded in IMAGEGEN-NOTES.md",
+    "treatment": "Illustrative scene; 1536x1024 WebP, quality 86; not approved packaging or an actual shipment."
+  },
+  {
+    "mediaType": "image",
+    "published": "/images/illustrative/dispatch-loading.webp",
+    "source": "Built-in ImageGen; prompt recorded in IMAGEGEN-NOTES.md",
+    "treatment": "Illustrative scene; 1536x1024 WebP, quality 86; not proof of carrier handover or export delivery."
+  },
+  {
+    "mediaType": "image",
+    "published": "/images/illustrative/buyer-discussion.webp",
+    "source": "Built-in ImageGen; prompt recorded in IMAGEGEN-NOTES.md",
+    "treatment": "Illustrative scene; 1536x1024 WebP, quality 86; depicts neither Hanxing employees nor a named customer."
+  },
+  {
+    "mediaType": "image",
+    "published": "/images/illustrative/team-at-work.webp",
+    "source": "Built-in ImageGen; prompt recorded in IMAGEGEN-NOTES.md",
+    "treatment": "Illustrative scene; 1536x1024 WebP, quality 86; anonymous people and generic equipment, not Hanxing employees or a factory record."
+  },
+  {
+    "mediaType": "image",
+    "published": "/images/illustrative/inspection-setup.webp",
+    "source": "Built-in ImageGen; prompt recorded in IMAGEGEN-NOTES.md",
+    "treatment": "Illustrative scene; 1536x1024 WebP, quality 86; blank instrument display, not a model-specific test or result."
+  },
+  {
+    "mediaType": "image",
+    "published": "/images/illustrative/warehouse-staging.webp",
+    "source": "Built-in ImageGen; prompt recorded in IMAGEGEN-NOTES.md",
+    "treatment": "Illustrative scene; 1536x1024 WebP, quality 86; plain cartons, not an order, inventory or shipment record."
+  },
+  {
+    "mediaType": "image",
+    "published": "/images/illustrative/container-handover.webp",
+    "source": "Built-in ImageGen; prompt recorded in IMAGEGEN-NOTES.md",
+    "treatment": "Illustrative scene; 1536x1024 WebP, quality 86; not a Hanxing worker, carrier handover or export delivery."
+  },
+  {
+    "mediaType": "image",
+    "published": "/images/illustrative/export-document-review.webp",
+    "source": "Built-in ImageGen; prompt recorded in IMAGEGEN-NOTES.md",
+    "treatment": "Illustrative scene; 1536x1024 WebP, quality 86; documents are blank props, not actual order or transport records."
+  },
+  {
+    "published": "/images/real/cbb65-dual-run-7.jpg",
+    "source": "原始素材\\全系电容照片\\CBB65\\7.jpg",
+    "treatment": "Original file; CSS close-up only. SHA256 F8822BC9B6F2F925FE390C0F9D51631435C17BA8C80E75CDAD3D6EF97F2087CE. Shows a 50+5 µF sample, not current supply approval."
+  }
+]

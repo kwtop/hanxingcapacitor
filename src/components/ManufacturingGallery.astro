@@ -1,0 +1,11 @@
+---
+import IllustrativeGallery from './IllustrativeGallery.astro';
+import { factoryScenes, homeScenes } from '../data/illustrativeScenes';
+const { compact = false } = Astro.props;
+const scenes = compact ? homeScenes : factoryScenes;
+---
+<IllustrativeGallery
+  heading={compact ? 'Production and packing checks' : 'What to check during production and packing'}
+  scenes={scenes}
+  compact={compact}
+/>

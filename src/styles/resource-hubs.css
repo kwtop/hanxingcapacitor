@@ -1,0 +1,41 @@
+/* Resource directories retain the site's monochrome editorial hierarchy. */
+body.porcelain-site.reference-site #main .resource-hub .resource-hub-body { padding-top: 24px; padding-bottom: 64px; }
+body.porcelain-site.reference-site #main .resource-hub .lead { max-width: 64ch; margin-bottom: 0; }
+body.porcelain-site.reference-site #main .resource-hub .resource-hub-routes { border-top: 1px solid #e3e6e8; }
+body.porcelain-site.reference-site #main .resource-hub .resource-hub-routes > a,
+body.porcelain-site.reference-site #main .resource-hub .resource-article-list > a { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); align-items: baseline; gap: 40px; padding: 28px 0; border-bottom: 1px solid #e3e6e8; color: #111; text-decoration: none; }
+body.porcelain-site.reference-site #main .resource-hub .resource-hub-routes h2 { margin: 0; font-size: 30px; }
+body.porcelain-site.reference-site #main .resource-hub .resource-article-list h3 { margin: 0; font-size: 23px; line-height: 1.35; }
+body.porcelain-site.reference-site #main .resource-hub :is(.resource-hub-routes,.resource-article-list) p { margin: 0; color: #626870; font-size: 17px; line-height: 1.65; max-width: 58ch; }
+body.porcelain-site.reference-site #main .resource-hub :is(.resource-hub-routes,.resource-article-list) > a:hover { background: #f7f7f7; }
+body.porcelain-site.reference-site #main .resource-hub :is(.resource-hub-routes,.resource-article-list) > a:hover :is(h2,h3) { text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 1px; }
+body.porcelain-site.reference-site #main .resource-hub .resource-hub-section { margin-top: 64px; }
+body.porcelain-site.reference-site #main .resource-hub .resource-hub-section:first-child { margin-top: 0; }
+body.porcelain-site.reference-site #main .resource-hub .resource-hub-section > h2 { margin: 0 0 24px; font-size: 32px; }
+body.porcelain-site.reference-site #main .resource-hub .resource-hub-section > p { max-width: 70ch; color: #626870; }
+body.porcelain-site.reference-site #main .resource-hub .resource-hub-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+body.porcelain-site.reference-site #main .buying-hub .buying-stages { display: flex; flex-wrap: wrap; gap: 12px 28px; padding-block: 0 24px; border-bottom: 1px solid #e3e6e8; }
+body.porcelain-site.reference-site #main .buying-hub .buying-stages a { display: inline-flex; align-items: center; min-height: 44px; color: #111; font-size: 15px; text-decoration: underline; text-underline-offset: 5px; }
+body.porcelain-site.reference-site #main .buying-hub .rfq-message { padding-block: 48px 24px; }
+body.porcelain-site.reference-site #main .buying-hub .buying-intro { max-width: 64ch; color: #626870; margin-bottom: 24px; }
+body.porcelain-site.reference-site #main .buying-hub .buying-checklist-label { margin: 0 0 16px; font-size: 20px; }
+body.porcelain-site.reference-site #main .buying-hub .rfq-field-notes { padding-block: 24px 64px; }
+body.porcelain-site.reference-site #main .buying-hub .buying-checklist-help { border-block: 1px solid #e3e6e8; padding: 16px 0; margin-top: 24px; }
+body.porcelain-site.reference-site #main .buying-hub .buying-checklist-help > summary { font-size: 20px; cursor: pointer; min-height: 44px; padding-block: 8px; }
+body.porcelain-site.reference-site #main .buying-hub .buying-next-stages > section { display: grid; grid-template-columns: minmax(0,.9fr) minmax(0,1.1fr); gap: 40px; padding-block: 40px; border-bottom: 1px solid #e3e6e8; }
+body.porcelain-site.reference-site #main .buying-hub .buying-next-stages h2 { margin: 0; font-size: 30px; }
+body.porcelain-site.reference-site #main .buying-hub .buying-next-stages p { margin: 0 0 20px; max-width: 60ch; font-size: 17px; line-height: 1.65; }
+@media(max-width:800px) {
+  body.porcelain-site.reference-site #main .resource-hub .resource-hub-body { padding-bottom: 40px; }
+  body.porcelain-site.reference-site #main .resource-hub .resource-hub-routes > a,
+  body.porcelain-site.reference-site #main .resource-hub .resource-article-list > a,
+  body.porcelain-site.reference-site #main .buying-hub .buying-next-stages > section { grid-template-columns: minmax(0,1fr); gap: 14px; padding-block: 24px; }
+  body.porcelain-site.reference-site #main .resource-hub .resource-hub-routes h2 { font-size: 26px; }
+  body.porcelain-site.reference-site #main .resource-hub .resource-article-list h3 { font-size: 21px; }
+  body.porcelain-site.reference-site #main .resource-hub .resource-hub-section { margin-top: 40px; }
+  body.porcelain-site.reference-site #main .resource-hub :is(.resource-hub-routes,.resource-article-list) p,
+  body.porcelain-site.reference-site #main .buying-hub .buying-next-stages p { font-size: 16px; }
+  body.porcelain-site.reference-site #main .buying-hub .buying-stages { gap: 0 20px; }
+  body.porcelain-site.reference-site #main .buying-hub .rfq-message { padding-block: 32px 16px; }
+  body.porcelain-site.reference-site #main .buying-hub .rfq-field-notes { padding-block: 16px 40px; }
+}

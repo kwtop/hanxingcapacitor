@@ -1,0 +1,64 @@
+---
+import { primaryNav } from '../data/site';
+import MobileNav from './MobileNav';
+---
+<header class:list={['site-header', { 'home-header': Astro.url.pathname === '/' }]}>
+  <div class="container header-inner">
+    <a class="brand" href="/" aria-label="Hanxing home"><img class="selected-brand-mark" src="/favicon.svg" alt="" width="32" height="32" /><span class="brand-wordmark">HAN XING</span></a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      {primaryNav.map((item, index) => <div class:list={['nav-item', {'has-submenu': item.children.length > 0, 'is-current-section': Astro.url.pathname === item.href || (item.href === '/resources/' && Astro.url.pathname.startsWith('/resources/')) || item.children.some(child => Astro.url.pathname === child.href)}]}><a class="nav-link" href={item.href} aria-haspopup={item.children.length ? 'true' : undefined} aria-expanded={item.children.length ? 'false' : undefined} aria-controls={item.children.length ? `nav-submenu-${index}` : undefined} aria-current={Astro.url.pathname === item.href ? 'page' : undefined}>{item.label}</a>{item.children.length > 0 && <div class="nav-dropdown" id={`nav-submenu-${index}`} hidden>{item.children.map((child) => <a class:list={{ 'nav-photo-link': child.href === '/products/photographs/' }} href={child.href} aria-current={Astro.url.pathname === child.href ? 'page' : undefined}>{child.label}</a>)}</div>}</div>)}
+    </nav>
+    <a class="button header-cta" href="/contact/">Start an inquiry</a>
+    <MobileNav client:load nav={primaryNav} currentPath={Astro.url.pathname} />
+    <a class="mobile-quote" href="/contact/" aria-label="Contact Hanxing">Contact</a>
+  </div>
+</header>
+<script>
+  const header = document.querySelector('.site-header');
+  if (header) {
+    const items = Array.from(header.querySelectorAll<HTMLElement>('.nav-item.has-submenu'));
+    const setOpen = (item: HTMLElement, open: boolean) => {
+      item.querySelector('.nav-link')?.setAttribute('aria-expanded', String(open));
+      const panel = item.querySelector<HTMLElement>('.nav-dropdown');
+      if (panel) panel.hidden = !open;
+    };
+    const closeAll = () => items.forEach(item => setOpen(item, false));
+    items.forEach(item => {
+      const link = item.querySelector<HTMLAnchorElement>('.nav-link');
+      item.addEventListener('pointerenter', () => {
+        closeAll();
+        setOpen(item, true);
+      });
+      item.addEventListener('pointerleave', () => {
+        if (!item.contains(document.activeElement)) setOpen(item, false);
+      });
+      link?.addEventListener('keydown', event => {
+        if (event.key === 'ArrowDown') {
+          event.preventDefault();
+          closeAll();
+          setOpen(item, true);
+          item.querySelector<HTMLAnchorElement>('.nav-dropdown a')?.focus();
+        }
+      });
+      item.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && link?.getAttribute('aria-expanded') === 'true') {
+          event.preventDefault();
+          setOpen(item, false);
+          link.focus();
+        }
+      });
+      item.addEventListener('focusout', event => {
+        if (!item.contains(event.relatedTarget as Node | null)) setOpen(item, false);
+      });
+    });
+    document.addEventListener('click', event => {
+      if (!(event.target instanceof Node) || !items.some(item => item.contains(event.target as Node))) closeAll();
+    });
+    window.matchMedia('(max-width: 800px)').addEventListener('change', closeAll);
+    const updateHeader = () => header.classList.toggle('is-scrolled', window.scrollY > 24);
+    updateHeader();
+    window.addEventListener('scroll', updateHeader, { passive: true });
+  }
+</script>
+
+

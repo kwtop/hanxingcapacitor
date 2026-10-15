@@ -1,0 +1,54 @@
+---
+import { products } from '../data/site';
+import '../styles/inquiry-callout.css';
+
+interface Props {
+  id?: string;
+  href?: string;
+  defaultSeries?: string;
+  contained?: boolean;
+  chooseSeries?: boolean;
+  heading?: string;
+  description?: string;
+  buttonLabel?: string;
+}
+
+const {
+  id = 'capacitor-inquiry',
+  href = '/contact/?request=quote#inquiry-form',
+  defaultSeries,
+  contained = false,
+  chooseSeries = true,
+  heading = 'Send your capacitor requirements.',
+  description = 'Share the original label, quantity and destination.',
+  buttonLabel = 'Prepare an inquiry',
+} = Astro.props;
+const destination = new URL(href, Astro.url);
+const candidate = defaultSeries ?? destination.searchParams.get('series') ?? 'CBB60';
+const selectedSeries = products.some(product => product.code === candidate) ? candidate : 'CBB60';
+const context = [...destination.searchParams].filter(([name]) => !chooseSeries || name !== 'series');
+if (!destination.searchParams.has('request')) context.push(['request', 'quote']);
+const hasDetails = Astro.slots.has('default');
+---
+<section id={id} class:list={['inquiry-callout', { 'inquiry-callout-contained': contained }]} aria-labelledby={`${id}-title`}>
+  <div class:list={['inquiry-callout-inner', { container: !contained }]}>
+    <div class="inquiry-callout-layout">
+      <div class="inquiry-callout-copy">
+        <h2 class="inquiry-callout-heading" id={`${id}-title`}>{heading}</h2>
+        <p class="inquiry-callout-description">{description}</p>
+      </div>
+      <form class:list={['inquiry-callout-form', { 'inquiry-callout-fixed': !chooseSeries }]} action={destination.pathname + (destination.hash || '#inquiry-form')} method="get">
+        {chooseSeries && <>
+          <label for={`${id}-series`}>Capacitor series (optional)</label>
+          <select id={`${id}-series`} name="series">
+            {products.map(product => <option value={product.code} selected={product.code === selectedSeries}>{product.code}</option>)}
+            <option value="">Not sure yet</option>
+          </select>
+        </>}
+        {context.map(([name, value]) => <input type="hidden" name={name} value={value} />)}
+        <button class="button inquiry-callout-button" type="submit">{buttonLabel}</button>
+      </form>
+    </div>
+    {hasDetails && <div class="inquiry-callout-details"><slot /></div>}
+  </div>
+</section>

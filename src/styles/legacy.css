@@ -1,0 +1,14 @@
+/* Retained component structure; current shared presentation is owned by system.css. */
+@import './global.css' layer(legacy);
+@import './editorial.css' layer(legacy);
+@import './media.css' layer(legacy);
+@import './refinement.css' layer(legacy);
+@import './image-presentation.css' layer(legacy);
+@import './premium.css' layer(legacy);
+@import './content-clarity.css' layer(legacy);
+@import './content-additions.css' layer(legacy);
+@import './buyer-content.css' layer(legacy);
+@import './image-review.css' layer(legacy);
+@import './product-dossier.css' layer(legacy);
+@import './review-refinement.css' layer(legacy);
+@import './palette.css' layer(legacy);

@@ -1,0 +1,42 @@
+/* Site alignment to the selected homepage. Content, routing and galleries retain their existing owners. */
+body.porcelain-site.reference-site{--type-h2-weight:450;--type-h3-weight:500;--type-h4-weight:500;--space-section:64px;--porcelain-section-space:64px;--line:#e3e6e8;--muted:#626870}
+body.porcelain-site.reference-site .container,body.porcelain-site.reference-site .site-header .header-inner,body.reference-site #main :is(.pdr-wrap,.hvr-wrap){width:min(calc(100% - 112px),1280px)}
+body.porcelain-site.reference-site .site-header .header-inner{height:84px;min-height:84px}
+body.porcelain-site.reference-site .site-header .brand,body.porcelain-site.reference-site .site-footer .brand{display:inline-flex;align-items:center;gap:10px}
+body.porcelain-site.reference-site .selected-brand-mark{display:block;width:32px;height:32px;object-fit:contain;flex:none}
+body.porcelain-site.reference-site .site-header .brand-wordmark{font-size:25px;font-weight:600;letter-spacing:.02em}
+body.porcelain-site.reference-site .site-header .header-cta{min-height:46px;padding:0 20px;display:inline-flex;align-items:center}
+body.porcelain-site.reference-site .site-footer .brand-wordmark{font-size:23px;letter-spacing:.02em}
+body.porcelain-site.reference-site .site-footer .selected-brand-mark{width:28px;height:28px}
+body.reference-site #main:not(:has(.home-selected)) h1{font-family:Georgia,'Times New Roman',serif!important;font-weight:400!important;font-size:clamp(42px,4.5vw,64px)!important;line-height:1.08!important;letter-spacing:-.045em!important;text-wrap:pretty;max-width:23ch}
+body.reference-site #main:not(:has(.home-selected)) h2{font-family:var(--font-body)!important;font-weight:450!important;letter-spacing:-.035em!important;line-height:1.18!important}
+body.reference-site #main:not(:has(.home-selected)) h3{font-family:var(--font-body)!important;font-weight:500!important;letter-spacing:-.02em!important}
+body.reference-site #main:not(:has(.home-selected)) :is(.page-hero,.compact-page-hero,.procurement-hero){padding-block:52px 40px;background:#fff}
+body.reference-site #main:not(:has(.home-selected)) :is(.section,.procurement-section){padding-block:60px}
+body.reference-site #main:not(:has(.home-selected)) :is(.section-head,.procurement-section-heading){margin-bottom:30px}
+body.reference-site #main:not(:has(.home-selected)) :is(.lead,.pdr-intro,.hvr-intro,.procurement-lead){color:#626870;line-height:1.6;font-size:18px}
+body.reference-site #main:not(:has(.home-selected)) :is(.card,.doc-card,.process-card,.resource-card){border-radius:0;box-shadow:none}
+body.reference-site #main:not(:has(.home-selected)) :is(.cta-band,.guide-inquiry,.pdr-inquiry,.hvr-inquiry){background:#f4f5f6;border-radius:0;box-shadow:none}
+body.reference-site #main:not(:has(.home-selected)) :is(.button,.pdr-button,.hvr-button,.packing-button){min-height:48px;font-size:15px;border-radius:0;box-shadow:none;letter-spacing:0}
+body.reference-site #main:not(:has(.home-selected)) :is(.breadcrumbs,.pdr-breadcrumbs,.hvr-breadcrumbs){font-size:13px;color:#626870;margin-bottom:24px}
+body.reference-site #main article.pdr-reference .pdr-hero{gap:64px;padding-block:42px 50px;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+body.reference-site #main article.pdr-reference h1{max-width:18ch}
+body.reference-site #main article.pdr-reference .pdr-key-facts dd{font-weight:500}
+body.reference-site #main .review-product-directory .series-catalog h2{font-weight:500!important;font-size:29px}
+body.reference-site #main .review-product-directory .series-catalog .sample-catalog-image{aspect-ratio:1 / 1.16;background:#fff}
+body.reference-site #main .review-product-directory .series-catalog .sample-catalog-image>img[src]{object-fit:cover}
+body.reference-site #main .review-product-directory .catalog-ratings dd{font-size:16px}
+body.reference-site #main .review-product-directory .catalog-next-grid h2{font-size:34px}
+body.reference-site #main :is(.guide-toc,.pdr-side-note,.hvr-side-note){border-color:#e3e6e8;background:#fff}
+body.reference-site #main :is(.guide-content,.guide-body,.article-body) p{line-height:1.7}
+body.reference-site #main :is(.guide-section,.pdr-section,.hvr-section){padding-block:44px}
+body.reference-site #main :is(.field input,.field select,.field textarea){border:1px solid #a5a9ae;box-shadow:none;padding:12px 14px;font-size:16px}
+body.reference-site #main :is(.field input,.field select){min-height:48px}
+body.reference-site #main :is(.compare-wrap,.table-wrap,.pdr-table-wrap){max-width:100%;overflow-x:auto}
+@media(max-width:1100px){body.porcelain-site.reference-site .container,body.porcelain-site.reference-site .site-header .header-inner,body.reference-site #main :is(.pdr-wrap,.hvr-wrap){width:calc(100% - 64px)}body.porcelain-site.reference-site .desktop-nav{gap:18px}body.porcelain-site.reference-site .site-header .brand-wordmark{font-size:22px}body.reference-site #main article.pdr-reference .pdr-hero{gap:36px}}
+@media(max-width:800px){body.porcelain-site.reference-site .container,body.porcelain-site.reference-site .site-header .header-inner,body.reference-site #main :is(.pdr-wrap,.hvr-wrap){width:calc(100% - 40px)}body.porcelain-site.reference-site .site-header .header-inner{height:72px;min-height:72px}body.porcelain-site.reference-site .site-header .brand{gap:6px;left:46%}body.porcelain-site.reference-site .site-header .brand-wordmark{font-size:16px}body.porcelain-site.reference-site .site-header .selected-brand-mark{width:22px;height:22px}body.porcelain-site.reference-site .mobile-quote{font-size:13px;padding:10px 14px;min-height:40px}body.reference-site #main:not(:has(.home-selected)) h1{font-size:clamp(34px,9vw,43px)!important;line-height:1.1!important}body.reference-site #main:not(:has(.home-selected)) :is(.page-hero,.compact-page-hero,.procurement-hero){padding-block:32px 28px}body.reference-site #main:not(:has(.home-selected)) :is(.section,.procurement-section){padding-block:36px}body.reference-site #main:not(:has(.home-selected)) :is(.lead,.pdr-intro,.hvr-intro,.procurement-lead){font-size:16px}body.reference-site #main article.pdr-reference .pdr-hero{grid-template-columns:1fr;gap:26px;padding-block:28px}body.reference-site #main :is(.guide-section,.pdr-section,.hvr-section){padding-block:30px}body.reference-site #main .review-product-directory .series-catalog h2{font-size:24px}body.reference-site #main:not(:has(.home-selected)) h2{font-size:28px}body.reference-site #main .review-product-directory .series-catalog{gap:32px 18px}body.reference-site #main .review-product-directory .catalog-next-grid h2{font-size:28px}}
+@media(max-width:800px){body.porcelain-site.reference-site .site-header .header-inner{position:relative}body.porcelain-site.reference-site .site-header .header-cta{display:none!important}body.porcelain-site.reference-site .site-header .brand{position:absolute;left:46%;top:50%;transform:translate(-50%,-50%)}body.reference-site #main .review-product-directory .series-catalog{grid-template-columns:repeat(2,minmax(0,1fr))}body.reference-site #main .review-product-directory .series-catalog .catalog-purpose{font-size:14px}body.reference-site #main .review-product-directory .catalog-ratings dd{font-size:14px}}
+@media(max-width:360px){body.reference-site #main .review-product-directory .series-catalog{grid-template-columns:1fr}}
+@media(max-width:360px){body.porcelain-site.reference-site .site-header .brand{left:43%}body.porcelain-site.reference-site .site-header .brand-wordmark{font-size:14px}body.porcelain-site.reference-site .site-header .selected-brand-mark{width:18px;height:18px}}
+@media(max-width:800px){body.porcelain-site.reference-site .site-header .mobile-quote{font-size:13px;padding:10px 14px;min-height:40px}}
+@media(max-width:360px){body.porcelain-site.reference-site .site-header .brand{left:41%!important}body.porcelain-site.reference-site .site-header .brand-wordmark{font-size:14px!important}body.porcelain-site.reference-site .site-header .selected-brand-mark{width:18px!important;height:18px!important}body.porcelain-site.reference-site .site-header .mobile-quote{padding-inline:12px!important}}

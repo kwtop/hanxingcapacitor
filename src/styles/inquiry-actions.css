@@ -1,0 +1,21 @@
+/* Short action areas retain real fields and technical checklists, without
+   repeating the button as a headline or surrounding it with generic prompts. */
+body.porcelain-site.reference-site #main .home-selected .selected-inquiry.inquiry-compact{padding-block:32px}
+body.porcelain-site.reference-site #main .home-selected .selected-inquiry-layout{display:block}
+body.porcelain-site.reference-site #main .home-selected .selected-inquiry.inquiry-compact form{display:grid;grid-template-columns:minmax(200px,1fr) auto;align-items:end;gap:12px 20px;width:100%;max-width:700px;margin-inline:auto}
+body.porcelain-site.reference-site #main .home-selected .selected-inquiry.inquiry-compact label{grid-column:1/-1}
+body.porcelain-site.reference-site #main .procurement-page .procurement-close.inquiry-compact{padding-block:32px}
+body.porcelain-site.reference-site #main .procurement-page .procurement-close.inquiry-compact>.container{justify-content:flex-start;gap:16px;flex-wrap:wrap}
+body.porcelain-site.reference-site #main article.pdr-reference .pdr-rfq.inquiry-compact .pdr-rfq-row{margin-top:0;margin-bottom:20px}
+body.porcelain-site.reference-site #main .inquiry-compact:is(.catalog-next-steps,.application-directory-next){padding-block:32px}
+body.porcelain-site.reference-site #main .inquiry-compact :is(.catalog-next-grid,.application-next-links){display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+body.porcelain-site.reference-site #main .inquiry-compact :is(.catalog-next-grid,.application-next-links)>div{display:flex;flex-wrap:wrap;align-items:center;gap:16px;padding:0;border:0}
+body.porcelain-site.reference-site #main .inquiry-compact .catalog-photo-link{margin:0}
+body.porcelain-site.reference-site #main .review-rfq-page .rfq-message-grid{grid-template-columns:1fr}
+body.porcelain-site.reference-site #main .review-rfq-page .rfq-ready.inquiry-compact{padding:0;border:0}
+@media(max-width:800px){
+  body.porcelain-site.reference-site #main .home-selected .selected-inquiry.inquiry-compact form{grid-template-columns:1fr;gap:16px}
+  body.porcelain-site.reference-site #main .home-selected .selected-inquiry.inquiry-compact button{width:100%}
+  body.porcelain-site.reference-site #main .inquiry-compact :is(.catalog-next-grid,.application-next-links),
+  body.porcelain-site.reference-site #main .inquiry-compact :is(.catalog-next-grid,.application-next-links)>div{display:flex;flex-direction:column;align-items:stretch;width:100%}
+}

@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { resourceSections } from '../../data/site';
+import { guides, guideHref } from '../../data/guides';
+import '../../styles/resource-hubs.css';
+const featured = ['read-motor-capacitor-label', 'cbb60-vs-cbb61-vs-cbb65', 'motor-capacitor-order-shipment-checklist'].map(slug => guides.find(guide => guide.slug === slug)!);
+---
+<BaseLayout title="Motor Capacitor Resources | Technical & Buying Guides" description="Motor capacitor selection guides and buying checklists. Read labels, compare series and prepare the specifications and documents for your order.">
+  <div class="review-resource-page resource-hub">
+    <section class="page-hero"><div class="container"><p class="breadcrumbs"><a href="/">Home</a> / Resources</p><h1>Motor capacitor resources</h1><p class="lead">Check a capacitor specification and prepare the details for your quotation.</p></div></section>
+    <div class="container resource-hub-body">
+      <nav class="resource-hub-routes" aria-label="Resource categories">
+        {resourceSections.map(section => <a href={section.href}><h2 id={section.href === '/resources/articles/' ? 'resource-electrical' : section.href === '/buying-guide/' ? 'resource-ordering' : undefined}>{section.href === '/resources/articles/' && <><span id="resource-formats" aria-hidden="true"></span><span id="resource-mechanical" aria-hidden="true"></span></>}{section.label}</h2><p>{section.description}</p></a>)}
+      </nav>
+      <section class="resource-hub-section" aria-labelledby="featured-guides"><h2 id="featured-guides">Useful starting points</h2><div class="resource-article-list">
+        {featured.map(guide => <a href={guideHref(guide)}><h3>{guide.title}</h3><p>{guide.summary}</p></a>)}
+      </div></section>
+      <section class="resource-hub-section"><h2 id="resource-records">Company and model documents</h2><p>Review the company information and the documents to request for the model you plan to order.</p><nav class="resource-hub-actions" aria-label="Company and model documents"><a class="card-link" href="/about/#supplier-records">Company information</a><a class="card-link" href="/factory/#model-records">Product document checklist</a></nav></section>
+    </div>
+  </div>
+</BaseLayout>

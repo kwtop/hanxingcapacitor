@@ -1,0 +1,31 @@
+---
+import '@fontsource-variable/inter';
+const options = [
+  {id:'a', name:'简约精修版', en:'Refined essentials', description:'保留现有模块顺序，用暖灰画布、浅灰选型区和深色生产模块建立节奏。', details:'现有暖色主图 · 四列产品 · 克制无衬线层级'},
+  {id:'b', name:'高端品牌版', en:'Material & precision', description:'深色棚拍首屏与大幅产品展示，配合衬线标题和明亮主体，强化品牌气质。', details:'新制深色主图 · 两列产品展陈 · 衬线与斜体对比'},
+  {id:'c', name:'图片主导版', en:'Equipment in focus', description:'场景先行，通过大图拼接、错落设备画廊和真实资料图组引导阅读。', details:'宽幅组合图 · 应用画廊 · 产品图文并排'},
+];
+---
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><meta name="robots" content="noindex,nofollow" /><title>HAN XING · 三个完整首页视觉方向</title></head><body>
+<header><a class="brand" href="/">HAN XING</a><span>首页视觉提案 · 2026.10.14</span><a href="/" target="_blank">查看当前首页</a></header>
+<main>
+  <section class="intro"><div><p class="eyebrow">三个方向，同一份真实业务内容</p><h1>更有层次，<br />也更有分寸。</h1></div><div><p>三个版本均包含产品系列与范围、选型检查、应用、真实样品与生产素材、指南和询盘入口。选择一个方向后，再统一其他页面。</p><p class="subtle">当前首页与正式站点未替换，DESIGN.md 尚未改写。</p></div></section>
+  <div class="controls"><div role="group" aria-label="预览尺寸"><button data-device="desktop" aria-pressed="true">桌面整页</button><button data-device="mobile" aria-pressed="false">手机整页</button></div><p>每栏内可滚动浏览完整页面；点击标题打开可操作 Demo。</p></div>
+  <section class="options">{options.map(o=><article><div class="option-heading"><a href={`/visual-directions-20261014/${o.id}/`} target="_blank"><span>{o.id.toUpperCase()}</span><h2>{o.name}</h2></a><p>{o.description}</p><small>{o.details}</small></div><div class="preview"><img data-preview={o.id} src={`/visual-directions-20261014/evidence/${o.id}-desktop.png`} alt={`${o.name}完整桌面首页截图`} width="1440" /></div><div class="links"><a href={`/visual-directions-20261014/${o.id}/`} target="_blank">打开完整 Demo</a><a data-shot={o.id} href={`/visual-directions-20261014/evidence/${o.id}-desktop.png`} target="_blank">查看原尺寸截图</a></div></article>)}</section>
+  <section class="notes"><h2>本轮检查发现</h2><div><p><strong>背景与节奏：</strong>首页首屏后连续白底，选型与指南缺少停顿；产品内页的长表格也缺少层级分组。</p><p><strong>图片：</strong>现有产品主图可以保留；首页设备小图偏弱，真实生产照片适合放大。AI 图仅作为产品棚拍或设备示意，原始工厂与样品照片未改造。</p><p><strong>排版：</strong>用清晰的标题尺度、正文灰度、统一留白和图文比例建立重点，保持采购信息及已有 URL。</p></div></section>
+  <footer>建议先比较整体阅读感，再选择 A / B / C。完整 Demo 中的导航、产品及询盘链接均沿用现有网站路径。</footer>
+</main>
+<script>
+  document.querySelectorAll<HTMLButtonElement>('[data-device]').forEach(button=>button.addEventListener('click',()=>{
+    const device=button.dataset.device!;
+    document.body.dataset.device=device;
+    document.querySelectorAll('[data-device]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+    document.querySelectorAll<HTMLImageElement>('[data-preview]').forEach(img=>{img.src=`/visual-directions-20261014/evidence/${img.dataset.preview}-${device}.png`;img.alt=`${img.dataset.preview?.toUpperCase()} 版完整${device==='mobile'?'手机':'桌面'}首页截图`;});
+    document.querySelectorAll<HTMLAnchorElement>('[data-shot]').forEach(a=>a.href=`/visual-directions-20261014/evidence/${a.dataset.shot}-${device}.png`);
+    document.querySelectorAll('.preview').forEach(p=>p.scrollTop=0);
+  }));
+</script>
+<style>
+  :global(*){box-sizing:border-box} :global(body){margin:0;background:#eceee7;color:#283229;font:15px/1.6 'Inter Variable',Arial,'Microsoft Yahei',sans-serif}a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible{outline:3px solid #7d503a;outline-offset:4px}header{display:flex;justify-content:space-between;align-items:center;padding:22px 4vw;border-bottom:1px solid #cbd0c4;gap:20px}header span,header>a:last-child{font-size:13px}.brand{font-size:22px;font-weight:650;letter-spacing:.03em}main{padding:0 4vw}.intro{display:grid;grid-template-columns:1.2fr 1fr;gap:80px;padding:64px 0 48px;align-items:end}.intro h1{font-size:clamp(42px,4vw,64px);line-height:1.2;letter-spacing:-.05em;font-weight:500;margin:14px 0 0}.intro p{margin:0}.eyebrow{font-size:13px;color:#59664f}.intro>div:last-child{max-width:550px}.intro .subtle{margin-top:18px;font-size:13px;color:#59664f}.controls{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:24px}.controls button{padding:11px 20px;font:inherit;background:transparent;color:#283229;border:1px solid #a2ae97;cursor:pointer}.controls button[aria-pressed=true]{background:#28392e;color:#fff}.controls p{font-size:13px;color:#59654f}.options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px}.option-heading{min-height:190px}.option-heading>a{display:flex;gap:16px;align-items:center}.option-heading>a>span{font-size:30px;color:#6d7c63;font-weight:400}h2{font-size:22px;font-weight:550;margin:0}.option-heading p{font-size:14px;color:#4b5745;max-width:42ch;margin:16px 0 10px}.option-heading small{font-size:12px;color:#59664f}.preview{height:720px;overflow:auto;scrollbar-width:thin;border:1px solid #c7cfc0;background:#dde2d7}.preview img{display:block;width:100%;height:auto}.links{display:flex;gap:20px;justify-content:space-between;padding:16px 0;border-bottom:1px solid #bac3b1;font-size:13px}.links a{border-bottom:1px solid #7c8b6f;padding-bottom:3px}.notes{display:grid;grid-template-columns:1fr 2fr;gap:40px;margin:60px 0;padding-top:36px;border-top:1px solid #bcc6b3}.notes p{margin:0 0 18px;font-size:14px;max-width:46em}.notes strong{font-weight:600}footer{max-width:48em;font-size:13px;color:#5e6b54;padding:0 0 38px}:global(body[data-device=mobile]) .preview{padding:0 max(0px,calc((100% - 280px)/2));background:#d3dacb}:global(body[data-device=mobile]) .preview img{max-width:280px;margin:auto}
+  @media(max-width:900px){header span{display:none}.intro{grid-template-columns:1fr;gap:24px;padding:35px 0}.controls{display:block}.options{grid-template-columns:1fr}.option-heading{min-height:0;padding-bottom:20px}.preview{height:650px}.notes{grid-template-columns:1fr;gap:24px;margin:35px 0}.links{margin-bottom:24px}.intro h1{font-size:42px}}
+</style></body></html>

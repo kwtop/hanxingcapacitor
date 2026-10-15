@@ -1,0 +1,186 @@
+/* Reading, identification and order records retain their task-specific format. */
+.porcelain-site #main .review-resource-page .page-hero { padding-block: 40px 32px; }
+.porcelain-site #main .review-resource-page .page-hero h1,
+.porcelain-site #main .review-faq-page .page-hero h1 { font-size: clamp(38px, 4vw, 54px); line-height: 1.12; max-width: 24ch; }
+.porcelain-site #main .review-resource-page .page-hero .lead { max-width: 74ch; margin-bottom: 0; font-size: 18px; line-height: 1.65; }
+.porcelain-site #main .review-resource-library .resource-library { padding-top: 28px; }
+.porcelain-site #main .review-resource-shortcuts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; padding: 0 0 36px; margin-bottom: 40px; border-bottom: 1px solid var(--line); }
+.porcelain-site #main .review-resource-shortcuts a { display: grid; align-content: start; gap: 8px; padding: 14px 0; min-height: 44px; color: var(--ink); }
+.porcelain-site #main .review-resource-shortcuts a strong { font-size: 19px; font-weight: 500; }
+.porcelain-site #main .review-resource-shortcuts a span { font-size: 15px; color: var(--accent); }
+.porcelain-site #main .review-resource-shortcuts a:hover strong { color: var(--accent); }
+.porcelain-site #main .review-resource-library .resource-group { margin-top: 44px; }
+.porcelain-site #main .review-resource-library .resource-group h2,
+.porcelain-site #main .review-resource-library .review-supplier-records h2 { font-size: 32px; line-height: 1.25; margin-bottom: 20px; }
+.porcelain-site #main .review-resource-library .task-guide-row { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 40px; padding-block: 24px; }
+.porcelain-site #main .review-resource-library .task-guide-row .card-title { font-family: var(--font-body); font-size: 21px; line-height: 1.4; }
+.porcelain-site #main .review-resource-library .task-guide-row .card-title .card-link { display: inline-flex; align-items: center; min-height: 44px; padding: 8px 12px; border: 1px solid var(--line); text-decoration: none; font: inherit; }
+.porcelain-site #main .review-resource-library .task-guide-row .card-title .card-link:hover { border-color: var(--accent); }
+.porcelain-site #main .review-resource-library .task-guide-row p { font-size: 17px; line-height: 1.65; }
+.porcelain-site #main .review-resource-exit { margin-top: 16px; }
+.porcelain-site #main .review-supplier-records { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--line); }
+.porcelain-site #main .review-supplier-records nav { display: flex; flex-wrap: wrap; gap: 12px; }
+
+.porcelain-site #main .review-guide-hero .container,
+.porcelain-site #main .review-guide-body .review-guide-layout { width: min(calc(100% - 80px), 1090px); }
+.porcelain-site #main .review-guide-body { padding-block: 36px 64px; }
+.porcelain-site #main .review-guide-layout { display: grid; grid-template-columns: minmax(0, 760px) 264px; gap: 56px; align-items: start; }
+.porcelain-site #main .review-guide-layout > * { min-width: 0; }
+.porcelain-site #main .review-guide-navigation { grid-column: 2; grid-row: 1; position: sticky; top: calc(var(--nav-h) + 20px); }
+.porcelain-site #main .review-guide-article { grid-column: 1; grid-row: 1; width: 100%; max-width: 760px; }
+.porcelain-site #main .review-guide-toc summary { font-family: var(--font-body); font-size: 18px; line-height: 1.4; font-weight: 500; }
+.porcelain-site #main .review-guide-toc nav a { padding: 10px 0; font-size: 15px; line-height: 1.5; min-height: 44px; color: var(--ink); }
+.porcelain-site #main .review-guide-toc nav a:hover { color: var(--accent); }
+.porcelain-site #main .review-guide-sections { display: block; }
+.porcelain-site #main .review-guide-article :is(h2, h3) { max-width: none; }
+.porcelain-site #main .review-guide-article h2 { font-size: 32px; line-height: 1.25; margin: 0 0 20px; }
+.porcelain-site #main .review-guide-article h3 { font-family: var(--font-body); font-size: 19px; line-height: 1.4; }
+.porcelain-site #main .review-guide-article :is(p, li, dd) { font-size: 17px; line-height: 1.65; color: var(--ink); }
+.porcelain-site #main .review-guide-section { position: relative; margin: 0 0 44px; }
+.porcelain-site #main .review-guide-section-body { display: block; }
+.porcelain-site #main .review-guide-copy { min-width: 0; }
+.porcelain-site #main .review-guide-copy > p { margin: 0 0 20px; }
+.porcelain-site #main .review-guide-article :is(ul, ol) { margin: 16px 0 24px; padding-left: 24px; }
+.porcelain-site #main .review-guide-article li + li { margin-top: 12px; }
+.porcelain-site #main .review-guide-records { margin: 0 0 24px; }
+.porcelain-site #main .review-guide-records > div { padding-block: 16px; border-top: 1px solid var(--line); }
+.porcelain-site #main .review-guide-records > div:last-child { border-bottom: 1px solid var(--line); }
+.porcelain-site #main .review-guide-records dt { font-size: 18px; line-height: 1.45; font-weight: 500; margin-bottom: 6px; }
+.porcelain-site #main .review-guide-records dd { margin: 0; }
+.porcelain-site #main .review-guide-table-wrap { min-width: 0; }
+.porcelain-site #main .review-guide-table { width: 100%; border-collapse: collapse; table-layout: fixed; margin: 0 0 24px; font-size: 16px; line-height: 1.55; }
+.porcelain-site #main .review-guide-table caption { text-align: left; font-size: 18px; font-weight: 500; line-height: 1.45; padding: 0 0 12px; color: var(--ink); }
+.porcelain-site #main .review-guide-table :is(th, td) { padding: 12px; text-align: left; vertical-align: top; border: 1px solid var(--line); overflow-wrap: anywhere; }
+.porcelain-site #main .review-guide-table thead th { background: var(--cream, #eeede7); font-weight: 500; }
+.porcelain-site #main .review-guide-table tbody th { font-weight: 500; width: 26%; }
+.porcelain-site #main .review-guide-table a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.porcelain-site #main .review-guide-tables.has-two-tables { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.porcelain-site #main .review-guide-tables.has-two-tables .review-guide-table { table-layout: auto; }
+.porcelain-site #main .review-guide-tables.has-two-tables .review-guide-table th { width: auto; }
+.porcelain-site #main .review-guide-tables.has-two-tables .review-guide-table :is(th, td) { padding: 10px; }
+.porcelain-site #main .review-guide-copy .review-guide-note { margin-top: 20px; padding-left: 16px; border-left: 2px solid var(--accent); font-size: 15px; line-height: 1.65; color: var(--ink); }
+.porcelain-site #main .review-guide-section-links { display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0 24px; }
+.porcelain-site #main .review-guide-photos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.porcelain-site #main .review-guide-photos.has-three-photos { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.porcelain-site #main .review-guide-photo { min-width: 0; margin: 0; }
+.porcelain-site #main .review-guide-body .review-guide-photo .photo-detail.shows-complete-photo { display: block; width: 100%; aspect-ratio: 4 / 3; background: #fafaf7; border: 1px solid var(--line); overflow: hidden; }
+.porcelain-site #main .review-guide-body .review-guide-photo .photo-detail.shows-complete-photo > img { position: static; width: 100%; height: 100%; object-fit: contain; object-position: center; transform: none; }
+.porcelain-site #main .review-guide-photo figcaption { padding-top: 12px; }
+.porcelain-site #main .review-guide-photo figcaption h3 { margin: 0 0 8px; font-size: 18px; }
+.porcelain-site #main .review-guide-photo figcaption p { margin: 0 0 12px; font-size: 14px; line-height: 1.6; }
+.porcelain-site #main .review-guide-photo figcaption .card-link { font-size: 14px; }
+.porcelain-site #main .review-guide-section.is-label .review-guide-section-body { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 24px; align-items: start; }
+.porcelain-site #main .review-guide-section.is-label .review-guide-photos { grid-column: 1; grid-row: 1; grid-template-columns: minmax(0, 1fr); }
+.porcelain-site #main .review-guide-section.is-label .review-guide-copy { grid-column: 2; grid-row: 1; }
+.porcelain-site #main .review-guide-section.is-label .review-guide-table { font-size: 15px; }
+.porcelain-site #main .review-guide-section.is-label .review-guide-table :is(th, td) { padding: 10px; }
+.porcelain-site #main .review-guide-section.is-compact-photo .review-guide-photos { max-width: 390px; margin: 24px 0 0; grid-template-columns: minmax(0, 1fr); }
+.porcelain-site #main .review-guide-section.is-compact-photo .review-guide-photo .photo-detail.shows-complete-photo { max-height: 280px; }
+.porcelain-site #main .review-label-detail { display: block; width: 100%; height: 155px; overflow: hidden; margin-top: 12px; border: 1px solid var(--line); }
+.porcelain-site #main .review-label-detail img { display: block; width: 100%; height: 100%; object-fit: cover; transform: scale(2.4); transform-origin: 53% 65%; }
+.porcelain-site #main .review-order-notes { margin: 24px 0 16px; padding: 24px; border: 1px solid var(--line); background: #fafaf7; white-space: pre-wrap; overflow-wrap: anywhere; font: 16px/1.7 var(--font-body); }
+.porcelain-site #main .review-order-notes code { font: inherit; }
+.porcelain-site #main .review-copy-status { min-height: 24px; margin: 10px 0 0; font-size: 14px; }
+.porcelain-site #main .review-guide-inquiry { border-top: 1px solid var(--line); padding-top: 32px; margin-top: 48px; }
+.porcelain-site #main .review-guide-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-start; }
+.porcelain-site #main .review-guide-references { padding-top: 32px; margin-top: 44px; border-top: 1px solid var(--line); }
+.porcelain-site #main .review-guide-references .review-reference-note,
+.porcelain-site #main .review-guide-references li { font-size: 14px; line-height: 1.65; color: var(--ink); }
+.porcelain-site #main .review-guide-references a { overflow-wrap: anywhere; text-decoration: underline; text-underline-offset: 3px; }
+.porcelain-site #main .review-guide-related { display: flex; flex-wrap: wrap; gap: 12px; padding-top: 32px; margin-top: 36px; border-top: 1px solid var(--line); }
+.porcelain-site #main .review-guide-related h2 { flex-basis: 100%; font-size: 26px; margin-bottom: 4px; }
+.porcelain-site #main .review-guide-article :is(section[id], .review-guide-anchor),
+.porcelain-site #main .review-faq-page [id],
+.porcelain-site #main .review-rfq-page [id] { scroll-margin-top: 110px; }
+.porcelain-site #main .review-guide-anchor { position: absolute; top: 0; }
+
+.porcelain-site #main .review-rfq-page .rfq-hero { padding-block: 32px; }
+.porcelain-site #main .review-rfq-page .rfq-hero-copy { padding: 0; max-width: 800px; }
+.porcelain-site #main .review-rfq-page .rfq-hero-copy h1 { font-size: clamp(38px, 4vw, 54px); }
+.porcelain-site #main .review-rfq-page .rfq-lead { max-width: 66ch; font-size: 18px; line-height: 1.65; margin-bottom: 16px; }
+.porcelain-site #main .review-rfq-page .rfq-message,
+.porcelain-site #main .review-rfq-page .rfq-field-notes { padding-block: 40px; }
+.porcelain-site #main .review-rfq-page .rfq-template { white-space: pre-wrap; overflow-wrap: anywhere; max-width: 100%; }
+.porcelain-site #main .review-rfq-page .rfq-ready p { margin-bottom: 16px; }
+.porcelain-site #main .review-rfq-page h2 { font-size: 32px; line-height: 1.25; }
+.porcelain-site #main .review-rfq-sample { display: grid; grid-template-columns: 150px minmax(0, 1fr); align-items: center; gap: 16px; max-width: 540px; margin-top: 24px; }
+.porcelain-site #main .review-rfq-sample img { width: 100%; height: 140px; object-fit: contain; border: 1px solid var(--line); background: #fafaf7; }
+.porcelain-site #main .review-rfq-sample figcaption { font-size: 14px; line-height: 1.6; padding-top: 0; color: var(--ink); }
+.porcelain-site #main .review-rfq-selection { margin-top: 40px; padding-top: 28px; border-top: 1px solid var(--line); }
+.porcelain-site #main .review-rfq-selection > p { max-width: 68ch; }
+.porcelain-site #main .review-rfq-selection .rfq-application-help { margin-top: 20px; }
+
+.porcelain-site #main .review-faq-page .page-hero { padding-block: 40px 32px; }
+.porcelain-site #main .review-faq-list { max-width: 860px; }
+.porcelain-site #main .review-faq-list .faq-group h2 { font-size: 30px; line-height: 1.25; }
+.porcelain-site #main .review-faq-list .faq-group summary { font-family: var(--font-body); font-size: 20px; line-height: 1.5; font-weight: 400; min-height: 44px; padding-block: 12px; }
+.porcelain-site #main .review-faq-list .faq-group p { font-size: 17px; line-height: 1.65; }
+.porcelain-site #main .review-faq-list details .faq-next-step { margin: 0 0 18px; }
+
+@media (max-width: 1100px) {
+  .porcelain-site #main .review-guide-layout { grid-template-columns: minmax(0, 1fr) 240px; gap: 36px; }
+  .porcelain-site #main .review-guide-section.is-label .review-guide-section-body { display: flex; flex-direction: column; gap: 24px; }
+  .porcelain-site #main .review-guide-section.is-label .review-guide-photos { order: -1; max-width: 380px; width: 100%; }
+  .porcelain-site #main .review-guide-section.is-label .review-guide-copy { width: 100%; }
+  .porcelain-site #main .review-guide-photos.has-three-photos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 800px) {
+  .porcelain-site #main .review-resource-page .page-hero,
+  .porcelain-site #main .review-faq-page .page-hero { padding-block: 28px; }
+  .porcelain-site #main .review-resource-page .page-hero h1,
+  .porcelain-site #main .review-faq-page .page-hero h1,
+  .porcelain-site #main .review-rfq-page .rfq-hero-copy h1 { font-size: 35px; line-height: 1.15; }
+  .porcelain-site #main .review-resource-page .page-hero .lead { font-size: 17px; }
+  .porcelain-site #main .review-resource-shortcuts { grid-template-columns: minmax(0, 1fr); gap: 0; margin-bottom: 32px; padding-bottom: 20px; }
+  .porcelain-site #main .review-resource-shortcuts a + a { border-top: 1px solid var(--line); }
+  .porcelain-site #main .review-resource-library .resource-group { margin-top: 32px; }
+  .porcelain-site #main .review-resource-library .resource-group h2,
+  .porcelain-site #main .review-resource-library .review-supplier-records h2 { font-size: 28px; }
+  .porcelain-site #main .review-resource-library .task-guide-row { grid-template-columns: minmax(0, 1fr); gap: 12px; padding-block: 20px; }
+  .porcelain-site #main .review-resource-library .task-guide-row .card-title { font-size: 20px; }
+  .porcelain-site #main .review-guide-hero .container,
+  .porcelain-site #main .review-guide-body .review-guide-layout { width: calc(100% - 40px); }
+  .porcelain-site #main .review-guide-body { padding-block: 24px 48px; }
+  .porcelain-site #main .review-guide-layout { display: flex; flex-direction: column; gap: 28px; }
+  .porcelain-site #main .review-guide-navigation { position: static; width: 100%; }
+  .porcelain-site #main .review-guide-toc { border: 1px solid var(--line); padding: 8px 16px; }
+  .porcelain-site #main .review-guide-article { width: 100%; max-width: none; }
+  .porcelain-site #main .review-guide-article h2 { font-size: 28px; line-height: 1.28; }
+  .porcelain-site #main .review-guide-section { margin-bottom: 36px; }
+  .porcelain-site #main .review-guide-inquiry { margin-top: 36px; }
+  .porcelain-site #main .review-guide-tables.has-two-tables { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .porcelain-site #main .review-guide-table { font-size: 16px; }
+  .porcelain-site #main .review-guide-table :is(th, td) { padding: 10px; }
+  .porcelain-site #main .review-guide-photos,
+  .porcelain-site #main .review-guide-photos.has-three-photos { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .porcelain-site #main .review-guide-photo { width: 100%; max-width: 440px; }
+  .porcelain-site #main .review-guide-actions { flex-direction: column; align-items: flex-start; }
+  .porcelain-site #main .review-guide-actions .button { max-width: 100%; white-space: normal; text-align: center; }
+  .porcelain-site #main .review-order-notes { padding: 18px; font-size: 16px; }
+  .porcelain-site #main .review-rfq-page .rfq-message,
+  .porcelain-site #main .review-rfq-page .rfq-field-notes { padding-block: 32px; }
+  .porcelain-site #main .review-rfq-page h2 { font-size: 28px; }
+  .porcelain-site #main .review-rfq-page .rfq-ready { border-left: 0; border-top: 1px solid var(--line); padding: 24px 0 0; }
+  .porcelain-site #main .review-rfq-page .rfq-template { padding: 18px; font-size: 16px; }
+  .porcelain-site #main .review-rfq-sample { grid-template-columns: 110px minmax(0, 1fr); gap: 12px; }
+  .porcelain-site #main .review-rfq-sample img { height: 120px; }
+  .porcelain-site #main .review-faq-list .faq-group h2 { font-size: 28px; }
+  .porcelain-site #main .review-faq-list .faq-group summary { font-size: 19px; }
+}
+@media (max-width: 650px) {
+  .porcelain-site #main .review-guide-table caption { display: block; width: 100%; text-align: left; }
+  .porcelain-site #main .review-guide-table,
+  .porcelain-site #main .review-guide-table tbody,
+  .porcelain-site #main .review-guide-table tr { display: block; width: 100%; }
+  .porcelain-site #main .review-guide-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .porcelain-site #main .review-guide-table tbody tr { border: 1px solid var(--line); margin-bottom: 12px; }
+  .porcelain-site #main .review-guide-table tbody :is(th, td),
+  .porcelain-site #main .review-guide-tables.has-two-tables .review-guide-table tbody :is(th, td) { display: block; width: 100%; border: 0; padding: 10px 12px; }
+  .porcelain-site #main .review-guide-table tbody th { background: var(--cream, #eeede7); }
+  .porcelain-site #main .review-guide-table tbody td + td { border-top: 1px solid var(--line); }
+  .porcelain-site #main .review-guide-table tbody td::before { content: attr(data-label); display: block; font-weight: 500; font-size: 14px; margin-bottom: 4px; color: var(--ink); }
+  .porcelain-site #main .review-guide-tables.has-two-tables .review-guide-table tbody td { display: flex; gap: 12px; align-items: baseline; }
+  .porcelain-site #main .review-guide-tables.has-two-tables .review-guide-table tbody td::before { margin: 0; }
+  .porcelain-site #main .review-rfq-sample { grid-template-columns: minmax(0, 1fr); max-width: 340px; }
+  .porcelain-site #main .review-rfq-sample img { height: 170px; }
+}

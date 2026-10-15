@@ -1,0 +1,316 @@
+/* 2026-10-12 selected reference: white specimens, black sans type, fine rules.
+   Page ownership: Products, sample photographs, Applications and their details.
+   Original sample images, model facts and inquiry actions retain their owners. */
+
+body.reference-site #main :is(.review-product-directory, .review-photo-library, .review-application-directory, article.pdr-reference, article.hvr-reference) {
+  --pdr-line: #e2e2e2;
+  --pdr-muted: #606060;
+  --pdr-accent: #111;
+  --hvr-line: #e2e2e2;
+  --hvr-muted: #606060;
+  --hvr-accent: #111;
+  background: #fff;
+  color: #111;
+  font-family: var(--font-body, 'Inter Variable', Arial, sans-serif);
+}
+
+body.reference-site #main :is(.review-product-directory, .review-photo-library, .review-application-directory, article.pdr-reference, article.hvr-reference) :is(h1, h2, h3, h4) {
+  font-family: var(--font-body, 'Inter Variable', Arial, sans-serif);
+  font-weight: 650;
+  color: #111;
+  letter-spacing: -.035em;
+  text-wrap: pretty;
+}
+
+/* Product directory: put the four visible formats directly beneath the title. */
+body.reference-site #main .review-product-directory .catalog-heading { gap: 32px; }
+body.reference-site #main .review-product-directory .catalog-heading .lead { margin-top: 12px; font-size: 18px; }
+body.reference-site #main .review-product-directory .catalog-section { padding-top: 24px; }
+body.reference-site #main .review-product-directory .filter-row { gap: 8px; margin-bottom: 24px; }
+body.reference-site #main .review-product-directory .filter-chip {
+  border-radius: 0; min-height: 44px; padding: 9px 16px; font-size: 14px; font-weight: 500;
+  color: #111; border: 1px solid #d6d6d6; background: #fff; box-shadow: none;
+}
+body.reference-site #main .review-product-directory .filter-chip.active { background: #111; border-color: #111; color: #fff; }
+body.reference-site #main .review-product-directory .filter-chip:hover { border-color: #111; transform: none; }
+body.reference-site #main .review-product-directory .series-catalog { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; }
+body.reference-site #main .review-product-directory .series-catalog .product-card {
+  display: flex; flex-direction: column; gap: 0; padding: 0; border: 0; border-radius: 0; background: #fff; box-shadow: none;
+}
+body.reference-site #main .review-product-directory .series-catalog .sample-catalog-image { aspect-ratio: 1; background: #fff; }
+body.reference-site #main .review-product-directory .series-catalog .sample-catalog-image > img[src],
+body.reference-site #main .review-product-directory .series-catalog .sample-catalog-image:hover > img[src] {
+  width: 100%; height: 100%; object-fit: contain; object-position: center; transform: none; filter: none;
+}
+body.reference-site #main .review-product-directory .series-catalog .card-body { padding-top: 16px; }
+body.reference-site #main .review-product-directory .series-catalog .catalog-duty { font-size: 14px; color: #606060; margin: 0 0 6px; }
+body.reference-site #main .review-product-directory .series-catalog h2 { margin: 0 0 10px; font-size: 26px; line-height: 1.15; }
+body.reference-site #main .review-product-directory .series-catalog .card-title > a { font-size: inherit; color: #111; }
+body.reference-site #main .review-product-directory .series-catalog .series-name { display: block; margin-top: 5px; font-size: 15px; line-height: 1.45; letter-spacing: 0; }
+body.reference-site #main .review-product-directory .series-catalog .catalog-purpose { margin-bottom: 12px; font-size: 15px; line-height: 1.5; color: #606060; }
+body.reference-site #main .review-product-directory .catalog-ratings { margin-bottom: 14px; }
+body.reference-site #main .review-product-directory .catalog-ratings > div { padding-block: 8px; border-color: #e2e2e2; }
+body.reference-site #main .review-product-directory .catalog-ratings dt { margin-bottom: 2px; font-size: 13px; color: #606060; }
+body.reference-site #main .review-product-directory .catalog-ratings dd { font-size: 16px; line-height: 1.5; color: #111; font-variant-numeric: lining-nums tabular-nums; }
+body.reference-site #main .review-product-directory .series-catalog .card-body > .card-link { min-height: 44px; font-size: 14px; color: #111; }
+body.reference-site #main .review-product-directory .catalog-comparison { border-top: 1px solid #e2e2e2; padding-top: 32px; background: #fff; }
+body.reference-site #main .review-product-directory .compare-wrap { margin-top: 20px; border-radius: 0; }
+body.reference-site #main .review-product-directory .compare-table :is(th, td) { background: #fff; border-color: #e2e2e2; color: #111; padding: 15px 18px; }
+body.reference-site #main .review-product-directory .compare-table thead th { background: #f5f5f5; font-size: 14px; font-weight: 600; }
+body.reference-site #main .review-product-directory .compare-table .card-link { font-size: 15px; }
+body.reference-site #main .review-product-directory .compare-range-note { margin-top: 16px; font-size: 14px; color: #606060; }
+body.reference-site #main .catalog-next-grid { gap: 40px; }
+body.reference-site #main .catalog-next-grid h2 { font-size: 28px; line-height: 1.2; }
+body.reference-site #main .catalog-next-grid p { margin-block: 12px 20px; font-size: 16px; }
+body.reference-site #main .catalog-photo-link { color: #111; font-size: 15px; text-decoration-color: #999; }
+body.reference-site #main .catalog-photo-link span { font-size: 13px; color: #606060; }
+
+/* Product details: a specimen and rating first, followed by engineering tables. */
+body.reference-site #main :is(.pdr-wrap, .hvr-wrap) { width: min(1280px, calc(100% - 96px)); }
+body.reference-site #main article.pdr-reference .pdr-hero { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 48px; padding: 32px 0; }
+body.reference-site #main article.pdr-reference h1 { font-size: clamp(36px, 3.8vw, 54px); font-weight: 700; line-height: 1.06; max-width: 20ch; }
+body.reference-site #main article.pdr-reference h2 { font-size: clamp(27px, 2.5vw, 34px); font-weight: 650; line-height: 1.2; margin-bottom: 14px; }
+body.reference-site #main article.pdr-reference h3 { font-size: 20px; line-height: 1.35; font-weight: 600; letter-spacing: -.025em; }
+body.reference-site #main article.pdr-reference .pdr-intro { margin-top: 16px; font-size: 18px; line-height: 1.55; max-width: 44ch; color: #606060; }
+body.reference-site #main article.pdr-reference .pdr-breadcrumbs { font-size: 13px; margin-bottom: 20px; color: #606060; }
+body.reference-site #main article.pdr-reference .pdr-key-facts { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 22px 0; padding-top: 18px; }
+body.reference-site #main article.pdr-reference .pdr-key-facts dt { font-size: 13px; color: #606060; }
+body.reference-site #main article.pdr-reference .pdr-key-facts dd { font-size: 24px; font-weight: 600; line-height: 1.25; color: #111; letter-spacing: -.03em; }
+body.reference-site #main article.pdr-reference .pdr-key-facts small { font-size: 13px; font-weight: 400; color: #606060; line-height: 1.45; letter-spacing: 0; }
+body.reference-site #main article.pdr-reference .pdr-hero-scope { font-size: 14px; color: #606060; }
+body.reference-site #main article.pdr-reference :is(.pdr-main-photo, .pdr-detail-photo, .pdr-thumbnails button, .pdr-photo-grid img) { background: #fff; border-radius: 0; }
+body.reference-site #main article.pdr-reference .pdr-main-photo { aspect-ratio: 4/3; max-height: 510px; }
+body.reference-site #main article.pdr-reference :is(.pdr-main-photo, .pdr-detail-photo, .pdr-thumbnails button, .pdr-photo-grid button) img { object-fit: contain; object-position: center; transform: none; filter: none; }
+body.reference-site #main article.pdr-reference :is(.pdr-main-photo, .pdr-detail-photo) span { color: #626262; }
+body.reference-site #main article.pdr-reference .pdr-thumbnails button { border: 1px solid #e2e2e2; }
+body.reference-site #main article.pdr-reference .pdr-thumbnails button[aria-pressed=true] { border: 2px solid #111; }
+body.reference-site #main article.pdr-reference .pdr-thumbnails .pdr-all-photos { color: #111; background: #f5f5f5; }
+body.reference-site #main article.pdr-reference :is(.pdr-photo-caption, figcaption) { font-size: 13px; color: #606060; }
+body.reference-site #main article.pdr-reference .pdr-section-nav { gap: 0 28px; border-color: #e2e2e2; }
+body.reference-site #main article.pdr-reference .pdr-section-nav a { font-size: 14px; min-height: 48px; color: #111; }
+body.reference-site #main article.pdr-reference .pdr-section-nav a:is(:hover, [aria-current]) { color: #111; border-color: #111; }
+body.reference-site #main article.pdr-reference .pdr-section { padding-block: 36px; border-color: #e2e2e2; }
+body.reference-site #main article.pdr-reference .pdr-spec-groups { gap: 32px; margin-top: 24px; }
+body.reference-site #main article.pdr-reference .pdr-specifications { border-color: #e2e2e2; }
+body.reference-site #main article.pdr-reference .pdr-specifications > div { border-color: #e2e2e2; }
+body.reference-site #main article.pdr-reference .pdr-specifications dt { background: #f5f5f5; color: #606060; }
+body.reference-site #main article.pdr-reference .pdr-specifications dd { background: #fff; color: #111; }
+body.reference-site #main article.pdr-reference .pdr-specifications :is(dt, dd) { padding: 12px 14px; font-size: 15px; }
+body.reference-site #main article.pdr-reference :is(.pdr-table-wrap, .pdr-data-table th, .pdr-data-table td) { border-color: #e2e2e2; }
+body.reference-site #main article.pdr-reference .pdr-data-table th { background: #f5f5f5; color: #111; }
+body.reference-site #main article.pdr-reference .pdr-data-table td { background: #fff; color: #111; }
+body.reference-site #main article.pdr-reference .pdr-data-table :is(th, td) { padding: 12px 16px; font-size: 15px; }
+body.reference-site #main article.pdr-reference .pdr-series-note { background: #f5f5f5; border: 0; border-left: 2px solid #111; padding: 20px 24px; }
+body.reference-site #main article.pdr-reference .pdr-series-note p { font-size: 15px; }
+body.reference-site #main article.pdr-reference .pdr-sample-configurations { margin-top: 24px; }
+body.reference-site #main article.pdr-reference .pdr-sample-configuration { gap: 24px; }
+/* Keep the original CBB60 sample intact while removing the contain gutters. */
+body.reference-site #main article.pdr-reference[data-series="CBB60"] .pdr-detail-photo img {
+  object-fit: cover;
+  object-position: center;
+  mask-image: linear-gradient(to right, transparent, #000 5%, #000 95%, transparent),
+    linear-gradient(to bottom, transparent, #000 5%, #000 95%, transparent);
+  mask-composite: intersect;
+}
+body.reference-site #main article.pdr-reference .pdr-sample-copy :is(p, li, dd) { font-size: 15px; line-height: 1.6; }
+body.reference-site #main article.pdr-reference .pdr-fit-record { margin-top: 28px; padding-top: 24px; }
+body.reference-site #main article.pdr-reference .pdr-fit-list { gap: 28px; }
+body.reference-site #main article.pdr-reference .pdr-fit-list h4 { font-size: 17px; line-height: 1.4; font-weight: 600; }
+body.reference-site #main article.pdr-reference .pdr-applications h3 { font-size: 21px; }
+body.reference-site #main article.pdr-reference :is(.pdr-document-list, .pdr-purchase-list) { margin-top: 20px; }
+body.reference-site #main article.pdr-reference :is(.pdr-document-list, .pdr-purchase-list) > div { padding-block: 16px; border-color: #e2e2e2; }
+body.reference-site #main article.pdr-reference :is(.pdr-document-list, .pdr-purchase-list) dt { font-size: 16px; font-weight: 600; }
+body.reference-site #main article.pdr-reference :is(.pdr-document-list, .pdr-purchase-list) dd { font-size: 16px; color: #606060; }
+body.reference-site #main article.pdr-reference .pdr-rfq { background: #fff; border-block: 1px solid #e2e2e2; padding: 32px 0; margin: 32px 0 0; }
+body.reference-site #main article.pdr-reference .pdr-rfq > p { font-size: 15px; }
+body.reference-site #main article.pdr-reference .pdr-rfq-row { margin-top: 20px; gap: 32px; }
+body.reference-site #main article.pdr-reference .pdr-rfq-checks { font-size: 16px; }
+body.reference-site #main article.pdr-reference .pdr-related { padding: 32px 0 44px; }
+body.reference-site #main article.pdr-reference .pdr-related-grid { gap: 24px; }
+body.reference-site #main article.pdr-reference .pdr-related-grid > a { padding: 0 20px; border-color: #e2e2e2; }
+body.reference-site #main article.pdr-reference .pdr-related-grid > a:first-child { padding-left: 0; }
+body.reference-site #main article.pdr-reference .pdr-related-grid > a:last-child { padding-right: 0; }
+body.reference-site #main article.pdr-reference .pdr-related-grid h3 { font-size: 23px; }
+body.reference-site #main article.pdr-reference .pdr-related-grid img { object-fit: contain; transform: none; }
+body.reference-site #main article.pdr-reference .pdr-note { font-size: 14px; line-height: 1.6; color: #606060; }
+
+/* Actions are black rectangles. Original-photo links remain recognizable exits. */
+body.reference-site #main article.pdr-reference :is(.pdr-button, .pdr-secondary),
+body.reference-site #main article.hvr-reference :is(.hvr-button, .hvr-secondary, .hvr-series-link) {
+  min-height: 44px; padding: 11px 20px; border: 1px solid #111; border-radius: 0;
+  font: 500 14px/1.4 var(--font-body, 'Inter Variable', Arial, sans-serif);
+  background: #111; color: #fff; text-decoration: none; box-shadow: none;
+}
+body.reference-site #main article.pdr-reference .pdr-secondary,
+body.reference-site #main article.hvr-reference :is(.hvr-secondary, .hvr-series-link) { background: #fff; color: #111; border-color: #aaa; }
+body.reference-site #main article.pdr-reference .pdr-button:hover,
+body.reference-site #main article.hvr-reference .hvr-button:hover { background: #333; border-color: #333; color: #fff; }
+body.reference-site #main article.pdr-reference .pdr-secondary:hover,
+body.reference-site #main article.hvr-reference :is(.hvr-secondary, .hvr-series-link):hover { background: #f5f5f5; border-color: #111; color: #111; }
+body.reference-site #main article.pdr-reference :is(.pdr-text-link, .pdr-original-link),
+body.reference-site #main article.hvr-reference :is(.hvr-path-link, .hvr-source a) { color: #111; text-decoration-color: #999; }
+
+/* Original image libraries stay white, with minimal black selection markers. */
+body.reference-site #main .review-photo-library .section { padding-top: 24px; }
+body.reference-site #main .review-photo-library .sample-library-filters { gap: 8px; margin-bottom: 20px; }
+body.reference-site #main .review-photo-library .sample-library-filters button {
+  min-height: 44px; border-radius: 0; background: #fff; border-color: #d6d6d6; color: #111; font-size: 14px; padding: 9px 14px;
+}
+body.reference-site #main .review-photo-library .sample-library-filters button[aria-pressed=true] { background: #111; color: #fff; border-color: #111; }
+body.reference-site #main .review-photo-library .sample-library-filters button[aria-pressed=true] span { color: inherit; }
+body.reference-site #main .review-photo-library .sample-library-reference-note { max-width: 64ch; margin-bottom: 24px; font-size: 15px; line-height: 1.6; color: #606060; }
+body.reference-site #main .review-photo-library .sample-library-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px 24px; }
+body.reference-site #main .review-photo-library .sample-library-grid button { background: #fff; }
+body.reference-site #main .review-photo-library .sample-library-grid img { object-fit: contain; transform: none; filter: none; }
+body.reference-site #main .review-photo-library .sample-library-grid figcaption { margin-top: 12px; line-height: 1.45; }
+body.reference-site #main .review-photo-library .sample-library-grid figcaption strong { font-size: 15px; font-weight: 600; color: #111; }
+body.reference-site #main .review-photo-library .sample-library-grid figcaption span { font-size: 13px; color: #606060; }
+body.reference-site #main :is(.sample-lightbox, article.pdr-reference .pdr-lightbox) { background: #fff; color: #111; border-radius: 0; box-shadow: none; }
+body.reference-site #main article.pdr-reference .pdr-lightbox::backdrop { background: #fff; }
+body.reference-site #main .sample-lightbox::backdrop { background: rgb(0 0 0 / .7); }
+body.reference-site #main .sample-lightbox .sample-lightbox-toolbar { background: #fff; }
+body.reference-site #main :is(.sample-lightbox-toolbar button, .sample-lightbox-controls button, .sample-original-link, article.pdr-reference .pdr-lightbox-header > button, article.pdr-reference .pdr-viewer-toolbar button, article.pdr-reference .pdr-viewer-toolbar a, article.pdr-reference .pdr-viewer-bottom button) {
+  background: #fff; color: #111; border: 1px solid #aaa; border-radius: 0; min-height: 44px; padding: 9px 14px; font-size: 14px; box-shadow: none;
+}
+body.reference-site #main article.pdr-reference .pdr-lightbox-header h2 { font-size: 24px; font-weight: 650; }
+body.reference-site #main article.pdr-reference .pdr-photo-grid span { font-size: 13px; color: #606060; }
+body.reference-site #main article.pdr-reference .pdr-lightbox .pdr-viewer-inquiry .pdr-button { background: #111; color: #fff; border-color: #111; }
+
+/* Applications directory follows the four-image row in the selected reference. */
+body.reference-site #main .review-application-directory .application-directory { padding-top: 24px; }
+body.reference-site #main .review-application-directory .application-directory .grid.two { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+body.reference-site #main .review-application-directory .application-directory .app-card { display: block; background: #fff; border: 0; padding: 0; border-radius: 0; box-shadow: none; }
+body.reference-site #main .review-application-directory .application-card-image a { background: #f5f5f5; }
+body.reference-site #main .review-application-directory .application-card-image img { width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; object-position: center; transform: none; filter: none; }
+body.reference-site #main .review-application-directory .app-card .card-body { padding-top: 14px; }
+body.reference-site #main .review-application-directory .app-card h2 { font-size: 24px; line-height: 1.2; margin-bottom: 6px; }
+body.reference-site #main .review-application-directory .app-card h2 a { display: block; color: #111; }
+body.reference-site #main .review-application-directory .app-card h2 a::after { content: none; }
+body.reference-site #main .review-application-directory .app-card .application-series { margin-bottom: 8px; font-size: 15px; font-weight: 400; color: #606060; }
+body.reference-site #main .review-application-directory .app-card p { margin-bottom: 6px; font-size: 15px; line-height: 1.5; }
+body.reference-site #main .review-application-directory .app-card .card-link { margin-top: 6px; min-height: 44px; font-size: 14px; }
+body.reference-site #main .review-application-directory .application-directory-note { font-size: 14px; line-height: 1.5; margin-top: 24px; color: #606060; }
+body.reference-site #main .review-application-directory .application-next-links { gap: 32px; }
+body.reference-site #main .review-application-directory .application-next-links h2 { font-size: 27px; line-height: 1.2; margin-bottom: 16px; }
+
+/* Application details: equipment image supports a concise circuit-first opening. */
+body.reference-site #main article.hvr-reference .hvr-hero { grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 40px; padding: 32px 0; align-items: start; }
+body.reference-site #main article.hvr-reference h1 { font-size: clamp(34px, 3.8vw, 52px); line-height: 1.08; font-weight: 700; }
+body.reference-site #main article.hvr-reference h2 { font-size: clamp(27px, 2.5vw, 34px); line-height: 1.2; font-weight: 650; margin-bottom: 14px; }
+body.reference-site #main article.hvr-reference h3 { font-size: 20px; line-height: 1.35; font-weight: 600; letter-spacing: -.025em; }
+body.reference-site #main article.hvr-reference .hvr-breadcrumbs { font-size: 13px; margin-bottom: 20px; color: #606060; }
+body.reference-site #main article.hvr-reference .hvr-lead { margin: 16px 0 12px; font-size: 19px; line-height: 1.5; letter-spacing: 0; color: #111; }
+body.reference-site #main article.hvr-reference .hvr-question { font-size: 17px; line-height: 1.6; margin-bottom: 12px; color: #606060; }
+body.reference-site #main article.hvr-reference .hvr-hero-photo { padding-top: 24px; }
+body.reference-site #main article.hvr-reference .hvr-hero-photo img { width: 100%; height: auto; aspect-ratio: 4/3; object-fit: contain; object-position: center; background: #f5f5f5; transform: none; filter: none; }
+body.reference-site #main article.hvr-reference[data-application] .hvr-hero-photo { width: min(100%, 400px); justify-self: end; }
+body.reference-site #main article.hvr-reference[data-application] .hvr-hero-photo img { aspect-ratio: 1; max-height: none; background: transparent; }
+@media (max-width: 800px) {
+  body.reference-site #main article.hvr-reference[data-application] .hvr-hero-photo { width: min(100%, 360px); justify-self: center; }
+}
+body.reference-site #main article.hvr-reference figcaption { font-size: 13px; line-height: 1.5; color: #606060; }
+body.reference-site #main article.hvr-reference .hvr-actions { gap: 12px; margin-top: 20px; }
+body.reference-site #main article.hvr-reference .hvr-section { padding: 32px 0; border-color: #e2e2e2; }
+body.reference-site #main article.hvr-reference .hvr-circuit-paths { gap: 28px; margin-top: 20px; }
+body.reference-site #main article.hvr-reference .hvr-circuit-paths > div { padding-top: 18px; border-color: #e2e2e2; }
+body.reference-site #main article.hvr-reference .hvr-circuit-paths p { font-size: 16px; line-height: 1.6; }
+body.reference-site #main article.hvr-reference .hvr-circuit-paths a { font-size: 14px; }
+body.reference-site #main article.hvr-reference .hvr-table-wrap { margin-top: 20px; }
+body.reference-site #main article.hvr-reference .hvr-comparison :is(th, td) { background: #fff; color: #111; border-color: #e2e2e2; padding: 14px 18px; font-size: 15px; line-height: 1.55; }
+body.reference-site #main article.hvr-reference .hvr-comparison :is(thead th, th:first-child) { background: #f5f5f5; }
+body.reference-site #main article.hvr-reference .hvr-comparison thead strong { font: 650 25px/1.2 var(--font-body, 'Inter Variable', Arial, sans-serif); letter-spacing: -.03em; color: #111; }
+body.reference-site #main article.hvr-reference .hvr-comparison thead span { font-size: 14px; color: #606060; }
+body.reference-site #main article.hvr-reference .hvr-sample-photo { background: #fff; }
+body.reference-site #main article.hvr-reference .hvr-sample-photo img,
+body.reference-site #main article.hvr-reference .hvr-sample-photo[data-series] img { object-fit: contain; object-position: center; transform: none; filter: none; }
+body.reference-site #main article.hvr-reference .hvr-check-layout { grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); gap: 32px; margin-top: 24px; }
+body.reference-site #main article.hvr-reference .hvr-fit-photo > a { background: #fff; aspect-ratio: 4/3; }
+body.reference-site #main article.hvr-reference .hvr-fit-photo img { object-fit: contain; object-position: center; transform: none; filter: none; }
+body.reference-site #main article.hvr-reference .hvr-fit-photo span { background: #fff; color: #111; border: 1px solid #e2e2e2; box-shadow: none; font-size: 13px; }
+body.reference-site #main article.hvr-reference .hvr-inquiry-checklist h3 { font-size: 20px; }
+body.reference-site #main article.hvr-reference .hvr-inquiry-checklist p { font-size: 16px; }
+body.reference-site #main article.hvr-reference :is(.hvr-inquiry-checklist, .hvr-other-formats) p { max-width: 64ch; }
+body.reference-site #main article.hvr-reference .hvr-fit-guides { gap: 12px; }
+body.reference-site #main article.hvr-reference .hvr-other-formats { margin-top: 24px; padding-top: 20px; }
+body.reference-site #main article.hvr-reference .hvr-note { margin-top: 14px; font-size: 14px; line-height: 1.6; color: #606060; }
+body.reference-site #main article.hvr-reference .hvr-source { font-size: 13px; color: #606060; }
+body.reference-site #main article.hvr-reference .hvr-inquiry { background: #fff; padding-bottom: 44px; }
+body.reference-site #main article.hvr-reference .hvr-rfq-fields { margin-top: 20px; font-size: 16px; }
+
+@media (max-width: 1100px) {
+  body.reference-site #main :is(.pdr-wrap, .hvr-wrap) { width: calc(100% - 64px); }
+  body.reference-site #main .review-product-directory .series-catalog,
+  body.reference-site #main .review-application-directory .application-directory .grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 28px; }
+  body.reference-site #main article.pdr-reference .pdr-hero,
+  body.reference-site #main article.hvr-reference .hvr-hero { gap: 32px; }
+  body.reference-site #main article.pdr-reference .pdr-key-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  body.reference-site #main article.pdr-reference .pdr-duty-fact { grid-column: 1 / -1; }
+  body.reference-site #main .review-photo-library .sample-library-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 800px) {
+  body.reference-site #main :is(.pdr-wrap, .hvr-wrap) { width: calc(100% - 40px); }
+  body.reference-site #main .review-product-directory .catalog-heading { flex-direction: column; gap: 12px; }
+  body.reference-site #main article.pdr-reference .pdr-hero,
+  body.reference-site #main article.hvr-reference .hvr-hero { grid-template-columns: 1fr; gap: 24px; padding: 24px 0; }
+  body.reference-site #main article.pdr-reference h1,
+  body.reference-site #main article.hvr-reference h1 { font-size: clamp(34px, 8vw, 46px); max-width: none; }
+  body.reference-site #main article.pdr-reference h2,
+  body.reference-site #main article.hvr-reference h2 { font-size: 27px; }
+  body.reference-site #main article.pdr-reference .pdr-intro { font-size: 17px; }
+  body.reference-site #main article.pdr-reference .pdr-key-facts { gap: 16px; margin-block: 20px; }
+  body.reference-site #main article.pdr-reference .pdr-key-facts dd { font-size: 23px; }
+  body.reference-site #main article.pdr-reference .pdr-main-photo { aspect-ratio: 4/3; max-height: 400px; }
+  body.reference-site #main article.pdr-reference .pdr-section-nav { gap: 24px; flex-wrap: nowrap; overflow-x: auto; }
+  body.reference-site #main article.pdr-reference .pdr-section-nav a { flex: none; min-height: 48px; }
+  body.reference-site #main article.pdr-reference .pdr-section,
+  body.reference-site #main article.hvr-reference .hvr-section { padding-block: 28px; }
+  body.reference-site #main article.pdr-reference .pdr-spec-groups,
+  body.reference-site #main article.pdr-reference .pdr-sample-configuration,
+  body.reference-site #main article.pdr-reference .pdr-sample-pair,
+  body.reference-site #main article.pdr-reference .pdr-fit-list,
+  body.reference-site #main article.hvr-reference .hvr-check-layout { grid-template-columns: 1fr; }
+  body.reference-site #main article.pdr-reference .pdr-specifications > div { grid-template-columns: 1fr; }
+  body.reference-site #main article.pdr-reference .pdr-specifications dt { padding-bottom: 6px; }
+  body.reference-site #main article.pdr-reference .pdr-specifications dd { padding-top: 6px; }
+  body.reference-site #main article.pdr-reference .pdr-rfq { padding: 28px 0; }
+  body.reference-site #main article.pdr-reference .pdr-rfq-row { flex-direction: column; gap: 20px; }
+  body.reference-site #main article.pdr-reference .pdr-related-grid > a { padding: 18px 0 0; }
+  body.reference-site #main article.pdr-reference .pdr-related-grid > a:first-child { border-left: 0; }
+  body.reference-site #main article.hvr-reference .hvr-hero-photo { padding-top: 0; }
+  body.reference-site #main article.hvr-reference .hvr-hero-photo img { max-height: 300px; height: auto; aspect-ratio: 4/3; }
+  body.reference-site #main article.hvr-reference .hvr-circuit-paths,
+  body.reference-site #main article.hvr-reference[data-application="pumps-and-water-systems"] .hvr-circuit-paths { grid-template-columns: 1fr; gap: 20px; }
+  body.reference-site #main article.hvr-reference .hvr-circuit-paths > div { padding-top: 16px; }
+  body.reference-site #main .review-photo-library .sample-library-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 16px; }
+}
+
+@media (max-width: 560px) {
+  /* Give specifications and equipment descriptions a readable mobile line width. */
+  body.reference-site #main .review-product-directory .series-catalog { grid-template-columns: 1fr; gap: 32px; }
+  body.reference-site #main .review-product-directory .series-catalog .sample-catalog-image { aspect-ratio: 4/3; }
+  body.reference-site #main .review-application-directory .application-directory .grid.two { grid-template-columns: 1fr; gap: 36px; }
+  body.reference-site #main .review-application-directory .application-directory .app-card { display: flex; flex-direction: column; }
+  body.reference-site #main .review-application-directory .app-card .card-body { display: flex; flex-direction: column; flex: 1; padding-top: 10px; }
+  body.reference-site #main .review-application-directory .application-card-image img { aspect-ratio: 16/9; object-fit: cover; }
+  body.reference-site #main .review-application-directory .app-card h2 { font-size: 20px; line-height: 1.3; letter-spacing: -.02em; margin-bottom: 6px; }
+  body.reference-site #main .review-application-directory .app-card .application-series { font-size: 14px; line-height: 1.45; }
+  body.reference-site #main .review-application-directory .app-card p { font-size: 16px; line-height: 1.55; }
+  body.reference-site #main .review-application-directory .app-card .card-body > p:not(.application-series) { margin-bottom: 12px; }
+  body.reference-site #main .review-application-directory .app-card .card-link {
+    display: inline-flex; justify-content: center; width: 100%; box-sizing: border-box;
+    min-height: 44px; padding: 9px 10px; margin-top: auto; font-size: 15px; line-height: 1.4; white-space: normal; text-align: center;
+  }
+  body.reference-site #main .review-application-directory .application-next-links h2,
+  body.reference-site #main .catalog-next-grid h2 { font-size: 26px; }
+  body.reference-site #main article.pdr-reference .pdr-key-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  body.reference-site #main article.pdr-reference .pdr-key-facts dd { font-size: 22px; }
+  body.reference-site #main article.pdr-reference .pdr-duty-fact { grid-column: 1 / -1; }
+  body.reference-site #main article.hvr-reference .hvr-hero-photo img { max-height: 250px; }
+  body.reference-site #main .review-photo-library .sample-library-filters button { padding-inline: 10px; }
+}
+
+@media (max-width: 360px) {
+  body.reference-site #main :is(.pdr-wrap, .hvr-wrap) { width: calc(100% - 32px); }
+  body.reference-site #main .review-application-directory .application-directory .grid.two { column-gap: 12px; }
+}

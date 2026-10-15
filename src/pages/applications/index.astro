@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import InquiryCallout from '../../components/InquiryCallout.astro';
+import ApplicationCard from '../../components/ApplicationCard.astro';
+import { applications, APPLICATION_SELECTION_INTRO } from '../../data/site';
+---
+<BaseLayout title="Motor capacitors by application" description="Explore capacitor options for water pumps, fans and blowers, washing machines, and air conditioners or HVAC equipment. Match the original motor rating and connections before selecting a series.">
+  <div class="review-application-directory">
+    <section class="page-hero compact-page-hero application-page-hero"><div class="container"><p class="breadcrumbs"><a href="/">Home</a> / Applications</p><div class="application-directory-heading"><h1>Applications</h1><p>{APPLICATION_SELECTION_INTRO}</p></div></div></section>
+    <section class="section application-directory"><div class="container"><div class="grid two">{applications.map(application => <ApplicationCard application={application} />)}</div></div></section>
+    <InquiryCallout><nav aria-label="Selection references"><a class="card-link" href="/products/">Compare products</a><a class="card-link" href="/resources/read-motor-capacitor-label/">Read the label guide</a></nav></InquiryCallout>
+  </div>
+</BaseLayout>

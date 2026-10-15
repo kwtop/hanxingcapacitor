@@ -1,0 +1,229 @@
+/* Approved porcelain language. Presentation only: page-specific content and behavior retain their owners. */
+body.porcelain-site {
+ --paper:#f6f5f1; --cream:#eeede7; --ink:#202629; --muted:#5b5f61; --line:#cfd3cb;
+ --accent:#b45c2c; --accent-hover:#93451f; --green:#202629; --green-deep:#202629;
+ --font-heading:Georgia,'Times New Roman',serif; --radius:2px; --content-width:1440px; --space-section:72px;
+ --type-button-size:16px; --type-button-weight:500; --type-button-tracking:0;
+ --porcelain-section-space:clamp(48px,4.5vw,72px); --porcelain-column-gap:40px;
+ --type-h1-family:var(--font-heading); --type-h1-size:clamp(40px,4.2vw,62px); --type-h1-weight:400; --type-h1-leading:1.12; --type-h1-tracking:-.025em;
+ --type-h2-family:var(--font-heading); --type-h2-size:clamp(32px,3.1vw,44px); --type-h2-weight:400; --type-h2-leading:1.18; --type-h2-tracking:-.025em;
+ --type-h3-family:var(--font-heading); --type-h3-size:28px; --type-h3-weight:400; --type-h3-leading:1.25; --type-h3-tracking:-.015em;
+ --type-h1-font:var(--type-h1-weight) var(--type-h1-size)/var(--type-h1-leading) var(--type-h1-family);
+ --type-h2-font:var(--type-h2-weight) var(--type-h2-size)/var(--type-h2-leading) var(--type-h2-family);
+ --type-h3-font:var(--type-h3-weight) var(--type-h3-size)/var(--type-h3-leading) var(--type-h3-family);
+ --text-title:var(--type-h1-size); --text-heading:var(--type-h2-size);
+ background:var(--paper); color:var(--ink);
+}
+.porcelain-site #main :is(h1,h2,h3) {font-family:var(--font-heading);font-weight:400;color:var(--ink);letter-spacing:-.025em;text-wrap:balance;overflow-wrap:normal}
+.porcelain-site #main h3:not(.type-h3) {font-size:28px;line-height:1.25}
+.porcelain-site .container {width:min(calc(100% - 128px),var(--content-width))}
+.porcelain-site .site-header,.porcelain-site .site-header.home-header,.porcelain-site .nav-dropdown,.porcelain-site .mobile-menu {background:var(--paper)}
+.porcelain-site .site-header .header-inner {width:min(calc(100% - 128px),var(--content-width));gap:28px}
+.porcelain-site .button,.porcelain-site .filter-chip {font-weight:500;min-height:48px}
+.porcelain-site #main :is(.button:not(.text),.pdr-button,.pdr-secondary,.hvr-button,.hvr-secondary,.hvr-series-link,.packing-button) {font:var(--type-button-font);min-height:48px;padding:12px 26px;border-radius:2px;text-align:center}
+.porcelain-site #main :is(.button.secondary,.pdr-secondary,.hvr-secondary,.hvr-series-link,.packing-button--secondary) {background:transparent;color:var(--accent);border-color:var(--accent)}
+.porcelain-site #main :is(.button.secondary,.pdr-secondary,.hvr-secondary,.hvr-series-link,.packing-button--secondary):hover {background:var(--cream);color:var(--accent-hover);border-color:var(--accent-hover)}
+.porcelain-site #main :is(.breadcrumbs,.pdr-breadcrumbs,.hvr-breadcrumbs,.packing-breadcrumb) {font:400 14px/1.5 var(--font-body);color:var(--muted);letter-spacing:0;gap:6px;margin:0 0 20px}
+.porcelain-site #main :is(.image-provenance,.application-card-image figcaption,.hvr-source,.pdr-photo-caption,.rfq-hero-photo figcaption,.packing-dispatch-photo figcaption) {font:400 13px/1.5 var(--font-body);color:var(--muted);margin-top:12px}
+.porcelain-site .filter-chip.active {background:var(--accent);border-color:var(--accent);color:white}
+.porcelain-site #main .sample-library-filters button {background:var(--paper);border-radius:2px;min-height:48px}
+.porcelain-site #main .sample-library-filters button[aria-pressed=true] {background:var(--accent);border-color:var(--accent);color:white}
+.porcelain-site #main .sample-library-filters button[aria-pressed=true] span {color:inherit}
+.porcelain-site #main .page-hero:not(.product-dossier-hero) {padding:48px 0 38px;border-bottom:1px solid var(--line);background:var(--paper)}
+.porcelain-site #main .page-hero:not(.product-dossier-hero)+.section {padding-top:48px}
+.porcelain-site #main .section {padding-bottom:var(--porcelain-section-space)}
+.porcelain-site #main .lead {font-size:20px;line-height:1.6}
+.porcelain-site #main :is(.card-link,.rfq-guide-link,.guide-related>a):not([target=_blank]) {background:transparent}
+.porcelain-site #main :is(.image-frame,.technical-image,.media-image,.video-frame,.photo-detail) {border-radius:0}
+.porcelain-site #main :is(.cta-band,.guide-inquiry) {background:#fafaf7;color:var(--ink);border:1px solid var(--line);border-radius:0}
+.porcelain-site #main .cta-band :is(h2,p) {color:var(--ink)}
+.porcelain-site #main .cta-band .button.lime {background:var(--accent);border-color:var(--accent);color:white}
+
+/* Directories: product specimens and application photographs, rather than boxed summaries. */
+.porcelain-site #main .series-catalog {grid-template-columns:repeat(4,minmax(0,1fr));gap:32px}
+.porcelain-site #main .series-catalog .product-card {display:flex;flex-direction:column;padding:0;border:0;min-width:0}
+.porcelain-site #main .series-catalog .sample-catalog-image {aspect-ratio:1/1.05;background:var(--cream)}
+.porcelain-site #main .series-catalog .card-body {display:flex;flex-direction:column;align-items:flex-start;flex:1;padding-top:24px}
+.porcelain-site #main .series-catalog .card-body>.card-link {margin-top:auto}
+.porcelain-site #main .series-catalog .card-body>p {margin-bottom:20px}
+.porcelain-site #main .series-catalog h2 {font-size:30px;line-height:1.15;margin-bottom:18px}
+.porcelain-site #main .series-catalog .series-name {font-family:var(--font-body);font-size:16px;line-height:1.65;font-weight:400;letter-spacing:0;margin-top:10px}
+.porcelain-site #main .series-catalog p {font-size:16px;line-height:1.65}
+.porcelain-site #main:has(> .application-directory) {display:block;width:auto;margin:0;padding:0}
+.porcelain-site #main:has(> .application-directory)>section>.container {width:min(calc(100% - 128px),var(--content-width));margin-inline:auto}
+.porcelain-site #main .application-directory .grid.two {gap:52px 40px}
+.porcelain-site #main .application-directory .app-card {display:block;padding:0;border:0;background:transparent}
+.porcelain-site #main .application-directory .app-card .card-body {display:block;padding:24px 0 0}
+.porcelain-site #main .application-directory .app-card h2 {font-size:34px;line-height:1.2;margin-bottom:14px}
+.porcelain-site #main .application-directory .app-card h2 a {display:flex;justify-content:space-between;align-items:baseline;gap:18px}
+.porcelain-site #main .application-directory .app-card h2 a::after {content:'→';font:22px/1 Arial,sans-serif;color:var(--accent)}
+.porcelain-site #main .application-directory .app-card .application-series {margin-bottom:14px}
+.porcelain-site #main .application-card-image img {aspect-ratio:1.9;object-fit:cover}
+
+/* Engineering pages: maintain the complete data grids and original, series-specific image framing. */
+.porcelain-site #main :is(article.pdr-reference,article.hvr-reference) {background:var(--paper);color:var(--ink);--pdr-line:var(--line);--pdr-muted:var(--muted);--pdr-accent:var(--accent);--hvr-line:var(--line);--hvr-muted:var(--muted);--hvr-accent:var(--accent)}
+.porcelain-site #main :is(.pdr-wrap,.hvr-wrap) {width:min(calc(100% - 128px),var(--content-width))}
+.porcelain-site #main :is(article.pdr-reference,article.hvr-reference) h1 {font:var(--type-h1-font);color:var(--ink);max-width:30ch}
+.porcelain-site #main :is(article.pdr-reference,article.hvr-reference) h2 {font:var(--type-h2-font);color:var(--ink)}
+.porcelain-site #main :is(article.pdr-reference,article.hvr-reference) h3 {font:var(--type-h3-font);color:var(--ink)}
+.porcelain-site #main .pdr-hero {padding:36px 0 48px;gap:56px;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}
+.porcelain-site #main article.pdr-reference .pdr-intro {font-size:20px;line-height:1.6}
+.porcelain-site #main .pdr-key-facts dd {font-family:var(--font-body);font-size:30px;font-weight:500;letter-spacing:0}
+.porcelain-site #main .pdr-section {padding:48px 0}
+.porcelain-site #main :is(.pdr-commercial,.pdr-series-note,.pdr-rfq) {background:#eeede7}
+.porcelain-site #main :is(.pdr-specifications dt,.pdr-oem-table dt) {background:#eeede7}
+.porcelain-site #main :is(.pdr-main-photo,.pdr-detail-photo,.pdr-thumbnails button) {background:#eeede7}
+.porcelain-site #main .pdr-rfq {margin-inline:0}
+.porcelain-site #main .pdr-related-grid h3 {font-size:25px}
+.porcelain-site #main :is(.pdr-lightbox,.sample-lightbox,.photo-dialog) {background:var(--paper);color:var(--ink);border-radius:0}
+.porcelain-site #main .pdr-lightbox::backdrop {background:var(--paper)}
+.porcelain-site #main article.pdr-reference .pdr-lightbox-header h2 {font-size:26px;line-height:1.25}
+.porcelain-site #main article.pdr-reference .pdr-lightbox-header p {font-size:14px;line-height:1.6}
+.porcelain-site #main .pdr-lightbox :is(button,.pdr-viewer-toolbar a) {background:transparent;border-color:var(--line);color:var(--ink)}
+.porcelain-site #main .compare-wrap {border-radius:0;background:transparent}
+.porcelain-site #main .compare-table :is(th,td) {background:var(--paper)}
+.porcelain-site #main .compare-table thead th {background:#eeede7;border-top:1px solid var(--line)}
+.porcelain-site #main .hvr-hero {padding:36px 0 48px;gap:32px 48px}
+.porcelain-site #main article.hvr-reference .hvr-lead {font-size:20px;line-height:1.6}
+.porcelain-site #main .hvr-circuits h2 {font-size:26px;line-height:1.3}
+.porcelain-site #main .hvr-section {padding:44px 0}
+.porcelain-site #main .hvr-comparison :is(td,th) {background:var(--paper);color:var(--ink)}
+.porcelain-site #main .hvr-comparison :is(thead th,th:first-child) {background:#eeede7}
+.porcelain-site #main .hvr-comparison thead strong {font:400 28px/1.25 var(--font-heading);color:var(--ink)}
+.porcelain-site #main :is(.hvr-checks h3,.hvr-details h3) {font-size:24px}
+.porcelain-site #main .hvr-inquiry>.hvr-button {margin-top:24px}
+
+/* Reading and procurement pages retain their different editorial formats. */
+.porcelain-site #main .task-guide-row {grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;padding:30px 0}
+.porcelain-site #main .task-guide-row .card-title {font-size:28px}
+.porcelain-site #main .task-guide-row .card-title .card-link {padding:0;border:0;color:var(--ink);font:inherit;line-height:1.3;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:7px;min-height:44px}
+.porcelain-site #main .task-guide-row .card-title .card-link:hover {color:var(--accent)}
+.porcelain-site #main .guide-body>.sidebar-layout {gap:64px;grid-template-columns:minmax(0,1fr) 264px}
+.porcelain-site #main .guide-body .editorial {max-width:78ch}
+.porcelain-site #main .guide-body .guide-sections h2 {font-size:34px;line-height:1.22}
+.porcelain-site #main .guide-body .guide-example-copy h3 {font-size:26px;line-height:1.25}
+.porcelain-site #main .guide-body[data-guide-format=sequence] .guide-sections h2 {font-size:28px}
+.porcelain-site #main .guide-navigation {border-color:var(--line);background:transparent}
+.porcelain-site #main .company-story h2,.porcelain-site #main .company-profile h2 {font-size:var(--type-h2-size)}
+.porcelain-site #main .factory-dossier-hero,.porcelain-site #main .rfq-hero {background:var(--paper);padding:44px 0}
+.porcelain-site #main .factory-footage-grid h3 {font-size:28px}
+.porcelain-site #main .factory-dossier :is(.factory-dossier-media,.factory-documents,.factory-dossier-process) {padding-block:var(--porcelain-section-space)}
+.porcelain-site #main .factory-document-request {background:#eeede7}
+.porcelain-site #main .factory-dossier-process {background:#eeede7;color:var(--ink);border-block:1px solid var(--line)}
+.porcelain-site #main .factory-dossier-process :is(.factory-section-intro,.factory-process-rows p) {color:var(--muted)}
+.porcelain-site #main .factory-dossier-process .factory-source-link {color:var(--accent);text-decoration-color:var(--accent)}
+.porcelain-site #main .factory-process-rows article {border-color:var(--line)}
+.porcelain-site #main .packing-page .packing-wrap {width:min(calc(100% - 128px),var(--content-width))}
+.porcelain-site #main .packing-page .packing-hero {background:var(--paper)}
+.porcelain-site #main .rfq-message {background:#eeede7;color:var(--ink);padding-block:56px;border-block:1px solid var(--line)}
+.porcelain-site #main .rfq-message :is(h2,h3) {color:var(--ink)}
+.porcelain-site #main .rfq-message p {color:var(--muted)}
+.porcelain-site #main .rfq-message .rfq-template {background:#fafaf7;color:var(--ink);border:1px solid var(--line);padding:28px}
+.porcelain-site #main .rfq-message .button.secondary {background:transparent;color:var(--accent);border-color:var(--accent)}
+.porcelain-site #main .rfq-message .button.secondary:hover {background:var(--paper)}
+.porcelain-site #main .rfq-ready {border-color:var(--line)}
+.porcelain-site #main .rfq-field-notes {padding-block:56px}
+.porcelain-site #main .contact-form-layout {grid-template-columns:minmax(0,.65fr) minmax(0,1.35fr);gap:56px;grid-template-areas:'direct form';grid-template-rows:auto}
+.porcelain-site #main .contact-inquiry-form {background:transparent;border-top:1px solid var(--line);padding-top:24px}
+.porcelain-site #main .contact-direct address {font-size:16px;line-height:1.8;font-style:normal}
+.porcelain-site #main .field :is(input:not([type=radio]),select,textarea) {background:#fafaf7;border:1px solid #b9beb5;padding:12px 14px;min-height:48px;border-radius:2px}
+.porcelain-site #main .contact-channel-choice {border-color:var(--line);background:transparent}
+.porcelain-site #main .faq-group summary {font-family:var(--font-heading);font-size:23px;font-weight:400;line-height:1.4}
+.porcelain-site #main .faq-group details {border-color:var(--line);background:transparent}
+
+/* Comfortable laptop density without reducing body copy or mobile tap targets. */
+@media(min-width:801px) and (max-width:1600px) {
+ body.porcelain-site {--type-h1-size:clamp(42px,3.8vw,56px);--type-h2-size:clamp(34px,3vw,44px);--space-section:var(--porcelain-section-space)}
+ .porcelain-site #main .page-hero:not(.product-dossier-hero) {padding:32px 0 28px}
+ .porcelain-site #main .page-hero:not(.product-dossier-hero)+.section {padding-top:32px}
+ .porcelain-site #main .section {padding-bottom:var(--porcelain-section-space)}
+ .porcelain-site #main .pdr-hero {padding:28px 0 32px;gap:36px;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr)}
+ .porcelain-site #main article.pdr-reference .pdr-intro {font-size:18px;line-height:1.6}
+ .porcelain-site #main .pdr-key-facts {grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 24px;margin-block:20px;padding-top:18px}
+ .porcelain-site #main .pdr-key-facts dd {font-size:26px}
+ .porcelain-site #main .pdr-main-photo {aspect-ratio:1.5}
+ .porcelain-site #main .hvr-hero {padding:28px 0 32px;gap:32px}
+ .porcelain-site #main .hvr-hero .hvr-lead {font-size:18px}
+ .porcelain-site #main .series-catalog .sample-catalog-image {aspect-ratio:1.2}
+ .porcelain-site #main .series-catalog .card-body {padding-top:20px}
+ .porcelain-site #main .factory-dossier-hero,.porcelain-site #main .rfq-hero {padding:32px 0}
+}
+@media(max-width:1100px) {
+ .porcelain-site .footer-main {grid-template-columns:repeat(2,minmax(0,1fr));gap:40px}
+ .porcelain-site .container,.porcelain-site .site-header .header-inner,.porcelain-site #main :is(.pdr-wrap,.hvr-wrap),.porcelain-site #main .packing-page .packing-wrap,.porcelain-site #main:has(> .application-directory)>section>.container {width:calc(100% - 64px)}
+ .porcelain-site .site-header .header-inner {gap:18px}
+ .porcelain-site #main .series-catalog {grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 28px}
+ .porcelain-site #main .pdr-hero {gap:32px}
+ .porcelain-site #main .guide-body>.sidebar-layout {gap:36px;grid-template-columns:minmax(0,1fr) 220px}
+ .porcelain-site #main .contact-form-layout {gap:32px;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr)}
+}
+/* Keep the existing desktop/mobile navigation logic; compact the intermediate-width header. */
+@media(min-width:801px) and (max-width:1000px) {
+ .porcelain-site .site-header .header-inner {gap:12px}
+ .porcelain-site .site-header .brand {flex-shrink:0;gap:8px}
+ .porcelain-site .site-header .brand-logo {width:30px;height:30px}
+ .porcelain-site .site-header .brand-wordmark {font-size:18px}
+ .porcelain-site .site-header .desktop-nav {gap:6px}
+ .porcelain-site .site-header .nav-link {font-size:14px}
+ .porcelain-site .site-header .nav-disclosure {width:18px}
+ .porcelain-site .site-header .header-cta {font-size:14px;padding-inline:14px}
+}
+@media(max-width:800px) {
+ body.porcelain-site {--type-h1-size:clamp(34px,6.2vw,44px);--type-h2-size:34px;--type-h3-size:26px;--space-section:48px;--porcelain-section-space:48px;--porcelain-column-gap:28px}
+ .porcelain-site .container,.porcelain-site .site-header .header-inner,.porcelain-site #main :is(.pdr-wrap,.hvr-wrap),.porcelain-site #main .packing-page .packing-wrap,.porcelain-site #main:has(> .application-directory)>section>.container {width:calc(100% - 40px)}
+ .porcelain-site #main .page-hero:not(.product-dossier-hero) {padding:32px 0 28px}
+ .porcelain-site #main .page-hero:not(.product-dossier-hero)+.section {padding-top:32px}
+ .porcelain-site #main .section {padding-bottom:48px}
+ .porcelain-site #main h3:not(.type-h3) {font-size:26px}
+ .porcelain-site #main :is(.lead,article.pdr-reference .pdr-intro,article.hvr-reference .hvr-lead,.packing-page .packing-lead) {font-size:16px;line-height:1.65}
+ .porcelain-site #main :is(.breadcrumbs,.pdr-breadcrumbs,.hvr-breadcrumbs,.packing-breadcrumb) {font-size:12px;margin-bottom:18px;overflow-wrap:anywhere}
+ .porcelain-site #main :is(.button:not(.text),.pdr-button,.pdr-secondary,.hvr-button,.hvr-secondary,.hvr-series-link,.packing-button) {white-space:normal;padding-inline:20px}
+ .porcelain-site #main .application-directory .grid.two {gap:36px}
+ .porcelain-site #main .application-directory .app-card h2 {font-size:30px}
+ .porcelain-site #main .pdr-hero {grid-template-columns:1fr;padding:24px 0 32px;gap:28px}
+ .porcelain-site #main .pdr-key-facts {grid-template-columns:1fr 1fr;gap:16px}
+ .porcelain-site #main .pdr-key-facts dd {font-size:26px}
+ .porcelain-site #main :is(.pdr-section,.hvr-section) {padding-block:32px}
+ .porcelain-site #main .pdr-rfq {padding:24px 20px}
+ .porcelain-site #main .hvr-hero {grid-template-columns:1fr;padding:24px 0 32px;gap:28px}
+ .porcelain-site #main .hvr-circuits {grid-template-columns:1fr;gap:0}
+ .porcelain-site #main .hvr-circuits>div {padding:16px 0;border:0;border-bottom:1px solid var(--line)}
+ .porcelain-site #main .hvr-circuits p {max-width:none}
+ .porcelain-site #main .task-guide-row {grid-template-columns:1fr;gap:14px;padding:26px 0}
+ .porcelain-site #main .guide-body>.sidebar-layout {grid-template-columns:1fr;gap:28px}
+ .porcelain-site #main .guide-body .guide-navigation {display:contents}
+ .porcelain-site #main .guide-body .guide-toc {grid-row:1}
+ .porcelain-site #main .guide-body .editorial {grid-row:2}
+ .porcelain-site #main .guide-body .guide-related {grid-row:3;border-top:1px solid var(--line);padding-top:24px}
+ .porcelain-site #main .guide-hero .guide-entry-actions {gap:8px 20px}
+ .porcelain-site #main .guide-hero .guide-entry-actions .card-link:not(:first-child) {padding:6px 0;border:0;min-height:40px;font-size:14px;color:var(--accent);text-decoration:underline;text-underline-offset:5px}
+ .porcelain-site #main article.pdr-reference .pdr-lightbox-header h2 {font-size:23px}
+ .porcelain-site #main .guide-body .guide-sections h2 {font-size:30px}
+ .porcelain-site #main .company-story h2 {font-size:var(--type-h2-size)}
+ .porcelain-site #main .factory-dossier-hero,.porcelain-site #main .rfq-hero {padding:28px 0}
+ .porcelain-site #main .factory-dossier :is(.factory-dossier-media,.factory-documents,.factory-dossier-process),.porcelain-site #main :is(.rfq-message,.rfq-field-notes) {padding-block:40px}
+ .porcelain-site #main .rfq-message .rfq-template {padding:20px}
+ .porcelain-site #main .rfq-ready {padding-left:0;border-left:0;border-top:1px solid var(--line);padding-top:24px}
+ .porcelain-site #main .contact-form-layout {display:flex;flex-direction:column;gap:32px}
+ .porcelain-site #main .contact-form-layout .contact-inquiry-form {order:0;width:100%}
+ .porcelain-site #main .contact-form-layout .contact-form-intro {width:100%}
+ .porcelain-site #main .faq-group summary {font-size:22px}
+}
+@media(max-width:570px) {
+ .porcelain-site .footer-main {grid-template-columns:minmax(0,1fr);gap:32px}
+ .porcelain-site #main .oem-commercial .purchase-flow {grid-template-columns:minmax(0,1fr);gap:28px}
+ .porcelain-site #main .oem-commercial .purchase-flow li {padding:0}
+ .porcelain-site #main .oem-commercial .purchase-flow p {max-width:none}
+ .porcelain-site #main .series-catalog {grid-template-columns:1fr;gap:36px}
+ .porcelain-site #main .series-catalog .sample-catalog-image {aspect-ratio:1.15}
+ .porcelain-site #main .series-catalog .card-body {padding-top:20px}
+ .porcelain-site #main .pdr-key-facts {grid-template-columns:1fr 1fr}
+ .porcelain-site #main .pdr-thumbnails {grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+ .porcelain-site #main .pdr-thumbnails .pdr-all-photos {grid-column:1/-1;aspect-ratio:auto;min-height:44px;flex-direction:row;gap:8px}
+ .porcelain-site #main .pdr-all-photos strong {font-size:20px}
+ .porcelain-site #main .pdr-all-photos span {margin-top:0;white-space:nowrap}
+ .porcelain-site #main .button {white-space:normal}
+}
+@media(max-width:360px) {
+ .porcelain-site #main .pdr-key-facts {grid-template-columns:1fr}
+}

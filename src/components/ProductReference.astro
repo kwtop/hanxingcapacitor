@@ -1,0 +1,88 @@
+---
+import ProductReferenceGallery from './ProductReferenceGallery';
+import InquiryCallout from './InquiryCallout.astro';
+import { STANDARD_MOQ_PCS, type Product } from '../data/site';
+import { productReference, seriesFormats, type ReferenceGalleryPhoto } from '../data/productReference';
+import { sampleConfigurations } from '../data/sampleConfigurations';
+import '../styles/product-reference.css';
+interface Props { product: Product; photos: ReferenceGalleryPhoto[]; others: Product[]; }
+const { product, photos, others } = Astro.props;
+const { code } = product;
+const content = productReference[code];
+const samples = sampleConfigurations.filter(sample => sample.series === code);
+const rfq = '/contact/?series=' + code + '&request=quote#inquiry-form';
+const electrical = [
+  ['Function', product.function + ' duty'],
+  ...(code === 'CBB65' ? [] : [['Capacitance range', product.capacitance], ['Rated voltage', product.voltage]]),
+  ['Capacitance tolerance', product.tolerance], ['Frequency', product.frequency], ['Operating temperature', product.temperature],
+];
+const mechanical = [
+  ['Case format', seriesFormats[code].case],
+  ...(code === 'CBB65' ? [] : [['Published case-size range', product.dimensions]]),
+  ['Construction', product.construction], ['Connection', product.terminals],
+];
+const sampleChecks: Record<string, string[]> = {
+  'cbb60-stud': ['Measure the body diameter and height separately from the base stud.', 'Include stud and fixing dimensions, lead length and clearance around the installed leads.'],
+  'cbb61-blades': ['Each label belongs to a separate sample. Specify the individual rating required.', 'Measure case L / W / H, blade spacing and fixing positions; include a photo of the blade pattern.'],
+  'cbb61-leads': ['Specify the µF and VAC required. Ratings for these wire-lead samples have not been identified.', 'Include the red lead exit, length, connector and mounting-tab positions, with a wiring diagram. Wire count alone is insufficient.'],
+  'cbb65-single': ['Copy the single µF value and rated VAC from the original part.', 'Use the model drawing to check can diameter, height, mounting and terminal clearance.'],
+  'cbb65-dual': ['Keep the rating as 50+5 µF: it describes two independent sections.', 'Match each terminal-group marking to its connection in the motor and capacitor drawings.'],
+  'cd60-start': ['This sample reads 500 µF ±5%, 300 VAC. Its tolerance differs from the series table.', 'Copy −40°C/70°C/21 as printed; this label marking is separate from the published operating-temperature range.', 'Request the permitted starting time, interval between starts and switching arrangement.'],
+};
+const documents = [
+  ['Current datasheet', 'Exact model number and revision, µF, VAC, tolerance, frequency and operating temperature.'],
+  ['Dimensioned drawing & revision', content.documentDimensions + ' ' + content.documentConnections],
+  ['Duty information', content.documentDuty + (code === 'CD60' ? ' Confirm permitted start duration and repeat-start cycle.' : '')],
+  ['Test reports & certificates', 'Documents for the quoted model and destination requirements, including the issuer, scope and validity where applicable.'],
+];
+---
+<article class="pdr-reference" data-series={code}>
+  <div class="pdr-wrap">
+    <section class="pdr-hero" aria-labelledby="pdr-title">
+      <nav class="pdr-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/products/">Products</a><span>/</span><span aria-current="page">{code}</span></nav>
+      <div class="pdr-hero-copy">
+        <h1 id="pdr-title">{code}<br />{code === 'CBB65' ? 'single & dual-run capacitors' : product.title.slice(code.length).trim()}</h1>
+        <dl class="pdr-key-facts">
+          <div class="pdr-duty-fact"><dt>Duty</dt><dd>{product.function}<small>{content.dutyContext}</small></dd></div>
+          {code === 'CBB65' ? <>
+            <div><dt>Single run</dt><dd>2–100 µF<small>110–450 VAC</small></dd></div>
+            <div><dt>Dual run · published range</dt><dd>1+15 to 15+80 µF<small>370–450 VAC</small></dd></div>
+          </> : <><div><dt>Capacitance range</dt><dd>{product.capacitance}</dd></div><div><dt>Rated voltage</dt><dd>{product.voltage}</dd></div></>}
+        </dl>
+        {code === 'CBB65' && <p class="pdr-hero-scope"><a href="#single-run-specifications">Single-run specifications</a><span aria-hidden="true"> · </span><a href="#dual-run-specifications">Dual-run specifications</a>. Record both dual-run µF values.</p>}
+        {code === 'CD60' && <p class="pdr-hero-scope">The circuit must switch the capacitor out after starting. Ask for the model’s permitted starting time and interval between starts.</p>}
+        <a class="pdr-button" href={rfq}>Prepare {code} RFQ</a>
+      </div>
+      <ProductReferenceGallery client:load photos={photos} code={code} />
+    </section>
+
+    <section class="pdr-section" id="specifications">
+      <h2>Technical specifications</h2>
+      {code === 'CBB65' && <div class="pdr-variant-specifications"><h3>Single and dual-run ranges</h3><p class="pdr-table-hint">Swipe horizontally to compare the two configurations.</p><div class="pdr-table-wrap" role="region" aria-label="Single and dual-run specifications" tabindex="0"><table class="pdr-data-table"><thead><tr><th scope="col">Field</th><th scope="col" id="single-run-specifications">Single run</th><th scope="col" id="dual-run-specifications">Dual run</th></tr></thead><tbody><tr><th scope="row">Capacitance range</th><td>2–100 µF</td><td>Published range 1+15 to 15+80 µF</td></tr><tr><th scope="row">Rated voltage</th><td>110–450 VAC</td><td>370–450 VAC</td></tr><tr><th scope="row">Published case-size range</th><td>D 30–65 × H 55–135 mm</td><td>D 50–65 × H 75–125 mm</td></tr><tr><th scope="row">Connection check</th><td>Verify the terminal-group layout.</td><td>Record both values and verify each terminal-group mapping.</td></tr></tbody></table></div><p class="pdr-note">A dual-run marking gives two independent capacitance values. Do not add them. <a href="/resources/single-vs-dual-run-capacitors/">Compare single and dual run</a>.</p></div>}
+      <div class="pdr-spec-groups"><div><h3>Electrical</h3><dl class="pdr-specifications">{electrical.map(([label,value]) => <div><dt>{label}</dt><dd>{value}</dd></div>)}</dl></div><div><h3>Case & connection</h3><dl class="pdr-specifications">{mechanical.map(([label,value]) => <div><dt>{label}</dt><dd>{value}</dd></div>)}</dl></div></div>
+      <p class="technical-body-copy">{product.intro}</p>
+      {code === 'CD60' && <div class="pdr-series-note"><h3>Sample label and series data</h3><p>The photographed sample reads 500 µF ±5%, 300 VAC, while the series lists ±10% / ±20% tolerance. Keep its −40°C/70°C/21 marking as printed and ask for the model datasheet to interpret it; the published operating-temperature range remains as shown above.</p><p>The permitted starting time and interval between starts also need to be specified for the model quoted.</p></div>}
+      <div class="pdr-model-confirmation"><h3>Selecting a model</h3><p>{code === 'CD60' ? 'The starting circuit, switching arrangement and duty limits must match the motor requirements.' : 'Match the electrical rating to the original motor specification, then use the model drawing to check connections and installation space.'} Availability depends on rating, case and connection; not every combination is available.</p><p class="pdr-note"><a href="#model-documents">Datasheet and drawing requirements</a> · <a href={product.source} target="_blank" rel="noopener noreferrer">Series information</a></p></div>
+    </section>
+
+    <section class="pdr-section" id="sample-configurations">
+      <h2>Sample configurations & fit</h2>
+      <div class:list={['pdr-sample-configurations', { 'pdr-sample-pair': samples.length > 1 }]}>{samples.map(sample => {
+        const reference = photos.find(photo => photo.src === sample.image);
+        return <div class="pdr-sample-configuration"><figure><div class="pdr-detail-photo"><img src={sample.image} alt={code + ': ' + sample.name + '. ' + sample.connection + '.'} width="2000" height="2000" loading="lazy" /></div>{code !== 'CBB60' && reference?.id && <figcaption>{reference.id}</figcaption>}</figure><div class="pdr-sample-copy"><h3>{sample.name}</h3><dl><div><dt>Visible markings</dt><dd>{sample.rating}</dd></div><div><dt>Connection / fixing</dt><dd>{sample.connection}</dd></div></dl><ul>{sampleChecks[sample.id].map(check => <li>{check}</li>)}</ul><p class="pdr-note">{sample.note}</p></div></div>;
+      })}</div>
+      <div class="pdr-fit-record"><h3>Record the installed fit</h3><ul class="pdr-fit-list">{content.fit.map(item => <li><h4>{item.title}</h4><p>{item.text}</p></li>)}</ul><div class="pdr-fit-actions"><a class="pdr-text-link" href="/resources/dimensions-terminals-mounting/">Dimensions & connection guide</a></div></div>
+    </section>
+
+    <section class="pdr-section" id="pdr-applications"><h2>Applications</h2><ul class="pdr-applications">{content.applications.map(application => <li><h3>{application.href ? <a href={application.href}>{application.title}</a> : application.title}</h3><p>{application.examples}</p></li>)}</ul><p class="pdr-note">{content.applicationIntro}</p><p class="pdr-note">Select duty from the motor specification. <a href={product.decisionGuide.href}>{product.decisionGuide.label}</a>.</p></section>
+
+    <section class="pdr-section" id="model-documents"><h2>{code} datasheets &amp; drawings</h2><dl class="pdr-document-list">{documents.map(([label,value]) => <div><dt>{label}</dt><dd>{value}</dd></div>)}</dl><p class="technical-body-copy">Model files are not published here. Request the required documents with configuration, destination, revision and scope.</p><div class="pdr-resource-actions"><a class="pdr-button" href={'/contact/?series=' + code + '&request=documents#inquiry-form'}>Request model documents</a><a class="pdr-secondary" href="/factory/#model-records">Document checklist</a></div></section>
+
+    <section class="pdr-section" id="pdr-purchasing"><h2>Ordering &amp; samples</h2><dl class="pdr-purchase-list"><div><dt>Standard MOQ</dt><dd>{STANDARD_MOQ_PCS.toLocaleString('en-US')} pieces. The quotation must state the minimum for your configuration.</dd></div><div><dt>Samples &amp; timing</dt><dd>Agree the sample quantity, charges and preparation time separately. Production lead time and delivery dates belong in the written quotation.</dd></div><div><dt>Label &amp; packing</dt><dd>Send artwork and any connection or packing requirements with the model specification.</dd></div></dl><div class="pdr-resource-actions"><a class="pdr-secondary" href="/oem/">OEM requirements</a><a class="pdr-secondary" href="/factory/packing-and-dispatch/">Packing &amp; dispatch</a><a class="pdr-secondary" href="/resources/motor-capacitor-order-shipment-checklist/">Order checklist</a></div></section>
+
+    <InquiryCallout id="prepare-rfq" contained href={rfq} defaultSeries={code}><ul><li>Original capacitor label or model number and motor duty</li><li>{code === 'CBB65' ? 'Single or dual run; both dual-run µF values and rated VAC' : 'Required µF and rated VAC from the original label'}</li><li>{code === 'CD60' ? 'Starting circuit, switching arrangement and any known duty or time limits' : 'Case dimensions, fixing and connections'}</li>{code === 'CD60' && <li>Body dimensions, terminal format and installed clearance</li>}<li>Quantity by model and destination country or market</li></ul><a class="card-link" href="/buying-guide/#rfq-template">Quotation checklist</a></InquiryCallout>
+
+    <section class="pdr-related"><h2>Other capacitor series</h2><div class="pdr-related-grid">{others.map(p => <a href={'/products/' + p.slug + '/'}><img src={p.image} alt={p.imageAlt} width="240" height="240" loading="lazy" /><div><h3>{p.code}</h3><p>{p.function} duty · {seriesFormats[p.code].case}</p></div></a>)}</div></section>
+  </div>
+</article>
+

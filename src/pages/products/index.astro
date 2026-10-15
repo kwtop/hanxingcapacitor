@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import InquiryCallout from '../../components/InquiryCallout.astro';
+import ProductFilter from '../../components/ProductFilter';
+import { products } from '../../data/site';
+import { publicSampleLibrary, seriesFormats } from '../../data/productReference';
+---
+<BaseLayout title="Motor Capacitor Series | CBB60, CBB61, CBB65 & CD60" description="Compare CBB60, CBB61 and CBB65 run capacitors with CD60 start capacitors by electrical range, case format and connections.">
+  <div class="review-product-directory">
+    <section class="page-hero compact-page-hero catalog-page-hero"><div class="container"><p class="breadcrumbs"><a href="/">Home</a> / Products</p><div class="catalog-heading"><div><h1>Motor capacitor series</h1></div><a class="catalog-photo-link" href="/products/photographs/">Original sample photographs <span>{publicSampleLibrary.length} references</span></a></div></div></section>
+    <section class="section catalog-section" aria-label="Product series"><div class="container"><ProductFilter client:load items={products.map(({code,slug,shortName,tagline,function: duty,capacitance,voltage}) => ({code,slug,shortName,tagline,image:`/images/reference-20261012/${code.toLowerCase()}-studio.webp`,imageAlt:`Studio illustration based on an original ${code} capacitor sample.`,function:duty,capacitance,voltage}))} /></div></section>
+    <section class="section alt catalog-comparison"><div class="container"><h2>Series comparison</h2><p class="small compare-scroll-hint">Swipe horizontally to compare all fields.</p><div class="compare-wrap" role="region" aria-label="Motor capacitor series comparison" tabindex="0"><table class="compare-table"><thead><tr><th scope="col">Series</th><th scope="col">Duty</th><th scope="col">Case format</th><th scope="col">µF</th><th scope="col">VAC</th><th scope="col">Connections</th></tr></thead><tbody>{products.flatMap(p => p.code === 'CBB65' ? [
+      <tr><th scope="row"><a class="card-link" href={'/products/' + p.slug + '/#single-run-specifications'}>CBB65 · single</a></th><td>Run</td><td>Metal can</td><td>2–100 µF</td><td>110–450 VAC</td><td>Terminal groups</td></tr>,
+      <tr><th scope="row"><a class="card-link" href={'/products/' + p.slug + '/#dual-run-specifications'}>CBB65 · dual</a></th><td>Run</td><td>Metal can</td><td>Published 1+15 to 15+80 µF</td><td>370–450 VAC</td><td>Model-specific terminal groups</td></tr>
+    ] : [<tr><th scope="row"><a class="card-link" href={'/products/' + p.slug + '/'}>{p.code}</a></th><td>{p.function}</td><td>{seriesFormats[p.code].case}</td><td>{p.capacitance}</td><td>{p.voltage}</td><td>{seriesFormats[p.code].connections}</td></tr>])}</tbody></table></div><p class="small compare-range-note">The table shows series ranges. Use the model datasheet and drawing to check the rating, case dimensions and connection layout required.</p></div></section>
+    <InquiryCallout><nav aria-label="Selection references"><a class="card-link" href="/resources/read-motor-capacitor-label/">Read the label guide</a><a class="card-link" href="/products/photographs/">View original sample photographs</a></nav></InquiryCallout>
+  </div>
+</BaseLayout>
+
+

@@ -1,0 +1,96 @@
+---
+import { applications, products } from '../data/site';
+import InquiryCallout from './InquiryCallout.astro';
+import '../styles/hvac-reference.css';
+const application = applications.find(a => a.slug === 'hvac-and-refrigeration')!;
+const run = products.find(p => p.code === 'CBB65')!;
+const start = products.find(p => p.code === 'CD60')!;
+const inquiry = '/contact/?application=hvac-and-refrigeration&request=quote#inquiry-form';
+const paths = [
+  { title: 'Identify each motor', text: 'List the compressor and other motors separately. Photograph each capacitor label and show where it connects on the equipment diagram.', href: '/resources/read-motor-capacitor-label/', link: 'Read capacitor labels' },
+  { title: 'Single or dual run', text: 'Use the original part and wiring diagram to identify the run configuration. For dual run, keep both µF values and their terminal mapping together.', href: '/products/cbb65-air-conditioner-capacitor/', link: 'CBB65 run configurations' },
+  { title: 'Separate start circuit', text: 'Consider CD60 only where the motor specifies a capacitor that is switched out after starting. Ask for the permitted starting time and repeat-start limits.', href: '/products/cd60-start-capacitor/', link: 'CD60 starting duty' },
+];
+const fields = [
+  'Equipment model, specific motor and original circuit / capacitor record.',
+  'Single or dual-run configuration, or separately switched start duty.',
+  'Original µF and VAC; both independent values for dual run.',
+  'Terminal-group mapping, can dimensions, fixing and installed clearance.',
+  'Quantity by model, destination and requested model documents.',
+];
+const fitChecks = [
+  ['Terminal groups', 'Show each group marking in a terminal-end photo or drawing, then match it to the original motor diagram.'],
+  ['Can and mounting', 'Measure the can diameter and height, then check the fixing point and clearance above the terminals against the model drawing.'],
+  ['Starting duty', 'A start circuit has separate requirements from single or dual-run duty. Request the start-capacitor model’s duty and time limits.'],
+];
+const compared = [
+  { product: run, rows: [
+    ['Duty', 'Run; confirm single or dual configuration.'],
+    ['Case / connection', 'Metal can; model-specific terminal groups.'],
+    ['Single-run range', '2–100 µF · 110–450 VAC'],
+    ['Dual-run range', 'Published 1+15 to 15+80 µF · 370–450 VAC'],
+    ['Important check', 'Two independent dual-run values and their terminal mapping.'],
+  ], samples: [
+    { image: '/images/real/cbb65-2.jpg', alt: 'CBB65 single-run sample marked 20 µF and 450 VAC.', caption: 'Single · 20 µF / 450 VAC' },
+    { image: '/images/real/cbb65-dual-run-7.jpg', alt: 'CBB65 dual-run sample marked 50+5 µF and 450 VAC.', caption: 'Dual · 50+5 µF / 450 VAC' },
+  ] },
+  { product: start, rows: [
+    ['Duty', 'Start; separately switched starting circuit.'],
+    ['Case / connection', 'Electrolytic start-capacitor case; sheet terminals or lead output.'],
+    ['Start range', start.capacitance + ' · ' + start.voltage],
+    ['Important check', 'Permitted start duration, repeat-start cycle and switching arrangement need exact model documentation.'],
+  ], samples: [{ image: start.image, alt: start.imageAlt, caption: 'Start · 500 µF / 300 VAC sample' }] },
+];
+---
+<article class="hvr-reference review-application-reference" data-application="hvac-and-refrigeration">
+  <div class="hvr-wrap">
+    <section class="hvr-hero" aria-labelledby="hvac-title">
+      <div class="hvr-introduction">
+        <nav class="hvr-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/applications/">Applications</a><span>/</span><span aria-current="page">{application.shortName}</span></nav>
+        <h1 id="hvac-title">{application.shortName}</h1>
+        <p class="hvr-hero-summary">{application.listing}</p>
+        <div class="hvr-actions"><a class="hvr-button" href="#review">Check circuit requirements</a><a class="hvr-secondary" href="#quote-details">Inquiry checklist</a></div>
+      </div>
+      <figure class="hvr-hero-photo"><img src={application.image} alt={application.imageAlt} width="1200" height={application.imageHeight} fetchpriority="high" /></figure>
+    </section>
+
+    <section class="hvr-section" id="review" aria-labelledby="circuit-title">
+      <h2 id="circuit-title">Motor circuits &amp; original capacitors</h2>
+      <div class="hvr-circuit-paths">{paths.map(path => <div><h3>{path.title}</h3><p>{path.text}</p><a class="hvr-path-link" href={path.href}>{path.link}</a></div>)}</div>
+      <p class="technical-body-copy">An HVAC unit may use a single-run capacitor or a dual-run part serving two circuits. A separate start capacitor belongs only in a switched starting circuit. Use the original labels and wiring diagram to identify each part.</p>
+    </section>
+
+    <section class="hvr-section" id="series-comparison" aria-labelledby="comparison-title">
+      <h2 id="comparison-title">CBB65 run and CD60 start capacitors</h2>
+      <div class="hvr-table-wrap hvr-desktop-comparison" role="region" aria-label="CBB65 and CD60 comparison" tabindex="0"><table class="hvr-comparison">
+        <caption class="visually-hidden">CBB65 single and dual-run ranges compared with the CD60 start series.</caption>
+        <thead><tr><th scope="col">Field</th>{compared.map(({product:p}) => <th scope="col"><a href={'/products/' + p.slug + '/'}><strong>{p.code}</strong></a><span>{p.function} duty</span></th>)}</tr></thead>
+        <tbody>
+          <tr><th scope="row">Duty</th><td>Run; confirm single or dual configuration.</td><td>Start; separately switched starting circuit.</td></tr>
+          <tr><th scope="row">Case / connection</th><td>Metal can; model-specific terminal groups.</td><td>Electrolytic start-capacitor case; sheet terminals or lead output.</td></tr>
+          <tr><th scope="row">Single-run µF / VAC</th><td>2–100 µF · 110–450 VAC</td><td>Not applicable</td></tr>
+          <tr><th scope="row">Dual-run µF / VAC</th><td>Published 1+15 to 15+80 µF · 370–450 VAC</td><td>Not applicable</td></tr>
+          <tr><th scope="row">Start µF / VAC</th><td>Not applicable</td><td>{start.capacitance} · {start.voltage}</td></tr>
+          <tr><th scope="row">Important check</th><td>Retain both dual-run values and confirm their terminal mapping.</td><td>Confirm permitted start duration, repeat-start cycle and switching arrangement.</td></tr>
+          <tr class="hvr-sample-row"><th scope="row">Sample photographs</th>{compared.map(item => <td><div class="hvr-sample-pair">{item.samples.map(sample => <figure><div class="hvr-sample-photo"><img src={sample.image} alt={sample.alt} width="2000" height="2000" loading="lazy" /></div><figcaption>{sample.caption}</figcaption></figure>)}</div></td>)}</tr>
+          <tr><th scope="row">Full series details</th>{compared.map(({product:p}) => <td><a class="hvr-series-link" href={'/products/' + p.slug + '/'}>View {p.code}</a></td>)}</tr>
+        </tbody></table></div>
+      <div class="hvr-mobile-comparison">{compared.map(item => <div class="hvr-series-summary"><h3><a href={'/products/' + item.product.slug + '/'}>{item.product.code}</a></h3><dl>{item.rows.map(([label,value]) => <div><dt>{label}</dt><dd>{value}</dd></div>)}</dl><div class="hvr-sample-pair">{item.samples.map(sample => <figure><div class="hvr-sample-photo"><img src={sample.image} alt={sample.alt} width="2000" height="2000" loading="lazy" /></div><figcaption>{sample.caption}</figcaption></figure>)}</div><a class="hvr-series-link" href={'/products/' + item.product.slug + '/'}>View {item.product.code} details</a></div>)}</div>
+      <p class="technical-body-copy">CBB65 is a run series. CD60 is for a separate starting circuit that switches the capacitor out after starting.</p>
+      <p class="hvr-note">Check the proposed model’s rating, temperature, tolerance and installed fit against its datasheet and the equipment specification.</p>
+      <div class="hvr-other-formats" id="other-run-formats"><h3>Other run-capacitor formats</h3><p>CBB61 is also listed for selected air conditioners. Its suitability depends on the specific motor and circuit; identify the original capacitor before comparing this format.</p><a class="hvr-secondary" href="/products/cbb61-fan-capacitor/#pdr-applications">CBB61 applications</a></div>
+    </section>
+
+    <section class="hvr-section" id="fit-check" aria-labelledby="checks-title">
+      <h2 id="checks-title">Terminal mapping and installed fit</h2>
+      <div class="hvr-check-layout"><figure class="hvr-fit-photo"><div class="hvr-fit-image"><img src={run.image} alt="CBB65 single-run sample marked 20 µF and 450 VAC with terminal groups visible." width="2000" height="2000" loading="lazy" /></div><figcaption>20 µF / 450 VAC single-run sample · terminal groups</figcaption></figure>
+        <div><ul class="hvr-inquiry-checklist">{fitChecks.map(([title,description]) => <li><h3>{title}</h3><p>{description}</p></li>)}</ul><div class="hvr-fit-guides"><a class="hvr-secondary hvr-guide" href="/resources/single-vs-dual-run-capacitors/">Compare single and dual run</a><a class="hvr-secondary hvr-guide" href="/resources/dimensions-terminals-mounting/">Record dimensions & connections</a></div></div>
+      </div>
+    </section>
+
+    <InquiryCallout id="quote-details" contained href={inquiry} defaultSeries="CBB65">
+      <ul>{fields.map(field => <li>{field}</li>)}</ul>
+      <a class="card-link" href="/buying-guide/#rfq-template">Quotation checklist</a>
+    </InquiryCallout>
+  </div>
+</article>

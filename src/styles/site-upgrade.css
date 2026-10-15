@@ -1,0 +1,133 @@
+/* Product-first catalog and application-context presentation. */
+
+@media (min-width: 801px) {
+  #main:has(> .application-directory) {
+    display: block;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+  #main:has(> .application-directory) > .page-hero,
+  #main:has(> .application-directory) > .application-directory { padding: 28px 0 48px; }
+  #main:has(> .application-directory) > section > .container { width: min(calc(100% - 96px), var(--content-width)); margin-inline: auto; }
+}
+
+#main .application-directory .grid.two {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 36px;
+}
+#main .application-directory .app-card {
+  display: grid;
+  grid-template-columns: minmax(0, .42fr) minmax(0, .58fr);
+  gap: 18px;
+  align-items: start;
+  padding: 22px 0;
+  border-top: 1px solid var(--line);
+}
+.application-card-image { margin: 0; min-width: 0; }
+.application-card-image a { display: block; overflow: hidden; background: var(--cream); }
+.application-card-image img { display: block; width: 100%; height: auto; aspect-ratio: 1.28; object-fit: cover; }
+.application-card-image figcaption,
+.application-hero-image figcaption { margin-top: 8px; color: var(--muted); font-size: 13px; line-height: 1.4; }
+#main .application-directory .app-card .card-body { display: block; padding: 0; }
+#main .application-directory .app-card h2 { margin: 0 0 8px; font-size: clamp(21px, 2vw, 26px); line-height: 1.25; }
+#main .application-directory .app-card p { margin: 0 0 8px; font-size: 15px; line-height: 1.5; }
+#main .application-directory .app-card .application-series { font-weight: 600; color: var(--ink); }
+
+#main .application-detail-hero {
+  display: grid;
+  grid-template-columns: minmax(0, .86fr) minmax(0, 1.14fr);
+  grid-template-areas: "copy media" "matches media";
+  gap: 18px 48px;
+  align-items: start;
+}
+.application-hero-copy { grid-area: copy; }
+.application-hero-image { grid-area: media; margin: 0; }
+.application-hero-image img { display: block; width: 100%; height: auto; aspect-ratio: 1.62; object-fit: cover; object-position: center; }
+#main .application-detail-hero .application-matches { grid-area: matches; margin: 0; padding: 12px 0 0; }
+#main .application-detail-hero .application-matches h2 { margin: 0 0 2px; }
+#main .application-detail-hero .application-matches a { padding: 10px 0; }
+#main .application-detail-hero .lead { margin-bottom: 12px; }
+.application-key-question { max-width: 38ch; margin: 18px 0 0; font-size: 17px; line-height: 1.45; font-weight: 600; }
+
+#main .catalog-section .series-catalog {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 40px;
+}
+#main .series-catalog .product-card {
+  display: grid;
+  grid-template-columns: minmax(0, .44fr) minmax(0, .56fr);
+  align-items: start;
+  gap: 18px;
+  padding: 18px 0 24px;
+  border-top: 1px solid var(--line);
+}
+#main .series-catalog .sample-catalog-image { height: auto; aspect-ratio: 1.08; }
+#main .series-catalog .product-card .card-body { padding: 2px 0 0; }
+#main .series-catalog .product-card .card-title { margin: 0 0 20px; }
+#main .series-catalog .product-card .card-title > a { display: block; font-size: 28px; line-height: 1.1; }
+#main .series-catalog .series-name { display: block; font-size: 15px; font-weight: 400; line-height: 1.4; margin-top: 6px; }
+#main .series-catalog .catalog-ratings { margin: 0; }
+#main .series-catalog .catalog-ratings > div { padding: 8px 0; }
+#main .series-catalog .sample-catalog-image > img,
+#main .series-catalog .sample-catalog-image:hover > img { transform: scale(1.22); transform-origin: 50% 65%; object-position: 50% 68%; filter: contrast(1.08); }
+#main .series-catalog .sample-catalog-image > img[src*="cbb61-13"],
+#main .series-catalog .sample-catalog-image:hover > img[src*="cbb61-13"] { transform: scale(1.1); object-position: 50% 77%; }
+
+.oem-hero-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .85fr); gap: 48px; align-items: center; }
+#main .oem-page-hero { padding-bottom: 24px; }
+.oem-hero-terms { max-width: 36ch; margin: 18px 0 24px; font-size: 17px; line-height: 1.55; }
+.oem-packaging-photo { margin: 0; }
+.oem-page-hero .oem-packaging-photo img { max-height: 420px; aspect-ratio: 1.28; object-fit: cover; object-position: center 60%; }
+#main .oem-commercial { padding-top: 36px; }
+#main .oem-commercial .oem-lead-layout { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 64px; }
+#main .oem-commercial .oem-lead-layout h2 { margin: 0 0 20px; }
+
+.company-story .company-process-photo img[src*="batch-products"] { object-position: center 52%; }
+#main .contact-direct address { margin: 0 0 20px; color: var(--ink); line-height: 1.6; }
+#main .contact-direct address strong { display: inline-block; margin-bottom: 6px; font-size: 18px; font-weight: 600; }
+#main .contact-direct { display: flex; flex-direction: column; }
+#main .contact-direct address { order: -1; }
+#main .contact-direct-links > a { display: block; padding: 7px 0; color: var(--ink); font-size: var(--type-body-size); font-weight: 500; overflow-wrap: anywhere; }
+#main .contact-optional-fields { margin-top: 18px; max-width: calc(50% - 10px); }
+#main .contact-optional-fields .field { display: grid; }
+#main .contact-inquiry-form .contact-order-scope { margin: 24px 0 14px; }
+#main .contact-send-note { margin: 0 0 22px; max-width: 48ch; color: var(--ink); font-size: 16px; line-height: 1.5; }
+.factory-records-section .split { align-items: start; }
+.factory-records-section .document-checklist { margin: 0; }
+
+@media (max-width: 800px) {
+  #main .application-detail-hero { grid-template-columns: minmax(0, 1fr); grid-template-areas: "copy" "media" "matches"; gap: 20px; }
+  .application-hero-image img { aspect-ratio: 1.55; }
+  #main .application-directory .grid.two { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  #main .application-directory .app-card { grid-template-columns: minmax(0, 150px) minmax(0, 1fr); }
+  #main .catalog-section .series-catalog { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  #main .series-catalog .product-card { grid-template-columns: minmax(0, 190px) minmax(0, 1fr); }
+  .oem-hero-layout, #main .oem-commercial .oem-lead-layout { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .oem-page-hero .oem-packaging-photo img { max-height: 340px; aspect-ratio: 1.55; }
+  #main .contact-form-intro, #main .contact-direct { display: contents; }
+  #main .contact-direct-links { order: -1; width: 100%; }
+  #main .contact-form-layout .contact-inquiry-form { order: 0; }
+  #main .contact-direct address { order: 1; margin: 0; padding-top: 24px; border-top: 1px solid var(--line); }
+  #main .contact-optional-fields { max-width: none; }
+  #main .product-dossier-layout .real-product-gallery { order: 0; }
+  #main .product-dossier-actions { order: 1; margin: 0 0 18px; }
+  #main .product-dossier-specs > h2 { order: 2; }
+  #main .product-dossier-specs > dl { order: 3; }
+  #main .product-section-nav { order: 4; }
+}
+@media (max-width: 570px) {
+  #main .application-directory .app-card { grid-template-columns: minmax(0, 112px) minmax(0, 1fr); gap: 14px; padding: 18px 0; }
+  .application-card-image img { aspect-ratio: .95; }
+  #main .application-directory .app-card h2 { font-size: 20px; }
+  #main .application-directory .app-card p { font-size: 14px; }
+  #main .series-catalog .product-card { grid-template-columns: minmax(0, 118px) minmax(0, 1fr); gap: 16px; padding: 18px 0; }
+  #main .series-catalog .sample-catalog-image { height: auto; aspect-ratio: .88; }
+  #main .series-catalog .product-card .card-title { margin-bottom: 10px; }
+  #main .series-catalog .product-card .card-title > a { font-size: 24px; }
+  #main .series-catalog .catalog-ratings > div { padding: 5px 0; }
+  #main .series-catalog .catalog-ratings dt { font-size: 12px; }
+  #main .series-catalog .catalog-ratings dd { font-size: 14px; }
+}

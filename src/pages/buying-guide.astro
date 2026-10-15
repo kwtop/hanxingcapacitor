@@ -1,0 +1,71 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import InquiryCallout from '../components/InquiryCallout.astro';
+import '../styles/resource-hubs.css';
+import SelectionAssistant from '../components/SelectionAssistant';
+const requestTemplate = [
+  'Equipment / motor model:',
+  'Original capacitor model:',
+  'Circuit function: run / start / dual-run / unknown',
+  'Original rating: ______ µF (dual-run: ______ + ______ µF) · ______ VAC',
+  'Tolerance / frequency / duty markings:',
+  'Body, mounting and installed dimensions (mm):',
+  'Lead or terminal arrangement:',
+  'Quantity and destination market:',
+  'Documents required:',
+].join('\n');
+---
+<BaseLayout title="Motor Capacitor Buying & Shipping Guide | HAN XING" description="Use the capacitor quotation checklist, approve sample details and confirm order terms. Check packing, dispatch dates and shipping documents before pickup.">
+  <div class="rfq-field-guide review-rfq-page buying-hub">
+    <section class="rfq-hero" aria-labelledby="rfq-title"><div class="container">
+      <p class="breadcrumbs"><a href="/">Home</a> / <a href="/resources/">Resources</a> / Buying &amp; shipping</p>
+      <div class="rfq-hero-copy"><h1 id="rfq-title">Buying &amp; shipping</h1><a class="card-link" href="#rfq-template">Use the quotation checklist</a></div>
+    </div></section>
+    <nav class="container buying-stages" aria-label="Buying and shipping stages"><a href="#rfq-template">Prepare your inquiry</a><a href="#approve-sample">Approve the sample</a><a href="#confirm-order">Confirm the order</a><a href="#check-dispatch">Check packing &amp; dispatch</a><a href="#shipping-documents">Review shipping documents</a></nav>
+    <section class="rfq-message" id="rfq-template" aria-labelledby="rfq-template-title"><div class="container">
+      <h2 id="rfq-template-title">Prepare your inquiry</h2><p class="buying-intro">Copy the checklist into your message and fill in the original specifications, quantity and destination.</p><h3 class="buying-checklist-label">Quotation checklist</h3>
+      <div class="rfq-message-grid">
+        <div><pre class="rfq-template" id="request-template" tabindex="0" aria-label="Inquiry checklist to copy"><code>{requestTemplate}</code></pre><button class="button secondary" type="button" id="copy-template">Copy checklist</button><p id="template-status" role="status" aria-live="polite"></p></div>
+        <InquiryCallout contained />
+      </div>
+    </div></section>
+    <section class="rfq-field-notes" aria-labelledby="rfq-notes-title"><div class="container">
+      <p class="technical-body-copy">For a dual-run part, copy both µF values as printed. Attach label photos and drawings in your email or WhatsApp app before sending your inquiry.</p>
+      <details class="buying-checklist-help"><summary id="rfq-notes-title">Help completing the checklist</summary>
+      <div class="rfq-field-rows">
+        <div><h3 id="rfq-label-title">Motor and electrical specifications</h3><div><p>Identify the equipment and motor model, and state the capacitor's role in the circuit. Include the wiring diagram if available. Copy the electrical markings from the original label: µF, VAC, tolerance, frequency and duty. For a dual-run part, record both capacitance values.</p><nav aria-label="Electrical guidance"><a class="rfq-guide-link" href="/resources/read-motor-capacitor-label/">Read a capacitor label<span class="rfq-arrow" aria-hidden="true"></span></a><a class="rfq-guide-link" href="/resources/start-vs-run-capacitors/">Check start and run duty<span class="rfq-arrow" aria-hidden="true"></span></a></nav><figure class="review-rfq-sample"><img src="/images/real/cbb65-dual-run-7.jpg" alt="Original CBB65 dual-run sample marked 50+5 µF and 450 VAC" width="2000" height="2000" loading="lazy" decoding="async" /><figcaption>This sample is marked 50+5 µF and 450 VAC. Use the pair specified for your equipment and ask for a model with that rating.</figcaption></figure></div></div>
+        <div><h3 id="rfq-fit-title">Dimensions and connections</h3><div><p>Give the body dimensions and full installation dimensions in mm. Include the fixing parts and clearance for connections. Show the lead or terminal layout, including the connector and terminal groups where present.</p><a class="rfq-guide-link" href="/resources/dimensions-terminals-mounting/">Measure the case and connections<span class="rfq-arrow" aria-hidden="true"></span></a></div></div>
+        <div><h3 id="rfq-order-title">Quantity and model documents</h3><div><p>State the order quantity or forecast and the destination market. Include any label requirements. Request a sample, drawing and datasheet for the exact configuration, along with any model certificates or test reports required for your market. Confirm availability for that rating and case combination before ordering.</p><nav aria-label="Model and order guidance"><a class="rfq-guide-link" href="/factory/#model-records">Product document checklist<span class="rfq-arrow" aria-hidden="true"></span></a><a class="rfq-guide-link" href="/resources/motor-capacitor-order-shipment-checklist/">Order &amp; shipping checklist<span class="rfq-arrow" aria-hidden="true"></span></a></nav></div></div>
+      </div>
+      </details>
+      <div class="buying-next-stages">
+        <section id="approve-sample"><h2>Approve the sample</h2><div><p>Check the sample's ratings and connections against the agreed drawing. For a customized order, keep a record of the approved label artwork and packing version.</p><a class="card-link" href="/oem/">OEM requirements and sample approval</a></div></section>
+        <section id="confirm-order"><h2>Confirm the order</h2><div><p>Put the exact model, drawing revision, quantities, price and delivery terms in the order. Keep all approvals under the same reference, and agree alternatives or changes in writing.</p><a class="card-link" href="/resources/motor-capacitor-order-shipment-checklist/">Order &amp; shipping checklist</a></div></section>
+        <section id="check-dispatch"><h2>Check packing &amp; dispatch</h2><div><p>Check the packing and labels against the approved order. Record inspection release, carrier pickup and departure as separate dates, marking each as confirmed or estimated.</p><a class="card-link" href="/factory/packing-and-dispatch/">Packing and dispatch details</a></div></section>
+        <section id="shipping-documents"><h2>Review shipping documents</h2><div><p>Compare the invoice, packing list and transport record with the order. Agree any extra documents required for the destination or shipping route.</p><a class="card-link" href="/resources/motor-capacitor-order-shipment-checklist/#4-check-documents-against-the-shipping-route">Shipping document checklist</a></div></section>
+      </div>
+      <section class="review-rfq-selection" aria-labelledby="rfq-selection-title"><h2 id="rfq-selection-title">Not sure which series?</h2><a class="card-link" href="/applications/">Browse applications</a><details class="rfq-application-help"><summary>Help choosing a series</summary><div><SelectionAssistant client:load variant="compact" /></div></details></section>
+    </div></section>
+  </div>
+  <script>
+    const revealChecklistAnchor = () => {
+      const id = decodeURIComponent(location.hash.slice(1));
+      const target = id && document.getElementById(id);
+      const details = target && target.closest<HTMLDetailsElement>('.buying-checklist-help');
+      if (details) { details.open = true; requestAnimationFrame(() => target.scrollIntoView()); }
+    };
+    revealChecklistAnchor();
+    window.addEventListener('hashchange', revealChecklistAnchor);
+    document.getElementById('copy-template')?.addEventListener('click', async () => {
+      const template = document.getElementById('request-template');
+      const status = document.getElementById('template-status');
+      if (!template || !status) return;
+      try { await navigator.clipboard.writeText(template.textContent || ''); status.textContent = 'Checklist copied.'; }
+      catch {
+        const range = document.createRange(); range.selectNodeContents(template);
+        const selection = window.getSelection(); selection?.removeAllRanges(); selection?.addRange(range); template.focus();
+        status.textContent = 'Select and copy the checklist above.';
+      }
+    });
+  </script>
+</BaseLayout>

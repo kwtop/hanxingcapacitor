@@ -1,0 +1,6 @@
+---
+interface Props { src: string; alt: string; caption?: string; }
+const {src, alt}=Astro.props;
+const squareProductPhoto=src.startsWith('/images/real/cbb')||src.startsWith('/images/real/cd');
+---
+<figure class="media-figure"><div class:list={['media-image',{'label-photo':src==='/images/source-cbb65.jpg','source-product':squareProductPhoto}]}><img src={src} alt={alt} loading="lazy" decoding="async" width={squareProductPhoto?2000:1920} height={squareProductPhoto?2000:1080} /></div></figure>

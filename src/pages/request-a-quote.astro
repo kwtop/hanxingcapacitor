@@ -1,0 +1,33 @@
+---
+import { guides } from '../data/guides';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import InquiryCallout from '../components/InquiryCallout.astro';
+import { applications } from '../data/site';
+import { sampleConfigurations } from '../data/sampleConfigurations';
+import sampleLibrary from '../data/sampleLibrary.json';
+const allowedSeries = ['CBB60', 'CBB61', 'CBB65', 'CD60'];
+const contactUrl = new URL('/contact/', Astro.url);
+const request = Astro.url.searchParams.get('request') || '';
+const guide = Astro.url.searchParams.get('guide') || '';
+if (['quote','documents','samples','oem','packing','after-sales'].includes(request)) contactUrl.searchParams.set('request',request);
+if (guides.some(item => item.slug === guide)) contactUrl.searchParams.set('guide',guide);
+const series = Astro.url.searchParams.get('series') || '';
+const application = Astro.url.searchParams.get('application') || '';
+if (allowedSeries.includes(series)) contactUrl.searchParams.set('series', series);
+const configuration = Astro.url.searchParams.get('configuration') || '';
+const photo = Astro.url.searchParams.get('photo') || '';
+if (sampleConfigurations.some(item => item.id === configuration && item.series === series)) contactUrl.searchParams.set('configuration', configuration);
+if (sampleLibrary.some(item => item.id === photo && (item.series === series || (!Astro.url.searchParams.has('series') && item.series === 'Additional samples')))) contactUrl.searchParams.set('photo', photo);
+if (applications.some(item => item.slug === application) || ['hvac', 'pump', 'fan', 'other'].includes(application)) {
+  contactUrl.searchParams.set('application', application);
+}
+---
+<BaseLayout title="Request a Motor Capacitor Quote" description="Prepare the motor and capacitor details for your quotation request, with quantity and destination, then send it from your email or WhatsApp app." noindex>
+  <div class="reference-utility">
+  <section class="page-hero"><div class="container"><p class="breadcrumbs"><a href="/">Home</a> / Request a Quote</p><h1>Request a motor capacitor quote</h1></div></section>
+  <section class="section"><div class="container quote-layout">
+    <InquiryCallout contained href={contactUrl.pathname + contactUrl.search + '#inquiry-form'} chooseSeries={!contactUrl.searchParams.has('photo') || contactUrl.searchParams.has('series')}><ul><li>Original capacitor label or exact part number</li><li>Equipment model and run or start function</li><li>Capacitance, voltage, body dimensions and terminal or lead details</li><li>Quantity, destination and any document requirement</li></ul><a class="card-link" href="/buying-guide/">Quotation checklist</a></InquiryCallout>
+    <aside class="side-panel quote-help" aria-label="Selection guides"><a href="/products/">Compare capacitor series</a><a href="/resources/read-motor-capacitor-label/">Read a capacitor label</a><a href="/resources/start-vs-run-capacitors/">Check run versus start duty</a></aside>
+  </div></section>
+  </div>
+</BaseLayout>

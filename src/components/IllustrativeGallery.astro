@@ -1,0 +1,27 @@
+---
+import type { IllustrativeScene } from '../data/illustrativeScenes';
+
+interface Props {
+  heading: string;
+  scenes: IllustrativeScene[];
+  compact?: boolean;
+}
+
+const { heading, scenes, compact = false } = Astro.props;
+---
+<section class:list={['section illustrative-gallery', { 'is-compact': compact }]}>
+  <div class="container">
+    <div class="section-head">
+      <div><h2>{heading}</h2></div>
+    </div>
+    <div class="illustrative-grid">
+      {scenes.map((scene) => <figure class="illustrative-card">
+        <div class="illustrative-image"><img src={scene.src} alt={scene.alt} loading="lazy" decoding="async" width="1536" height="1024" /></div>
+        <figcaption>
+          <h3>{scene.title}</h3>
+          <p>{scene.text}</p>
+        </figcaption>
+      </figure>)}
+    </div>
+  </div>
+</section>

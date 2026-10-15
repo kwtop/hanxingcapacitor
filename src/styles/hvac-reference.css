@@ -1,0 +1,124 @@
+/* HVAC circuit-first reference; scoped away from the other application pages. */
+#main .hvr-reference{--hvr-line:#e1e3e5;--hvr-muted:#60666f;--hvr-accent:#b94f18;background:#fff;color:#252e38;font:400 16px/1.55 'Inter Variable',sans-serif}
+#main .hvr-wrap{width:min(1280px,calc(100% - 96px));margin:0 auto}
+#main .hvr-reference :is(h1,h2,h3,p,figure,ul,ol){margin:0}
+#main .hvr-reference :is(h1,h2,h3){font-family:inherit;color:#252e38;text-transform:none;letter-spacing:-.025em}
+#main .hvr-reference h1{font-size:clamp(32px,3.5vw,50px);line-height:1.12;font-weight:650;max-width:none}
+#main .hvr-reference h2{font-size:clamp(27px,2.6vw,37px);line-height:1.22;font-weight:620;margin-bottom:10px}
+#main .hvr-reference h3{font-size:16px;line-height:1.5;font-weight:600;letter-spacing:-.01em}
+#main .hvr-reference p{color:var(--hvr-muted);max-width:none}
+#main .hvr-reference a{text-decoration:none}
+#main .hvr-reference a:focus-visible,#main .hvr-table-wrap:focus-visible{outline:2px solid var(--hvr-accent);outline-offset:4px}
+#main .hvr-reference .hvr-button,#main .hvr-reference .hvr-secondary{display:inline-flex;justify-content:center;align-items:center;min-height:48px;padding:13px 23px;border:1px solid var(--hvr-accent);border-radius:2px;background:var(--hvr-accent);color:white;font-size:14px;line-height:1.4;font-weight:600;text-decoration:none;width:fit-content}
+#main .hvr-reference .hvr-secondary{background:white;color:#303944;border-color:#939aa2}
+#main .hvr-reference .hvr-button:hover{background:#943e13;border-color:#943e13}
+#main .hvr-reference .hvr-secondary:hover{background:#faf4ef;border-color:var(--hvr-accent);color:var(--hvr-accent)}
+#main .hvr-hero{display:grid;grid-template-columns:1fr 1fr;gap:24px 40px;padding:36px 0 40px}
+#main .hvr-hero>*{min-width:0}
+#main .hvr-breadcrumbs{display:flex;flex-wrap:wrap;gap:6px;font-size:12px;color:var(--hvr-muted);margin:8px 0 28px}
+#main .hvr-breadcrumbs a{color:inherit}
+#main .hvr-breadcrumbs a:hover{text-decoration:underline}
+#main .hvr-reference .hvr-lead{font-size:clamp(25px,2.6vw,36px);line-height:1.24;letter-spacing:-.025em;margin:12px 0 16px}
+#main .hvr-summary{max-width:58ch}
+#main .hvr-hero-photo img{display:block;width:100%;height:auto;aspect-ratio:1.96;object-fit:cover}
+#main .hvr-reference figcaption{font-size:12px;color:var(--hvr-muted);margin-top:8px;line-height:1.5}
+#main .hvr-circuits{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:0}
+#main .hvr-circuits>div{padding-right:24px;border-right:1px solid var(--hvr-line)}
+#main .hvr-circuits>div:last-child{border:0}
+#main .hvr-circuits h2{font-size:17px;line-height:1.4;letter-spacing:-.01em;margin-bottom:7px}
+#main .hvr-circuits p{font-size:15px;max-width:35ch}
+#main .hvr-actions{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:18px;margin-top:8px}
+#main .hvr-section{padding:30px 0;border-top:1px solid var(--hvr-line);scroll-margin-top:105px}
+#main .hvr-reference .hvr-eyebrow{font-size:12px;letter-spacing:.06em;font-weight:600;text-transform:uppercase;color:#737b85;margin-bottom:8px}
+#main .hvr-table-wrap{overflow-x:auto;margin-top:24px}
+#main .hvr-comparison{width:100%;table-layout:fixed;border-collapse:collapse;font-size:15px;line-height:1.5;text-align:left;margin:0}
+#main .hvr-comparison th,#main .hvr-comparison td{border:1px solid var(--hvr-line);padding:13px 22px;vertical-align:top;color:#535c66;font-weight:400;background:white;overflow-wrap:break-word}
+#main .hvr-comparison th:first-child{width:26%;background:#f5f6f7;color:#28323d;font-weight:600}
+#main .hvr-comparison thead th{background:#f3f4f5;text-align:center;vertical-align:middle}
+#main .hvr-comparison thead th:first-child{text-align:left}
+#main .hvr-comparison thead strong{display:block;font-size:24px;font-weight:650;color:#26313d}
+#main .hvr-comparison thead span{font-size:14px;display:block}
+#main .hvr-comparison .hvr-sample-row td{padding:0 0 14px;text-align:center}
+#main .hvr-sample-row img{display:block;width:100%;height:300px;object-fit:cover;object-position:center 64%}
+#main .hvr-comparison .hvr-series-link{display:inline-flex;align-items:center;min-height:44px;padding:8px 15px;border:1px solid #c76a3e;color:var(--hvr-accent);font-weight:600;line-height:1.3}
+#main .hvr-series-link:hover{background:#fcf3ee}
+#main .hvr-reference .hvr-note{font-size:12px;margin-top:12px}
+#main .hvr-check-layout{display:grid;grid-template-columns:.9fr 1.6fr;gap:32px;margin-top:24px;align-items:start}
+#main .hvr-terminal>div{aspect-ratio:1.9;overflow:hidden;position:relative;background:#f2f3f3}
+#main .hvr-terminal img{position:absolute;width:240%;max-width:none;height:auto;left:-70%;top:-120%}
+#main .hvr-checks,#main .hvr-details{list-style:none;padding:0}
+#main .hvr-checks li{display:grid;grid-template-columns:36px 145px minmax(0,1fr);gap:12px;padding:14px 0;border-bottom:1px solid var(--hvr-line)}
+#main .hvr-checks li:first-child{padding-top:0}
+#main .hvr-checks p{font-size:14px}
+#main .hvr-reference .hvr-number{font-size:20px;font-weight:600;color:var(--hvr-accent);line-height:1.5}
+#main .hvr-reference .hvr-guide{margin-top:20px;color:var(--hvr-accent);border-color:#c76a3e}
+#main .hvr-equipment ul{display:grid;grid-template-columns:repeat(4,1fr);list-style:none;padding:0;margin-top:20px}
+#main .hvr-equipment li{text-align:center;padding:4px 16px;border-right:1px solid var(--hvr-line);color:#535c66}
+#main .hvr-equipment li:last-child{border:0}
+#main .hvr-reference .hvr-details{margin:22px 0 20px}
+#main .hvr-details li{display:grid;grid-template-columns:40px 1fr 1fr;gap:20px;padding:13px 8px;border-bottom:1px solid var(--hvr-line);align-items:start}
+#main .hvr-details li:first-child{border-top:1px solid var(--hvr-line)}
+#main .hvr-details p{font-size:14px}
+#main .hvr-reference .hvr-source{border-top:1px solid var(--hvr-line);margin-top:26px;padding-top:18px;font-size:12px;line-height:1.8}
+#main .hvr-source a{color:var(--hvr-accent);text-decoration:underline;text-underline-offset:3px}
+#main .hvr-inquiry{padding-bottom:42px}
+@media(max-width:1000px){#main .hvr-wrap{width:calc(100% - 48px)}#main .hvr-hero{gap:24px}#main .hvr-desktop-break{display:none}#main .hvr-checks li{grid-template-columns:30px 1fr}#main .hvr-checks p{grid-column:2}#main .hvr-sample-row img{height:240px}#main .hvr-comparison th,#main .hvr-comparison td{padding:12px 15px}}
+@media(max-width:650px){#main .hvr-wrap{width:calc(100% - 36px)}#main .hvr-hero{grid-template-columns:1fr;padding-top:22px;gap:22px}#main .hvr-breadcrumbs{margin:0 0 22px;font-size:11px}#main .hvr-reference h1{font-size:34px}#main .hvr-reference .hvr-lead{font-size:27px}#main .hvr-hero-photo img{aspect-ratio:1.75}#main .hvr-circuits{grid-template-columns:1fr;gap:0}#main .hvr-circuits>div{padding:14px 0;border:0;border-bottom:1px solid var(--hvr-line)}#main .hvr-circuits p{max-width:none}#main .hvr-actions{gap:12px}#main .hvr-actions a{width:100%}#main .hvr-section{padding:28px 0;scroll-margin-top:88px}#main .hvr-reference h2{font-size:28px}#main .hvr-circuits h2{font-size:17px}#main .hvr-comparison{min-width:590px}#main .hvr-comparison th:first-child{width:24%}#main .hvr-sample-row img{height:185px}#main .hvr-check-layout{grid-template-columns:1fr;gap:24px}#main .hvr-terminal>div{aspect-ratio:2.1}#main .hvr-checks li{grid-template-columns:32px 1fr}#main .hvr-checks p{grid-column:2}#main .hvr-equipment ul{grid-template-columns:1fr 1fr;gap:14px 0}#main .hvr-equipment li{font-size:14px}#main .hvr-equipment li:nth-child(2){border:0}#main .hvr-details li{grid-template-columns:28px 1fr;gap:5px 12px;padding:15px 0}#main .hvr-details p{grid-column:2}#main .hvr-inquiry>.hvr-button{width:100%}}
+/* Image framing follows the selected reference while retaining original photographs. */
+#main .hvr-hero-photo img{aspect-ratio:1.78;object-position:center 30%}
+#main .hvr-sample-photo{height:300px;overflow:hidden}
+#main .hvr-sample-photo img{height:100%;transform:scale(1.4);transform-origin:50% 66%}
+#main .hvr-terminal img{width:330%;left:-115%;top:-190%}
+#main .hvr-scroll-hint{display:none}
+@media(max-width:1000px){#main .hvr-sample-photo{height:240px}}
+@media(max-width:650px){#main .hvr-sample-photo{height:185px}#main .hvr-reference .hvr-scroll-hint{display:block;font-size:12px;margin-top:12px}#main .hvr-comparison th:first-child{position:sticky;left:0;z-index:1}#main .hvr-hero-photo img{aspect-ratio:1.75}}
+
+/* Series-specific framing for the other three application pages. */
+#main .hvr-reference[data-application] .hvr-hero-photo img{aspect-ratio:16/9;object-position:center}
+#main .hvr-reference[data-application="fans-and-ventilation"] .hvr-hero-photo img{object-fit:contain;background:#eceeef}
+
+/* Shared application opening: balanced copy and a full-width equipment photograph. */
+body.porcelain-site.reference-site #main article.hvr-reference[data-application] .hvr-hero {
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+  gap: 64px;
+  align-items: center;
+  padding-block: 64px;
+}
+body.porcelain-site.reference-site #main article.hvr-reference[data-application] .hvr-introduction { min-width: 0; }
+body.porcelain-site.reference-site #main article.hvr-reference[data-application] .hvr-hero-photo {
+  width: 100%;
+  justify-self: stretch;
+  padding: 0;
+  margin: 0;
+}
+body.porcelain-site.reference-site #main article.hvr-reference[data-application] .hvr-hero-photo img {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: cover;
+  object-position: center;
+}
+body.porcelain-site.reference-site #main article.hvr-reference[data-application] .hvr-actions { margin-top: 16px; }
+body.porcelain-site.reference-site #main article.hvr-reference[data-application="fans-and-ventilation"] .hvr-hero-photo img { object-fit: contain; background: #eceeef; }
+@media(max-width: 1000px) {
+  body.porcelain-site.reference-site #main article.hvr-reference[data-application] .hvr-hero { gap: 40px; }
+}
+@media(max-width: 800px) {
+  body.porcelain-site.reference-site #main article.hvr-reference[data-application] .hvr-hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+    padding-block: 40px 48px;
+  }
+  body.porcelain-site.reference-site #main article.hvr-reference[data-application] .hvr-hero-photo img { aspect-ratio: 4 / 3; }
+  body.porcelain-site.reference-site #main article.hvr-reference[data-application] .hvr-actions { margin-top: 20px; }
+  body.porcelain-site.reference-site #main article.hvr-reference[data-application] .hvr-hero .hvr-actions a { width: 100%; min-height: 48px; }
+}
+#main .hvr-reference[data-application] .hvr-sample-photo[data-series="CBB60"] img{transform:none;object-position:50% 55%}
+#main .hvr-reference[data-application] .hvr-sample-photo[data-series="CBB61"] img{transform:none;object-position:50% 84%}
+#main .hvr-fit-photo>a{display:block;position:relative;aspect-ratio:1.5;overflow:hidden;background:#f3f4f4}
+#main .hvr-fit-photo img{display:block;width:100%;height:100%;object-fit:cover}
+#main .hvr-fit-photo span{position:absolute;right:10px;bottom:10px;padding:6px 10px;background:white;color:#454c54;font-size:12px;box-shadow:0 0 0 1px #dfe1e3}
+#main .hvr-reference[data-application] .hvr-equipment ul{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:650px){#main .hvr-reference[data-application] .hvr-equipment ul{grid-template-columns:1fr;gap:0}#main .hvr-reference[data-application] .hvr-equipment li{border:0;border-bottom:1px solid var(--hvr-line);padding:12px 0;text-align:left}#main .hvr-reference[data-application] .hvr-equipment li:last-child{border:0}#main .hvr-reference[data-application] .hvr-actions a{width:100%}#main .hvr-reference[data-application] .hvr-fit-photo>a{aspect-ratio:1.5}}
+

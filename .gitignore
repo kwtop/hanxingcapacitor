@@ -1,0 +1,34 @@
+node_modules/
+dist/
+.astro/
+.env
+.env.*
+!.env.example
+.local-inquiries/
+*.log
+.finesse/
+.hallmark/
+.impeccable/
+.wrangler/
+.cloudflare-candidate*/
+.qa/
+
+# Local design archives and review output
+/audit-evidence*/
+/evidence/
+/design/
+/public/home-directions-20261010/
+/innerWidth
+/tokens.css
+/*.md
+!/README.md
+!/DESIGN.md
+!/CONTENT_SOURCES.md
+!/MEDIA-AUDIT.md
+!/IMAGEGEN-NOTES.md
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak

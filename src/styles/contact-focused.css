@@ -1,0 +1,178 @@
+body.porcelain-site.reference-site #main .contact-focused {
+  padding: 100px 0 88px;
+  background: #fff;
+}
+body.porcelain-site.reference-site #main .contact-focused-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 100px;
+  max-width: 1308px;
+}
+body.porcelain-site.reference-site #main .contact-focused h1 {
+  font-family: 'Times New Roman', Georgia, serif !important;
+  font-size: clamp(64px, 7vw, 104px) !important;
+  font-weight: 400;
+  line-height: 1 !important;
+  letter-spacing: -.045em;
+  margin: 0 0 76px;
+}
+body.porcelain-site.reference-site #main .contact-focused-details {
+  display: grid;
+  gap: 32px;
+  font-size: 22px;
+  line-height: 1.65;
+}
+body.porcelain-site.reference-site #main .contact-focused-details a {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  color: #111;
+  text-decoration: none;
+  width: fit-content;
+  overflow-wrap: anywhere;
+}
+body.porcelain-site.reference-site #main .contact-focused-details a:hover { text-decoration: underline; }
+body.porcelain-site.reference-site #main .contact-focused-details address {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin: 24px 0 0;
+  font-style: normal;
+  color: #62676d;
+  max-width: 520px;
+  font-size: 21px;
+}
+body.porcelain-site.reference-site #main .contact-focused-details :is(a, address) > span { min-width: 0; }
+body.porcelain-site.reference-site #main .contact-focused-details .contact-focused-icon {
+  display: block;
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  margin-top: 6px;
+  color: #62676d;
+}
+body.porcelain-site.reference-site #main .contact-focused-details address strong {
+  display: block;
+  color: #111;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+body.porcelain-site.reference-site #main .contact-focused-form {
+  min-width: 0;
+  display: grid;
+  align-content: start;
+  gap: 38px;
+  padding: 0;
+  border: 0;
+}
+body.porcelain-site.reference-site #main .contact-focused-form .contact-draft-note {
+  margin: 0;
+  color: #555;
+  font-size: 17px;
+  line-height: 1.55;
+}
+body.porcelain-site.reference-site #main .contact-focused-form .field {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  min-width: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+body.porcelain-site.reference-site #main .contact-focused-form .field > span { font-size: inherit; line-height: 1.45; }
+body.porcelain-site.reference-site #main .contact-focused-form .field :is(input, select, textarea) {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 60px;
+  border: 1px solid #c8c8c8;
+  background: #fff;
+  padding: 14px 16px;
+  color: #111;
+  font: inherit;
+  font-weight: 400;
+  border-radius: 0;
+  box-shadow: none;
+}
+body.porcelain-site.reference-site #main .contact-focused-form .field textarea {
+  height: 144px;
+  min-height: 112px;
+  resize: vertical;
+}
+body.porcelain-site.reference-site #main .contact-focused-form .field :is(input, select, textarea):focus-visible {
+  outline: 2px solid #111;
+  outline-offset: 3px;
+}
+body.porcelain-site.reference-site #main .contact-focused-channel {
+  padding: 0;
+  margin: -4px 0 0;
+  border: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+body.porcelain-site.reference-site #main .contact-focused-channel label { position: relative; margin: 0; cursor: pointer; }
+body.porcelain-site.reference-site #main .contact-focused-channel input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+body.porcelain-site.reference-site #main .contact-focused-channel span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 62px;
+  border: 1px solid #c8c8c8;
+  color: #111;
+  font-size: 18px;
+  font-weight: 500;
+}
+body.porcelain-site.reference-site #main .contact-focused-channel label + label span { border-left: 0; }
+body.porcelain-site.reference-site #main .contact-focused-channel input:checked + span {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+body.porcelain-site.reference-site #main .contact-focused-channel input:focus-visible + span {
+  outline: 2px solid #111;
+  outline-offset: 3px;
+}
+body.porcelain-site.reference-site #main .contact-focused-form #prepare-draft {
+  min-height: 62px;
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+  font-size: 19px;
+  justify-content: center;
+}
+body.porcelain-site.reference-site #main .contact-focused-form .contact-privacy-note {
+  margin: -6px 0 0;
+  font-size: 16px;
+  color: #606060;
+}
+body.porcelain-site.reference-site #main .contact-focused-form .contact-privacy-note a { color: inherit; text-decoration: underline; }
+body.porcelain-site.reference-site #main .contact-focused-form .contact-context {
+  border: 1px solid #ddd;
+  background: #f7f7f7;
+  padding: 18px 20px;
+  margin: 0;
+  font-size: 14px;
+}
+body.porcelain-site.reference-site #main .contact-focused-form .contact-context h2 { font-size: 18px; margin: 0 0 12px; }
+body.porcelain-site.reference-site #main .contact-focused-form .draft-result { margin: 8px 0 0; padding: 24px 0 0; border-top: 1px solid #ddd; }
+body.porcelain-site.reference-site #main .contact-focused-form .draft-result h2 { font-size: 24px; margin: 0 0 16px; }
+body.porcelain-site.reference-site #main .contact-focused-form [hidden] { display: none !important; }
+@media (max-width: 1050px) {
+  body.porcelain-site.reference-site #main .contact-focused-layout { gap: 56px; }
+  body.porcelain-site.reference-site #main .contact-focused-details { font-size: 17px; }
+}
+@media (max-width: 900px) {
+  body.porcelain-site.reference-site #main .contact-focused { padding: 48px 0 64px; }
+  body.porcelain-site.reference-site #main .contact-focused-layout { display: flex; flex-direction: column; gap: 48px; }
+  body.porcelain-site.reference-site #main .contact-focused-intro { display: contents; }
+  body.porcelain-site.reference-site #main .contact-focused h1 { font-size: clamp(48px, 10vw, 64px) !important; margin: 0; order: 0; }
+  body.porcelain-site.reference-site #main .contact-focused-form { order: 1; gap: 28px; }
+  body.porcelain-site.reference-site #main .contact-focused-details { order: 2; border-top: 1px solid #ddd; padding-top: 40px; gap: 20px; }
+  body.porcelain-site.reference-site #main .contact-focused-details address { font-size: 16px; }
+  body.porcelain-site.reference-site #main .contact-focused-channel { margin-top: 0; }
+  body.porcelain-site.reference-site #main .contact-focused-channel span { font-size: 15px; }
+}

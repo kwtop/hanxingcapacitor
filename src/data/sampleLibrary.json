@@ -1,0 +1,674 @@
+[
+  {
+    "id": "P001",
+    "series": "CBB60",
+    "label": "Black cylindrical sample",
+    "thumb": "/images/product-samples/sample-0-thumb.webp",
+    "src": "/images/product-samples/sample-0.webp"
+  },
+  {
+    "id": "P002",
+    "series": "CBB60",
+    "label": "Multicolour wire leads",
+    "thumb": "/images/product-samples/sample-1-thumb.webp",
+    "src": "/images/product-samples/sample-1.webp"
+  },
+  {
+    "id": "P003",
+    "series": "CBB60",
+    "label": "Lead wires and base stud",
+    "thumb": "/images/product-samples/sample-2-thumb.webp",
+    "src": "/images/product-samples/sample-2.webp"
+  },
+  {
+    "id": "P004",
+    "series": "CBB60",
+    "label": "Paired wired samples",
+    "thumb": "/images/product-samples/sample-3-thumb.webp",
+    "src": "/images/product-samples/sample-3.webp"
+  },
+  {
+    "id": "P005",
+    "series": "CBB60",
+    "label": "Case colours and markings",
+    "thumb": "/images/product-samples/sample-4-thumb.webp",
+    "src": "/images/product-samples/sample-4.webp"
+  },
+  {
+    "id": "P006",
+    "series": "CBB60",
+    "label": "Yellow end-cap detail",
+    "thumb": "/images/product-samples/sample-5-thumb.webp",
+    "src": "/images/product-samples/sample-5.webp"
+  },
+  {
+    "id": "P007",
+    "series": "CBB60",
+    "label": "White end-cap detail",
+    "thumb": "/images/product-samples/sample-6-thumb.webp",
+    "src": "/images/product-samples/sample-6.webp"
+  },
+  {
+    "id": "P008",
+    "series": "CBB60",
+    "label": "Yellow wired sample",
+    "thumb": "/images/product-samples/sample-7-thumb.webp",
+    "src": "/images/product-samples/sample-7.webp"
+  },
+  {
+    "id": "P009",
+    "series": "CBB60",
+    "label": "White terminal sample",
+    "thumb": "/images/product-samples/sample-8-thumb.webp",
+    "src": "/images/product-samples/sample-8.webp"
+  },
+  {
+    "id": "P010",
+    "series": "CBB60",
+    "label": "White wired housing",
+    "thumb": "/images/product-samples/sample-9-thumb.webp",
+    "src": "/images/product-samples/sample-9.webp"
+  },
+  {
+    "id": "P011",
+    "series": "CBB60",
+    "label": "White case and blade terminals",
+    "thumb": "/images/product-samples/sample-10-thumb.webp",
+    "src": "/images/product-samples/sample-10.webp"
+  },
+  {
+    "id": "P012",
+    "series": "CBB60",
+    "label": "Black lead-wire arrangement",
+    "thumb": "/images/product-samples/sample-11-thumb.webp",
+    "src": "/images/product-samples/sample-11.webp"
+  },
+  {
+    "id": "P013",
+    "series": "Additional samples",
+    "label": "Black cylindrical wired sample",
+    "thumb": "/images/product-samples/sample-12-thumb.webp",
+    "src": "/images/product-samples/sample-12.webp"
+  },
+  {
+    "id": "P014",
+    "series": "Additional samples",
+    "label": "Multicolour lead arrangement",
+    "thumb": "/images/product-samples/sample-13-thumb.webp",
+    "src": "/images/product-samples/sample-13.webp"
+  },
+  {
+    "id": "P015",
+    "series": "CBB60",
+    "label": "White case, wider view",
+    "thumb": "/images/product-samples/sample-14-thumb.webp",
+    "src": "/images/product-samples/sample-14.webp"
+  },
+  {
+    "id": "P016",
+    "series": "CBB60",
+    "label": "Yellow case, wider view",
+    "thumb": "/images/product-samples/sample-15-thumb.webp",
+    "src": "/images/product-samples/sample-15.webp"
+  },
+  {
+    "id": "P017",
+    "series": "CBB60",
+    "label": "Black case, wider view",
+    "thumb": "/images/product-samples/sample-16-thumb.webp",
+    "src": "/images/product-samples/sample-16.webp"
+  },
+  {
+    "id": "P018",
+    "series": "CBB61",
+    "label": "Three blade-terminal samples",
+    "thumb": "/images/product-samples/sample-17-thumb.webp",
+    "src": "/images/product-samples/sample-17.webp"
+  },
+  {
+    "id": "P019",
+    "series": "CBB61",
+    "label": "Blade-terminal case sizes",
+    "thumb": "/images/product-samples/sample-18-thumb.webp",
+    "src": "/images/product-samples/sample-18.webp"
+  },
+  {
+    "id": "P020",
+    "series": "CBB61",
+    "label": "Blade-terminal sample lineup",
+    "thumb": "/images/product-samples/sample-19-thumb.webp",
+    "src": "/images/product-samples/sample-19.webp"
+  },
+  {
+    "id": "P021",
+    "series": "CBB61",
+    "label": "Terminal lineup, wider view",
+    "thumb": "/images/product-samples/sample-20-thumb.webp",
+    "src": "/images/product-samples/sample-20.webp"
+  },
+  {
+    "id": "P022",
+    "series": "CBB61",
+    "label": "Case lineup, wider view",
+    "thumb": "/images/product-samples/sample-21-thumb.webp",
+    "src": "/images/product-samples/sample-21.webp"
+  },
+  {
+    "id": "P023",
+    "series": "CBB61",
+    "label": "Red wire-lead housings",
+    "thumb": "/images/product-samples/sample-22-thumb.webp",
+    "src": "/images/product-samples/sample-22.webp"
+  },
+  {
+    "id": "P024",
+    "series": "CBB61",
+    "label": "Black wire-lead lineup",
+    "thumb": "/images/product-samples/sample-23-thumb.webp",
+    "src": "/images/product-samples/sample-23.webp"
+  },
+  {
+    "id": "P025",
+    "series": "CBB61",
+    "label": "Single wire-lead sample",
+    "thumb": "/images/product-samples/sample-24-thumb.webp",
+    "src": "/images/product-samples/sample-24.webp"
+  },
+  {
+    "id": "P026",
+    "series": "CBB61",
+    "label": "Single sample, wider view",
+    "thumb": "/images/product-samples/sample-25-thumb.webp",
+    "src": "/images/product-samples/sample-25.webp"
+  },
+  {
+    "id": "P027",
+    "series": "CBB61",
+    "label": "Wired lineup, wider view",
+    "thumb": "/images/product-samples/sample-26-thumb.webp",
+    "src": "/images/product-samples/sample-26.webp"
+  },
+  {
+    "id": "P028",
+    "series": "CBB61",
+    "label": "Red cases, wider view",
+    "thumb": "/images/product-samples/sample-27-thumb.webp",
+    "src": "/images/product-samples/sample-27.webp"
+  },
+  {
+    "id": "P029",
+    "series": "CBB65",
+    "label": "Metal-can sample",
+    "thumb": "/images/product-samples/sample-28-thumb.webp",
+    "src": "/images/product-samples/sample-28.webp"
+  },
+  {
+    "id": "P030",
+    "series": "CBB65",
+    "label": "Sample and printed carton",
+    "thumb": "/images/product-samples/sample-29-thumb.webp",
+    "src": "/images/product-samples/sample-29.webp"
+  },
+  {
+    "id": "P031",
+    "series": "CBB65",
+    "label": "Carton and terminal view",
+    "thumb": "/images/product-samples/sample-30-thumb.webp",
+    "src": "/images/product-samples/sample-30.webp"
+  },
+  {
+    "id": "P032",
+    "series": "CBB65",
+    "label": "Metal can beside carton",
+    "thumb": "/images/product-samples/sample-31-thumb.webp",
+    "src": "/images/product-samples/sample-31.webp"
+  },
+  {
+    "id": "P033",
+    "series": "CBB65",
+    "label": "Terminal end with protective wrapping",
+    "thumb": "/images/product-samples/sample-32-thumb.webp",
+    "src": "/images/product-samples/sample-32.webp"
+  },
+  {
+    "id": "P034",
+    "series": "CBB65",
+    "label": "Dual-run sample and carton",
+    "thumb": "/images/product-samples/sample-33-thumb.webp",
+    "src": "/images/product-samples/sample-33.webp"
+  },
+  {
+    "id": "P035",
+    "series": "CBB65",
+    "label": "Alternate sample and carton",
+    "thumb": "/images/product-samples/sample-34-thumb.webp",
+    "src": "/images/product-samples/sample-34.webp"
+  },
+  {
+    "id": "P036",
+    "series": "CBB65",
+    "label": "Three metal-can samples",
+    "thumb": "/images/product-samples/sample-35-thumb.webp",
+    "src": "/images/product-samples/sample-35.webp"
+  },
+  {
+    "id": "P037",
+    "series": "CBB65",
+    "label": "Small metal-can sample",
+    "thumb": "/images/product-samples/sample-36-thumb.webp",
+    "src": "/images/product-samples/sample-36.webp"
+  },
+  {
+    "id": "P038",
+    "series": "CD60",
+    "label": "Grey start-capacitor sample",
+    "thumb": "/images/product-samples/sample-37-thumb.webp",
+    "src": "/images/product-samples/sample-37.webp"
+  },
+  {
+    "id": "P039",
+    "series": "CD60",
+    "label": "Blue case and blade terminals",
+    "thumb": "/images/product-samples/sample-38-thumb.webp",
+    "src": "/images/product-samples/sample-38.webp"
+  },
+  {
+    "id": "P040",
+    "series": "CD60",
+    "label": "Blue case with cable loop",
+    "thumb": "/images/product-samples/sample-39-thumb.webp",
+    "src": "/images/product-samples/sample-39.webp"
+  },
+  {
+    "id": "P041",
+    "series": "CD60",
+    "label": "Compact blue terminal sample",
+    "thumb": "/images/product-samples/sample-40-thumb.webp",
+    "src": "/images/product-samples/sample-40.webp"
+  },
+  {
+    "id": "P042",
+    "series": "CD60",
+    "label": "Blue wired sample",
+    "thumb": "/images/product-samples/sample-41-thumb.webp",
+    "src": "/images/product-samples/sample-41.webp"
+  },
+  {
+    "id": "P043",
+    "series": "CD60",
+    "label": "Blue terminal sample, wider view",
+    "thumb": "/images/product-samples/sample-42-thumb.webp",
+    "src": "/images/product-samples/sample-42.webp"
+  },
+  {
+    "id": "P044",
+    "series": "CD60",
+    "label": "Cable-loop sample, wider view",
+    "thumb": "/images/product-samples/sample-43-thumb.webp",
+    "src": "/images/product-samples/sample-43.webp"
+  },
+  {
+    "id": "P045",
+    "series": "CD60",
+    "label": "Blue case, wider view",
+    "thumb": "/images/product-samples/sample-44-thumb.webp",
+    "src": "/images/product-samples/sample-44.webp"
+  },
+  {
+    "id": "P046",
+    "series": "CD60",
+    "label": "Grey sample, wider view",
+    "thumb": "/images/product-samples/sample-45-thumb.webp",
+    "src": "/images/product-samples/sample-45.webp"
+  },
+  {
+    "id": "P047",
+    "series": "Additional samples",
+    "label": "Mixed product collection",
+    "thumb": "/images/product-samples/sample-46-thumb.webp",
+    "src": "/images/product-samples/sample-46.webp"
+  },
+  {
+    "id": "P048",
+    "series": "Additional samples",
+    "label": "White housing with black top",
+    "thumb": "/images/product-samples/sample-47-thumb.webp",
+    "src": "/images/product-samples/sample-47.webp"
+  },
+  {
+    "id": "P049",
+    "series": "Additional samples",
+    "label": "White cylindrical sample",
+    "thumb": "/images/product-samples/sample-48-thumb.webp",
+    "src": "/images/product-samples/sample-48.webp"
+  },
+  {
+    "id": "P050",
+    "series": "Additional samples",
+    "label": "White case markings",
+    "thumb": "/images/product-samples/sample-49-thumb.webp",
+    "src": "/images/product-samples/sample-49.webp"
+  },
+  {
+    "id": "P051",
+    "series": "Additional samples",
+    "label": "Wound elements and materials",
+    "thumb": "/images/product-samples/sample-50-thumb.webp",
+    "src": "/images/product-samples/sample-50.webp"
+  },
+  {
+    "id": "P052",
+    "series": "Additional samples",
+    "label": "Small labelled metal can",
+    "thumb": "/images/product-samples/sample-51-thumb.webp",
+    "src": "/images/product-samples/sample-51.webp"
+  },
+  {
+    "id": "P053",
+    "series": "Additional samples",
+    "label": "Metal housings",
+    "thumb": "/images/product-samples/sample-52-thumb.webp",
+    "src": "/images/product-samples/sample-52.webp"
+  },
+  {
+    "id": "P054",
+    "series": "Additional samples",
+    "label": "Gold-coloured terminal sample",
+    "thumb": "/images/product-samples/sample-53-thumb.webp",
+    "src": "/images/product-samples/sample-53.webp"
+  },
+  {
+    "id": "P055",
+    "series": "Additional samples",
+    "label": "Gold-coloured case",
+    "thumb": "/images/product-samples/sample-54-thumb.webp",
+    "src": "/images/product-samples/sample-54.webp"
+  },
+  {
+    "id": "P056",
+    "series": "Additional samples",
+    "label": "White case and terminals",
+    "thumb": "/images/product-samples/sample-55-thumb.webp",
+    "src": "/images/product-samples/sample-55.webp"
+  },
+  {
+    "id": "P057",
+    "series": "Additional samples",
+    "label": "Black open-top housing",
+    "thumb": "/images/product-samples/sample-56-thumb.webp",
+    "src": "/images/product-samples/sample-56.webp"
+  },
+  {
+    "id": "P058",
+    "series": "Additional samples",
+    "label": "Wrapped labelled sample",
+    "thumb": "/images/product-samples/sample-57-thumb.webp",
+    "src": "/images/product-samples/sample-57.webp"
+  },
+  {
+    "id": "P059",
+    "series": "Additional samples",
+    "label": "Gold-coloured cylindrical sample",
+    "thumb": "/images/product-samples/sample-58-thumb.webp",
+    "src": "/images/product-samples/sample-58.webp"
+  },
+  {
+    "id": "P060",
+    "series": "Additional samples",
+    "label": "Purple cylindrical sample",
+    "thumb": "/images/product-samples/sample-59-thumb.webp",
+    "src": "/images/product-samples/sample-59.webp"
+  },
+  {
+    "id": "P061",
+    "series": "Additional samples",
+    "label": "Blue cylindrical sample",
+    "thumb": "/images/product-samples/sample-60-thumb.webp",
+    "src": "/images/product-samples/sample-60.webp"
+  },
+  {
+    "id": "P062",
+    "series": "Additional samples",
+    "label": "Blue sample, wider view",
+    "thumb": "/images/product-samples/sample-61-thumb.webp",
+    "src": "/images/product-samples/sample-61.webp"
+  },
+  {
+    "id": "P063",
+    "series": "Additional samples",
+    "label": "Purple sample, wider view",
+    "thumb": "/images/product-samples/sample-62-thumb.webp",
+    "src": "/images/product-samples/sample-62.webp"
+  },
+  {
+    "id": "P064",
+    "series": "Additional samples",
+    "label": "Gold sample, wider view",
+    "thumb": "/images/product-samples/sample-63-thumb.webp",
+    "src": "/images/product-samples/sample-63.webp"
+  },
+  {
+    "id": "P065",
+    "series": "Additional samples",
+    "label": "Wrapped sample, wider view",
+    "thumb": "/images/product-samples/sample-64-thumb.webp",
+    "src": "/images/product-samples/sample-64.webp"
+  },
+  {
+    "id": "P066",
+    "series": "Additional samples",
+    "label": "Black housing, wider view",
+    "thumb": "/images/product-samples/sample-65-thumb.webp",
+    "src": "/images/product-samples/sample-65.webp"
+  },
+  {
+    "id": "P067",
+    "series": "Additional samples",
+    "label": "White sample, wider view",
+    "thumb": "/images/product-samples/sample-66-thumb.webp",
+    "src": "/images/product-samples/sample-66.webp"
+  },
+  {
+    "id": "P068",
+    "series": "Additional samples",
+    "label": "Multicolour leads, wider view",
+    "thumb": "/images/product-samples/sample-67-thumb.webp",
+    "src": "/images/product-samples/sample-67.webp"
+  },
+  {
+    "id": "P069",
+    "series": "Additional samples",
+    "label": "Black wired case, wider view",
+    "thumb": "/images/product-samples/sample-68-thumb.webp",
+    "src": "/images/product-samples/sample-68.webp"
+  },
+  {
+    "id": "P070",
+    "series": "CBB60",
+    "label": "White wired case, wider view",
+    "thumb": "/images/product-samples/sample-69-thumb.webp",
+    "src": "/images/product-samples/sample-69.webp"
+  },
+  {
+    "id": "P071",
+    "series": "Additional samples",
+    "label": "Gold case detail",
+    "thumb": "/images/product-samples/sample-70-thumb.webp",
+    "src": "/images/product-samples/sample-70.webp"
+  },
+  {
+    "id": "P072",
+    "series": "Additional samples",
+    "label": "Gold case alternate view",
+    "thumb": "/images/product-samples/sample-71-thumb.webp",
+    "src": "/images/product-samples/sample-71.webp"
+  },
+  {
+    "id": "P073",
+    "series": "Additional samples",
+    "label": "Metal housings, wider view",
+    "thumb": "/images/product-samples/sample-72-thumb.webp",
+    "src": "/images/product-samples/sample-72.webp"
+  },
+  {
+    "id": "P074",
+    "series": "CD60",
+    "label": "Blue wired case, wider view",
+    "thumb": "/images/product-samples/sample-73-thumb.webp",
+    "src": "/images/product-samples/sample-73.webp"
+  },
+  {
+    "id": "P075",
+    "series": "CBB60",
+    "label": "White terminal case, wider view",
+    "thumb": "/images/product-samples/sample-74-thumb.webp",
+    "src": "/images/product-samples/sample-74.webp"
+  },
+  {
+    "id": "P076",
+    "series": "CBB60",
+    "label": "White lead-wire case, wider view",
+    "thumb": "/images/product-samples/sample-75-thumb.webp",
+    "src": "/images/product-samples/sample-75.webp"
+  },
+  {
+    "id": "P077",
+    "series": "Additional samples",
+    "label": "Wound elements, wider view",
+    "thumb": "/images/product-samples/sample-76-thumb.webp",
+    "src": "/images/product-samples/sample-76.webp"
+  },
+  {
+    "id": "P078",
+    "series": "Additional samples",
+    "label": "White cylindrical case, wider view",
+    "thumb": "/images/product-samples/sample-77-thumb.webp",
+    "src": "/images/product-samples/sample-77.webp"
+  },
+  {
+    "id": "P079",
+    "series": "Additional samples",
+    "label": "Black-top housing, wider view",
+    "thumb": "/images/product-samples/sample-78-thumb.webp",
+    "src": "/images/product-samples/sample-78.webp"
+  },
+  {
+    "id": "P080",
+    "series": "CBB60",
+    "label": "White marked case, wider view",
+    "thumb": "/images/product-samples/sample-79-thumb.webp",
+    "src": "/images/product-samples/sample-79.webp"
+  },
+  {
+    "id": "P081",
+    "series": "CBB60",
+    "label": "White end cap, wider view",
+    "thumb": "/images/product-samples/sample-80-thumb.webp",
+    "src": "/images/product-samples/sample-80.webp"
+  },
+  {
+    "id": "P082",
+    "series": "CBB60",
+    "label": "Yellow end cap, wider view",
+    "thumb": "/images/product-samples/sample-81-thumb.webp",
+    "src": "/images/product-samples/sample-81.webp"
+  },
+  {
+    "id": "P083",
+    "series": "CBB60",
+    "label": "Case colour lineup, wider view",
+    "thumb": "/images/product-samples/sample-82-thumb.webp",
+    "src": "/images/product-samples/sample-82.webp"
+  },
+  {
+    "id": "P084",
+    "series": "CBB60",
+    "label": "Paired wired cases, wider view",
+    "thumb": "/images/product-samples/sample-83-thumb.webp",
+    "src": "/images/product-samples/sample-83.webp"
+  },
+  {
+    "id": "P085",
+    "series": "CBB60",
+    "label": "Base-stud samples, wider view",
+    "thumb": "/images/product-samples/sample-84-thumb.webp",
+    "src": "/images/product-samples/sample-84.webp"
+  },
+  {
+    "id": "P086",
+    "series": "CBB60",
+    "label": "Coloured leads, wider view",
+    "thumb": "/images/product-samples/sample-85-thumb.webp",
+    "src": "/images/product-samples/sample-85.webp"
+  },
+  {
+    "id": "P087",
+    "series": "CBB61",
+    "label": "Three rectangular samples, wider view",
+    "thumb": "/images/product-samples/sample-86-thumb.webp",
+    "src": "/images/product-samples/sample-86.webp"
+  },
+  {
+    "id": "P088",
+    "series": "CBB65",
+    "label": "Metal-can group, wider view",
+    "thumb": "/images/product-samples/sample-87-thumb.webp",
+    "src": "/images/product-samples/sample-87.webp"
+  },
+  {
+    "id": "P089",
+    "series": "CBB65",
+    "label": "Carton beside sample, wider view",
+    "thumb": "/images/product-samples/sample-88-thumb.webp",
+    "src": "/images/product-samples/sample-88.webp"
+  },
+  {
+    "id": "P090",
+    "series": "CBB65",
+    "label": "Sample beside carton, wider view",
+    "thumb": "/images/product-samples/sample-89-thumb.webp",
+    "src": "/images/product-samples/sample-89.webp"
+  },
+  {
+    "id": "P091",
+    "series": "CBB65",
+    "label": "Wrapped terminal detail, wider view",
+    "thumb": "/images/product-samples/sample-90-thumb.webp",
+    "src": "/images/product-samples/sample-90.webp"
+  },
+  {
+    "id": "P092",
+    "series": "CBB65",
+    "label": "Metal can and carton, wider view",
+    "thumb": "/images/product-samples/sample-91-thumb.webp",
+    "src": "/images/product-samples/sample-91.webp"
+  },
+  {
+    "id": "P093",
+    "series": "CBB65",
+    "label": "Printed carton and sample, wider view",
+    "thumb": "/images/product-samples/sample-92-thumb.webp",
+    "src": "/images/product-samples/sample-92.webp"
+  },
+  {
+    "id": "P094",
+    "series": "CBB65",
+    "label": "Alternate carton view",
+    "thumb": "/images/product-samples/sample-93-thumb.webp",
+    "src": "/images/product-samples/sample-93.webp"
+  },
+  {
+    "id": "P095",
+    "series": "CBB65",
+    "label": "Metal-can label, wider view",
+    "thumb": "/images/product-samples/sample-94-thumb.webp",
+    "src": "/images/product-samples/sample-94.webp"
+  },
+  {
+    "id": "P096",
+    "series": "Additional samples",
+    "label": "Full product collection",
+    "thumb": "/images/product-samples/sample-95-thumb.webp",
+    "src": "/images/product-samples/sample-95.webp"
+  }
+]

@@ -1,0 +1,77 @@
+/* Confirmed content and navigation review. Keep the porcelain visual direction. */
+body.porcelain-site .nav-dropdown .nav-photo-link {border-top:1px solid var(--line);margin-top:8px;padding-top:12px}
+body.porcelain-site .mobile-menu-direct {display:block;padding:16px 0;font-size:18px;border-bottom:1px solid var(--line)}
+body.porcelain-site .footer-main {grid-template-columns:minmax(150px,.8fr) minmax(150px,1fr) minmax(150px,1fr) minmax(140px,.9fr) minmax(240px,1.25fr);gap:24px}
+body.porcelain-site .footer-main>* {min-width:0}
+body.porcelain-site .footer-main .footer-brand a:not(.brand) {margin-top:20px}
+body.porcelain-site .footer-contact a {overflow-wrap:anywhere}
+body.porcelain-site .footer-contact address {font-size:14px;line-height:1.75;font-style:normal;margin-top:16px}
+body.porcelain-site #main .home-page--porcelain .home-hero-actions {display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+body.porcelain-site #main .home-page--porcelain .home-hero-actions .button {margin-top:0}
+body.porcelain-site #main .home-page--porcelain .home-production figcaption .card-link {margin-top:12px;display:inline-flex}
+body.porcelain-site #main .home-page--porcelain .home-company-heading {align-items:start}
+body.porcelain-site #main .home-page--porcelain .home-company-heading h2 {max-width:21ch}
+body.porcelain-site #main .contact-form-layout {display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr);grid-template-areas:'form direct';gap:56px;align-items:start}
+body.porcelain-site #main .contact-inquiry-form {grid-area:form;border-top:0;padding:0;min-width:0}
+body.porcelain-site #main .contact-form-intro {display:block;grid-area:direct;padding-top:24px;border-top:1px solid var(--line);min-width:0}
+body.porcelain-site #main .contact-direct {display:block}
+body.porcelain-site #main .contact-direct-links {order:0}
+body.porcelain-site #main .contact-page-heading h1+p {margin-top:16px}
+body.porcelain-site #main .contact-quick-links {display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:20px}
+body.porcelain-site #main #inquiry-form {scroll-margin-top:80px}
+body.porcelain-site #main .contact-direct h2 {font-size:28px;margin-bottom:20px}
+body.porcelain-site #main .contact-direct-links {display:grid;gap:12px;margin-bottom:24px}
+body.porcelain-site #main .contact-direct-links a {overflow-wrap:anywhere;font-size:16px}
+body.porcelain-site #main .contact-direct address {font-size:15px;line-height:1.8;margin-bottom:20px}
+body.porcelain-site #main .contact-preparation {border-top:1px solid var(--line);padding-top:24px;margin-top:32px}
+body.porcelain-site #main .contact-preparation h3 {font-size:20px}
+body.porcelain-site #main .contact-preparation .card-link {display:flex;width:fit-content;margin-top:16px}
+body.porcelain-site #main .contact-context {background:var(--paper-alt,#f1ece4);border:1px solid var(--line);margin:0 0 24px;padding:20px 24px}
+body.porcelain-site #main .contact-context h2 {font-family:'Inter Variable',Inter,sans-serif;font-size:17px;font-weight:600;margin:0 0 12px}
+body.porcelain-site #main .contact-context ul {padding:0;list-style:none;margin:0 0 14px;font-size:15px;line-height:1.65}
+body.porcelain-site #main .contact-context li+li {margin-top:5px}
+body.porcelain-site #main .contact-reference-update:empty {display:none}
+body.porcelain-site #main .contact-reference-update {font-size:14px;line-height:1.6;margin-bottom:16px}
+body.porcelain-site #main .contact-send-note {margin:0 0 24px;font-size:16px;line-height:1.65;max-width:65ch}
+body.porcelain-site #main .contact-channel-choice {padding:0 0 24px;margin:0 0 24px;border:0;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px 24px}
+body.porcelain-site #main .contact-channel-choice legend {font-size:16px;font-weight:600;margin-bottom:12px}
+body.porcelain-site #main .contact-channel-choice label {min-height:44px;display:flex;align-items:center;gap:10px}
+body.porcelain-site #main .contact-channel-choice input {accent-color:var(--accent);width:18px;height:18px}
+body.porcelain-site #main .contact-inquiry-form .form-grid {gap:20px 24px}
+body.porcelain-site #main .contact-inquiry-form .field.full, body.porcelain-site #main .contact-inquiry-form .field-help.full {grid-column:1/-1}
+body.porcelain-site #main .contact-inquiry-form .field-help {font-size:14px;line-height:1.6;color:var(--muted);margin:-8px 0 0}
+body.porcelain-site #main .field-optional {font-size:14px;font-weight:400;color:var(--muted)}
+body.porcelain-site #main .contact-privacy-note {font-size:14px;margin:16px 0;line-height:1.6}
+body.porcelain-site #main .contact-privacy-note a {text-decoration:underline;text-underline-offset:3px}
+body.porcelain-site #main .draft-result {margin-top:32px;padding:24px;background:var(--paper-alt,#f1ece4);border:1px solid var(--line)}
+body.porcelain-site #main .draft-result h2 {font-size:28px;margin:0 0 16px}
+body.porcelain-site #main .draft-result details {margin:20px 0 24px}
+body.porcelain-site #main .draft-result summary {min-height:44px;cursor:pointer}
+body.porcelain-site #main .draft-result textarea {width:100%;font-size:15px;line-height:1.65;resize:vertical;border:1px solid var(--line);background:var(--paper);padding:16px}
+body.porcelain-site #main .utility-page {min-height:36vh}
+body.porcelain-site #main .type-specimen .type-h1,body.porcelain-site #main .type-specimen .type-h2,body.porcelain-site #main .type-specimen .type-display {font-family:Georgia,'Times New Roman',serif;font-weight:400}
+@media(max-width:1200px){
+ body.porcelain-site .footer-main {grid-template-columns:minmax(0,.8fr) repeat(3,minmax(0,1fr));gap:32px}
+ body.porcelain-site .footer-contact {grid-column:1/-1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 24px}
+ body.porcelain-site .footer-contact h4,body.porcelain-site .footer-contact address {grid-column:1/-1}
+ body.porcelain-site #main .contact-form-layout {gap:32px}
+}
+@media(max-width:800px){
+ body.porcelain-site .footer-main {display:flex;flex-direction:column;gap:24px}
+ body.porcelain-site .footer-brand {order:0}
+ body.porcelain-site .footer-contact {order:1;display:block;border-bottom:1px solid var(--line);padding-bottom:24px}
+ body.porcelain-site .footer-group {order:2;width:100%}
+ body.porcelain-site .footer-contact address {margin-top:12px}
+ body.porcelain-site #main .contact-form-layout {display:flex;flex-direction:column;gap:40px}
+ body.porcelain-site #main .contact-inquiry-form {width:100%;order:0}
+ body.porcelain-site #main .contact-form-intro {width:100%;order:1}
+ body.porcelain-site #main .contact-inquiry-form .form-grid {grid-template-columns:minmax(0,1fr);gap:20px}
+ body.porcelain-site #main .contact-context {padding:18px}
+ body.porcelain-site #main .draft-result {padding:20px 16px}
+ body.porcelain-site #main .draft-result h2 {font-size:26px}
+ body.porcelain-site #main .draft-result .button-group {align-items:stretch}
+ body.porcelain-site #main .home-page--porcelain .home-hero-actions {gap:10px;margin-top:20px}
+ body.porcelain-site #main .home-page--porcelain .home-hero-actions .button {padding:12px 16px;font-size:14px}
+ body.porcelain-site #main .home-page--porcelain .home-company-heading h2 {max-width:none}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

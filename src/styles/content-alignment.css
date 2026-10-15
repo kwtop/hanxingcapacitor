@@ -1,0 +1,28 @@
+/* Center compact specimen labels on their image axis. Keep explanatory prose,
+   specification tables, checklists and forms aligned for continuous reading. */
+body.porcelain-site.reference-site #main .home-selected :is(
+  .selected-product-grid > article,
+  .selected-source-grid figcaption
+) {
+  text-align: center;
+}
+
+body.porcelain-site.reference-site #main .review-product-directory .series-catalog .card-body {
+  align-items: stretch;
+  text-align: center;
+}
+body.porcelain-site.reference-site #main .review-product-directory .series-catalog .card-body > .card-link {
+  align-self: center;
+  margin-inline: auto;
+}
+
+body.porcelain-site.reference-site #main :is(
+  .review-photo-library .sample-library-grid figcaption,
+  article.pdr-reference .pdr-sample-configuration > figure,
+  article.hvr-reference .hvr-sample-row figcaption,
+  article.hvr-reference .hvr-sample-pair figcaption,
+  article.hvr-reference .hvr-fit-photo > figcaption,
+  .rfq-selection-photo > figcaption
+) {
+  text-align: center;
+}

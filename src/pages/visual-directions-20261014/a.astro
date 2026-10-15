@@ -1,0 +1,24 @@
+---
+import DemoLayout from '../../components/visual-20261014/DemoLayout.astro';
+import InquiryCallout from '../../components/InquiryCallout.astro';
+import { products, productHref, applications, applicationHref } from '../../data/site';
+import { studio, guides, checks, rating, voltage } from '../../components/visual-20261014/demoData';
+---
+<DemoLayout direction="a" title="A · Refined essentials">
+  <section class="a-hero">
+    <img src="/images/home-selected-20261012/hero-four-warm-v2.png" alt="Illustrative studio composition of CBB60, CBB61, CBB65 and CD60 capacitor samples." width="1817" height="866" fetchpriority="high" />
+    <div class="v-wrap a-hero-copy"><h1>Motor capacitors<br />for equipment<br />manufacturers.</h1><p>Run and start series.<br />A clear starting point for your next specification.</p><a class="v-button" href="/products/">Compare capacitor series</a></div>
+  </section>
+  <section class="a-products v-section">
+    <div class="v-wrap">
+      <div class="v-heading"><h2>Motor capacitor series</h2><div><p>CBB60, CBB61 and CBB65 for run duty.<br />CD60 for switched motor-start duty.</p><p class="v-note">Series ranges; model availability varies.</p></div></div>
+      <div class="a-product-grid">{products.map(p => <article><a class="a-product-image" href={productHref(p)}><img src={studio(p.code)} alt={`Illustrative studio view based on an original ${p.code} sample.`} width="1254" height="1254" /></a><div class="a-product-title"><h3><a href={productHref(p)}>{p.code}</a></h3><span>{p.shortName}</span></div><p class="v-spec">{rating(p.code,p.capacitance)}<br />{voltage(p.code,p.voltage)}</p></article>)}</div>
+      <p class="v-note v-image-note">Studio images are illustrative. <a href="/products/photographs/">View original sample photographs</a></p>
+    </div>
+  </section>
+  <section class="a-match v-section"><div class="v-wrap a-match-panel"><div><h2>Before choosing<br />a capacitor.</h2><div class="a-checks">{checks.map(c => <div><h3>{c.title}</h3><p>{c.detail}</p></div>)}</div><a class="v-secondary" href="/resources/dimensions-terminals-mounting/">Check dimensions & connections</a></div><figure><img src="/images/home-selected-20261012/cbb65-feature.png" alt="Illustrative edited CBB65 sample view; verify the final configuration against its model drawing." width="1254" height="1254" /></figure></div></section>
+  <section class="a-apps v-section"><div class="v-wrap"><div class="v-heading"><h2>For the equipment<br />you work with.</h2><a class="v-secondary" href="/applications/">Explore applications</a></div><div class="a-app-grid">{applications.map(a => <a href={applicationHref(a)}><img src={a.image} alt={a.imageAlt} width="1200" height={a.imageHeight} /><h3>{a.shortName}</h3></a>)}</div><p class="v-note v-image-note">Application images illustrate equipment types. Select from the motor specification.</p></div></section>
+  <section class="a-evidence v-section"><div class="v-wrap a-evidence-layout"><figure class="a-film"><img src="/images/real/film-rolls.jpg" alt="Film processing equipment in supplied production footage." width="1920" height="1080" /><figcaption>From supplied production footage.</figcaption></figure><div class="a-evidence-copy"><h2>Samples.<br />Materials.<br />The details.</h2><p>Look at original sample photographs and supplied process footage. Confirm model-specific drawings and records before ordering.</p><a class="v-secondary" href="/factory/">View production & quality</a><a class="a-sample-link" href="/products/photographs/"><img src="/images/real/batch-products.jpg" alt="Original photograph of metal-can capacitor samples." width="2000" height="2000" /><span>Original sample photographs</span></a></div></div></section>
+  <section class="a-guides v-section"><div class="v-wrap a-guide-layout"><figure><img src="/images/home-selected-20261012/selection-guide.webp" alt="Illustrative selection-guide composition with a capacitor, caliper and drawing." width="1536" height="1024" /></figure><div><h2>A little clarity.<br />A better specification.</h2><nav class="a-guide-list" aria-label="Selection guides">{guides.map(g => <a href={g.href}><h3>{g.title}</h3><p>{g.detail}</p></a>)}</nav></div></div></section>
+  <InquiryCallout id="demo-a-inquiry" defaultSeries="CBB60" />
+</DemoLayout>

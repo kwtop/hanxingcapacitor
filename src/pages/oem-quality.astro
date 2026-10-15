@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/oem-hub.css'; // Matching overview frames and route hierarchy.
+---
+
+<BaseLayout title="OEM, Manufacturing & Quality" description="Motor capacitor OEM requirements, sample approval, production footage and product document checks, with packing and dispatch guidance for buyers.">
+  <article class="procurement-page procurement-hub">
+    <section class="procurement-hero"><div class="container">
+      <p class="breadcrumbs"><a href="/">Home</a> / OEM &amp; Quality</p>
+      <h1>OEM and quality</h1>
+    </div></section>
+    <section class="procurement-section"><div class="container procurement-routes">
+      <article>
+        <figure class="procurement-route-photo procurement-route-photo--sample"><img src="/images/real/cbb65-4.jpg" alt="Original CBB65 sample beside its printed carton." width="2000" height="2000" loading="eager" /></figure>
+        <h2>OEM &amp; private label</h2>
+        <p>Agree ratings, connections, drawings and sample approval, including label and packing revisions.</p>
+        <a class="card-link" href="/oem/">OEM requirements and approval</a>
+      </article>
+      <article>
+        <figure class="procurement-route-photo procurement-route-photo--process"><img src="/images/real/inspection-station.jpg" alt="Operator beside production equipment in supplied process imagery." width="1920" height="1080" loading="eager" /></figure>
+        <h2>Manufacturing &amp; quality</h2>
+        <p>View supplied production footage and request drawings, test reports and applicable model certificates.</p>
+        <a class="card-link" href="/factory/">Production footage and documents</a>
+      </article>
+      <article>
+        <figure class="procurement-route-photo"><img src="/images/illustrative/oem-hub-packing-20261012.webp" alt="Illustration of plain cartons with protective dividers." width="1200" height="800" loading="eager" /></figure>
+        <h2>Packing &amp; dispatch</h2>
+        <p>Agree protection, carton quantities and marks. Verify packing and handover against the order.</p>
+        <a class="card-link" href="/factory/packing-and-dispatch/">Packing and dispatch checklist</a>
+      </article>
+    </div></section>
+    <section class="procurement-section procurement-related"><div class="container">
+      <h2>Before placing an order</h2>
+      <nav class="procurement-record-links" aria-label="Order preparation records">
+        <a href="/buying-guide/#rfq-template"><strong>Quotation checklist</strong></a>
+        <a href="/factory/#model-records"><strong>Product document checklist</strong></a>
+        <a href="/resources/motor-capacitor-order-shipment-checklist/"><strong>Order &amp; shipment checklist</strong></a>
+      </nav>
+    </div></section>
+  </article>
+</BaseLayout>

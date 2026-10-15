@@ -1,0 +1,86 @@
+/* Standalone destinations share a secondary action boundary. Titles, contents
+   navigation, inline citations and linked photographs keep their own treatment. */
+body.porcelain-site.reference-site #main :is(
+  .content-action,
+  .card-link:where([href]):not(:where(.card-title .card-link)):not(:where([href^="/images/"])),
+  .procurement-file-link,
+  .guide-related > a:not(.button),
+  article.hvr-reference .hvr-path-link,
+  article.hvr-reference :is(.hvr-secondary, .hvr-series-link),
+  article.pdr-reference .pdr-secondary,
+  article.pdr-reference .pdr-text-link,
+  .rfq-guide-link,
+  .catalog-photo-link,
+  .quote-help > a
+) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: fit-content;
+  max-width: 100%;
+  min-height: 48px;
+  padding: 11px 18px;
+  border: 1px solid #a5a9ae;
+  border-radius: 0;
+  background: #fff;
+  color: #111;
+  font: 500 15px/1.45 'Inter Variable', Inter, Arial, sans-serif;
+  letter-spacing: 0;
+  text-align: left;
+  text-decoration: none;
+  white-space: normal;
+  box-shadow: none;
+  transition: background-color .15s ease, border-color .15s ease;
+}
+
+body.porcelain-site.reference-site #main :is(
+  .content-action,
+  .card-link:where([href]):not(:where(.card-title .card-link)):not(:where([href^="/images/"])),
+  .procurement-file-link,
+  .guide-related > a:not(.button),
+  article.hvr-reference .hvr-path-link,
+  article.hvr-reference :is(.hvr-secondary, .hvr-series-link),
+  article.pdr-reference .pdr-secondary,
+  article.pdr-reference .pdr-text-link,
+  .rfq-guide-link,
+  .catalog-photo-link,
+  .quote-help > a
+):hover {
+  border-color: #111;
+  background: #f4f5f6;
+  color: #111;
+  text-decoration: none;
+}
+
+body.porcelain-site.reference-site a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+body.porcelain-site.reference-site #main .hvr-circuit-paths > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+body.porcelain-site.reference-site #main .hvr-circuit-paths .hvr-path-link {
+  margin-top: auto;
+}
+body.porcelain-site.reference-site #main .hvr-circuit-paths > div > p {
+  margin-bottom: 20px;
+}
+body.porcelain-site.reference-site #main .quote-help > a + a {
+  margin-top: 12px;
+}
+
+body.porcelain-site.reference-site #main .procurement-file-link {
+  margin-top: 12px;
+}
+body.porcelain-site.reference-site #main .contact-preparation > .card-link {
+  display: flex;
+  margin-top: 12px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.porcelain-site.reference-site #main a { transition: none; }
+}

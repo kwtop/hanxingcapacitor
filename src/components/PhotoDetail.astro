@@ -1,0 +1,7 @@
+---
+interface Props { src: string; alt: string; focus?: string; zoom?: number; complete?: boolean; }
+const {src,alt,focus='60%',zoom=1.14,complete=false}=Astro.props;
+const isSourcePhoto=src.startsWith('/images/real/');
+const dimensions=src.endsWith('/packing-scene.jpg')?{width:540,height:960}:isSourcePhoto?{width:2000,height:2000}:{width:1536,height:1024};
+---
+<div class="photo-detail-wrap"><div class:list={['photo-detail',{'is-source-photo':isSourcePhoto,'shows-complete-photo':complete}]} style={`--photo-zoom:${zoom};--photo-y:${focus}`}><img src={src} alt={alt} loading="lazy" decoding="async" width={dimensions.width} height={dimensions.height} /></div></div>

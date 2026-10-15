@@ -1,0 +1,10 @@
+---
+import type { Product } from '../data/site';
+import { productHref } from '../data/site';
+interface Props { product: Product }
+const { product } = Astro.props;
+---
+<article class="card product-card related-product-card">
+  <a class={`image-frame catalog-product-image sample-catalog-image sample-${product.code}`} href={productHref(product)} aria-label={`View ${product.code}`}><img src={product.image} alt={product.imageAlt} loading="lazy" /></a>
+  <div class="card-body"><p class="catalog-duty">{product.function} duty</p><h3><a href={productHref(product)}>{product.code}<span class="series-name">{product.shortName} capacitor</span></a></h3><dl class="catalog-ratings">{product.code === 'CBB65' ? <><div><dt>Single run</dt><dd><span>2–100 µF</span><span>110–450 VAC</span></dd></div><div><dt>Dual run</dt><dd><span>1+15 to 15+80 µF</span><span>370–450 VAC</span></dd></div></> : <><div><dt>Capacitance</dt><dd>{product.capacitance}</dd></div><div><dt>AC voltage</dt><dd>{product.voltage}</dd></div></>}</dl><a class="card-link" href={productHref(product)}>View {product.code} details</a></div>
+</article>

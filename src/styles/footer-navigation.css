@@ -1,0 +1,44 @@
+/* Both navigation surfaces consume primaryNav; contacts retain their source data. */
+body.porcelain-site.reference-site .site-footer .footer-main{
+  display:grid;grid-template-columns:minmax(0,4fr) minmax(235px,1.25fr);gap:28px 48px;margin-bottom:32px;
+}
+body.porcelain-site.reference-site .site-footer .footer-brand{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:24px}
+body.porcelain-site.reference-site .site-footer .footer-brand .brand{margin-bottom:0}
+body.porcelain-site.reference-site .site-footer .footer-contact{display:block;grid-column:2;grid-row:2;border:0;padding:0}
+body.porcelain-site.reference-site .site-footer .footer-contact h4{font-size:14px;margin:0 0 12px;min-height:28px;display:flex;align-items:center}
+body.porcelain-site.reference-site .site-footer .footer-contact-details{display:flex;flex-direction:column;gap:16px;margin-top:20px}
+body.porcelain-site.reference-site .site-footer .footer-main .footer-contact-item{
+  display:flex;align-items:flex-start;gap:10px;margin:0;padding:0;min-height:0;font-size:13px;line-height:1.65;font-style:normal;
+}
+body.porcelain-site.reference-site .site-footer .footer-contact-item>span{min-width:0;overflow-wrap:anywhere}
+body.porcelain-site.reference-site .site-footer .footer-contact-icon{display:block;flex:0 0 18px;width:18px;height:18px;margin-top:2px;color:#e3e4e5}
+body.porcelain-site.reference-site .site-footer .footer-navigation{grid-column:1;grid-row:2;display:grid;grid-template-columns:1.15fr 1.15fr 1fr 1.05fr;gap:32px;border:0;padding-top:0}
+body.porcelain-site.reference-site .site-footer .footer-nav-section{min-width:0}
+body.porcelain-site.reference-site .site-footer .footer-nav-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
+body.porcelain-site.reference-site .site-footer .footer-main .footer-nav-primary{font-size:14px;font-weight:600;min-height:28px}
+body.porcelain-site.reference-site .site-footer .footer-nav-links{display:flex;flex-direction:column;align-items:flex-start;gap:7px}
+body.porcelain-site.reference-site .site-footer .footer-nav-links[hidden]{display:none}
+body.porcelain-site.reference-site .site-footer .footer-other-links{margin-top:12px}
+body.porcelain-site.reference-site .site-footer .footer-nav-toggle{display:none}
+@media(max-width:1100px){
+  body.porcelain-site.reference-site .site-footer .footer-main{grid-template-columns:minmax(0,1fr) minmax(220px,.5fr);gap:28px}
+  body.porcelain-site.reference-site .site-footer .footer-navigation{grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 20px}
+}
+@media(max-width:800px){
+  body.porcelain-site.reference-site .site-footer .footer-main{display:flex;flex-direction:column;gap:24px}
+  body.porcelain-site.reference-site .site-footer .footer-brand{display:block}
+  body.porcelain-site.reference-site .site-footer .footer-brand .brand{margin-bottom:14px}
+  body.porcelain-site.reference-site .site-footer .footer-contact-details{gap:16px;margin-top:14px}
+  body.porcelain-site.reference-site .site-footer .footer-main .footer-contact-item{font-size:14px;min-height:44px;align-items:flex-start;padding-block:8px}
+  body.porcelain-site.reference-site .site-footer .footer-navigation{display:block;order:2;width:100%;padding-top:8px;border-top:1px solid #343637}
+  body.porcelain-site.reference-site .site-footer .footer-nav-section{border-bottom:1px solid #343637;padding-block:8px}
+  body.porcelain-site.reference-site .site-footer .footer-nav-heading{margin:0;min-height:44px}
+  body.porcelain-site.reference-site .site-footer .footer-main .footer-nav-primary{font-size:15px;display:flex;align-items:center;min-height:44px;flex:1}
+  body.porcelain-site.reference-site .site-footer .footer-nav-toggle{display:flex;align-items:center;justify-content:center;flex:0 0 44px;width:44px;height:44px;background:transparent;border:0;color:#fff;font:400 22px/1 var(--font-body);cursor:pointer}
+  body.porcelain-site.reference-site .site-footer .footer-nav-links{padding:4px 0 12px;gap:0}
+  body.porcelain-site.reference-site .site-footer .footer-nav-links a{width:100%;min-height:44px}
+  body.porcelain-site.reference-site .site-footer .footer-other-links{margin-top:0}
+  body.porcelain-site.reference-site .site-footer .footer-bottom{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 20px;align-items:start}
+  body.porcelain-site.reference-site .site-footer .footer-bottom p{grid-column:1/-1}
+  body.porcelain-site.reference-site .site-footer .footer-bottom a{display:flex;align-items:center;min-height:44px}
+}

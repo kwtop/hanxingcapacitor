@@ -1,0 +1,15 @@
+---
+import ProductReference from '../../components/ProductReference.astro';
+import { getProductGallery } from '../../data/productReference';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { products } from '../../data/site';
+export const prerender = true;
+export function getStaticPaths() { return products.map(product => ({ params: { slug: product.slug }, props: { product } })); }
+const { product } = Astro.props;
+const others = products.filter(p => p.code !== product.code).slice(0, 3);
+const galleryPhotos = getProductGallery(product.code);
+const pageTitle = product.code === 'CBB65' ? 'CBB65 single & dual-run capacitors' : product.title;
+---
+<BaseLayout title={pageTitle} description={`${product.tagline} Compare ratings, connections and original sample photos.`}>
+  <ProductReference product={product} photos={galleryPhotos} others={others} />
+</BaseLayout>

@@ -1,0 +1,90 @@
+/* Material palette: graphite structure, silver surfaces, copper actions.
+   Legacy --green aliases remain neutral for existing content components. */
+:root {
+  --ink: #292d32;
+  --muted: #626970;
+  --paper: #f5f5f2;
+  --cream: #eff0f1;
+  --line: #dce0e3;
+  --green: var(--ink);
+  --green-deep: #22262b;
+  --accent: #b85d2c;
+  --accent-hover: #9d4c23;
+  --accent-active: #87401e;
+}
+
+::selection { background: #ecd8ca; color: var(--ink); }
+
+:root body .button:not(.text):not(.secondary):not(.lime),
+:root body .campaign-copy a.button:not(.text) {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+:root body .button:not(.text):not(.secondary):not(.lime):hover,
+:root body .campaign-copy a.button:not(.text):hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  color: #fff;
+}
+:root body .button:not(.text):not(.secondary):not(.lime):active,
+:root body .campaign-copy a.button:not(.text):active {
+  background: var(--accent-active);
+  border-color: var(--accent-active);
+}
+/* Homepage navigation previously forced its CTA to white. */
+.home-header:not(.is-scrolled) .header-cta {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.home-header:not(.is-scrolled) .header-cta:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+}
+:root body .button.secondary { color: var(--ink); border-color: #aeb4ba; }
+:root body .button.secondary:hover { background: #e6e9eb; border-color: #8d959d; color: var(--ink); }
+:root body .button.lime { background: #fff; border-color: #fff; color: var(--ink); }
+:root body .button.lime:hover { background: #eceeef; border-color: #eceeef; color: var(--ink); }
+
+:root body .filter-chip.active,
+:root body .filter-chip:hover,
+:root body .selection-option.selected {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+:root body #main .product-dossier-layout .real-gallery-thumbs button[aria-pressed="true"] { border-color: var(--accent); }
+:root body .mobile-quote { background: var(--accent); color: #fff; }
+:root body .mobile-quote:hover { background: var(--accent-hover); color: #fff; }
+:root body input { accent-color: var(--accent); }
+:root body :is(a,button,input,select,textarea,summary):focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+:root body .field :is(input,select,textarea):focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(184,93,44,.14);
+}
+:root body .site-footer { background: var(--ink); }
+:root body .site-footer :is(p,a) { color: #c3c8cc; }
+:root body .site-footer :is(h3,h4,.brand,a:hover) { color: #fff; }
+
+/* Light application-scene hero supplied by the user. */
+.campaign-hero-light { background: #eef1f3; color: var(--ink); }
+.campaign-hero-light::before, .campaign-hero-light::after { background: none; }
+.campaign-hero-light .campaign-image { object-position: center; }
+.campaign-hero-light .campaign-copy { max-width: 40%; }
+:root body .campaign-hero-light .campaign-copy :is(h1,p) { color: var(--ink); }
+.campaign-hero-light .campaign-copy .campaign-subtitle { font-size: clamp(24px,2.5vw,36px); }
+body:has(.campaign-hero-light) .home-header:not(.is-scrolled) :is(.brand,.nav-link,.mobile-nav>button) { color: var(--ink); }
+@media (max-width: 800px) {
+  /* Keep the product group intact below the copy on narrow screens. */
+  .campaign-hero-light { height: auto; min-height: 0; padding-top: 100px; display: flex; flex-direction: column; }
+  .campaign-hero-light .campaign-copy { position: relative; left: auto; top: auto; bottom: auto; transform: none; max-width: none; margin: 0 24px 20px; order: 0; }
+  :root body .campaign-hero-light .campaign-copy h1 { font-size: clamp(42px,8vw,64px); margin-bottom: 16px; }
+  .campaign-hero-light .campaign-copy .campaign-subtitle { font-size: 23px; max-width: 340px; margin-bottom: 18px; }
+  .campaign-hero-light .campaign-copy .campaign-series { margin-bottom: 22px; }
+  .campaign-hero-light .campaign-image { order: 1; height: 310px; width: 100%; object-fit: cover; object-position: right bottom; }
+  body:has(.campaign-hero-light) .home-header:not(.is-scrolled) { background: rgba(245,245,242,.96); }
+}

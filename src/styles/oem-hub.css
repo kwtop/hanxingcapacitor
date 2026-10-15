@@ -1,0 +1,69 @@
+/* Overview only: consistent media, reading order and aligned route entrances. */
+body.porcelain-site.reference-site #main .procurement-page.procurement-hub .procurement-routes {
+  gap: 32px;
+  align-items: stretch;
+}
+body.porcelain-site.reference-site #main .procurement-page.procurement-hub .procurement-routes > article {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  align-content: start;
+}
+body.porcelain-site.reference-site #main .procurement-page.procurement-hub .procurement-routes .procurement-route-photo {
+  margin: 0 0 22px;
+  width: 100%;
+  max-width: none;
+}
+body.porcelain-site.reference-site #main .procurement-page.procurement-hub .procurement-routes .procurement-route-photo img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #efefee;
+}
+body.porcelain-site.reference-site #main .procurement-page.procurement-hub .procurement-routes .procurement-route-photo--sample img {
+  object-position: center 68%;
+}
+body.porcelain-site.reference-site #main .procurement-page.procurement-hub .procurement-routes .procurement-route-photo--process img {
+  object-position: 58% center;
+}
+body.porcelain-site.reference-site #main .procurement-page.procurement-hub .procurement-routes h2 {
+  margin: 0 0 14px;
+  font-size: clamp(21px, 1.75vw, 25px);
+  line-height: 1.25;
+  min-height: 1.25em;
+  font-weight: 500;
+}
+body.porcelain-site.reference-site #main .procurement-page.procurement-hub .procurement-routes p {
+  margin: 0 0 26px;
+  line-height: 1.65;
+}
+body.porcelain-site.reference-site #main .procurement-page.procurement-hub .procurement-routes .card-link {
+  justify-self: start;
+  align-self: end;
+  margin: 0;
+  min-height: 44px;
+}
+@media (min-width: 761px) and (max-width: 1199px) {
+  body.porcelain-site.reference-site #main .procurement-page.procurement-hub .procurement-routes h2 {
+    min-height: 2.5em;
+  }
+}
+@media (max-width: 760px) {
+  body.porcelain-site.reference-site #main .procurement-page.procurement-hub .procurement-routes {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  body.porcelain-site.reference-site #main .procurement-page.procurement-hub .procurement-routes > article + article {
+    padding-top: 36px;
+  }
+  body.porcelain-site.reference-site #main .procurement-page.procurement-hub .procurement-routes .procurement-route-photo {
+    margin-bottom: 20px;
+  }
+  body.porcelain-site.reference-site #main .procurement-page.procurement-hub .procurement-routes h2 {
+    min-height: 0;
+    font-size: 25px;
+  }
+  body.porcelain-site.reference-site #main .procurement-page.procurement-hub .procurement-routes p {
+    margin-bottom: 22px;
+  }
+}

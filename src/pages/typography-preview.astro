@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const roles = [
+  ['display', 'Display', 'Motor run & start capacitors.', 'Inter Variable · 700 · responsive display'],
+  ['h1', 'H1', 'CBB60 Motor Run Capacitors', 'Inter Variable · 700 · 32–56px'],
+  ['h2', 'H2', 'Technical specifications', 'Inter Variable · 700 · 28–36px'],
+  ['h3', 'H3', 'Dimensions and connections', 'Inter Variable · 700 · 20–24px'],
+  ['h4', 'H4', 'Model documents', '18px · 600 · 1.40 · 0 · 48ch'],
+  ['body-large', 'Body Large', 'Compare the original rating, body dimensions and terminal arrangement before selecting a model.', '18px · 400 · 1.65 · 0 · 60ch'],
+  ['body', 'Body', 'Use the original motor specification to confirm the required capacitance, rated voltage and circuit duty. A photograph identifies visible details; the model drawing establishes dimensions and connections.', '16px · 400 · 1.70 · 0 · 68ch'],
+  ['small', 'Small', 'Series ranges are a starting point. Confirm the exact configuration before ordering.', '14px · 400 · 1.60 · 0 · 72ch'],
+  ['caption', 'Caption', 'Terminal view of a photographed sample. Dimensions are not established by this image.', '14px · 400 · 1.50 · 0 · 64ch'],
+  ['navigation', 'Navigation', 'Products / Applications / Manufacturing', '15px · 500 · 1.40 · 0 · container'],
+  ['button', 'Button', 'Request a quotation', '15px · 600 · 1.40 · +0.005em · container'],
+  ['label', 'Label', 'Rated voltage', '14px · 500 · 1.45 · +0.01em · 40ch'],
+  ['data', 'Data', '110–450 VAC / 50+5 µF / 50/60 Hz', '16px · 500 · 1.50 · 0 · container'],
+  ['specification', 'Specification', 'Capacitance tolerance ±5% · Operating range −40 to +85 °C', '16px · 400 · 1.60 · 0 · container'],
+];
+const examples = ['20\u00a0µF', '50+5\u00a0µF', '450\u00a0VAC', '50/60\u00a0Hz', '±5%', '−40 to +85\u00a0°C'];
+---
+<BaseLayout title="Typography system" description="Internal typography specimens for headings, reading, controls and technical data." noindex>
+  <section class="section reference-typography"><div class="container">
+    <h1>Typography system</h1>
+    <p class="type-small">Self-hosted Inter Variable for headings, reading, navigation and technical data. Internal specimens; refer to product pages for model specifications.</p>
+    <div class="type-specimens">{roles.map(([role,name,sample,settings]) => <article class="type-specimen"><div><h2 class="specimen-name">{name}</h2><p class="type-caption">{settings}</p></div><div class={`type-${role}`}>{sample}</div></article>)}</div>
+    <section class="numeric-proof" aria-labelledby="numeric-title"><h2 id="numeric-title">Numbers, units and symbols</h2><div class="numeric-examples">{examples.map(value => <span class="type-data type-unit">{value}</span>)}</div></section>
+  </div></section>
+</BaseLayout>
+<style>
+.type-specimens {margin-top:48px}
+.type-specimen {display:grid;grid-template-columns:minmax(180px,.55fr) minmax(0,1.45fr);gap:32px;padding:32px 0}
+:global(#main) .specimen-name {font:var(--type-label-font);letter-spacing:var(--type-label-tracking);margin:0 0 8px}
+.type-specimen > div {min-width:0}
+.type-specimen p {margin:0}
+.numeric-proof {margin-top:48px}
+.numeric-examples {display:flex;flex-wrap:wrap;gap:24px 40px;padding:24px 0}
+@media(max-width:800px){.type-specimen{grid-template-columns:minmax(0,1fr);gap:20px}}
+</style>
+

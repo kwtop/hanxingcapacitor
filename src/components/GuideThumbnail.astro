@@ -1,0 +1,11 @@
+---
+import { guideCovers } from '../data/guideCovers';
+
+interface Props { slug: string; }
+const { slug } = Astro.props;
+const cover = guideCovers[slug];
+---
+
+<a class="guide-thumb" href={`/resources/${slug}/`} tabindex="-1" aria-hidden="true" style={`--cover-count:${cover.photos.length}`}>
+  {cover.photos.map(photo => <span class="guide-thumb-photo"><img src={photo.src} alt="" loading="lazy" decoding="async" style={`--cover-focus:${photo.focus ?? '50% 60%'};--cover-scale:${photo.scale ?? 1}`} /></span>)}
+</a>

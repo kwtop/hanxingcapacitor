@@ -1,0 +1,9 @@
+// References to supplied photographs, not orderable SKUs or stock records.
+export const sampleConfigurations = [
+  { id:'cbb60-stud', series:'CBB60', name:'Lead-wire sample with base stud', rating:'25 µF ±5% · 450 VAC on the horizontal sample', connection:'Insulated leads; threaded base stud visible', image:'/images/real/cbb60-18.jpg', note:'Ask for the model drawing and availability for the required stud, case and lead configuration.' },
+  { id:'cbb61-blades', series:'CBB61', name:'Blade-terminal samples', rating:'4.5 / 5 / 6 µF · 450 VAC', connection:'Rectangular cases with blade terminals', image:'/images/real/cbb61-13.jpg', note:'The three ratings belong to three separate samples. Specify the individual value required.' },
+  { id:'cbb61-leads', series:'CBB61', name:'Wire-lead samples', rating:'Rating to be specified', connection:'Red leads and mounting tabs visible', image:'/images/real/cbb61-leads-10.jpg', note:'Use the drawing to specify lead length and wiring.' },
+  { id:'cbb65-single', series:'CBB65', name:'Single-run sample', rating:'20 µF ±5% · 450 VAC', connection:'Two insulated terminal groups visible', image:'/images/real/cbb65-2.jpg', note:'The label reads 50/60 Hz. Check case dimensions and terminal spacing in the model drawing.' },
+  { id:'cbb65-dual', series:'CBB65', name:'Dual-run sample', rating:'50+5 µF ±5% · 450 VAC', connection:'Multiple terminal groups; mapping requires a drawing', image:'/images/real/cbb65-dual-run-7.jpg', note:'Retain both capacitance values when preparing the requirement.' },
+  { id:'cd60-start', series:'CD60', name:'Motor-start sample', rating:'500 µF ±5% · 300 VAC', connection:'Blade terminals visible', image:'/images/real/cd60-25.jpg', note:'This sample has a different tolerance from the series table. Request its model datasheet and starting-duty limits.' },
+];

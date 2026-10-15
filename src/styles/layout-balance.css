@@ -1,0 +1,97 @@
+/* Shared image/copy proportions, checked against the current page templates. */
+body.porcelain-site.reference-site #main .procurement-page :is(.procurement-oem-hero, .procurement-company-story, .procurement-handover-layout) {
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+  gap: 64px;
+  align-items: center;
+}
+body.porcelain-site.reference-site #main .procurement-page :is(.procurement-oem-photo, .procurement-company-photo, .procurement-dispatch-photo) {
+  width: 100%;
+  max-width: none;
+  justify-self: stretch;
+}
+body.porcelain-site.reference-site #main .procurement-page :is(.procurement-oem-photo, .procurement-company-photo, .procurement-dispatch-photo) img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: #f4f5f5;
+}
+body.porcelain-site.reference-site #main .procurement-page .procurement-company-photo img {
+  aspect-ratio: 16 / 9;
+}
+body.porcelain-site.reference-site #main .procurement-page .procurement-process-stage {
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+  gap: 64px;
+  align-items: center;
+}
+/* Two films need the full content width, rather than two miniature players. */
+body.porcelain-site.reference-site #main .procurement-page .procurement-process-stage:has(.procurement-video-pair) {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 28px;
+}
+body.porcelain-site.reference-site #main .procurement-page .procurement-process-stage:has(.procurement-video-pair) > div:first-child {
+  max-width: 760px;
+}
+body.porcelain-site.reference-site #main .procurement-page .procurement-video-pair {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+}
+body.porcelain-site.reference-site #main .procurement-page .procurement-video--single {
+  width: 100%;
+  max-width: none;
+}
+body.porcelain-site.reference-site #main .procurement-page .procurement-packing-footage {
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+  gap: 64px;
+}
+body.porcelain-site.reference-site #main .procurement-page .procurement-video--portrait,
+body.porcelain-site.reference-site #main .procurement-page .procurement-video--portrait .video-frame {
+  width: 100%;
+  max-width: 340px;
+}
+body.porcelain-site.reference-site #main article.pdr-reference .pdr-hero {
+  align-items: center;
+}
+body.porcelain-site.reference-site #main .review-guide-section.is-label .review-guide-section-body {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 32px;
+}
+body.porcelain-site.reference-site #main .review-guide-section.is-label :is(.review-guide-photos, .review-guide-copy) {
+  grid-column: auto;
+  grid-row: auto;
+  max-width: none;
+}
+body.porcelain-site.reference-site #main .review-guide-section.is-label .review-guide-photo {
+  display: grid;
+  grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
+  align-items: center;
+  gap: 28px;
+}
+body.porcelain-site.reference-site #main .review-guide-section.is-label .review-guide-photos { order: -1; }
+body.porcelain-site.reference-site #main .review-guide-section.is-compact-photo .review-guide-photos {
+  max-width: 520px;
+  margin-top: 32px;
+}
+body.porcelain-site.reference-site #main .review-guide-section.is-compact-photo .review-guide-photo .photo-detail.shows-complete-photo {
+  max-height: none;
+}
+@media (max-width: 1100px) {
+  body.porcelain-site.reference-site #main .procurement-page :is(.procurement-oem-hero, .procurement-company-story, .procurement-handover-layout, .procurement-process-stage, .procurement-packing-footage) { gap: 40px; }
+  body.porcelain-site.reference-site #main .review-guide-section.is-label .review-guide-section-body { grid-template-columns: minmax(0, 1fr); }
+  body.porcelain-site.reference-site #main .review-guide-section.is-label :is(.review-guide-photos, .review-guide-copy) { grid-column: auto; grid-row: auto; }
+}
+@media (max-width: 800px) {
+  body.porcelain-site.reference-site #main .procurement-page :is(.procurement-oem-hero, .procurement-company-story, .procurement-handover-layout, .procurement-process-stage, .procurement-packing-footage, .procurement-video-pair) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+  body.porcelain-site.reference-site #main .procurement-page .procurement-video--portrait { justify-self: center; }
+  body.porcelain-site.reference-site #main .procurement-page .procurement-packing-footage-copy { grid-row: 1; }
+  body.porcelain-site.reference-site #main .procurement-page .procurement-video--portrait { grid-row: 2; }
+  body.porcelain-site.reference-site #main .procurement-page .procurement-routes > article + article { padding-top: 36px; }
+  body.porcelain-site.reference-site #main .review-guide-photos { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  body.porcelain-site.reference-site #main .review-guide-photo { max-width: none; }
+  body.porcelain-site.reference-site #main .review-guide-section.is-label .review-guide-photos { max-width: none; }
+  body.porcelain-site.reference-site #main .review-guide-section.is-label .review-guide-photo { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+}
