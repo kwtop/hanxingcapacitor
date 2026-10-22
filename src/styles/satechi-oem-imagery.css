@@ -1,0 +1,34 @@
+/* Source-bound OEM imagery, confined to the accepted local visual preview. */
+body.satechi-site #main .oem-editorial-photo { min-width:0; margin:0; }
+body.satechi-site #main .oem-editorial-photo > img { display:block; width:100%; height:auto; aspect-ratio:3/2; object-fit:cover; border-radius:16px; }
+body.satechi-site #main .oem-editorial-page .ss-factory-intro .oem-editorial-photo img { object-position:50% 50%; }
+body.satechi-site #main .oem-editorial-page .procurement-packing-footage { grid-template-columns:.7fr 1.3fr; gap:56px; }
+body.satechi-site #main .oem-editorial-page .procurement-packing-footage-copy { max-width:40ch; }
+body.satechi-site #main .oem-editorial-page .oem-packing-player { width:100%; max-width:none; margin:0; min-width:0; grid-column:auto; grid-row:auto; }
+body.satechi-site #main .oem-editorial-page .video-frame--editorial { width:100%; background:#1b1c21; border-radius:16px; overflow:hidden; isolation:isolate; }
+body.satechi-site #main .oem-editorial-page .video-frame--editorial > video { width:100%; height:100%; object-fit:contain; aspect-ratio:auto; border-radius:0; }
+body.satechi-site #main .oem-editorial-page .video-frame--editorial > .video-cover { width:100%; height:100%; object-fit:cover; border-radius:0; }
+body.satechi-site #main .oem-editorial-page .video-frame--editorial .video-start { padding:20px; }
+body.satechi-site #main .oem-editorial-page .video-frame--editorial .video-start span { display:inline-flex; align-items:center; gap:10px; padding:11px 18px; border-radius:999px; background:#fff; color:#1b1c21; font:500 13px/1.4 var(--font-body); transition:background-color 160ms,color 160ms; }
+body.satechi-site #main .oem-editorial-page .video-frame--editorial .video-start span::before { content:''; width:8px; height:10px; background:currentColor; clip-path:polygon(0 0,100% 50%,0 100%); }
+body.satechi-site #main .oem-editorial-page .video-frame--editorial .video-start:hover span { background:#1b1c21; color:#fff; }
+body.satechi-site #main .oem-editorial-page .video-frame--editorial .video-start:focus-visible { outline:2px solid #fff; outline-offset:-7px; }
+body.satechi-site #main .oem-editorial-page .procurement-handover-layout .oem-editorial-photo img { aspect-ratio:3/2; }
+body.satechi-site #main .oem-editorial-page .co-oem-stories > article:not(:first-child) > .oem-editorial-photo img { aspect-ratio:3/2; }
+body.satechi-site #main .oem-editorial-page .co-oem-stories > article:nth-child(2) > .oem-editorial-photo img { aspect-ratio:1.8; }
+@media(max-width:1020px) {
+  body.satechi-site #main .oem-editorial-page .procurement-packing-footage { grid-template-columns:.8fr 1.2fr; gap:32px; }
+}
+@media(max-width:800px) {
+  body.satechi-site #main .oem-editorial-page .procurement-packing-footage { grid-template-columns:1fr; gap:24px; }
+  body.satechi-site #main .oem-editorial-page .procurement-packing-footage-copy { max-width:60ch; }
+  body.satechi-site #main .oem-editorial-page .co-oem-stories > article:nth-child(2) > .oem-editorial-photo img { aspect-ratio:3/2; }
+}
+@media(max-width:600px) {
+  body.satechi-site #main .oem-editorial-photo > img, body.satechi-site #main .oem-editorial-page .video-frame--editorial { border-radius:12px; }
+  body.satechi-site #main .oem-editorial-page .video-frame--editorial .video-start { padding:14px; }
+  body.satechi-site #main .oem-editorial-page .video-frame--editorial .video-start span { padding:10px 16px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  body.satechi-site #main .oem-editorial-page .video-frame--editorial .video-start span { transition:none; }
+}

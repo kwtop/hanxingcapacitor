@@ -1,0 +1,36 @@
+{
+  "reference": "..\\..\\reference\\390-full.jpg",
+  "candidate": "candidate.png",
+  "capture_metadata": "capture.json",
+  "expected": {
+    "url": "http://127.0.0.1:4335/previews/satechi-home/",
+    "title": "HAN XING — Satechi homepage study",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dpr": 1.0000000298023224,
+    "full_page": true,
+    "screenshot_scale": "css"
+  },
+  "measurement_baseline": "..\\..\\measurement-calibrated-390\\measurements.json",
+  "measurement_sha256": "5509c9543a5fd737b4a610e173ee98c832fe9bb31d2ae623a78db1c2336bfd06",
+  "allow_height_difference": true,
+  "expected_assets": {},
+  "clips": [
+    "region-000:20,56,350,63",
+    "region-001:0,50,390,840",
+    "region-002:0,890,390,100",
+    "region-003:0,990,390,627",
+    "region-004:0,1616,390,700",
+    "region-005:0,2317,390,708",
+    "region-006:0,3025,390,700",
+    "region-007:0,3725,390,708",
+    "region-008:0,4434,390,816",
+    "region-009:0,5250,390,754",
+    "region-010:0,6004,390,124",
+    "region-011:0,6128,390,560",
+    "region-012:0,6688,390,259",
+    "region-013:0,6947,390,950"
+  ]
+}

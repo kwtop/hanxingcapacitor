@@ -1,0 +1,158 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/resources/",
+  "clientWidth": 1425,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 262.8020935058594,
+        "height": 48,
+        "left": 60,
+        "right": 811.1979370117188,
+        "top": 214.80209350585935,
+        "width": 751.1979370117188,
+        "x": 60,
+        "y": 214.80209350585935
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "48px",
+      "size": "40px",
+      "text": "Motor capacitor resources"
+    }
+  ],
+  "headings": [
+    "Technical guides",
+    "Buying & shipping",
+    "Buyer FAQ",
+    "Useful starting points",
+    "Reading a motor capacitor label",
+    "CBB60 vs CBB61 vs CBB65",
+    "Motor capacitor order & shipping checklist",
+    "Company and model documents"
+  ],
+  "height": 2369,
+  "images": [
+    {
+      "alt": "Illustrative capacitor and purchasing still life.",
+      "box": {
+        "bottom": 639.6458435058594,
+        "height": 279.25,
+        "left": 60,
+        "right": 478.8854370117187,
+        "top": 360.3958435058594,
+        "width": 418.8854370117187,
+        "x": 60,
+        "y": 360.3958435058594
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/resources-desk.webp"
+    },
+    {
+      "alt": "Illustrative capacitor and purchasing still life.",
+      "box": {
+        "bottom": 639.6458435058594,
+        "height": 279.25,
+        "left": 502.8854370117187,
+        "right": 921.7708740234376,
+        "top": 360.3958435058594,
+        "width": 418.8854370117187,
+        "x": 502.8854370117187,
+        "y": 360.3958435058594
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/guide-shipping.webp"
+    },
+    {
+      "alt": "Illustrative capacitor and purchasing still life.",
+      "box": {
+        "bottom": 639.6458435058594,
+        "height": 279.25,
+        "left": 945.7708740234376,
+        "right": 1364.6563110351562,
+        "top": 360.3958435058594,
+        "width": 418.8854370117187,
+        "x": 945.7708740234376,
+        "y": 360.3958435058594
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/contact-desk.webp"
+    },
+    {
+      "alt": "Illustrative editorial view of the original Hanxing CBB65 label.",
+      "box": {
+        "bottom": 1210.3646240234375,
+        "height": 279.25,
+        "left": 60,
+        "right": 478.8854370117187,
+        "top": 931.1146240234376,
+        "width": 418.8854370117187,
+        "x": 60,
+        "y": 931.1146240234376
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/guide-label.webp"
+    },
+    {
+      "alt": "Illustrative arrangement of the three original run-capacitor case formats.",
+      "box": {
+        "bottom": 1210.3646240234375,
+        "height": 279.25,
+        "left": 502.8854370117187,
+        "right": 921.7708740234376,
+        "top": 931.1146240234376,
+        "width": 418.8854370117187,
+        "x": 502.8854370117187,
+        "y": 931.1146240234376
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/guide-series.webp"
+    },
+    {
+      "alt": "Generic illustration of protective packing and order notes, not a shipment record.",
+      "box": {
+        "bottom": 1210.3646240234375,
+        "height": 279.25,
+        "left": 945.7708740234376,
+        "right": 1364.6563110351562,
+        "top": 931.1146240234376,
+        "width": 418.8854370117187,
+        "x": 945.7708740234376,
+        "y": 931.1146240234376
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/guide-shipping.webp"
+    }
+  ],
+  "robots": [
+    "noindex,follow",
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 1425,
+  "title": "Motor Capacitor Resources | Technical & Buying Guides | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/resources/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 900,
+    "width": 1440
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

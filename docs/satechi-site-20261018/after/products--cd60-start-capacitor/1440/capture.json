@@ -1,0 +1,338 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/products/cd60-start-capacitor/",
+  "clientWidth": 1425,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 332.6041717529297,
+        "height": 96,
+        "left": 818.1354370117188,
+        "right": 1324.656280517578,
+        "top": 236.6041717529297,
+        "width": 506.5208435058594,
+        "x": 818.1354370117188,
+        "y": 236.6041717529297
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "48px",
+      "size": "40px",
+      "text": "CD60motor start capacitors"
+    }
+  ],
+  "headings": [
+    "Technical specifications",
+    "Electrical",
+    "Case & connection",
+    "Sample label and series data",
+    "Selecting a model",
+    "Sample configurations & fit",
+    "Motor-start sample",
+    "Record the installed fit",
+    "Applications",
+    "Water pumps",
+    "Air conditioners / HVAC",
+    "Other single-phase AC motor starting",
+    "CD60 datasheets & drawings",
+    "Ordering & samples",
+    "Send your capacitor requirements.",
+    "Other capacitor series",
+    "CBB60",
+    "CBB61",
+    "CBB65"
+  ],
+  "height": 6490,
+  "images": [
+    {
+      "alt": "Illustrative studio view derived from the original CD60 sample, preserving its markings.",
+      "box": {
+        "bottom": 924.7396087646484,
+        "height": 728.1354370117188,
+        "left": 40,
+        "right": 768.1354370117188,
+        "top": 196.6041717529297,
+        "width": 728.1354370117188,
+        "x": 40,
+        "y": 196.6041717529297
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/product-cd60.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 1014.0729217529296,
+        "height": 74.66667175292969,
+        "left": 40.66666793823242,
+        "right": 115.33333969116212,
+        "top": 939.40625,
+        "width": 74.66667175292969,
+        "x": 40.66666793823242,
+        "y": 939.40625
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/product-cd60.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 1014.0729217529296,
+        "height": 74.66667175292969,
+        "left": 126.66667175292967,
+        "right": 201.33334350585935,
+        "top": 939.40625,
+        "width": 74.66667175292969,
+        "x": 126.66667175292967,
+        "y": 939.40625
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cd60-25.jpg"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 1014.0729217529296,
+        "height": 74.66667175292969,
+        "left": 212.6666717529297,
+        "right": 287.3333435058594,
+        "top": 939.40625,
+        "width": 74.66667175292969,
+        "x": 212.6666717529297,
+        "y": 939.40625
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cd60-detail-69.jpg"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 1014.0729217529296,
+        "height": 74.66667175292969,
+        "left": 298.66668701171875,
+        "right": 373.3333587646485,
+        "top": 939.40625,
+        "width": 74.66667175292969,
+        "x": 298.66668701171875,
+        "y": 939.40625
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-38-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 1014.0729217529296,
+        "height": 74.66667175292969,
+        "left": 384.6666870117187,
+        "right": 459.3333587646485,
+        "top": 939.40625,
+        "width": 74.66667175292969,
+        "x": 384.6666870117187,
+        "y": 939.40625
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-39-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 1014.0729217529296,
+        "height": 74.66667175292969,
+        "left": 470.6666870117187,
+        "right": 545.3333587646484,
+        "top": 939.40625,
+        "width": 74.66667175292969,
+        "x": 470.6666870117187,
+        "y": 939.40625
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-40-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 1014.0729217529296,
+        "height": 74.66667175292969,
+        "left": 556.6666870117188,
+        "right": 631.3333587646484,
+        "top": 939.40625,
+        "width": 74.66667175292969,
+        "x": 556.6666870117188,
+        "y": 939.40625
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-41-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 1014.0729217529296,
+        "height": 74.66667175292969,
+        "left": 642.6666870117188,
+        "right": 717.3333587646484,
+        "top": 939.40625,
+        "width": 74.66667175292969,
+        "x": 642.6666870117188,
+        "y": 939.40625
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-42-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 1014.0729217529296,
+        "height": 74.66667175292969,
+        "left": 728.6666870117188,
+        "right": 803.3333587646484,
+        "top": 939.40625,
+        "width": 74.66667175292969,
+        "x": 728.6666870117188,
+        "y": 939.40625
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-43-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 1014.0729217529296,
+        "height": 74.66667175292969,
+        "left": 814.6666870117188,
+        "right": 889.3333587646484,
+        "top": 939.40625,
+        "width": 74.66667175292969,
+        "x": 814.6666870117188,
+        "y": 939.40625
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-44-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 1014.0729217529296,
+        "height": 74.66667175292969,
+        "left": 900.6666870117188,
+        "right": 975.3333587646484,
+        "top": 939.40625,
+        "width": 74.66667175292969,
+        "x": 900.6666870117188,
+        "y": 939.40625
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-73-thumb.webp"
+    },
+    {
+      "alt": "CD60: Motor-start sample. Blade terminals visible.",
+      "box": {
+        "bottom": 2978.0001220703125,
+        "height": 513.8646240234375,
+        "left": 40,
+        "right": 553.8646240234375,
+        "top": 2464.135498046875,
+        "width": 513.8646240234375,
+        "x": 40,
+        "y": 2464.135498046875
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cd60-25.jpg"
+    },
+    {
+      "alt": "Photograph of a Hanxing-marked white CBB60 capacitor sample with two insulated leads.",
+      "box": {
+        "bottom": 5766.77099609375,
+        "height": 190,
+        "left": 64,
+        "right": 174,
+        "top": 5576.77099609375,
+        "width": 110,
+        "x": 64,
+        "y": 5576.77099609375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb60-hanxing-wired.jpg"
+    },
+    {
+      "alt": "Photograph of three rectangular CBB61 samples with blade terminals.",
+      "box": {
+        "bottom": 5766.77099609375,
+        "height": 190,
+        "left": 520.8854370117188,
+        "right": 630.8854370117188,
+        "top": 5576.77099609375,
+        "width": 110,
+        "x": 520.8854370117188,
+        "y": 5576.77099609375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb61-13.jpg"
+    },
+    {
+      "alt": "Photograph of a CBB65 metal-can capacitor sample marked 20 µF and 450 VAC.",
+      "box": {
+        "bottom": 5766.77099609375,
+        "height": 190,
+        "left": 977.1041870117188,
+        "right": 1087.1041870117188,
+        "top": 5576.77099609375,
+        "width": 110,
+        "x": 977.1041870117188,
+        "y": 5576.77099609375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb65-2.jpg"
+    }
+  ],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 1425,
+  "title": "CD60 motor start capacitors | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/products/cd60-start-capacitor/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 900,
+    "width": 1440
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

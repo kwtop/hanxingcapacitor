@@ -1,0 +1,48 @@
+{
+  "bodyClass": "porcelain-site reference-site",
+  "canonical": "https://www.hanxingcapacitor.com/contact/",
+  "clientWidth": 375,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 216.6666717529297,
+        "height": 96,
+        "left": 20,
+        "right": 354.66668701171875,
+        "top": 120.66667175292967,
+        "width": 334.66668701171875,
+        "x": 20,
+        "y": 120.66667175292967
+      },
+      "font": "\"Times New Roman\", Georgia, serif",
+      "line": "48px",
+      "size": "48px",
+      "text": "ContactHAN XING"
+    }
+  ],
+  "headings": [
+    "Your reference",
+    "Review your inquiry"
+  ],
+  "height": 2495,
+  "images": [],
+  "robots": [
+    "noindex,follow"
+  ],
+  "scrollWidth": 375,
+  "title": "Contact Hanxing Capacitor | Motor Capacitor Inquiries",
+  "url": "http://127.0.0.1:4335/contact/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 844,
+    "width": 390
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

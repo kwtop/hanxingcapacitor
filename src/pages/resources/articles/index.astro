@@ -1,7 +1,12 @@
 ---
+import { isSatechiPreview } from '../../../lib/visualPreview';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { guides, guideHref } from '../../../data/guides';
 import '../../../styles/resource-hubs.css';
+import FeaturedGuide from '../../../components/satechi-preview/FeaturedGuide.astro';
+import GuideCover from '../../../components/satechi-preview/GuideCover.astro';
+import DirectorySearch from '../../../components/DirectorySearch.astro';
+const featured = guides.find(guide => guide.slug === 'read-motor-capacitor-label')!;
 const groups = [
   { title: 'Electrical ratings and duty', slugs: ['read-motor-capacitor-label', 'start-vs-run-capacitors', 'capacitance-voltage-guide'] },
   { title: 'Compare capacitor series', slugs: ['cbb60-vs-cbb61-vs-cbb65', 'single-vs-dual-run-capacitors'] },
@@ -9,11 +14,15 @@ const groups = [
 ];
 ---
 <BaseLayout title="Motor Capacitor Technical Guides | HAN XING" description="Motor capacitor guides on µF, VAC and circuit duty, with series comparisons and measurement checklists for cases, mounting and connections.">
-  <div class="review-resource-page resource-hub">
-    <section class="page-hero"><div class="container"><p class="breadcrumbs"><a href="/">Home</a> / <a href="/resources/">Resources</a> / Technical guides</p><h1>Technical guides</h1><p class="lead">Start with the original label and motor specification. Use these guides to compare capacitor series and check the space for installation.</p></div></section>
+  <div class:list={['review-resource-page resource-hub', {'ss-guide-index':isSatechiPreview}]}>
+    <section class="page-hero"><div class="container"><p class="breadcrumbs"><a href="/">Home</a> / <a href="/resources/">Resources</a> / Technical guides</p><h1>Technical guides</h1><p class="lead">Practical guides to capacitor ratings, case formats, wiring and installation dimensions.</p></div></section>
     <div class="container resource-hub-body">
-      {groups.map(group => <section class="resource-hub-section"><h2>{group.title}</h2><div class="resource-article-list">{group.slugs.map(slug => guides.find(guide => guide.slug === slug)!).map(guide => <a href={guideHref(guide)}><h3>{guide.title}</h3><p>{guide.summary}</p></a>)}</div></section>)}
-      <section class="resource-hub-section"><h2>Datasheets &amp; drawings</h2><p>Request the current datasheet and dimensioned drawing for the exact model you need. A series range describes several models; availability of your rating and case combination needs confirmation.</p><nav class="resource-hub-actions" aria-label="Model documents and purchasing"><a class="card-link" href="/factory/#model-records">Product document checklist</a><a class="card-link" href="/products/">Product series</a><a class="card-link" href="/buying-guide/">Buying &amp; shipping</a></nav></section>
+      <DirectorySearch directory="technical-guides" label="Search technical guides" placeholder="e.g. terminals or run duty" noun="guides" emptyTitle="No matching guides" />
+      <div id="technical-guides" data-content-directory>
+      {isSatechiPreview && <FeaturedGuide guide={featured} filterable />}
+      {groups.map(group => <section class="resource-hub-section" data-search-group><h2>{group.title}</h2><div class="resource-article-list">{group.slugs.filter(slug => !isSatechiPreview || slug !== featured.slug).map(slug => guides.find(guide => guide.slug === slug)!).map(guide => <a data-search-item href={guideHref(guide)}>{isSatechiPreview && <GuideCover class="ss-resource-cover" slug={guide.slug} sizes="(max-width:600px) calc(100vw - 32px), (max-width:800px) 45vw, 34vw" />}<h3>{guide.title}</h3><p>{guide.summary}</p></a>)}</div></section>)}
+      </div>
+      <section class="resource-hub-section"><h2>Datasheets &amp; drawings</h2><p>Specify the required rating, case and connections when requesting a datasheet and dimensioned drawing.</p><nav class="resource-hub-actions" aria-label="Model documents and purchasing"><a class="card-link" href="/factory/#model-records">Product document checklist</a><a class="card-link" href="/products/">Product series</a><a class="card-link" href="/buying-guide/">Buying &amp; shipping</a></nav></section>
     </div>
   </div>
 </BaseLayout>

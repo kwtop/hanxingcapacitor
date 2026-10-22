@@ -1,0 +1,75 @@
+{
+  "desktopMenu": {
+    "focused": "/resources/articles/",
+    "links": 3,
+    "open": "true"
+  },
+  "productFilter": {
+    "cards": 1,
+    "title": "CD60Motor start capacitor"
+  },
+  "galleryOriginal": {
+    "caption": "35 µF · 450 VAC wired sample",
+    "src": "/images/real/cbb60-hanxing-wired.jpg"
+  },
+  "galleryReturn": "/images/previews/satechi-site-20261018/product-cbb60.webp",
+  "mobileContact": {
+    "background": "rgba(0, 0, 0, 0)",
+    "foreground": "rgb(27, 28, 33)",
+    "text": "Contact",
+    "width": 49.46875
+  },
+  "mobileMenu": {
+    "children": 5,
+    "open": "true",
+    "overflow": 0,
+    "overview": "/products/"
+  },
+  "mobileEscape": "false",
+  "defaultSeries": "CBB60",
+  "footerMenu": {
+    "height": 332,
+    "open": "true"
+  },
+  "inquiryContext": {
+    "back": "/products/cbb65-air-conditioner-capacitor/",
+    "reference": "Your referenceSeries: CBB65Return to CBB65",
+    "url": "http://127.0.0.1:4340/contact/?series=CBB65&request=quote#inquiry-form",
+    "visible": true
+  },
+  "emailDraft": {
+    "hasDestination": true,
+    "hasSeries": true,
+    "mailto": true,
+    "visible": true
+  },
+  "whatsappDraft": {
+    "emailDisabled": true,
+    "phoneEnabled": true,
+    "recipient": true,
+    "visible": true
+  },
+  "checklistCopy": "Checklist copied.",
+  "orderCopy": "Order notes copied.",
+  "originalLibraryFilter": {
+    "cards": 8,
+    "texts": [
+      "P029CBB65Metal-can sample",
+      "P030CBB65Sample and printed carton",
+      "P031CBB65Carton and terminal view",
+      "P032CBB65Metal can beside carton",
+      "P033CBB65Terminal end with protective wrapping",
+      "P034CBB65Dual-run sample and carton",
+      "P035CBB65Alternate sample and carton",
+      "P036CBB65Three metal-can samples"
+    ]
+  },
+  "originalLibraryMore": 20,
+  "faq": {
+    "answer": [
+      "What is the minimum order quantity?The standard minimum is 1,000 pieces. Confirm the minimum for your exact model and configuration in the quotation.Ask about your model and quantity"
+    ],
+    "overflow": 0
+  },
+  "consoleErrors": []
+}

@@ -1,4 +1,9 @@
 ---
+import { isSatechiPreview } from '../../lib/visualPreview';
+import OemPhoto from '../../components/satechi-preview/OemPhoto.astro';
+import { oemMedia } from '../../data/oemMedia';
+import RefinedPhoto from '../../components/satechi-preview/RefinedPhoto.astro';
+import BrochurePhoto from '../../components/satechi-preview/BrochurePhoto.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import InquiryCallout from '../../components/InquiryCallout.astro';
 import VideoFigure from '../../components/VideoFigure.astro';
@@ -15,39 +20,42 @@ const shippingRecords = [
 ];
 ---
 <BaseLayout title="Packing, Dispatch & Order Records" description="Capacitor packing requirements, carton quantities, shipping marks and the documents to check before carrier handover.">
-  <article class="procurement-page procurement-packing">
+  <article class:list={['procurement-page procurement-packing', {'oem-editorial-page': isSatechiPreview}]}>
     <section class="procurement-hero"><div class="container">
       <p class="breadcrumbs"><a href="/">Home</a> / <a href="/oem-quality/">OEM &amp; Quality</a> / Packing &amp; Dispatch</p>
       <h1 id="packing-title">Packing and dispatch</h1>
       <nav class="procurement-actions" aria-label="Packing information"><a class="button" href="#packing-requirements">Review packing requirements</a><a class="card-link" href="/contact/?request=packing#inquiry-form">Discuss your packing</a></nav>
+      {isSatechiPreview && <RefinedPhoto name="packing-protection" class="ss-editorial-visual ss-packing-workshop" eager />}
     </div></section>
     <section class="procurement-section" id="packing-requirements" aria-labelledby="pack-title"><div class="container">
       <h2 id="pack-title">Packing requirements</h2>
+      <div class:list={{'ss-packing-spec':isSatechiPreview}}>
+      {isSatechiPreview && <BrochurePhoto name="cbb65-packaging" class="zi-packing-spec-photo" zoom label="CBB65 product and individual box" sizes="(max-width: 1020px) calc(100vw - 48px), 36vw"><h3>Product and individual box</h3></BrochurePhoto>}
       <table class="procurement-table procurement-packing-requirements">
         <caption class="visually-hidden">Packing requirements and values to record</caption>
         <thead><tr><th scope="col">Requirement</th><th scope="col">Details for the packing specification</th></tr></thead>
         <tbody>{requirements.map(item => <tr><th scope="row"><strong>{item.name}</strong><span>{item.description}</span></th><td><span class="procurement-mobile-label" aria-hidden="true">Packing specification</span>{item.values}</td></tr>)}</tbody>
       </table>
+      </div>
       <a class="card-link" href="/oem/#configuration-approval">Agree label and packing revisions</a>
     </div></section>
     <section class="procurement-section" id="packing-clip" aria-labelledby="packing-footage-title"><div class="container procurement-packing-footage">
       <div class="procurement-packing-footage-copy"><h2 id="packing-footage-title">Packing footage</h2><ul><li>Keep terminals and leads clear of pressure or contact.</li><li>Check dividers, inner protection and package counts.</li><li>Match the marks to the model and order reference.</li></ul></div>
-      <div class="procurement-video procurement-video--portrait"><VideoFigure src="/videos/packing-scene.mp4" poster="/images/real/packing-scene.jpg" label="Supplied footage of small product boxes being handled at a packing worktable" ratio="9/16" /><a class="procurement-file-link" href="/videos/packing-scene.mp4">Open packing video</a></div>
+      <div class:list={['procurement-video', isSatechiPreview ? 'oem-packing-player' : 'procurement-video--portrait']}><VideoFigure src="/videos/packing-scene.mp4" poster="/images/real/packing-scene.jpg" label="Supplied footage of small product boxes being handled at a packing worktable" ratio="9/16" displayRatio={isSatechiPreview ? '3/2' : undefined} cover={isSatechiPreview ? oemMedia['packing-worktable'] : undefined} /></div>
     </div></section>
     <section class="procurement-section" id="handover" aria-labelledby="handover-title"><div class="container">
       <h2 id="handover-title">Packout &amp; carrier handover</h2>
       <div class="procurement-handover-layout">
-        <div><dl class="procurement-handover-records"><div><dt>Packout record</dt><dd>Model and unit counts, carton and pallet counts, shipping marks, carton dimensions, net and gross weights.</dd></div><div><dt>Carrier handover record</dt><dd>Pickup date, package count and the bill of lading, air waybill or courier reference for the agreed transport method.</dd></div></dl><p>Record production completion, inspection release, pickup, departure and estimated arrival as separate dates. Use the carrier record and delivery confirmation to track the stages after loading.</p></div>
-        <figure class="procurement-dispatch-photo"><img src="/images/real/dispatch-pallets.jpg" alt="Wrapped cartons on pallets in a dispatch-area reference image." width="4032" height="3024" loading="lazy" /></figure>
+        <div><dl class="procurement-handover-records"><div><dt>Packout record</dt><dd>Model and unit counts, carton and pallet counts, shipping marks, carton dimensions, net and gross weights.</dd></div><div><dt>Carrier handover record</dt><dd>Pickup date, package count and the bill of lading, air waybill or courier reference for the agreed transport method.</dd></div></dl><p>Record production completion, inspection release, pickup, departure and estimated arrival separately. Track transport with the carrier record and delivery confirmation.</p></div>
+        {isSatechiPreview ? <OemPhoto name="dispatch-area" class="procurement-dispatch-photo" sizes="(max-width: 800px) calc(100vw - 48px), 48vw" /> : <figure class="procurement-dispatch-photo"><img src="/images/real/dispatch-pallets.jpg" alt="Wrapped cartons on pallets in a dispatch-area reference image." width="4032" height="3024" loading="lazy" /></figure>}
       </div>
     </div></section>
     <section class="procurement-section" aria-labelledby="records-title"><div class="container">
       <h2 id="records-title">Match the documents</h2>
       <table class="procurement-table procurement-shipping-records"><caption class="visually-hidden">Documents to match to the order, packout and handover records</caption><thead><tr><th scope="col">Record</th><th scope="col">Check against the order</th></tr></thead><tbody>{shippingRecords.map(([name, description]) => <tr><th scope="row">{name}</th><td><span class="procurement-mobile-label" aria-hidden="true">Check against the order</span>{description}</td></tr>)}</tbody></table>
-      <p class="procurement-section-intro">File the agreed inspection and sample records under the same order reference. Where the route or contract requires origin or compliance documents, agree who issues them and what they cover.</p>
+      <p class="procurement-section-intro">File inspection and sample records with the order. List the issuer and scope of origin or compliance documents required for the destination and contract.</p>
       <a class="card-link" href={checklist}>Check delivery terms, payment and document responsibilities</a>
     </div></section>
-    <InquiryCallout href="/contact/?request=packing#inquiry-form" heading="Discuss packing and delivery." description="Share the model, quantity and destination." />
-    <aside class="procurement-references container" aria-labelledby="packing-references-title"><h2 id="packing-references-title">References</h2><p><a href="https://www.trade.gov/common-export-documents" target="_blank" rel="noopener noreferrer">International Trade Administration: common export documents</a></p><p><a href="https://library.iccwbo.org/clp/clp-incoterms-qa-2020.htm?AGENT=ICC_HQ" target="_blank" rel="noopener noreferrer">ICC: delivery terms and named places</a></p><p class="procurement-caption">Remove customer names, addresses, pricing and tracking details before sharing order records publicly.</p></aside>
+    <InquiryCallout href="/contact/?request=packing#inquiry-form" heading="Discuss packing and delivery" description="Share the model, quantity and destination." />
   </article>
 </BaseLayout>

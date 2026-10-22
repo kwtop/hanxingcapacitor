@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-10-18T23:55:15.734Z",
+  "productionLocalOnly": true,
+  "production": [
+    {
+      "path": "/",
+      "status": 200,
+      "originalTheme": true,
+      "previewTheme": false,
+      "previewStyles": false,
+      "correct": true
+    },
+    {
+      "path": "/products/",
+      "status": 200,
+      "originalTheme": true,
+      "previewTheme": false,
+      "previewStyles": false,
+      "correct": true
+    },
+    {
+      "path": "/products/cbb60-motor-run-capacitor/",
+      "status": 200,
+      "originalTheme": true,
+      "previewTheme": false,
+      "previewStyles": false,
+      "correct": true
+    },
+    {
+      "path": "/resources/articles/",
+      "status": 200,
+      "originalTheme": true,
+      "previewTheme": false,
+      "previewStyles": false,
+      "correct": true
+    },
+    {
+      "path": "/previews/satechi-home/",
+      "status": 404,
+      "originalTheme": false,
+      "previewTheme": false,
+      "previewStyles": false,
+      "correct": true
+    }
+  ],
+  "legacyEntry": {
+    "status": 302,
+    "location": "http://127.0.0.1:4340/"
+  }
+}

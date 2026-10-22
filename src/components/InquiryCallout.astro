@@ -1,6 +1,9 @@
 ---
 import { products } from '../data/site';
 import '../styles/inquiry-callout.css';
+import { isSatechiPreview } from '../lib/visualPreview';
+import {editorialMedia} from '../data/editorialMedia';
+import SiteImage from './satechi-preview/SiteImage.astro';
 
 interface Props {
   id?: string;
@@ -19,7 +22,7 @@ const {
   defaultSeries,
   contained = false,
   chooseSeries = true,
-  heading = 'Send your capacitor requirements.',
+  heading = 'Send your capacitor requirements',
   description = 'Share the original label, quantity and destination.',
   buttonLabel = 'Prepare an inquiry',
 } = Astro.props;
@@ -29,9 +32,15 @@ const selectedSeries = products.some(product => product.code === candidate) ? ca
 const context = [...destination.searchParams].filter(([name]) => !chooseSeries || name !== 'series');
 if (!destination.searchParams.has('request')) context.push(['request', 'quote']);
 const hasDetails = Astro.slots.has('default');
+const requestKind = destination.searchParams.get('request');
+const inquiryVisual = requestKind === 'documents' ? editorialMedia['order-documents']
+  : requestKind === 'packing' ? editorialMedia['packing-protection']
+  : requestKind === 'oem' ? editorialMedia['oem-connections']
+  : editorialMedia['buying-inquiry'];
 ---
 <section id={id} class:list={['inquiry-callout', { 'inquiry-callout-contained': contained }]} aria-labelledby={`${id}-title`}>
   <div class:list={['inquiry-callout-inner', { container: !contained }]}>
+    {isSatechiPreview && !contained && <figure class="ss-inquiry-visual"><SiteImage src={inquiryVisual.src} alt={inquiryVisual.alt} class="ss-contextual-inquiry" /></figure>}
     <div class="inquiry-callout-layout">
       <div class="inquiry-callout-copy">
         <h2 class="inquiry-callout-heading" id={`${id}-title`}>{heading}</h2>

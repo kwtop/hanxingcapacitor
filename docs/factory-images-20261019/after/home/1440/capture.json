@@ -1,0 +1,640 @@
+{
+  "bodyClass": "satechi-preview satechi-site is-home",
+  "canonical": "https://www.hanxingcapacitor.com/",
+  "clientWidth": 1425,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 638.875,
+        "height": 96,
+        "left": 96,
+        "right": 425.1458435058594,
+        "top": 542.875,
+        "width": 329.1458435058594,
+        "x": 96,
+        "y": 542.875
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "48px",
+      "size": "40px",
+      "text": "Motor capacitors.Run & start."
+    }
+  ],
+  "headings": [
+    "Single ordual run.",
+    "Check the rating.Then the fit.",
+    "A compact fitfor fan motors.",
+    "Motor capacitor series",
+    "CBB60 · Motor run",
+    "CBB61 · Fan run",
+    "CBB65 · HVAC run",
+    "CD60 · Motor start",
+    "Read the label.",
+    "CBB60 · Motor run",
+    "CBB61 · Fan run",
+    "CBB65 · HVAC run",
+    "CD60 · Motor start",
+    "CBB60 original sample",
+    "CBB61 original sample",
+    "CBB65 original sample",
+    "CD60 original sample",
+    "Check the installed fit.",
+    "Read the capacitor label",
+    "Dimensions & connections",
+    "Start or run?",
+    "Single or dual run",
+    "Prepare your inquiry",
+    "Approve the sample",
+    "Order & shipping checklist",
+    "Buyer FAQ",
+    "Applications for single-phase motors",
+    "Water pumps",
+    "Air conditioners / HVAC",
+    "Fans and blowers",
+    "Washing machines",
+    "Send your requirements",
+    "Samples & production",
+    "Production footage",
+    "Sample photographs",
+    "Technical guides",
+    "Buying & shipping",
+    "Original photographs",
+    "Contact Hanxing"
+  ],
+  "height": 7200,
+  "images": [
+    {
+      "alt": "Illustrative composition of the four capacitor families on an oak sample table.",
+      "box": {
+        "bottom": 875.6041679382324,
+        "height": 840,
+        "left": 0,
+        "right": 1424.666748046875,
+        "top": 35.60416793823242,
+        "width": 1424.666748046875,
+        "x": 0,
+        "y": 35.60416793823242
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/hero-desktop.webp"
+    },
+    {
+      "alt": "CBB65 product illustration based on an original two-terminal-group sample.",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "fit": "cover",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/label-desktop.webp"
+    },
+    {
+      "alt": "Illustrative composition of CBB60 and CBB61 samples with a caliper.",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "fit": "cover",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/fit-desktop.webp"
+    },
+    {
+      "alt": "Illustrative CBB61 sample beside an unbranded ventilation fan.",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "fit": "cover",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/fan-desktop.webp"
+    },
+    {
+      "alt": "Illustrative CBB60 product photograph based on the supplied sample.",
+      "box": {
+        "bottom": 1423.3750610351562,
+        "height": 294.16668701171875,
+        "left": 70,
+        "right": 364.1666870117187,
+        "top": 1129.2083740234375,
+        "width": 294.16668701171875,
+        "x": 70,
+        "y": 1129.2083740234375
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/category-cbb60.webp"
+    },
+    {
+      "alt": "Illustrative CBB61 product photograph based on the supplied sample.",
+      "box": {
+        "bottom": 1423.3750610351562,
+        "height": 294.16668701171875,
+        "left": 400.1666870117187,
+        "right": 694.3333740234375,
+        "top": 1129.2083740234375,
+        "width": 294.16668701171875,
+        "x": 400.1666870117187,
+        "y": 1129.2083740234375
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/category-cbb61.webp"
+    },
+    {
+      "alt": "Illustrative CBB65 product photograph based on the supplied sample.",
+      "box": {
+        "bottom": 1423.3750610351562,
+        "height": 294.16668701171875,
+        "left": 730.3333740234375,
+        "right": 1024.5000610351562,
+        "top": 1129.2083740234375,
+        "width": 294.16668701171875,
+        "x": 730.3333740234375,
+        "y": 1129.2083740234375
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/category-cbb65.webp"
+    },
+    {
+      "alt": "Illustrative CD60 product photograph based on the supplied sample.",
+      "box": {
+        "bottom": 1423.3750610351562,
+        "height": 294.16668701171875,
+        "left": 1060.5,
+        "right": 1354.6666870117188,
+        "top": 1129.2083740234375,
+        "width": 294.16668701171875,
+        "x": 1060.5,
+        "y": 1129.2083740234375
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/category-cd60.webp"
+    },
+    {
+      "alt": "Illustrative CBB65 display based on the supplied product photograph.",
+      "box": {
+        "bottom": 2261.8854370117188,
+        "height": 580.5416870117188,
+        "left": 0,
+        "right": 1424.666748046875,
+        "top": 1681.34375,
+        "width": 1424.666748046875,
+        "x": 0,
+        "y": 1681.34375
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/label-desktop.webp"
+    },
+    {
+      "alt": "Illustrative studio view based on the CBB60 sample.",
+      "box": {
+        "bottom": 2718.885498046875,
+        "height": 285,
+        "left": 60,
+        "right": 345,
+        "top": 2433.885498046875,
+        "width": 285,
+        "x": 60,
+        "y": 2433.885498046875
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/reference-20261012/cbb60-studio.webp"
+    },
+    {
+      "alt": "Illustrative studio view based on the CBB61 sample.",
+      "box": {
+        "bottom": 2718.885498046875,
+        "height": 285,
+        "left": 395,
+        "right": 680,
+        "top": 2433.885498046875,
+        "width": 285,
+        "x": 395,
+        "y": 2433.885498046875
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/reference-20261012/cbb61-studio.webp"
+    },
+    {
+      "alt": "Illustrative studio view based on the CBB65 sample.",
+      "box": {
+        "bottom": 2718.885498046875,
+        "height": 285,
+        "left": 730,
+        "right": 1015,
+        "top": 2433.885498046875,
+        "width": 285,
+        "x": 730,
+        "y": 2433.885498046875
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/reference-20261012/cbb65-studio.webp"
+    },
+    {
+      "alt": "Illustrative studio view based on the CD60 sample.",
+      "box": {
+        "bottom": 2718.885498046875,
+        "height": 285,
+        "left": 1065,
+        "right": 1350,
+        "top": 2433.885498046875,
+        "width": 285,
+        "x": 1065,
+        "y": 2433.885498046875
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/reference-20261012/cd60-studio.webp"
+    },
+    {
+      "alt": "Photograph of a Hanxing-marked white CBB60 capacitor sample with two insulated leads.",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "fit": "contain",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/real/cbb60-hanxing-wired.jpg"
+    },
+    {
+      "alt": "Photograph of three rectangular CBB61 samples with blade terminals.",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "fit": "contain",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/real/cbb61-13.jpg"
+    },
+    {
+      "alt": "Photograph of a CBB65 metal-can capacitor sample marked 20 µF and 450 VAC.",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "fit": "contain",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/real/cbb65-2.jpg"
+    },
+    {
+      "alt": "Photograph of a CD60 cylindrical motor-start capacitor sample.",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "fit": "contain",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/real/cd60-25.jpg"
+    },
+    {
+      "alt": "Illustrative CBB60 and CBB61 display with a measuring caliper.",
+      "box": {
+        "bottom": 3599.8229370117188,
+        "height": 580.5416870117188,
+        "left": 0,
+        "right": 1424.666748046875,
+        "top": 3019.28125,
+        "width": 1424.666748046875,
+        "x": 0,
+        "y": 3019.28125
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/fit-desktop.webp"
+    },
+    {
+      "alt": "Illustrative CBB65 metal-can sample; actual ratings must be read from the original label.",
+      "box": {
+        "bottom": 4044.822998046875,
+        "height": 285,
+        "left": 60,
+        "right": 345,
+        "top": 3759.822998046875,
+        "width": 285,
+        "x": 60,
+        "y": 3759.822998046875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/category-cbb65.webp"
+    },
+    {
+      "alt": "Illustrative CBB60 and CBB61 samples with a caliper.",
+      "box": {
+        "bottom": 4044.822998046875,
+        "height": 285,
+        "left": 395,
+        "right": 680,
+        "top": 3759.822998046875,
+        "width": 285,
+        "x": 395,
+        "y": 3759.822998046875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "76% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/fit-desktop.webp"
+    },
+    {
+      "alt": "Illustrative CD60 starting-duty sample.",
+      "box": {
+        "bottom": 4044.822998046875,
+        "height": 285,
+        "left": 730,
+        "right": 1015,
+        "top": 3759.822998046875,
+        "width": 285,
+        "x": 730,
+        "y": 3759.822998046875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/category-cd60.webp"
+    },
+    {
+      "alt": "Original supplied CBB65 single-run capacitor sample.",
+      "box": {
+        "bottom": 4044.822998046875,
+        "height": 285,
+        "left": 1065,
+        "right": 1350,
+        "top": 3759.822998046875,
+        "width": 285,
+        "x": 1065,
+        "y": 3759.822998046875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb65-2.jpg"
+    },
+    {
+      "alt": "Illustrative arrangement of four capacitor families.",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/inquiry.webp"
+    },
+    {
+      "alt": "Illustrative CBB60 sample.",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "fit": "cover",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/category-cbb60.webp"
+    },
+    {
+      "alt": "Original supplied photograph of capacitor samples.",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "fit": "cover",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/real/batch-products.jpg"
+    },
+    {
+      "alt": "Illustrative CBB61 sample.",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "fit": "cover",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/category-cbb61.webp"
+    },
+    {
+      "alt": "Generic application illustration: Water pumps. Equipment-specific motor requirements must be checked.",
+      "box": {
+        "bottom": 5104.989929199219,
+        "height": 673.1666870117188,
+        "left": 60,
+        "right": 702.3333740234375,
+        "top": 4431.8232421875,
+        "width": 642.3333740234375,
+        "x": 60,
+        "y": 4431.8232421875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/application-pump.webp"
+    },
+    {
+      "alt": "Generic application illustration: Air conditioners / HVAC. Equipment-specific motor requirements must be checked.",
+      "box": {
+        "bottom": 4771.8232421875,
+        "height": 340,
+        "left": 722.3333740234375,
+        "right": 1364.666748046875,
+        "top": 4431.8232421875,
+        "width": 642.3333740234375,
+        "x": 722.3333740234375,
+        "y": 4431.8232421875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/application-hvac.webp"
+    },
+    {
+      "alt": "Generic application illustration: Fans and blowers. Equipment-specific motor requirements must be checked.",
+      "box": {
+        "bottom": 4981.3232421875,
+        "height": 185.5,
+        "left": 722.3333740234375,
+        "right": 1031.5000610351562,
+        "top": 4795.8232421875,
+        "width": 309.16668701171875,
+        "x": 722.3333740234375,
+        "y": 4795.8232421875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/application-fan.webp"
+    },
+    {
+      "alt": "Generic application illustration: Washing machines. Equipment-specific motor requirements must be checked.",
+      "box": {
+        "bottom": 4981.3232421875,
+        "height": 185.5,
+        "left": 1055.5,
+        "right": 1364.6666870117188,
+        "top": 4795.8232421875,
+        "width": 309.16668701171875,
+        "x": 1055.5,
+        "y": 4795.8232421875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/application-washing.webp"
+    },
+    {
+      "alt": "Illustrative arrangement of four capacitor samples on a cream display surface.",
+      "box": {
+        "bottom": 5799.3231201171875,
+        "height": 574.3333740234375,
+        "left": 100,
+        "right": 674.3333740234375,
+        "top": 5224.98974609375,
+        "width": 574.3333740234375,
+        "x": 100,
+        "y": 5224.98974609375
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/inquiry.webp"
+    },
+    {
+      "alt": "AI-refined view of the operator and capacitor equipment in the supplied workshop image.",
+      "box": {
+        "bottom": 6361.3232421875,
+        "height": 340,
+        "left": 60,
+        "right": 702.3333740234375,
+        "top": 6021.3232421875,
+        "width": 642.3333740234375,
+        "x": 60,
+        "y": 6021.3232421875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/factory-20261019/workshop.webp"
+    },
+    {
+      "alt": "AI-refined view of the original Hanxing CBB65 samples, retaining the blue markings and terminal arrangement.",
+      "box": {
+        "bottom": 6361.3232421875,
+        "height": 340,
+        "left": 722.3333740234375,
+        "right": 1364.666748046875,
+        "top": 6021.3232421875,
+        "width": 642.3333740234375,
+        "x": 722.3333740234375,
+        "y": 6021.3232421875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/factory-20261019/batch.webp"
+    }
+  ],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 1425,
+  "title": "Motor Run & Start Capacitors | HAN XING",
+  "url": "http://127.0.0.1:4340/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 900,
+    "width": 1440
+  }
+}

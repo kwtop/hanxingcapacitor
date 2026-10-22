@@ -1,0 +1,23 @@
+[
+  {
+    "route": "/",
+    "status": 200,
+    "originalBody": true,
+    "previewBody": false,
+    "newDisplayImage": false
+  },
+  {
+    "route": "/about/",
+    "status": 200,
+    "originalBody": true,
+    "previewBody": false,
+    "newDisplayImage": false
+  },
+  {
+    "route": "/products/cbb60-motor-run-capacitor/",
+    "status": 200,
+    "originalBody": true,
+    "previewBody": false,
+    "newDisplayImage": false
+  }
+]

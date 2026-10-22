@@ -1,0 +1,53 @@
+---
+import BrochurePhoto from './BrochurePhoto.astro';
+import FactoryMedia from './FactoryMedia.astro';
+import InquiryCallout from '../InquiryCallout.astro';
+import { PUBLIC_BRAND_NAME, PUBLIC_BUSINESS_ADDRESS, PUBLIC_COMPANY_NAME, PUBLIC_EMAIL, PUBLIC_PHONE, WHATSAPP_URL } from '../../data/site';
+---
+<article class="procurement-page zi-about">
+  <section class="zi-about-hero container">
+    <div class="zi-about-intro">
+      <p class="breadcrumbs"><a href="/">Home</a> / About</p>
+      <h1>About HAN XING</h1>
+      <p class="procurement-lead">{PUBLIC_BRAND_NAME} supplies motor run and start capacitors for equipment manufacturers.</p>
+      <nav class="procurement-actions" aria-label="Supplier information"><a class="card-link" href="#supplier-records">Supplier identity</a><a class="card-link" href="/contact/">Contact Hanxing</a></nav>
+    </div>
+    <BrochurePhoto name="factory-exterior" eager sizes="(max-width: 800px) calc(100vw - 32px), (min-width: 1480px) 780px, 57vw" />
+  </section>
+
+  <section class="zi-section zi-company-section">
+    <div class="container zi-company-layout">
+      <BrochurePhoto name="lobby" sizes="(max-width: 800px) calc(100vw - 32px), 44vw" />
+      <div class="zi-company-copy">
+        <h2>Company information</h2>
+        <dl class="zi-company-records">
+          <div><dt>Company name</dt><dd>{PUBLIC_COMPANY_NAME}</dd></div>
+          <div><dt>Brand</dt><dd>Hanxing Capacitor / HAN XING</dd></div>
+          <div><dt>Business address</dt><dd>{PUBLIC_BUSINESS_ADDRESS}</dd></div>
+          <div><dt>Email</dt><dd><a href={`mailto:${PUBLIC_EMAIL}`}>{PUBLIC_EMAIL}</a></dd></div>
+          <div><dt>WhatsApp</dt><dd><a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">{PUBLIC_PHONE}</a></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="zi-section container zi-supplier-records" id="supplier-records">
+    <h2>Company and order details</h2>
+    <p>Record the seller, manufacturer and production site in the quotation and contract. Include the documents for the selected model.</p>
+  </section>
+
+  <section class="zi-section container zi-company-layout zi-company-products">
+    <div class="zi-short-copy"><h2>Motor capacitor supply</h2><p>The range includes CBB60, CBB61 and CBB65 run capacitors and CD60 start capacitors for pumps, fans, refrigeration and other single-phase motor circuits.</p><a class="card-link" href="/oem/">OEM requirements and approval</a></div>
+    <FactoryMedia name="batch" class="zi-company-batch" />
+  </section>
+
+  <section class="zi-section container zi-exhibition" aria-labelledby="zi-exhibition-title">
+    <div class="zi-short-copy"><h2 id="zi-exhibition-title">Product conversations</h2><p>Capacitor samples and face-to-face discussions at the exhibition stand.</p></div>
+    <div class="zi-exhibition-pair">
+      <BrochurePhoto name="exhibition-meeting" sizes="(max-width: 600px) min(320px, calc(100vw - 48px)), 320px" />
+      <BrochurePhoto name="exhibition-products" sizes="(max-width: 600px) min(320px, calc(100vw - 48px)), 320px" />
+    </div>
+  </section>
+
+  <InquiryCallout><nav aria-label="Product records"><a class="card-link" href="/factory/#model-records">Documents for your model</a><a class="card-link" href="/products/">Explore the capacitor series</a></nav></InquiryCallout>
+</article>

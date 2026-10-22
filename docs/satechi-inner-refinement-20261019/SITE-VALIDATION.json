@@ -1,0 +1,730 @@
+{
+  "checkedAt": "2026-10-18T23:48:36.779Z",
+  "pages": [
+    {
+      "route": "/",
+      "kind": "home",
+      "slug": "home",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 504517,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/about/",
+      "kind": "business",
+      "slug": "about",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 459397,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/applications/",
+      "kind": "business",
+      "slug": "applications",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 461847,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/applications/appliances-and-small-motors/",
+      "kind": "application",
+      "slug": "applications--appliances-and-small-motors",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 476819,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/applications/fans-and-ventilation/",
+      "kind": "application",
+      "slug": "applications--fans-and-ventilation",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 477591,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/applications/hvac-and-refrigeration/",
+      "kind": "application",
+      "slug": "applications--hvac-and-refrigeration",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 478479,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/applications/pumps-and-water-systems/",
+      "kind": "application",
+      "slug": "applications--pumps-and-water-systems",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 477030,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/buying-guide/",
+      "kind": "business",
+      "slug": "buying-guide",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 470298,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/contact/",
+      "kind": "contact",
+      "slug": "contact",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 485770,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/factory/",
+      "kind": "business",
+      "slug": "factory",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 467486,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/factory/packing-and-dispatch/",
+      "kind": "business",
+      "slug": "factory--packing-and-dispatch",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 465584,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/faq/",
+      "kind": "faq",
+      "slug": "faq",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 455277,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/oem-quality/",
+      "kind": "business",
+      "slug": "oem-quality",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 455398,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/oem/",
+      "kind": "business",
+      "slug": "oem",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 461346,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/privacy-policy/",
+      "kind": "policy",
+      "slug": "privacy-policy",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 453405,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/products/",
+      "kind": "business",
+      "slug": "products",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 467641,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/products/cbb60-motor-run-capacitor/",
+      "kind": "product",
+      "slug": "products--cbb60-motor-run-capacitor",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 503081,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/products/cbb61-fan-capacitor/",
+      "kind": "product",
+      "slug": "products--cbb61-fan-capacitor",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 494922,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/products/cbb65-air-conditioner-capacitor/",
+      "kind": "product",
+      "slug": "products--cbb65-air-conditioner-capacitor",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 499477,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/products/cd60-start-capacitor/",
+      "kind": "product",
+      "slug": "products--cd60-start-capacitor",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 493683,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/products/photographs/",
+      "kind": "library",
+      "slug": "products--photographs",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 489732,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/resources/",
+      "kind": "resources",
+      "slug": "resources",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 459249,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/resources/articles/",
+      "kind": "resources",
+      "slug": "resources--articles",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 460322,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/resources/capacitance-voltage-guide/",
+      "kind": "guide",
+      "slug": "resources--capacitance-voltage-guide",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 465456,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/resources/cbb60-vs-cbb61-vs-cbb65/",
+      "kind": "guide",
+      "slug": "resources--cbb60-vs-cbb61-vs-cbb65",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 466088,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/resources/dimensions-terminals-mounting/",
+      "kind": "guide",
+      "slug": "resources--dimensions-terminals-mounting",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 466816,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/resources/motor-capacitor-order-shipment-checklist/",
+      "kind": "guide",
+      "slug": "resources--motor-capacitor-order-shipment-checklist",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 471164,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/resources/read-motor-capacitor-label/",
+      "kind": "guide",
+      "slug": "resources--read-motor-capacitor-label",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 466453,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/resources/single-vs-dual-run-capacitors/",
+      "kind": "guide",
+      "slug": "resources--single-vs-dual-run-capacitors",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 466236,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/resources/start-vs-run-capacitors/",
+      "kind": "guide",
+      "slug": "resources--start-vs-run-capacitors",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 465723,
+      "emailPresent": true,
+      "whatsappPresent": true
+    },
+    {
+      "route": "/terms/",
+      "kind": "policy",
+      "slug": "terms",
+      "originalStatus": 200,
+      "previewStatus": 200,
+      "originalTitlePreserved": true,
+      "previewTitlePreserved": true,
+      "canonicalPreserved": true,
+      "schemaPreserved": true,
+      "originalHeadingsPreserved": true,
+      "missingInteriorHeadings": [],
+      "previewClass": true,
+      "originalClass": true,
+      "noindex": true,
+      "robotTags": [
+        "noindex,nofollow,noarchive"
+      ],
+      "coreHtmlChars": 453066,
+      "emailPresent": true,
+      "whatsappPresent": true
+    }
+  ],
+  "linksChecked": 151,
+  "assetsChecked": 118,
+  "badLinks": [],
+  "badAssets": [],
+  "protectedHashes": [
+    {
+      "file": "src/data/site.ts",
+      "unchanged": true
+    },
+    {
+      "file": "src/data/guides.ts",
+      "unchanged": true
+    },
+    {
+      "file": "src/data/guideLayouts.ts",
+      "unchanged": true
+    },
+    {
+      "file": "src/data/productReference.ts",
+      "unchanged": true
+    },
+    {
+      "file": "src/data/applicationReference.ts",
+      "unchanged": true
+    },
+    {
+      "file": "src/lib/contactDraft.ts",
+      "unchanged": true
+    },
+    {
+      "file": "src/lib/pageSeo.ts",
+      "unchanged": true
+    },
+    {
+      "file": "src/lib/seoRoutes.ts",
+      "unchanged": true
+    },
+    {
+      "file": "src/middleware.ts",
+      "unchanged": true
+    }
+  ],
+  "errors": []
+}

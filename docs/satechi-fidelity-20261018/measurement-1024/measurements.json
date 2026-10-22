@@ -1,0 +1,394 @@
+{
+  "source": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\reference\\1024-full.jpg",
+  "source_sha256": "aa0362937184dc274f61c1ca682562ac3e235ab28cf6483cf311f3ddd86c905d",
+  "source_size": [
+    1024,
+    6483
+  ],
+  "css_mapping": {
+    "assumed_viewport_width": 1024,
+    "css_per_image_pixel": 1.0,
+    "meaning": "实现约定，不证明参考图原始 DPR 或 CSS 视口"
+  },
+  "regions": [
+    {
+      "name": "header",
+      "kind": "box",
+      "box_type": "element",
+      "box": [
+        20,
+        56,
+        969,
+        72
+      ],
+      "normalized_box": [
+        0.019531,
+        0.008638,
+        0.946289,
+        0.011106
+      ],
+      "boundary_evidence": "Agent 选择的标注范围，非自动识别的真实元素边界",
+      "css_box": [
+        20.0,
+        56.0,
+        969.0,
+        72.0
+      ],
+      "selector": ".sp-header",
+      "dom_comparable": true
+    },
+    {
+      "name": "hero",
+      "kind": "box",
+      "box_type": "element",
+      "box": [
+        0,
+        36,
+        1009,
+        840
+      ],
+      "normalized_box": [
+        0.0,
+        0.005553,
+        0.985352,
+        0.12957
+      ],
+      "boundary_evidence": "Agent 选择的标注范围，非自动识别的真实元素边界",
+      "css_box": [
+        0.0,
+        36.0,
+        1009.0,
+        840.0
+      ],
+      "selector": ".sp-hero",
+      "dom_comparable": true
+    },
+    {
+      "name": "series-strip",
+      "kind": "box",
+      "box_type": "element",
+      "box": [
+        0,
+        876,
+        1009,
+        100
+      ],
+      "normalized_box": [
+        0.0,
+        0.135123,
+        0.985352,
+        0.015425
+      ],
+      "boundary_evidence": "Agent 选择的标注范围，非自动识别的真实元素边界",
+      "css_box": [
+        0.0,
+        876.0,
+        1009.0,
+        100.0
+      ],
+      "selector": ".sp-series-strip",
+      "dom_comparable": true
+    },
+    {
+      "name": "categories",
+      "kind": "box",
+      "box_type": "element",
+      "box": [
+        0,
+        976,
+        1009,
+        657
+      ],
+      "normalized_box": [
+        0.0,
+        0.150548,
+        0.985352,
+        0.101342
+      ],
+      "boundary_evidence": "Agent 选择的标注范围，非自动识别的真实元素边界",
+      "css_box": [
+        0.0,
+        976.0,
+        1009.0,
+        657.0
+      ],
+      "selector": ".sp-categories",
+      "dom_comparable": true
+    },
+    {
+      "name": "label-banner",
+      "kind": "box",
+      "box_type": "element",
+      "box": [
+        0,
+        1632,
+        1009,
+        411
+      ],
+      "normalized_box": [
+        0.0,
+        0.251735,
+        0.985352,
+        0.063397
+      ],
+      "boundary_evidence": "Agent 选择的标注范围，非自动识别的真实元素边界",
+      "css_box": [
+        0.0,
+        1632.0,
+        1009.0,
+        411.0
+      ],
+      "selector": ".sp-photo-banner:nth-of-type(3)",
+      "dom_comparable": true
+    },
+    {
+      "name": "series-rail",
+      "kind": "box",
+      "box_type": "element",
+      "box": [
+        0,
+        2043,
+        1009,
+        757
+      ],
+      "normalized_box": [
+        0.0,
+        0.315132,
+        0.985352,
+        0.116767
+      ],
+      "boundary_evidence": "Agent 选择的标注范围，非自动识别的真实元素边界",
+      "css_box": [
+        0.0,
+        2043.0,
+        1009.0,
+        757.0
+      ],
+      "selector": ".sp-content-rail.sp-has-range-note",
+      "dom_comparable": true
+    },
+    {
+      "name": "fit-banner",
+      "kind": "box",
+      "box_type": "element",
+      "box": [
+        0,
+        2800,
+        1009,
+        411
+      ],
+      "normalized_box": [
+        0.0,
+        0.431899,
+        0.985352,
+        0.063397
+      ],
+      "boundary_evidence": "Agent 选择的标注范围，非自动识别的真实元素边界",
+      "css_box": [
+        0.0,
+        2800.0,
+        1009.0,
+        411.0
+      ],
+      "selector": ".sp-photo-banner:nth-of-type(5)",
+      "dom_comparable": true
+    },
+    {
+      "name": "guide-rail",
+      "kind": "box",
+      "box_type": "element",
+      "box": [
+        0,
+        3211,
+        1009,
+        689
+      ],
+      "normalized_box": [
+        0.0,
+        0.495295,
+        0.985352,
+        0.106278
+      ],
+      "boundary_evidence": "Agent 选择的标注范围，非自动识别的真实元素边界",
+      "css_box": [
+        0.0,
+        3211.0,
+        1009.0,
+        689.0
+      ],
+      "selector": ".sp-content-rail:not(.sp-has-range-note)",
+      "dom_comparable": true
+    },
+    {
+      "name": "applications",
+      "kind": "box",
+      "box_type": "element",
+      "box": [
+        0,
+        3900,
+        1009,
+        803
+      ],
+      "normalized_box": [
+        0.0,
+        0.601573,
+        0.985352,
+        0.123862
+      ],
+      "boundary_evidence": "Agent 选择的标注范围，非自动识别的真实元素边界",
+      "css_box": [
+        0.0,
+        3900.0,
+        1009.0,
+        803.0
+      ],
+      "selector": ".sp-applications",
+      "dom_comparable": true
+    },
+    {
+      "name": "inquiry",
+      "kind": "box",
+      "box_type": "element",
+      "box": [
+        0,
+        4703,
+        1009,
+        546
+      ],
+      "normalized_box": [
+        0.0,
+        0.725436,
+        0.985352,
+        0.08422
+      ],
+      "boundary_evidence": "Agent 选择的标注范围，非自动识别的真实元素边界",
+      "css_box": [
+        0.0,
+        4703.0,
+        1009.0,
+        546.0
+      ],
+      "selector": ".sp-inquiry-panel",
+      "dom_comparable": true
+    },
+    {
+      "name": "source-intro",
+      "kind": "box",
+      "box_type": "element",
+      "box": [
+        0,
+        5249,
+        1009,
+        102
+      ],
+      "normalized_box": [
+        0.0,
+        0.809656,
+        0.985352,
+        0.015733
+      ],
+      "boundary_evidence": "Agent 选择的标注范围，非自动识别的真实元素边界",
+      "css_box": [
+        0.0,
+        5249.0,
+        1009.0,
+        102.0
+      ],
+      "selector": ".sp-source-intro",
+      "dom_comparable": true
+    },
+    {
+      "name": "source-stories",
+      "kind": "box",
+      "box_type": "element",
+      "box": [
+        0,
+        5351,
+        1009,
+        420
+      ],
+      "normalized_box": [
+        0.0,
+        0.825389,
+        0.985352,
+        0.064785
+      ],
+      "boundary_evidence": "Agent 选择的标注范围，非自动识别的真实元素边界",
+      "css_box": [
+        0.0,
+        5351.0,
+        1009.0,
+        420.0
+      ],
+      "selector": ".sp-stories",
+      "dom_comparable": true
+    },
+    {
+      "name": "resource-bar",
+      "kind": "box",
+      "box_type": "element",
+      "box": [
+        0,
+        5771,
+        1009,
+        117
+      ],
+      "normalized_box": [
+        0.0,
+        0.890174,
+        0.985352,
+        0.018047
+      ],
+      "boundary_evidence": "Agent 选择的标注范围，非自动识别的真实元素边界",
+      "css_box": [
+        0.0,
+        5771.0,
+        1009.0,
+        117.0
+      ],
+      "selector": ".sp-resource-bar",
+      "dom_comparable": true
+    },
+    {
+      "name": "footer",
+      "kind": "box",
+      "box_type": "element",
+      "box": [
+        0,
+        5888,
+        1009,
+        595
+      ],
+      "normalized_box": [
+        0.0,
+        0.908222,
+        0.985352,
+        0.091778
+      ],
+      "boundary_evidence": "Agent 选择的标注范围，非自动识别的真实元素边界",
+      "css_box": [
+        0.0,
+        5888.0,
+        1009.0,
+        595.0
+      ],
+      "selector": ".site-footer",
+      "dom_comparable": true
+    }
+  ],
+  "groups": [],
+  "vertical_scans": [],
+  "expected": {
+    "url": "http://127.0.0.1:4335/previews/satechi-home/",
+    "title": "HAN XING — Satechi homepage study",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "dpr": 1,
+    "full_page": true,
+    "screenshot_scale": "css"
+  },
+  "expected_assets": {},
+  "input_manifest_sha256": "392361433e801def11d012a0e82f549f57da82e44879499a7999e243d6069a03"
+}

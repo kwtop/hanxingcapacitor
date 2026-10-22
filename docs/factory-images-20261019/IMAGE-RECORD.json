@@ -1,0 +1,142 @@
+[
+  {
+    "id": "workshop",
+    "refs": [
+      "D:/Hangxing/workspace/public/images/real/inspection-station.jpg"
+    ],
+    "prompt": "Use case: lighting-weather and source-faithful reframing. Asset: wide hero and manufacturing card for HAN XING capacitor site, horizontal 16:9, 1920x1080 or larger. Refine this actual image into a polished natural industrial photograph. The same one operator in blue and grey work jacket remains on the right, seen from behind/three-quarter rear, working at the same aluminum framed capacitor equipment with the instrument cabinet on the left. Reduce the excessive empty ceiling/wall by composing closer at eye level; keep worker head, working arms, main machine and cabinet comfortably in frame. Improve exposure, neutral white balance, controlled metal reflections, modest local detail, realistic textures. The workwear can look neatly presented but remain its exact style. Do not replace the operator's identity or face. Do not add a face turned toward camera. No large new slogans or immaculate futuristic cleanroom. Use the supplied actual workshop image as the edit target, not merely inspiration. Preserve the real workshop's scale, equipment count and physical construction, current workwear and activity. No invented certificates, customers, test results, added production lines or new staff. Keep visible Chinese text or branding faithful where legible, do not invent readable fine text. Professional, restrained editorial industrial photography: natural believable skin, accurate hands and materials, soft neutral daylight, clean tonal separation, no glamor posing, no dramatic cinematic grading, no orange teal, no UI, no watermark. This is an AI-refined reconstruction which will be labeled on the website, with the original available. Chinese factory setting; people remain the Chinese workers from the source rather than stock Western models.",
+    "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-af0917f4-4f43-424d-b6a2-ac1f992b4c1a.png",
+    "projectOriginal": ".qa/factory-images-20261019/generated-originals/workshop.png",
+    "published": "/images/previews/factory-20261019/workshop.webp",
+    "originalPublic": "/images/real/inspection-station.jpg",
+    "width": 1672,
+    "height": 941,
+    "bytes": 158568,
+    "sourceWidth": 1920,
+    "sourceHeight": 1080,
+    "sourceSha256": "63d9a264893a8c11fa033a1504fd1dc1f713f7cc21a9fbe36e31e1270bcc9d22",
+    "classification": "Source-based generative photographic refinement",
+    "limits": "Reconstructed details are not evidence of machinery specifications, testing results, stock, order fulfillment or worker identity. Original images and footage remain available.",
+    "postprocess": "Resize without upscaling and WebP encoding only."
+  },
+  {
+    "id": "film",
+    "refs": [
+      "D:/Hangxing/workspace/public/images/real/film-rolls.jpg"
+    ],
+    "prompt": "Use case: lighting-weather. Asset: refined video-poster still, horizontal 16:9. Edit the actual photograph of dark metallized film rolls on a shared shaft with the red ball lever. Same machine parts, same number of visible rolls, same positions and perspective. Bring out subtle reflective film edges and brushed metal without blowing highlights. Lift shadow detail and neutralize green cast, clean editorial product-detail photography. Preserve a plausible working workshop background, no added equipment or people, no nonexistent measurement markings. Do not transform this into loose capacitor components. Use the supplied actual workshop image as the edit target, not merely inspiration. Preserve the real workshop's scale, equipment count and physical construction, current workwear and activity. No invented certificates, customers, test results, added production lines or new staff. Keep visible Chinese text or branding faithful where legible, do not invent readable fine text. Professional, restrained editorial industrial photography: natural believable skin, accurate hands and materials, soft neutral daylight, clean tonal separation, no glamor posing, no dramatic cinematic grading, no orange teal, no UI, no watermark. This is an AI-refined reconstruction which will be labeled on the website, with the original available. Chinese factory setting; people remain the Chinese workers from the source rather than stock Western models.",
+    "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-ea970a20-94e6-4784-9ef1-b8099379be10.png",
+    "projectOriginal": ".qa/factory-images-20261019/generated-originals/film.png",
+    "published": "/images/previews/factory-20261019/film.webp",
+    "originalPublic": "/images/real/film-rolls.jpg",
+    "width": 1672,
+    "height": 941,
+    "bytes": 130294,
+    "sourceWidth": 1920,
+    "sourceHeight": 1080,
+    "sourceSha256": "2c24f458a1c6699223c9a232fc172c5f4873715f0e3aa3ef5e18ed8257737e59",
+    "classification": "Source-based generative photographic refinement",
+    "limits": "Reconstructed details are not evidence of machinery specifications, testing results, stock, order fulfillment or worker identity. Original images and footage remain available.",
+    "postprocess": "Resize without upscaling and WebP encoding only."
+  },
+  {
+    "id": "winding",
+    "refs": [
+      "D:/Hangxing/workspace/public/images/real/winding-equipment.jpg"
+    ],
+    "prompt": "Use case: lighting-weather. Asset: refined video-poster image, horizontal 16:9. Improve the actual enclosed winding equipment photograph into a clear professional technical editorial photo. Keep the exact cabinet silhouette, doors, reels, rollers and wiring layout; control panel stays on left with existing colored physical buttons and screen. Preserve all machine functions and parts count; do not make up additional information on the screen. Correct dull low-light exposure and uneven white balance, gentle soft frontal fill with believable depth and no glare, crisp brushed metal, clean but still real work area. No new people or facilities, no fabricated label or badges. Use the supplied actual workshop image as the edit target, not merely inspiration. Preserve the real workshop's scale, equipment count and physical construction, current workwear and activity. No invented certificates, customers, test results, added production lines or new staff. Keep visible Chinese text or branding faithful where legible, do not invent readable fine text. Professional, restrained editorial industrial photography: natural believable skin, accurate hands and materials, soft neutral daylight, clean tonal separation, no glamor posing, no dramatic cinematic grading, no orange teal, no UI, no watermark. This is an AI-refined reconstruction which will be labeled on the website, with the original available. Chinese factory setting; people remain the Chinese workers from the source rather than stock Western models.",
+    "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-d120730c-789a-46cb-a5c0-47917521daa3.png",
+    "projectOriginal": ".qa/factory-images-20261019/generated-originals/winding.png",
+    "published": "/images/previews/factory-20261019/winding.webp",
+    "originalPublic": "/images/real/winding-equipment.jpg",
+    "width": 1672,
+    "height": 941,
+    "bytes": 109808,
+    "sourceWidth": 1920,
+    "sourceHeight": 1080,
+    "sourceSha256": "c6195da093c3af2177a07352c60290e980fa3de4a3cbab5312264b2611c1b8df",
+    "classification": "Source-based generative photographic refinement",
+    "limits": "Reconstructed details are not evidence of machinery specifications, testing results, stock, order fulfillment or worker identity. Original images and footage remain available.",
+    "postprocess": "Resize without upscaling and WebP encoding only."
+  },
+  {
+    "id": "testing",
+    "refs": [
+      "D:/Hangxing/workspace/public/images/real/test-area.jpg"
+    ],
+    "prompt": "Use case: lighting-weather and source-faithful reframing. Asset: refined actual test-area video-poster, horizontal 16:9. Keep the same man in blue and grey work jacket at the left operating the original dark instrument panel, with the same test cabinets and small chamber on the right and baskets at the left. Improve exposure, brightness and tonal consistency, reduce excessive dead wall, keep the major cabinet outlines and working person in the frame. The visible wall sign remains exactly '试验区' if readable. Keep screen details non-legible, do not generate pass values or test outcomes. The man stays focused on the task with the same natural side/back view, identity and protective clothing unchanged. Use the supplied actual workshop image as the edit target, not merely inspiration. Preserve the real workshop's scale, equipment count and physical construction, current workwear and activity. No invented certificates, customers, test results, added production lines or new staff. Keep visible Chinese text or branding faithful where legible, do not invent readable fine text. Professional, restrained editorial industrial photography: natural believable skin, accurate hands and materials, soft neutral daylight, clean tonal separation, no glamor posing, no dramatic cinematic grading, no orange teal, no UI, no watermark. This is an AI-refined reconstruction which will be labeled on the website, with the original available. Chinese factory setting; people remain the Chinese workers from the source rather than stock Western models.",
+    "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-641c86e6-9e81-44d2-b17d-6f3d94eb00be.png",
+    "projectOriginal": ".qa/factory-images-20261019/generated-originals/testing.png",
+    "published": "/images/previews/factory-20261019/testing.webp",
+    "originalPublic": "/images/real/test-area.jpg",
+    "width": 1672,
+    "height": 941,
+    "bytes": 108266,
+    "sourceWidth": 1920,
+    "sourceHeight": 1080,
+    "sourceSha256": "8f034c299f7168c8815d9648064ea63da52c7394d5040759459317120be033d0",
+    "classification": "Source-based generative photographic refinement",
+    "limits": "Reconstructed details are not evidence of machinery specifications, testing results, stock, order fulfillment or worker identity. Original images and footage remain available.",
+    "postprocess": "Resize without upscaling and WebP encoding only."
+  },
+  {
+    "id": "packing",
+    "refs": [
+      "D:/Hangxing/workspace/public/images/real/packing-scene.jpg"
+    ],
+    "prompt": "Use case: source-faithful photo reconstruction and outpainting. Asset: horizontal 3:2 website hero and OEM packing card, 1536x1024 or larger, adapted from the supplied portrait video still. Keep the same actual adult woman with tied dark hair and glasses, navy polo with red piping, working attentively packing the same blue and white small capacitor retail boxes at the same worktable. She should look naturally well-presented and professional, not a fashion model; preserve identity, approximate age, body, pose and real workwear. Use a slightly wider editorial framing with woman slightly right of center, boxes and her hands comfortably visible and the original aluminum machine and white workshop wall recognizable behind her. Preserve Chinese printing on boxes and polo as close as visible, do not invent slogans. Extend only plausible worktable and the existing workshop background laterally; no new machines, extra workers or fake luxury facility. Correct gray low exposure, soft natural neutral light, better material and skin detail, restrained clean colors. Clearly a reconstruction of this one supplied packing scene, not an invented customer order. Use the supplied actual workshop image as the edit target, not merely inspiration. Preserve the real workshop's scale, equipment count and physical construction, current workwear and activity. No invented certificates, customers, test results, added production lines or new staff. Keep visible Chinese text or branding faithful where legible, do not invent readable fine text. Professional, restrained editorial industrial photography: natural believable skin, accurate hands and materials, soft neutral daylight, clean tonal separation, no glamor posing, no dramatic cinematic grading, no orange teal, no UI, no watermark. This is an AI-refined reconstruction which will be labeled on the website, with the original available. Chinese factory setting; people remain the Chinese workers from the source rather than stock Western models.",
+    "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-2a3370fc-3145-4f5f-90be-9d80d9b8c92a.png",
+    "projectOriginal": ".qa/factory-images-20261019/generated-originals/packing.png",
+    "published": "/images/previews/factory-20261019/packing.webp",
+    "originalPublic": "/images/real/packing-scene.jpg",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 194376,
+    "sourceWidth": 540,
+    "sourceHeight": 960,
+    "sourceSha256": "dd67c1f0bf604c7fe48aa0f5dc3c22728ad63987735d3e1c149b640bbc0e7fbd",
+    "classification": "AI reconstruction with lateral scene extension",
+    "limits": "Reconstructed details are not evidence of machinery specifications, testing results, stock, order fulfillment or worker identity. Original images and footage remain available.",
+    "postprocess": "Resize without upscaling and WebP encoding only."
+  },
+  {
+    "id": "batch",
+    "refs": [
+      "D:/Hangxing/workspace/public/images/real/batch-products.jpg"
+    ],
+    "prompt": "Use case: lighting-weather. Asset: brand story and original sample gallery link cover, horizontal 3:2. Refine this specific actual photograph of the grouped silver metal-can capacitors. Preserve all visible cans, their sizes, two blue terminal groups, metal tabs, Hanxing/韩兴 logo marks and blue CBB65 marking. Preserve printed '25 μF ±5%' and '450VAC' where visible; do not replace with different ratings or a different Hanxing font/logo. Retain the same arrangement on the paper-covered workbench, but clean tonal noise and soften distracting newspaper contrast without replacing product geometry. Soft warm-neutral natural light, readable midtones, realistic reflections, professional close product photography. Product body and terminal connections must remain faithful. No new people, extra stock, claims or decorative props. Use the supplied actual workshop image as the edit target, not merely inspiration. Preserve the real workshop's scale, equipment count and physical construction, current workwear and activity. No invented certificates, customers, test results, added production lines or new staff. Keep visible Chinese text or branding faithful where legible, do not invent readable fine text. Professional, restrained editorial industrial photography: natural believable skin, accurate hands and materials, soft neutral daylight, clean tonal separation, no glamor posing, no dramatic cinematic grading, no orange teal, no UI, no watermark. This is an AI-refined reconstruction which will be labeled on the website, with the original available. Chinese factory setting; people remain the Chinese workers from the source rather than stock Western models.",
+    "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-ad4f4aa7-33dc-4f00-8e0e-a60c8e459d09.png",
+    "projectOriginal": ".qa/factory-images-20261019/generated-originals/batch.png",
+    "published": "/images/previews/factory-20261019/batch.webp",
+    "originalPublic": "/images/real/batch-products.jpg",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 256046,
+    "sourceWidth": 1920,
+    "sourceHeight": 1080,
+    "sourceSha256": "78b3aeb19e66653bc625e90629915f2398f1b7b3f768819de671123f05a4b4cd",
+    "classification": "Source-based generative photographic refinement",
+    "limits": "Reconstructed details are not evidence of machinery specifications, testing results, stock, order fulfillment or worker identity. Original images and footage remain available.",
+    "postprocess": "Resize without upscaling and WebP encoding only."
+  },
+  {
+    "id": "dispatch",
+    "refs": [
+      "D:/Hangxing/workspace/public/images/real/dispatch-pallets.jpg"
+    ],
+    "prompt": "Use case: lighting-weather. Asset: faithful packing-page supporting image, horizontal 4:3. Refine the actual warehouse photograph: same columns, roof structure, existing wrapped cartons on the same pallets in the same quantities and arrangement, existing floor yellow lines and wall lettering. Only improve exposure, white balance, modest noise/detail and composition; do not enlarge the warehouse, add goods, workers, trucks, logos or destinations. Preserve existing unreadable small parcel labels as unreadable; never create customer names or order references. Do not invent shipment facts. Keep the existing Chinese and English wall slogan where visible without adding new words. Natural neutral daylight, restrained professional architectural photograph, no dramatic style. Use the supplied actual workshop image as the edit target, not merely inspiration. Preserve the real workshop's scale, equipment count and physical construction, current workwear and activity. No invented certificates, customers, test results, added production lines or new staff. Keep visible Chinese text or branding faithful where legible, do not invent readable fine text. Professional, restrained editorial industrial photography: natural believable skin, accurate hands and materials, soft neutral daylight, clean tonal separation, no glamor posing, no dramatic cinematic grading, no orange teal, no UI, no watermark. This is an AI-refined reconstruction which will be labeled on the website, with the original available. Chinese factory setting; people remain the Chinese workers from the source rather than stock Western models.",
+    "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-abb7749e-e1c7-4c8d-8603-2b933e2ce064.png",
+    "projectOriginal": ".qa/factory-images-20261019/generated-originals/dispatch.png",
+    "published": "/images/previews/factory-20261019/dispatch.webp",
+    "originalPublic": "/images/real/dispatch-pallets.jpg",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 291904,
+    "sourceWidth": 4032,
+    "sourceHeight": 3024,
+    "sourceSha256": "eaaf74c0c682550c58a3e26f2f2e61cdc1243348d4a12a84c06849cda72131ba",
+    "classification": "Source-based generative photographic refinement",
+    "limits": "Reconstructed details are not evidence of machinery specifications, testing results, stock, order fulfillment or worker identity. Original images and footage remain available.",
+    "postprocess": "Resize without upscaling and WebP encoding only."
+  }
+]

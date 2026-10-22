@@ -1,0 +1,104 @@
+/* Selected brochure imagery: retain the existing typography, navigation and business data. */
+body.satechi-site #main {
+  --zi-section-space:64px;
+  --zi-picture-gap:24px;
+}
+body.satechi-site #main .zi-photo { margin:0; min-width:0; }
+body.satechi-site #main .zi-photo > img,
+body.satechi-site #main .zi-photo-enlarge > img {
+  display:block; width:100%; height:auto; aspect-ratio:auto; object-fit:contain; border-radius:16px;
+}
+body.satechi-site #main .zi-photo-enlarge { display:block; padding:0; border:0; background:transparent; text-decoration:none; cursor:zoom-in; }
+body.satechi-site #main .zi-family-desktop .zi-photo-enlarge { padding:16px; border-radius:16px; background:white; }
+body.satechi-site #main .zi-photo-enlarge:focus-visible { outline:2px solid var(--sp-ink,#1b1c21); outline-offset:5px; border-radius:16px; }
+body.satechi-site #main .zi-photo figcaption { margin:20px 0 0; color:inherit; font-size:inherit; text-align:center; }
+body.satechi-site #main .zi-photo figcaption h3 { margin:0 0 12px; }
+body.satechi-site #main .zi-photo figcaption p { margin:0 auto; max-width:40ch; line-height:1.6; }
+body.satechi-site #main .zi-section { padding-block:var(--zi-section-space); }
+body.satechi-site #main .zi-short-copy { max-width:48ch; }
+body.satechi-site #main .zi-short-copy h2 { margin:0 0 24px; }
+body.satechi-site #main .zi-short-copy p { margin:0; line-height:1.7; }
+body.satechi-site #main .zi-short-copy .card-link { margin-top:24px; }
+
+body.satechi-site #main .zi-about-hero { display:grid; grid-template-columns:.75fr 1.25fr; gap:56px; align-items:center; padding-top:32px; padding-bottom:64px; }
+body.satechi-site #main .zi-about-intro .breadcrumbs { margin:0 0 40px; }
+body.satechi-site #main .zi-about-intro h1 { margin:0 0 24px; }
+body.satechi-site #main .zi-about-intro .procurement-lead { max-width:35ch; margin:0; font-size:18px; line-height:1.7; }
+body.satechi-site #main .zi-about-intro .procurement-actions { margin:32px 0 0; }
+body.satechi-site #main .zi-company-section { background:white; }
+body.satechi-site #main .zi-company-layout { display:grid; grid-template-columns:1fr 1.05fr; gap:64px; align-items:center; }
+body.satechi-site #main .zi-company-copy h2 { margin:0 0 28px; }
+body.satechi-site #main .zi-company-records { margin:0; }
+body.satechi-site #main .zi-company-records > div { display:grid; grid-template-columns:126px minmax(0,1fr); gap:24px; padding:18px 0; border-bottom:1px solid #e5e3df; }
+body.satechi-site #main .zi-company-records > div:first-child { padding-top:0; }
+body.satechi-site #main .zi-company-records > div:last-child { border:0; padding-bottom:0; }
+body.satechi-site #main .zi-company-records dt { color:#68686b; font-size:14px; }
+body.satechi-site #main .zi-company-records dd { margin:0; overflow-wrap:anywhere; line-height:1.6; }
+body.satechi-site #main .zi-supplier-records { display:grid; grid-template-columns:.75fr 1.25fr; gap:56px; border-bottom:1px solid #e5e3df; }
+body.satechi-site #main .zi-supplier-records h2 { margin:0; max-width:19ch; }
+body.satechi-site #main .zi-supplier-records p { margin:0; max-width:65ch; line-height:1.7; }
+body.satechi-site #main .zi-company-batch img { width:100%; height:auto; border-radius:16px; }
+body.satechi-site #main .zi-exhibition { display:grid; grid-template-columns:minmax(220px,.7fr) minmax(0,1.3fr); gap:48px; align-items:center; padding-top:0; }
+body.satechi-site #main .zi-exhibition-pair { display:grid; grid-template-columns:repeat(2,minmax(0,320px)); gap:24px; justify-content:end; }
+
+body.satechi-site #main .zi-family-section { padding:0 20px 64px; }
+body.satechi-site #main .zi-family-heading { max-width:78ch; margin:0 auto 40px; text-align:center; }
+body.satechi-site #main .zi-family-heading h2 { margin:0 0 24px; }
+body.satechi-site #main .zi-family-heading p { margin:0; line-height:1.7; }
+body.satechi-site #main .zi-family-action { text-align:center; margin-top:24px; }
+body.satechi-site #main .zi-family-mobile { display:none; }
+body.satechi-site #main .procurement-oem-hero .zi-oem-hero-photo { width:100%; }
+body.satechi-site #main .procurement-oem-hero .zi-oem-hero-photo > img { aspect-ratio:3/2; object-fit:contain; height:auto; }
+body.satechi-site #main .procurement-hub .co-oem-stories > article:first-child > .zi-photo img { aspect-ratio:3/2; object-fit:contain; }
+body.satechi-site #main .zi-configuration-table table { margin:0; }
+body.satechi-site #main .zi-connection-formats { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:32px; margin:32px 0 64px; }
+body.satechi-site #main .zi-connection-formats .zi-photo-enlarge img { aspect-ratio:3/2; object-fit:contain; background:#fff; }
+body.satechi-site #main .zi-purchase-layout { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; }
+body.satechi-site #main .zi-purchase-layout .pdr-purchase-list { margin-top:0; }
+body.satechi-site #main .zi-purchase-layout .pdr-purchase-list > div { grid-template-columns:1fr; gap:8px; padding-block:18px; }
+body.satechi-site #main .zi-purchase-layout .pdr-resource-actions { margin-top:24px; gap:12px; }
+body.satechi-site #main .procurement-process-stage > .zi-material-intro { display:grid; grid-template-columns:.8fr 1.2fr; gap:48px; align-items:center; margin-bottom:40px; max-width:none; }
+body.satechi-site #main .zi-material-intro > div { max-width:46ch; }
+body.satechi-site #main .zi-material-intro h3 { margin-bottom:20px; }
+body.satechi-site #main .zi-material-intro p { margin:0; line-height:1.7; }
+body.satechi-site #main .zi-guide-photo img { object-fit:contain; background:white; }
+body.satechi-site #main .ha-source-card:has(img[src*='/brochure/']) .ha-source-photo img { object-fit:contain; background:white; }
+
+body.satechi-site #main .zi-photo-dialog { border:0; border-radius:16px; padding:56px 20px 20px; background:#fff; color:#1b1c21; width:min(1200px,94vw); max-height:94dvh; }
+body.satechi-site #main .zi-photo-dialog::backdrop { background:rgb(15 16 20 / .75); }
+body.satechi-site #main .zi-photo-dialog img { display:block; width:100%; height:auto; max-height:calc(94dvh - 90px); object-fit:contain; }
+body.satechi-site #main .zi-photo-close { position:absolute; top:12px; right:16px; min-height:36px; padding:6px 14px; border:1px solid #dededc; border-radius:24px; background:white; color:inherit; font:inherit; cursor:pointer; }
+
+@media(max-width:1100px) {
+  body.satechi-site #main .zi-about-hero,
+  body.satechi-site #main .zi-company-layout { gap:36px; }
+  body.satechi-site #main .zi-company-records > div { grid-template-columns:1fr; gap:6px; padding-block:14px; }
+  body.satechi-site #main .zi-exhibition { grid-template-columns:1fr; gap:32px; }
+  body.satechi-site #main .zi-exhibition-pair { justify-content:start; }
+}
+@media(max-width:800px) {
+  body.satechi-site #main .zi-purchase-layout,
+  body.satechi-site #main .procurement-process-stage > .zi-material-intro { grid-template-columns:1fr; gap:32px; }
+  body.satechi-site #main .zi-about-hero,
+  body.satechi-site #main .zi-company-layout,
+  body.satechi-site #main .zi-supplier-records { grid-template-columns:1fr; gap:32px; }
+  body.satechi-site #main .zi-about-hero { padding-top:24px; }
+  body.satechi-site #main .zi-about-intro .breadcrumbs { margin-bottom:28px; }
+  body.satechi-site #main .zi-company-copy { grid-row:1; }
+  body.satechi-site #main .zi-supplier-records h2 { max-width:none; }
+}
+@media(max-width:700px) {
+  body.satechi-site #main .zi-connection-formats { grid-template-columns:1fr; gap:32px; margin-bottom:40px; }
+}
+@media(max-width:600px) {
+  body.satechi-site #main { --zi-section-space:40px; --zi-picture-gap:20px; }
+  body.satechi-site #main .zi-about-hero { padding-bottom:40px; }
+  body.satechi-site #main .zi-about-intro .procurement-lead { font-size:16px; }
+  body.satechi-site #main .zi-exhibition-pair { grid-template-columns:minmax(0,320px); gap:20px; justify-content:center; }
+  body.satechi-site #main .zi-family-section { padding:0 0 40px; }
+  body.satechi-site #main .zi-family-heading { text-align:left; margin-bottom:28px; }
+  body.satechi-site #main .zi-family-desktop { display:none; }
+  body.satechi-site #main .zi-family-mobile { display:grid; gap:32px; }
+  body.satechi-site #main .zi-family-action { margin-top:28px; }
+  body.satechi-site #main .zi-photo > img, body.satechi-site #main .zi-photo-enlarge > img { border-radius:12px; }
+}

@@ -1,0 +1,102 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/about/",
+  "clientWidth": 375,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 254.8020896911621,
+        "height": 33.60416793823242,
+        "left": 81.17708587646484,
+        "right": 293.4791793823242,
+        "top": 221.1979217529297,
+        "width": 212.30209350585935,
+        "x": 81.17708587646484,
+        "y": 221.1979217529297
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "About HAN XING"
+    }
+  ],
+  "headings": [
+    "Company information",
+    "Supplier identity for your order",
+    "Motor capacitor supply",
+    "Send your capacitor requirements."
+  ],
+  "height": 3989,
+  "images": [
+    {
+      "alt": "Illustrative arrangement of the four original capacitor formats, preserving sample markings.",
+      "box": {
+        "bottom": 585.2395935058594,
+        "height": 228.4375,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 356.8020935058594,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 356.8020935058594
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/brand-story.webp"
+    },
+    {
+      "alt": "Hanxing-marked capacitor samples on a work surface in a supplied photograph.",
+      "box": {
+        "bottom": 2076.4375,
+        "height": 228.4375,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 1848,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 1848
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/batch-products.jpg"
+    },
+    {
+      "alt": "Illustrative arrangement of the four original capacitor formats.",
+      "box": {
+        "bottom": 2368.875,
+        "height": 196.4375,
+        "left": 40,
+        "right": 334.66668701171875,
+        "top": 2172.4375,
+        "width": 294.66668701171875,
+        "x": 40,
+        "y": 2172.4375
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/inquiry.webp"
+    }
+  ],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 375,
+  "title": "About HAN XING | Company & Contact Information",
+  "url": "http://127.0.0.1:4340/about/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 844,
+    "width": 390
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

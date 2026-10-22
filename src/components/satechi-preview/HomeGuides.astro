@@ -1,0 +1,40 @@
+---
+import {editorialMedia} from '../../data/editorialMedia';
+import {coherenceMedia} from '../../data/coherenceMedia';
+import SiteImage from './SiteImage.astro';
+const technical = [
+  {title:'Read the capacitor label',href:'/resources/read-motor-capacitor-label/'},
+  {title:'Dimensions & connections',href:'/resources/dimensions-terminals-mounting/'},
+  {title:'Run and start duty',href:'/resources/start-vs-run-capacitors/'},
+  {title:'Single or dual run',href:'/resources/single-vs-dual-run-capacitors/'},
+];
+const buying = [
+  {title:'Quotation checklist',href:'/buying-guide/'},
+  {title:'Sample & OEM approval',href:'/oem/'},
+  {title:'Order & shipping checklist',href:'/resources/motor-capacitor-order-shipment-checklist/'},
+  {title:'Buyer FAQ',href:'/faq/'},
+];
+const topics = [
+  {id:'home-technical-title',title:'Technical guides',href:'/resources/articles/',description:'Labels, electrical ratings and installation fit.',image:coherenceMedia.measurement.src,summary:'Explore technical topics',links:technical},
+  {id:'home-buying-title',title:'Buying & shipping',href:'/buying-guide/',description:'From quotation details to packing and dispatch.',image:editorialMedia['buying-inquiry'].src,summary:'Explore buying tools',links:buying},
+];
+---
+<section class="ha-guides co-home-guides" id="guides" aria-labelledby="guides-title">
+  <div class="co-guide-banner" id="fit">
+    <figure class="ha-guide-photo"><SiteImage src={coherenceMedia.panorama.src} alt={coherenceMedia.panorama.alt} sizes="(max-width:600px) 850px, 100vw" /></figure>
+    <div class="container co-guide-banner-content"><div class="ha-guide-copy">
+      <span id="label" class="ha-anchor" aria-hidden="true"></span>
+      <h2 id="guides-title">Choose the rating<br />Check the fit</h2>
+      <p>Match the original rating, connections and installed space.</p>
+      <a class="button" href="/resources/">View all resources</a>
+    </div></div>
+  </div>
+  <div class="container co-guide-topics">
+    <div class="ha-guide-columns">
+      {topics.map(topic => <nav class="ha-guide-topic" aria-labelledby={topic.id}>
+        <a class="ha-guide-topic-lead" href={topic.href}><SiteImage src={topic.image} alt="" sizes="104px" /><div><h3 id={topic.id}>{topic.title}</h3><p>{topic.description}</p></div></a>
+        <details class="ha-guide-topic-details"><summary>{topic.summary}</summary><ul>{topic.links.map(guide=><li><a href={guide.href}>{guide.title}</a></li>)}</ul></details>
+      </nav>)}
+    </div>
+  </div>
+</section>

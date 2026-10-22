@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-10-18T20:16:31.077Z",
+  "newImages": 7,
+  "totalImageBytes": 1249262,
+  "beforeCaptures": 10,
+  "afterCaptures": 14,
+  "overflowFailures": [],
+  "fontFailures": [],
+  "originals": [
+    {
+      "id": "workshop",
+      "path": "D:/Hangxing/workspace/public/images/real/inspection-station.jpg",
+      "unchanged": true
+    },
+    {
+      "id": "film",
+      "path": "D:/Hangxing/workspace/public/images/real/film-rolls.jpg",
+      "unchanged": true
+    },
+    {
+      "id": "winding",
+      "path": "D:/Hangxing/workspace/public/images/real/winding-equipment.jpg",
+      "unchanged": true
+    },
+    {
+      "id": "testing",
+      "path": "D:/Hangxing/workspace/public/images/real/test-area.jpg",
+      "unchanged": true
+    },
+    {
+      "id": "packing",
+      "path": "D:/Hangxing/workspace/public/images/real/packing-scene.jpg",
+      "unchanged": true
+    },
+    {
+      "id": "batch",
+      "path": "D:/Hangxing/workspace/public/images/real/batch-products.jpg",
+      "unchanged": true
+    },
+    {
+      "id": "dispatch",
+      "path": "D:/Hangxing/workspace/public/images/real/dispatch-pallets.jpg",
+      "unchanged": true
+    }
+  ]
+}

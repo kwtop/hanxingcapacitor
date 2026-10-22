@@ -1,0 +1,354 @@
+[
+  {
+    "id": "category-cbb60",
+    "refs": [
+      "D:/Hangxing/workspace/.qa/satechi-fidelity-20261018/generated-originals/category-cbb60-unbranded.png",
+      "D:/Hangxing/workspace/public/images/real/cbb60-hanxing-wired.jpg"
+    ],
+    "prompt": "Edit the FIRST image, keep its square composition, background, lighting, plinth, camera, product silhouette and size exactly. Restore the complete authentic printed face from the product in the SECOND original photograph. Crucial user requirement: the real Hanxing brand mark and printed product label must remain, not a generic unbranded model-code render. Faithfully reproduce only the original visible logo and these printed lines: the circular Hanxing emblem and italic Hanxing® wordmark; CBB60; 35µF±5% SH; 450VAC 50/60Hz; 40/70/21; EN60252-1. Preserve their original relative sizes, typography, line order, position and realistic cylindrical/flat perspective. No invented characters, no substitution of microtext, no new claims or marks. Keep the original product terminals and wires unchanged and fully visible. Other than restoring the authentic product printing, change nothing. No website UI, no extra text outside the product. This remains an edited illustrative display; do not portray it as factory or delivery evidence.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-7bfa8e6e-da8a-4edb-b336-26edda38ec4e.png",
+    "original": ".qa/satechi-fidelity-20261018/generated-originals/category-cbb60.png",
+    "web": "images/previews/satechi-fidelity-20261018/category-cbb60.webp",
+    "width": 700,
+    "height": 700,
+    "bytes": 31190,
+    "sourceWidth": 1254,
+    "sourceHeight": 1254,
+    "provenance": "ImageGen re-composition based on original product photographs; source markings retained",
+    "postprocess": "Resize and WebP encode only. No synthetic label overlay."
+  },
+  {
+    "id": "category-cbb61",
+    "refs": [
+      "D:/Hangxing/workspace/.qa/satechi-fidelity-20261018/generated-originals/category-cbb61-unbranded.png",
+      "D:/Hangxing/workspace/public/images/real/cbb61-13.jpg"
+    ],
+    "prompt": "Edit the FIRST image, keep its square composition, background, lighting, plinth, camera, product silhouette and size exactly. Restore the complete authentic printed face from the product in the SECOND original photograph. Crucial user requirement: the real Hanxing brand mark and printed product label must remain, not a generic unbranded model-code render. Faithfully reproduce only the original visible logo and these printed lines: the LEFT sample exact gold-gray print: CBB61; 4.5µF±5% 40/70/21; 450VAC 50/60Hz SH; 2025C. This particular sample has no Hanxing logo; do not add one. Preserve their original relative sizes, typography, line order, position and realistic cylindrical/flat perspective. No invented characters, no substitution of microtext, no new claims or marks. Keep the original product terminals and wires unchanged and fully visible. Other than restoring the authentic product printing, change nothing. No website UI, no extra text outside the product. This remains an edited illustrative display; do not portray it as factory or delivery evidence.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-1b75c3f7-16a9-4b50-b41d-d13efd135322.png",
+    "original": ".qa/satechi-fidelity-20261018/generated-originals/category-cbb61.png",
+    "web": "images/previews/satechi-fidelity-20261018/category-cbb61.webp",
+    "width": 700,
+    "height": 700,
+    "bytes": 44492,
+    "sourceWidth": 1254,
+    "sourceHeight": 1254,
+    "provenance": "ImageGen re-composition based on original product photographs; source markings retained",
+    "postprocess": "Resize and WebP encode only. No synthetic label overlay."
+  },
+  {
+    "id": "category-cbb65",
+    "refs": [
+      "D:/Hangxing/workspace/.qa/satechi-fidelity-20261018/generated-originals/category-cbb65-unbranded.png",
+      "D:/Hangxing/workspace/public/images/real/cbb65-2.jpg"
+    ],
+    "prompt": "Edit the FIRST image, keep its square composition, background, lighting, plinth, camera, product silhouette and size exactly. Restore the complete authentic printed face from the product in the SECOND original photograph. Crucial user requirement: the real Hanxing brand mark and printed product label must remain, not a generic unbranded model-code render. Faithfully reproduce only the original visible logo and these printed lines: the circular Hanxing emblem and italic Hanxing® wordmark; CBB65 CAPACITOR; 20 µF±5%; 450VAC 50/60Hz; 40/85/21 C P1; Capacitor Co.,Ltd; Guang zhou Hanxing; 2025. Preserve their original relative sizes, typography, line order, position and realistic cylindrical/flat perspective. No invented characters, no substitution of microtext, no new claims or marks. Keep the original product terminals and wires unchanged and fully visible. Other than restoring the authentic product printing, change nothing. No website UI, no extra text outside the product. This remains an edited illustrative display; do not portray it as factory or delivery evidence.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-1fe43b44-9bb5-4f95-8b20-7f8125b2a8ce.png",
+    "original": ".qa/satechi-fidelity-20261018/generated-originals/category-cbb65.png",
+    "web": "images/previews/satechi-fidelity-20261018/category-cbb65.webp",
+    "width": 700,
+    "height": 700,
+    "bytes": 32832,
+    "sourceWidth": 1254,
+    "sourceHeight": 1254,
+    "provenance": "ImageGen re-composition based on original product photographs; source markings retained",
+    "postprocess": "Resize and WebP encode only. No synthetic label overlay."
+  },
+  {
+    "id": "hero-desktop",
+    "refs": [
+      "D:/Hangxing/workspace/.qa/satechi-fidelity-20261018/generated-originals/hero-desktop-unbranded.png",
+      "D:/Hangxing/workspace/public/images/real/cbb60-hanxing-wired.jpg",
+      "D:/Hangxing/workspace/public/images/real/cbb61-13.jpg",
+      "D:/Hangxing/workspace/public/images/real/cbb65-2.jpg",
+      "D:/Hangxing/workspace/public/images/real/cd60-25.jpg"
+    ],
+    "prompt": "Edit ONLY the authentic product markings in the first photographic composition. Keep its complete 12:7 composition, product silhouettes, positions, lighting, oak tabletop, cream and blue walls and empty lower-left area unchanged. Replace the four generic model-code-only faces with exact original printed labels copied faithfully from the next FOUR real sample photos. White CBB60: the circular Hanxing emblem and italic Hanxing® wordmark; CBB60; 35µF±5% SH; 450VAC 50/60Hz; 40/70/21; EN60252-1. Black CBB61: the LEFT sample exact gold-gray print: CBB61; 4.5µF±5% 40/70/21; 450VAC 50/60Hz SH; 2025C. This particular sample has no Hanxing logo; do not add one. Silver CBB65: the circular Hanxing emblem and italic Hanxing® wordmark; CBB65 CAPACITOR; 20 µF±5%; 450VAC 50/60Hz; 40/85/21 C P1; Capacitor Co.,Ltd; Guang zhou Hanxing; 2025. Gray CD60: the original geometric emblem (do not replace it with a new logo), CD 60; 500µF ±5%; 300V.AC 50/60Hz; -40°C /70°C /21; the two existing marks CQC and CE copied from the source only. Crucial: preserve the authentic circular Hanxing emblem and Hanxing® wordmark on CBB60 and CBB65, do not remove, redesign, simplify or replace with plain generic model names. Keep original line order, case, units, numerical values and relative size. Real printing follows curvature and fine material texture; it is not floating text. No newly invented certification or numerical claims; any marks must be copied only from original photos. No UI or words outside products. Keep all wires and terminal structures exactly.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-00254e0c-613a-44e5-88fe-7160226e4512.png",
+    "original": ".qa/satechi-fidelity-20261018/generated-originals/hero-desktop.png",
+    "web": "images/previews/satechi-fidelity-20261018/hero-desktop.webp",
+    "width": 1640,
+    "height": 955,
+    "bytes": 108746,
+    "sourceWidth": 1643,
+    "sourceHeight": 957,
+    "provenance": "ImageGen re-composition based on original product photographs; source markings retained",
+    "postprocess": "Resize and WebP encode only. No synthetic label overlay."
+  },
+  {
+    "id": "label-desktop",
+    "refs": [
+      "D:/Hangxing/workspace/.qa/satechi-fidelity-20261018/generated-originals/label-desktop-unbranded.png",
+      "D:/Hangxing/workspace/public/images/real/cbb65-2.jpg"
+    ],
+    "prompt": "Edit the first wide 1440:586 scene ONLY to restore the authentic original label from the SECOND photograph onto the same metal cylinder. Preserve the framing, product location, pale blue background, left empty space, low round podium and exact TWO terminal groups. Restore circular Hanxing emblem, Hanxing® wordmark and entire original print: the circular Hanxing emblem and italic Hanxing® wordmark; CBB65 CAPACITOR; 20 µF±5%; 450VAC 50/60Hz; 40/85/21 C P1; Capacitor Co.,Ltd; Guang zhou Hanxing; 2025. Follow original type arrangement and cylindrical perspective, sharp real black ink with no missing or substituted letters. Do not put just CBB65. Do not invent or add any other marks, specifications, UI or text. The result remains an illustrative studio photograph based on an original sample.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-90960610-2cdf-4b83-905a-48ae620e606c.png",
+    "original": ".qa/satechi-fidelity-20261018/generated-originals/label-desktop.png",
+    "web": "images/previews/satechi-fidelity-20261018/label-desktop.webp",
+    "width": 1800,
+    "height": 733,
+    "bytes": 46228,
+    "sourceWidth": 1965,
+    "sourceHeight": 800,
+    "provenance": "ImageGen re-composition based on original product photographs; source markings retained",
+    "postprocess": "Resize and WebP encode only. No synthetic label overlay."
+  },
+  {
+    "id": "fit-desktop",
+    "refs": [
+      "D:/Hangxing/workspace/.qa/satechi-fidelity-20261018/generated-originals/fit-desktop-unbranded.png",
+      "D:/Hangxing/workspace/public/images/real/cbb60-hanxing-wired.jpg",
+      "D:/Hangxing/workspace/public/images/real/cbb61-13.jpg"
+    ],
+    "prompt": "Edit the first warm wide photograph ONLY to restore original authentic product printing from the next two original photos. Keep the exact 1440:586 composition, pale clay platforms, caliper, shadows, subjects on right and empty left. White CBB60 print: the circular Hanxing emblem and italic Hanxing® wordmark; CBB60; 35µF±5% SH; 450VAC 50/60Hz; 40/70/21; EN60252-1. Black CBB61 from LEFT original sample: the LEFT sample exact gold-gray print: CBB61; 4.5µF±5% 40/70/21; 450VAC 50/60Hz SH; 2025C. This particular sample has no Hanxing logo; do not add one. Preserve the Hanxing emblem and italic wordmark on white CBB60, all original text, line arrangement and real cylindrical/flat perspective. Do not remove branding or leave just model code. Do not add a Hanxing logo to CBB61 because its original has none. All wires, terminals, proportions and positions unchanged. No extra UI, ratings or marks beyond those in actual source photos.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-7513da40-5428-46d7-8d32-2021508a4b86.png",
+    "original": ".qa/satechi-fidelity-20261018/generated-originals/fit-desktop.png",
+    "web": "images/previews/satechi-fidelity-20261018/fit-desktop.webp",
+    "width": 1800,
+    "height": 732,
+    "bytes": 45204,
+    "sourceWidth": 1966,
+    "sourceHeight": 800,
+    "provenance": "ImageGen re-composition based on original product photographs; source markings retained",
+    "postprocess": "Resize and WebP encode only. No synthetic label overlay."
+  },
+  {
+    "id": "hero-mobile",
+    "refs": [
+      "D:/Hangxing/workspace/.qa/satechi-fidelity-20261018/generated-originals/hero-mobile-unbranded.png",
+      "D:/Hangxing/workspace/public/images/real/cbb60-hanxing-wired.jpg",
+      "D:/Hangxing/workspace/public/images/real/cbb61-13.jpg",
+      "D:/Hangxing/workspace/public/images/real/cbb65-2.jpg",
+      "D:/Hangxing/workspace/public/images/real/cd60-25.jpg"
+    ],
+    "prompt": "Edit this first portrait 390:800 composition ONLY to restore every original product face from the next four original sample photos. Same exact product size, complete wires and terminals, oak table, warm cream wall, empty upper43% for HTML. Authentic markings: CBB60: the circular Hanxing emblem and italic Hanxing® wordmark; CBB60; 35µF±5% SH; 450VAC 50/60Hz; 40/70/21; EN60252-1. CBB61: the LEFT sample exact gold-gray print: CBB61; 4.5µF±5% 40/70/21; 450VAC 50/60Hz SH; 2025C. This particular sample has no Hanxing logo; do not add one. CBB65: the circular Hanxing emblem and italic Hanxing® wordmark; CBB65 CAPACITOR; 20 µF±5%; 450VAC 50/60Hz; 40/85/21 C P1; Capacitor Co.,Ltd; Guang zhou Hanxing; 2025. CD60: the original geometric emblem (do not replace it with a new logo), CD 60; 500µF ±5%; 300V.AC 50/60Hz; -40°C /70°C /21; the two existing marks CQC and CE copied from the source only. Keep circular Hanxing emblem and wordmark on CBB60 and CBB65 intact, and original CBB61/CD60 print as supplied, not generic model-code-only bodies. Preserve source line order, units, exact numeric values and material-perspective ink. No invented marks, changes to product structures, website UI or text outside products. Recreate genuine original label detail clearly, preserve all other parts of first image.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-430b38f3-2300-486f-ac86-6d3e470eb1b1.png",
+    "original": ".qa/satechi-fidelity-20261018/generated-originals/hero-mobile.png",
+    "web": "images/previews/satechi-fidelity-20261018/hero-mobile.webp",
+    "width": 780,
+    "height": 1598,
+    "bytes": 77848,
+    "sourceWidth": 876,
+    "sourceHeight": 1795,
+    "provenance": "ImageGen re-composition based on original product photographs; source markings retained",
+    "postprocess": "Resize and WebP encode only. No synthetic label overlay."
+  },
+  {
+    "id": "label-mobile",
+    "refs": [
+      "D:/Hangxing/workspace/.qa/satechi-fidelity-20261018/generated-originals/label-mobile-unbranded.png",
+      "D:/Hangxing/workspace/public/images/real/cbb65-2.jpg"
+    ],
+    "prompt": "Edit ONLY the product printing of this first 390:700 portrait composition. Restore the complete authentic Hanxing circular emblem, italic Hanxing® wordmark and exact original label from SECOND photo: the circular Hanxing emblem and italic Hanxing® wordmark; CBB65 CAPACITOR; 20 µF±5%; 450VAC 50/60Hz; 40/85/21 C P1; Capacitor Co.,Ltd; Guang zhou Hanxing; 2025. Same body, same TWO terminal groups, same relative print layout and perspective. Keep soft blue background, podium, subject placement and empty upper42% unchanged for real HTML. Do not simplify to model code, do not invent marks or replace characters. No UI or text outside product.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-12c85e9a-d9ce-40c8-97d4-16eeea3d9443.png",
+    "original": ".qa/satechi-fidelity-20261018/generated-originals/label-mobile.png",
+    "web": "images/previews/satechi-fidelity-20261018/label-mobile.webp",
+    "width": 780,
+    "height": 1401,
+    "bytes": 48422,
+    "sourceWidth": 936,
+    "sourceHeight": 1681,
+    "provenance": "ImageGen re-composition based on original product photographs; source markings retained",
+    "postprocess": "Resize and WebP encode only. No synthetic label overlay."
+  },
+  {
+    "id": "fit-mobile",
+    "refs": [
+      "D:/Hangxing/workspace/.qa/satechi-fidelity-20261018/generated-originals/fit-mobile-unbranded.png",
+      "D:/Hangxing/workspace/public/images/real/cbb60-hanxing-wired.jpg",
+      "D:/Hangxing/workspace/public/images/real/cbb61-13.jpg"
+    ],
+    "prompt": "Edit ONLY product printing of first 390:700 portrait composition. Restore actual labels from the next two original photos. CBB60: the circular Hanxing emblem and italic Hanxing® wordmark; CBB60; 35µF±5% SH; 450VAC 50/60Hz; 40/70/21; EN60252-1. CBB61 LEFT original sample: the LEFT sample exact gold-gray print: CBB61; 4.5µF±5% 40/70/21; 450VAC 50/60Hz SH; 2025C. This particular sample has no Hanxing logo; do not add one. Faithfully retain Hanxing emblem and italic wordmark on CBB60. Preserve source values, line breaks and ink perspective. Keep warm matte platforms, exact product shapes, all complete wires and terminals, caliper, positions and upper42% empty area unchanged. No new logos or invented marks, no UI or text outside products.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-490845b6-6620-4852-b846-1854b5742ae0.png",
+    "original": ".qa/satechi-fidelity-20261018/generated-originals/fit-mobile.png",
+    "web": "images/previews/satechi-fidelity-20261018/fit-mobile.webp",
+    "width": 780,
+    "height": 1400,
+    "bytes": 37230,
+    "sourceWidth": 936,
+    "sourceHeight": 1680,
+    "provenance": "ImageGen re-composition based on original product photographs; source markings retained",
+    "postprocess": "Resize and WebP encode only. No synthetic label overlay."
+  },
+  {
+    "id": "category-cd60",
+    "refs": [
+      "D:/Hangxing/workspace/.qa/satechi-fidelity-20261018/generated-originals/category-cd60-unbranded.png",
+      "D:/Hangxing/workspace/public/images/real/cd60-25.jpg"
+    ],
+    "prompt": "Edit ONLY the product printing of first square studio photograph. Copy the exact original printed front face from SECOND real sample photograph: the original geometric emblem (do not replace it with a new logo), CD 60; 500µF ±5%; 300V.AC 50/60Hz; -40°C /70°C /21; the two existing marks CQC and CE copied from the source only. Preserve the actual geometric emblem from the source, never replace it or add a Hanxing logo that is absent in this particular sample. Preserve exact values, line arrangement and printed marks already in original. No added claims or new certification. Keep gray shell, TWO blade terminals, product proportions, square framing, matte ivory plinth, daylight and shadow unchanged. No website UI or extra text.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-2b9bedf7-6e83-4f3b-9e04-74a5e1c243bc.png",
+    "original": ".qa/satechi-fidelity-20261018/generated-originals/category-cd60.png",
+    "web": "images/previews/satechi-fidelity-20261018/category-cd60.webp",
+    "width": 700,
+    "height": 700,
+    "bytes": 33982,
+    "sourceWidth": 1254,
+    "sourceHeight": 1254,
+    "provenance": "ImageGen re-composition based on original product photographs; source markings retained",
+    "postprocess": "Resize and WebP encode only. No synthetic label overlay."
+  },
+  {
+    "id": "inquiry",
+    "refs": [
+      "D:/Hangxing/workspace/.qa/satechi-fidelity-20261018/generated-originals/inquiry-unbranded.png",
+      "D:/Hangxing/workspace/public/images/real/cbb60-hanxing-wired.jpg",
+      "D:/Hangxing/workspace/public/images/real/cbb61-13.jpg",
+      "D:/Hangxing/workspace/public/images/real/cbb65-2.jpg",
+      "D:/Hangxing/workspace/public/images/real/cd60-25.jpg"
+    ],
+    "prompt": "Edit ONLY authentic product printing in the first square still life. Keep the cream fluted plinths, lighting, placements and complete product forms. Restore original visible brand marks and full label detail from the next four source photos faithfully. CBB60: the circular Hanxing emblem and italic Hanxing® wordmark; CBB60; 35µF±5% SH; 450VAC 50/60Hz; 40/70/21; EN60252-1. CBB61: the LEFT sample exact gold-gray print: CBB61; 4.5µF±5% 40/70/21; 450VAC 50/60Hz SH; 2025C. This particular sample has no Hanxing logo; do not add one. CBB65: the circular Hanxing emblem and italic Hanxing® wordmark; CBB65 CAPACITOR; 20 µF±5%; 450VAC 50/60Hz; 40/85/21 C P1; Capacitor Co.,Ltd; Guang zhou Hanxing; 2025. CD60: the original geometric emblem (do not replace it with a new logo), CD 60; 500µF ±5%; 300V.AC 50/60Hz; -40°C /70°C /21; the two existing marks CQC and CE copied from the source only. Most important: CBB60 and CBB65 keep the real circular Hanxing symbol and Hanxing® wordmark, not generic blank model codes. Other samples retain the exact marks they actually have, without adding a different logo. Exact units, numeric values, line order and realistic ink perspective; do not invent characters or marks. No UI or text outside products. All leads and terminal structures remain unchanged.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-4cf36684-dffb-4c90-894d-cff197baf627.png",
+    "original": ".qa/satechi-fidelity-20261018/generated-originals/inquiry.png",
+    "web": "images/previews/satechi-fidelity-20261018/inquiry.webp",
+    "width": 1200,
+    "height": 1200,
+    "bytes": 99898,
+    "sourceWidth": 1254,
+    "sourceHeight": 1254,
+    "provenance": "ImageGen re-composition based on original product photographs; source markings retained",
+    "postprocess": "Resize and WebP encode only. No synthetic label overlay."
+  },
+  {
+    "id": "fan-desktop",
+    "refs": [
+      "D:/Hangxing/workspace/.qa/satechi-fidelity-20261018/generated-originals/fan-desktop-unbranded.png",
+      "D:/Hangxing/workspace/public/images/real/cbb61-13.jpg"
+    ],
+    "prompt": "Edit this first 12:7 warm studio hero photograph to restore the authentic CBB61 printing from the LEFT original sample in second photo: the LEFT sample exact gold-gray print: CBB61; 4.5µF±5% 40/70/21; 450VAC 50/60Hz SH; 2025C. This particular sample has no Hanxing logo; do not add one. Keep its original numeric values, line order and typography; don't add an absent Hanxing logo. Also adjust the soft background fan slightly smaller and inward so its entire circular protective cage is visible inside the right edge with 5% margin, without crowding the CBB61 product. Keep the CBB61 exact shape and size on cream plinth, oak table, bright natural light, empty entire left40% and all other composition. No new logos, labels or UI. Generic application concept, no client-installation implications.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-f8eba79a-cbb1-4b36-9c53-6be8c2bcbcf8.png",
+    "original": ".qa/satechi-fidelity-20261018/generated-originals/fan-desktop.png",
+    "web": "images/previews/satechi-fidelity-20261018/fan-desktop.webp",
+    "width": 1640,
+    "height": 957,
+    "bytes": 102854,
+    "sourceWidth": 1642,
+    "sourceHeight": 958,
+    "provenance": "ImageGen re-composition based on original product photographs; source markings retained",
+    "postprocess": "Resize and WebP encode only. No synthetic label overlay."
+  },
+  {
+    "id": "fan-mobile",
+    "refs": [
+      "D:/Hangxing/workspace/.qa/satechi-fidelity-20261018/generated-originals/fan-desktop-unbranded.png",
+      "D:/Hangxing/workspace/public/images/real/cbb61-13.jpg"
+    ],
+    "prompt": "Create a portrait 390:800 mobile companion to first photograph. Same warm cream studio, oak table and gentle daylight. Keep upper43% completely empty light cream wall for real HTML headline and button. Place the exact small black CBB61 from LEFT sample of second original photograph on a low ivory plinth in lower foreground, centered, with an entire smaller unbranded ventilation fan softly behind and to right, circular cage fully inside image. Complete product and two blade terminals remain visible and faithful proportions. Crucial restore authentic original print exactly: the LEFT sample exact gold-gray print: CBB61; 4.5µF±5% 40/70/21; 450VAC 50/60Hz SH; 2025C. This particular sample has no Hanxing logo; do not add one. Do not show a generic model-code-only body and do not add a logo absent from original. All actual text belongs only on product; no UI, invented specifications or website copy. This is a generic illustrative application photograph, not factory evidence.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-cd38a50d-ca0a-4122-af37-48814c3af6fc.png",
+    "original": ".qa/satechi-fidelity-20261018/generated-originals/fan-mobile.png",
+    "web": "images/previews/satechi-fidelity-20261018/fan-mobile.webp",
+    "width": 780,
+    "height": 1599,
+    "bytes": 64886,
+    "sourceWidth": 876,
+    "sourceHeight": 1796,
+    "provenance": "ImageGen re-composition based on original product photographs; source markings retained",
+    "postprocess": "Resize and WebP encode only. No synthetic label overlay."
+  },
+  {
+    "id": "application-pump",
+    "prompt": "Create a square 1:1 premium editorial application photograph of ONE complete unbranded centrifugal water pump with a compact single-phase electric motor. Carefully art-directed generic equipment setting, matte muted blue-green cast-metal pump and gray motor on a clean dark stone base, cream plaster wall, soft daylight from a tall window, small warm oak architectural detail. Complete pipe inlet and outlet, motor, feet and connection box fully inside image with generous 12% margins; no cut equipment, no people. Equipment occupies central 65% square, eye-level three-quarter view, tactile realistic metal, gentle daylight. Bottom12% of frame is a quiet darker stone surface so white HTML caption can be readable without a gradient. Consistent premium consumer-product photography applied to industrial equipment, no factory, no client site, no gauges with invented readable values, no logo, certification, label, text or website UI. Clearly a generic conceptual application illustration, not evidence of installed customer equipment.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-61deccd8-600d-4594-9492-6bbd8f5dda60.png",
+    "original": ".qa/satechi-fidelity-20261018/generated-originals/application-pump.png",
+    "web": "images/previews/satechi-fidelity-20261018/application-pump.webp",
+    "width": 1100,
+    "height": 1100,
+    "bytes": 182282,
+    "sourceWidth": 1254,
+    "sourceHeight": 1254,
+    "provenance": "New generic application illustration",
+    "postprocess": "Resize and WebP encode only. No synthetic label overlay."
+  },
+  {
+    "id": "application-hvac",
+    "prompt": "A premium wide 1200:650 editorial application photograph, one complete unbranded outdoor air-conditioning condenser in a calm architectural courtyard. Gray metal enclosure with believable front grille and full top visible, unit centered toward right x65%, fully inside frame with 10% air around, no cropping, proper concrete plinth and small connected conduit, warm offwhite wall and muted olive planting. Soft broad daylight, understated natural materials, rich believable detail, gentle depth. Entire lower15% has a quiet slightly darker stone floor for a white HTML caption at bottom left. No people, logos, text, certifications, commercial building names or UI. Generic illustrative application scene only; not a real company installation or customer case.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-65c70145-5c46-4c61-9b8a-efab7719b726.png",
+    "original": ".qa/satechi-fidelity-20261018/generated-originals/application-hvac.png",
+    "web": "images/previews/satechi-fidelity-20261018/application-hvac.webp",
+    "width": 1200,
+    "height": 650,
+    "bytes": 228564,
+    "sourceWidth": 1703,
+    "sourceHeight": 923,
+    "provenance": "New generic application illustration",
+    "postprocess": "Resize and WebP encode only. No synthetic label overlay."
+  },
+  {
+    "id": "application-fan",
+    "prompt": "Create a landscape 5:3 premium product application photograph of ONE complete unbranded industrial axial ventilation fan, compact round galvanized steel cage and believable electric motor. Full circular outer rim, motor housing and mounting feet visible inside frame, all around 15% crop margin, subject center occupying 62% image height. Place on a pale warm gray stone surface, soft cream architectural background and muted olive-gray shadow, broad directional daylight, realistic brushed metal details, restrained consumer-accessory editorial photography quality. Do not show hands, staff, clients, factory facilities, readable model labels, brands, certificates, claims or website UI. This is a generic application concept. Frame must work as a wide photograph above a separate solid dark HTML caption band, do not embed any black band or text in image.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-fb2aecdf-d801-4335-aed8-150eb1c350ff.png",
+    "original": ".qa/satechi-fidelity-20261018/generated-originals/application-fan.png",
+    "web": "images/previews/satechi-fidelity-20261018/application-fan.webp",
+    "width": 1200,
+    "height": 720,
+    "bytes": 141726,
+    "sourceWidth": 1619,
+    "sourceHeight": 971,
+    "provenance": "New generic application illustration",
+    "postprocess": "Resize and WebP encode only. No synthetic label overlay."
+  },
+  {
+    "id": "application-washing",
+    "prompt": "Create a premium landscape 5:3 editorial application photograph of ONE complete unbranded white front-loading washing machine in a restrained residential utility room. Entire rectangular body, round front door, top, control fascia and four edges visible with 12% crop margin, centered subject occupying 65% image height. Pale warm gray plaster, an oak worktop at the side, a folded neutral linen towel away from the appliance, soft natural daylight. Clean modern scene with tactile materials, photorealistic commercial quality, no dramatic effects. No readable control text, logos, people, brand labels, certification, client location or website UI. Generic conceptual appliance application; no claim about any specific motor technology or actual customer installation. Image will sit above a separate black HTML caption strip, so do not create a black strip or text inside image.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-9acd5183-61c1-43c7-9237-00296d56fa1e.png",
+    "original": ".qa/satechi-fidelity-20261018/generated-originals/application-washing.png",
+    "web": "images/previews/satechi-fidelity-20261018/application-washing.webp",
+    "width": 1200,
+    "height": 720,
+    "bytes": 113918,
+    "sourceWidth": 1619,
+    "sourceHeight": 971,
+    "provenance": "New generic application illustration",
+    "postprocess": "Resize and WebP encode only. No synthetic label overlay."
+  },
+  {
+    "id": "hero-laptop",
+    "prompt": "Recompose first photograph for a 1024:840 landscape-leaning laptop hero. Keep same pale cream wall left, muted blue wall right, oak table, daylight and FOUR original capacitor forms with authentic labels. Reserve left35% entirely quiet for HTML title, beginning x96; product group occupies right56% and is entirely visible inside x42–94%, y24–87%, no clipped bodies or terminals or leads. CBB65 tall behind, CBB60 wired white left, black CBB61 front and gray CD60 right. All FOUR must fit completely within frame, including gray CD60 at least 6% from right edge. Restore exact original Hanxing logos and full printed labels from the real photos, never generic model codes only. cbb60: the circular Hanxing emblem and italic Hanxing® wordmark; CBB60; 35µF±5% SH; 450VAC 50/60Hz; 40/70/21; EN60252-1. cbb61: the LEFT sample exact gold-gray print: CBB61; 4.5µF±5% 40/70/21; 450VAC 50/60Hz SH; 2025C. This particular sample has no Hanxing logo; do not add one. cbb65: the circular Hanxing emblem and italic Hanxing® wordmark; CBB65 CAPACITOR; 20 µF±5%; 450VAC 50/60Hz; 40/85/21 C P1; Capacitor Co.,Ltd; Guang zhou Hanxing; 2025. cd60: the original geometric emblem (do not replace it with a new logo), CD 60; 500µF ±5%; 300V.AC 50/60Hz; -40°C /70°C /21; the two existing marks CQC and CE copied from the source only. Keep relative shape and size, no invented marks, no UI or text outside products. This is edited display photography only, no business evidence.",
+    "refs": [
+      "D:/Hangxing/workspace/.qa/satechi-fidelity-20261018/generated-originals/hero-desktop.png",
+      "D:/Hangxing/workspace/public/images/real/cbb60-hanxing-wired.jpg",
+      "D:/Hangxing/workspace/public/images/real/cbb61-13.jpg",
+      "D:/Hangxing/workspace/public/images/real/cbb65-2.jpg",
+      "D:/Hangxing/workspace/public/images/real/cd60-25.jpg"
+    ],
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-971b0ddd-a750-4b23-8112-e6820e0e0f12.png",
+    "original": ".qa/satechi-fidelity-20261018/generated-originals/hero-laptop.png",
+    "web": "images/previews/satechi-fidelity-20261018/hero-laptop.webp",
+    "width": 1385,
+    "height": 1136,
+    "bytes": 116248,
+    "sourceWidth": 1385,
+    "sourceHeight": 1136,
+    "provenance": "ImageGen re-composition based on original product photographs; source markings retained",
+    "postprocess": "Resize and WebP encode only. No synthetic label overlay."
+  },
+  {
+    "id": "hero-tablet",
+    "prompt": "Create a near square 768:800 TABLET composition of the first photograph. Same light oak sample table, warm cream backdrop and muted blue panel, beautiful daylight and exact four products, faithful structures and proportions. Keep upper40% empty pale cream for actual HTML headline/body/button. All FOUR complete capacitors form a centered still life in lower52%, centered x18–85%, y44–88%, none clipped, especially tall silver CBB65 and gray CD60 to right. White CBB60 with TWO complete black leads, black rectangular CBB61 TWO blades, silver CBB65 TWO grouped terminal bases, gray CD60 TWO blades. Faithfully preserve authentic circular Hanxing logos and labels from source photos: cbb60: the circular Hanxing emblem and italic Hanxing® wordmark; CBB60; 35µF±5% SH; 450VAC 50/60Hz; 40/70/21; EN60252-1. cbb61: the LEFT sample exact gold-gray print: CBB61; 4.5µF±5% 40/70/21; 450VAC 50/60Hz SH; 2025C. This particular sample has no Hanxing logo; do not add one. cbb65: the circular Hanxing emblem and italic Hanxing® wordmark; CBB65 CAPACITOR; 20 µF±5%; 450VAC 50/60Hz; 40/85/21 C P1; Capacitor Co.,Ltd; Guang zhou Hanxing; 2025. cd60: the original geometric emblem (do not replace it with a new logo), CD 60; 500µF ±5%; 300V.AC 50/60Hz; -40°C /70°C /21; the two existing marks CQC and CE copied from the source only. No generic blank model-code bodies, no added numbers or new marks, no UI text or factory evidence.",
+    "refs": [
+      "D:/Hangxing/workspace/.qa/satechi-fidelity-20261018/generated-originals/hero-desktop.png",
+      "D:/Hangxing/workspace/public/images/real/cbb60-hanxing-wired.jpg",
+      "D:/Hangxing/workspace/public/images/real/cbb61-13.jpg",
+      "D:/Hangxing/workspace/public/images/real/cbb65-2.jpg",
+      "D:/Hangxing/workspace/public/images/real/cd60-25.jpg"
+    ],
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-b5ac5e27-6703-4f1c-a517-11df82c54fad.png",
+    "priorSource": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-774b9306-334e-4e37-839d-b1e75834ea1a.png",
+    "labelCorrection": {
+      "id": "hero-tablet-label-fix",
+      "refs": [
+        "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-774b9306-334e-4e37-839d-b1e75834ea1a.png",
+        "D:/Hangxing/workspace/public/images/real/cbb65-2.jpg"
+      ],
+      "prompt": "Make a strictly localized print correction in the FIRST photograph, leaving every other pixel/composition detail as close as possible. On the silver CBB65 capacitor, ensure the small bottom year reads exactly 2025 as in the SECOND original sample, not 2020 or any other year. Preserve the authentic circular Hanxing emblem, italic Hanxing® wordmark and all other original printed lines and values. All FOUR product positions, sizes, materials, terminal structures, complete wires, background, light and portrait-near-square 768:800 framing remain unchanged. Do not redraw the entire scene, add other text, or alter any other label."
+    },
+    "original": ".qa/satechi-fidelity-20261018/generated-originals/hero-tablet.png",
+    "web": "images/previews/satechi-fidelity-20261018/hero-tablet.webp",
+    "width": 1229,
+    "height": 1280,
+    "bytes": 100396,
+    "sourceWidth": 1229,
+    "sourceHeight": 1280,
+    "provenance": "ImageGen re-composition based on original product photographs; source markings retained",
+    "postprocess": "Resize and WebP encode only. No synthetic label overlay."
+  }
+]

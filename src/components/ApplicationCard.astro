@@ -1,7 +1,11 @@
 ---
 import type { Application } from '../data/site';
 import { applicationHref } from '../data/site';
+import { isSatechiPreview } from '../lib/visualPreview';
+import { applicationVisuals } from '../data/satechiSite';
+import { industrialApplications } from '../data/industrialApplications';
+import SiteImage from './satechi-preview/SiteImage.astro';
 interface Props { application: Application }
 const { application } = Astro.props;
 ---
-<article class="card app-card"><figure class="application-card-image"><a href={applicationHref(application)} aria-label={'View ' + application.shortName + ' application'}><img src={application.image} alt={application.imageAlt} width="1200" height={application.imageHeight} loading="lazy" /></a></figure><div class="card-body"><h2 class="card-title"><a href={applicationHref(application)}>{application.shortName}</a></h2><p class="application-series">{application.listing}</p><a class="card-link" href={applicationHref(application)}>View details <span aria-hidden="true">→</span></a></div></article>
+<article class="card app-card"><figure class="application-card-image"><a href={applicationHref(application)} aria-label={'View ' + application.shortName + ' application'}><SiteImage src={isSatechiPreview ? applicationVisuals[application.slug] : application.image} alt={isSatechiPreview ? industrialApplications[application.slug].alt : application.imageAlt} width={isSatechiPreview ? 1536 : 1200} height={isSatechiPreview ? 1024 : application.imageHeight} sizes="(max-width: 700px) calc(100vw - 32px), (max-width: 1440px) calc((100vw - 120px) / 2), 680px" /></a></figure><div class="card-body"><h2 class="card-title"><a href={applicationHref(application)}>{application.shortName}</a></h2><p class="application-series">{application.listing}</p><a class="card-link" href={applicationHref(application)}>View details <span aria-hidden="true">→</span></a></div></article>

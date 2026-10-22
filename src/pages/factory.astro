@@ -1,52 +1,59 @@
 ---
+import { isSatechiPreview } from '../lib/visualPreview';
+import OemPhoto from '../components/satechi-preview/OemPhoto.astro';
+import BrochurePhoto from '../components/satechi-preview/BrochurePhoto.astro';
+import { oemMedia } from '../data/oemMedia';
 import VideoFigure from '../components/VideoFigure.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import InquiryCallout from '../components/InquiryCallout.astro';
 const documentRequest = '/contact/?request=documents#inquiry-form';
 const records = [
-  { name: 'Product samples', status: 'Original sample photos with visible configurations and markings. Approved dimensions and stock availability need separate confirmation.', request: 'Give the sample reference or configuration required, then agree the model and sample for approval.', href: '/products/photographs/' },
-  { name: 'Datasheets and drawings', status: 'Approved model datasheets and drawings are not published here.', request: 'Ask for the current datasheet and dimensioned drawing for the model quoted, including revision or date.' },
-  { name: 'Test and inspection reports', status: 'Reports for individual models are not published here.', request: 'Specify the test method, acceptance limits and dated results needed, with identification of the sample or batch tested.' },
-  { name: 'Certificates', status: 'Certificates for individual models are not published here.', request: 'Check issuer, certificate number, covered models, destination requirements and validity.' },
-  { name: 'Marking and packing', status: 'The quotation must define the marking and packing for the order.', request: 'Keep the approved label or artwork revision and packing specification under the quoted order reference.' },
+  { name: 'Product samples', request: 'Sample reference or configuration, model number and sample for approval.' },
+  { name: 'Datasheets and drawings', request: 'Current model datasheet and dimensioned drawing, with revision or date.' },
+  { name: 'Test and inspection reports', request: 'Model and sample or batch reference, test date, method and conditions, instrument ID, acceptance limits, measured results and reviewer signature.' },
+  { name: 'Certificates', request: 'Issuer, certificate number, covered models, destination requirements and validity.' },
+  { name: 'Marking and packing', request: 'Approved label or artwork revision and packing specification, linked to the order reference.' },
 ];
 ---
-<BaseLayout title="Manufacturing & Quality | Product Documents" description="View supplied capacitor production footage and use the buyer checklist for model datasheets, drawings, inspection reports and certificates.">
-  <article class="procurement-page procurement-factory">
+<BaseLayout title="Manufacturing & Quality | Product Documents" description="Capacitor production stages, electrical testing and packing, with a checklist for model drawings, inspection records and certificates.">
+  <article class:list={['procurement-page procurement-factory', {'oem-editorial-page': isSatechiPreview}]}>
     <section class="procurement-hero"><div class="container">
       <p class="breadcrumbs"><a href="/">Home</a> / <a href="/oem-quality/">OEM &amp; Quality</a> / Manufacturing</p>
+      <div class:list={{'ss-factory-intro':isSatechiPreview}}><div>
       <h1 id="factory-title">Manufacturing and quality</h1>
-      <p class="procurement-lead">Process footage and a checklist of the documents to request for your model.</p>
+      <p class="procurement-lead">Capacitor production stages and the quality records for your order.</p>
       <nav class="procurement-actions" aria-label="Manufacturing information"><a class="button" href="#model-records">Documents for your model</a><a class="card-link" href={documentRequest}>Request model documents</a><a class="card-link" href="/about/#supplier-records">Supplier identity information</a></nav>
+      </div>{isSatechiPreview && <OemPhoto name="workshop-station" eager />}</div>
     </div></section>
     <section class="procurement-section" id="factory-process-title" aria-labelledby="factory-footage-title"><div class="container">
       <h2 id="factory-footage-title">Process footage</h2>
       <nav class="procurement-process-index" aria-label="Process stages"><a href="#material-process">Material and process</a><a href="#electrical-testing">Electrical and product testing</a><a href="#packing-warehouse">Packing and warehouse handling</a></nav>
-      <p class="procurement-caption">For the proposed model, confirm the manufacturing site and request dated test records with the quotation.</p>
+      <p class="procurement-caption">Request inspection records for the model and manufacturing site named in your quotation.</p>
       <article class="procurement-process-stage" id="material-process">
-        <div><h3>Material and process</h3><p>The <a href="https://www.hanxingcapacitor.com/factory/" target="_blank" rel="noopener noreferrer">published process description</a> includes incoming inspection, winding, metal spraying, heat setting, rolling, oil injection and sealing.</p></div>
+        <div class:list={{'zi-material-intro':isSatechiPreview}}><div><h3>Material and process</h3><p>Process stages include incoming inspection, winding, metal spraying, heat setting, rolling, oil injection and sealing.</p></div>{isSatechiPreview && <BrochurePhoto name="capacitor-cores" zoom label="Capacitor winding forms" sizes="(max-width: 800px) calc(100vw - 32px), 49vw" />}</div>
         <div class="procurement-video-pair">
-          <div class="procurement-video"><VideoFigure src="/videos/film-roll-equipment.mp4" poster="/images/real/film-rolls.jpg" label="Supplied video showing a film roll moving through equipment" /><p class="procurement-caption">A film roll passes through processing equipment.</p><a class="procurement-file-link" href="/videos/film-roll-equipment.mp4">Open film-handling video</a></div>
-          <div class="procurement-video"><VideoFigure src="/videos/winding-equipment.mp4" poster="/images/real/winding-equipment.jpg" label="Supplied video showing enclosed production equipment and its control panel" /><p class="procurement-caption">Enclosed equipment and its control panel during operation.</p><a class="procurement-file-link" href="/videos/winding-equipment.mp4">Open equipment video</a></div>
+          <div class="procurement-video"><VideoFigure src="/videos/film-roll-equipment.mp4" poster="/images/real/film-rolls.jpg" label="Supplied video showing a film roll moving through equipment" cover={isSatechiPreview ? oemMedia['film-process'] : undefined} /><p class="procurement-caption">A film roll passes through processing equipment.</p></div>
+          <div class="procurement-video"><VideoFigure src="/videos/winding-equipment.mp4" poster="/images/real/winding-equipment.jpg" label="Supplied video showing enclosed production equipment and its control panel" cover={isSatechiPreview ? oemMedia['winding-process'] : undefined} /><p class="procurement-caption">Enclosed equipment and its control panel during operation.</p></div>
         </div>
       </article>
       <article class="procurement-process-stage" id="electrical-testing">
-        <div><h3>Electrical and product testing</h3><p>Capacitance and product testing are included in the published process. Ask for the test method, acceptance limits and dated results for the model being quoted.</p></div>
-        <div class="procurement-video procurement-video--single"><VideoFigure src="/videos/test-area-equipment.mp4" poster="/images/real/test-area.jpg" label="Supplied video showing a worker and equipment in a test area" /><p class="procurement-caption">A worker and equipment in the testing area.</p><a class="procurement-file-link" href="/videos/test-area-equipment.mp4">Open test-area video</a></div>
+        <div><h3>Electrical and product testing</h3><p>Specify the test method and acceptance limits when requesting capacitance and product test reports.</p></div>
+        <div class="procurement-video procurement-video--single"><VideoFigure src="/videos/test-area-equipment.mp4" poster="/images/real/test-area.jpg" label="Supplied video showing a worker and equipment in a test area" cover={isSatechiPreview ? oemMedia['testing-area'] : undefined} coverSizes="(max-width: 800px) calc(100vw - 48px), 58vw" /><p class="procurement-caption">A worker and equipment in the testing area.</p></div>
       </article>
       <article class="procurement-process-stage procurement-process-stage--text" id="packing-warehouse">
-        <div><h3>Packing and warehouse handling</h3><p>The final listed stages include packing and warehouse handling. Agree unit protection, inner packs, carton quantities and shipping marks for the order.</p></div>
+        <div><h3>Packing and warehouse handling</h3><p>Packing requirements cover unit protection, inner packs, carton quantities and shipping marks.</p></div>
         <div><a class="card-link" href="/factory/packing-and-dispatch/#packing-requirements">Review packing requirements and footage</a></div>
       </article>
     </div></section>
     <section class="procurement-section" id="model-records" aria-labelledby="factory-records-title"><div class="container">
       <h2 id="factory-records-title">Product document checklist</h2>
       <table class="procurement-table procurement-model-records">
-        <caption class="visually-hidden">Available model information and records to request</caption>
-        <thead><tr><th scope="col">Record</th><th scope="col">Available here</th><th scope="col">Request for the proposed model</th></tr></thead>
-        <tbody>{records.map(record => <tr><th scope="row">{record.name}</th><td><span class="procurement-mobile-label" aria-hidden="true">Available here</span>{record.status}{record.href && <a class="procurement-file-link" href={record.href}>View original samples</a>}</td><td><span class="procurement-mobile-label" aria-hidden="true">Request for the proposed model</span>{record.request}</td></tr>)}</tbody>
+        <caption class="visually-hidden">Documents and details for the selected model</caption>
+        <thead><tr><th scope="col">Record</th><th scope="col">Details to request</th></tr></thead>
+        <tbody>{records.map(record => <tr><th scope="row">{record.name}</th><td><span class="procurement-mobile-label" aria-hidden="true">Details to request</span>{record.request}</td></tr>)}</tbody>
       </table>
+      <div class="procurement-readable" id="inspection-records"><h3>File the inspection record</h3><p>Keep the report with the quotation and approved drawing under the same model and order reference.</p><a class="card-link" href="/contact/?request=documents#inquiry-form">Request the inspection record for your model</a></div>
     </div></section>
-    <InquiryCallout href={documentRequest} heading="Request model documents." description="Include the configuration, destination and required records." buttonLabel="Request documents"><a class="card-link" href="/buying-guide/#rfq-template">Quotation checklist</a></InquiryCallout>
+    <InquiryCallout href={documentRequest} heading="Request model documents" description="Include the configuration, destination and required records." buttonLabel="Request documents"><a class="card-link" href="/buying-guide/#rfq-template">Quotation checklist</a></InquiryCallout>
   </article>
 </BaseLayout>

@@ -1,0 +1,74 @@
+{
+  "background": "rgb(255, 255, 255)",
+  "headings": [
+    {
+      "box": {
+        "bottom": 490.78125,
+        "height": 1,
+        "left": -1,
+        "right": 0,
+        "top": 489.78125,
+        "width": 1,
+        "x": -1,
+        "y": 489.78125
+      },
+      "font": "urbane, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "Docking Stations",
+      "weight": "500"
+    },
+    {
+      "box": {
+        "bottom": 1191.7188320159912,
+        "height": 19.80208396911621,
+        "left": 32,
+        "right": 358,
+        "top": 1171.916748046875,
+        "width": 326,
+        "x": 32,
+        "y": 1171.916748046875
+      },
+      "font": "urbane, sans-serif",
+      "line": "19.8px",
+      "size": "18px",
+      "text": "iPhone 18 Pro Accessories",
+      "weight": "500"
+    }
+  ],
+  "images": [
+    {
+      "alt": "Satechi Thunderbolt 5 CubeDock™ with SSD Enclosure sitting between two monitors on a wooden desk, showing its front USB-C port, card slots and power button.",
+      "box": {
+        "bottom": 437.9791679382324,
+        "height": 388.375,
+        "left": 0,
+        "right": 390,
+        "top": 49.60416793823242,
+        "width": 390,
+        "x": 0,
+        "y": 49.60416793823242
+      },
+      "radius": "0px"
+    },
+    {
+      "alt": "iPhone 18 Pro Accessories",
+      "box": {
+        "bottom": 1239.3854675292969,
+        "height": 286.3958435058594,
+        "left": 16,
+        "right": 374,
+        "top": 952.9896240234376,
+        "width": 358,
+        "x": 16,
+        "y": 952.9896240234376
+      },
+      "radius": "0px"
+    }
+  ],
+  "url": "https://satechi.com/collections/docking-stations",
+  "viewport": [
+    390,
+    844
+  ]
+}

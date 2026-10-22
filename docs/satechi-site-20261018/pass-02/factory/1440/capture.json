@@ -1,0 +1,88 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/factory/",
+  "clientWidth": 1425,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 262.8020935058594,
+        "height": 48,
+        "left": 60,
+        "right": 811.1979370117188,
+        "top": 214.80209350585935,
+        "width": 751.1979370117188,
+        "x": 60,
+        "y": 214.80209350585935
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "48px",
+      "size": "40px",
+      "text": "Manufacturing and quality"
+    }
+  ],
+  "headings": [
+    "Process footage",
+    "Material and process",
+    "Electrical and product testing",
+    "Packing and warehouse handling",
+    "Product document checklist",
+    "Request model documents."
+  ],
+  "height": 4962,
+  "images": [
+    {
+      "alt": "Original still from the supplied film-handling footage.",
+      "box": {
+        "bottom": 1033.5416870117188,
+        "height": 606.8125,
+        "left": 60,
+        "right": 1364.666748046875,
+        "top": 426.7291870117187,
+        "width": 1304.666748046875,
+        "x": 60,
+        "y": 426.7291870117187
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/film-rolls.jpg"
+    },
+    {
+      "alt": "Illustrative arrangement of the four original capacitor formats.",
+      "box": {
+        "bottom": 4246.666687011719,
+        "height": 494.9791870117187,
+        "left": 100,
+        "right": 594.9791870117188,
+        "top": 3751.6875,
+        "width": 494.9791870117187,
+        "x": 100,
+        "y": 3751.6875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/inquiry.webp"
+    }
+  ],
+  "robots": [
+    "noindex,follow",
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 1425,
+  "title": "Manufacturing & Quality | Product Documents | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/factory/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 900,
+    "width": 1440
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

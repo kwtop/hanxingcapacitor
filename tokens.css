@@ -1,0 +1,40 @@
+/* Shared presentation tokens. */
+:root {
+ --ink:#252a30; --muted:#5d656e; --paper:#ffffff; --cream:#f6f7f8; --line:#dce0e3;
+ --accent:#b85d2c; --accent-hover:#9d4c23; --white:#fff; --green:var(--ink); --green-deep:#22262b;
+ --space-xs:8px; --space-sm:16px; --space-md:24px; --space-lg:40px; --space-xl:64px; --space-section:80px;
+ --radius:3px; --content-width:1280px; --text-heading:var(--type-h2-size); --text-title:var(--type-h1-size);
+ --text-body:var(--type-body-size); --text-small:var(--type-small-size); --duration:160ms;
+ /* Role tokens: size is responsive only where hierarchy calls for it. */
+ --font-display:"Inter Variable", Arial, sans-serif;
+ --font-heading:var(--font-display); --font-body:var(--font-display); --font-ui:var(--font-display);
+ --type-display-family:var(--font-body); --type-display-size:clamp(2.5rem, 4vw, 3.5rem); --type-display-weight:550; --type-display-leading:1.14; --type-display-tracking:-.015em; --type-display-measure:18ch;
+ --type-display-font:var(--type-display-weight) var(--type-display-size)/var(--type-display-leading) var(--type-display-family);
+ --type-h1-family:var(--font-body); --type-h1-size:clamp(2rem, 3.5vw, 3rem); --type-h1-weight:550; --type-h1-leading:1.2; --type-h1-tracking:-.01em; --type-h1-measure:30ch;
+ --type-h1-font:var(--type-h1-weight) var(--type-h1-size)/var(--type-h1-leading) var(--type-h1-family);
+ --type-h2-family:var(--font-body); --type-h2-size:clamp(1.625rem, 2.5vw, 2.125rem); --type-h2-weight:550; --type-h2-leading:1.28; --type-h2-tracking:-.008em; --type-h2-measure:34ch;
+ --type-h2-font:var(--type-h2-weight) var(--type-h2-size)/var(--type-h2-leading) var(--type-h2-family);
+ --type-h3-family:var(--font-body); --type-h3-size:1.5rem; --type-h3-weight:550; --type-h3-leading:1.35; --type-h3-tracking:0; --type-h3-measure:40ch;
+ --type-h3-font:var(--type-h3-weight) var(--type-h3-size)/var(--type-h3-leading) var(--type-h3-family);
+ --type-h4-family:var(--font-body); --type-h4-size:1.125rem; --type-h4-weight:600; --type-h4-leading:1.4; --type-h4-tracking:0; --type-h4-measure:48ch;
+ --type-h4-font:var(--type-h4-weight) var(--type-h4-size)/var(--type-h4-leading) var(--type-h4-family);
+ --type-body-large-family:var(--font-body); --type-body-large-size:1.125rem; --type-body-large-weight:400; --type-body-large-leading:1.65; --type-body-large-tracking:0; --type-body-large-measure:60ch;
+ --type-body-large-font:var(--type-body-large-weight) var(--type-body-large-size)/var(--type-body-large-leading) var(--type-body-large-family);
+ --type-body-family:var(--font-body); --type-body-size:1rem; --type-body-weight:400; --type-body-leading:1.7; --type-body-tracking:0; --type-body-measure:68ch;
+ --type-body-font:var(--type-body-weight) var(--type-body-size)/var(--type-body-leading) var(--type-body-family);
+ --type-small-family:var(--font-body); --type-small-size:.875rem; --type-small-weight:400; --type-small-leading:1.6; --type-small-tracking:0; --type-small-measure:72ch;
+ --type-small-font:var(--type-small-weight) var(--type-small-size)/var(--type-small-leading) var(--type-small-family);
+ --type-caption-family:var(--font-body); --type-caption-size:.875rem; --type-caption-weight:400; --type-caption-leading:1.5; --type-caption-tracking:0; --type-caption-measure:64ch;
+ --type-caption-font:var(--type-caption-weight) var(--type-caption-size)/var(--type-caption-leading) var(--type-caption-family);
+ --type-navigation-family:var(--font-body); --type-navigation-size:.9375rem; --type-navigation-weight:500; --type-navigation-leading:1.4; --type-navigation-tracking:0; --type-navigation-measure:none;
+ --type-navigation-font:var(--type-navigation-weight) var(--type-navigation-size)/var(--type-navigation-leading) var(--type-navigation-family);
+ --type-button-family:var(--font-body); --type-button-size:.9375rem; --type-button-weight:600; --type-button-leading:1.4; --type-button-tracking:.005em; --type-button-measure:none;
+ --type-button-font:var(--type-button-weight) var(--type-button-size)/var(--type-button-leading) var(--type-button-family);
+ --type-label-family:var(--font-body); --type-label-size:.875rem; --type-label-weight:500; --type-label-leading:1.45; --type-label-tracking:.01em; --type-label-measure:40ch;
+ --type-label-font:var(--type-label-weight) var(--type-label-size)/var(--type-label-leading) var(--type-label-family);
+ --type-data-family:var(--font-body); --type-data-size:1rem; --type-data-weight:500; --type-data-leading:1.5; --type-data-tracking:0; --type-data-measure:none;
+ --type-data-font:var(--type-data-weight) var(--type-data-size)/var(--type-data-leading) var(--type-data-family);
+ --type-specification-family:var(--font-body); --type-specification-size:1rem; --type-specification-weight:400; --type-specification-leading:1.6; --type-specification-tracking:0; --type-specification-measure:none;
+ --type-specification-font:var(--type-specification-weight) var(--type-specification-size)/var(--type-specification-leading) var(--type-specification-family);
+
+}

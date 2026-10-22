@@ -1,0 +1,196 @@
+{
+  "bodyClass": "porcelain-site reference-site",
+  "canonical": "https://www.hanxingcapacitor.com/applications/hvac-and-refrigeration/",
+  "clientWidth": 1425,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 394.7291717529297,
+        "height": 138.2291717529297,
+        "left": 72.33333587646484,
+        "right": 649.9270858764648,
+        "top": 256.5,
+        "width": 577.59375,
+        "x": 72.33333587646484,
+        "y": 256.5
+      },
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "69.12px",
+      "size": "64px",
+      "text": "Air conditioners / HVAC"
+    }
+  ],
+  "headings": [
+    "Motor circuits & original capacitors",
+    "Identify each motor",
+    "Single or dual run",
+    "Separate start circuit",
+    "CBB65 run and CD60 start capacitors",
+    "CBB65",
+    "CD60",
+    "Other run-capacitor formats",
+    "Terminal mapping and installed fit",
+    "Terminal groups",
+    "Can and mounting",
+    "Starting duty",
+    "Send your capacitor requirements."
+  ],
+  "height": 4161,
+  "images": [
+    {
+      "alt": "Illustration of an outdoor air-conditioning condenser.",
+      "box": {
+        "bottom": 627.4583587646484,
+        "height": 478.7916870117187,
+        "left": 713.9271240234375,
+        "right": 1352.322998046875,
+        "top": 148.6666717529297,
+        "width": 638.3958740234375,
+        "x": 713.9271240234375,
+        "y": 148.6666717529297
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/generated/site/home-application-hvac-20261013.webp"
+    },
+    {
+      "alt": "CBB65 single-run sample marked 20 µF and 450 VAC.",
+      "box": {
+        "bottom": 2004.760498046875,
+        "height": 150,
+        "left": 423.625,
+        "right": 635.96875,
+        "top": 1854.760498046875,
+        "width": 212.34375,
+        "x": 423.625,
+        "y": 1854.760498046875
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb65-2.jpg"
+    },
+    {
+      "alt": "CBB65 dual-run sample marked 50+5 µF and 450 VAC.",
+      "box": {
+        "bottom": 2004.760498046875,
+        "height": 150,
+        "left": 647.96875,
+        "right": 860.3125,
+        "top": 1854.760498046875,
+        "width": 212.34375,
+        "x": 647.96875,
+        "y": 1854.760498046875
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb65-dual-run-7.jpg"
+    },
+    {
+      "alt": "Photograph of a CD60 cylindrical motor-start capacitor sample.",
+      "box": {
+        "bottom": 2004.760498046875,
+        "height": 150,
+        "left": 896.9791870117188,
+        "right": 1333.6666870117188,
+        "top": 1854.760498046875,
+        "width": 436.6875,
+        "x": 896.9791870117188,
+        "y": 1854.760498046875
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cd60-25.jpg"
+    },
+    {
+      "alt": "CBB65 single-run sample marked 20 µF and 450 VAC.",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb65-2.jpg"
+    },
+    {
+      "alt": "CBB65 dual-run sample marked 50+5 µF and 450 VAC.",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "fit": "contain",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/real/cbb65-dual-run-7.jpg"
+    },
+    {
+      "alt": "Photograph of a CD60 cylindrical motor-start capacitor sample.",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cd60-25.jpg"
+    },
+    {
+      "alt": "CBB65 single-run sample marked 20 µF and 450 VAC with terminal groups visible.",
+      "box": {
+        "bottom": 3036.02099609375,
+        "height": 327.59375,
+        "left": 72.33333587646484,
+        "right": 509.1250228881836,
+        "top": 2708.42724609375,
+        "width": 436.7916870117187,
+        "x": 72.33333587646484,
+        "y": 2708.42724609375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb65-2.jpg"
+    }
+  ],
+  "robots": [
+    "noindex,follow"
+  ],
+  "scrollWidth": 1425,
+  "title": "Air conditioners / HVAC | CBB65 run capacitors | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4335/applications/hvac-and-refrigeration/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 900,
+    "width": 1440
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

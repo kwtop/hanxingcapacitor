@@ -1,17 +1,40 @@
-import { useState } from 'react';
+import { useRef } from 'react';
+import { useCatalogQuery, type CatalogQuery } from '../lib/catalogQuery';
+import ImageWithFeedback from './ImageWithFeedback';
 
 type Item = { code:string; slug:string; shortName:string; tagline:string; image:string; imageAlt:string; function:'Run'|'Start'; capacitance:string; voltage:string };
-export default function ProductFilter({ items }: { items: Item[] }) {
-  const [filter, setFilter] = useState<'All'|'Run'|'Start'>('All');
-  const visibleItems = items.filter(item => filter === 'All' || item.function === filter);
+const compactPurposes: Record<string, string> = {
+  CBB60: 'Water pumps & single-phase motors',
+  CBB61: 'Fans, blowers & appliance motors',
+  CBB65: 'HVAC & refrigeration',
+  CD60: 'Switched single-phase circuits',
+};
+const duties = ['All', 'Run', 'Start'] as const;
+
+export default function ProductFilter({ items, compact = false, initial = { selection: 'All', query: '' } }: { items: Item[]; compact?: boolean; initial?: CatalogQuery }) {
+  const [filters, update] = useCatalogQuery(initial, 'duty', duties);
+  const search = useRef<HTMLInputElement>(null);
+  const query = filters.query.trim().toLowerCase();
+  const visibleItems = items.filter(item => (filters.selection === 'All' || item.function === filters.selection) &&
+    `${item.code} ${item.shortName} ${item.tagline} ${item.capacitance} ${item.voltage}`.toLowerCase().includes(query));
   return <>
-    <div className="filter-row" role="group" aria-label="Filter products by duty">{(['All','Run','Start'] as const).map(label => <button key={label} className={'filter-chip ' + (filter === label ? 'active' : '')} type="button" aria-pressed={filter === label} onClick={() => setFilter(label)}>{label === 'All' ? 'All series' : label + ' duty'}</button>)}</div>
-    <p className="visually-hidden" role="status">{visibleItems.length} series shown</p>
-    <div className="grid four series-catalog">{visibleItems.map(p => <article className="card product-card" key={p.code}>
-      <a className={'image-frame catalog-product-image sample-catalog-image sample-' + p.code} href={'/products/' + p.slug + '/'} aria-label={'View ' + p.code + ' details'}><img src={p.image} alt={p.imageAlt} width="2000" height="2000" /></a>
-      <div className="card-body"><p className="catalog-duty">{p.function} duty</p><h2 className="card-title"><a href={'/products/' + p.slug + '/'}>{p.code}<span className="series-name">{p.shortName} capacitor</span></a></h2><p className="catalog-purpose">{p.tagline}</p>
-        <dl className="catalog-ratings">{p.code === 'CBB65' ? <><div><dt>Single run</dt><dd><span>2–100 µF</span><span>110–450 VAC</span></dd></div><div><dt>Dual run</dt><dd><span>1+15 to 15+80 µF</span><span>370–450 VAC</span></dd></div></> : <><div><dt>Capacitance</dt><dd>{p.capacitance}</dd></div><div><dt>AC voltage</dt><dd>{p.voltage}</dd></div></>}</dl>
-        <a className="card-link" href={'/products/' + p.slug + '/'}>View {p.code} details</a>
+    <div className="filter-row" role="group" aria-label="Filter products by duty">{duties.map(label => <button key={label} className={'filter-chip ' + (filters.selection === label ? 'active' : '')} type="button" aria-pressed={filters.selection === label} onClick={() => update({ ...filters, selection: label }, true)}>{label === 'All' ? 'All series' : label + ' duty'}</button>)}</div>
+    <div className="catalog-query-toolbar"><label className="catalog-query-field"><span>Search series or rating</span><input ref={search} type="search" value={filters.query} maxLength={120} placeholder="e.g. CBB65 or 450 VAC" onChange={event => update({ ...filters, query: event.target.value })} /></label><p className="catalog-query-count" role="status" aria-live="polite">{visibleItems.length} series shown</p></div>
+    {visibleItems.length === 0 && <div className="catalog-empty"><h2>No matching series</h2><p>Try a series code such as CBB60, or clear the filters to see all four series.</p><button className="button secondary" type="button" onClick={() => { update({ selection: 'All', query: '' }, true); search.current?.focus(); }}>Clear filters</button></div>}
+    <div className={'grid four series-catalog' + (compact ? ' series-catalog-compact' : '')}>{visibleItems.map(p => <article className="card product-card" key={p.code}>
+      <a className={'image-frame catalog-product-image sample-catalog-image sample-' + p.code} href={'/products/' + p.slug + '/'} aria-label={'View ' + p.code + ' details'}><ImageWithFeedback src={p.image} alt={p.imageAlt} width={2000} height={2000} retryable={false} errorActionLabel="Open series details to view photographs." /></a>
+      <div className="card-body">
+        {compact ? <div className="catalog-series-title"><h2 className="card-title"><a href={'/products/' + p.slug + '/'}>{p.code}</a></h2><span className="catalog-series-duty">{p.shortName}</span></div>
+          : <><p className="catalog-duty">{p.function} duty</p><h2 className="card-title"><a href={'/products/' + p.slug + '/'}>{p.code}<span className="series-name">{p.shortName} capacitor</span></a></h2></>}
+        <p className="catalog-purpose">{compact ? compactPurposes[p.code] ?? p.tagline : p.tagline}</p>
+        <dl className="catalog-ratings" aria-label={`${p.code} published series ranges`}>{p.code === 'CBB65' ? <>
+          <div className={compact ? 'catalog-rating-group' : undefined}><dt>{compact ? 'Single' : 'Single run'}</dt><dd><span>2–100 µF</span><span className={compact ? 'catalog-voltage' : undefined}>110–450 VAC</span></dd></div>
+          <div className={compact ? 'catalog-rating-group' : undefined}><dt>{compact ? 'Dual' : 'Dual run'}</dt><dd><span>{compact ? <>1+15 to <span className="catalog-no-break">15+80 µF</span></> : '1+15 to 15+80 µF'}</span><span className={compact ? 'catalog-voltage' : undefined}>370–450 VAC</span></dd></div>
+        </> : <>
+          <div><dt className={compact ? 'visually-hidden' : undefined}>Capacitance</dt><dd>{p.capacitance}</dd></div>
+          <div><dt className={compact ? 'visually-hidden' : undefined}>AC voltage</dt><dd className={compact ? 'catalog-voltage' : undefined}>{p.voltage}</dd></div>
+        </>}</dl>
+        <a className={compact ? 'catalog-series-link' : 'card-link'} href={'/products/' + p.slug + '/'} aria-label={compact ? `View ${p.code} details` : undefined}>{compact ? 'View details' : `View ${p.code} details`}</a>
       </div>
     </article>)}</div>
   </>;

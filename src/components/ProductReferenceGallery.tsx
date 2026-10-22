@@ -1,8 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
 import type { ReferenceGalleryPhoto } from '../data/productReference';
+import ImageWithFeedback from './ImageWithFeedback';
+import PhotoViewer from './PhotoViewer';
 
-export default function ProductReferenceGallery({ photos, code }: { photos: ReferenceGalleryPhoto[]; code: string }) {
+export default function ProductReferenceGallery({ photos: originals, code, display }: { photos: ReferenceGalleryPhoto[]; code: string; display?: {src: string; alt: string} }) {
+  const photos: ReferenceGalleryPhoto[] = display ? [{...display, label: `${code} product view`}, ...originals] : originals;
   const [active, setActive] = useState(0);
+  const [viewing, setViewing] = useState(false);
   const rail = useRef<HTMLDivElement>(null);
   const touchStart = useRef<{ x: number; y: number } | null>(null);
   const photo = photos[active];
@@ -19,6 +23,11 @@ export default function ProductReferenceGallery({ photos, code }: { photos: Refe
   }, [active]);
 
   if (!photo) return null;
+  const viewerPhotos = photos.map((item, index) => ({
+    ...item, src: item.originalSrc || item.src, series: code,
+    note: display && index === 0 ? 'Illustrative studio view. Check the original sample photographs and model documents for specification approval.' : 'Original supplied sample photograph. The photographed part is a reference, not a confirmed order configuration.',
+    inquiryHref: `/contact/?series=${code}${display && index === 0 ? '' : '&photo=' + encodeURIComponent(item.id || `${code}-photo-${index + 1 - (display ? 1 : 0)}`)}`,
+  }));
   const swipe = {
     onTouchStart: (e: React.TouchEvent) => { touchStart.current = { x: e.touches[0].clientX, y: e.touches[0].clientY }; },
     onTouchEnd: (e: React.TouchEvent) => {
@@ -29,13 +38,20 @@ export default function ProductReferenceGallery({ photos, code }: { photos: Refe
     },
   };
 
-  return <div className="pdr-gallery pg-gallery" id="sample-photographs">
+  return <div className={'pdr-gallery pg-gallery' + (display ? ' ss-product-gallery' : '')} id="sample-photographs">
     <div className="pg-stage" {...swipe}>
-      <div className="pdr-main-photo pg-main"><img src={photo.src} alt={photo.alt} width="2000" height="2000" fetchPriority="high" /></div>
-      <button className="pg-step pg-previous" type="button" onClick={() => step(-1)} aria-label="Previous sample photograph"><span aria-hidden="true">←</span></button>
-      <button className="pg-step pg-next" type="button" onClick={() => step(1)} aria-label="Next sample photograph"><span aria-hidden="true">→</span></button>
+      <button type="button" className="pdr-main-photo pg-main" onClick={() => setViewing(true)} aria-label={`Enlarge ${photo.label}`}><ImageWithFeedback key={photo.src} src={photo.src} alt={photo.alt} width={2000} height={2000} retryable={false} /></button>
+      <button className="pg-step pg-previous" type="button" onClick={() => step(-1)} aria-label={display ? 'Previous product view' : 'Previous sample photograph'}><span aria-hidden="true">←</span></button>
+      <button className="pg-step pg-next" type="button" onClick={() => step(1)} aria-label={display ? 'Next product view' : 'Next sample photograph'}><span aria-hidden="true">→</span></button>
     </div>
-    <div ref={rail} className="pg-filmstrip" role="group" aria-label={`${code} sample photographs`}>{photos.map((p, index) => <button key={p.src} type="button" aria-label={`Select photograph ${index + 1}: ${p.label}`} aria-pressed={active === index} onClick={() => setActive(index)}><img src={p.thumb || p.src} alt="" width="120" height="120" loading="lazy" /></button>)}</div>
-    <div className="pg-caption-row"><div className="pg-caption" aria-live="polite"><strong>{photo.label}</strong></div></div>
+    <div ref={rail} className="pg-filmstrip" role="group" aria-label={`${code} sample photographs`} onKeyDown={event => {
+      if (event.key === 'ArrowRight' || event.key === 'ArrowLeft' || event.key === 'Home' || event.key === 'End') {
+        event.preventDefault();
+        const next = event.key === 'Home' ? 0 : event.key === 'End' ? photos.length - 1 : (active + (event.key === 'ArrowRight' ? 1 : -1) + photos.length) % photos.length;
+        setActive(next); (rail.current?.children[next] as HTMLElement | undefined)?.focus();
+      }
+    }}>{photos.map((p, index) => <button key={p.src} type="button" aria-label={`Select photograph ${index + 1}: ${p.label}`} aria-pressed={active === index} onClick={() => setActive(index)}><img src={p.thumb || p.src} alt="" width="120" height="120" loading="lazy" /></button>)}</div>
+    <div className="pg-caption-row"><div className="pg-caption" aria-live="polite"><strong>{photo.label}</strong><span>{active + 1} / {photos.length}</span></div></div>
+    <PhotoViewer photos={viewerPhotos} active={viewing ? active : null} onSelect={setActive} onClose={() => setViewing(false)} />
   </div>;
 }

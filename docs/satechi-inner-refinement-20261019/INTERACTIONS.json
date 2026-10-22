@@ -1,0 +1,45 @@
+{
+  "oldEntryResult": {
+    "theme": "satechi-preview satechi-site is-home",
+    "url": "http://127.0.0.1:4340/"
+  },
+  "navResult": {
+    "theme": "satechi-preview satechi-site has-collection-cover",
+    "url": "http://127.0.0.1:4340/products/"
+  },
+  "startFilter": [
+    "CD60Motor start capacitor"
+  ],
+  "allFilter": 4,
+  "gallery": {
+    "studioSrc": "/images/previews/satechi-site-20261018/product-cbb60.webp",
+    "originalSrc": "/images/real/cbb60-hanxing-wired.jpg",
+    "returnedSrc": "/images/previews/satechi-site-20261018/product-cbb60.webp",
+    "hydrated": true
+  },
+  "contactContext": "Series: CBB65",
+  "mobileMenu": {
+    "menuOpen": "true",
+    "overflow": false,
+    "resourceLinks": [
+      {
+        "href": "http://127.0.0.1:4340/resources/articles/",
+        "text": "Technical guides"
+      },
+      {
+        "href": "http://127.0.0.1:4340/buying-guide/",
+        "text": "Buying & shipping"
+      },
+      {
+        "href": "http://127.0.0.1:4340/faq/",
+        "text": "Buyer FAQ"
+      }
+    ]
+  },
+  "inquiry": {
+    "form": true,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/contact/?series=CBB65&request=quote#inquiry-form"
+  },
+  "quotationCopy": "Checklist copied."
+}

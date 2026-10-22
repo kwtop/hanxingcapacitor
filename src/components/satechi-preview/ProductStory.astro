@@ -1,0 +1,25 @@
+---
+import type { Product } from '../../data/site';
+import { siteVisual } from '../../data/satechiSite';
+import {coherenceMedia} from '../../data/coherenceMedia';
+import SiteImage from './SiteImage.astro';
+import BrochurePhoto from './BrochurePhoto.astro';
+interface Props { product: Product; }
+const { product } = Astro.props;
+const visual = product.code === 'CBB60' ? coherenceMedia.measurement
+  : product.code === 'CBB65' ? coherenceMedia.terminals
+  : {src:siteVisual('product-'+product.code.toLowerCase()),alt:`Illustrative ${product.code} product study based on its supplied sample.`};
+const heading = { CBB60:'A cylindrical format for motor run duty', CBB61:'A compact format for fan motors', CBB65:'Single and dual-run configurations', CD60:'For a switched starting circuit' }[product.code];
+---
+{product.code === 'CBB61' ? <section class="zi-family-section" id="product-overview" aria-labelledby="product-overview-title">
+  <header class="zi-family-heading"><h2 id="product-overview-title">{heading}</h2><p>{product.intro}</p></header>
+  <div class="zi-family-desktop"><BrochurePhoto name="cbb61-family" zoom label="CBB61 connection formats" sizes="(min-width: 1480px) 1240px, 90vw" /></div>
+  <div class="zi-family-mobile">
+    <BrochurePhoto name="cbb61-terminal" zoom label="CBB61 blade-terminal format" sizes="calc(100vw - 32px)"><h3>Blade terminals</h3><p>Check blade spacing and the mounting position.</p></BrochurePhoto>
+    <BrochurePhoto name="cbb61-leads" zoom label="CBB61 wire-lead format" sizes="calc(100vw - 32px)"><h3>Wire leads</h3><p>Specify lead length and the connector.</p></BrochurePhoto>
+  </div>
+  <div class="zi-family-action"><a class="card-link" href={product.decisionGuide.href}>{product.decisionGuide.label}</a></div>
+</section> : <section class="ss-product-story" id="product-overview" aria-labelledby="product-overview-title">
+  <figure class="co-product-study"><SiteImage src={visual.src} alt={visual.alt} /></figure>
+  <div><h2 id="product-overview-title">{heading}</h2><p>{product.intro}</p><a class="card-link" href={product.decisionGuide.href}>{product.decisionGuide.label}</a></div>
+</section>}

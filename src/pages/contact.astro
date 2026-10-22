@@ -1,8 +1,11 @@
 ---
+import { isSatechiPreview } from '../lib/visualPreview';
+import EditorialVisual from '../components/satechi-preview/EditorialVisual.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/contact-focused.css';
 import { countries } from '../data/countries';
 import { sampleConfigurations } from '../data/sampleConfigurations';
+import { sampleEvidence, sampleEvidenceText } from '../data/sampleEvidence';
 import sampleLibrary from '../data/sampleLibrary.json';
 import { getProductGallery } from '../data/productReference';
 import { guides } from '../data/guides';
@@ -14,35 +17,43 @@ for (const series of ['CBB60', 'CBB61', 'CBB65', 'CD60']) {
     if (!photo.id) photoReferences[`${series}-photo-${index + 1}`] = { series, text: `${series} photograph ${index + 1} · ${photo.label}` };
   });
 }
-const configurationNames = Object.fromEntries(sampleConfigurations.map(sample => [sample.id, {series:sample.series, text:sample.name+': '+sample.rating+'; '+sample.connection}]));
+const configurationNames = Object.fromEntries([
+  ...sampleConfigurations.map(sample => [sample.id, {series:sample.series, text:sample.name+': '+sample.rating+'; '+sample.connection}]),
+  ...sampleEvidence.map(sample => [sample.id, {series:sample.series, text:sampleEvidenceText(sample)}]),
+]);
 const guideNames = Object.fromEntries(guides.map(guide => [guide.slug, guide.title]));
+const requestedState = import.meta.env.DEV ? Astro.url.searchParams.get('ui-state') : null;
+const previewState = ['validation', 'draft-ready', 'copy-error', 'prepare-error'].includes(requestedState || '') ? requestedState : undefined;
 ---
 <BaseLayout title="Contact Hanxing Capacitor | Motor Capacitor Inquiries" description="Contact HAN XING about CBB60, CBB61, CBB65, CD60 or OEM requirements. Prepare an inquiry by email or WhatsApp.">
   <section class="contact-focused" id="inquiry-form" aria-label="Contact HAN XING">
     <div class="container contact-focused-layout">
       <div class="contact-focused-intro">
         <h1>Contact<br />HAN XING</h1>
+        {isSatechiPreview && <EditorialVisual name="contact-desk" alt="Illustrative still life with original Hanxing capacitor samples and a blank notebook." />}
         <div class="contact-focused-details">
           <a data-contact-email href={`mailto:${PUBLIC_EMAIL}`}><svg class="contact-focused-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg><span>{PUBLIC_EMAIL}</span></a>
           <a data-contact-whatsapp href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" aria-label={`WhatsApp ${PUBLIC_PHONE}`}><svg class="contact-focused-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 11.8a8.6 8.6 0 0 1-12.8 7.5L3 20.6l1.3-4.7A8.6 8.6 0 1 1 20.6 11.8Z"/><path d="M8.1 7.5c-.5.6-.6 1.3-.3 2.1 1 2.7 3 4.7 5.7 5.7.8.3 1.5.2 2.1-.3l.9-1-2.3-1.2-.8.8c-1.6-.7-2.8-1.9-3.5-3.5l.8-.8-1.2-2.3Z"/></svg><span>{PUBLIC_PHONE}</span></a>
           <address><svg class="contact-focused-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span><strong>{PUBLIC_COMPANY_NAME}</strong>{PUBLIC_BUSINESS_ADDRESS !== PUBLIC_COMPANY_NAME && PUBLIC_BUSINESS_ADDRESS}</span></address>
         </div>
       </div>
-      <form id="contact-inquiry-form" class="contact-focused-form" data-configurations={JSON.stringify(configurationNames)} data-photo-references={JSON.stringify(photoReferences)} data-guides={JSON.stringify(guideNames)} data-email={PUBLIC_EMAIL} data-whatsapp={WHATSAPP_NUMBER}>
+      <form id="contact-inquiry-form" class="contact-focused-form" data-preview-state={previewState} data-configurations={JSON.stringify(configurationNames)} data-photo-references={JSON.stringify(photoReferences)} data-guides={JSON.stringify(guideNames)} data-email={PUBLIC_EMAIL} data-whatsapp={WHATSAPP_NUMBER}>
         <div id="contact-context" class="contact-context" hidden><h2>Your reference</h2><ul id="contact-context-value"></ul><a id="contact-reference-link" class="card-link" href="/products/">Return to the reference</a></div>
         <p class="contact-draft-note">Review your draft, then send via email or WhatsApp.</p>
-        <label class="field" for="inquiry-name"><span>Name *</span><input id="inquiry-name" name="name" type="text" autocomplete="name" maxlength="120" placeholder="Your name" required /></label>
-        <label class="field" for="inquiry-destination"><span>Destination country *</span><select id="inquiry-destination" name="destination" autocomplete="country-name" required><option value="" selected disabled>Select a country</option>{countries.map(country => <option value={country.name}>{country.name}</option>)}</select></label>
+        <div id="contact-errors" class="contact-error-summary" role="alert" hidden><p>Check the highlighted fields.</p><ul id="contact-error-list"></ul></div>
+        <label class="field" for="inquiry-name"><span id="inquiry-name-label">Name *</span><input id="inquiry-name" name="name" type="text" autocomplete="name" maxlength="120" placeholder="Your name" aria-labelledby="inquiry-name-label" aria-describedby="inquiry-name-error" required /><span id="inquiry-name-error" class="field-error" hidden></span></label>
+        <label class="field" for="inquiry-destination"><span id="inquiry-destination-label">Destination country *</span><select id="inquiry-destination" name="destination" autocomplete="country-name" aria-labelledby="inquiry-destination-label" aria-describedby="inquiry-destination-error" required><option value="" selected disabled>Select a country</option>{countries.map(country => <option value={country.name}>{country.name}</option>)}</select><span id="inquiry-destination-error" class="field-error" hidden></span></label>
         <fieldset class="contact-focused-channel" aria-label="Contact method">
           <label><input type="radio" name="channel" value="email" checked /><span>Email</span></label>
           <label><input type="radio" name="channel" value="whatsapp" /><span>Phone / WhatsApp</span></label>
         </fieldset>
-        <label class="field" id="email-field" for="inquiry-email"><span>Email address *</span><input id="inquiry-email" name="email" type="email" autocomplete="email" maxlength="200" placeholder="you@company.com" required /></label>
-        <label class="field" id="whatsapp-field" for="inquiry-whatsapp" hidden><span>Phone / WhatsApp *</span><input id="inquiry-whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" maxlength="32" placeholder="Include country code" disabled /></label>
+        <label class="field" id="email-field" for="inquiry-email"><span id="inquiry-email-label">Email address *</span><input id="inquiry-email" name="email" type="email" autocomplete="email" maxlength="200" placeholder="you@company.com" aria-labelledby="inquiry-email-label" aria-describedby="inquiry-email-error" required /><span id="inquiry-email-error" class="field-error" hidden></span></label>
+        <label class="field" id="whatsapp-field" for="inquiry-whatsapp" hidden><span id="inquiry-whatsapp-label">Phone / WhatsApp *</span><input id="inquiry-whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" maxlength="32" placeholder="Include country code" aria-labelledby="inquiry-whatsapp-label" aria-describedby="inquiry-whatsapp-error" disabled /><span id="inquiry-whatsapp-error" class="field-error" hidden></span></label>
         <label class="field" for="inquiry-message"><span>Message (optional)</span><textarea id="inquiry-message" name="message" rows="5" maxlength="3000" placeholder="Your message"></textarea></label>
-        <button id="prepare-draft" class="button" type="submit">Prepare inquiry</button>
+        <button id="prepare-draft" class="button" type="submit" disabled>Prepare inquiry</button>
+        <p id="prepare-status" role="alert" hidden></p>
         <p class="contact-privacy-note"><a href="/privacy-policy/">Privacy notice</a></p>
-        <div id="draft-result" class="draft-result" hidden><h2>Review your inquiry</h2><p id="contact-form-status" role="status" aria-live="polite" tabindex="-1"></p><details open><summary>Review the message</summary><textarea id="draft-text" aria-label="Prepared inquiry message" rows="10" readonly></textarea></details><div class="button-group"><a id="contact-draft-link" class="button" href="#">Open email draft</a><button id="copy-draft" type="button" class="button secondary">Copy message</button></div><p id="copy-status" class="small" role="status" aria-live="polite"></p></div>
+        <div id="draft-result" class="draft-result" hidden><h2>Review your inquiry</h2><p id="contact-form-status" role="status" aria-live="polite" tabindex="-1"></p><p id="draft-stale" class="draft-stale" hidden>Your details changed. Update the inquiry to use the latest details.</p><details open><summary>Review the message</summary><textarea id="draft-text" aria-label="Prepared inquiry message" rows="10" readonly></textarea></details><div class="button-group"><a id="contact-draft-link" class="button" href="#">Open email draft</a><button id="copy-draft" type="button" class="button secondary">Copy message</button></div><p id="copy-status" class="small" role="status" aria-live="polite"></p></div>
         <noscript><p>Use the email or WhatsApp links to contact us directly.</p></noscript>
       </form>
     </div>

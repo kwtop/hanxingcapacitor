@@ -1,0 +1,42 @@
+---
+import { brochureMedia, type BrochureMediaName } from '../../data/brochureMedia';
+import SiteImage from './SiteImage.astro';
+interface Props { name: BrochureMediaName; class?: string; eager?: boolean; sizes?: string; zoom?: boolean; label?: string; }
+const {name, class:className, eager=false, sizes, zoom=false, label} = Astro.props;
+const photo = brochureMedia[name];
+---
+<figure class:list={['zi-photo',className]} data-brochure-photo={name} data-photo-kind={photo.kind}>
+  {zoom ? <a class="zi-photo-enlarge" href={photo.src} aria-label={`Enlarge ${label || 'product photograph'}`} data-photo-zoom>
+    <SiteImage src={photo.src} alt={photo.alt} eager={eager} sizes={sizes} />
+  </a> : <SiteImage src={photo.src} alt={photo.alt} eager={eager} sizes={sizes} />}
+  {Astro.slots.has('default') && <figcaption><slot /></figcaption>}
+  {zoom && <dialog class="zi-photo-dialog" aria-label={label || 'Product photograph'}>
+    <button type="button" class="zi-photo-close" autofocus>Close <span aria-hidden="true">×</span></button>
+    <img data-zoom-src={photo.src} alt={photo.alt} width={photo.width} height={photo.height} />
+  </dialog>}
+</figure>
+<script>
+  document.querySelectorAll<HTMLAnchorElement>('[data-photo-zoom]').forEach(link => {
+    const dialog = link.closest('figure')?.querySelector<HTMLDialogElement>('dialog');
+    if (!dialog) return;
+    let previousOverflow = '';
+    link.addEventListener('click', event => {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      const photo = dialog.querySelector<HTMLImageElement>('[data-zoom-src]');
+      if (photo && !photo.src) photo.src = photo.dataset.zoomSrc!;
+      previousOverflow = document.documentElement.style.overflow;
+      dialog.showModal();
+      document.documentElement.style.overflow = 'hidden';
+    });
+    dialog.querySelector('button')?.addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', event => {
+      const rect = dialog.getBoundingClientRect();
+      if (event.target === dialog && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) dialog.close();
+    });
+    dialog.addEventListener('close', () => {
+      document.documentElement.style.overflow = previousOverflow;
+      link.focus({preventScroll:true});
+    });
+  });
+</script>

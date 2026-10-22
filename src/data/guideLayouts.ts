@@ -56,19 +56,19 @@ export const guideLayouts: Record<string, GuideLayout> = {
     sections: [
       {
         id: 'read-the-motor-circuit-first', heading: 'Run duty and start duty',
-        paragraphs: ['Some single-phase motors use both start and run capacitors; others use one. Check the original label and wiring diagram for the exact motor model to identify the required duty. The equipment name alone does not tell you the circuit arrangement.'],
+        paragraphs: ['The motor wiring diagram identifies whether it uses a run capacitor, a start capacitor or both.'],
         tables: [{ caption: 'Start and run capacitor comparison', headers: ['Check', 'Run capacitor', 'Start capacitor'], rows: [
           ['Circuit role', 'Stays connected while the motor runs.', 'Operates during startup as specified by the motor design.'],
           ['Series examples', 'CBB60 / CBB61 / CBB65', productLink('CD60', 'cd60-start-capacitor')],
           ['Material', 'Film', 'Aluminium electrolytic'],
           ['Duty information to check', 'Run duty and ratings specified for the motor.', 'Switching arrangement, permitted starting time and repeat-start limits in the model documentation.'],
         ] }],
-        note: 'Match the capacitor to the motor specification. For a start capacitor, request the model datasheet to confirm permitted starting time and repeat-start limits.',
+        note: '',
         links: [{ label: 'View motor-run series', href: '/products/' }, { label: 'View CD60 start capacitors', href: '/products/cd60-start-capacitor/' }],
       },
       {
         id: 'sample-examples', heading: 'Run and start capacitor samples', photos: examplePhotos('start-vs-run-capacitors'),
-        note: 'The photos show the original samples in two case formats. Similar dimensions or µF values do not make start and run capacitors interchangeable.',
+        note: '',
       },
       {
         id: 'information-needed-for-a-replacement', heading: 'Details for a replacement inquiry',
@@ -76,12 +76,12 @@ export const guideLayouts: Record<string, GuideLayout> = {
           { label: 'Motor and circuit', text: 'Equipment model, motor model and original wiring diagram.' },
           { label: 'Electrical markings', text: 'Copy the original µF, VAC and frequency, along with the tolerance and any duty marking.' },
           { label: 'Installation space', text: 'Measure the body and mounting. Allow space for leads, terminals and connectors.' },
-          { label: 'Starting duty', text: 'For a start capacitor, include the switching arrangement and duty rating. Leave missing information marked as unknown and request the model datasheet.' },
+          { label: 'Starting duty', text: 'Provide the switching arrangement, rated starting time and interval between starts from the model datasheet.' },
         ],
         links: [{ label: 'Measure dimensions and connections', href: '/resources/dimensions-terminals-mounting/' }],
       },
     ],
-    details: ['Motor model and original wiring diagram', 'Original µF, VAC and frequency', 'Run or start duty, with missing markings identified as unknown', 'Case dimensions, mounting and connections'],
+    details: ['Motor model and original wiring diagram', 'Original µF, VAC and frequency', 'Run or start duty', 'Case dimensions, mounting and connections'],
   },
   'cbb60-vs-cbb61-vs-cbb65': {
     sections: [
@@ -92,9 +92,9 @@ export const guideLayouts: Record<string, GuideLayout> = {
           [productLink('CBB61', 'cbb61-fan-capacitor'), 'Compact rectangular', 'Wire or blade layout, with space for routing and the connector.', 'Fan and appliance motors that require this run-capacitor format.'],
           [productLink('CBB65', 'cbb65-air-conditioner-capacitor'), 'Metal can', 'Single-run or dual-run configuration and terminal-group layout.', 'HVAC and refrigeration motors that require run capacitors.'],
         ] }],
-        note: 'A series range covers several models. Request the model number and drawing for the required rating and case dimensions, including the connections.',
+        note: 'Include the required rating, dimensions and connection layout when requesting a model quotation.',
       },
-      { id: 'sample-examples', heading: 'Compare the sample cases', photos: examplePhotos('cbb60-vs-cbb61-vs-cbb65'), note: 'Use the drawing for the proposed model to compare its case and connections with the original part.' },
+      { id: 'sample-examples', heading: 'Compare the sample cases', photos: examplePhotos('cbb60-vs-cbb61-vs-cbb65'), note: '' },
       {
         id: 'compare-the-installed-part', heading: 'Compare the installed part',
         records: [
@@ -107,7 +107,7 @@ export const guideLayouts: Record<string, GuideLayout> = {
         links: [{ label: 'Measure the case and connections', href: '/resources/dimensions-terminals-mounting/' }],
       },
     ],
-    details: ['Original label and motor drawing', 'Case dimensions, mounting and connection layout', 'Quantity and destination so availability can be checked for the exact model'],
+    details: ['Original label and motor drawing', 'Case dimensions, mounting and connection layout', 'Order quantity and destination'],
   },
   'single-vs-dual-run-capacitors': {
     sections: [
@@ -118,7 +118,7 @@ export const guideLayouts: Record<string, GuideLayout> = {
           ['Rating to record', 'One µF value', 'Both µF values, with the plus sign as printed. Do not add them together.'],
           ['Connections', 'Check the specified terminal layout.', 'Match each terminal group to the original wiring diagram and model drawing.'],
         ] }],
-        note: 'Follow the configuration specified for the equipment. The CBB65 page lists single-run and R2 dual-capacitance ranges separately; request a model with the pair you need.',
+        note: 'Specify the single-run value or dual-run pair required by the equipment.',
       },
       { id: 'sample-examples', heading: 'Single-run and dual-run sample labels', photos: examplePhotos('single-vs-dual-run-capacitors') },
       {
@@ -126,7 +126,7 @@ export const guideLayouts: Record<string, GuideLayout> = {
         tables: [{ caption: 'Dual-run rating record', headers: ['Field', 'Your record'], rows: [
           ['Value 1', '________ µF'], ['Value 2', '________ µF'], ['Rated voltage', '________ VAC'], ['Original model', '________'],
         ] }],
-        note: 'The photographed dual-run sample is marked 50+5 µF ±5%, 450 VAC. Ask for availability of the exact pair and configuration required by your equipment.',
+        note: '',
       },
       {
         id: 'match-the-connections', heading: 'Match the connections',
@@ -147,24 +147,35 @@ export const guideLayouts: Record<string, GuideLayout> = {
     sections: [
       {
         id: 'electrical-markings', aliases: ['sample-examples'], heading: 'Reading the label', layout: 'label', photoPlacement: 'before', photos: [examplePhotos('read-motor-capacitor-label')[0]],
-        paragraphs: ['Record the original label exactly as printed. If a field is missing or unreadable, mark it as unknown. Do not fill it from the series range, which describes several models.'],
+        paragraphs: ['Copy the label exactly. Leave unreadable fields blank and attach a clear photo; do not infer them from a series range.'],
         tables: [{ caption: 'Visible text on the CBB65 sample', headers: ['Field', 'Visible sample text', 'What to record'], rows: [
-          ['Series / model', 'CBB65 CAPACITOR', 'Record the series and any model number. No separate model number is visible on this label.'],
+          ['Series / model', 'CBB65 CAPACITOR', 'CBB65 is the series marking. Record a separate model number when present.'],
           ['Capacitance', '20 µF', 'The original µF value, or both values on a dual-run part.'],
           ['Rated AC voltage', '450VAC', 'The capacitor VAC rating, recorded separately from the motor supply voltage.'],
           ['Tolerance', '±5%', 'The permitted capacitance variation. Copy the exact marking.'],
           ['Frequency', '50/60Hz', 'Frequency marking as printed.'],
           ['Temperature / climatic marking', '40/85/21', 'Copy the full code and check its meaning in the model datasheet.'],
-          ['Duty', 'Run/start wording not shown', 'Copy any duty marking. Confirm the duty from the motor circuit and model documentation.'],
-          ['Other code / batch marking', 'C P1; 2025', 'Copy the codes without assuming their meaning.'],
+          ['Duty', 'Not marked', 'Record the duty from the motor circuit and model documentation.'],
+          ['Other code / batch marking', 'C P1; 2025', 'Record each code as it appears.'],
         ] }],
-        note: 'Copy the climatic code as printed and request its definition with the model datasheet. If the label carries a compliance mark, ask for the corresponding certificate to check its coverage.',
-        links: [{ label: 'Review CBB61 sample configurations', href: '/products/cbb61-fan-capacitor/#sample-configurations' }],
+        note: 'The climatic category includes temperature-category and damp-heat-test information. Use the model datasheet to interpret the full code. Check approval marks against the relevant certificate.',
+        links: [{ label: 'Review CBB65 sample configurations', href: '/products/cbb65-air-conditioner-capacitor/#sample-configurations' }],
+      },
+      {
+        id: 'worked-label-examples', heading: 'Worked examples from the original labels',
+        paragraphs: ['P029 is marked 20 µF ±5%. Five percent of 20 is 1 µF, giving a calculated tolerance range of 19–21 µF.'],
+        tables: [{ caption: 'Keep the dual-run values separate · sample P034', headers: ['Printed section value', 'Printed tolerance', 'Calculated nominal band'], rows: [
+          ['50 µF', '±5%', '47.5–52.5 µF'],
+          ['5 µF', '±5%', '4.75–5.25 µF'],
+        ] }],
+        photos: [examplePhotos('single-vs-dual-run-capacitors')[1]],
+        note: 'P034 reads 50+5 µF, not one 55 µF section. Use the approved model data for terminal mapping, measurement conditions and acceptance limits.',
+        links: [{ label: 'Ask about P029 · 20 µF / 450 VAC', href: '/contact/?series=CBB65&configuration=label-p029-20&request=documents#inquiry-form' }, { label: 'Ask about P034 · 50+5 µF / 450 VAC', href: '/contact/?series=CBB65&configuration=label-p034-50plus5&request=documents#inquiry-form' }],
       },
       {
         id: 'if-a-marking-is-missing', heading: 'Missing or unreadable markings',
         records: [
-          { label: 'Unreadable text', text: 'Send the full label photo with the unclear area visible. Mark that field as unknown in your notes.' },
+          { label: 'Unreadable text', text: 'Attach the full label photo and identify the unreadable field.' },
           { label: 'Dimensions', text: 'Measure the body and mounting separately. Include the space needed for connections.' },
           { label: 'Compliance mark', text: 'Request the corresponding certificate. Check the covered models and the requirements for your destination market.' },
         ],
@@ -181,7 +192,7 @@ export const guideLayouts: Record<string, GuideLayout> = {
         links: [{ label: 'Measure dimensions, terminals and mounting', href: '/resources/dimensions-terminals-mounting/' }],
       },
     ],
-    details: ['Clear photos of the full label and connections', 'Motor or equipment model', 'Markings copied as printed, with unreadable fields identified as unknown', 'Body dimensions and mounting, with quantity and destination'],
+    details: ['Clear photos of the full label and connections', 'Motor or equipment model', 'Label markings and a photo of any unreadable field', 'Body dimensions and mounting, with quantity and destination'],
   },
   'capacitance-voltage-guide': {
     sections: [
@@ -209,7 +220,7 @@ export const guideLayouts: Record<string, GuideLayout> = {
           { label: '450 VAC', text: 'The rated AC voltage on the same label.' },
           { label: '±5%', text: 'The permitted variation around the marked capacitance.' },
         ],
-        note: 'Read these as separate ratings. Before ordering, request the datasheet for a model with the required electrical values and case dimensions; the series range alone does not confirm availability.',
+        note: '',
         links: [{ label: 'Copy the complete label fields', href: '/resources/read-motor-capacitor-label/' }],
       },
     ],
@@ -224,11 +235,11 @@ export const guideLayouts: Record<string, GuideLayout> = {
           measurementTable('Cylindrical case', ['Diameter D', 'Body height H', 'Full installed height', 'Mounting position / stud dimensions', 'Terminal and connector clearance', 'Lead length / routing clearance']),
           measurementTable('Rectangular case', ['Body length L', 'Body width W', 'Body height H', 'Full installed height', 'Mounting position / fixing dimensions', 'Wire and connector clearance']),
         ],
-        note: 'Give measurements in mm and check your sketch against the approved model drawing.',
+        note: '',
       },
       {
         id: 'sample-examples', heading: 'Mounting and connection space', photos: examplePhotos('dimensions-terminals-mounting'),
-        note: 'Allow room for the fixing hardware and the complete connection arrangement when checking the fit.',
+        note: '',
       },
       {
         id: 'show-the-connection-end', heading: 'Connections to record',
@@ -284,10 +295,10 @@ export const guideLayouts: Record<string, GuideLayout> = {
       },
       {
         id: 'order-confirmation-notes', heading: 'Order confirmation notes',
-        paragraphs: ['Copy these notes into your order file and fill in the agreed terms. Leave unconfirmed fields open for written agreement, keeping them under the same order reference.'],
+        paragraphs: ['Copy the template and enter the terms agreed in writing. Keep unresolved items under the same order reference.'],
         copyText: orderNotes,
       },
     ],
-    details: ['Order reference, exact model and drawing revision', 'Approved packing and inspection requirements, with production and shipping dates', 'Delivery term and named place, with the required documents', 'Terms still to agree in writing'],
+    details: ['Order reference, exact model and drawing revision', 'Approved packing and inspection requirements, with production and shipping dates', 'Delivery term and named place, with the required documents', 'Outstanding order terms'],
   },
 };

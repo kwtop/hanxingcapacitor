@@ -1,0 +1,29 @@
+<div class="measurement-guide">
+  <p>Schematic measurement guide. Record your own dimensions in mm; use the approved model drawing for the final installation.</p>
+  <div class="measurement-guide-grid">
+    <figure>
+      <svg viewBox="0 0 440 280" role="img" aria-labelledby="cylinder-guide-title">
+        <title id="cylinder-guide-title">Cylindrical capacitor: diameter D, body height H and full installed height including terminals and mounting.</title>
+        <g fill="none" stroke="#58666b" stroke-width="1.8"><path d="M130 82v130c0 20 144 20 144 0V82"/><ellipse cx="202" cy="82" rx="72" ry="17"/><path d="M173 67V41h13v25m34 0V41h13v26m-37 161v20h13v-20"/><path stroke="#98a3a6" d="M130 30v30m144-30v30M299 82h27m-27 146h27M344 41h28m-28 207h28"/><path d="M130 28h144m-144-5v10m144-10v10M320 82v146m-5-146h10m-10 146h10M366 41v207m-5-207h10m-10 207h10"/></g>
+        <g fill="#33434a" font-family="Arial,sans-serif" font-size="16"><text x="196" y="20">D</text><text x="329" y="159">H</text><text x="384" y="129">Full</text><text x="384" y="149">height</text><text x="139" y="274">Include terminals and fixing</text></g>
+      </svg>
+      <figcaption><strong>Cylindrical case</strong>Diameter and body height are separate from terminal, stud and connector clearance.</figcaption>
+    </figure>
+    <figure>
+      <svg viewBox="0 0 440 280" role="img" aria-labelledby="rectangle-guide-title">
+        <title id="rectangle-guide-title">Rectangular capacitor: length L, width W, body height H and separate mounting and connection clearance.</title>
+        <g fill="none" stroke="#58666b" stroke-width="1.8"><path d="M102 100h184v125H102zM102 100l43-36h184l-43 36m0 125 43-36V64M137 64V43h13v21m54 0V43h13v21"/><path stroke="#98a3a6" d="M102 233v23m184-23v23m54-156h24m-24 125h24m-61-145 21 13m24-43 21 13"/><path d="M102 250h184m-184-5v10m184-10v10M357 100v125m-5-125h10m-10 125h10M316 84l43-36m-47 32 8 8m35-44 8 8"/></g>
+        <g fill="#33434a" font-family="Arial,sans-serif" font-size="16"><text x="189" y="274">L</text><text x="369" y="168">H</text><text x="345" y="80">W</text><text x="101" y="24">Record lead / blade clearance separately</text></g>
+      </svg>
+      <figcaption><strong>Rectangular case</strong>Record length, width and height, then mounting-tab positions and lead or blade clearance.</figcaption>
+    </figure>
+  </div>
+</div>
+<style>
+ .measurement-guide{padding:24px;margin:24px 0;background:#f0f1ed;border:1px solid #d7dcd4;border-radius:2px}
+ .measurement-guide>p{font-size:15px;line-height:1.6;color:#4d5b61;margin:0 0 20px}
+ .measurement-guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+ .measurement-guide figure{margin:0;min-width:0}.measurement-guide svg{display:block;width:100%;height:auto}
+ .measurement-guide figcaption{font-size:14px;line-height:1.6;color:#4d5b61;margin-top:12px}.measurement-guide strong{display:block;color:#29383e;font-size:16px;margin-bottom:6px}
+ @media(max-width:750px){.measurement-guide{padding:20px 16px}.measurement-guide-grid{grid-template-columns:1fr;gap:30px}}
+</style>

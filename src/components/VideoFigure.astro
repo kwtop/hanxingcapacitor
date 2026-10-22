@@ -4,34 +4,33 @@ interface Props {
   poster: string;
   label: string;
   ratio?: '16/9' | '9/16';
+  displayRatio?: '16/9' | '3/2';
+  cover?: { src: string; srcset?: string; width: number; height: number; alt: string; provenance?: string };
+  coverSizes?: string;
 }
 
-const { src, poster, label, ratio = '16/9' } = Astro.props;
-const portrait = ratio === '9/16';
+const { src, poster, label, ratio = '16/9', displayRatio, cover, coverSizes = '(max-width: 800px) calc(100vw - 48px), 52vw' } = Astro.props;
+const frameRatio = displayRatio ?? ratio;
+const portrait = frameRatio === '9/16';
 ---
 <figure class="media-figure video-figure">
-  <div class:list={['media-image', 'video-frame', { 'video-frame--portrait': portrait }]} style={portrait ? 'aspect-ratio:9/16' : 'aspect-ratio:16/9'}>
-    <video preload="none" playsinline poster={poster} aria-label={label}>
+  <div class:list={['media-image', 'video-frame', { 'video-frame--portrait': portrait, 'video-frame--editorial': !!cover }]} style={`aspect-ratio:${frameRatio}`}>
+    <video preload="none" playsinline poster={cover ? undefined : poster} data-original-poster={cover ? poster : undefined} aria-label={label} tabindex="-1">
       <source src={src} type="video/mp4" />
       Your browser does not support inline video playback.
     </video>
+    {cover && <img class="video-cover" src={cover.src} srcset={cover.srcset} sizes={coverSizes} width={cover.width} height={cover.height} alt="" aria-hidden="true" data-cover-source={cover.provenance} loading="lazy" decoding="async" />}
     <button class="video-start" type="button" aria-label={`Play ${label}`}><span>Play footage</span></button>
+    <button class="video-cancel button secondary" type="button" hidden>Cancel loading</button>
     <noscript><a href={src}>Open footage</a></noscript>
   </div>
+  <p class="video-status" role="status" aria-live="polite" hidden></p>
+  <a class="card-link" data-video-file href={src} hidden>Open video file</a>
 </figure>
 
 <script>
-  document.querySelectorAll<HTMLButtonElement>('.video-frame .video-start').forEach(button => {
-    if (button.dataset.ready) return;
-    button.dataset.ready = 'true';
-    button.addEventListener('click', () => {
-      const video = button.parentElement?.querySelector('video');
-      if (!video) return;
-      video.controls = true;
-      button.hidden = true;
-      video.play().catch(() => { button.hidden = false; });
-    });
-  });
+  import {initVideoFeedback} from '../lib/videoFeedback';
+  initVideoFeedback();
 </script>
 
 <style>
@@ -43,10 +42,19 @@ const portrait = ratio === '9/16';
   }
 
   .video-frame { position: relative; }
+  .video-frame--editorial > video { position:absolute; inset:0; width:100%; height:100%; aspect-ratio:auto; object-fit:contain; }
+  .video-cover { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; pointer-events:none; }
+  .video-frame--editorial:is([data-video-state="playing"], [data-video-state="paused"], [data-video-state="ended"]) > .video-cover { display:none; }
+  .video-frame--editorial .video-start { z-index:1; }
+  .video-frame--editorial .video-cancel { z-index:2; }
   .video-start { position: absolute; inset: 0; display: flex; align-items: end; padding: 16px; background: transparent; border: 0; cursor: pointer; text-align: left; }
   .video-start[hidden] { display: none; }
   .video-start span { display: inline-block; padding: 8px 12px; background: #252a30; color: #fff; font: 600 14px/1.4 "Inter Variable", Arial, sans-serif; }
   .video-start:focus-visible { outline: 2px solid #b85d2c; outline-offset: -4px; }
+  .video-start:disabled { cursor:wait; }
+  .video-cancel { position:absolute; right:16px; top:16px; z-index:1; }
+  .video-status { margin:10px 0 0; font-size:14px; line-height:1.5; }
+  .video-figure > [data-video-file] { margin-top:8px; }
 
   .video-frame--portrait {
     width: min(100%, 360px);

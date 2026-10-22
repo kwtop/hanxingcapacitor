@@ -1,0 +1,91 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/resources/motor-capacitor-order-shipment-checklist/",
+  "clientWidth": 1425,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 310.8020935058594,
+        "height": 96,
+        "left": 399.3333435058594,
+        "right": 1025.3333435058594,
+        "top": 214.80209350585935,
+        "width": 626,
+        "x": 399.3333435058594,
+        "y": 214.80209350585935
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "48px",
+      "size": "40px",
+      "text": "Motor capacitor order & shipping checklist"
+    }
+  ],
+  "headings": [
+    "1. Confirm the product and order",
+    "2. Approve the packing",
+    "Protection inside the carton",
+    "3. Confirm dispatch dates and inspection",
+    "4. Check the shipping documents",
+    "5. Agree how to handle discrepancies",
+    "Order confirmation notes",
+    "Send your capacitor requirements.",
+    "References",
+    "Related resources"
+  ],
+  "height": 7535,
+  "images": [
+    {
+      "alt": "Generic illustration of protective packing and order notes, not a shipment record.",
+      "box": {
+        "bottom": 1097.468780517578,
+        "height": 746.6666870117188,
+        "left": 152.33334350585938,
+        "right": 1272.3333435058594,
+        "top": 350.8020935058594,
+        "width": 1120,
+        "x": 152.33334350585938,
+        "y": 350.8020935058594
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/guide-shipping.webp"
+    },
+    {
+      "alt": "Supplied packing photograph showing capacitor boxes and packing work.",
+      "box": {
+        "bottom": 2588.70849609375,
+        "height": 430,
+        "left": 472.3333435058594,
+        "right": 1232.3333435058594,
+        "top": 2158.70849609375,
+        "width": 760,
+        "x": 472.3333435058594,
+        "y": 2158.70849609375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/packing-scene.jpg"
+    }
+  ],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 1425,
+  "title": "Motor capacitor order & shipping checklist | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/resources/motor-capacitor-order-shipment-checklist/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 900,
+    "width": 1440
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

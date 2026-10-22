@@ -1,0 +1,106 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/resources/dimensions-terminals-mounting/",
+  "clientWidth": 375,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 339.6041717529297,
+        "height": 100.8125,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 238.7916717529297,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 238.7916717529297
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "Capacitor dimensions, connections and mounting"
+    }
+  ],
+  "headings": [
+    "Dimensions to record",
+    "Mounting and connection space",
+    "The stud extends beyond the case",
+    "Leads and mounting lug",
+    "Connections to record",
+    "Send your capacitor requirements.",
+    "References",
+    "Related resources"
+  ],
+  "height": 6289,
+  "images": [
+    {
+      "alt": "Illustrative capacitor samples with a measuring caliper, without asserted dimensions.",
+      "box": {
+        "bottom": 596.0416870117188,
+        "height": 228.4375,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 367.6041870117187,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 367.6041870117187
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/guide-fit.webp"
+    },
+    {
+      "alt": "Two CBB60 samples showing lead exits and a threaded mounting stud.",
+      "box": {
+        "bottom": 2678.6875,
+        "height": 297.96875,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 2380.71875,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 2380.71875
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb60-18.jpg"
+    },
+    {
+      "alt": "Two rectangular CBB61 samples with red lead wires, visible wire ends and a mounting lug on one case.",
+      "box": {
+        "bottom": 3111.822998046875,
+        "height": 297.96875,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 2813.854248046875,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 2813.854248046875
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb61-leads-10.jpg"
+    }
+  ],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 375,
+  "title": "Capacitor dimensions, connections and mounting | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/resources/dimensions-terminals-mounting/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 844,
+    "width": 390
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

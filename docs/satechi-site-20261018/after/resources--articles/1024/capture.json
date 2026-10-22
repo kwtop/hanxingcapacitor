@@ -1,0 +1,159 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/resources/articles/",
+  "clientWidth": 1009,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 262.8020935058594,
+        "height": 48,
+        "left": 40,
+        "right": 791.1979370117188,
+        "top": 214.80209350585935,
+        "width": 751.1979370117188,
+        "x": 40,
+        "y": 214.80209350585935
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "48px",
+      "size": "40px",
+      "text": "Technical guides"
+    }
+  ],
+  "headings": [
+    "Electrical ratings and duty",
+    "Reading a motor capacitor label",
+    "Start capacitor vs run capacitor",
+    "Capacitance and voltage ratings for motor capacitors",
+    "Compare capacitor series",
+    "CBB60 vs CBB61 vs CBB65",
+    "Single-run vs dual-run capacitors",
+    "Dimensions & connections",
+    "Capacitor dimensions, connections and mounting",
+    "Datasheets & drawings"
+  ],
+  "height": 2833,
+  "images": [
+    {
+      "alt": "Illustrative editorial view of the original Hanxing CBB65 label.",
+      "box": {
+        "bottom": 649.9479370117188,
+        "height": 198.36459350585935,
+        "left": 40,
+        "right": 337.5520935058594,
+        "top": 451.5833435058594,
+        "width": 297.5520935058594,
+        "x": 40,
+        "y": 451.5833435058594
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/guide-label.webp"
+    },
+    {
+      "alt": "Illustrative comparison of the white wired CBB60 run sample and grey CD60 start sample.",
+      "box": {
+        "bottom": 649.9479370117188,
+        "height": 198.36459350585935,
+        "left": 355.5520935058594,
+        "right": 653.1041870117188,
+        "top": 451.5833435058594,
+        "width": 297.5520935058594,
+        "x": 355.5520935058594,
+        "y": 451.5833435058594
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/guide-duty.webp"
+    },
+    {
+      "alt": "Illustrative close view of the capacitance and voltage printed on the supplied CBB65 sample.",
+      "box": {
+        "bottom": 649.9583435058594,
+        "height": 198.375,
+        "left": 671.1041870117188,
+        "right": 968.6666870117188,
+        "top": 451.5833435058594,
+        "width": 297.5625,
+        "x": 671.1041870117188,
+        "y": 451.5833435058594
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/guide-ratings.webp"
+    },
+    {
+      "alt": "Illustrative arrangement of the three original run-capacitor case formats.",
+      "box": {
+        "bottom": 1195.1979675292969,
+        "height": 198.36459350585935,
+        "left": 40,
+        "right": 337.5520935058594,
+        "top": 996.8333740234376,
+        "width": 297.5520935058594,
+        "x": 40,
+        "y": 996.8333740234376
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/guide-series.webp"
+    },
+    {
+      "alt": "Illustrative view of single-run and dual-run CBB65 samples; original photographs remain in the guide.",
+      "box": {
+        "bottom": 1195.1979675292969,
+        "height": 198.36459350585935,
+        "left": 355.5520935058594,
+        "right": 653.1041870117188,
+        "top": 996.8333740234376,
+        "width": 297.5520935058594,
+        "x": 355.5520935058594,
+        "y": 996.8333740234376
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/guide-dual.webp"
+    },
+    {
+      "alt": "Illustrative capacitor samples with a measuring caliper, without asserted dimensions.",
+      "box": {
+        "bottom": 1811.6250915527344,
+        "height": 297.5520935058594,
+        "left": 40,
+        "right": 486.3333435058594,
+        "top": 1514.072998046875,
+        "width": 446.3333435058594,
+        "x": 40,
+        "y": 1514.072998046875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/guide-fit.webp"
+    }
+  ],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 1009,
+  "title": "Motor Capacitor Technical Guides | HAN XING",
+  "url": "http://127.0.0.1:4340/resources/articles/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 768,
+    "width": 1024
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

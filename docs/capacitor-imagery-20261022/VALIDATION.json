@@ -1,0 +1,62 @@
+{
+  "assetFamilies": 12,
+  "distinctBrochureSources": 10,
+  "originalPhotoFamilies": 4,
+  "existingGeneratedFamilies": 3,
+  "newGeneratedFamilies": 5,
+  "webpFiles": 44,
+  "webpTotalBytes": 2581734,
+  "protectedFilesUnchanged": [
+    "data/site.ts",
+    "data/productReference.ts",
+    "data/sampleConfigurations.ts",
+    "data/sampleEvidence.ts",
+    "data/guideExamples.ts",
+    "data/guideLayouts.ts",
+    "data/guides.ts",
+    "components/ProductReferenceGallery.tsx",
+    "components/StaticPhotoLibrary.tsx",
+    "components/Header.astro",
+    "components/MobileNav.tsx",
+    "components/InquiryCallout.astro",
+    "components/VideoFigure.astro",
+    "lib/contactDraft.ts",
+    "pages/contact.astro",
+    "data/industrialApplications.ts",
+    "components/satechi-preview/Hero.astro",
+    "components/satechi-preview/SeriesCategories.astro",
+    "components/satechi-preview/ApplicationsMosaic.astro"
+  ],
+  "changedSourceFiles": [
+    "components/ProductReference.astro",
+    "components/satechi-preview/GuideCover.astro",
+    "components/satechi-preview/ProductStory.astro",
+    "components/satechi-preview/RefinedSourceStories.astro",
+    "components/satechi-preview/SiteImage.astro",
+    "data/satechiSite.ts",
+    "layouts/BaseLayout.astro",
+    "pages/about.astro",
+    "pages/factory/packing-and-dispatch.astro",
+    "pages/factory.astro",
+    "pages/oem-quality.astro",
+    "pages/oem.astro",
+    "pages/resources/index.astro"
+  ],
+  "newSourceFiles": [
+    "components/ProductOrderDetails.astro",
+    "components/satechi-preview/AboutStory.astro",
+    "components/satechi-preview/BrochurePhoto.astro",
+    "components/satechi-preview/ConnectionFormats.astro",
+    "data/brochureMedia.generated.json",
+    "data/brochureMedia.ts",
+    "styles/satechi-brochure.css"
+  ],
+  "errors": [],
+  "browserValidation": "Blocked by browser URL policy. No new page screenshots or interactive browser checks were captured.",
+  "viewportTargets": [
+    1440,
+    1024,
+    768,
+    390
+  ]
+}

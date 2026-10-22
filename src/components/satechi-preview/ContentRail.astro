@@ -1,0 +1,55 @@
+---
+export interface RailCard { title: string; href: string; image: string; alt: string; lines: string[]; kind?: 'sample' | 'guide'; }
+interface Props { id: string; tabs: { label: string; cards: RailCard[]; href: string; cta: string; }[]; note?: string; }
+const { id, tabs, note } = Astro.props;
+---
+<section class:list={['sp-content-rail', { 'sp-has-range-note': !!note }]} aria-label={tabs[0].label} data-content-rail>
+  <div class="sp-rail-heading"><div class="sp-rail-tabs" role="tablist" aria-label={`${tabs[0].label} topics`}>
+    {tabs.map((tab, index) => <button type="button" role="tab" id={`${id}-tab-${index}`} aria-controls={`${id}-panel-${index}`} aria-selected={index === 0 ? 'true' : 'false'} tabindex={index === 0 ? 0 : -1}>{tab.label}</button>)}
+  </div><div class="sp-rail-controls"><button type="button" aria-label={`Previous ${tabs[0].label.toLowerCase()}`} data-rail-step="-1"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m14 7-5 5 5 5"/></svg></button><button type="button" aria-label={`Next ${tabs[0].label.toLowerCase()}`} data-rail-step="1"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m10 7 5 5-5 5"/></svg></button></div></div>
+  {tabs.map((tab, index) => <div class="sp-rail-panel" id={`${id}-panel-${index}`} role="tabpanel" aria-labelledby={`${id}-tab-${index}`} hidden={index !== 0}>
+    <div class="sp-card-track" tabindex="0" aria-label={`${tab.label}; scroll for more`}>
+      {tab.cards.map(card => <article class:list={['sp-rail-card', card.kind && `sp-${card.kind}-card`]}>
+        <a class="sp-card-photo" href={card.href}><img src={card.image} width="650" height="650" loading="lazy" decoding="async" alt={card.alt} /></a>
+        <div class="sp-card-copy"><h3><a href={card.href}>{card.title}</a></h3>{card.lines.map(line => <p>{line}</p>)}</div>
+      </article>)}
+    </div>
+    {note && <p class="sp-range-note">{note}</p>}
+    <div class="sp-rail-action"><a href={tab.href}>{tab.cta}</a></div>
+  </div>)}
+</section>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-content-rail]').forEach(rail => {
+    const tabs = Array.from(rail.querySelectorAll<HTMLButtonElement>('[role="tab"]'));
+    const panels = Array.from(rail.querySelectorAll<HTMLElement>('[role="tabpanel"]'));
+    const controls = Array.from(rail.querySelectorAll<HTMLButtonElement>('[data-rail-step]'));
+    const updateEdges = () => {
+      const track = panels.find(panel => !panel.hidden)?.querySelector<HTMLElement>('.sp-card-track');
+      if (!track) return;
+      const max = track.scrollWidth - track.clientWidth;
+      const group = rail.querySelector<HTMLElement>('.sp-rail-controls');
+      if (group) group.hidden = max <= 1;
+      controls.forEach(control => { control.disabled = Number(control.dataset.railStep) < 0 ? track.scrollLeft <= 1 : track.scrollLeft >= max - 1; });
+    };
+    const activate = (index: number) => { tabs.forEach((tab, i) => { tab.setAttribute('aria-selected', String(i === index)); tab.tabIndex = i === index ? 0 : -1; }); panels.forEach((panel, i) => { panel.hidden = i !== index; }); updateEdges(); };
+    rail.querySelectorAll<HTMLButtonElement>('[data-rail-step]').forEach(button => button.addEventListener('click', () => {
+      const track = panels.find(panel => !panel.hidden)?.querySelector<HTMLElement>('.sp-card-track');
+      track?.scrollBy({ left: Number(button.dataset.railStep) * 335, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+    }));
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => activate(index));
+      tab.addEventListener('keydown', event => {
+        let next = index;
+        if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
+        else if (event.key === 'ArrowLeft') next = (index + tabs.length - 1) % tabs.length;
+        else if (event.key === 'Home') next = 0;
+        else if (event.key === 'End') next = tabs.length - 1;
+        else return;
+        event.preventDefault(); activate(next); tabs[next].focus();
+      });
+    });
+    const resize = new ResizeObserver(updateEdges);
+    panels.forEach(panel => { const track = panel.querySelector<HTMLElement>('.sp-card-track'); if (track) { resize.observe(track); track.addEventListener('scroll', updateEdges, { passive: true }); } });
+    updateEdges();
+  });
+</script>

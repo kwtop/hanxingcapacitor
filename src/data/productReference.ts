@@ -58,7 +58,7 @@ type ProductReferenceContent = {
 export const productReference: Record<string, ProductReferenceContent> = {
   CBB60: {
     intro: 'Cylindrical run capacitors for water pumps and single-phase motors.',
-    dutyContext: 'For compatible single-phase motors', detailId: 'cbb60-stud',
+    dutyContext: 'Single-phase motors', detailId: 'cbb60-stud',
     fit: [
       { title: 'Electrical rating', text: 'Copy the µF, VAC and frequency from the original label. The horizontal sample is marked 25 µF; other CBB60 models have their own ratings and configurations.' },
       { title: 'Body and mounting stud', text: 'The horizontal sample shows a threaded base stud. Measure the body and stud separately, then compare the drawing with the available mounting space.' },
@@ -67,7 +67,7 @@ export const productReference: Record<string, ProductReferenceContent> = {
     applicationIntro: 'CBB60 applications include the equipment below. The motor specification must call for a run capacitor.',
     applications: [
       { title: 'Water pumps', examples: 'Water pumps with capacitor-run motors.', href: '/applications/pumps-and-water-systems/' },
-      { title: 'Washing machines', examples: 'Selected washing-machine motors, subject to the original circuit requirements.', href: '/applications/appliances-and-small-motors/' },
+      { title: 'Washing machines', examples: 'Run-capacitor circuits in washing-machine motors.', href: '/applications/appliances-and-small-motors/' },
       { title: 'Fans and blowers', examples: 'Smoke exhaust equipment requiring this run-capacitor format.', href: '/applications/fans-and-ventilation/' },
       { title: 'Other single-phase motors', examples: 'Select the rating and connection from the motor documentation.' },
     ],
@@ -77,7 +77,7 @@ export const productReference: Record<string, ProductReferenceContent> = {
   },
   CBB61: {
     intro: 'Compact rectangular run capacitors for fans, blowers and appliance motors.',
-    dutyContext: 'For compatible fan and appliance motors', detailId: 'cbb61-leads',
+    dutyContext: 'Fan and appliance motors', detailId: 'cbb61-leads',
     fit: [
       { title: 'Electrical rating', text: 'Copy the original µF, VAC and frequency. The blade-terminal photo shows three individual 450 VAC samples rated 4.5, 5 and 6 µF.' },
       { title: 'Case and fixing points', text: 'Measure case length, width and height. The mounting tabs and fixing positions also need to match the drawing and the available space.' },
@@ -85,9 +85,9 @@ export const productReference: Record<string, ProductReferenceContent> = {
     ],
     applicationIntro: 'CBB61 is a run-capacitor format for fans and selected appliance motors.',
     applications: [
-      { title: 'Fans and blowers', examples: 'Fans and blowers whose motor specification calls for this format.', href: '/applications/fans-and-ventilation/' },
-      { title: 'Washing machines', examples: 'Selected washing-machine motors; check the original rating and installed fit.', href: '/applications/appliances-and-small-motors/' },
-      { title: 'Selected air conditioners', examples: 'Check the specific motor and its run-capacitor requirement before selecting CBB61.', href: '/applications/hvac-and-refrigeration/#other-run-formats' },
+      { title: 'Fans and blowers', examples: 'Fan and blower motor run circuits.', href: '/applications/fans-and-ventilation/' },
+      { title: 'Washing machines', examples: 'Match the original rating and rectangular case dimensions.', href: '/applications/appliances-and-small-motors/' },
+      { title: 'Air-conditioner motors', examples: 'Match the motor run-capacitor rating and connection layout.', href: '/applications/hvac-and-refrigeration/#other-run-formats' },
     ],
     documentDimensions: 'Case length, width, height and mounting-tab dimensions.',
     documentConnections: 'Lead exit, length, connector and blade-terminal spacing.',
@@ -106,7 +106,7 @@ export const productReference: Record<string, ProductReferenceContent> = {
       { title: 'Air conditioners / HVAC', examples: 'Air conditioners, compressors, cold dryers and HVAC motor systems. Identify single or dual run from the original motor documentation.', href: '/applications/hvac-and-refrigeration/' },
     ],
     documentDimensions: 'Can diameter, height, fixing and installed terminal clearance.',
-    documentConnections: 'Single or dual-run configuration; both values and terminal-group mapping where applicable.',
+    documentConnections: 'Single or dual-run configuration, with both dual-run values and terminal-group mapping.',
     documentDuty: 'Model-specific run duty and equipment requirements.',
   },
   CD60: {
@@ -119,9 +119,9 @@ export const productReference: Record<string, ProductReferenceContent> = {
     ],
     applicationIntro: 'The applications below require a separately switched start-capacitor circuit. Check the required duty in the motor documentation.',
     applications: [
-      { title: 'Water pumps', examples: 'Selected pumps with a separately switched start-capacitor circuit.', href: '/applications/pumps-and-water-systems/' },
-      { title: 'Air conditioners / HVAC', examples: 'Selected compressors where the motor specifies a separate switched start capacitor.', href: '/applications/hvac-and-refrigeration/' },
-      { title: 'Other single-phase AC motor starting', examples: 'Starting duty and permitted time limits need the exact model documentation.' },
+      { title: 'Water pumps', examples: 'Pump motors with a separately switched start-capacitor circuit.', href: '/applications/pumps-and-water-systems/' },
+      { title: 'Air conditioners / HVAC', examples: 'Compressor motors with a separately switched start-capacitor circuit.', href: '/applications/hvac-and-refrigeration/' },
+      { title: 'Other single-phase AC motor starting', examples: 'Match the rated starting time and interval between starts.' },
     ],
     documentDimensions: 'Body dimensions, terminal configuration and installed clearance.',
     documentConnections: 'Starting circuit and switching arrangement.',

@@ -1,0 +1,71 @@
+{
+  "bodyClass": "porcelain-site reference-site",
+  "canonical": "https://www.hanxingcapacitor.com/resources/read-motor-capacitor-label/",
+  "clientWidth": 375,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 244.89584350585935,
+        "height": 77.22917175292969,
+        "left": 20,
+        "right": 354.66668701171875,
+        "top": 167.6666717529297,
+        "width": 334.66668701171875,
+        "x": 20,
+        "y": 167.6666717529297
+      },
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "38.61px",
+      "size": "35.1px",
+      "text": "Reading a motor capacitor label"
+    }
+  ],
+  "headings": [
+    "Reading the label",
+    "Ratings on a CBB65 label",
+    "Missing or unreadable markings",
+    "Photos to prepare",
+    "Send your capacitor requirements.",
+    "References",
+    "Related resources"
+  ],
+  "height": 6841,
+  "images": [
+    {
+      "alt": "CBB65 sample label showing 20 µF ±5%, 450 VAC and 50/60 Hz.",
+      "box": {
+        "bottom": 957.8958587646484,
+        "height": 249.6666717529297,
+        "left": 20.666667938232425,
+        "right": 354.0000114440918,
+        "top": 708.2291870117188,
+        "width": 333.3333435058594,
+        "x": 20.666667938232425,
+        "y": 708.2291870117188
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb65-2.jpg"
+    }
+  ],
+  "robots": [
+    "noindex,follow"
+  ],
+  "scrollWidth": 375,
+  "title": "Reading a motor capacitor label | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4335/resources/read-motor-capacitor-label/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 844,
+    "width": 390
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

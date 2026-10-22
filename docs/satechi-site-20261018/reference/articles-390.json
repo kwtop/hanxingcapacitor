@@ -1,0 +1,94 @@
+{
+  "background": "rgb(255, 255, 255)",
+  "headings": [
+    {
+      "box": {
+        "bottom": 186.40625,
+        "height": 1,
+        "left": 14,
+        "right": 15,
+        "top": 185.40625,
+        "width": 1,
+        "x": 14,
+        "y": 185.40625
+      },
+      "font": "urbane, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "News",
+      "weight": "500"
+    },
+    {
+      "box": {
+        "bottom": 730.8854179382324,
+        "height": 24.197917938232425,
+        "left": 15,
+        "right": 83.70833587646484,
+        "top": 706.6875,
+        "width": 68.70833587646484,
+        "x": 15,
+        "y": 706.6875
+      },
+      "font": "urbane, sans-serif",
+      "line": "24.2px",
+      "size": "22px",
+      "text": "News",
+      "weight": "500"
+    },
+    {
+      "box": {
+        "bottom": 1939.8854179382324,
+        "height": 24.197917938232425,
+        "left": 15,
+        "right": 187.8541717529297,
+        "top": 1915.6875,
+        "width": 172.8541717529297,
+        "x": 15,
+        "y": 1915.6875
+      },
+      "font": "urbane, sans-serif",
+      "line": "24.2px",
+      "size": "22px",
+      "text": "New Products",
+      "weight": "500"
+    },
+    {
+      "box": {
+        "bottom": 3148.8854179382324,
+        "height": 24.197917938232425,
+        "left": 15,
+        "right": 225,
+        "top": 3124.6875,
+        "width": 210,
+        "x": 15,
+        "y": 3124.6875
+      },
+      "font": "urbane, sans-serif",
+      "line": "24.2px",
+      "size": "22px",
+      "text": "Shopping Guides",
+      "weight": "500"
+    }
+  ],
+  "images": [
+    {
+      "alt": "The Complete iPhone 18 Charger and Accessory Guide 2026",
+      "box": {
+        "bottom": 426.1979217529297,
+        "height": 196.7916717529297,
+        "left": 31,
+        "right": 359,
+        "top": 229.40625,
+        "width": 328,
+        "x": 31,
+        "y": 229.40625
+      },
+      "radius": "0px"
+    }
+  ],
+  "url": "https://satechi.com/blogs/news",
+  "viewport": [
+    390,
+    844
+  ]
+}

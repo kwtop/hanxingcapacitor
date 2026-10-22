@@ -1,0 +1,381 @@
+{
+  "assets": {},
+  "captured_at": "2026-10-18T14:41:30.092Z",
+  "document_height": 7201,
+  "document_overflow_x": false,
+  "dpr": 1.0000000298023224,
+  "elements": [
+    {
+      "box": [
+        20,
+        55.59375,
+        1384.666748046875,
+        72
+      ],
+      "computed": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "color": "rgb(27, 28, 33)",
+        "display": "block",
+        "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px",
+        "opacity": "1",
+        "visibility": "visible"
+      },
+      "count": 1,
+      "name": "header",
+      "selector": ".sp-header",
+      "status": "measured",
+      "text": "HAN XINGHomeProductsCBB60 · Motor runCBB61 · Fan runCBB65 · HVAC runCD60 · Motor startSample photographsApplicationsWater pumpsFans and blowersWashing machinesAir conditioners / HVACOEM & qualityOEM & private labelManufacturing & qualityPacking & dispatchResourcesTechnical guidesBuying & shippingBuy",
+      "viewport_intersects": true
+    },
+    {
+      "box": [
+        0,
+        35.60416793823242,
+        1424.666748046875,
+        840
+      ],
+      "computed": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(27, 28, 33)",
+        "display": "block",
+        "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px",
+        "opacity": "1",
+        "visibility": "visible"
+      },
+      "count": 1,
+      "name": "hero",
+      "selector": ".sp-hero",
+      "status": "measured",
+      "text": "HAN XING CAPACITORSMotor capacitors.Run & start.Run and start series for equipment manufacturers.Compare capacitor seriesCBB65 · HVAC RUNSingle ordual run.Check the original rating and terminal layout.Explore CBB65CBB60 · MOTOR RUNCheck the rating.Then the fit.Match the case, leads and mounting spac",
+      "viewport_intersects": true
+    },
+    {
+      "box": [
+        0,
+        875.6041870117188,
+        1424.666748046875,
+        100
+      ],
+      "computed": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(27, 28, 33)",
+        "display": "flex",
+        "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px",
+        "opacity": "1",
+        "visibility": "visible"
+      },
+      "count": 1,
+      "name": "series-strip",
+      "selector": ".sp-series-strip",
+      "status": "measured",
+      "text": "CBB60CBB61CBB65CD60",
+      "viewport_intersects": true
+    },
+    {
+      "box": [
+        0,
+        975.6041870117188,
+        1424.666748046875,
+        705.7396240234375
+      ],
+      "computed": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(27, 28, 33)",
+        "display": "block",
+        "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px",
+        "opacity": "1",
+        "visibility": "visible"
+      },
+      "count": 1,
+      "name": "categories",
+      "selector": ".sp-categories",
+      "status": "measured",
+      "text": "Motor capacitor seriesCBB60 · Motor runRun capacitors for pumps and other single-phase motors.CBB61 · Fan runCompact run capacitors for fans and blowers.CBB65 · HVAC runMetal-can run capacitors for HVAC and refrigeration.CD60 · Motor startStart capacitors for separately switched starting circuits.",
+      "viewport_intersects": false
+    },
+    {
+      "box": [
+        0,
+        1681.34375,
+        1424.666748046875,
+        579.75
+      ],
+      "computed": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(27, 28, 33)",
+        "display": "block",
+        "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px",
+        "opacity": "1",
+        "visibility": "visible"
+      },
+      "count": 1,
+      "name": "label-banner",
+      "selector": ".sp-photo-banner:nth-of-type(3)",
+      "status": "measured",
+      "text": "Start with the original label.Match the capacitance, voltage and motor duty.Read the label",
+      "viewport_intersects": false
+    },
+    {
+      "box": [
+        0,
+        2261.09375,
+        1424.666748046875,
+        791.3958740234375
+      ],
+      "computed": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(27, 28, 33)",
+        "display": "block",
+        "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px",
+        "opacity": "1",
+        "visibility": "visible"
+      },
+      "count": 1,
+      "name": "series-rail",
+      "selector": ".sp-content-rail.sp-has-range-note",
+      "status": "measured",
+      "text": "Series specificationsOriginal samplesCBB60 · Motor run2–100 µF110–450 VACCBB61 · Fan run0.5–35 µF110–450 VACCBB65 · HVAC runSingle: 2–100 µF · 110–450 VACDual: 1+15 to 15+80 µF · 370–450 VACCD60 · Motor start20–1500 µF110–330 VACPublished series ranges. Model availability and rating combinations nee",
+      "viewport_intersects": false
+    },
+    {
+      "box": [
+        0,
+        3052.48974609375,
+        1424.666748046875,
+        579.75
+      ],
+      "computed": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(27, 28, 33)",
+        "display": "block",
+        "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px",
+        "opacity": "1",
+        "visibility": "visible"
+      },
+      "count": 1,
+      "name": "fit-banner",
+      "selector": ".sp-photo-banner:nth-of-type(5)",
+      "status": "measured",
+      "text": "The right rating. The right fit.Check the case, terminals and mounting space.Check dimensions",
+      "viewport_intersects": false
+    },
+    {
+      "box": [
+        0,
+        3632.23974609375,
+        1424.666748046875,
+        688.3958740234375
+      ],
+      "computed": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(27, 28, 33)",
+        "display": "block",
+        "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px",
+        "opacity": "1",
+        "visibility": "visible"
+      },
+      "count": 1,
+      "name": "guide-rail",
+      "selector": ".sp-content-rail:not(.sp-has-range-note)",
+      "status": "measured",
+      "text": "Technical guidesBuying & shippingRead the capacitor labelCopy the original µF and VAC, along with the other label markings.Dimensions & connectionsCheck the case, mounting space, terminals and wiring.Start or run?The motor circuit specifies the duty. Check it before choosing a series.Single or dual ",
+      "viewport_intersects": false
+    },
+    {
+      "box": [
+        0,
+        4320.6357421875,
+        1424.666748046875,
+        896.7708740234375
+      ],
+      "computed": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(27, 28, 33)",
+        "display": "block",
+        "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px",
+        "opacity": "1",
+        "visibility": "visible"
+      },
+      "count": 1,
+      "name": "applications",
+      "selector": ".sp-applications",
+      "status": "measured",
+      "text": "Find your applicationWater pumpsAir conditioners / HVACFans and blowersWashing machines",
+      "viewport_intersects": false
+    },
+    {
+      "box": [
+        60,
+        5217.40625,
+        1304.666748046875,
+        737.3333740234375
+      ],
+      "computed": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(27, 28, 33)",
+        "display": "block",
+        "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px",
+        "opacity": "1",
+        "visibility": "visible"
+      },
+      "count": 1,
+      "name": "inquiry",
+      "selector": ".sp-inquiry-panel",
+      "status": "measured",
+      "text": "Send your requirementsShare the original label, quantity and destination.Capacitor series (optional)CBB60CBB61CBB65CD60Not sure yetPrepare an inquiry",
+      "viewport_intersects": false
+    },
+    {
+      "box": [
+        60,
+        5954.73974609375,
+        1304.666748046875,
+        108
+      ],
+      "computed": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(27, 28, 33)",
+        "display": "block",
+        "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px",
+        "opacity": "1",
+        "visibility": "visible"
+      },
+      "count": 1,
+      "name": "source-intro",
+      "selector": ".sp-source-intro",
+      "status": "measured",
+      "text": "Samples & productionDisplay compositions are illustrative. Original photographs and production footage are linked below.",
+      "viewport_intersects": false
+    },
+    {
+      "box": [
+        60,
+        6062.73974609375,
+        1304.666748046875,
+        420
+      ],
+      "computed": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(27, 28, 33)",
+        "display": "grid",
+        "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px",
+        "opacity": "1",
+        "visibility": "visible"
+      },
+      "count": 1,
+      "name": "source-stories",
+      "selector": ".sp-stories",
+      "status": "measured",
+      "text": "Production footageManufacturing & qualityOriginal sample photographsBrowse the supplied samples",
+      "viewport_intersects": false
+    },
+    {
+      "box": [
+        0,
+        6482.73974609375,
+        1424.666748046875,
+        122.39583587646484
+      ],
+      "computed": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(27, 28, 33)",
+        "display": "grid",
+        "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px",
+        "opacity": "1",
+        "visibility": "visible"
+      },
+      "count": 1,
+      "name": "resource-bar",
+      "selector": ".sp-resource-bar",
+      "status": "measured",
+      "text": "Technical guidesRatings, connections and installed fit.Buying & shippingPrepare an inquiry and confirm the order.Original photographsCheck the supplied product samples.Contact HanxingContinue by email or WhatsApp.",
+      "viewport_intersects": false
+    },
+    {
+      "box": [
+        0,
+        6605.1357421875,
+        1424.666748046875,
+        595.5
+      ],
+      "computed": {
+        "backgroundColor": "rgb(27, 28, 33)",
+        "color": "rgb(252, 252, 250)",
+        "display": "block",
+        "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px",
+        "opacity": "1",
+        "visibility": "visible"
+      },
+      "count": 1,
+      "name": "footer",
+      "selector": ".site-footer",
+      "status": "measured",
+      "text": "HAN XINGContactManuelaMusio570@gmail.com+86 153 3339 4111Hangzhou Zebang Refrigeration Equipment Co., Ltd.Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, ChinaProducts−CBB60 · Motor runCBB61 · Fan runCBB65 · HVAC runCD60 · Motor startSample photographsApplications−Water pumpsFans an",
+      "viewport_intersects": false
+    }
+  ],
+  "fonts_ready": true,
+  "images_ready": true,
+  "measurement_sha256": "8cd9d4ebce93be0a0ee1f8994cabcb3dae8ba298ae30e97b0bcfe3961e10e3db",
+  "scroll": {
+    "x": 0,
+    "y": 0
+  },
+  "title": "HAN XING — Satechi homepage study",
+  "url": "http://127.0.0.1:4335/previews/satechi-home/",
+  "viewport": {
+    "height": 900,
+    "width": 1440
+  },
+  "full_page": true,
+  "screenshot_scale": "css",
+  "capture_options": {
+    "format": "png",
+    "clipScale": 1,
+    "captureBeyondViewport": true,
+    "reducedMotion": true,
+    "stitchedContiguousClips": true
+  }
+}

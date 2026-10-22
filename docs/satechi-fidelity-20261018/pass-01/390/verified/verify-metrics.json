@@ -1,0 +1,205 @@
+{
+  "reference": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\..\\..\\reference\\390-full.jpg",
+  "candidate": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\candidate.png",
+  "reference_size": [
+    390,
+    7897
+  ],
+  "candidate_size_original": [
+    390,
+    8061
+  ],
+  "candidate_size_compared": [
+    390,
+    7897
+  ],
+  "resized": false,
+  "geometry_match": false,
+  "height_delta": 164,
+  "unmatched_tails": {
+    "candidate": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-candidate-tail.png"
+  },
+  "regions": [
+    {
+      "name": "overlap",
+      "size": [
+        390,
+        7897
+      ],
+      "rms_diff": 89.684,
+      "mean_abs_diff": 56.788,
+      "candidate": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-overlap-candidate.png",
+      "diff": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-overlap-diff.png",
+      "heatmap": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-overlap-heatmap.png"
+    },
+    {
+      "name": "region-000",
+      "size": [
+        350,
+        63
+      ],
+      "rms_diff": 44.929,
+      "mean_abs_diff": 18.85,
+      "candidate": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-000-candidate.png",
+      "diff": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-000-diff.png",
+      "heatmap": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-000-heatmap.png"
+    },
+    {
+      "name": "region-001",
+      "size": [
+        390,
+        840
+      ],
+      "rms_diff": 72.111,
+      "mean_abs_diff": 46.53,
+      "candidate": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-001-candidate.png",
+      "diff": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-001-diff.png",
+      "heatmap": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-001-heatmap.png"
+    },
+    {
+      "name": "region-002",
+      "size": [
+        390,
+        100
+      ],
+      "rms_diff": 37.155,
+      "mean_abs_diff": 9.322,
+      "candidate": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-002-candidate.png",
+      "diff": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-002-diff.png",
+      "heatmap": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-002-heatmap.png"
+    },
+    {
+      "name": "region-003",
+      "size": [
+        390,
+        627
+      ],
+      "rms_diff": 86.078,
+      "mean_abs_diff": 50.494,
+      "candidate": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-003-candidate.png",
+      "diff": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-003-diff.png",
+      "heatmap": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-003-heatmap.png"
+    },
+    {
+      "name": "region-004",
+      "size": [
+        390,
+        700
+      ],
+      "rms_diff": 88.176,
+      "mean_abs_diff": 61.456,
+      "candidate": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-004-candidate.png",
+      "diff": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-004-diff.png",
+      "heatmap": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-004-heatmap.png"
+    },
+    {
+      "name": "region-005",
+      "size": [
+        390,
+        708
+      ],
+      "rms_diff": 67.517,
+      "mean_abs_diff": 26.064,
+      "candidate": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-005-candidate.png",
+      "diff": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-005-diff.png",
+      "heatmap": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-005-heatmap.png"
+    },
+    {
+      "name": "region-006",
+      "size": [
+        390,
+        700
+      ],
+      "rms_diff": 74.829,
+      "mean_abs_diff": 59.505,
+      "candidate": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-006-candidate.png",
+      "diff": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-006-diff.png",
+      "heatmap": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-006-heatmap.png"
+    },
+    {
+      "name": "region-007",
+      "size": [
+        390,
+        708
+      ],
+      "rms_diff": 51.844,
+      "mean_abs_diff": 34.8,
+      "candidate": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-007-candidate.png",
+      "diff": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-007-diff.png",
+      "heatmap": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-007-heatmap.png"
+    },
+    {
+      "name": "region-008",
+      "size": [
+        390,
+        816
+      ],
+      "rms_diff": 116.411,
+      "mean_abs_diff": 91.061,
+      "candidate": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-008-candidate.png",
+      "diff": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-008-diff.png",
+      "heatmap": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-008-heatmap.png"
+    },
+    {
+      "name": "region-009",
+      "size": [
+        390,
+        754
+      ],
+      "rms_diff": 91.042,
+      "mean_abs_diff": 60.939,
+      "candidate": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-009-candidate.png",
+      "diff": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-009-diff.png",
+      "heatmap": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-009-heatmap.png"
+    },
+    {
+      "name": "region-010",
+      "size": [
+        390,
+        124
+      ],
+      "rms_diff": 119.439,
+      "mean_abs_diff": 71.574,
+      "candidate": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-010-candidate.png",
+      "diff": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-010-diff.png",
+      "heatmap": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-010-heatmap.png"
+    },
+    {
+      "name": "region-011",
+      "size": [
+        390,
+        560
+      ],
+      "rms_diff": 113.993,
+      "mean_abs_diff": 91.444,
+      "candidate": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-011-candidate.png",
+      "diff": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-011-diff.png",
+      "heatmap": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-011-heatmap.png"
+    },
+    {
+      "name": "region-012",
+      "size": [
+        390,
+        259
+      ],
+      "rms_diff": 120.0,
+      "mean_abs_diff": 75.781,
+      "candidate": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-012-candidate.png",
+      "diff": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-012-diff.png",
+      "heatmap": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-012-heatmap.png"
+    },
+    {
+      "name": "region-013",
+      "size": [
+        390,
+        950
+      ],
+      "rms_diff": 100.866,
+      "mean_abs_diff": 50.718,
+      "candidate": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-013-candidate.png",
+      "diff": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-013-diff.png",
+      "heatmap": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-01\\390\\verified\\verify-region-013-heatmap.png"
+    }
+  ],
+  "note": "误差不等于还原度；字体、摄影和位置分别判断。尺寸一致也不代表视觉通过。"
+}

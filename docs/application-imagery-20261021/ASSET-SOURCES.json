@@ -1,0 +1,35 @@
+[
+  {
+    "key": "pump",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-f301de17-fe29-45c3-80d5-362f6fb8b820.png",
+    "reference": "D:/Hangxing/workspace/public/images/previews/satechi-site-20261018/application-pump.webp"
+  },
+  {
+    "key": "fan",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-006e4bbd-bd64-4c55-a597-564ba2862233.png",
+    "reference": "D:/Hangxing/workspace/public/images/previews/satechi-site-20261018/application-fan.webp"
+  },
+  {
+    "key": "washing",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-cc79afa2-f9c6-4ef5-b079-5436599b8cf6.png",
+    "reference": "D:/Hangxing/workspace/public/images/previews/satechi-site-20261018/application-washing.webp"
+  },
+  {
+    "key": "hvac",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-7d1d4790-c3bd-4872-914a-7a5a7f0b3021.png",
+    "reference": "D:/Hangxing/workspace/public/images/previews/satechi-site-20261018/application-hvac.webp"
+  },
+  {
+    "key": "cover",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-b6d761af-331e-47ae-8d62-35a2179c64fe.png",
+    "reference": [
+      "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-f301de17-fe29-45c3-80d5-362f6fb8b820.png",
+      "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-006e4bbd-bd64-4c55-a597-564ba2862233.png"
+    ]
+  },
+  {
+    "key": "hvac-wide",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-75b64f2a-895b-4185-a628-d251dd4e8751.png",
+    "reference": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-7d1d4790-c3bd-4872-914a-7a5a7f0b3021.png"
+  }
+]

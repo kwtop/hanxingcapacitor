@@ -1,0 +1,161 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/applications/fans-and-ventilation/",
+  "clientWidth": 1425,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 366.6041870117187,
+        "height": 48,
+        "left": 60,
+        "right": 588.9791870117188,
+        "top": 318.60418701171875,
+        "width": 528.9791870117188,
+        "x": 60,
+        "y": 318.60418701171875
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "48px",
+      "size": "40px",
+      "text": "Fans and blowers"
+    }
+  ],
+  "headings": [
+    "Motor circuit & original capacitor",
+    "Motor rating",
+    "Rectangular case",
+    "Cylindrical case",
+    "Compare capacitor series",
+    "CBB61",
+    "CBB60",
+    "Fit and connection check",
+    "Case and mounting tabs",
+    "Wire leads",
+    "Blade terminals",
+    "Send your capacitor requirements."
+  ],
+  "height": 4341,
+  "images": [
+    {
+      "alt": "Illustration of a ventilation fan and motor.",
+      "box": {
+        "bottom": 644.7291717529297,
+        "height": 477.125,
+        "left": 648.9791870117188,
+        "right": 1364.6666870117188,
+        "top": 167.6041717529297,
+        "width": 715.6875,
+        "x": 648.9791870117188,
+        "y": 167.6041717529297
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/application-fan.webp"
+    },
+    {
+      "alt": "Photograph of three rectangular CBB61 samples with blade terminals.",
+      "box": {
+        "bottom": 2002.666748046875,
+        "height": 220,
+        "left": 399.53125,
+        "right": 881.7604370117188,
+        "top": 1782.666748046875,
+        "width": 482.2291870117187,
+        "x": 399.53125,
+        "y": 1782.666748046875
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 84%",
+      "src": "/images/real/cbb61-13.jpg"
+    },
+    {
+      "alt": "Photograph of a Hanxing-marked white CBB60 capacitor sample with two insulated leads.",
+      "box": {
+        "bottom": 2002.666748046875,
+        "height": 220,
+        "left": 881.7604370117188,
+        "right": 1364.000030517578,
+        "top": 1782.666748046875,
+        "width": 482.2395935058594,
+        "x": 881.7604370117188,
+        "y": 1782.666748046875
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 55%",
+      "src": "/images/real/cbb60-hanxing-wired.jpg"
+    },
+    {
+      "alt": "Photograph of three rectangular CBB61 samples with blade terminals.",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "fit": "contain",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/real/cbb61-13.jpg"
+    },
+    {
+      "alt": "Photograph of a Hanxing-marked white CBB60 capacitor sample with two insulated leads.",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "fit": "contain",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/real/cbb60-hanxing-wired.jpg"
+    },
+    {
+      "alt": "Two real CBB61 samples with red leads and visible mounting tabs.",
+      "box": {
+        "bottom": 3024.354248046875,
+        "height": 500,
+        "left": 60,
+        "right": 588.9791870117188,
+        "top": 2524.354248046875,
+        "width": 528.9791870117188,
+        "x": 60,
+        "y": 2524.354248046875
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb61-leads-10.jpg"
+    }
+  ],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 1425,
+  "title": "Fans and blowers | CBB61 motor run capacitors | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/applications/fans-and-ventilation/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 900,
+    "width": 1440
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

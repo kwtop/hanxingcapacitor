@@ -1,0 +1,40 @@
+---
+import { products, productHref } from '../../data/site';
+const descriptions = ['Pumps & single-phase motors', 'Fans & blowers', 'HVAC & refrigeration', 'Separately switched circuits'];
+---
+<section class="ha-series" id="series" aria-labelledby="series-title">
+  <div class="container">
+    <header class="ha-section-heading">
+      <h2 id="series-title">Motor capacitor series</h2>
+    </header>
+    <div class="ha-series-grid">
+      {products.map((product, index) => <article class="ha-series-card">
+        <a class="ha-series-photo" href={productHref(product)} aria-label={`Explore ${product.code} ${product.shortName.toLowerCase()} capacitors`}>
+          <img src={`/images/previews/satechi-site-20261018/product-${product.code.toLowerCase()}.webp`} width="1200" height="1200" loading="lazy" decoding="async" alt={`Illustrative ${product.code} product display based on the supplied sample.`} />
+        </a>
+        <div class="ha-series-copy">
+          <div class="ha-series-title">
+            <h3><a href={productHref(product)}>{product.code}</a></h3>
+            <span class="ha-series-duty">{product.shortName}</span>
+          </div>
+          <p class="ha-series-purpose">{descriptions[index]}</p>
+          <dl class="ha-series-ratings" aria-label={`${product.code} published series ranges`}>
+            {product.code === 'CBB65' ? <>
+              <div class="ha-series-rating-group">
+                <dt>Single</dt>
+                <dd><span>2–100 µF</span><span class="ha-series-voltage">110–450 VAC</span></dd>
+              </div>
+              <div class="ha-series-rating-group">
+                <dt>Dual</dt>
+                <dd><span>1+15 to <span class="ha-no-break">15+80 µF</span></span><span class="ha-series-voltage">370–450 VAC</span></dd>
+              </div>
+            </> : <>
+              <div><dt class="visually-hidden">Capacitance range</dt><dd>{product.capacitance}</dd></div>
+              <div><dt class="visually-hidden">Rated voltage</dt><dd class="ha-series-voltage">{product.voltage}</dd></div>
+            </>}
+          </dl>
+        </div>
+      </article>)}
+    </div>
+  </div>
+</section>

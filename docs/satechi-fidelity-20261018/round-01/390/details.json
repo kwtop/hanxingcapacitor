@@ -1,0 +1,905 @@
+{
+  "cards": [
+    {
+      "box": {
+        "bottom": 1556.8021240234375,
+        "height": 443,
+        "left": 16,
+        "right": 316,
+        "top": 1113.8021240234375,
+        "width": 300,
+        "x": 16,
+        "y": 1113.8021240234375
+      },
+      "cls": "sp-category"
+    },
+    {
+      "box": {
+        "bottom": 1556.8021240234375,
+        "height": 443,
+        "left": 336,
+        "right": 636,
+        "top": 1113.8021240234375,
+        "width": 300,
+        "x": 336,
+        "y": 1113.8021240234375
+      },
+      "cls": "sp-category"
+    },
+    {
+      "box": {
+        "bottom": 1556.8021240234375,
+        "height": 443,
+        "left": 656,
+        "right": 956,
+        "top": 1113.8021240234375,
+        "width": 300,
+        "x": 656,
+        "y": 1113.8021240234375
+      },
+      "cls": "sp-category"
+    },
+    {
+      "box": {
+        "bottom": 1556.8021240234375,
+        "height": 443,
+        "left": 976,
+        "right": 1276,
+        "top": 1113.8021240234375,
+        "width": 300,
+        "x": 976,
+        "y": 1113.8021240234375
+      },
+      "cls": "sp-category"
+    },
+    {
+      "box": {
+        "bottom": 2939.80224609375,
+        "height": 463,
+        "left": 0,
+        "right": 325,
+        "top": 2476.80224609375,
+        "width": 325,
+        "x": 0,
+        "y": 2476.80224609375
+      },
+      "cls": "sp-rail-card"
+    },
+    {
+      "box": {
+        "bottom": 2939.80224609375,
+        "height": 463,
+        "left": 335,
+        "right": 660,
+        "top": 2476.80224609375,
+        "width": 325,
+        "x": 335,
+        "y": 2476.80224609375
+      },
+      "cls": "sp-rail-card"
+    },
+    {
+      "box": {
+        "bottom": 2939.80224609375,
+        "height": 463,
+        "left": 670,
+        "right": 995,
+        "top": 2476.80224609375,
+        "width": 325,
+        "x": 670,
+        "y": 2476.80224609375
+      },
+      "cls": "sp-rail-card"
+    },
+    {
+      "box": {
+        "bottom": 2939.80224609375,
+        "height": 463,
+        "left": 1005,
+        "right": 1330,
+        "top": 2476.80224609375,
+        "width": 325,
+        "x": 1005,
+        "y": 2476.80224609375
+      },
+      "cls": "sp-rail-card"
+    },
+    {
+      "box": {
+        "bottom": 4435.197998046875,
+        "height": 463,
+        "left": 0,
+        "right": 325,
+        "top": 3972.197998046875,
+        "width": 325,
+        "x": 0,
+        "y": 3972.197998046875
+      },
+      "cls": "sp-rail-card sp-guide-card"
+    },
+    {
+      "box": {
+        "bottom": 4435.197998046875,
+        "height": 463,
+        "left": 335,
+        "right": 660,
+        "top": 3972.197998046875,
+        "width": 325,
+        "x": 335,
+        "y": 3972.197998046875
+      },
+      "cls": "sp-rail-card sp-guide-card"
+    },
+    {
+      "box": {
+        "bottom": 4435.197998046875,
+        "height": 463,
+        "left": 670,
+        "right": 995,
+        "top": 3972.197998046875,
+        "width": 325,
+        "x": 670,
+        "y": 3972.197998046875
+      },
+      "cls": "sp-rail-card sp-guide-card"
+    },
+    {
+      "box": {
+        "bottom": 4435.197998046875,
+        "height": 463,
+        "left": 1005,
+        "right": 1330,
+        "top": 3972.197998046875,
+        "width": 325,
+        "x": 1005,
+        "y": 3972.197998046875
+      },
+      "cls": "sp-rail-card sp-guide-card"
+    },
+    {
+      "box": {
+        "bottom": 5050.458679199219,
+        "height": 342.66668701171875,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 4707.7919921875,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 4707.7919921875
+      },
+      "cls": "sp-application sp-application-0"
+    },
+    {
+      "box": {
+        "bottom": 5370.45849609375,
+        "height": 300,
+        "left": 16,
+        "right": 316,
+        "top": 5070.45849609375,
+        "width": 300,
+        "x": 16,
+        "y": 5070.45849609375
+      },
+      "cls": "sp-application sp-application-1"
+    },
+    {
+      "box": {
+        "bottom": 5370.45849609375,
+        "height": 300,
+        "left": 336,
+        "right": 636,
+        "top": 5070.45849609375,
+        "width": 300,
+        "x": 336,
+        "y": 5070.45849609375
+      },
+      "cls": "sp-application sp-application-2"
+    },
+    {
+      "box": {
+        "bottom": 5370.45849609375,
+        "height": 300,
+        "left": 656,
+        "right": 956,
+        "top": 5070.45849609375,
+        "width": 300,
+        "x": 656,
+        "y": 5070.45849609375
+      },
+      "cls": "sp-application sp-application-3"
+    },
+    {
+      "box": {
+        "bottom": 5753.125183105469,
+        "height": 302.66668701171875,
+        "left": 36,
+        "right": 338.66668701171875,
+        "top": 5450.45849609375,
+        "width": 302.66668701171875,
+        "x": 36,
+        "y": 5450.45849609375
+      },
+      "cls": "sp-inquiry-photo"
+    }
+  ],
+  "clientWidth": 375,
+  "headings": [
+    {
+      "box": {
+        "bottom": 216.81250762939453,
+        "height": 67.20833587646484,
+        "left": 72.125,
+        "right": 302.53125,
+        "top": 149.6041717529297,
+        "width": 230.40625,
+        "x": 72.125,
+        "y": 149.6041717529297
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "Motor capacitors.Run & start."
+    },
+    {
+      "box": {
+        "bottom": 1073.8021659851074,
+        "height": 24.197917938232425,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 1049.604248046875,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 1049.604248046875
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "24.2px",
+      "size": "22px",
+      "text": "Motor capacitor series"
+    },
+    {
+      "box": {
+        "bottom": 1456.1979579925537,
+        "height": 22.39583396911621,
+        "left": 28,
+        "right": 304,
+        "top": 1433.8021240234375,
+        "width": 276,
+        "x": 28,
+        "y": 1433.8021240234375
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "22.4px",
+      "size": "18px",
+      "text": "CBB60 · Motor run"
+    },
+    {
+      "box": {
+        "bottom": 1456.1979579925537,
+        "height": 22.39583396911621,
+        "left": 348,
+        "right": 624,
+        "top": 1433.8021240234375,
+        "width": 276,
+        "x": 348,
+        "y": 1433.8021240234375
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "22.4px",
+      "size": "18px",
+      "text": "CBB61 · Fan run"
+    },
+    {
+      "box": {
+        "bottom": 1456.1979579925537,
+        "height": 22.39583396911621,
+        "left": 668,
+        "right": 944,
+        "top": 1433.8021240234375,
+        "width": 276,
+        "x": 668,
+        "y": 1433.8021240234375
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "22.4px",
+      "size": "18px",
+      "text": "CBB65 · HVAC run"
+    },
+    {
+      "box": {
+        "bottom": 1456.1979579925537,
+        "height": 22.39583396911621,
+        "left": 988,
+        "right": 1264,
+        "top": 1433.8021240234375,
+        "width": 276,
+        "x": 988,
+        "y": 1433.8021240234375
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "22.4px",
+      "size": "18px",
+      "text": "CD60 · Motor start"
+    },
+    {
+      "box": {
+        "bottom": 1764.0104598999023,
+        "height": 67.20833587646484,
+        "left": 32,
+        "right": 342.66668701171875,
+        "top": 1696.8021240234375,
+        "width": 310.66668701171875,
+        "x": 32,
+        "y": 1696.8021240234375
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "Start with the original label."
+    },
+    {
+      "box": {
+        "bottom": 2845.39599609375,
+        "height": 33.59375,
+        "left": 20,
+        "right": 305,
+        "top": 2811.80224609375,
+        "width": 285,
+        "x": 20,
+        "y": 2811.80224609375
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "16.8px",
+      "size": "14px",
+      "text": "CBB60 · Motor run"
+    },
+    {
+      "box": {
+        "bottom": 2845.39599609375,
+        "height": 33.59375,
+        "left": 355,
+        "right": 640,
+        "top": 2811.80224609375,
+        "width": 285,
+        "x": 355,
+        "y": 2811.80224609375
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "16.8px",
+      "size": "14px",
+      "text": "CBB61 · Fan run"
+    },
+    {
+      "box": {
+        "bottom": 2845.39599609375,
+        "height": 33.59375,
+        "left": 690,
+        "right": 975,
+        "top": 2811.80224609375,
+        "width": 285,
+        "x": 690,
+        "y": 2811.80224609375
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "16.8px",
+      "size": "14px",
+      "text": "CBB65 · HVAC run"
+    },
+    {
+      "box": {
+        "bottom": 2845.39599609375,
+        "height": 33.59375,
+        "left": 1025,
+        "right": 1310,
+        "top": 2811.80224609375,
+        "width": 285,
+        "x": 1025,
+        "y": 2811.80224609375
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "16.8px",
+      "size": "14px",
+      "text": "CD60 · Motor start"
+    },
+    {
+      "box": {
+        "bottom": 3259.40633392334,
+        "height": 67.20833587646484,
+        "left": 32,
+        "right": 342.66668701171875,
+        "top": 3192.197998046875,
+        "width": 310.66668701171875,
+        "x": 32,
+        "y": 3192.197998046875
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "The right rating. The right fit."
+    },
+    {
+      "box": {
+        "bottom": 4340.7919921875,
+        "height": 33.59375,
+        "left": 20,
+        "right": 305,
+        "top": 4307.1982421875,
+        "width": 285,
+        "x": 20,
+        "y": 4307.1982421875
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "16.8px",
+      "size": "14px",
+      "text": "Read the capacitor label"
+    },
+    {
+      "box": {
+        "bottom": 4340.7919921875,
+        "height": 33.59375,
+        "left": 355,
+        "right": 640,
+        "top": 4307.1982421875,
+        "width": 285,
+        "x": 355,
+        "y": 4307.1982421875
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "16.8px",
+      "size": "14px",
+      "text": "Dimensions & connections"
+    },
+    {
+      "box": {
+        "bottom": 4340.7919921875,
+        "height": 33.59375,
+        "left": 690,
+        "right": 975,
+        "top": 4307.1982421875,
+        "width": 285,
+        "x": 690,
+        "y": 4307.1982421875
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "16.8px",
+      "size": "14px",
+      "text": "Start or run?"
+    },
+    {
+      "box": {
+        "bottom": 4340.7919921875,
+        "height": 33.59375,
+        "left": 1025,
+        "right": 1310,
+        "top": 4307.1982421875,
+        "width": 285,
+        "x": 1025,
+        "y": 4307.1982421875
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "16.8px",
+      "size": "14px",
+      "text": "Single or dual run"
+    },
+    {
+      "box": {
+        "bottom": 4657.791667938232,
+        "height": 24.197917938232425,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 4633.59375,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 4633.59375
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "24.2px",
+      "size": "22px",
+      "text": "Find your application"
+    },
+    {
+      "box": {
+        "bottom": 5030.458333969116,
+        "height": 26.39583396911621,
+        "left": 36,
+        "right": 334.66668701171875,
+        "top": 5004.0625,
+        "width": 298.66668701171875,
+        "x": 36,
+        "y": 5004.0625
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "26.4px",
+      "size": "22px",
+      "text": "Water pumps"
+    },
+    {
+      "box": {
+        "bottom": 5350.458333969116,
+        "height": 26.39583396911621,
+        "left": 36,
+        "right": 292,
+        "top": 5324.0625,
+        "width": 256,
+        "x": 36,
+        "y": 5324.0625
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "26.4px",
+      "size": "22px",
+      "text": "Air conditioners / HVAC"
+    },
+    {
+      "box": {
+        "bottom": 5350.45849609375,
+        "height": 100,
+        "left": 356,
+        "right": 616,
+        "top": 5250.45849609375,
+        "width": 260,
+        "x": 356,
+        "y": 5250.45849609375
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "26.4px",
+      "size": "22px",
+      "text": "Fans and blowers"
+    },
+    {
+      "box": {
+        "bottom": 5350.45849609375,
+        "height": 100,
+        "left": 676,
+        "right": 936,
+        "top": 5250.45849609375,
+        "width": 260,
+        "x": 676,
+        "y": 5250.45849609375
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "26.4px",
+      "size": "22px",
+      "text": "Washing machines"
+    },
+    {
+      "box": {
+        "bottom": 5805.927083969116,
+        "height": 28.80208396911621,
+        "left": 36,
+        "right": 338.66668701171875,
+        "top": 5777.125,
+        "width": 302.66668701171875,
+        "x": 36,
+        "y": 5777.125
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "28.8px",
+      "size": "24px",
+      "text": "Send your requirements"
+    },
+    {
+      "box": {
+        "bottom": 6144.125164031982,
+        "height": 24.197917938232425,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 6119.92724609375,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 6119.92724609375
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "24.2px",
+      "size": "22px",
+      "text": "Samples & production"
+    },
+    {
+      "box": {
+        "bottom": 6448.916830062866,
+        "height": 26.39583396911621,
+        "left": 36,
+        "right": 338.66668701171875,
+        "top": 6422.52099609375,
+        "width": 302.66668701171875,
+        "x": 36,
+        "y": 6422.52099609375
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "26.4px",
+      "size": "22px",
+      "text": "Production footage"
+    },
+    {
+      "box": {
+        "bottom": 6708.916830062866,
+        "height": 26.39583396911621,
+        "left": 36,
+        "right": 338.66668701171875,
+        "top": 6682.52099609375,
+        "width": 302.66668701171875,
+        "x": 36,
+        "y": 6682.52099609375
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "26.4px",
+      "size": "22px",
+      "text": "Original sample photographs"
+    },
+    {
+      "box": {
+        "bottom": 6861.510417938232,
+        "height": 18.197917938232425,
+        "left": 56,
+        "right": 286,
+        "top": 6843.3125,
+        "width": 230,
+        "x": 56,
+        "y": 6843.3125
+      },
+      "font": "\"Inter Variable\", Arial, sans-serif",
+      "line": "18.2px",
+      "size": "14px",
+      "text": "Technical guides"
+    },
+    {
+      "box": {
+        "bottom": 6919.906414031982,
+        "height": 18.197917938232425,
+        "left": 56,
+        "right": 302.3645935058594,
+        "top": 6901.70849609375,
+        "width": 246.36459350585935,
+        "x": 56,
+        "y": 6901.70849609375
+      },
+      "font": "\"Inter Variable\", Arial, sans-serif",
+      "line": "18.2px",
+      "size": "14px",
+      "text": "Buying & shipping"
+    },
+    {
+      "box": {
+        "bottom": 6978.302410125732,
+        "height": 18.197917938232425,
+        "left": 56,
+        "right": 281.6770935058594,
+        "top": 6960.1044921875,
+        "width": 225.67709350585935,
+        "x": 56,
+        "y": 6960.1044921875
+      },
+      "font": "\"Inter Variable\", Arial, sans-serif",
+      "line": "18.2px",
+      "size": "14px",
+      "text": "Original photographs"
+    },
+    {
+      "box": {
+        "bottom": 7036.697917938232,
+        "height": 18.197917938232425,
+        "left": 56,
+        "right": 250.03125,
+        "top": 7018.5,
+        "width": 194.03125,
+        "x": 56,
+        "y": 7018.5
+      },
+      "font": "\"Inter Variable\", Arial, sans-serif",
+      "line": "18.2px",
+      "size": "14px",
+      "text": "Contact Hanxing"
+    }
+  ],
+  "images": [
+    {
+      "complete": true,
+      "naturalHeight": 76,
+      "naturalWidth": 76,
+      "src": "http://127.0.0.1:4335/favicon.svg"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 1598,
+      "naturalWidth": 780,
+      "src": "http://127.0.0.1:4335/images/previews/satechi-fidelity-20261018/hero-mobile.webp"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 1401,
+      "naturalWidth": 780,
+      "src": "http://127.0.0.1:4335/images/previews/satechi-fidelity-20261018/label-mobile.webp"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 1400,
+      "naturalWidth": 780,
+      "src": "http://127.0.0.1:4335/images/previews/satechi-fidelity-20261018/fit-mobile.webp"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 1599,
+      "naturalWidth": 780,
+      "src": "http://127.0.0.1:4335/images/previews/satechi-fidelity-20261018/fan-mobile.webp"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 700,
+      "naturalWidth": 700,
+      "src": "http://127.0.0.1:4335/images/previews/satechi-fidelity-20261018/category-cbb60.webp"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 700,
+      "naturalWidth": 700,
+      "src": "http://127.0.0.1:4335/images/previews/satechi-fidelity-20261018/category-cbb61.webp"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 700,
+      "naturalWidth": 700,
+      "src": "http://127.0.0.1:4335/images/previews/satechi-fidelity-20261018/category-cbb65.webp"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 700,
+      "naturalWidth": 700,
+      "src": "http://127.0.0.1:4335/images/previews/satechi-fidelity-20261018/category-cd60.webp"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 1401,
+      "naturalWidth": 780,
+      "src": "http://127.0.0.1:4335/images/previews/satechi-fidelity-20261018/label-mobile.webp"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 1254,
+      "naturalWidth": 1254,
+      "src": "http://127.0.0.1:4335/images/reference-20261012/cbb60-studio.webp"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 1254,
+      "naturalWidth": 1254,
+      "src": "http://127.0.0.1:4335/images/reference-20261012/cbb61-studio.webp"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 1254,
+      "naturalWidth": 1254,
+      "src": "http://127.0.0.1:4335/images/reference-20261012/cbb65-studio.webp"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 1254,
+      "naturalWidth": 1254,
+      "src": "http://127.0.0.1:4335/images/reference-20261012/cd60-studio.webp"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 2000,
+      "naturalWidth": 2000,
+      "src": "http://127.0.0.1:4335/images/real/cbb60-hanxing-wired.jpg"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 2000,
+      "naturalWidth": 2000,
+      "src": "http://127.0.0.1:4335/images/real/cbb61-13.jpg"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 2000,
+      "naturalWidth": 2000,
+      "src": "http://127.0.0.1:4335/images/real/cbb65-2.jpg"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 2000,
+      "naturalWidth": 2000,
+      "src": "http://127.0.0.1:4335/images/real/cd60-25.jpg"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 1400,
+      "naturalWidth": 780,
+      "src": "http://127.0.0.1:4335/images/previews/satechi-fidelity-20261018/fit-mobile.webp"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 700,
+      "naturalWidth": 700,
+      "src": "http://127.0.0.1:4335/images/previews/satechi-fidelity-20261018/category-cbb65.webp"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 732,
+      "naturalWidth": 1800,
+      "src": "http://127.0.0.1:4335/images/previews/satechi-fidelity-20261018/fit-desktop.webp"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 700,
+      "naturalWidth": 700,
+      "src": "http://127.0.0.1:4335/images/previews/satechi-fidelity-20261018/category-cd60.webp"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 2000,
+      "naturalWidth": 2000,
+      "src": "http://127.0.0.1:4335/images/real/cbb65-2.jpg"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 1200,
+      "naturalWidth": 1200,
+      "src": "http://127.0.0.1:4335/images/previews/satechi-fidelity-20261018/inquiry.webp"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 700,
+      "naturalWidth": 700,
+      "src": "http://127.0.0.1:4335/images/previews/satechi-fidelity-20261018/category-cbb60.webp"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 1080,
+      "naturalWidth": 1920,
+      "src": "http://127.0.0.1:4335/images/real/batch-products.jpg"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 700,
+      "naturalWidth": 700,
+      "src": "http://127.0.0.1:4335/images/previews/satechi-fidelity-20261018/category-cbb61.webp"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 1100,
+      "naturalWidth": 1100,
+      "src": "http://127.0.0.1:4335/images/previews/satechi-fidelity-20261018/application-pump.webp"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 650,
+      "naturalWidth": 1200,
+      "src": "http://127.0.0.1:4335/images/previews/satechi-fidelity-20261018/application-hvac.webp"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 720,
+      "naturalWidth": 1200,
+      "src": "http://127.0.0.1:4335/images/previews/satechi-fidelity-20261018/application-fan.webp"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 720,
+      "naturalWidth": 1200,
+      "src": "http://127.0.0.1:4335/images/previews/satechi-fidelity-20261018/application-washing.webp"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 1200,
+      "naturalWidth": 1200,
+      "src": "http://127.0.0.1:4335/images/previews/satechi-fidelity-20261018/inquiry.webp"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 1080,
+      "naturalWidth": 1920,
+      "src": "http://127.0.0.1:4335/images/real/film-rolls.jpg"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 1080,
+      "naturalWidth": 1920,
+      "src": "http://127.0.0.1:4335/images/real/batch-products.jpg"
+    },
+    {
+      "complete": true,
+      "naturalHeight": 76,
+      "naturalWidth": 76,
+      "src": "http://127.0.0.1:4335/favicon.svg"
+    }
+  ],
+  "scrollWidth": 375
+}

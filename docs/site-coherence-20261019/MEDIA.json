@@ -1,0 +1,82 @@
+[
+  {
+    "name": "terminal-comparison",
+    "width": 640,
+    "height": 427,
+    "bytes": 24840,
+    "file": "public/images/previews/site-coherence-20261019/terminal-comparison-640.webp",
+    "method": "resize and WebP encoding of ImageGen output"
+  },
+  {
+    "name": "terminal-comparison",
+    "width": 960,
+    "height": 640,
+    "bytes": 65276,
+    "file": "public/images/previews/site-coherence-20261019/terminal-comparison-960.webp",
+    "method": "resize and WebP encoding of ImageGen output"
+  },
+  {
+    "name": "terminal-comparison",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 187304,
+    "file": "public/images/previews/site-coherence-20261019/terminal-comparison-1536.webp",
+    "method": "resize and WebP encoding of ImageGen output"
+  },
+  {
+    "name": "measurement-flatlay",
+    "width": 640,
+    "height": 427,
+    "bytes": 33396,
+    "file": "public/images/previews/site-coherence-20261019/measurement-flatlay-640.webp",
+    "method": "resize and WebP encoding of ImageGen output"
+  },
+  {
+    "name": "measurement-flatlay",
+    "width": 960,
+    "height": 640,
+    "bytes": 74646,
+    "file": "public/images/previews/site-coherence-20261019/measurement-flatlay-960.webp",
+    "method": "resize and WebP encoding of ImageGen output"
+  },
+  {
+    "name": "measurement-flatlay",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 184952,
+    "file": "public/images/previews/site-coherence-20261019/measurement-flatlay-1536.webp",
+    "method": "resize and WebP encoding of ImageGen output"
+  },
+  {
+    "name": "fit-panorama",
+    "width": 640,
+    "height": 228,
+    "bytes": 8676,
+    "file": "public/images/previews/site-coherence-20261019/fit-panorama-640.webp",
+    "method": "resize and WebP encoding of ImageGen output"
+  },
+  {
+    "name": "fit-panorama",
+    "width": 960,
+    "height": 343,
+    "bytes": 16744,
+    "file": "public/images/previews/site-coherence-20261019/fit-panorama-960.webp",
+    "method": "resize and WebP encoding of ImageGen output"
+  },
+  {
+    "name": "fit-panorama",
+    "width": 1536,
+    "height": 548,
+    "bytes": 35830,
+    "file": "public/images/previews/site-coherence-20261019/fit-panorama-1536.webp",
+    "method": "resize and WebP encoding of ImageGen output"
+  },
+  {
+    "name": "fit-panorama",
+    "width": 2048,
+    "height": 731,
+    "bytes": 55830,
+    "file": "public/images/previews/site-coherence-20261019/fit-panorama-2048.webp",
+    "method": "resize and WebP encoding of ImageGen output"
+  }
+]

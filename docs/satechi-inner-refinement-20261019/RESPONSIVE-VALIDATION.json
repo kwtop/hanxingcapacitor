@@ -1,0 +1,1127 @@
+[
+  {
+    "slug": "about",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "About HAN XING"
+    ],
+    "height": 3249,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/about/",
+    "width": 1440
+  },
+  {
+    "slug": "applications",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "Applications"
+    ],
+    "height": 3129,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site has-collection-cover",
+    "url": "http://127.0.0.1:4340/applications/",
+    "width": 1440
+  },
+  {
+    "slug": "applications--appliances-and-small-motors",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "Washing machines"
+    ],
+    "height": 4461,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/applications/appliances-and-small-motors/",
+    "width": 1440
+  },
+  {
+    "slug": "applications--fans-and-ventilation",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "Fans and blowers"
+    ],
+    "height": 4549,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/applications/fans-and-ventilation/",
+    "width": 1440
+  },
+  {
+    "slug": "applications--hvac-and-refrigeration",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "Air conditioners / HVAC"
+    ],
+    "height": 4746,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/applications/hvac-and-refrigeration/",
+    "width": 1440
+  },
+  {
+    "slug": "applications--pumps-and-water-systems",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "Water pumps"
+    ],
+    "height": 4563,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/applications/pumps-and-water-systems/",
+    "width": 1440
+  },
+  {
+    "slug": "buying-guide",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "Buying & shipping"
+    ],
+    "height": 3426,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/buying-guide/",
+    "width": 1440
+  },
+  {
+    "slug": "contact",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "ContactHAN XING"
+    ],
+    "height": 1621,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/contact/",
+    "width": 1440
+  },
+  {
+    "slug": "factory",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "Manufacturing and quality"
+    ],
+    "height": 5152,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/factory/",
+    "width": 1440
+  },
+  {
+    "slug": "factory--packing-and-dispatch",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "Packing and dispatch"
+    ],
+    "height": 4809,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/factory/packing-and-dispatch/",
+    "width": 1440
+  },
+  {
+    "slug": "faq",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "Motor capacitor buying questions"
+    ],
+    "height": 2217,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/faq/",
+    "width": 1440
+  },
+  {
+    "slug": "home",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "Motor capacitors.Run & start."
+    ],
+    "height": 7200,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site is-home",
+    "url": "http://127.0.0.1:4340/",
+    "width": 1440
+  },
+  {
+    "slug": "oem",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "OEM motor capacitors"
+    ],
+    "height": 3689,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/oem/",
+    "width": 1440
+  },
+  {
+    "slug": "oem-quality",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "OEM and quality"
+    ],
+    "height": 2585,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/oem-quality/",
+    "width": 1440
+  },
+  {
+    "slug": "privacy-policy",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "Privacy notice"
+    ],
+    "height": 2340,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/privacy-policy/",
+    "width": 1440
+  },
+  {
+    "slug": "products",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "Motor capacitor series"
+    ],
+    "height": 3525,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site has-collection-cover",
+    "url": "http://127.0.0.1:4340/products/",
+    "width": 1440
+  },
+  {
+    "slug": "products--cbb60-motor-run-capacitor",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "CBB60motor run capacitors"
+    ],
+    "height": 7224,
+    "notLoaded": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/products/cbb60-motor-run-capacitor/",
+    "width": 1440
+  },
+  {
+    "slug": "products--cbb61-fan-capacitor",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "CBB61fan capacitors"
+    ],
+    "height": 7809,
+    "notLoaded": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/products/cbb61-fan-capacitor/",
+    "width": 1440
+  },
+  {
+    "slug": "products--cbb65-air-conditioner-capacitor",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "CBB65single & dual-run capacitors"
+    ],
+    "height": 8172,
+    "notLoaded": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/products/cbb65-air-conditioner-capacitor/",
+    "width": 1440
+  },
+  {
+    "slug": "products--cd60-start-capacitor",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "CD60motor start capacitors"
+    ],
+    "height": 7529,
+    "notLoaded": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/products/cd60-start-capacitor/",
+    "width": 1440
+  },
+  {
+    "slug": "products--photographs",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "Product sample photographs"
+    ],
+    "height": 2178,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/products/photographs/",
+    "width": 1440
+  },
+  {
+    "slug": "resources",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "Motor capacitor resources"
+    ],
+    "height": 3055,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/resources/",
+    "width": 1440
+  },
+  {
+    "slug": "resources--articles",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "Technical guides"
+    ],
+    "height": 3533,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/resources/articles/",
+    "width": 1440
+  },
+  {
+    "slug": "resources--capacitance-voltage-guide",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "Capacitance and voltage ratings for motor capacitors"
+    ],
+    "height": 5065,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/resources/capacitance-voltage-guide/",
+    "width": 1440
+  },
+  {
+    "slug": "resources--cbb60-vs-cbb61-vs-cbb65",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "CBB60 vs CBB61 vs CBB65"
+    ],
+    "height": 5489,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/resources/cbb60-vs-cbb61-vs-cbb65/",
+    "width": 1440
+  },
+  {
+    "slug": "resources--dimensions-terminals-mounting",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "Capacitor dimensions, connections and mounting"
+    ],
+    "height": 5486,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/resources/dimensions-terminals-mounting/",
+    "width": 1440
+  },
+  {
+    "slug": "resources--motor-capacitor-order-shipment-checklist",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "Motor capacitor order & shipping checklist"
+    ],
+    "height": 6966,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/resources/motor-capacitor-order-shipment-checklist/",
+    "width": 1440
+  },
+  {
+    "slug": "resources--read-motor-capacitor-label",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "Reading a motor capacitor label"
+    ],
+    "height": 5637,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/resources/read-motor-capacitor-label/",
+    "width": 1440
+  },
+  {
+    "slug": "resources--single-vs-dual-run-capacitors",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "Single-run vs dual-run capacitors"
+    ],
+    "height": 5299,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/resources/single-vs-dual-run-capacitors/",
+    "width": 1440
+  },
+  {
+    "slug": "resources--start-vs-run-capacitors",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "Start capacitor vs run capacitor"
+    ],
+    "height": 4954,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/resources/start-vs-run-capacitors/",
+    "width": 1440
+  },
+  {
+    "slug": "terms",
+    "client": 1425,
+    "duplicateIds": [],
+    "h1": [
+      "Quotation and order terms"
+    ],
+    "height": 2753,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 1425,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/terms/",
+    "width": 1440
+  },
+  {
+    "slug": "about",
+    "client": 1009,
+    "duplicateIds": [],
+    "h1": [
+      "About HAN XING"
+    ],
+    "height": 2860,
+    "notLoaded": [],
+    "scroll": 1009,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/about/",
+    "width": 1024
+  },
+  {
+    "slug": "applications",
+    "client": 1009,
+    "duplicateIds": [],
+    "h1": [
+      "Applications"
+    ],
+    "height": 2767,
+    "notLoaded": [],
+    "scroll": 1009,
+    "theme": "satechi-preview satechi-site has-collection-cover",
+    "url": "http://127.0.0.1:4340/applications/",
+    "width": 1024
+  },
+  {
+    "slug": "products",
+    "client": 1009,
+    "duplicateIds": [],
+    "h1": [
+      "Motor capacitor series"
+    ],
+    "height": 3278,
+    "notLoaded": [],
+    "scroll": 1009,
+    "theme": "satechi-preview satechi-site has-collection-cover",
+    "url": "http://127.0.0.1:4340/products/",
+    "width": 1024
+  },
+  {
+    "slug": "products--cbb65-air-conditioner-capacitor",
+    "client": 1009,
+    "duplicateIds": [],
+    "h1": [
+      "CBB65single & dual-run capacitors"
+    ],
+    "height": 7536,
+    "notLoaded": [],
+    "scroll": 1009,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/products/cbb65-air-conditioner-capacitor/",
+    "width": 1024
+  },
+  {
+    "slug": "resources--articles",
+    "client": 1009,
+    "duplicateIds": [],
+    "h1": [
+      "Technical guides"
+    ],
+    "height": 3151,
+    "notLoaded": [],
+    "scroll": 1009,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/resources/articles/",
+    "width": 1024
+  },
+  {
+    "slug": "resources--read-motor-capacitor-label",
+    "client": 1009,
+    "duplicateIds": [],
+    "h1": [
+      "Reading a motor capacitor label"
+    ],
+    "height": 5587,
+    "notLoaded": [],
+    "scroll": 1009,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/resources/read-motor-capacitor-label/",
+    "width": 1024
+  },
+  {
+    "slug": "about",
+    "client": 753,
+    "duplicateIds": [],
+    "h1": [
+      "About HAN XING"
+    ],
+    "height": 4075,
+    "notLoaded": [],
+    "scroll": 753,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/about/",
+    "width": 768
+  },
+  {
+    "slug": "applications",
+    "client": 753,
+    "duplicateIds": [],
+    "h1": [
+      "Applications"
+    ],
+    "height": 3098,
+    "notLoaded": [],
+    "scroll": 753,
+    "theme": "satechi-preview satechi-site has-collection-cover",
+    "url": "http://127.0.0.1:4340/applications/",
+    "width": 768
+  },
+  {
+    "slug": "products",
+    "client": 753,
+    "duplicateIds": [],
+    "h1": [
+      "Motor capacitor series"
+    ],
+    "height": 4821,
+    "notLoaded": [],
+    "scroll": 753,
+    "theme": "satechi-preview satechi-site has-collection-cover",
+    "url": "http://127.0.0.1:4340/products/",
+    "width": 768
+  },
+  {
+    "slug": "products--cbb65-air-conditioner-capacitor",
+    "client": 753,
+    "duplicateIds": [],
+    "h1": [
+      "CBB65single & dual-run capacitors"
+    ],
+    "height": 8084,
+    "notLoaded": [],
+    "scroll": 753,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/products/cbb65-air-conditioner-capacitor/",
+    "width": 768
+  },
+  {
+    "slug": "resources--articles",
+    "client": 753,
+    "duplicateIds": [],
+    "h1": [
+      "Technical guides"
+    ],
+    "height": 3746,
+    "notLoaded": [],
+    "scroll": 753,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/resources/articles/",
+    "width": 768
+  },
+  {
+    "slug": "resources--read-motor-capacitor-label",
+    "client": 753,
+    "duplicateIds": [],
+    "h1": [
+      "Reading a motor capacitor label"
+    ],
+    "height": 5889,
+    "notLoaded": [],
+    "scroll": 753,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/resources/read-motor-capacitor-label/",
+    "width": 768
+  },
+  {
+    "slug": "about",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "About HAN XING"
+    ],
+    "height": 4076,
+    "notLoaded": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/about/",
+    "width": 390
+  },
+  {
+    "slug": "applications",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "Applications"
+    ],
+    "height": 4402,
+    "notLoaded": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site has-collection-cover",
+    "url": "http://127.0.0.1:4340/applications/",
+    "width": 390
+  },
+  {
+    "slug": "applications--appliances-and-small-motors",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "Washing machines"
+    ],
+    "height": 6485,
+    "notLoaded": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/applications/appliances-and-small-motors/",
+    "width": 390
+  },
+  {
+    "slug": "applications--fans-and-ventilation",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "Fans and blowers"
+    ],
+    "height": 6813,
+    "notLoaded": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/applications/fans-and-ventilation/",
+    "width": 390
+  },
+  {
+    "slug": "applications--hvac-and-refrigeration",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "Air conditioners / HVAC"
+    ],
+    "height": 7119,
+    "notLoaded": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/applications/hvac-and-refrigeration/",
+    "width": 390
+  },
+  {
+    "slug": "applications--pumps-and-water-systems",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "Water pumps"
+    ],
+    "height": 6671,
+    "notLoaded": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/applications/pumps-and-water-systems/",
+    "width": 390
+  },
+  {
+    "slug": "buying-guide",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "Buying & shipping"
+    ],
+    "height": 4868,
+    "notLoaded": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/buying-guide/",
+    "width": 390
+  },
+  {
+    "slug": "contact",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "ContactHAN XING"
+    ],
+    "height": 2717,
+    "notLoaded": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/contact/",
+    "width": 390
+  },
+  {
+    "slug": "factory",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "Manufacturing and quality"
+    ],
+    "height": 6253,
+    "notLoaded": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/factory/",
+    "width": 390
+  },
+  {
+    "slug": "factory--packing-and-dispatch",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "Packing and dispatch"
+    ],
+    "height": 6353,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/factory/packing-and-dispatch/",
+    "width": 390
+  },
+  {
+    "slug": "faq",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "Motor capacitor buying questions"
+    ],
+    "height": 2983,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/faq/",
+    "width": 390
+  },
+  {
+    "slug": "home",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "Motor capacitors.Run & start."
+    ],
+    "height": 8112,
+    "notLoaded": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site is-home",
+    "url": "http://127.0.0.1:4340/",
+    "width": 390,
+    "deferredRailImages": [
+      {
+        "clip": {
+          "bottom": -2146.2709045410156,
+          "height": 440.3958435058594,
+          "left": 16,
+          "right": 358.66668701171875,
+          "top": -2586.666748046875,
+          "width": 342.66668701171875,
+          "x": 16,
+          "y": -2586.666748046875
+        },
+        "image": {
+          "bottom": -2306.666748046875,
+          "height": 280,
+          "left": 916,
+          "right": 1196,
+          "top": -2586.666748046875,
+          "width": 280,
+          "x": 916,
+          "y": -2586.666748046875
+        },
+        "lazy": "lazy",
+        "loaded": false,
+        "src": "/images/previews/satechi-fidelity-20261018/category-cd60.webp",
+        "track": "sp-category-grid"
+      },
+      {
+        "clip": {
+          "bottom": 595.5208587646484,
+          "height": 465.1979370117187,
+          "left": 0,
+          "right": 374.6666870117187,
+          "top": 130.3229217529297,
+          "width": 374.6666870117187,
+          "x": 0,
+          "y": 130.3229217529297
+        },
+        "image": {
+          "bottom": 445.3229217529297,
+          "height": 305,
+          "left": 1025,
+          "right": 1330,
+          "top": 140.3229217529297,
+          "width": 305,
+          "x": 1025,
+          "y": 140.3229217529297
+        },
+        "lazy": "lazy",
+        "loaded": false,
+        "src": "/images/real/cbb65-2.jpg",
+        "track": "sp-card-track"
+      }
+    ]
+  },
+  {
+    "slug": "oem",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "OEM motor capacitors"
+    ],
+    "height": 5579,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/oem/",
+    "width": 390
+  },
+  {
+    "slug": "oem-quality",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "OEM and quality"
+    ],
+    "height": 3433,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/oem-quality/",
+    "width": 390
+  },
+  {
+    "slug": "privacy-policy",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "Privacy notice"
+    ],
+    "height": 3585,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/privacy-policy/",
+    "width": 390
+  },
+  {
+    "slug": "products",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "Motor capacitor series"
+    ],
+    "height": 4616,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site has-collection-cover",
+    "url": "http://127.0.0.1:4340/products/",
+    "width": 390
+  },
+  {
+    "slug": "products--cbb60-motor-run-capacitor",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "CBB60motor run capacitors"
+    ],
+    "height": 10242,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/products/cbb60-motor-run-capacitor/",
+    "width": 390
+  },
+  {
+    "slug": "products--cbb61-fan-capacitor",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "CBB61fan capacitors"
+    ],
+    "height": 10957,
+    "notLoaded": [],
+    "overflow": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/products/cbb61-fan-capacitor/",
+    "width": 390
+  },
+  {
+    "slug": "products--cbb65-air-conditioner-capacitor",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "CBB65single & dual-run capacitors"
+    ],
+    "height": 11222,
+    "notLoaded": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/products/cbb65-air-conditioner-capacitor/",
+    "width": 390
+  },
+  {
+    "slug": "products--cd60-start-capacitor",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "CD60motor start capacitors"
+    ],
+    "height": 10923,
+    "notLoaded": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/products/cd60-start-capacitor/",
+    "width": 390
+  },
+  {
+    "slug": "products--photographs",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "Product sample photographs"
+    ],
+    "height": 3166,
+    "notLoaded": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/products/photographs/",
+    "width": 390
+  },
+  {
+    "slug": "resources",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "Motor capacitor resources"
+    ],
+    "height": 4478,
+    "notLoaded": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/resources/",
+    "width": 390
+  },
+  {
+    "slug": "resources--articles",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "Technical guides"
+    ],
+    "height": 4673,
+    "notLoaded": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/resources/articles/",
+    "width": 390
+  },
+  {
+    "slug": "resources--capacitance-voltage-guide",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "Capacitance and voltage ratings for motor capacitors"
+    ],
+    "height": 5922,
+    "notLoaded": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/resources/capacitance-voltage-guide/",
+    "width": 390
+  },
+  {
+    "slug": "resources--cbb60-vs-cbb61-vs-cbb65",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "CBB60 vs CBB61 vs CBB65"
+    ],
+    "height": 6651,
+    "notLoaded": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/resources/cbb60-vs-cbb61-vs-cbb65/",
+    "width": 390
+  },
+  {
+    "slug": "resources--dimensions-terminals-mounting",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "Capacitor dimensions, connections and mounting"
+    ],
+    "height": 6583,
+    "notLoaded": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/resources/dimensions-terminals-mounting/",
+    "width": 390
+  },
+  {
+    "slug": "resources--motor-capacitor-order-shipment-checklist",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "Motor capacitor order & shipping checklist"
+    ],
+    "height": 9281,
+    "notLoaded": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/resources/motor-capacitor-order-shipment-checklist/",
+    "width": 390
+  },
+  {
+    "slug": "resources--read-motor-capacitor-label",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "Reading a motor capacitor label"
+    ],
+    "height": 6579,
+    "notLoaded": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/resources/read-motor-capacitor-label/",
+    "width": 390
+  },
+  {
+    "slug": "resources--single-vs-dual-run-capacitors",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "Single-run vs dual-run capacitors"
+    ],
+    "height": 6687,
+    "notLoaded": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/resources/single-vs-dual-run-capacitors/",
+    "width": 390
+  },
+  {
+    "slug": "resources--start-vs-run-capacitors",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "Start capacitor vs run capacitor"
+    ],
+    "height": 6385,
+    "notLoaded": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/resources/start-vs-run-capacitors/",
+    "width": 390
+  },
+  {
+    "slug": "terms",
+    "client": 375,
+    "duplicateIds": [],
+    "h1": [
+      "Quotation and order terms"
+    ],
+    "height": 4093,
+    "notLoaded": [],
+    "scroll": 375,
+    "theme": "satechi-preview satechi-site",
+    "url": "http://127.0.0.1:4340/terms/",
+    "width": 390
+  }
+]

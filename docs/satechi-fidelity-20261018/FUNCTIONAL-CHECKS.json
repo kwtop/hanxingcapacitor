@@ -1,0 +1,87 @@
+{
+  "desktopMenu": {
+    "expanded": "true",
+    "focus": "/products/cbb60-motor-run-capacitor/",
+    "links": [
+      "/products/cbb60-motor-run-capacitor/",
+      "/products/cbb61-fan-capacitor/",
+      "/products/cbb65-air-conditioner-capacitor/",
+      "/products/cd60-start-capacitor/",
+      "/products/photographs/"
+    ],
+    "visible": true
+  },
+  "escapeMenu": {
+    "closed": true,
+    "focus": "/products/"
+  },
+  "hero1": {
+    "active": "1",
+    "image": "http://127.0.0.1:4335/images/previews/satechi-fidelity-20261018/label-desktop.webp",
+    "visible": 1
+  },
+  "hero2": {
+    "active": "2",
+    "image": "http://127.0.0.1:4335/images/previews/satechi-fidelity-20261018/fit-desktop.webp",
+    "visible": 1
+  },
+  "hero3": {
+    "active": "3",
+    "image": "http://127.0.0.1:4335/images/previews/satechi-fidelity-20261018/fan-desktop.webp",
+    "visible": 1
+  },
+  "seriesTabs": {
+    "first": "CBB60 original sample",
+    "selected": "true",
+    "visible": true
+  },
+  "guidesTabs": {
+    "first": "Prepare your inquiry",
+    "selected": "true",
+    "visible": true
+  },
+  "inquiry": {
+    "seriesControls": [
+      {
+        "name": "destination",
+        "value": ""
+      }
+    ],
+    "title": "Contact Hanxing Capacitor | Motor Capacitor Inquiries",
+    "url": "http://127.0.0.1:4335/contact/?series=CBB65&request=quote#inquiry-form",
+    "fieldConfirmed": [],
+    "contextConfirmed": {
+      "returnHref": "/products/cbb65-air-conditioner-capacitor/",
+      "text": "Series: CBB65",
+      "url": "http://127.0.0.1:4335/contact/?series=CBB65&request=quote#inquiry-form",
+      "visible": true
+    }
+  },
+  "defaultSeries": "CBB60",
+  "railNext": {
+    "left": 375.3333435058594,
+    "nextDisabled": false,
+    "previousDisabled": false
+  },
+  "railPrevious": 40,
+  "mobileMenu": {
+    "expanded": "true",
+    "links": [
+      "/products/cbb60-motor-run-capacitor/",
+      "/products/cbb61-fan-capacitor/",
+      "/products/cbb65-air-conditioner-capacitor/",
+      "/products/cd60-start-capacitor/",
+      "/products/photographs/"
+    ],
+    "open": true,
+    "overflow": false,
+    "parent": "/products/"
+  },
+  "mobileEscape": {
+    "closed": true,
+    "focus": "Open menu"
+  },
+  "railNextAfterFix": 335.3333435058594,
+  "railPreviousAfterFix": 0,
+  "finalSession": "Fresh tab 13; old-session immediate observations superseded by visible DOM checks."
+}

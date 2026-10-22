@@ -1,0 +1,49 @@
+{
+  "fontEvidence": {
+    "heading": {
+      "fonts": [
+        {
+          "familyName": "Urbane",
+          "glyphCount": 23,
+          "isCustomFont": true,
+          "postScriptName": "Urbane-Medium"
+        }
+      ]
+    },
+    "body": {
+      "fonts": []
+    }
+  },
+  "buttonStates": {
+    "default": {
+      "background": "rgb(27, 28, 33)",
+      "border": "0px none rgb(252, 252, 250)",
+      "borderRadius": "80px",
+      "color": "rgb(252, 252, 250)",
+      "font": "600 15px / 12px usual, sans-serif",
+      "letterSpacing": "0.56px",
+      "padding": "16px 20px",
+      "transition": "border 0.2s, color 0.2s, background-color 0.2s"
+    },
+    "hover": {
+      "background": "rgb(157, 157, 158)",
+      "border": "0px none rgb(122, 123, 125)",
+      "borderRadius": "80px",
+      "color": "rgb(122, 123, 125)",
+      "font": "600 15px / 12px usual, sans-serif",
+      "letterSpacing": "0.56px",
+      "padding": "16px 20px",
+      "transition": "border 0.2s, color 0.2s, background-color 0.2s"
+    },
+    "hover+active": {
+      "background": "rgb(248, 248, 246)",
+      "border": "0px none rgb(31, 32, 37)",
+      "borderRadius": "80px",
+      "color": "rgb(31, 32, 37)",
+      "font": "600 15px / 12px usual, sans-serif",
+      "letterSpacing": "0.56px",
+      "padding": "16px 20px",
+      "transition": "border 0.2s, color 0.2s, background-color 0.2s"
+    }
+  }
+}

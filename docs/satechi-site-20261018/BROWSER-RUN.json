@@ -1,0 +1,1122 @@
+[
+  {
+    "phase": "pass-02",
+    "route": "/products/",
+    "width": 1440,
+    "height": 3394,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "pass-02",
+    "route": "/products/",
+    "width": 390,
+    "height": 4603,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "pass-02",
+    "route": "/products/cbb60-motor-run-capacitor/",
+    "width": 1440,
+    "height": 6352,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "pass-02",
+    "route": "/products/cbb60-motor-run-capacitor/",
+    "width": 390,
+    "height": 9604,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "pass-02",
+    "route": "/applications/hvac-and-refrigeration/",
+    "width": 1440,
+    "height": 4447,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "pass-02",
+    "route": "/applications/hvac-and-refrigeration/",
+    "width": 390,
+    "height": 7046,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "pass-02",
+    "route": "/about/",
+    "width": 1440,
+    "height": 3382,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "pass-02",
+    "route": "/about/",
+    "width": 390,
+    "height": 4057,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "pass-02",
+    "route": "/resources/",
+    "width": 1440,
+    "height": 2369,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "pass-02",
+    "route": "/resources/",
+    "width": 390,
+    "height": 4519,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "pass-02",
+    "route": "/resources/articles/",
+    "width": 1440,
+    "height": 3042,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "pass-02",
+    "route": "/resources/articles/",
+    "width": 390,
+    "height": 4701,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "pass-02",
+    "route": "/resources/read-motor-capacitor-label/",
+    "width": 1440,
+    "height": 5973,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "pass-02",
+    "route": "/resources/read-motor-capacitor-label/",
+    "width": 390,
+    "height": 6342,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "pass-02",
+    "route": "/contact/",
+    "width": 1440,
+    "height": 1621,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "pass-02",
+    "route": "/contact/",
+    "width": 390,
+    "height": 2717,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "pass-02",
+    "route": "/oem-quality/",
+    "width": 1440,
+    "height": 1785,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "pass-02",
+    "route": "/oem-quality/",
+    "width": 390,
+    "height": 3215,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "pass-02",
+    "route": "/factory/",
+    "width": 1440,
+    "height": 4962,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "pass-02",
+    "route": "/factory/",
+    "width": 390,
+    "height": 6162,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "pass-02",
+    "route": "/buying-guide/",
+    "width": 1440,
+    "height": 3451,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "pass-02",
+    "route": "/buying-guide/",
+    "width": 390,
+    "height": 4815,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "pass-02",
+    "route": "/faq/",
+    "width": 1440,
+    "height": 2217,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "pass-02",
+    "route": "/faq/",
+    "width": 390,
+    "height": 2983,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/",
+    "width": 1440,
+    "height": 7167,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/",
+    "width": 390,
+    "height": 8043,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/about/",
+    "width": 1440,
+    "height": 3382,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/about/",
+    "width": 390,
+    "height": 3989,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/applications/",
+    "width": 1440,
+    "height": 2323,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/applications/",
+    "width": 390,
+    "height": 4416,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/applications/appliances-and-small-motors/",
+    "width": 1440,
+    "height": 4211,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/applications/appliances-and-small-motors/",
+    "width": 390,
+    "height": 6445,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/applications/fans-and-ventilation/",
+    "width": 1440,
+    "height": 4299,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/applications/fans-and-ventilation/",
+    "width": 390,
+    "height": 6776,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/applications/hvac-and-refrigeration/",
+    "width": 1440,
+    "height": 4447,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/applications/hvac-and-refrigeration/",
+    "width": 390,
+    "height": 7046,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/applications/pumps-and-water-systems/",
+    "width": 1440,
+    "height": 4341,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/applications/pumps-and-water-systems/",
+    "width": 390,
+    "height": 6721,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/buying-guide/",
+    "width": 1440,
+    "height": 3450,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/buying-guide/",
+    "width": 390,
+    "height": 4813,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/contact/",
+    "width": 1440,
+    "height": 1621,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/contact/",
+    "width": 390,
+    "height": 2717,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/factory/",
+    "width": 1440,
+    "height": 4962,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/factory/",
+    "width": 390,
+    "height": 6140,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/factory/packing-and-dispatch/",
+    "width": 1440,
+    "height": 4778,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/factory/packing-and-dispatch/",
+    "width": 390,
+    "height": 6271,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/faq/",
+    "width": 1440,
+    "height": 2217,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/faq/",
+    "width": 390,
+    "height": 2983,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/oem-quality/",
+    "width": 1440,
+    "height": 1785,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/oem-quality/",
+    "width": 390,
+    "height": 3193,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/oem/",
+    "width": 1440,
+    "height": 3689,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/oem/",
+    "width": 390,
+    "height": 5479,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/privacy-policy/",
+    "width": 1440,
+    "height": 2340,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/privacy-policy/",
+    "width": 390,
+    "height": 3508,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/",
+    "width": 1440,
+    "height": 3297,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/",
+    "width": 390,
+    "height": 4476,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/cbb60-motor-run-capacitor/",
+    "width": 1440,
+    "height": 6352,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/cbb60-motor-run-capacitor/",
+    "width": 390,
+    "height": 9603,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/cbb61-fan-capacitor/",
+    "width": 1440,
+    "height": 6815,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/cbb61-fan-capacitor/",
+    "width": 390,
+    "height": 10325,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/cbb65-air-conditioner-capacitor/",
+    "width": 1440,
+    "height": 7307,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/cbb65-air-conditioner-capacitor/",
+    "width": 390,
+    "height": 10444,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/cd60-start-capacitor/",
+    "width": 1440,
+    "height": 6576,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/cd60-start-capacitor/",
+    "width": 390,
+    "height": 10215,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/photographs/",
+    "width": 1440,
+    "height": 2178,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/photographs/",
+    "width": 390,
+    "height": 3166,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/resources/",
+    "width": 1440,
+    "height": 2369,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/resources/",
+    "width": 390,
+    "height": 4518,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/resources/articles/",
+    "width": 1440,
+    "height": 3041,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/resources/articles/",
+    "width": 390,
+    "height": 4701,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/resources/capacitance-voltage-guide/",
+    "width": 1440,
+    "height": 5664,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/resources/capacitance-voltage-guide/",
+    "width": 390,
+    "height": 5672,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/resources/cbb60-vs-cbb61-vs-cbb65/",
+    "width": 1440,
+    "height": 5556,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/resources/cbb60-vs-cbb61-vs-cbb65/",
+    "width": 390,
+    "height": 6276,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/resources/dimensions-terminals-mounting/",
+    "width": 1440,
+    "height": 5662,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/resources/dimensions-terminals-mounting/",
+    "width": 390,
+    "height": 6289,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/resources/motor-capacitor-order-shipment-checklist/",
+    "width": 1440,
+    "height": 7535,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/resources/motor-capacitor-order-shipment-checklist/",
+    "width": 390,
+    "height": 8959,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/resources/read-motor-capacitor-label/",
+    "width": 1440,
+    "height": 6157,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/resources/read-motor-capacitor-label/",
+    "width": 390,
+    "height": 6297,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/resources/single-vs-dual-run-capacitors/",
+    "width": 1440,
+    "height": 5428,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/resources/single-vs-dual-run-capacitors/",
+    "width": 390,
+    "height": 6376,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/resources/start-vs-run-capacitors/",
+    "width": 1440,
+    "height": 5082,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/resources/start-vs-run-capacitors/",
+    "width": 390,
+    "height": 6058,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/terms/",
+    "width": 1440,
+    "height": 2753,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/terms/",
+    "width": 390,
+    "height": 3867,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/cbb60-motor-run-capacitor/",
+    "width": 1440,
+    "height": 6335,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/cbb61-fan-capacitor/",
+    "width": 1440,
+    "height": 6799,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/cbb65-air-conditioner-capacitor/",
+    "width": 1440,
+    "height": 7290,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/cd60-start-capacitor/",
+    "width": 1440,
+    "height": 6560,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/",
+    "width": 1024,
+    "height": 6523,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/",
+    "width": 768,
+    "height": 8331,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/",
+    "width": 1024,
+    "height": 3068,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/",
+    "width": 768,
+    "height": 4627,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/cbb65-air-conditioner-capacitor/",
+    "width": 1024,
+    "height": 6914,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/cbb65-air-conditioner-capacitor/",
+    "width": 768,
+    "height": 7747,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/applications/hvac-and-refrigeration/",
+    "width": 1024,
+    "height": 4562,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/applications/hvac-and-refrigeration/",
+    "width": 768,
+    "height": 5833,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/resources/articles/",
+    "width": 1024,
+    "height": 2833,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/resources/articles/",
+    "width": 768,
+    "height": 3562,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/resources/read-motor-capacitor-label/",
+    "width": 1024,
+    "height": 6040,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/resources/read-motor-capacitor-label/",
+    "width": 768,
+    "height": 6332,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/contact/",
+    "width": 1024,
+    "height": 1621,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/contact/",
+    "width": 768,
+    "height": 2444,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/about/",
+    "width": 1024,
+    "height": 2953,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/about/",
+    "width": 768,
+    "height": 4061,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "before-final",
+    "route": "/",
+    "width": 1440,
+    "height": 5189,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "before-final",
+    "route": "/",
+    "width": 390,
+    "height": 6590,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "before-final",
+    "route": "/products/",
+    "width": 1440,
+    "height": 2951,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "before-final",
+    "route": "/products/",
+    "width": 390,
+    "height": 4126,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "before-final",
+    "route": "/products/cbb60-motor-run-capacitor/",
+    "width": 1440,
+    "height": 5549,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "before-final",
+    "route": "/products/cbb60-motor-run-capacitor/",
+    "width": 390,
+    "height": 8737,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "before-final",
+    "route": "/applications/hvac-and-refrigeration/",
+    "width": 1440,
+    "height": 4161,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "before-final",
+    "route": "/applications/hvac-and-refrigeration/",
+    "width": 390,
+    "height": 6829,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "before-final",
+    "route": "/about/",
+    "width": 1440,
+    "height": 2601,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "before-final",
+    "route": "/about/",
+    "width": 390,
+    "height": 3267,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "before-final",
+    "route": "/resources/articles/",
+    "width": 1440,
+    "height": 2263,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "before-final",
+    "route": "/resources/articles/",
+    "width": 390,
+    "height": 3165,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "before-final",
+    "route": "/resources/read-motor-capacitor-label/",
+    "width": 1440,
+    "height": 4500,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "before-final",
+    "route": "/resources/read-motor-capacitor-label/",
+    "width": 390,
+    "height": 6841,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "before-final",
+    "route": "/contact/",
+    "width": 1440,
+    "height": 1695,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "before-final",
+    "route": "/contact/",
+    "width": 390,
+    "height": 2495,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "before-final",
+    "route": "/oem-quality/",
+    "width": 1440,
+    "height": 1781,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "before-final",
+    "route": "/oem-quality/",
+    "width": 390,
+    "height": 3124,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/",
+    "width": 1440,
+    "height": 7169,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/",
+    "width": 1024,
+    "height": 6527,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/",
+    "width": 768,
+    "height": 8341,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/",
+    "width": 390,
+    "height": 8050,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/applications/fans-and-ventilation/",
+    "width": 1440,
+    "height": 4341,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/applications/fans-and-ventilation/",
+    "width": 390,
+    "height": 6796,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/cbb60-motor-run-capacitor/",
+    "width": 1440,
+    "height": 6266,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/cbb60-motor-run-capacitor/",
+    "width": 390,
+    "height": 9621,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/cbb61-fan-capacitor/",
+    "width": 1440,
+    "height": 6731,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/cbb61-fan-capacitor/",
+    "width": 390,
+    "height": 10343,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/cbb65-air-conditioner-capacitor/",
+    "width": 1440,
+    "height": 7253,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/cbb65-air-conditioner-capacitor/",
+    "width": 390,
+    "height": 10495,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/cd60-start-capacitor/",
+    "width": 1440,
+    "height": 6490,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/cd60-start-capacitor/",
+    "width": 390,
+    "height": 10231,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/cbb65-air-conditioner-capacitor/",
+    "width": 1024,
+    "height": 6937,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/products/cbb65-air-conditioner-capacitor/",
+    "width": 768,
+    "height": 7767,
+    "overflow": 0,
+    "fontsReady": true
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "bodyClass": "porcelain-site reference-site",
+  "canonical": "https://www.hanxingcapacitor.com/resources/articles/",
+  "clientWidth": 1425,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 245.28125762939453,
+        "height": 69.11458587646484,
+        "left": 72.33333587646484,
+        "right": 1054.3645858764648,
+        "top": 176.1666717529297,
+        "width": 982.03125,
+        "x": 72.33333587646484,
+        "y": 176.1666717529297
+      },
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "69.12px",
+      "size": "64px",
+      "text": "Technical guides"
+    }
+  ],
+  "headings": [
+    "Electrical ratings and duty",
+    "Reading a motor capacitor label",
+    "Start capacitor vs run capacitor",
+    "Capacitance and voltage ratings for motor capacitors",
+    "Compare capacitor series",
+    "CBB60 vs CBB61 vs CBB65",
+    "Single-run vs dual-run capacitors",
+    "Dimensions & connections",
+    "Capacitor dimensions, connections and mounting",
+    "Datasheets & drawings"
+  ],
+  "height": 2263,
+  "images": [],
+  "robots": [
+    "noindex,follow"
+  ],
+  "scrollWidth": 1425,
+  "title": "Motor Capacitor Technical Guides | HAN XING",
+  "url": "http://127.0.0.1:4335/resources/articles/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 900,
+    "width": 1440
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "created": "2026-10-20",
+  "tool": "built-in ImageGen",
+  "source": "C:/Users/Administrator/.codex/generated_images/01a12e45-120c-7121-b105-37f6c2dcb9df/exec-8c82857e-8580-492c-b2c9-5b876fb7399f.png",
+  "reference": "/images/real/cbb65-2.jpg",
+  "paletteReference": "/images/previews/site-coherence-20261019/fit-panorama-2048.webp",
+  "use": "Illustrative product study; not documentary production or test evidence",
+  "width": 2098,
+  "height": 749,
+  "variants": [
+    {
+      "file": "D:/Hangxing/workspace/public/images/previews/site-coherence-20261019/fit-panorama-complete-20261020-640.webp",
+      "width": 640,
+      "bytes": 7386
+    },
+    {
+      "file": "D:/Hangxing/workspace/public/images/previews/site-coherence-20261019/fit-panorama-complete-20261020-960.webp",
+      "width": 960,
+      "bytes": 14770
+    },
+    {
+      "file": "D:/Hangxing/workspace/public/images/previews/site-coherence-20261019/fit-panorama-complete-20261020-1536.webp",
+      "width": 1536,
+      "bytes": 34340
+    },
+    {
+      "file": "D:/Hangxing/workspace/public/images/previews/site-coherence-20261019/fit-panorama-complete-20261020-2048.webp",
+      "width": 2048,
+      "bytes": 54442
+    },
+    {
+      "file": "D:/Hangxing/workspace/public/images/previews/site-coherence-20261019/fit-panorama-complete-20261020-2098.webp",
+      "width": 2098,
+      "bytes": 56406
+    }
+  ]
+}

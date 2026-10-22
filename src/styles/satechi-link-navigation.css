@@ -1,0 +1,72 @@
+/* Match navigation treatment to its task. Inline references and documentary captions
+   keep their underlines; primary inquiry buttons retain the accepted visual system. */
+body.satechi-site { --ss-link-surface:#f1eee8; --ss-link-border:#dedbd4; }
+
+/* Home: two clear destinations, with the article links available on demand. */
+body.satechi-site #main .sp-home-a .ha-guide-columns { display:grid; grid-template-columns:1fr; gap:14px; margin-top:28px; }
+body.satechi-site #main .sp-home-a .ha-guide-topic,
+body.satechi-site #main .sp-home-a .ha-guide-columns nav+nav { padding:0; border:1px solid var(--ss-link-border); border-radius:12px; overflow:hidden; background:#faf9f6; }
+body.satechi-site #main .sp-home-a .ha-guide-topic-lead { display:grid; grid-template-columns:104px minmax(0,1fr); gap:18px; align-items:center; padding:16px; color:var(--sp-ink); text-decoration:none; }
+body.satechi-site #main .sp-home-a .ha-guide-topic-lead img { display:block; width:104px; height:auto; aspect-ratio:3/2; object-fit:contain; border-radius:6px; }
+body.satechi-site #main .sp-home-a .ha-guide-topic-lead h3 { font:500 19px/1.3 var(--sp-heading); margin:0 0 7px; }
+body.satechi-site #main .sp-home-a .ha-guide-topic-lead p { margin:0; font-size:13px; line-height:1.5; color:var(--sp-muted); }
+body.satechi-site #main .sp-home-a .ha-guide-topic-lead:hover { background:var(--ss-link-surface); }
+body.satechi-site #main .sp-home-a .ha-guide-topic-details { margin:0; padding:0; border:0; border-top:1px solid var(--ss-link-border); border-radius:0; background:transparent; }
+body.satechi-site #main .sp-home-a .ha-guide-topic-details summary { display:flex; align-items:center; justify-content:space-between; gap:16px; min-height:44px; list-style:none; padding:12px 16px; cursor:pointer; font-size:12px; line-height:1.5; font-weight:500; }
+body.satechi-site #main .sp-home-a .ha-guide-topic-details summary::-webkit-details-marker { display:none; }
+body.satechi-site #main .sp-home-a .ha-guide-topic-details summary::after { content:'+'; position:static; display:block; font-size:18px; font-weight:400; }
+body.satechi-site #main .sp-home-a .ha-guide-topic-details[open] summary::after { content:'−'; }
+body.satechi-site #main .sp-home-a .ha-guide-topic-details summary:hover { background:var(--ss-link-surface); }
+body.satechi-site #main .sp-home-a .ha-guide-topic-details ul { display:grid; gap:0; margin:0; padding:0 16px 8px; list-style:none; }
+body.satechi-site #main .sp-home-a .ha-guide-topic-details li+li { border-top:1px solid var(--ss-link-border); }
+body.satechi-site #main .sp-home-a .ha-guide-topic-details li a { display:flex; align-items:center; width:100%; min-height:44px; padding:10px 0; font-size:13px; line-height:1.5; text-decoration:none; }
+body.satechi-site #main .sp-home-a .ha-guide-topic-details li a:hover { text-decoration:underline; text-underline-offset:4px; }
+
+/* Sparse actions: a quiet secondary control, rather than a permanent underline. */
+body.satechi-site #main :is(.procurement-actions,.resource-hub-actions,.pdr-resource-actions,.review-guide-section-links,.inquiry-callout-details nav) > a:not(.button):not(.pdr-button),
+body.satechi-site #main :is(.ss-featured-guide-copy,.ss-product-story>div,.procurement-routes>article,.procurement-approval-steps>li,.buying-next-stages>section>div) > .card-link,
+body.satechi-site #main :is(.hvr-circuit-paths>div,.faq-group details) > :is(.card-link,.hvr-path-link) {
+ display:inline-flex; align-items:center; justify-content:flex-start; max-width:100%; width:fit-content; min-height:44px; padding:10px 16px; margin-top:12px; border:1px solid var(--ss-link-border); border-radius:6px; background:transparent; color:var(--sp-ink); font:500 13px/1.5 var(--font-body); letter-spacing:0; text-align:left; text-decoration:none; text-transform:none; white-space:normal;
+}
+body.satechi-site #main :is(.procurement-actions,.resource-hub-actions,.pdr-resource-actions,.review-guide-section-links,.inquiry-callout-details nav) > a:not(.button):not(.pdr-button):hover,
+body.satechi-site #main :is(.ss-featured-guide-copy,.ss-product-story>div,.procurement-routes>article,.procurement-approval-steps>li,.buying-next-stages>section>div) > .card-link:hover,
+body.satechi-site #main :is(.hvr-circuit-paths>div,.faq-group details) > :is(.card-link,.hvr-path-link):hover { border-color:var(--sp-ink); background:var(--ss-link-surface); color:var(--sp-ink); }
+body.satechi-site #main :is(.procurement-actions,.resource-hub-actions,.pdr-resource-actions,.review-guide-section-links,.inquiry-callout-details nav) { gap:10px; }
+body.satechi-site #main :is(.procurement-actions,.resource-hub-actions,.pdr-resource-actions,.review-guide-section-links,.inquiry-callout-details nav) > a { margin-top:0; }
+
+/* Related reading: an editorial index, not another bank of buttons. */
+body.satechi-site #main .review-guide-related { display:grid; grid-template-columns:.65fr 1.35fr; gap:0 32px; padding-top:28px; }
+body.satechi-site #main .review-guide-related>h2 { grid-column:1; grid-row:1/10; margin:0; font-size:22px; }
+body.satechi-site #main .review-guide-related>.card-link { grid-column:2; display:flex; align-items:center; width:100%; min-height:52px; margin:0; padding:15px 4px; border:0; border-bottom:1px solid var(--ss-link-border); background:transparent; text-decoration:none; font-size:14px; line-height:1.5; }
+body.satechi-site #main .review-guide-related>.card-link:hover { background:var(--ss-link-surface); }
+body.satechi-site #main .procurement-record-links { display:grid; grid-template-columns:1fr; gap:0; max-width:900px; margin-left:auto; border-top:1px solid var(--ss-link-border); }
+body.satechi-site #main .procurement-record-links>a { display:flex; align-items:center; min-height:60px; padding:18px 20px; border:0; border-bottom:1px solid var(--ss-link-border); text-decoration:none; }
+body.satechi-site #main .procurement-record-links>a:hover { background:var(--ss-link-surface); }
+body.satechi-site #main .procurement-related>.container { display:grid; grid-template-columns:.55fr 1.45fr; gap:40px; align-items:start; }
+body.satechi-site #main .procurement-related h2 { max-width:20ch; }
+body.satechi-site #main .procurement-record-links { width:100%; }
+
+/* Chapter navigation is compact and recognizably different from related pages. */
+body.satechi-site #main :is(.ss-product-index,.buying-stages,.procurement-process-index) { gap:8px; }
+body.satechi-site #main :is(.ss-product-index,.buying-stages,.procurement-process-index)>a { display:inline-flex; align-items:center; min-height:40px; padding:9px 14px; border-radius:5px; color:var(--sp-ink); text-decoration:none; }
+body.satechi-site #main :is(.ss-product-index,.buying-stages,.procurement-process-index)>a:hover { background:var(--ss-link-surface); text-decoration:none; }
+body.satechi-site #main .review-guide-toc nav a { border-radius:5px; padding-inline:10px; }
+body.satechi-site #main .review-guide-toc nav a:hover { background:var(--ss-link-surface); text-decoration:none; }
+
+body.satechi-site #main :is(.ha-guide-topic a,.ha-guide-topic summary,.review-guide-related>a,.procurement-record-links>a,.card-link,.ss-product-index>a,.buying-stages>a,.procurement-process-index>a):focus-visible { outline:2px solid var(--sp-ink); outline-offset:4px; }
+@media(max-width:800px) {
+ body.satechi-site #main .procurement-related>.container { grid-template-columns:1fr; gap:12px; }
+ body.satechi-site #main .procurement-related h2 { max-width:none; }
+}
+@media(max-width:600px) {
+ body.satechi-site #main .sp-home-a .ha-guide-columns { gap:14px; }
+ body.satechi-site #main .sp-home-a .ha-guide-topic-lead { grid-template-columns:88px minmax(0,1fr); gap:14px; padding:14px; }
+ body.satechi-site #main .sp-home-a .ha-guide-topic-lead img { width:88px; }
+ body.satechi-site #main .sp-home-a .ha-guide-topic-lead h3 { font-size:18px; }
+ body.satechi-site #main .review-guide-related { grid-template-columns:1fr; gap:16px; }
+ body.satechi-site #main .review-guide-related>h2,body.satechi-site #main .review-guide-related>.card-link { grid-column:1; grid-row:auto; }
+ body.satechi-site #main .review-guide-related>.card-link { margin:0; }
+ body.satechi-site #main :is(.resource-hub-actions,.pdr-resource-actions,.review-guide-section-links,.inquiry-callout-details nav) { align-items:stretch; }
+ body.satechi-site #main :is(.resource-hub-actions,.pdr-resource-actions,.review-guide-section-links,.inquiry-callout-details nav)>a:not(.pdr-button):not(.button) { flex:0 1 auto; }
+ body.satechi-site #main .procurement-record-links>a { padding-inline:14px; }
+}

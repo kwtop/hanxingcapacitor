@@ -81,8 +81,7 @@ body.reference-site #main .pg-gallery :is(button,a):focus-visible { outline:2px 
   body.reference-site #main .pg-dialog-note { padding-block:8px; }
 }
 
-/* Photographs remain visible in place without a zoom or raw-file action. */
-body.reference-site #main article.pdr-reference .pg-main { cursor: default; }
+/* The main photograph opens the shared viewer; raw source records stay unchanged. */
 body.reference-site #main article.hvr-reference .hvr-fit-photo > .hvr-fit-image {
   display: block; width: 100%; aspect-ratio: 4 / 3; overflow: hidden; background: #fff;
 }

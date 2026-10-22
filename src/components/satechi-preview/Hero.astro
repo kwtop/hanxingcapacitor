@@ -1,0 +1,18 @@
+---
+const root = '/images/previews/satechi-fidelity-20261018';
+---
+<section class="sp-hero" aria-labelledby="home-title">
+  <div class="sp-slide" id="hero-slide-0">
+    <picture class="sp-hero-photo">
+      <source media="(max-width: 600px)" srcset={`${root}/hero-mobile.webp`} width="780" height="1598" />
+      <source media="(max-width: 1020px)" srcset={`${root}/hero-tablet.webp`} width="1229" height="1280" />
+      <source media="(max-width: 1200px)" srcset={`${root}/hero-laptop.webp`} width="1385" height="1136" />
+      <img src={`${root}/hero-desktop.webp`} width="1640" height="955" fetchpriority="high" loading="eager" alt="Illustrative composition of the four capacitor families on an oak sample table." />
+    </picture>
+    <div class="sp-hero-copy">
+      <h1 id="home-title">Motor capacitors<br />Run &amp; start</h1>
+      <p class="sp-hero-description">Capacitors for equipment manufacturers.</p>
+      <a class="button" href="/products/">Compare series</a>
+    </div>
+  </div>
+</section>

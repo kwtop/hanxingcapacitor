@@ -1,0 +1,22 @@
+{
+  "heading": {
+    "fonts": [
+      {
+        "familyName": "Manrope ExtraLight",
+        "glyphCount": 28,
+        "isCustomFont": true,
+        "postScriptName": "Manrope-ExtraLight-Medium"
+      }
+    ]
+  },
+  "body": {
+    "fonts": [
+      {
+        "familyName": "Inter",
+        "glyphCount": 38,
+        "isCustomFont": true,
+        "postScriptName": "Inter"
+      }
+    ]
+  }
+}

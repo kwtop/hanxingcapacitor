@@ -1,0 +1,325 @@
+[
+  {
+    "id": "product-cbb60",
+    "refs": [
+      "D:/Hangxing/workspace/public/images/real/cbb60-hanxing-wired.jpg"
+    ],
+    "prompt": "Edit the supplied ORIGINAL Hanxing CBB60 product photograph into premium editorial e-commerce studio photography for a product-detail gallery. Square 1:1 image. One white cylindrical capacitor, completely visible including its looped TWO black insulated leads, stripped copper ends, whole body and bottom. Keep original true proportions, physical structure, camera slightly above eye level, and EXACT original printing: circular Hanxing emblem + italic Hanxing® wordmark; CBB60; 35µF±5% SH; 450VAC 50/60Hz; 40/70/21; EN60252-1. Preserve typographic arrangement and legibility, no invented characters. Center product and leads as one assembly occupying 70% of frame height, generous clear margins. Seamless warm-white #f9f7f3 background and matte surface, no horizon line, broad soft natural studio light from left, subtle contact shadow, delicate real plastic texture, restrained premium accessories photography similar to Satechi PDP. Remove the dirty tabletop and photographic backdrop seam. Do not change product structure, do not add emblems, no external text, no UI, no hands, no packaging. This is an illustrative studio derivative, not factory evidence.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-4716f20f-c306-4244-9525-a0fbb9dac74a.png",
+    "original": ".qa/satechi-site-20261018/generated-originals/product-cbb60.png",
+    "web": "/images/previews/satechi-site-20261018/product-cbb60.webp",
+    "sourceWidth": 1254,
+    "sourceHeight": 1254,
+    "width": 1200,
+    "height": 1200,
+    "bytes": 25500,
+    "postprocess": "Resize and WebP encoding only. No generated label overlays."
+  },
+  {
+    "id": "product-cbb61",
+    "refs": [
+      "D:/Hangxing/workspace/public/images/real/cbb61-13.jpg"
+    ],
+    "prompt": "Create a square 1:1 premium e-commerce studio product photograph derived faithfully from the LEFTMOST CBB61 sample in the original input. Show ONLY that one black rectangular capacitor with its TWO blade terminals intact and fully visible, precisely preserve case and blade geometry and proportions. Exact original yellow-grey printing: CBB61; 4.5µF±5% 40/70/21; 450VAC 50/60Hz SH; 2025C. Same original typographic arrangement and material printing, no invented logo (there is no Hanxing wordmark on this sample). A near frontal three-quarter view with a hint of top plane, entire product centered occupying 57% width and 58% height. Seamless warm-white #f9f7f3 matte backdrop, no hard horizon, soft broad light from left and subtle contact shadow, exquisite realistic black case texture, premium Satechi-like product photography. Remove other two samples, dirty backdrop and excess empty top area. No other product, no extra emblems, no extraneous text, no UI, no packaging or tools. Illustrative studio derivative, retain authentic sample identity.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-3da5b630-871d-45dc-9fd1-de1766549f3d.png",
+    "original": ".qa/satechi-site-20261018/generated-originals/product-cbb61.png",
+    "web": "/images/previews/satechi-site-20261018/product-cbb61.webp",
+    "sourceWidth": 1254,
+    "sourceHeight": 1254,
+    "width": 1200,
+    "height": 1200,
+    "bytes": 147414,
+    "postprocess": "Resize and WebP encoding only. No generated label overlays."
+  },
+  {
+    "id": "product-cbb65",
+    "refs": [
+      "D:/Hangxing/workspace/public/images/real/cbb65-2.jpg"
+    ],
+    "prompt": "Edit this ORIGINAL Hanxing CBB65 single-run sample into a square 1:1 premium product-gallery photograph. Preserve the entire silver cylindrical metal can, TWO black insulator terminal groups and all existing metal blades, original silhouette/proportions and accurate single-run structure. EXACT visible original printed label, with original type placement and curved surface perspective: circular Hanxing emblem, italic Hanxing®; CBB65 CAPACITOR; 20 µF±5%; 450VAC 50/60Hz; 40/85/21 C P1; Capacitor Co.,Ltd; Guang zhou Hanxing; 2025. Do not invent marks, erase the logo or replace the label. Center upright complete product occupying 70% frame height, slightly elevated frontal camera revealing the top terminals, 15% clear margin top and bottom. Replace scuffed tabletop by seamless warm-white #f9f7f3 matte surface/backdrop without horizon. Broad diffuse light from left, gentle right rim, subtle contact shadow, crisp label and detailed realistic brushed metal with small natural imperfections. Premium restrained Satechi-like studio product photography, no props, no UI, no additional text, no certification assertions. Illustrative derivative from the input, not documentary evidence.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-2e9f6bbe-43d2-463b-89cf-236b49f586c7.png",
+    "original": ".qa/satechi-site-20261018/generated-originals/product-cbb65.png",
+    "web": "/images/previews/satechi-site-20261018/product-cbb65.webp",
+    "sourceWidth": 1254,
+    "sourceHeight": 1254,
+    "width": 1200,
+    "height": 1200,
+    "bytes": 66786,
+    "postprocess": "Resize and WebP encoding only. No generated label overlays."
+  },
+  {
+    "id": "product-cd60",
+    "refs": [
+      "D:/Hangxing/workspace/public/images/real/cd60-25.jpg"
+    ],
+    "prompt": "Edit this original grey CD60 capacitor sample into a premium square 1:1 studio product-gallery photograph. Keep the EXACT grey cylindrical body, proportions, rounded crimped top and TWO flat blade terminals, all completely visible. Preserve original geometric emblem and exact label layout and content as in input: CD 60; 500µF ±5%; 300V.AC 50/60Hz; -40°C / 70°C / 21; original CQC oval and CE shapes at bottom. Preserve only those existing printed marks; do NOT add a Hanxing wordmark absent in this sample or any other mark. Single upright product centered, 69% frame height including blades, near-frontal slightly elevated view. Seamless warm-white #f9f7f3 matte background, no horizon, broad soft left light and subtle contact shadow, refined real plastic finish, clear dark print. Clean dirty tabletop and background but do not idealize or change hardware. Satechi-like disciplined studio composition, no props, no external text, no UI. It is an illustrative derivative and does not assert certification status.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-42dc0e6d-5a10-4a68-9a71-4b2c76e311ec.png",
+    "original": ".qa/satechi-site-20261018/generated-originals/product-cd60.png",
+    "web": "/images/previews/satechi-site-20261018/product-cd60.webp",
+    "sourceWidth": 1254,
+    "sourceHeight": 1254,
+    "width": 1200,
+    "height": 1200,
+    "bytes": 29902,
+    "postprocess": "Resize and WebP encoding only. No generated label overlays."
+  },
+  {
+    "id": "application-pump",
+    "refs": [],
+    "prompt": "Create a 1536x1024 landscape premium editorial equipment photograph for a motor-capacitor applications webpage, Satechi-like restrained natural product photography. One complete compact teal centrifugal water pump and its connected dark graphite motor on a pale stone bench in a quiet bright utility room. Plausible pump volute, inlet/outlet flanges and full motor, all equipment feet and all casing edges visible, no cutaways, no exposed wires or implied capacitor installation. Whole assembly contained in the central 60% image width and 70% image height with usable environmental margins, so a square crop preserves the complete equipment. Soft side daylight, warm offwhite plaster, a small restrained oak detail, precise industrial materials, clean editorial composition with believable scale, no contrived pedestal, no effects. No brand/logo/text, no people, no factory, no claim of Hanxing installation or customer site. Generic application illustration, high photographic quality, crisp mechanically believable geometry.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-dd974bff-d092-497a-83dc-f92b00cc7737.png",
+    "original": ".qa/satechi-site-20261018/generated-originals/application-pump.png",
+    "web": "/images/previews/satechi-site-20261018/application-pump.webp",
+    "sourceWidth": 1536,
+    "sourceHeight": 1024,
+    "width": 1536,
+    "height": 1024,
+    "bytes": 152698,
+    "postprocess": "Resize and WebP encoding only. No generated label overlays."
+  },
+  {
+    "id": "application-hvac",
+    "refs": [],
+    "prompt": "Create a 1536x1024 premium editorial application photograph: one complete outdoor air conditioning condenser unit beside a quiet warm-white residential wall with pale gravel, a small tidy planting area and cast daylight shadows. Graphite grey casing, clearly plausible fan grille and complete top panel, feet, service side and short normal wall conduit. Entire equipment centrally framed in the middle 56% of image width and 64% of height; leave generous environmental space on all sides so BOTH 3:2 landscape and square crops keep the entire device intact. Restrained Satechi-style warm natural photography, softly sunlit, meticulous industrial surface detail, offwhite/stone/olive surroundings, refined but plausible ordinary installation. No logos, no captions, no people, no fake factory or customer evidence, no electrical cutaway, no dramatic artificial glow. This is a generic illustrative scene for application guidance.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-1580912c-5cc1-4de6-9fd8-9c062e860f16.png",
+    "original": ".qa/satechi-site-20261018/generated-originals/application-hvac.png",
+    "web": "/images/previews/satechi-site-20261018/application-hvac.webp",
+    "sourceWidth": 1536,
+    "sourceHeight": 1024,
+    "width": 1536,
+    "height": 1024,
+    "bytes": 335780,
+    "postprocess": "Resize and WebP encoding only. No generated label overlays."
+  },
+  {
+    "id": "application-fan",
+    "refs": [],
+    "prompt": "Generate a 1536x1024 landscape premium editorial photograph of one complete compact industrial centrifugal ventilation blower with a graphite electric motor, simple matte dark-grey sheet-metal snail housing, circular side inlet with protective grille and rectangular exhaust outlet. Set on a warm pale stone utility workbench against a clean cream wall with subtle sunlight, distant oak trim. The complete equipment and base occupy central 58% width and 64% height with generous clear space all around; all inlet/outlet edges, mounting feet and entire motor stay visible in a central square crop. Natural technically plausible engineering proportions, refined product photography, diffuse daylight, real metal texture, gentle shadows, understated Satechi-like photography. No wires exposed, no installation diagram, no brand marks or text, no people, no invented Hanxing facility/customer proof. Generic application illustration.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-fcafeafd-4480-4041-a339-4e3ebfeed226.png",
+    "original": ".qa/satechi-site-20261018/generated-originals/application-fan.png",
+    "web": "/images/previews/satechi-site-20261018/application-fan.webp",
+    "sourceWidth": 1536,
+    "sourceHeight": 1024,
+    "width": 1536,
+    "height": 1024,
+    "bytes": 172922,
+    "postprocess": "Resize and WebP encoding only. No generated label overlays."
+  },
+  {
+    "id": "application-washing",
+    "refs": [],
+    "prompt": "Create a 1536x1024 landscape editorial photograph for a motor-capacitor applications guide: a single complete understated white front-loading washing machine in a quiet warm-neutral laundry alcove, pale limestone floor, soft offwhite wall and light oak shelf edge, folded linen kept far to side. Complete machine top, sides, round glass door, lower base and floor contact visible. Center the machine within the middle 50% of image width and 73% height, generous clear wall/floor margin for both landscape and square cropping. Honest eye-level camera, soft side daylight, realistic appliance geometry, natural glass and brushed hardware, premium Satechi-like clean natural composition. No logo, readable text, people, manufacturer claims, customer/factory proof or electrical cutaway. This is a generic application illustration, not an actual Hanxing project.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-0a18e61a-9dfb-435e-a3e2-bc7b4b8580c7.png",
+    "original": ".qa/satechi-site-20261018/generated-originals/application-washing.png",
+    "web": "/images/previews/satechi-site-20261018/application-washing.webp",
+    "sourceWidth": 1536,
+    "sourceHeight": 1024,
+    "width": 1536,
+    "height": 1024,
+    "bytes": 137622,
+    "postprocess": "Resize and WebP encoding only. No generated label overlays."
+  },
+  {
+    "id": "guide-label",
+    "refs": [
+      "D:/Hangxing/workspace/public/images/real/cbb65-2.jpg"
+    ],
+    "prompt": "Create a 1536x1024 landscape editorial cover photograph for a technical guide about reading a motor capacitor label, derived from the supplied ORIGINAL CBB65 photograph. A close, front-facing view of the complete Hanxing label on a real silver CBB65 metal can. Main product at center-right occupying 55% frame width; light warm white paper/stone surface, softly lit cream backdrop, plenty of air. Show metal texture, full top terminals and most of can, no tools. Faithfully preserve existing logo and EXACT print: circular Hanxing emblem + Hanxing®; CBB65 CAPACITOR; 20 µF±5%; 450VAC 50/60Hz; 40/85/21 C P1; Capacitor Co.,Ltd; Guang zhou Hanxing; 2025. Original label type, proportions and line order, do not simplify to model code, do not invent words. Elegant measured Satechi-like product photography, soft natural sidelight and quiet shadow. No headings, arrows, annotations, diagrams or UI. Illustrative cover only, not a substitute for original label evidence.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-9d389066-fbf8-485a-b11f-03f1c91a6aa8.png",
+    "original": ".qa/satechi-site-20261018/generated-originals/guide-label.png",
+    "web": "/images/previews/satechi-site-20261018/guide-label.webp",
+    "sourceWidth": 1536,
+    "sourceHeight": 1024,
+    "width": 1536,
+    "height": 1024,
+    "bytes": 105106,
+    "postprocess": "Resize and WebP encoding only. No generated label overlays."
+  },
+  {
+    "id": "guide-duty",
+    "refs": [
+      "D:/Hangxing/workspace/public/images/real/cbb60-hanxing-wired.jpg",
+      "D:/Hangxing/workspace/public/images/real/cd60-25.jpg"
+    ],
+    "prompt": "Create a 1536x1024 landscape premium editorial guide-cover photograph comparing the TWO exact capacitor samples in the supplied originals. Left: white CBB60 with its two black looped leads and copper tips. Right: grey CD60 with two metal blade terminals. Both fully visible and clearly separated on a warm ivory matte table, centered together with generous margins, eye-level soft three-quarter natural product photography. Preserve all original printing and emblems precisely. CBB60: circular Hanxing emblem and Hanxing®; CBB60; 35µF±5% SH; 450VAC 50/60Hz; 40/70/21; EN60252-1. CD60: original geometric emblem, CD 60; 500µF ±5%; 300V.AC 50/60Hz; -40°C / 70°C / 21; original CQC and CE print only. Correct relative case shapes and proportions, no added logo on CD60. Warm-white background, soft side daylight, graphite/white contrast, Satechi editorial restraint. No external wording, labels, arrows, technical diagram, people or UI. Illustrative display, not evidence or wiring instructions.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-a8a7b406-a1bb-415f-aebf-ee6c98112d21.png",
+    "original": ".qa/satechi-site-20261018/generated-originals/guide-duty.png",
+    "web": "/images/previews/satechi-site-20261018/guide-duty.webp",
+    "sourceWidth": 1536,
+    "sourceHeight": 1024,
+    "width": 1536,
+    "height": 1024,
+    "bytes": 57028,
+    "postprocess": "Resize and WebP encoding only. No generated label overlays."
+  },
+  {
+    "id": "guide-series",
+    "refs": [
+      "D:/Hangxing/workspace/public/images/real/cbb60-hanxing-wired.jpg",
+      "D:/Hangxing/workspace/public/images/real/cbb61-13.jpg",
+      "D:/Hangxing/workspace/public/images/real/cbb65-2.jpg"
+    ],
+    "prompt": "Produce a 1536x1024 landscape high-end editorial product comparison photograph. Exactly THREE original capacitor types arranged side by side on a single low warm-white stone surface: original white wired Hanxing CBB60, LEFTMOST black two-blade CBB61 sample from second input, and silver two-terminal-group Hanxing CBB65 single-run from third input. Preserve each true shape, terminal configuration and relative dimensions. Full products including wire loop and copper tips, with 15% margin, balanced asymmetric heights without fake pedestal steps. Reproduce original logos and all visible printed label content accurately: CBB60 Hanxing 35µF±5% SH 450VAC50/60Hz40/70/21 EN60252-1; CBB61 4.5µF±5%40/70/21 450VAC50/60Hz SH 2025C (NO added logo); CBB65 Hanxing20µF±5%450VAC50/60Hz40/85/21 C P1 Capacitor Co.,Ltd Guang zhou Hanxing2025. Soft natural left light, cream wall, rich real plastic/metal textures, premium Satechi product photography. No external captions, arrows, infographic, UI, people, factory or claims. Illustrative comparison cover.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-76594aee-101c-42c1-8dd2-8b7cb9866b16.png",
+    "original": ".qa/satechi-site-20261018/generated-originals/guide-series.png",
+    "web": "/images/previews/satechi-site-20261018/guide-series.webp",
+    "sourceWidth": 1536,
+    "sourceHeight": 1024,
+    "width": 1536,
+    "height": 1024,
+    "bytes": 103578,
+    "postprocess": "Resize and WebP encoding only. No generated label overlays."
+  },
+  {
+    "id": "guide-dual",
+    "refs": [
+      "D:/Hangxing/workspace/public/images/real/cbb65-2.jpg",
+      "D:/Hangxing/workspace/public/images/real/cbb65-dual-run-7.jpg"
+    ],
+    "prompt": "Create a 1536x1024 landscape editorial technical-guide cover from these TWO original capacitor samples. Remove the cardboard retail box. On a quiet matte warm-white surface, present the original silver SINGLE-run CBB65 20µF can on the left and taller silver DUAL-run CBB65 50+5µF can on the right, camera elevated just enough to clearly show original two terminal groups on single and THREE terminal groups on dual including green insulator. Preserve all original blade counts and physical proportions, no rewiring or invented terminal labels. Both original Hanxing emblems and printed faces visible. Exact core text single: Hanxing® CBB65 CAPACITOR 20µF±5% 450VAC50/60Hz 40/85/21 C P1 Capacitor Co.,Ltd Guang zhou Hanxing 2025; dual identical layout but 50+5µF±5%. No numeric value changed or added. Entire products with generous whitespace, diffuse side daylight, realistic brushed silver, Satechi-like warm editorial treatment. No external text, arrows, UI or diagrams. This is illustrative photography; original terminal photos remain authoritative.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-ed9e328d-6bbb-4f6b-aa37-4ef1d3cfcd12.png",
+    "original": ".qa/satechi-site-20261018/generated-originals/guide-dual.png",
+    "web": "/images/previews/satechi-site-20261018/guide-dual.webp",
+    "sourceWidth": 1536,
+    "sourceHeight": 1024,
+    "width": 1536,
+    "height": 1024,
+    "bytes": 76514,
+    "postprocess": "Resize and WebP encoding only. No generated label overlays."
+  },
+  {
+    "id": "guide-ratings",
+    "refs": [
+      "D:/Hangxing/workspace/public/images/real/cbb65-2.jpg"
+    ],
+    "prompt": "Make a 1536x1024 landscape premium editorial cover photograph of the original silver CBB65 sample. Tactile macro emphasizing its intact label, can occupies center 55% width and 90% height, top terminal groups fully visible, just enough cream matte background on all sides. A slightly elevated near-frontal perspective shows all label lines clearly and original type hierarchy. Pale warm limestone surface with broad daylight from left, realistic metal material and a calm natural shadow. Distinct from the ordinary product-shot cover through closer crop and soft organic side-light, Satechi-like editorial photography. Preserve all original visible brand emblems and printing in the source(s), not generic blank products. CBB60 exact: Hanxing® circular emblem, CBB60, 35µF±5% SH, 450VAC 50/60Hz, 40/70/21, EN60252-1. CBB65 exact: Hanxing®, CBB65 CAPACITOR, 20µF±5%, 450VAC50/60Hz, 40/85/21 C P1, Capacitor Co.,Ltd, Guang zhou Hanxing, 2025. No extra marks or invented data. No external text, UI, diagram, arrows, people or factory/client evidence. Illustrative editorial image only.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-407e9928-23d3-4dda-8d1f-a78b09ebe939.png",
+    "original": ".qa/satechi-site-20261018/generated-originals/guide-ratings.png",
+    "web": "/images/previews/satechi-site-20261018/guide-ratings.webp",
+    "sourceWidth": 1536,
+    "sourceHeight": 1024,
+    "width": 1536,
+    "height": 1024,
+    "bytes": 146338,
+    "postprocess": "Resize and WebP encoding only. No generated label overlays."
+  },
+  {
+    "id": "guide-fit",
+    "refs": [
+      "D:/Hangxing/workspace/public/images/real/cbb60-hanxing-wired.jpg",
+      "D:/Hangxing/workspace/public/images/real/cbb61-13.jpg"
+    ],
+    "prompt": "Create a 1536x1024 landscape premium editorial photograph for a capacitor dimensions/connection guide. Place the original white wired Hanxing CBB60 at left and only the LEFTMOST black two-blade CBB61 4.5µF sample at right, whole products including wires/blades in frame, with one accurate stainless vernier caliper lying at rest in front, NOT measuring an invented dimension. Camera softly elevated 20 degrees, all objects in central 75% frame on a warm-white matte stone surface, cream wall, soft natural daylight and tactile grounded shadows. CBB61 original exact print: CBB61;4.5µF±5%40/70/21;450VAC50/60Hz SH;2025C. Do not add Hanxing to CBB61, preserve both terminal structures. Preserve all original visible brand emblems and printing in the source(s), not generic blank products. CBB60 exact: Hanxing® circular emblem, CBB60, 35µF±5% SH, 450VAC 50/60Hz, 40/70/21, EN60252-1. CBB65 exact: Hanxing®, CBB65 CAPACITOR, 20µF±5%, 450VAC50/60Hz, 40/85/21 C P1, Capacitor Co.,Ltd, Guang zhou Hanxing, 2025. No extra marks or invented data. No external text, UI, diagram, arrows, people or factory/client evidence. Illustrative editorial image only.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-1f20d91d-b78c-49dc-bc25-b9f61d6cb0f1.png",
+    "original": ".qa/satechi-site-20261018/generated-originals/guide-fit.png",
+    "web": "/images/previews/satechi-site-20261018/guide-fit.webp",
+    "sourceWidth": 1536,
+    "sourceHeight": 1024,
+    "width": 1536,
+    "height": 1024,
+    "bytes": 120690,
+    "postprocess": "Resize and WebP encoding only. No generated label overlays."
+  },
+  {
+    "id": "guide-shipping",
+    "refs": [
+      "D:/Hangxing/workspace/public/images/real/cbb65-2.jpg"
+    ],
+    "prompt": "Create a 1536x1024 high-end editorial still-life for a buying and shipping guide, a GENERIC PACKING CONCEPT, not an actual order or shipment. One small open unprinted kraft carton with tidy protective paper dividers; only TWO silver original Hanxing CBB65 capacitors standing upright in separate cells and all terminals protected from contact, one extra identical sample beside the carton with original label facing camera. A closed blank cream notebook and a simple black pencil lie near it. Matte warm oak worktable, clean cream wall, soft broad daylight, airy composition, realistic cardboard fibers, understated Satechi-style product photography. All objects central with clear margins. No shipping marks, addresses, serial numbers, tracking labels, map, warehouse, container or false business documentation. Preserve all original visible brand emblems and printing in the source(s), not generic blank products. CBB60 exact: Hanxing® circular emblem, CBB60, 35µF±5% SH, 450VAC 50/60Hz, 40/70/21, EN60252-1. CBB65 exact: Hanxing®, CBB65 CAPACITOR, 20µF±5%, 450VAC50/60Hz, 40/85/21 C P1, Capacitor Co.,Ltd, Guang zhou Hanxing, 2025. No extra marks or invented data. No external text, UI, diagram, arrows, people or factory/client evidence. Illustrative editorial image only.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-8c7a0670-0853-49c0-90a1-525e485ab0b5.png",
+    "original": ".qa/satechi-site-20261018/generated-originals/guide-shipping.png",
+    "web": "/images/previews/satechi-site-20261018/guide-shipping.webp",
+    "sourceWidth": 1536,
+    "sourceHeight": 1024,
+    "width": 1536,
+    "height": 1024,
+    "bytes": 201038,
+    "postprocess": "Resize and WebP encoding only. No generated label overlays."
+  },
+  {
+    "id": "brand-story",
+    "refs": [
+      "D:/Hangxing/workspace/public/images/real/cbb60-hanxing-wired.jpg",
+      "D:/Hangxing/workspace/public/images/real/cbb61-13.jpg",
+      "D:/Hangxing/workspace/public/images/real/cbb65-2.jpg",
+      "D:/Hangxing/workspace/public/images/real/cd60-25.jpg"
+    ],
+    "prompt": "Generate a 1536x1024 landscape premium brand-editorial photograph of FOUR exact original capacitor families as an intentionally composed still-life on a light oak sample table beside a softly sunlit cream wall. White wired CBB60 with full black lead loop at back left, metal single-run CBB65 with two terminal groups at back right, black LEFTMOST 4.5µF CBB61 with two blades front left, grey CD60 with two blades front right. All objects complete and separated, natural true proportions, the four different materials and case formats create the visual hierarchy. Whole arrangement in central 70% width; warm daylight with restrained pale-blue reflected tone, tactile refined accessory photography like Satechi. Do not turn this into a generic industrial floor or office scene. Original grey CD60 geometric emblem and print: CD60,500µF±5%,300V.AC50/60Hz,-40°C/70°C/21,CQC,CE; no added Hanxing on CD60/CBB61. CBB61 print4.5µF±5%40/70/21 450VAC50/60Hz SH2025C. Preserve all original visible brand emblems and printing in the source(s), not generic blank products. CBB60 exact: Hanxing® circular emblem, CBB60, 35µF±5% SH, 450VAC 50/60Hz, 40/70/21, EN60252-1. CBB65 exact: Hanxing®, CBB65 CAPACITOR, 20µF±5%, 450VAC50/60Hz, 40/85/21 C P1, Capacitor Co.,Ltd, Guang zhou Hanxing, 2025. No extra marks or invented data. No external text, UI, diagram, arrows, people or factory/client evidence. Illustrative editorial image only.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-28397d1e-91c4-4794-a91c-a8c3e0a553a3.png",
+    "original": ".qa/satechi-site-20261018/generated-originals/brand-story.png",
+    "web": "/images/previews/satechi-site-20261018/brand-story.webp",
+    "sourceWidth": 1536,
+    "sourceHeight": 1024,
+    "width": 1536,
+    "height": 1024,
+    "bytes": 164752,
+    "postprocess": "Resize and WebP encoding only. No generated label overlays."
+  },
+  {
+    "id": "oem-approval",
+    "refs": [
+      "D:/Hangxing/workspace/public/images/real/cbb65-2.jpg",
+      "D:/Hangxing/workspace/public/images/real/cbb60-hanxing-wired.jpg"
+    ],
+    "prompt": "Create a 1536x1024 premium editorial still life for an OEM sample-approval page. The TWO original Hanxing capacitors, CBB60 wired white and CBB65 single-run metal, sit fully visible on a pale warm cream desk beside a closed blank kraft sample box, a clean unprinted white label-material roll and a plain cream notebook. Objects grouped in center-right 65% width, left third airy neutral background, clear margins. Keep label-material unprinted (no invented branding approval), no official forms or fabricated engineering drawings. Soft daylight from left, tactile paper and metal textures, gentle natural shadows, quiet Satechi premium accessory photography. Keep the true product form, terminals, proportions and all original label printing, including the original circular Hanxing emblem and italic Hanxing® wordmark. CBB65 input has exact: CBB65 CAPACITOR;20µF±5%;450VAC50/60Hz;40/85/21 C P1;Capacitor Co.,Ltd;Guang zhou Hanxing;2025. CBB60 input has exact:CBB60;35µF±5% SH;450VAC50/60Hz;40/70/21;EN60252-1. No invented certification or logos. No external headline, UI, diagrams, people or factory/customer evidence. This is an illustrative concept photograph.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-c8b6add4-a248-4491-aae1-0346cf00f1d1.png",
+    "original": ".qa/satechi-site-20261018/generated-originals/oem-approval.png",
+    "web": "/images/previews/satechi-site-20261018/oem-approval.webp",
+    "sourceWidth": 1536,
+    "sourceHeight": 1024,
+    "width": 1536,
+    "height": 1024,
+    "bytes": 92844,
+    "postprocess": "Resize and WebP encoding only. No generated label overlays."
+  },
+  {
+    "id": "packing-concept",
+    "refs": [
+      "D:/Hangxing/workspace/public/images/real/cbb65-2.jpg"
+    ],
+    "prompt": "Generate a 1536x1024 landscape high-end product-packing concept photograph, no actual order/shipment implication. A single open plain kraft carton on a warm-white studio table, close elevated three-quarter camera. Folded natural paperboard grid dividers protect THREE original silver CBB65 single-run sample cans with their two terminal groups, adequate vertical clearance, no metal touching metal; one complete sample alongside shows its original printed face. Box and sample arranged centrally in 68% width with wide clean margins, softly sunlit cream background, finely resolved corrugated fibers and brushed metal. Refined Satechi-like quiet material photography. Absolutely no warehouse, truck, shipping label, addresses, tracking, quantity claims, order number or environmental certification claims. Keep the true product form, terminals, proportions and all original label printing, including the original circular Hanxing emblem and italic Hanxing® wordmark. CBB65 input has exact: CBB65 CAPACITOR;20µF±5%;450VAC50/60Hz;40/85/21 C P1;Capacitor Co.,Ltd;Guang zhou Hanxing;2025. CBB60 input has exact:CBB60;35µF±5% SH;450VAC50/60Hz;40/70/21;EN60252-1. No invented certification or logos. No external headline, UI, diagrams, people or factory/customer evidence. This is an illustrative concept photograph.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-48f01367-62c2-4347-bd5c-dcad0d0b84b7.png",
+    "original": ".qa/satechi-site-20261018/generated-originals/packing-concept.png",
+    "web": "/images/previews/satechi-site-20261018/packing-concept.webp",
+    "sourceWidth": 1536,
+    "sourceHeight": 1024,
+    "width": 1536,
+    "height": 1024,
+    "bytes": 149698,
+    "postprocess": "Resize and WebP encoding only. No generated label overlays."
+  },
+  {
+    "id": "contact-desk",
+    "refs": [
+      "D:/Hangxing/workspace/public/images/real/cbb60-hanxing-wired.jpg",
+      "D:/Hangxing/workspace/public/images/real/cbb65-2.jpg"
+    ],
+    "prompt": "Create a 1536x1024 landscape editorial still-life for a B2B contact page. Close but complete original Hanxing white wired CBB60 and single-run silver CBB65 on a light oak desk. A slim closed cream notebook and one graphite pencil at right; soft pale-blue wall reflection and a blurred window highlight at far left, no office/team background. Main products centered in 60% width, full wires and terminals uncut, large usable cream margins to work in both landscape and vertical crops. Warm natural daylight, subtle contact shadows, exquisite material clarity and convincing proportions. Restrained premium Satechi product photography; not a corporate strength statement. Keep the true product form, terminals, proportions and all original label printing, including the original circular Hanxing emblem and italic Hanxing® wordmark. CBB65 input has exact: CBB65 CAPACITOR;20µF±5%;450VAC50/60Hz;40/85/21 C P1;Capacitor Co.,Ltd;Guang zhou Hanxing;2025. CBB60 input has exact:CBB60;35µF±5% SH;450VAC50/60Hz;40/70/21;EN60252-1. No invented certification or logos. No external headline, UI, diagrams, people or factory/customer evidence. This is an illustrative concept photograph.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-530ec13c-e0b9-4c0f-93cb-0befb71c1af2.png",
+    "original": ".qa/satechi-site-20261018/generated-originals/contact-desk.png",
+    "web": "/images/previews/satechi-site-20261018/contact-desk.webp",
+    "sourceWidth": 1536,
+    "sourceHeight": 1024,
+    "width": 1536,
+    "height": 1024,
+    "bytes": 109016,
+    "postprocess": "Resize and WebP encoding only. No generated label overlays."
+  },
+  {
+    "id": "resources-desk",
+    "refs": [
+      "D:/Hangxing/workspace/public/images/real/cbb65-2.jpg",
+      "D:/Hangxing/workspace/public/images/real/cbb60-hanxing-wired.jpg"
+    ],
+    "prompt": "Create a 1536x1024 landscape premium editorial technical-library photograph. The original single-run Hanxing CBB65 and wired white CBB60 stand fully visible next to a stainless vernier caliper at rest and an open cream notebook with completely BLANK pages on a warm offwhite work desk. Composition centers the two actual sample types and tool within central 70% width; full looped leads/copper ends, terminals and bases retained. No invented measurements, wiring, CAD drawing or handwritten technical data. Soft daylight from the side, restrained stone/cream/oak palette, clean product-focused editorial photography with Satechi-like natural light and fine shadows. Keep the true product form, terminals, proportions and all original label printing, including the original circular Hanxing emblem and italic Hanxing® wordmark. CBB65 input has exact: CBB65 CAPACITOR;20µF±5%;450VAC50/60Hz;40/85/21 C P1;Capacitor Co.,Ltd;Guang zhou Hanxing;2025. CBB60 input has exact:CBB60;35µF±5% SH;450VAC50/60Hz;40/70/21;EN60252-1. No invented certification or logos. No external headline, UI, diagrams, people or factory/customer evidence. This is an illustrative concept photograph.",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-47169b20-0c23-425d-8e00-7d3195eea9a8.png",
+    "original": ".qa/satechi-site-20261018/generated-originals/resources-desk.png",
+    "web": "/images/previews/satechi-site-20261018/resources-desk.webp",
+    "sourceWidth": 1536,
+    "sourceHeight": 1024,
+    "width": 1536,
+    "height": 1024,
+    "bytes": 117040,
+    "postprocess": "Resize and WebP encoding only. No generated label overlays."
+  }
+]

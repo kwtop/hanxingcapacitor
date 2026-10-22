@@ -1,0 +1,279 @@
+{
+  "checkedAt": "2026-10-18T15:13:31.522Z",
+  "localPreview": {
+    "status": 200,
+    "robots": "noindex, follow",
+    "noindexMeta": true,
+    "hasH1": true,
+    "hasSeries": true,
+    "initialHtmlLength": 88930
+  },
+  "productionModeLocalGuard": {
+    "origin": "http://127.0.0.1:4341",
+    "status": 404
+  },
+  "links": [
+    {
+      "href": "#main",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/previews/satechi-home/",
+      "anchor": "found"
+    },
+    {
+      "href": "/buying-guide/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/buying-guide/",
+      "anchor": null
+    },
+    {
+      "href": "/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/",
+      "anchor": null
+    },
+    {
+      "href": "/products/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/products/",
+      "anchor": null
+    },
+    {
+      "href": "/products/cbb60-motor-run-capacitor/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/products/cbb60-motor-run-capacitor/",
+      "anchor": null
+    },
+    {
+      "href": "/products/cbb61-fan-capacitor/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/products/cbb61-fan-capacitor/",
+      "anchor": null
+    },
+    {
+      "href": "/products/cbb65-air-conditioner-capacitor/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/products/cbb65-air-conditioner-capacitor/",
+      "anchor": null
+    },
+    {
+      "href": "/products/cd60-start-capacitor/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/products/cd60-start-capacitor/",
+      "anchor": null
+    },
+    {
+      "href": "/products/photographs/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/products/photographs/",
+      "anchor": null
+    },
+    {
+      "href": "/applications/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/applications/",
+      "anchor": null
+    },
+    {
+      "href": "/applications/pumps-and-water-systems/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/applications/pumps-and-water-systems/",
+      "anchor": null
+    },
+    {
+      "href": "/applications/fans-and-ventilation/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/applications/fans-and-ventilation/",
+      "anchor": null
+    },
+    {
+      "href": "/applications/appliances-and-small-motors/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/applications/appliances-and-small-motors/",
+      "anchor": null
+    },
+    {
+      "href": "/applications/hvac-and-refrigeration/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/applications/hvac-and-refrigeration/",
+      "anchor": null
+    },
+    {
+      "href": "/oem-quality/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/oem-quality/",
+      "anchor": null
+    },
+    {
+      "href": "/oem/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/oem/",
+      "anchor": null
+    },
+    {
+      "href": "/factory/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/factory/",
+      "anchor": null
+    },
+    {
+      "href": "/factory/packing-and-dispatch/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/factory/packing-and-dispatch/",
+      "anchor": null
+    },
+    {
+      "href": "/resources/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/resources/",
+      "anchor": null
+    },
+    {
+      "href": "/resources/articles/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/resources/articles/",
+      "anchor": null
+    },
+    {
+      "href": "/faq/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/faq/",
+      "anchor": null
+    },
+    {
+      "href": "/about/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/about/",
+      "anchor": null
+    },
+    {
+      "href": "/contact/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/contact/",
+      "anchor": null
+    },
+    {
+      "href": "/resources/read-motor-capacitor-label/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/resources/read-motor-capacitor-label/",
+      "anchor": null
+    },
+    {
+      "href": "/products/cbb60-motor-run-capacitor/#sample-photographs",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/products/cbb60-motor-run-capacitor/",
+      "anchor": "found"
+    },
+    {
+      "href": "/products/cbb61-fan-capacitor/#sample-photographs",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/products/cbb61-fan-capacitor/",
+      "anchor": "found"
+    },
+    {
+      "href": "/products/cbb65-air-conditioner-capacitor/#sample-photographs",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/products/cbb65-air-conditioner-capacitor/",
+      "anchor": "found"
+    },
+    {
+      "href": "/products/cd60-start-capacitor/#sample-photographs",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/products/cd60-start-capacitor/",
+      "anchor": "found"
+    },
+    {
+      "href": "/resources/dimensions-terminals-mounting/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/resources/dimensions-terminals-mounting/",
+      "anchor": null
+    },
+    {
+      "href": "/resources/start-vs-run-capacitors/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/resources/start-vs-run-capacitors/",
+      "anchor": null
+    },
+    {
+      "href": "/resources/single-vs-dual-run-capacitors/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/resources/single-vs-dual-run-capacitors/",
+      "anchor": null
+    },
+    {
+      "href": "/resources/motor-capacitor-order-shipment-checklist/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/resources/motor-capacitor-order-shipment-checklist/",
+      "anchor": null
+    },
+    {
+      "href": "/terms/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/terms/",
+      "anchor": null
+    },
+    {
+      "href": "/privacy-policy/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4335/privacy-policy/",
+      "anchor": null
+    }
+  ],
+  "sourceChecks": [
+    {
+      "path": "src/pages/index.astro",
+      "sha256": "2A9051C818CDD1FBB0651B320148B586DC4243AFE7539D91C885FD8BF08DB865",
+      "currentSha256": "2A9051C818CDD1FBB0651B320148B586DC4243AFE7539D91C885FD8BF08DB865",
+      "unchanged": true
+    },
+    {
+      "path": "src/layouts/BaseLayout.astro",
+      "sha256": "DFDE2A2884BDE2AEDDC0C82EF0B4354CBDE1165FFF71897C849DCD422882CF24",
+      "currentSha256": "DFDE2A2884BDE2AEDDC0C82EF0B4354CBDE1165FFF71897C849DCD422882CF24",
+      "unchanged": true
+    },
+    {
+      "path": "src/components/Header.astro",
+      "sha256": "7CFFA663373454198DB0D9B1D0565729C72436DE0F2DA0B3473EF88F7EA9F2A5",
+      "currentSha256": "7CFFA663373454198DB0D9B1D0565729C72436DE0F2DA0B3473EF88F7EA9F2A5",
+      "unchanged": true
+    },
+    {
+      "path": "src/components/Footer.astro",
+      "sha256": "D91A4DB95ABADCD2C5906D4AF0F5991A36CFA547862AA418DB6AF20D39507983",
+      "currentSha256": "D91A4DB95ABADCD2C5906D4AF0F5991A36CFA547862AA418DB6AF20D39507983",
+      "unchanged": true
+    },
+    {
+      "path": "src/components/MobileNav.tsx",
+      "sha256": "48022AC5B8323628747EAC23C03F53789C007BCBA7D76E595B3A1F4FE848ED04",
+      "currentSha256": "48022AC5B8323628747EAC23C03F53789C007BCBA7D76E595B3A1F4FE848ED04",
+      "unchanged": true
+    },
+    {
+      "path": "src/components/InquiryCallout.astro",
+      "sha256": "B80E87AF67E69589BEC09CD8AD4E0EA9B66C3AE963FB6E8BB7AFB555564FE243",
+      "currentSha256": "B80E87AF67E69589BEC09CD8AD4E0EA9B66C3AE963FB6E8BB7AFB555564FE243",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/site.ts",
+      "sha256": "8A5519A4CE35C46248EF1C807A635DFA7C75D1A9619235AB88DC766F952F7673",
+      "currentSha256": "8A5519A4CE35C46248EF1C807A635DFA7C75D1A9619235AB88DC766F952F7673",
+      "unchanged": true
+    },
+    {
+      "path": "src/lib/seoRoutes.ts",
+      "sha256": "16F6B787C0B7D623ED27E224445613B18BEEF2AE61F1EFB28FA855D01362957A",
+      "currentSha256": "16F6B787C0B7D623ED27E224445613B18BEEF2AE61F1EFB28FA855D01362957A",
+      "unchanged": true
+    },
+    {
+      "path": "DESIGN.md",
+      "sha256": "1F680B48F08F6D8D6A4864B913A7C2FD791EB0475C599A0E4EEC35D817424F26",
+      "currentSha256": "1F680B48F08F6D8D6A4864B913A7C2FD791EB0475C599A0E4EEC35D817424F26",
+      "unchanged": true
+    }
+  ],
+  "sitemapIndexContainsPreview": false,
+  "sitemaps": []
+}

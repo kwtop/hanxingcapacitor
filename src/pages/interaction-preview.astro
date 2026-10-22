@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+if (!import.meta.env.DEV) return new Response('Not found', { status: 404 });
+const states = [
+  { title: '导航与键盘', href: '/products/', action: '桌面将焦点放在 Products，按 ↓ 或 ↑ 展开；方向键切换、Esc 关闭。手机点菜单，展开子级或点击外部收起。', result: '主栏目仍可直达；当前页可识别，关闭弹层后焦点回到入口。' },
+  { title: '筛选有结果', href: '/products/?duty=Start', action: '切换 Run / Start，输入系列或额定值；刷新或使用浏览器后退。', result: '条件、URL、可见结果和计数同步；Start 只显示 CD60。' },
+  { title: '筛选无结果', href: '/products/?duty=Start&q=CBB65', action: '查看无匹配提示，再点 Clear filters。', result: '保留原搜索条件，清除后恢复四系列，焦点返回搜索框。' },
+  { title: '原图筛选与加载更多', href: '/products/photographs/', action: '搜索 P 编号或标签；切换系列；点击 Show more photographs。', result: '保持原始编号和文字，新一批照片出现后焦点进入第一张新增照片。' },
+  { title: '图片查看弹窗', href: '/products/photographs/?series=CBB65', action: '点击任一照片，使用 Previous / Next 或 ← / → 切换；Tab、Esc、点击遮罩均可体验。', result: '焦点限制在弹窗内；关闭回到原照片，询盘入口带入对应原图编号。' },
+  { title: '图片加载中', href: '/products/photographs/?series=CBB65&ui-state=image-loading', action: '第一张照片保持加载状态；打开查看器，再点击 Load photograph。', result: '固定图片区域显示加载反馈，操作后回到真实图片加载。' },
+  { title: '图片加载失败', href: '/products/photographs/?series=CBB65&ui-state=image-error', action: '打开第一张照片，点击 Retry photograph。', result: '错误只影响当前图片；重试后加载真实照片，其他内容仍可使用。' },
+  { title: '表单字段错误', href: '/contact/?ui-state=validation', action: '点击错误摘要中的字段，修改姓名、国家、邮箱；也可切换 WhatsApp。', result: '错误出现在对应字段，提交定位到首个错误；切换渠道保留已填内容。' },
+  { title: '草稿就绪与修改', href: '/contact/?series=CBB65&configuration=label-p034-50plus5&ui-state=draft-ready', action: '检查草稿参数，修改任一字段，再点 Update inquiry。', result: '旧草稿保留可读，过期时不能复制或打开；更新后恢复操作，始终说明尚未发送。' },
+  { title: '复制失败与恢复', href: '/contact/?ui-state=copy-error', action: '点击 Copy message；第一次会进入失败状态，随后可手动复制或再次重试。', result: '自动选中消息并解释如何复制，不清空字段或草稿。' },
+  { title: '草稿准备失败与重试', href: '/contact/?ui-state=prepare-error', action: '查看失败提示，再点击 Prepare inquiry。', result: '保留输入，第二次正常生成草稿。' },
+  { title: '未知页面', href: '/interaction-preview-missing-page/', action: '从错误页使用产品或首页入口。', result: '真实 HTTP 404，保留明确返回路径。' },
+  { title: 'FAQ 搜索与无结果', href: '/faq/?q=shipping', action: '搜索问题与答案，输入无匹配词，再清除搜索；也可使用上方主题锚点。', result: '匹配答案自动展开，计数同步；清除后恢复原来的展开状态。' },
+  { title: '技术文章搜索', href: '/resources/articles/?q=terminals', action: '按标签、用途或安装关键词查找指南。', result: '沿用原文章分组和链接，无匹配时显示清除入口。' },
+  { title: '采购清单复制失败', href: '/buying-guide/?ui-state=document-copy-error#rfq-template', action: '点击 Copy checklist，第一次演示失败后再次重试。', result: '处理中防止重复点击，失败时选中原文，重试后给出复制成功反馈。' },
+  { title: '页面图片失败与重试', href: '/faq/?ui-state=site-image-error', action: '第一张内容图演示失败，点击 Retry image。', result: '只替换该图片区域的状态，原文字与导航继续可用，重试后加载真实素材。' },
+  { title: '视频失败与重试', href: '/factory/?ui-state=video-error', action: '第一段录像演示失败，点击 Retry footage；也可打开原视频文件。', result: '保留封面、来源与说明，重试使用原录像，播放后提供原生控制。' },
+  { title: '视频加载与取消', href: '/factory/?ui-state=video-loading', action: '查看加载中反馈，点击 Cancel loading，再正常播放。', result: '取消后回到可播放状态，不影响同页其他录像和采购资料。' },
+];
+---
+<BaseLayout title="Interaction preview | HAN XING" description="Local interaction states and prototype walkthrough." noindex>
+  <section class="section"><div class="container interaction-preview-guide">
+    <h1>交互原型与状态清单</h1>
+    <p class="lead">沿用现有品牌色、导航层级和内容，补全可操作状态。</p>
+    <p>这是本地开发验收入口，不加入网站导航。带 <code>ui-state</code> 的链接用于演示异常；表单演示使用虚构信息，没有发送询盘。</p>
+    <div class="interaction-preview-rules"><h2>共用交互规则</h2><ul><li>状态反馈放在操作发生的位置，错误保留到修复或重试。</li><li>本地筛选和草稿生成即时完成；图片慢载才显示加载提示，不增加人为等待。</li><li>键盘焦点可见；Esc 关闭查看器和菜单；弹窗关闭后回到原入口。</li><li>修改已生成草稿时保留原文，先更新再复制或打开；真实发送仍由邮件或 WhatsApp 应用完成。</li><li>手机菜单可独立滚动，表格保留横向滚动；图片弹窗适配短屏；支持 reduced motion。</li></ul></div>
+    <div class="interaction-preview-list">{states.map((state, index) => <article><div><span class="interaction-preview-number">{String(index + 1).padStart(2, '0')}</span><h2>{state.title}</h2></div><p>{state.action}</p><p class="interaction-preview-result">预期：{state.result}</p><a class="button secondary" href={state.href}>体验此状态</a></article>)}</div>
+    <p class="interaction-preview-footnote">桌面建议 1440 × 900；手机验收 390 × 844，并覆盖 320px 窄屏与横屏短视口。此页与异常演示入口仅在开发模式开放，生产构建不提供本页。</p>
+  </div></section>
+</BaseLayout>
+<style>
+  .interaction-preview-guide { max-width:1080px; }
+  .interaction-preview-guide > p { max-width:74ch; }
+  .interaction-preview-rules { margin:32px 0; padding:24px; border:1px solid #ccc; }
+  .interaction-preview-rules h2 { font-size:24px; }
+  .interaction-preview-rules ul { margin:0; }
+  .interaction-preview-list { display:grid; grid-template-columns:1fr 1fr; gap:0 32px; }
+  .interaction-preview-list article { padding:28px 0; border-top:1px solid #ccc; }
+  .interaction-preview-list article > div { display:flex; align-items:baseline; gap:12px; }
+  .interaction-preview-list h2 { font-size:22px; margin:0 0 14px; }
+  .interaction-preview-number { font-size:13px; font-variant-numeric:tabular-nums; }
+  .interaction-preview-list p { font-size:15px; line-height:1.7; }
+  .interaction-preview-result { color:#555; }
+  .interaction-preview-footnote { margin-top:32px; font-size:14px; }
+  @media(max-width:700px) { .interaction-preview-list { grid-template-columns:1fr; } .interaction-preview-rules { padding:18px; } }
+</style>

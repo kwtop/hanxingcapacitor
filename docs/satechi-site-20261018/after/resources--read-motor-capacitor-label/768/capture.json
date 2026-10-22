@@ -1,0 +1,88 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/resources/read-motor-capacitor-label/",
+  "clientWidth": 753,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 263.6041679382324,
+        "height": 33.60416793823242,
+        "left": 157.2291717529297,
+        "right": 595.4271087646484,
+        "top": 230,
+        "width": 438.1979370117187,
+        "x": 157.2291717529297,
+        "y": 230
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "Reading a motor capacitor label"
+    }
+  ],
+  "headings": [
+    "Reading the label",
+    "Ratings on a CBB65 label",
+    "Missing or unreadable markings",
+    "Photos to prepare",
+    "Send your capacitor requirements.",
+    "References",
+    "Related resources"
+  ],
+  "height": 6332,
+  "images": [
+    {
+      "alt": "Illustrative editorial view of the original Hanxing CBB65 label.",
+      "box": {
+        "bottom": 772.0416870117188,
+        "height": 468.4375,
+        "left": 25,
+        "right": 727.6666870117188,
+        "top": 303.60418701171875,
+        "width": 702.6666870117188,
+        "x": 25,
+        "y": 303.60418701171875
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/guide-label.webp"
+    },
+    {
+      "alt": "CBB65 sample label showing 20 µF ±5%, 450 VAC and 50/60 Hz.",
+      "box": {
+        "bottom": 2685.83349609375,
+        "height": 430,
+        "left": 25,
+        "right": 727.6666870117188,
+        "top": 2255.83349609375,
+        "width": 702.6666870117188,
+        "x": 25,
+        "y": 2255.83349609375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb65-2.jpg"
+    }
+  ],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 753,
+  "title": "Reading a motor capacitor label | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/resources/read-motor-capacitor-label/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 1024,
+    "width": 768
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

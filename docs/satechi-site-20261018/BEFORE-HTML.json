@@ -1,0 +1,3089 @@
+[
+  {
+    "route": "/",
+    "kind": "home",
+    "slug": "home",
+    "status": 200,
+    "title": "Motor Run &amp; Start Capacitors | HAN XING",
+    "canonical": "https://www.hanxingcapacitor.com/",
+    "htmlChars": 486874,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.hanxingcapacitor.com/#webpage",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Motor Run & Start Capacitors | HAN XING",
+            "description": "CBB60, CBB61 and CBB65 run capacitors and CD60 start capacitors for equipment sourcing. Compare ratings, case formats and sample photos from HAN XING.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "Motor capacitorsfor equipmentmanufacturers",
+      "Motor capacitor series",
+      "CBB60",
+      "CBB61",
+      "CBB65",
+      "CD60",
+      "Before choosing a capacitor",
+      "Duty",
+      "µF &amp; VAC",
+      "Dimensions",
+      "Connections",
+      "Applications",
+      "Water pumps",
+      "Fans and blowers",
+      "Washing machines",
+      "Air conditioners / HVAC",
+      "Samples &amp; production",
+      "Selection guides",
+      "Read the capacitor label",
+      "Dimensions &amp; connections",
+      "Start or run?",
+      "Single or dual run",
+      "Send your capacitor requirements."
+    ]
+  },
+  {
+    "route": "/about/",
+    "kind": "business",
+    "slug": "about",
+    "status": 200,
+    "title": "About HAN XING | Company &amp; Contact Information",
+    "canonical": "https://www.hanxingcapacitor.com/about/",
+    "htmlChars": 458068,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "AboutPage",
+            "@id": "https://www.hanxingcapacitor.com/about/#webpage",
+            "url": "https://www.hanxingcapacitor.com/about/",
+            "name": "About HAN XING | Company & Contact Information",
+            "description": "HAN XING motor capacitor series, company and contact details, with email, WhatsApp and supplier identity information for buyers.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About HAN XING",
+            "item": "https://www.hanxingcapacitor.com/about/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "About HAN XING",
+      "Company information",
+      "Supplier identity for your order",
+      "Motor capacitor supply",
+      "Send your capacitor requirements."
+    ]
+  },
+  {
+    "route": "/applications/",
+    "kind": "business",
+    "slug": "applications",
+    "status": 200,
+    "title": "Motor capacitors by application | Hanxing Capacitor",
+    "canonical": "https://www.hanxingcapacitor.com/applications/",
+    "htmlChars": 460766,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.hanxingcapacitor.com/applications/#webpage",
+            "url": "https://www.hanxingcapacitor.com/applications/",
+            "name": "Motor capacitors by application | Hanxing Capacitor",
+            "description": "Explore capacitor options for water pumps, fans and blowers, washing machines, and air conditioners or HVAC equipment. Match the original motor rating and connections before selecting a series.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            },
+            "mainEntity": {
+              "@type": "ItemList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Water pumps",
+                  "url": "https://www.hanxingcapacitor.com/applications/pumps-and-water-systems/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Fans and blowers",
+                  "url": "https://www.hanxingcapacitor.com/applications/fans-and-ventilation/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Washing machines",
+                  "url": "https://www.hanxingcapacitor.com/applications/appliances-and-small-motors/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "Air conditioners / HVAC",
+                  "url": "https://www.hanxingcapacitor.com/applications/hvac-and-refrigeration/"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Motor capacitors by application",
+            "item": "https://www.hanxingcapacitor.com/applications/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "Applications",
+      "Water pumps",
+      "Fans and blowers",
+      "Washing machines",
+      "Air conditioners / HVAC",
+      "Send your capacitor requirements."
+    ]
+  },
+  {
+    "route": "/applications/appliances-and-small-motors/",
+    "kind": "application",
+    "slug": "applications--appliances-and-small-motors",
+    "status": 200,
+    "title": "Washing machines | CBB60 and CBB61 motor capacitors | Hanxing Capacitor",
+    "canonical": "https://www.hanxingcapacitor.com/applications/appliances-and-small-motors/",
+    "htmlChars": 476272,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.hanxingcapacitor.com/applications/appliances-and-small-motors/#webpage",
+            "url": "https://www.hanxingcapacitor.com/applications/appliances-and-small-motors/",
+            "name": "Washing machines | CBB60 and CBB61 motor capacitors | Hanxing Capacitor",
+            "description": "CBB60 and CBB61 run capacitors for selected washing-machine motors. Match the specific motor, original rating, wiring and installed fit.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Applications",
+            "item": "https://www.hanxingcapacitor.com/applications/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Washing machines",
+            "item": "https://www.hanxingcapacitor.com/applications/appliances-and-small-motors/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "Washing machines",
+      "Motor circuit &amp; original capacitor",
+      "Appliance and motor",
+      "Original capacitor",
+      "Case format",
+      "Compare capacitor series",
+      "CBB60",
+      "CBB61",
+      "Fit and connection check",
+      "Original labels",
+      "Wiring and connector",
+      "Installed dimensions",
+      "Send your capacitor requirements."
+    ]
+  },
+  {
+    "route": "/applications/fans-and-ventilation/",
+    "kind": "application",
+    "slug": "applications--fans-and-ventilation",
+    "status": 200,
+    "title": "Fans and blowers | CBB61 motor run capacitors | Hanxing Capacitor",
+    "canonical": "https://www.hanxingcapacitor.com/applications/fans-and-ventilation/",
+    "htmlChars": 477044,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.hanxingcapacitor.com/applications/fans-and-ventilation/#webpage",
+            "url": "https://www.hanxingcapacitor.com/applications/fans-and-ventilation/",
+            "name": "Fans and blowers | CBB61 motor run capacitors | Hanxing Capacitor",
+            "description": "CBB61 run capacitors for fan and blower motors, with CBB60 relevant where specified. Compare the original rating, wiring and mounting space.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Applications",
+            "item": "https://www.hanxingcapacitor.com/applications/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Fans and blowers",
+            "item": "https://www.hanxingcapacitor.com/applications/fans-and-ventilation/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "Fans and blowers",
+      "Motor circuit &amp; original capacitor",
+      "Motor rating",
+      "Rectangular case",
+      "Cylindrical case",
+      "Compare capacitor series",
+      "CBB61",
+      "CBB60",
+      "Fit and connection check",
+      "Case and mounting tabs",
+      "Wire leads",
+      "Blade terminals",
+      "Send your capacitor requirements."
+    ]
+  },
+  {
+    "route": "/applications/hvac-and-refrigeration/",
+    "kind": "application",
+    "slug": "applications--hvac-and-refrigeration",
+    "status": 200,
+    "title": "Air conditioners / HVAC | CBB65 run capacitors | Hanxing Capacitor",
+    "canonical": "https://www.hanxingcapacitor.com/applications/hvac-and-refrigeration/",
+    "htmlChars": 477926,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.hanxingcapacitor.com/applications/hvac-and-refrigeration/#webpage",
+            "url": "https://www.hanxingcapacitor.com/applications/hvac-and-refrigeration/",
+            "name": "Air conditioners / HVAC | CBB65 run capacitors | Hanxing Capacitor",
+            "description": "CBB65 single and dual-run capacitors for air conditioners and HVAC equipment. Check the original circuit and terminal mapping; separate start duty is different.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Applications",
+            "item": "https://www.hanxingcapacitor.com/applications/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Air conditioners / HVAC",
+            "item": "https://www.hanxingcapacitor.com/applications/hvac-and-refrigeration/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "Air conditioners / HVAC",
+      "Motor circuits &amp; original capacitors",
+      "Identify each motor",
+      "Single or dual run",
+      "Separate start circuit",
+      "CBB65 run and CD60 start capacitors",
+      "CBB65",
+      "CD60",
+      "Other run-capacitor formats",
+      "Terminal mapping and installed fit",
+      "Terminal groups",
+      "Can and mounting",
+      "Starting duty",
+      "Send your capacitor requirements."
+    ]
+  },
+  {
+    "route": "/applications/pumps-and-water-systems/",
+    "kind": "application",
+    "slug": "applications--pumps-and-water-systems",
+    "status": 200,
+    "title": "Water pumps | CBB60 motor run capacitors | Hanxing Capacitor",
+    "canonical": "https://www.hanxingcapacitor.com/applications/pumps-and-water-systems/",
+    "htmlChars": 476484,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.hanxingcapacitor.com/applications/pumps-and-water-systems/#webpage",
+            "url": "https://www.hanxingcapacitor.com/applications/pumps-and-water-systems/",
+            "name": "Water pumps | CBB60 motor run capacitors | Hanxing Capacitor",
+            "description": "CBB60 run capacitors for water-pump motors. A separately switched start circuit may need CD60. Compare the motor diagram, original rating and installed fit.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Applications",
+            "item": "https://www.hanxingcapacitor.com/applications/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Water pumps",
+            "item": "https://www.hanxingcapacitor.com/applications/pumps-and-water-systems/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "Water pumps",
+      "Motor circuit &amp; original capacitor",
+      "Run",
+      "Start",
+      "Both",
+      "Unknown",
+      "Compare capacitor series",
+      "CBB60",
+      "CD60",
+      "Fit and connection check",
+      "Body and base stud",
+      "Lead clearance",
+      "Separate parts",
+      "Send your capacitor requirements."
+    ]
+  },
+  {
+    "route": "/buying-guide/",
+    "kind": "business",
+    "slug": "buying-guide",
+    "status": 200,
+    "title": "Motor Capacitor Buying &amp; Shipping Guide | HAN XING",
+    "canonical": "https://www.hanxingcapacitor.com/buying-guide/",
+    "htmlChars": 469415,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.hanxingcapacitor.com/buying-guide/#webpage",
+            "url": "https://www.hanxingcapacitor.com/buying-guide/",
+            "name": "Motor Capacitor Buying & Shipping Guide | HAN XING",
+            "description": "Use the capacitor quotation checklist, approve sample details and confirm order terms. Check packing, dispatch dates and shipping documents before pickup.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Resources",
+            "item": "https://www.hanxingcapacitor.com/resources/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Buying & shipping",
+            "item": "https://www.hanxingcapacitor.com/buying-guide/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "Buying &amp; shipping",
+      "Prepare your inquiry",
+      "Quotation checklist",
+      "Send your capacitor requirements.",
+      "Motor and electrical specifications",
+      "Dimensions and connections",
+      "Quantity and model documents",
+      "Approve the sample",
+      "Confirm the order",
+      "Check packing &amp; dispatch",
+      "Review shipping documents",
+      "Not sure which series?",
+      "Which equipment needs the capacitor?",
+      "Run and start duty for pumps"
+    ]
+  },
+  {
+    "route": "/contact/",
+    "kind": "contact",
+    "slug": "contact",
+    "status": 200,
+    "title": "Contact Hanxing Capacitor | Motor Capacitor Inquiries",
+    "canonical": "https://www.hanxingcapacitor.com/contact/",
+    "htmlChars": 484950,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "ContactPage",
+            "@id": "https://www.hanxingcapacitor.com/contact/#webpage",
+            "url": "https://www.hanxingcapacitor.com/contact/",
+            "name": "Contact Hanxing Capacitor | Motor Capacitor Inquiries",
+            "description": "Contact HAN XING about CBB60, CBB61, CBB65, CD60 or OEM requirements. Prepare an inquiry by email or WhatsApp.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contact Hanxing Capacitor",
+            "item": "https://www.hanxingcapacitor.com/contact/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "ContactHAN XING",
+      "Your reference",
+      "Review your inquiry"
+    ]
+  },
+  {
+    "route": "/factory/",
+    "kind": "business",
+    "slug": "factory",
+    "status": 200,
+    "title": "Manufacturing &amp; Quality | Product Documents | Hanxing Capacitor",
+    "canonical": "https://www.hanxingcapacitor.com/factory/",
+    "htmlChars": 465713,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.hanxingcapacitor.com/factory/#webpage",
+            "url": "https://www.hanxingcapacitor.com/factory/",
+            "name": "Manufacturing & Quality | Product Documents | Hanxing Capacitor",
+            "description": "View supplied capacitor production footage and use the buyer checklist for model datasheets, drawings, inspection reports and certificates.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "OEM & quality",
+            "item": "https://www.hanxingcapacitor.com/oem-quality/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Manufacturing & quality",
+            "item": "https://www.hanxingcapacitor.com/factory/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "Manufacturing and quality",
+      "Process footage",
+      "Material and process",
+      "Electrical and product testing",
+      "Packing and warehouse handling",
+      "Product document checklist",
+      "Request model documents."
+    ]
+  },
+  {
+    "route": "/factory/packing-and-dispatch/",
+    "kind": "business",
+    "slug": "factory--packing-and-dispatch",
+    "status": 200,
+    "title": "Packing, Dispatch &amp; Order Records | Hanxing Capacitor",
+    "canonical": "https://www.hanxingcapacitor.com/factory/packing-and-dispatch/",
+    "htmlChars": 464102,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.hanxingcapacitor.com/factory/packing-and-dispatch/#webpage",
+            "url": "https://www.hanxingcapacitor.com/factory/packing-and-dispatch/",
+            "name": "Packing, Dispatch & Order Records | Hanxing Capacitor",
+            "description": "Capacitor packing requirements, carton quantities, shipping marks and the documents to check before carrier handover.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "OEM & quality",
+            "item": "https://www.hanxingcapacitor.com/oem-quality/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Manufacturing & quality",
+            "item": "https://www.hanxingcapacitor.com/factory/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Packing & dispatch",
+            "item": "https://www.hanxingcapacitor.com/factory/packing-and-dispatch/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "Packing and dispatch",
+      "Packing requirements",
+      "Packing footage",
+      "Packout &amp; carrier handover",
+      "Match the documents",
+      "Discuss packing and delivery.",
+      "References"
+    ]
+  },
+  {
+    "route": "/faq/",
+    "kind": "faq",
+    "slug": "faq",
+    "status": 200,
+    "title": "Motor Capacitor Buyer FAQ | Hanxing Capacitor",
+    "canonical": "https://www.hanxingcapacitor.com/faq/",
+    "htmlChars": 454722,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.hanxingcapacitor.com/faq/#webpage",
+            "url": "https://www.hanxingcapacitor.com/faq/",
+            "name": "Motor Capacitor Buyer FAQ | Hanxing Capacitor",
+            "description": "Answers to capacitor buying questions about minimum quantities, custom labels, model selection, certificate checks, lead times and shipping documents.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Resources",
+            "item": "https://www.hanxingcapacitor.com/resources/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Buyer FAQ",
+            "item": "https://www.hanxingcapacitor.com/faq/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "Motor capacitor buying questions",
+      "Quotations and custom orders",
+      "Selecting a capacitor",
+      "Orders and shipping"
+    ]
+  },
+  {
+    "route": "/oem-quality/",
+    "kind": "business",
+    "slug": "oem-quality",
+    "status": 200,
+    "title": "OEM, Manufacturing &amp; Quality | Hanxing Capacitor",
+    "canonical": "https://www.hanxingcapacitor.com/oem-quality/",
+    "htmlChars": 454215,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.hanxingcapacitor.com/oem-quality/#webpage",
+            "url": "https://www.hanxingcapacitor.com/oem-quality/",
+            "name": "OEM, Manufacturing & Quality | Hanxing Capacitor",
+            "description": "Motor capacitor OEM requirements, sample approval, production footage and product document checks, with packing and dispatch guidance for buyers.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "OEM, Manufacturing & Quality",
+            "item": "https://www.hanxingcapacitor.com/oem-quality/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "OEM and quality",
+      "OEM &amp; private label",
+      "Manufacturing &amp; quality",
+      "Packing &amp; dispatch",
+      "Before placing an order"
+    ]
+  },
+  {
+    "route": "/oem/",
+    "kind": "business",
+    "slug": "oem",
+    "status": 200,
+    "title": "OEM &amp; Private Label Motor Capacitors | Hanxing Capacitor",
+    "canonical": "https://www.hanxingcapacitor.com/oem/",
+    "htmlChars": 460449,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.hanxingcapacitor.com/oem/#webpage",
+            "url": "https://www.hanxingcapacitor.com/oem/",
+            "name": "OEM & Private Label Motor Capacitors | Hanxing Capacitor",
+            "description": "Prepare OEM motor capacitor requirements for electrical ratings, cases, connections, labels and packing, with sample approval and quotation terms.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "OEM & quality",
+            "item": "https://www.hanxingcapacitor.com/oem-quality/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "OEM & private label",
+            "item": "https://www.hanxingcapacitor.com/oem/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "OEM motor capacitors",
+      "Specify the capacitor you need",
+      "From specification to approval",
+      "Send the specification",
+      "Agree the drawings",
+      "Approve the sample",
+      "Confirm the order",
+      "Sample terms to agree",
+      "Send your OEM requirements."
+    ]
+  },
+  {
+    "route": "/privacy-policy/",
+    "kind": "policy",
+    "slug": "privacy-policy",
+    "status": 200,
+    "title": "Privacy Notice &amp; Contact Information | Hanxing Capacitor",
+    "canonical": "https://www.hanxingcapacitor.com/privacy-policy/",
+    "htmlChars": 452833,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.hanxingcapacitor.com/privacy-policy/#webpage",
+            "url": "https://www.hanxingcapacitor.com/privacy-policy/",
+            "name": "Privacy Notice & Contact Information | Hanxing Capacitor",
+            "description": "How the contact form creates email and WhatsApp drafts, what you choose to include in an inquiry, and whom to contact about your information.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Privacy Notice & Contact Information",
+            "item": "https://www.hanxingcapacitor.com/privacy-policy/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "Privacy notice",
+      "Creating an inquiry draft",
+      "Information you include",
+      "Website requests and cookies",
+      "Business contact",
+      "Questions about your information"
+    ]
+  },
+  {
+    "route": "/products/",
+    "kind": "business",
+    "slug": "products",
+    "status": 200,
+    "title": "Motor Capacitor Series | CBB60, CBB61, CBB65 &amp; CD60 | Hanxing Capacitor",
+    "canonical": "https://www.hanxingcapacitor.com/products/",
+    "htmlChars": 466233,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.hanxingcapacitor.com/products/#webpage",
+            "url": "https://www.hanxingcapacitor.com/products/",
+            "name": "Motor Capacitor Series | CBB60, CBB61, CBB65 & CD60 | Hanxing Capacitor",
+            "description": "Compare CBB60, CBB61 and CBB65 run capacitors with CD60 start capacitors by electrical range, case format and connections.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            },
+            "mainEntity": {
+              "@type": "ItemList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "CBB60 motor run capacitors",
+                  "url": "https://www.hanxingcapacitor.com/products/cbb60-motor-run-capacitor/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "CBB61 fan capacitors",
+                  "url": "https://www.hanxingcapacitor.com/products/cbb61-fan-capacitor/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "CBB65 HVAC capacitors",
+                  "url": "https://www.hanxingcapacitor.com/products/cbb65-air-conditioner-capacitor/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "CD60 motor start capacitors",
+                  "url": "https://www.hanxingcapacitor.com/products/cd60-start-capacitor/"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Motor Capacitor Series",
+            "item": "https://www.hanxingcapacitor.com/products/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "Motor capacitor series",
+      "CBB60Motor run capacitor",
+      "CBB61Fan run capacitor",
+      "CBB65HVAC run capacitor",
+      "CD60Motor start capacitor",
+      "Series comparison",
+      "Send your capacitor requirements."
+    ]
+  },
+  {
+    "route": "/products/cbb60-motor-run-capacitor/",
+    "kind": "product",
+    "slug": "products--cbb60-motor-run-capacitor",
+    "status": 200,
+    "title": "CBB60 motor run capacitors | Hanxing Capacitor",
+    "canonical": "https://www.hanxingcapacitor.com/products/cbb60-motor-run-capacitor/",
+    "htmlChars": 500656,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.hanxingcapacitor.com/products/cbb60-motor-run-capacitor/#webpage",
+            "url": "https://www.hanxingcapacitor.com/products/cbb60-motor-run-capacitor/",
+            "name": "CBB60 motor run capacitors | Hanxing Capacitor",
+            "description": "Cylindrical run capacitors for water pumps and single-phase motors. Compare ratings, connections and original sample photos.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            },
+            "mainEntity": {
+              "@id": "https://www.hanxingcapacitor.com/products/cbb60-motor-run-capacitor/#series"
+            }
+          },
+          {
+            "@type": "ProductGroup",
+            "@id": "https://www.hanxingcapacitor.com/products/cbb60-motor-run-capacitor/#series",
+            "name": "CBB60 motor run capacitors",
+            "productGroupID": "CBB60",
+            "url": "https://www.hanxingcapacitor.com/products/cbb60-motor-run-capacitor/",
+            "description": "CBB60 is a metallized polypropylene film run capacitor in a cylindrical plastic case. Applications include water pumps, washing machines, smoke exhaust equipment and other single-phase motors. Select the rating and connections specified by the motor manufacturer.",
+            "image": "https://www.hanxingcapacitor.com/images/real/cbb60-hanxing-wired.jpg",
+            "category": "Run motor capacitors",
+            "mainEntityOfPage": {
+              "@id": "https://www.hanxingcapacitor.com/products/cbb60-motor-run-capacitor/#webpage"
+            },
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Published capacitance range",
+                "value": "2–100 µF"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Published rated voltage range",
+                "value": "110–450 VAC"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Circuit duty",
+                "value": "Run"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Model selection",
+                "value": "Select the model against the motor specification and check ratings, connections and dimensions before ordering."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Products",
+            "item": "https://www.hanxingcapacitor.com/products/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "CBB60 motor run capacitors",
+            "item": "https://www.hanxingcapacitor.com/products/cbb60-motor-run-capacitor/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "CBB60motor run capacitors",
+      "Technical specifications",
+      "Electrical",
+      "Case & connection",
+      "Selecting a model",
+      "Sample configurations & fit",
+      "Lead-wire sample with base stud",
+      "Record the installed fit",
+      "Applications",
+      "Water pumps",
+      "Washing machines",
+      "Fans and blowers",
+      "Other single-phase motors",
+      "CBB60 datasheets &amp; drawings",
+      "Ordering &amp; samples",
+      "Send your capacitor requirements.",
+      "Other capacitor series",
+      "CBB61",
+      "CBB65",
+      "CD60"
+    ]
+  },
+  {
+    "route": "/products/cbb61-fan-capacitor/",
+    "kind": "product",
+    "slug": "products--cbb61-fan-capacitor",
+    "status": 200,
+    "title": "CBB61 fan capacitors | Hanxing Capacitor",
+    "canonical": "https://www.hanxingcapacitor.com/products/cbb61-fan-capacitor/",
+    "htmlChars": 492519,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.hanxingcapacitor.com/products/cbb61-fan-capacitor/#webpage",
+            "url": "https://www.hanxingcapacitor.com/products/cbb61-fan-capacitor/",
+            "name": "CBB61 fan capacitors | Hanxing Capacitor",
+            "description": "Compact rectangular run capacitors for fans, blowers and appliance motors. Compare ratings, connections and original sample photos.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            },
+            "mainEntity": {
+              "@id": "https://www.hanxingcapacitor.com/products/cbb61-fan-capacitor/#series"
+            }
+          },
+          {
+            "@type": "ProductGroup",
+            "@id": "https://www.hanxingcapacitor.com/products/cbb61-fan-capacitor/#series",
+            "name": "CBB61 fan capacitors",
+            "productGroupID": "CBB61",
+            "url": "https://www.hanxingcapacitor.com/products/cbb61-fan-capacitor/",
+            "description": "The CBB61 film run capacitor has a compact rectangular case for fans, blowers and small single-phase motors. It is also listed for selected air conditioners and washing machines. Alongside the electrical rating, check the space for the case and the lead or terminal arrangement.",
+            "image": "https://www.hanxingcapacitor.com/images/real/cbb61-13.jpg",
+            "category": "Run motor capacitors",
+            "mainEntityOfPage": {
+              "@id": "https://www.hanxingcapacitor.com/products/cbb61-fan-capacitor/#webpage"
+            },
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Published capacitance range",
+                "value": "0.5–35 µF"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Published rated voltage range",
+                "value": "110–450 VAC"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Circuit duty",
+                "value": "Run"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Model selection",
+                "value": "Select the model against the motor specification and check ratings, connections and dimensions before ordering."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Products",
+            "item": "https://www.hanxingcapacitor.com/products/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "CBB61 fan capacitors",
+            "item": "https://www.hanxingcapacitor.com/products/cbb61-fan-capacitor/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "CBB61fan capacitors",
+      "Technical specifications",
+      "Electrical",
+      "Case & connection",
+      "Selecting a model",
+      "Sample configurations & fit",
+      "Blade-terminal samples",
+      "Wire-lead samples",
+      "Record the installed fit",
+      "Applications",
+      "Fans and blowers",
+      "Washing machines",
+      "Selected air conditioners",
+      "CBB61 datasheets &amp; drawings",
+      "Ordering &amp; samples",
+      "Send your capacitor requirements.",
+      "Other capacitor series",
+      "CBB60",
+      "CBB65",
+      "CD60"
+    ]
+  },
+  {
+    "route": "/products/cbb65-air-conditioner-capacitor/",
+    "kind": "product",
+    "slug": "products--cbb65-air-conditioner-capacitor",
+    "status": 200,
+    "title": "CBB65 single &amp; dual-run capacitors | Hanxing Capacitor",
+    "canonical": "https://www.hanxingcapacitor.com/products/cbb65-air-conditioner-capacitor/",
+    "htmlChars": 497062,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.hanxingcapacitor.com/products/cbb65-air-conditioner-capacitor/#webpage",
+            "url": "https://www.hanxingcapacitor.com/products/cbb65-air-conditioner-capacitor/",
+            "name": "CBB65 single & dual-run capacitors | Hanxing Capacitor",
+            "description": "Single and dual-run metal-can capacitors for HVAC and refrigeration motors. Compare ratings, connections and original sample photos.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            },
+            "mainEntity": {
+              "@id": "https://www.hanxingcapacitor.com/products/cbb65-air-conditioner-capacitor/#series"
+            }
+          },
+          {
+            "@type": "ProductGroup",
+            "@id": "https://www.hanxingcapacitor.com/products/cbb65-air-conditioner-capacitor/#series",
+            "name": "CBB65 HVAC capacitors",
+            "productGroupID": "CBB65",
+            "url": "https://www.hanxingcapacitor.com/products/cbb65-air-conditioner-capacitor/",
+            "description": "CBB65 metal-can run capacitors are listed for air conditioners, compressors, cold dryers and related HVAC equipment. Single and dual-run versions have different ratings and terminal layouts. Send the original label and a terminal-end photo so the required configuration can be checked.",
+            "image": "https://www.hanxingcapacitor.com/images/real/cbb65-2.jpg",
+            "category": "Run motor capacitors",
+            "mainEntityOfPage": {
+              "@id": "https://www.hanxingcapacitor.com/products/cbb65-air-conditioner-capacitor/#webpage"
+            },
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Published capacitance range",
+                "value": "Single: 2–100 µF; dual: published range 1+15 to 15+80 µF"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Published rated voltage range",
+                "value": "Single: 110–450 VAC; dual: 370–450 VAC"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Circuit duty",
+                "value": "Run"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Model selection",
+                "value": "Select the model against the motor specification and check ratings, connections and dimensions before ordering."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Products",
+            "item": "https://www.hanxingcapacitor.com/products/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "CBB65 single & dual-run capacitors",
+            "item": "https://www.hanxingcapacitor.com/products/cbb65-air-conditioner-capacitor/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "CBB65single &amp; dual-run capacitors",
+      "Technical specifications",
+      "Single and dual-run ranges",
+      "Electrical",
+      "Case & connection",
+      "Selecting a model",
+      "Sample configurations & fit",
+      "Single-run sample",
+      "Dual-run sample",
+      "Record the installed fit",
+      "Applications",
+      "Air conditioners / HVAC",
+      "CBB65 datasheets &amp; drawings",
+      "Ordering &amp; samples",
+      "Send your capacitor requirements.",
+      "Other capacitor series",
+      "CBB60",
+      "CBB61",
+      "CD60"
+    ]
+  },
+  {
+    "route": "/products/cd60-start-capacitor/",
+    "kind": "product",
+    "slug": "products--cd60-start-capacitor",
+    "status": 200,
+    "title": "CD60 motor start capacitors | Hanxing Capacitor",
+    "canonical": "https://www.hanxingcapacitor.com/products/cd60-start-capacitor/",
+    "htmlChars": 491279,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.hanxingcapacitor.com/products/cd60-start-capacitor/#webpage",
+            "url": "https://www.hanxingcapacitor.com/products/cd60-start-capacitor/",
+            "name": "CD60 motor start capacitors | Hanxing Capacitor",
+            "description": "Electrolytic start capacitors for switched single-phase AC motor circuits. Compare ratings, connections and original sample photos.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            },
+            "mainEntity": {
+              "@id": "https://www.hanxingcapacitor.com/products/cd60-start-capacitor/#series"
+            }
+          },
+          {
+            "@type": "ProductGroup",
+            "@id": "https://www.hanxingcapacitor.com/products/cd60-start-capacitor/#series",
+            "name": "CD60 motor start capacitors",
+            "productGroupID": "CD60",
+            "url": "https://www.hanxingcapacitor.com/products/cd60-start-capacitor/",
+            "description": "CD60 is an aluminium electrolytic capacitor for motor starting. It requires a circuit that switches the capacitor out after starting. Use the motor documentation to select the rating and check the permitted starting duty.",
+            "image": "https://www.hanxingcapacitor.com/images/real/cd60-25.jpg",
+            "category": "Start motor capacitors",
+            "mainEntityOfPage": {
+              "@id": "https://www.hanxingcapacitor.com/products/cd60-start-capacitor/#webpage"
+            },
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Published capacitance range",
+                "value": "20–1500 µF"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Published rated voltage range",
+                "value": "110–330 VAC"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Circuit duty",
+                "value": "Start"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Model selection",
+                "value": "Select the model against the motor specification and check ratings, connections and dimensions before ordering."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Products",
+            "item": "https://www.hanxingcapacitor.com/products/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "CD60 motor start capacitors",
+            "item": "https://www.hanxingcapacitor.com/products/cd60-start-capacitor/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "CD60motor start capacitors",
+      "Technical specifications",
+      "Electrical",
+      "Case & connection",
+      "Sample label and series data",
+      "Selecting a model",
+      "Sample configurations & fit",
+      "Motor-start sample",
+      "Record the installed fit",
+      "Applications",
+      "Water pumps",
+      "Air conditioners / HVAC",
+      "Other single-phase AC motor starting",
+      "CD60 datasheets &amp; drawings",
+      "Ordering &amp; samples",
+      "Send your capacitor requirements.",
+      "Other capacitor series",
+      "CBB60",
+      "CBB61",
+      "CBB65"
+    ]
+  },
+  {
+    "route": "/products/photographs/",
+    "kind": "library",
+    "slug": "products--photographs",
+    "status": 200,
+    "title": "Product sample photographs | Hanxing Capacitor",
+    "canonical": "https://www.hanxingcapacitor.com/products/photographs/",
+    "htmlChars": 489178,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.hanxingcapacitor.com/products/photographs/#webpage",
+            "url": "https://www.hanxingcapacitor.com/products/photographs/",
+            "name": "Product sample photographs | Hanxing Capacitor",
+            "description": "Browse supplied capacitor sample photographs by series and include the P reference with the rating you need in an inquiry.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Products",
+            "item": "https://www.hanxingcapacitor.com/products/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Product sample photographs",
+            "item": "https://www.hanxingcapacitor.com/products/photographs/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "Product sample photographs"
+    ]
+  },
+  {
+    "route": "/resources/",
+    "kind": "resources",
+    "slug": "resources",
+    "status": 200,
+    "title": "Motor Capacitor Resources | Technical &amp; Buying Guides | Hanxing Capacitor",
+    "canonical": "https://www.hanxingcapacitor.com/resources/",
+    "htmlChars": 457255,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.hanxingcapacitor.com/resources/#webpage",
+            "url": "https://www.hanxingcapacitor.com/resources/",
+            "name": "Motor Capacitor Resources | Technical & Buying Guides | Hanxing Capacitor",
+            "description": "Motor capacitor selection guides and buying checklists. Read labels, compare series and prepare the specifications and documents for your order.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            },
+            "mainEntity": {
+              "@type": "ItemList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Technical guides",
+                  "url": "https://www.hanxingcapacitor.com/resources/articles/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Buying & shipping",
+                  "url": "https://www.hanxingcapacitor.com/buying-guide/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Buyer FAQ",
+                  "url": "https://www.hanxingcapacitor.com/faq/"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Motor Capacitor Resources",
+            "item": "https://www.hanxingcapacitor.com/resources/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "Motor capacitor resources",
+      "Technical guides",
+      "Buying &amp; shipping",
+      "Buyer FAQ",
+      "Useful starting points",
+      "Reading a motor capacitor label",
+      "CBB60 vs CBB61 vs CBB65",
+      "Motor capacitor order &amp; shipping checklist",
+      "Company and model documents"
+    ]
+  },
+  {
+    "route": "/resources/articles/",
+    "kind": "resources",
+    "slug": "resources--articles",
+    "status": 200,
+    "title": "Motor Capacitor Technical Guides | HAN XING",
+    "canonical": "https://www.hanxingcapacitor.com/resources/articles/",
+    "htmlChars": 458194,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.hanxingcapacitor.com/resources/articles/#webpage",
+            "url": "https://www.hanxingcapacitor.com/resources/articles/",
+            "name": "Motor Capacitor Technical Guides | HAN XING",
+            "description": "Motor capacitor guides on µF, VAC and circuit duty, with series comparisons and measurement checklists for cases, mounting and connections.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            },
+            "mainEntity": {
+              "@type": "ItemList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Start capacitor vs run capacitor",
+                  "url": "https://www.hanxingcapacitor.com/resources/start-vs-run-capacitors/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "CBB60 vs CBB61 vs CBB65",
+                  "url": "https://www.hanxingcapacitor.com/resources/cbb60-vs-cbb61-vs-cbb65/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Single-run vs dual-run capacitors",
+                  "url": "https://www.hanxingcapacitor.com/resources/single-vs-dual-run-capacitors/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "Reading a motor capacitor label",
+                  "url": "https://www.hanxingcapacitor.com/resources/read-motor-capacitor-label/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 5,
+                  "name": "Capacitance and voltage ratings for motor capacitors",
+                  "url": "https://www.hanxingcapacitor.com/resources/capacitance-voltage-guide/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 6,
+                  "name": "Capacitor dimensions, connections and mounting",
+                  "url": "https://www.hanxingcapacitor.com/resources/dimensions-terminals-mounting/"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Resources",
+            "item": "https://www.hanxingcapacitor.com/resources/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Technical guides",
+            "item": "https://www.hanxingcapacitor.com/resources/articles/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "Technical guides",
+      "Electrical ratings and duty",
+      "Reading a motor capacitor label",
+      "Start capacitor vs run capacitor",
+      "Capacitance and voltage ratings for motor capacitors",
+      "Compare capacitor series",
+      "CBB60 vs CBB61 vs CBB65",
+      "Single-run vs dual-run capacitors",
+      "Dimensions &amp; connections",
+      "Capacitor dimensions, connections and mounting",
+      "Datasheets &amp; drawings"
+    ]
+  },
+  {
+    "route": "/resources/capacitance-voltage-guide/",
+    "kind": "guide",
+    "slug": "resources--capacitance-voltage-guide",
+    "status": 200,
+    "title": "Capacitance and voltage ratings for motor capacitors | Hanxing Capacitor",
+    "canonical": "https://www.hanxingcapacitor.com/resources/capacitance-voltage-guide/",
+    "htmlChars": 464380,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.hanxingcapacitor.com/resources/capacitance-voltage-guide/#webpage",
+            "url": "https://www.hanxingcapacitor.com/resources/capacitance-voltage-guide/",
+            "name": "Capacitance and voltage ratings for motor capacitors | Hanxing Capacitor",
+            "description": "Understand µF, VAC and tolerance, and check the capacitor ratings specified by the motor manufacturer.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            },
+            "mainEntity": {
+              "@id": "https://www.hanxingcapacitor.com/resources/capacitance-voltage-guide/#article"
+            }
+          },
+          {
+            "@type": "TechArticle",
+            "@id": "https://www.hanxingcapacitor.com/resources/capacitance-voltage-guide/#article",
+            "headline": "Capacitance and voltage ratings for motor capacitors",
+            "description": "Understand µF, VAC and tolerance, and check the capacitor ratings specified by the motor manufacturer.",
+            "abstract": "µF states the capacitance, and VAC states the capacitor's rated AC voltage. Both need to meet the motor manufacturer's specification. The supply voltage on the motor plate is a separate rating; it does not, by itself, tell you the capacitor voltage required.",
+            "url": "https://www.hanxingcapacitor.com/resources/capacitance-voltage-guide/",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            },
+            "mainEntityOfPage": {
+              "@id": "https://www.hanxingcapacitor.com/resources/capacitance-voltage-guide/#webpage"
+            },
+            "citation": [
+              "https://www.orientalmotor.com/products/pdfs/F_TecRef/TecAc.pdf",
+              "https://faq.orientalmotor.com/can-i-use-capacitors-other-than-the-one-that-comes-with-the-ac-motor",
+              "https://www.tdk-electronics.tdk.com/en/3192232"
+            ]
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Resources",
+            "item": "https://www.hanxingcapacitor.com/resources/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Technical guides",
+            "item": "https://www.hanxingcapacitor.com/resources/articles/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Capacitance and voltage ratings for motor capacitors",
+            "item": "https://www.hanxingcapacitor.com/resources/capacitance-voltage-guide/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "Capacitance and voltage ratings for motor capacitors",
+      "µF, VAC and tolerance",
+      "Common reading mistakes",
+      "Sample markings",
+      "20 µF · 450 VAC · ±5%",
+      "Send your capacitor requirements.",
+      "References",
+      "Related resources"
+    ]
+  },
+  {
+    "route": "/resources/cbb60-vs-cbb61-vs-cbb65/",
+    "kind": "guide",
+    "slug": "resources--cbb60-vs-cbb61-vs-cbb65",
+    "status": 200,
+    "title": "CBB60 vs CBB61 vs CBB65 | Hanxing Capacitor",
+    "canonical": "https://www.hanxingcapacitor.com/resources/cbb60-vs-cbb61-vs-cbb65/",
+    "htmlChars": 465023,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.hanxingcapacitor.com/resources/cbb60-vs-cbb61-vs-cbb65/#webpage",
+            "url": "https://www.hanxingcapacitor.com/resources/cbb60-vs-cbb61-vs-cbb65/",
+            "name": "CBB60 vs CBB61 vs CBB65 | Hanxing Capacitor",
+            "description": "Compare the case shapes and connections of CBB60, CBB61 and CBB65, and check the requirements for your motor.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            },
+            "mainEntity": {
+              "@id": "https://www.hanxingcapacitor.com/resources/cbb60-vs-cbb61-vs-cbb65/#article"
+            }
+          },
+          {
+            "@type": "TechArticle",
+            "@id": "https://www.hanxingcapacitor.com/resources/cbb60-vs-cbb61-vs-cbb65/#article",
+            "headline": "CBB60 vs CBB61 vs CBB65",
+            "description": "Compare the case shapes and connections of CBB60, CBB61 and CBB65, and check the requirements for your motor.",
+            "abstract": "CBB60, CBB61 and CBB65 are film run-capacitor series with different case formats. CBB60 is cylindrical and CBB61 is compact and rectangular. CBB65 uses a metal can and has single-run and dual-run configurations. Choose a model that matches the motor ratings and wiring, then check the space available for installation.",
+            "url": "https://www.hanxingcapacitor.com/resources/cbb60-vs-cbb61-vs-cbb65/",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            },
+            "mainEntityOfPage": {
+              "@id": "https://www.hanxingcapacitor.com/resources/cbb60-vs-cbb61-vs-cbb65/#webpage"
+            },
+            "citation": [
+              "https://www.hanxingcapacitor.com/products/cbb60-motor-run-capacitor/",
+              "https://www.hanxingcapacitor.com/products/cbb61-fan-capacitor/",
+              "https://www.hanxingcapacitor.com/products/cbb65-air-conditioner-capacitor/"
+            ]
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Resources",
+            "item": "https://www.hanxingcapacitor.com/resources/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Technical guides",
+            "item": "https://www.hanxingcapacitor.com/resources/articles/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "CBB60 vs CBB61 vs CBB65",
+            "item": "https://www.hanxingcapacitor.com/resources/cbb60-vs-cbb61-vs-cbb65/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "CBB60 vs CBB61 vs CBB65",
+      "Three case formats",
+      "Compare the sample cases",
+      "CBB60: leads and stud mounting",
+      "CBB61: similar housings, different ratings",
+      "CBB65: metal can and terminal groups",
+      "Compare the installed part",
+      "Send your capacitor requirements.",
+      "References",
+      "Related resources"
+    ]
+  },
+  {
+    "route": "/resources/dimensions-terminals-mounting/",
+    "kind": "guide",
+    "slug": "resources--dimensions-terminals-mounting",
+    "status": 200,
+    "title": "Capacitor dimensions, connections and mounting | Hanxing Capacitor",
+    "canonical": "https://www.hanxingcapacitor.com/resources/dimensions-terminals-mounting/",
+    "htmlChars": 465761,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.hanxingcapacitor.com/resources/dimensions-terminals-mounting/#webpage",
+            "url": "https://www.hanxingcapacitor.com/resources/dimensions-terminals-mounting/",
+            "name": "Capacitor dimensions, connections and mounting | Hanxing Capacitor",
+            "description": "Measure the case and mounting, then allow enough space for terminals, wires and connectors.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            },
+            "mainEntity": {
+              "@id": "https://www.hanxingcapacitor.com/resources/dimensions-terminals-mounting/#article"
+            }
+          },
+          {
+            "@type": "TechArticle",
+            "@id": "https://www.hanxingcapacitor.com/resources/dimensions-terminals-mounting/#article",
+            "headline": "Capacitor dimensions, connections and mounting",
+            "description": "Measure the case and mounting, then allow enough space for terminals, wires and connectors.",
+            "abstract": "A replacement needs the correct µF and VAC and enough room for installation. Measure the body separately from the space occupied by the complete part, including its mounting stud, terminals, leads and connector.",
+            "url": "https://www.hanxingcapacitor.com/resources/dimensions-terminals-mounting/",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            },
+            "mainEntityOfPage": {
+              "@id": "https://www.hanxingcapacitor.com/resources/dimensions-terminals-mounting/#webpage"
+            },
+            "citation": [
+              "https://www.hanxingcapacitor.com/products/cbb60-motor-run-capacitor/",
+              "https://www.hanxingcapacitor.com/products/cbb61-fan-capacitor/",
+              "https://www.hanxingcapacitor.com/products/cbb65-air-conditioner-capacitor/"
+            ]
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Resources",
+            "item": "https://www.hanxingcapacitor.com/resources/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Technical guides",
+            "item": "https://www.hanxingcapacitor.com/resources/articles/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Capacitor dimensions, connections and mounting",
+            "item": "https://www.hanxingcapacitor.com/resources/dimensions-terminals-mounting/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "Capacitor dimensions, connections and mounting",
+      "Dimensions to record",
+      "Mounting and connection space",
+      "The stud extends beyond the case",
+      "Leads and mounting lug",
+      "Connections to record",
+      "Send your capacitor requirements.",
+      "References",
+      "Related resources"
+    ]
+  },
+  {
+    "route": "/resources/motor-capacitor-order-shipment-checklist/",
+    "kind": "guide",
+    "slug": "resources--motor-capacitor-order-shipment-checklist",
+    "status": 200,
+    "title": "Motor capacitor order &amp; shipping checklist | Hanxing Capacitor",
+    "canonical": "https://www.hanxingcapacitor.com/resources/motor-capacitor-order-shipment-checklist/",
+    "htmlChars": 470075,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.hanxingcapacitor.com/resources/motor-capacitor-order-shipment-checklist/#webpage",
+            "url": "https://www.hanxingcapacitor.com/resources/motor-capacitor-order-shipment-checklist/",
+            "name": "Motor capacitor order & shipping checklist | Hanxing Capacitor",
+            "description": "Confirm the product and packing requirements in writing, then check dispatch dates and shipping documents against the order.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            },
+            "mainEntity": {
+              "@id": "https://www.hanxingcapacitor.com/resources/motor-capacitor-order-shipment-checklist/#article"
+            }
+          },
+          {
+            "@type": "TechArticle",
+            "@id": "https://www.hanxingcapacitor.com/resources/motor-capacitor-order-shipment-checklist/#article",
+            "headline": "Motor capacitor order & shipping checklist",
+            "description": "Confirm the product and packing requirements in writing, then check dispatch dates and shipping documents against the order.",
+            "abstract": "The purchase order should identify the exact model and drawing revision, with quantities, packing requirements and the agreed delivery term. Agree the inspection records and shipping documents before production. Before carrier pickup, check the final records against the approved order.",
+            "url": "https://www.hanxingcapacitor.com/resources/motor-capacitor-order-shipment-checklist/",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            },
+            "mainEntityOfPage": {
+              "@id": "https://www.hanxingcapacitor.com/resources/motor-capacitor-order-shipment-checklist/#webpage"
+            },
+            "citation": [
+              "https://www.trade.gov/common-export-documents",
+              "https://library.iccwbo.org/clp/clp-incoterms-qa-2020.htm?AGENT=ICC_HQ"
+            ]
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Resources",
+            "item": "https://www.hanxingcapacitor.com/resources/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Buying & shipping",
+            "item": "https://www.hanxingcapacitor.com/buying-guide/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Motor capacitor order & shipping checklist",
+            "item": "https://www.hanxingcapacitor.com/resources/motor-capacitor-order-shipment-checklist/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "Motor capacitor order &amp; shipping checklist",
+      "1. Confirm the product and order",
+      "2. Approve the packing",
+      "Protection inside the carton",
+      "3. Confirm dispatch dates and inspection",
+      "4. Check the shipping documents",
+      "5. Agree how to handle discrepancies",
+      "Order confirmation notes",
+      "Send your capacitor requirements.",
+      "References",
+      "Related resources"
+    ]
+  },
+  {
+    "route": "/resources/read-motor-capacitor-label/",
+    "kind": "guide",
+    "slug": "resources--read-motor-capacitor-label",
+    "status": 200,
+    "title": "Reading a motor capacitor label | Hanxing Capacitor",
+    "canonical": "https://www.hanxingcapacitor.com/resources/read-motor-capacitor-label/",
+    "htmlChars": 465396,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.hanxingcapacitor.com/resources/read-motor-capacitor-label/#webpage",
+            "url": "https://www.hanxingcapacitor.com/resources/read-motor-capacitor-label/",
+            "name": "Reading a motor capacitor label | Hanxing Capacitor",
+            "description": "Identify µF, VAC and the other markings on a capacitor label, then record the dimensions needed for a quotation.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            },
+            "mainEntity": {
+              "@id": "https://www.hanxingcapacitor.com/resources/read-motor-capacitor-label/#article"
+            }
+          },
+          {
+            "@type": "TechArticle",
+            "@id": "https://www.hanxingcapacitor.com/resources/read-motor-capacitor-label/#article",
+            "headline": "Reading a motor capacitor label",
+            "description": "Identify µF, VAC and the other markings on a capacitor label, then record the dimensions needed for a quotation.",
+            "abstract": "A clear photo of the full label is the starting point for identifying a capacitor. Copy its µF, rated VAC, tolerance and frequency exactly as printed. Keep any duty, model, temperature or batch markings in your notes too. Measure the case and connections separately, since the label may not give those dimensions.",
+            "url": "https://www.hanxingcapacitor.com/resources/read-motor-capacitor-label/",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            },
+            "mainEntityOfPage": {
+              "@id": "https://www.hanxingcapacitor.com/resources/read-motor-capacitor-label/#webpage"
+            },
+            "citation": [
+              "https://www.hanxingcapacitor.com/products/cbb65-air-conditioner-capacitor/",
+              "https://www.orientalmotor.com/products/pdfs/F_TecRef/TecAc.pdf"
+            ]
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Resources",
+            "item": "https://www.hanxingcapacitor.com/resources/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Technical guides",
+            "item": "https://www.hanxingcapacitor.com/resources/articles/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Reading a motor capacitor label",
+            "item": "https://www.hanxingcapacitor.com/resources/read-motor-capacitor-label/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "Reading a motor capacitor label",
+      "Reading the label",
+      "Ratings on a CBB65 label",
+      "Missing or unreadable markings",
+      "Photos to prepare",
+      "Send your capacitor requirements.",
+      "References",
+      "Related resources"
+    ]
+  },
+  {
+    "route": "/resources/single-vs-dual-run-capacitors/",
+    "kind": "guide",
+    "slug": "resources--single-vs-dual-run-capacitors",
+    "status": 200,
+    "title": "Single-run vs dual-run capacitors | Hanxing Capacitor",
+    "canonical": "https://www.hanxingcapacitor.com/resources/single-vs-dual-run-capacitors/",
+    "htmlChars": 465154,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.hanxingcapacitor.com/resources/single-vs-dual-run-capacitors/#webpage",
+            "url": "https://www.hanxingcapacitor.com/resources/single-vs-dual-run-capacitors/",
+            "name": "Single-run vs dual-run capacitors | Hanxing Capacitor",
+            "description": "Read both ratings on a dual-run capacitor and compare its terminal groups with the original circuit.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            },
+            "mainEntity": {
+              "@id": "https://www.hanxingcapacitor.com/resources/single-vs-dual-run-capacitors/#article"
+            }
+          },
+          {
+            "@type": "TechArticle",
+            "@id": "https://www.hanxingcapacitor.com/resources/single-vs-dual-run-capacitors/#article",
+            "headline": "Single-run vs dual-run capacitors",
+            "description": "Read both ratings on a dual-run capacitor and compare its terminal groups with the original circuit.",
+            "abstract": "A single-run capacitor has one capacitance section. A dual-run capacitor has two independent sections in one can, each with its own µF value. Follow the arrangement specified by the motor circuit. For a dual-run quotation, provide both values with the rated VAC and terminal-group layout.",
+            "url": "https://www.hanxingcapacitor.com/resources/single-vs-dual-run-capacitors/",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            },
+            "mainEntityOfPage": {
+              "@id": "https://www.hanxingcapacitor.com/resources/single-vs-dual-run-capacitors/#webpage"
+            },
+            "citation": [
+              "https://www.hanxingcapacitor.com/products/cbb65-air-conditioner-capacitor/",
+              "https://www.tdk-electronics.tdk.com/en/3192232"
+            ]
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Resources",
+            "item": "https://www.hanxingcapacitor.com/resources/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Technical guides",
+            "item": "https://www.hanxingcapacitor.com/resources/articles/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Single-run vs dual-run capacitors",
+            "item": "https://www.hanxingcapacitor.com/resources/single-vs-dual-run-capacitors/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "Single-run vs dual-run capacitors",
+      "One section or two",
+      "Single-run and dual-run sample labels",
+      "Single-run sample: 20 µF · 450 VAC",
+      "Dual-run sample: 50+5 µF · 450 VAC",
+      "Record the values separately",
+      "Match the connections",
+      "Send your capacitor requirements.",
+      "References",
+      "Related resources"
+    ]
+  },
+  {
+    "route": "/resources/start-vs-run-capacitors/",
+    "kind": "guide",
+    "slug": "resources--start-vs-run-capacitors",
+    "status": 200,
+    "title": "Start capacitor vs run capacitor | Hanxing Capacitor",
+    "canonical": "https://www.hanxingcapacitor.com/resources/start-vs-run-capacitors/",
+    "htmlChars": 464647,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.hanxingcapacitor.com/resources/start-vs-run-capacitors/#webpage",
+            "url": "https://www.hanxingcapacitor.com/resources/start-vs-run-capacitors/",
+            "name": "Start capacitor vs run capacitor | Hanxing Capacitor",
+            "description": "Compare start and run duty, then check the motor circuit and original ratings before choosing a replacement.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            },
+            "mainEntity": {
+              "@id": "https://www.hanxingcapacitor.com/resources/start-vs-run-capacitors/#article"
+            }
+          },
+          {
+            "@type": "TechArticle",
+            "@id": "https://www.hanxingcapacitor.com/resources/start-vs-run-capacitors/#article",
+            "headline": "Start capacitor vs run capacitor",
+            "description": "Compare start and run duty, then check the motor circuit and original ratings before choosing a replacement.",
+            "abstract": "A run capacitor stays connected while the motor runs. A start capacitor operates during startup, as specified by the motor design. Matching case dimensions or µF values does not make them interchangeable.",
+            "url": "https://www.hanxingcapacitor.com/resources/start-vs-run-capacitors/",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            },
+            "mainEntityOfPage": {
+              "@id": "https://www.hanxingcapacitor.com/resources/start-vs-run-capacitors/#webpage"
+            },
+            "citation": [
+              "https://www.orientalmotor.com/products/pdfs/F_TecRef/TecAc.pdf",
+              "https://www.hanxingcapacitor.com/products/cd60-start-capacitor/",
+              "https://www.tdk-electronics.tdk.com/en/3192232"
+            ]
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Resources",
+            "item": "https://www.hanxingcapacitor.com/resources/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Technical guides",
+            "item": "https://www.hanxingcapacitor.com/resources/articles/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Start capacitor vs run capacitor",
+            "item": "https://www.hanxingcapacitor.com/resources/start-vs-run-capacitors/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "Start capacitor vs run capacitor",
+      "Run duty and start duty",
+      "Run and start capacitor samples",
+      "Ratings on a CBB65 label",
+      "CD60 start-capacitor sample",
+      "Details for a replacement inquiry",
+      "Send your capacitor requirements.",
+      "References",
+      "Related resources"
+    ]
+  },
+  {
+    "route": "/terms/",
+    "kind": "policy",
+    "slug": "terms",
+    "status": 200,
+    "title": "Quotation &amp; Order Terms | HAN XING",
+    "canonical": "https://www.hanxingcapacitor.com/terms/",
+    "htmlChars": 452495,
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.hanxingcapacitor.com/#organization",
+            "name": "Hangzhou Zebang Refrigeration Equipment Co., Ltd.",
+            "alternateName": "Hanxing Capacitor",
+            "url": "https://www.hanxingcapacitor.com/",
+            "email": "ManuelaMusio570@gmail.com",
+            "telephone": "+86 153 3339 4111",
+            "description": "HAN XING motor run and start capacitor supply. Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.hanxingcapacitor.com/#website",
+            "url": "https://www.hanxingcapacitor.com/",
+            "name": "Hanxing Capacitor",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.hanxingcapacitor.com/terms/#webpage",
+            "url": "https://www.hanxingcapacitor.com/terms/",
+            "name": "Quotation & Order Terms | HAN XING",
+            "description": "Model approval, minimum quantities, samples, payment and delivery terms to agree in writing before ordering HAN XING motor capacitors.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.hanxingcapacitor.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.hanxingcapacitor.com/#organization"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hanxingcapacitor.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Quotation & Order Terms",
+            "item": "https://www.hanxingcapacitor.com/terms/"
+          }
+        ]
+      }
+    ],
+    "headings": [
+      "Quotation and order terms",
+      "Product selection and approval",
+      "Quotation and minimum quantity",
+      "Seller, quality and delivery",
+      "Warranty and existing orders",
+      "Changes, cancellations and returns",
+      "Governing terms and disputes",
+      "Inquiries and order agreement"
+    ]
+  }
+]

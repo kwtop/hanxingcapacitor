@@ -1,0 +1,105 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/resources/capacitance-voltage-guide/",
+  "clientWidth": 375,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 339.6041717529297,
+        "height": 100.8125,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 238.7916717529297,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 238.7916717529297
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "Capacitance and voltage ratings for motor capacitors"
+    }
+  ],
+  "headings": [
+    "µF, VAC and tolerance",
+    "Common reading mistakes",
+    "Sample markings",
+    "20 µF · 450 VAC · ±5%",
+    "Send your capacitor requirements.",
+    "References",
+    "Related resources"
+  ],
+  "height": 5672,
+  "images": [
+    {
+      "alt": "Illustrative close view of the capacitance and voltage printed on the supplied CBB65 sample.",
+      "box": {
+        "bottom": 596.0416870117188,
+        "height": 228.4375,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 367.6041870117187,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 367.6041870117187
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/guide-ratings.webp"
+    },
+    {
+      "alt": "CBB65 sample label showing 20 µF ±5%, 450 VAC and 50/60 Hz.",
+      "box": {
+        "bottom": 3254.45849609375,
+        "height": 297.96875,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 2956.48974609375,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 2956.48974609375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb65-2.jpg"
+    },
+    {
+      "alt": "Enlarged label area from the same CBB65 original photograph: 20 µF ±5%, 450VAC and 50/60Hz.",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "fit": "contain",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/real/cbb65-2.jpg"
+    }
+  ],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 375,
+  "title": "Capacitance and voltage ratings for motor capacitors | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/resources/capacitance-voltage-guide/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 844,
+    "width": 390
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

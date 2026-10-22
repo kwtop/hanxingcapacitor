@@ -1,0 +1,130 @@
+{
+  "background": "rgb(255, 255, 255)",
+  "headings": [
+    {
+      "box": {
+        "bottom": 183.20834350585935,
+        "height": 93.60417175292967,
+        "left": 15,
+        "right": 375,
+        "top": 89.60417175292969,
+        "width": 360,
+        "x": 15,
+        "y": 89.60417175292969
+      },
+      "font": "urbane, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "About Us",
+      "weight": "500"
+    },
+    {
+      "box": {
+        "bottom": 5278.625326156616,
+        "height": 26.39583396911621,
+        "left": 20,
+        "right": 182.45834350585935,
+        "top": 5252.2294921875,
+        "width": 162.45834350585938,
+        "x": 20,
+        "y": 5252.2294921875
+      },
+      "font": "urbane, sans-serif",
+      "line": "26.4px",
+      "size": "24px",
+      "text": "Best Sellers",
+      "weight": "600"
+    }
+  ],
+  "images": [
+    {
+      "alt": "Desk setup with Satechi accessories, including an OntheGo™ 3-in-1 Charger for iPhone, AirPods and Apple Watch, a Mac mini stand Mac Mini M6/M5 Pro/M4 Stand & Hub with SSD Enclosure, Findall Glasses case, a dark SM3 Mechanical keyboard and a M1 mouse.",
+      "box": {
+        "bottom": 612.8333435058594,
+        "height": 365.625,
+        "left": 0,
+        "right": 390,
+        "top": 247.20834350585935,
+        "width": 390,
+        "x": 0,
+        "y": 247.20834350585935
+      },
+      "radius": "0px"
+    },
+    {
+      "alt": "Satechi",
+      "box": {
+        "bottom": 888.484375,
+        "height": 275.65625,
+        "left": 16,
+        "right": 374,
+        "top": 612.828125,
+        "width": 358,
+        "x": 16,
+        "y": 612.828125
+      },
+      "radius": "0px"
+    },
+    {
+      "alt": "Designer's hand sketching product concepts in pencil on paper next to a laptop.",
+      "box": {
+        "bottom": 1774.260498046875,
+        "height": 524,
+        "left": 16,
+        "right": 374,
+        "top": 1250.260498046875,
+        "width": 358,
+        "x": 16,
+        "y": 1250.260498046875
+      },
+      "radius": "0px"
+    },
+    {
+      "alt": "A closeup of front and back of a Slim EX1 Wireless Keyboard, showing the 2.4GHz dongle.",
+      "box": {
+        "bottom": 2079.260498046875,
+        "height": 289,
+        "left": -594,
+        "right": -305,
+        "top": 1790.260498046875,
+        "width": 289,
+        "x": -594,
+        "y": 1790.260498046875
+      },
+      "radius": "0px"
+    },
+    {
+      "alt": "Black Satechi Slim EX Mouse on a wooden desk next to a laptop.",
+      "box": {
+        "bottom": 2079.260498046875,
+        "height": 289,
+        "left": -289,
+        "right": 0,
+        "top": 1790.260498046875,
+        "width": 289,
+        "x": -289,
+        "y": 1790.260498046875
+      },
+      "radius": "0px"
+    },
+    {
+      "alt": "Two Thunderbolt 5 CubeDock™ with SSD Enclosure positioned on wooden platforms, displaying ports and vents. ",
+      "box": {
+        "bottom": 2079.260498046875,
+        "height": 289,
+        "left": 16,
+        "right": 305,
+        "top": 1790.260498046875,
+        "width": 289,
+        "x": 16,
+        "y": 1790.260498046875
+      },
+      "radius": "0px"
+    }
+  ],
+  "url": "https://satechi.com/pages/about-us",
+  "viewport": [
+    390,
+    844
+  ]
+}

@@ -1,0 +1,16 @@
+---
+import {findIndustrialApplication} from '../../data/industrialApplications';
+interface Props { title: string; description: string; image: string; alt: string; product?: boolean; mobileImage?: string; }
+const { title, description, image, alt, product = false, mobileImage } = Astro.props;
+const asset = findIndustrialApplication(image);
+const mobileAsset = mobileImage ? findIndustrialApplication(mobileImage) : undefined;
+---
+<section class:list={['ss-collection-cover',{'ss-collection-cover--products':product,'ss-collection-cover--industrial':Boolean(asset)}]} aria-labelledby="collection-title">
+  <picture>{mobileImage && <source media="(max-width: 600px)" srcset={mobileAsset?.srcset ?? mobileImage} sizes={mobileAsset ? '100vw' : undefined} width={mobileAsset?.width ?? 943} height={mobileAsset?.height ?? 747} />}<img src={image} srcset={asset?.srcset} sizes={asset ? '100vw' : undefined} alt={alt} width={asset?.width ?? (product ? 2100 : 1536)} height={asset?.height ?? (product ? 747 : 1024)} fetchpriority="high" /></picture>
+  <div class="ss-collection-copy"><h1 id="collection-title">{title}</h1><p>{description}</p></div>
+</section>
+<style is:global>
+  body.satechi-site #main .ss-collection-cover.ss-collection-cover--industrial::after {
+    background: rgb(0 0 0 / 20%);
+  }
+</style>

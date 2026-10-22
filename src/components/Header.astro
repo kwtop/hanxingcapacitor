@@ -33,11 +33,12 @@ import MobileNav from './MobileNav';
         if (!item.contains(document.activeElement)) setOpen(item, false);
       });
       link?.addEventListener('keydown', event => {
-        if (event.key === 'ArrowDown') {
+        if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
           event.preventDefault();
           closeAll();
           setOpen(item, true);
-          item.querySelector<HTMLAnchorElement>('.nav-dropdown a')?.focus();
+          const links = item.querySelectorAll<HTMLAnchorElement>('.nav-dropdown a');
+          links[event.key === 'ArrowDown' ? 0 : links.length - 1]?.focus();
         }
       });
       item.addEventListener('keydown', event => {
@@ -45,6 +46,12 @@ import MobileNav from './MobileNav';
           event.preventDefault();
           setOpen(item, false);
           link.focus();
+        }
+        const links = [...item.querySelectorAll<HTMLAnchorElement>('.nav-dropdown a')];
+        const current = links.indexOf(document.activeElement as HTMLAnchorElement);
+        if (current >= 0 && event.target instanceof Node && item.querySelector('.nav-dropdown')?.contains(event.target) && ['ArrowDown', 'ArrowUp', 'Home', 'End'].includes(event.key)) {
+          event.preventDefault();
+          links[event.key === 'Home' ? 0 : event.key === 'End' ? links.length - 1 : (current + (event.key === 'ArrowDown' ? 1 : -1) + links.length) % links.length]?.focus();
         }
       });
       item.addEventListener('focusout', event => {

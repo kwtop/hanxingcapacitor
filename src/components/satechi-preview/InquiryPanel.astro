@@ -1,0 +1,10 @@
+---
+import InquiryCallout from '../InquiryCallout.astro';
+import { PUBLIC_EMAIL, WHATSAPP_URL } from '../../data/site';
+---
+<section class="ha-inquiry"><div class="container">
+  <div class="ha-inquiry-inner">
+    <img class="ha-inquiry-photo" src="/images/previews/satechi-fidelity-20261018/category-cbb60.webp" width="700" height="700" loading="lazy" decoding="async" alt="Illustrative Hanxing CBB60 sample with its original lead-wire format and printed label." />
+    <div class="ha-inquiry-content"><InquiryCallout id="home-inquiry" contained defaultSeries="CBB60" heading="Send your requirements" description="Share the original label, quantity and destination." /><nav class="ha-direct-contact" aria-label="Direct contact"><a href={`mailto:${PUBLIC_EMAIL}`}>Email us</a><a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">WhatsApp</a></nav></div>
+  </div>
+</div></section>

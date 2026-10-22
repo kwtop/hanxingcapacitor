@@ -1,0 +1,53 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/terms/",
+  "clientWidth": 1425,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 262.8020935058594,
+        "height": 48,
+        "left": 312.3333435058594,
+        "right": 1063.531280517578,
+        "top": 214.80209350585935,
+        "width": 751.1979370117188,
+        "x": 312.3333435058594,
+        "y": 214.80209350585935
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "48px",
+      "size": "40px",
+      "text": "Quotation and order terms"
+    }
+  ],
+  "headings": [
+    "Product selection and approval",
+    "Quotation and minimum quantity",
+    "Seller, quality and delivery",
+    "Warranty and existing orders",
+    "Changes, cancellations and returns",
+    "Governing terms and disputes",
+    "Inquiries and order agreement"
+  ],
+  "height": 2753,
+  "images": [],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 1425,
+  "title": "Quotation & Order Terms | HAN XING",
+  "url": "http://127.0.0.1:4340/terms/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 900,
+    "width": 1440
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "bodyClass": "porcelain-site reference-site",
+  "canonical": "https://www.hanxingcapacitor.com/about/",
+  "clientWidth": 375,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 186.78125762939453,
+        "height": 38.61458587646485,
+        "left": 20,
+        "right": 354.66668701171875,
+        "top": 148.1666717529297,
+        "width": 334.66668701171875,
+        "x": 20,
+        "y": 148.1666717529297
+      },
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "38.61px",
+      "size": "35.1px",
+      "text": "About HAN XING"
+    }
+  ],
+  "headings": [
+    "Company information",
+    "Supplier identity for your order",
+    "Motor capacitor supply",
+    "Send your capacitor requirements."
+  ],
+  "height": 3267,
+  "images": [
+    {
+      "alt": "Hanxing-marked capacitor samples on a work surface in a supplied photograph.",
+      "box": {
+        "bottom": 1715.2708740234375,
+        "height": 188.25,
+        "left": 20,
+        "right": 354.66668701171875,
+        "top": 1527.0208740234375,
+        "width": 334.66668701171875,
+        "x": 20,
+        "y": 1527.0208740234375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/batch-products.jpg"
+    }
+  ],
+  "robots": [
+    "noindex,follow"
+  ],
+  "scrollWidth": 375,
+  "title": "About HAN XING | Company & Contact Information",
+  "url": "http://127.0.0.1:4335/about/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 844,
+    "width": 390
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

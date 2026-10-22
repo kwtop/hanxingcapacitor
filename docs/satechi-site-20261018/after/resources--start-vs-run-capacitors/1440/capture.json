@@ -1,0 +1,106 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/resources/start-vs-run-capacitors/",
+  "clientWidth": 1425,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 262.8020935058594,
+        "height": 48,
+        "left": 399.3333435058594,
+        "right": 1025.3333435058594,
+        "top": 214.80209350585935,
+        "width": 626,
+        "x": 399.3333435058594,
+        "y": 214.80209350585935
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "48px",
+      "size": "40px",
+      "text": "Start capacitor vs run capacitor"
+    }
+  ],
+  "headings": [
+    "Run duty and start duty",
+    "Run and start capacitor samples",
+    "Ratings on a CBB65 label",
+    "CD60 start-capacitor sample",
+    "Details for a replacement inquiry",
+    "Send your capacitor requirements.",
+    "References",
+    "Related resources"
+  ],
+  "height": 5082,
+  "images": [
+    {
+      "alt": "Illustrative comparison of the white wired CBB60 run sample and grey CD60 start sample.",
+      "box": {
+        "bottom": 1049.468780517578,
+        "height": 746.6666870117188,
+        "left": 152.33334350585938,
+        "right": 1272.3333435058594,
+        "top": 302.8020935058594,
+        "width": 1120,
+        "x": 152.33334350585938,
+        "y": 302.8020935058594
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/guide-duty.webp"
+    },
+    {
+      "alt": "CBB65 sample label showing 20 µF ±5%, 450 VAC and 50/60 Hz.",
+      "box": {
+        "bottom": 2586.322998046875,
+        "height": 368,
+        "left": 472.3333435058594,
+        "right": 840.3333435058594,
+        "top": 2218.322998046875,
+        "width": 368,
+        "x": 472.3333435058594,
+        "y": 2218.322998046875
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb65-2.jpg"
+    },
+    {
+      "alt": "CD60 sample marked 500 µF and 300 VAC, with its blade terminals visible.",
+      "box": {
+        "bottom": 2586.322998046875,
+        "height": 368,
+        "left": 864.3333740234375,
+        "right": 1232.3333740234375,
+        "top": 2218.322998046875,
+        "width": 368,
+        "x": 864.3333740234375,
+        "y": 2218.322998046875
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cd60-25.jpg"
+    }
+  ],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 1425,
+  "title": "Start capacitor vs run capacitor | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/resources/start-vs-run-capacitors/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 900,
+    "width": 1440
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

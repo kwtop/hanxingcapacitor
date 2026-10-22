@@ -1,0 +1,185 @@
+/* Selected homepage A. Imported only by the DEV-only SatechiHome component. */
+.satechi-preview .sp-home-a { --ha-gap:24px; background:var(--sp-canvas); color:var(--sp-ink); }
+.satechi-preview .sp-home-a :is(section,[id]) { scroll-margin-top:116px; }
+.satechi-preview .sp-home-a .sp-hero { height:100vh; height:100svh; padding:0; }
+.satechi-preview .sp-home-a .sp-hero-copy { width:43%; padding-bottom:100px; }
+.satechi-preview .sp-home-a .sp-hero-description { max-width:40ch; }
+.satechi-preview .sp-home-a .ha-section-heading { text-align:center; margin:0 0 36px; }
+.satechi-preview .sp-home-a .ha-section-heading h2 { font-size:32px; line-height:1.2; }
+.satechi-preview .sp-home-a .ha-section-heading :is(h2,p) { max-width:none; width:100%; }
+.satechi-preview .sp-home-a .ha-section-heading p { margin-top:14px; font-size:14px; line-height:1.5; }
+
+/* One product area combines the former family rail, category cards and ranges. */
+.satechi-preview .sp-home-a .ha-series { padding:64px 0 72px; }
+.satechi-preview .sp-home-a .ha-series-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:var(--ha-gap); align-items:stretch; }
+.satechi-preview .sp-home-a .ha-series-card { min-width:0; overflow:hidden; border-radius:8px; background:white; }
+.satechi-preview .sp-home-a .ha-series-photo { display:block; aspect-ratio:1; overflow:hidden; background:#ede7df; }
+.satechi-preview .sp-home-a .ha-series-photo img { width:100%; height:100%; object-fit:cover; }
+.satechi-preview .sp-home-a .ha-series-copy { padding:20px; text-align:center; }
+.satechi-preview .sp-home-a .ha-series-title { display:flex; flex-direction:column; align-items:center; gap:2px; }
+.satechi-preview .sp-home-a .ha-series-copy h3 { width:auto; max-width:none; margin:0; font-size:20px; line-height:1.3; text-align:center; }
+.satechi-preview .sp-home-a .ha-series-duty { color:#55565b; font-size:13px; line-height:1.5; white-space:nowrap; }
+.satechi-preview .sp-home-a .ha-series-purpose { min-height:0; margin:8px 0 0; font-size:14px; line-height:1.4; text-wrap:balance; }
+.satechi-preview .sp-home-a .ha-series-ratings { display:grid; gap:2px; margin:14px 0 0; padding-top:12px; border-top:1px solid #e8e5df; font-size:14px; line-height:1.45; font-variant-numeric:tabular-nums; }
+.satechi-preview .sp-home-a .ha-series-ratings :is(dt,dd) { margin:0; padding:0; }
+.satechi-preview .sp-home-a .ha-series-rating-group { display:flex; flex-wrap:wrap; align-items:baseline; justify-content:center; gap:0 6px; }
+.satechi-preview .sp-home-a .ha-series-rating-group dd { display:contents; }
+.satechi-preview .sp-home-a .ha-series-rating-group dd>span { max-width:100%; }
+.satechi-preview .sp-home-a .ha-series-rating-group+div { margin-top:8px; }
+.satechi-preview .sp-home-a .ha-series-rating-group dt { color:#66676b; font-size:12px; line-height:1.45; }
+.satechi-preview .sp-home-a .ha-series-ratings dd>span { display:block; }
+.satechi-preview .sp-home-a .ha-series-voltage { color:#55565b; }
+.satechi-preview .sp-home-a .ha-series-ratings .ha-no-break { display:inline; white-space:nowrap; }
+.satechi-preview .sp-home-a .ha-series-copy h3 a:hover { text-decoration:underline; text-underline-offset:5px; }
+
+/* The four application images keep A's asymmetric hierarchy, all visible. */
+.satechi-preview .sp-home-a .sp-applications { padding:16px 0 72px; }
+.satechi-preview .sp-home-a .sp-applications h2 { width:100%; max-width:none; margin-bottom:36px; font-size:32px; line-height:1.2; }
+.satechi-preview .sp-home-a .sp-application-mosaic { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+.satechi-preview .sp-home-a .sp-application { border-radius:8px; }
+.satechi-preview .sp-home-a .sp-application-0 { aspect-ratio:auto; grid-row:auto; height:540px; }
+.satechi-preview .sp-home-a .sp-app-secondary { display:grid; margin:0; grid-template-columns:1fr 1fr; grid-template-rows:250px 270px; gap:20px; overflow:visible; }
+.satechi-preview .sp-home-a .sp-app-secondary .sp-application { width:auto; height:auto; aspect-ratio:auto; }
+.satechi-preview .sp-home-a .sp-application img { height:100%; object-fit:cover; }
+.satechi-preview .sp-home-a .sp-application h3 { top:auto; right:auto; left:20px; bottom:20px; max-width:calc(100% - 40px); padding:7px 10px; background:rgb(27 28 33 / 62%); color:white; font-size:18px; line-height:1.3; }
+
+/* Production and sample photography with a single title per image. */
+.satechi-preview .sp-home-a .ha-sources { padding:0 0 56px; }
+.satechi-preview .sp-home-a .ha-source-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+.satechi-preview .sp-home-a .ha-source-card { min-width:0; }
+.satechi-preview .sp-home-a .ha-source-photo { display:block; aspect-ratio:16/9; border-radius:6px; overflow:hidden; }
+.satechi-preview .sp-home-a .ha-source-photo img { width:100%; height:100%; object-fit:cover; }
+.satechi-preview .sp-home-a .ha-source-copy { padding-top:18px; }
+.satechi-preview .sp-home-a .ha-source-copy h3 { font-size:19px; line-height:1.3; margin-bottom:0; }
+.satechi-preview .sp-home-a .ha-source-note { margin-top:18px; color:var(--sp-muted); font-size:12px; line-height:1.6; }
+.satechi-preview .sp-home-a .ha-source-note a { display:inline; padding:4px 0; text-decoration:underline; text-underline-offset:3px; }
+
+/* One editorial guides section replaces both banners and the resource shelf. */
+.satechi-preview .sp-home-a .ha-guides { display:grid; grid-template-columns:1fr 1fr; background:#fff; }
+.satechi-preview .sp-home-a .ha-guide-photo { min-width:0; min-height:440px; }
+.satechi-preview .sp-home-a .ha-guide-photo img { width:100%; height:100%; object-fit:cover; object-position:38% center; }
+.satechi-preview .sp-home-a .ha-guide-copy { padding:44px clamp(32px,4.17vw,76px) 44px 40px; }
+.satechi-preview .sp-home-a .ha-guide-copy h2 { font-size:30px; line-height:1.25; }
+.satechi-preview .sp-home-a .ha-guide-copy>p { margin-top:12px; font-size:15px; line-height:1.5; }
+.satechi-preview .sp-home-a .ha-guide-columns { display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:28px; }
+.satechi-preview .sp-home-a .ha-guide-columns nav { min-width:0; }
+.satechi-preview .sp-home-a .ha-guide-columns nav+nav { padding-left:22px; border-left:1px solid #e5e3de; }
+.satechi-preview .sp-home-a .ha-guide-columns h3 { font-size:16px; line-height:1.4; }
+.satechi-preview .sp-home-a .ha-guide-columns ul { display:grid; gap:4px; margin:12px 0 0; padding:0; list-style:none; }
+.satechi-preview .sp-home-a .ha-guide-columns li a { display:flex; align-items:center; min-height:36px; width:fit-content; font-size:14px; line-height:1.5; text-decoration:underline; text-underline-offset:4px; }
+.satechi-preview .sp-home-a .ha-guide-copy>.button { margin-top:24px; font-size:12px; min-width:0; }
+
+/* The existing inquiry component and GET handoff remain unchanged. */
+.satechi-preview .sp-home-a .ha-inquiry { padding:48px 0 64px; }
+.satechi-preview .sp-home-a .ha-inquiry-inner { display:grid; grid-template-columns:1fr 1fr; align-items:stretch; background:white; overflow:hidden; border-radius:8px; }
+.satechi-preview .sp-home-a .ha-inquiry-photo { width:100%; height:100%; max-height:470px; object-fit:cover; }
+.satechi-preview .sp-home-a .ha-inquiry-content { display:flex; flex-direction:column; justify-content:center; padding:40px 48px; min-width:0; }
+.satechi-preview .sp-home-a .ha-inquiry-content .inquiry-callout { margin:0; padding:0; border:0; background:transparent; }
+.satechi-preview .sp-home-a .ha-inquiry-content .inquiry-callout-inner,
+.satechi-preview .sp-home-a .ha-inquiry-content .inquiry-callout-layout { display:block; width:100%; margin:0; padding:0; }
+.satechi-preview .sp-home-a .inquiry-callout-heading { font-size:28px; line-height:1.25; }
+.satechi-preview .sp-home-a .inquiry-callout-description { margin-top:12px; max-width:40ch; font-size:15px; line-height:1.5; }
+.satechi-preview .sp-home-a .inquiry-callout-form { display:grid; grid-template-columns:1fr; gap:12px; max-width:none; margin-top:28px; }
+.satechi-preview .sp-home-a .inquiry-callout-form label { font-size:14px; line-height:1.4; }
+.satechi-preview .sp-home-a .inquiry-callout-form select { height:46px; width:100%; padding:0 16px; border:1px solid var(--sp-line); border-radius:40px; background:white; }
+.satechi-preview .sp-home-a .inquiry-callout-button { width:100%; min-height:46px; margin-top:2px; font-size:13px; }
+.satechi-preview .sp-home-a .ha-direct-contact { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:16px; }
+.satechi-preview .sp-home-a .ha-direct-contact a { display:flex; align-items:center; justify-content:center; min-height:46px; padding:10px 16px; border:1px solid var(--sp-line); border-radius:40px; background:white; color:var(--sp-ink); font-size:14px; font-weight:500; line-height:1.4; text-align:center; text-decoration:none; transition:background-color 160ms ease,border-color 160ms ease; }
+.satechi-preview .sp-home-a .ha-direct-contact a:hover { border-color:#b8b5af; background:#f1eee8; text-decoration:none; }
+.satechi-preview .sp-home-a .ha-direct-contact a:focus-visible { outline:2px solid var(--sp-ink); outline-offset:3px; }
+.satechi-preview .sp-home-a .ha-direct-contact a:active { background:#e9e5de; }
+
+@media (min-width:1600px) {
+  .satechi-preview .sp-home-a .ha-guides { width:min(100%,1600px); margin-inline:auto; }
+}
+@media (max-width:1200px) {
+  .satechi-preview .sp-home-a { --ha-gap:18px; }
+  .satechi-preview .sp-home-a .ha-series-copy { padding:18px 16px 20px; }
+  .satechi-preview .sp-home-a .ha-guide-copy { padding:36px 32px; }
+  .satechi-preview .sp-home-a .ha-guide-columns { gap:16px; }
+  .satechi-preview .sp-home-a .ha-guide-columns nav+nav { padding-left:16px; }
+  .satechi-preview .sp-home-a .ha-inquiry-content { padding:36px; }
+}
+@media (min-width:1021px) and (max-width:1200px) {
+  .satechi-preview .sp-home-a .sp-hero-copy { padding-left:40px; }
+}
+@media (max-width:1020px) {
+  .satechi-preview .sp-home-a .sp-hero-copy { width:100%; height:auto; padding:124px 40px 0; align-items:center; text-align:center; justify-content:flex-start; }
+  .satechi-preview .sp-home-a .ha-series-grid { grid-template-columns:1fr 1fr; gap:24px; }
+  .satechi-preview .sp-home-a .sp-application-0 { height:440px; }
+  .satechi-preview .sp-home-a .sp-app-secondary { grid-template-rows:210px 210px; }
+  .satechi-preview .sp-home-a .sp-application h3 { left:12px; bottom:12px; max-width:calc(100% - 24px); font-size:15px; }
+  .satechi-preview .sp-home-a .ha-guides { grid-template-columns:.9fr 1.1fr; }
+  .satechi-preview .sp-home-a .ha-guide-copy { padding:32px 24px; }
+  .satechi-preview .sp-home-a .ha-guide-copy h2 { font-size:26px; }
+  .satechi-preview .sp-home-a .ha-guide-columns { grid-template-columns:1fr; gap:24px; }
+  .satechi-preview .sp-home-a .ha-guide-columns nav+nav { border-left:0; padding:0; }
+  .satechi-preview .sp-home-a .ha-inquiry-content { padding:28px; }
+}
+@media (min-width:701px) and (max-width:1200px) {
+  body.satechi-site #main .sp-home-a .sp-application-mosaic { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+  body.satechi-site #main .sp-home-a .sp-app-secondary { display:contents; }
+  body.satechi-site #main .sp-home-a .sp-application { grid-column:auto; grid-row:auto; justify-self:stretch; width:100%; height:auto; aspect-ratio:1; }
+  body.satechi-site #main .sp-home-a .sp-application h3 { font-size:16px; line-height:1.35; }
+}
+@media (max-width:700px) {
+  .satechi-preview .sp-home-a .sp-hero-copy { padding:112px 24px 0; }
+  .satechi-preview .sp-home-a .ha-section-heading { margin-bottom:26px; }
+  .satechi-preview .sp-home-a .ha-section-heading h2,
+  .satechi-preview .sp-home-a .sp-applications h2 { font-size:25px; line-height:1.25; }
+  .satechi-preview .sp-home-a .ha-section-heading p { max-width:36ch; margin:12px auto 0; font-size:13px; }
+  .satechi-preview .sp-home-a .ha-series { padding:44px 0 48px; }
+  .satechi-preview .sp-home-a .ha-series-grid { gap:16px 12px; }
+  .satechi-preview .sp-home-a .ha-series-copy { padding:16px 12px 20px; }
+  .satechi-preview .sp-home-a .ha-series-title { display:block; }
+  .satechi-preview .sp-home-a .ha-series-duty { display:block; margin-top:2px; font-size:13px; }
+  .satechi-preview .sp-home-a .ha-series-purpose { margin-top:8px; font-size:14px; line-height:1.4; }
+  .satechi-preview .sp-home-a .ha-series-ratings { margin-top:12px; padding-top:12px; font-size:13px; line-height:1.5; }
+  .satechi-preview .sp-home-a .ha-series-rating-group { gap:1px 6px; }
+  .satechi-preview .sp-home-a .ha-series-rating-group .ha-series-voltage { flex-basis:100%; }
+  .satechi-preview .sp-home-a .ha-series-rating-group dt { font-size:12px; line-height:1.5; }
+  .satechi-preview .sp-home-a .sp-applications { padding:0 0 48px; }
+  .satechi-preview .sp-home-a .sp-applications h2 { max-width:22ch; margin:0 auto 28px; }
+  .satechi-preview .sp-home-a .sp-application-mosaic { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .satechi-preview .sp-home-a .sp-app-secondary { display:contents; }
+  .satechi-preview .sp-home-a .sp-application,
+  .satechi-preview .sp-home-a .sp-application-0,
+  .satechi-preview .sp-home-a .sp-app-secondary .sp-application { grid-column:auto; grid-row:auto; width:100%; height:auto; aspect-ratio:1; }
+  .satechi-preview .sp-home-a .sp-application h3,
+  .satechi-preview .sp-home-a .sp-app-secondary .sp-application h3 { left:8px; bottom:8px; max-width:calc(100% - 16px); padding:5px 7px; font-size:13px; line-height:1.35; }
+  body.satechi-site #main .sp-home-a .sp-application h3 { font-size:13px; line-height:1.35; }
+  .satechi-preview .sp-home-a .ha-sources { padding-bottom:40px; }
+  .satechi-preview .sp-home-a .ha-source-grid { grid-template-columns:1fr; gap:28px; }
+  .satechi-preview .sp-home-a .ha-source-copy { padding-top:14px; }
+  .satechi-preview .sp-home-a .ha-source-copy h3 { font-size:18px; }
+  .satechi-preview .sp-home-a .ha-source-note { font-size:12px; }
+  .satechi-preview .sp-home-a .ha-guides { grid-template-columns:1fr; }
+  .satechi-preview .sp-home-a .ha-guide-photo { min-height:0; aspect-ratio:4/3; }
+  .satechi-preview .sp-home-a .ha-guide-copy { padding:28px var(--sp-gutter) 32px; }
+  .satechi-preview .sp-home-a .ha-guide-copy h2 { font-size:25px; max-width:22ch; }
+  .satechi-preview .sp-home-a .ha-guide-copy>p { font-size:14px; }
+  .satechi-preview .sp-home-a .ha-guide-columns { grid-template-columns:1fr 1fr; gap:16px; }
+  .satechi-preview .sp-home-a .ha-guide-columns nav+nav { padding-left:14px; border-left:1px solid #e5e3de; }
+  .satechi-preview .sp-home-a .ha-guide-columns h3 { font-size:15px; }
+  body.satechi-site #main .sp-home-a .ha-guide-columns h3 { font-size:15px; }
+  .satechi-preview .sp-home-a .ha-guide-columns li a { min-height:44px; font-size:13px; }
+  .satechi-preview .sp-home-a .ha-inquiry { padding:32px 0 40px; }
+  .satechi-preview .sp-home-a .ha-inquiry-inner { grid-template-columns:1fr; }
+  .satechi-preview .sp-home-a .ha-inquiry-photo { max-height:330px; aspect-ratio:5/4; object-position:center 40%; }
+  .satechi-preview .sp-home-a .ha-inquiry-content { padding:28px 22px; }
+  .satechi-preview .sp-home-a .inquiry-callout-heading { font-size:25px; }
+  .satechi-preview .sp-home-a .inquiry-callout-description { font-size:14px; }
+  .satechi-preview .sp-home-a .inquiry-callout-form { margin-top:24px; }
+}
+@media (max-width:359px) {
+  .satechi-preview .sp-home-a .ha-series-grid { grid-template-columns:1fr; }
+  .satechi-preview .sp-home-a .ha-series-card { display:grid; grid-template-columns:42% 58%; }
+  .satechi-preview .sp-home-a .ha-series-photo { align-self:center; height:auto; aspect-ratio:1; background:transparent; }
+  .satechi-preview .sp-home-a .ha-series-photo img { object-fit:contain; }
+  .satechi-preview .sp-home-a .ha-series-copy { padding:18px 14px; }
+  .satechi-preview .sp-home-a .ha-guide-columns { grid-template-columns:1fr; }
+  .satechi-preview .sp-home-a .ha-guide-columns nav+nav { border:0; padding:0; }
+}
+@media (max-width:600px) and (max-height:650px) {
+  .satechi-preview .sp-home-a .sp-hero-copy { padding-top:88px; }
+}

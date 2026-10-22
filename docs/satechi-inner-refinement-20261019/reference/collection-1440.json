@@ -1,0 +1,274 @@
+{
+  "bg": "rgb(255, 255, 255)",
+  "body": "template-collection animation--none animation-text--active animation-text-type--fade",
+  "clientWidth": 1425,
+  "fonts": "loaded",
+  "headings": [
+    {
+      "class": "content-block__title typo__heading-4",
+      "color": "rgb(255, 255, 255)",
+      "font": "urbane, sans-serif",
+      "h": 52.79166793823242,
+      "line": "26.4px",
+      "size": "24px",
+      "tag": "H3",
+      "text": "iPhone 18 Pro Accessories",
+      "w": 278.66668701171875,
+      "weight": "500",
+      "x": 1066,
+      "y": 957.8854370117188
+    }
+  ],
+  "height": 4479,
+  "images": [
+    {
+      "fit": "cover",
+      "h": 320.35418701171875,
+      "natural": 1360,
+      "position": "50% 50%",
+      "src": "https://satechi.com/cdn/shop/files/Labor_Day_Collection_Desktop.webp?v=1788414703&width=1600",
+      "w": 1424.666748046875,
+      "x": 0,
+      "y": 35.60416793823242
+    },
+    {
+      "fit": "cover",
+      "h": 286.66668701171875,
+      "natural": 348,
+      "position": "50% 50%",
+      "src": "https://satechi.com/cdn/shop/files/thunderbolt-5-cubedock-with-ssd-enclosure-docking-satechi-656313.webp?v=1770162073&width=375",
+      "w": 286.66668701171875,
+      "x": 76,
+      "y": 615.28125
+    },
+    {
+      "fit": "fill",
+      "h": 286.66668701171875,
+      "natural": 348,
+      "position": "35.938% 31.934%",
+      "src": "https://satechi.com/cdn/shop/files/thunderbolt-5-cubedock-with-ssd-enclosure-satechi-481517.webp?v=1776755777&width=375",
+      "w": 286.66668701171875,
+      "x": 76,
+      "y": 615.28125
+    },
+    {
+      "fit": "cover",
+      "h": 286.66668701171875,
+      "natural": 348,
+      "position": "50% 50%",
+      "src": "https://satechi.com/cdn/shop/files/mac-mini-m4-stand-hub-with-ssd-enclosure-hubs-satechi-450143.webp?v=1762441795&width=375",
+      "w": 286.66668701171875,
+      "x": 404.6666870117187,
+      "y": 615.28125
+    },
+    {
+      "fit": "fill",
+      "h": 286.66668701171875,
+      "natural": 348,
+      "position": "50% 50%",
+      "src": "https://satechi.com/cdn/shop/files/mac-mini-m4-stand-hub-with-ssd-enclosure-stands-hubs-satechi-981837.webp?v=1775837441&width=375",
+      "w": 286.66668701171875,
+      "x": 404.6666870117187,
+      "y": 615.28125
+    },
+    {
+      "fit": "cover",
+      "h": 286.66668701171875,
+      "natural": 348,
+      "position": "50% 50%",
+      "src": "https://satechi.com/cdn/shop/files/Stand_HubForMacStudioM5WithNVMeSSDEnclosure1.webp?v=1790791481&width=375",
+      "w": 286.66668701171875,
+      "x": 733.3333740234375,
+      "y": 615.28125
+    },
+    {
+      "fit": "fill",
+      "h": 286.66668701171875,
+      "natural": 348,
+      "position": "50% 50%",
+      "src": "https://satechi.com/cdn/shop/files/Stand_HubForMacStudioM5WithNVMeSSDEnclosure5.webp?v=1790791487&width=375",
+      "w": 286.66668701171875,
+      "x": 733.3333740234375,
+      "y": 615.28125
+    },
+    {
+      "fit": "cover",
+      "h": 572,
+      "natural": 475,
+      "position": "50% 50%",
+      "src": "https://satechi.com/cdn/shop/files/iPhone_18_Pro_Max.webp?v=1790985755&width=600",
+      "w": 318.66668701171875,
+      "x": 1046,
+      "y": 599.28125
+    },
+    {
+      "fit": "cover",
+      "h": 286.66668701171875,
+      "natural": 348,
+      "position": "50% 50%",
+      "src": "https://satechi.com/cdn/shop/files/DotDisk_80GbpsSSDEnclosure1_7b2d3ac0-54a6-4703-8b3b-4ca01252ede6.webp?v=1777496917&width=375",
+      "w": 286.66668701171875,
+      "x": 76,
+      "y": 1125.072998046875
+    },
+    {
+      "fit": "fill",
+      "h": 286.66668701171875,
+      "natural": 348,
+      "position": "19.434% 69.434%",
+      "src": "https://satechi.com/cdn/shop/files/DotDisk_80GbpsSSDEnclosuresilverlifestyle.webp?v=1777963159&width=375",
+      "w": 286.66668701171875,
+      "x": 76,
+      "y": 1125.072998046875
+    },
+    {
+      "fit": "cover",
+      "h": 286.66668701171875,
+      "natural": 348,
+      "position": "50% 50%",
+      "src": "https://satechi.com/cdn/shop/files/OntheGo5-in-1Citrus2.webp?v=1790740373&width=375",
+      "w": 286.66668701171875,
+      "x": 404.6666870117187,
+      "y": 1125.072998046875
+    },
+    {
+      "fit": "fill",
+      "h": 286.66668701171875,
+      "natural": 348,
+      "position": "37.012% 54.102%",
+      "src": "https://satechi.com/cdn/shop/files/Citrus5-in-1.webp?v=1786211172&width=375",
+      "w": 286.66668701171875,
+      "x": 404.6666870117187,
+      "y": 1125.072998046875
+    },
+    {
+      "fit": "cover",
+      "h": 286.66668701171875,
+      "natural": 348,
+      "position": "50% 50%",
+      "src": "https://satechi.com/cdn/shop/files/SnapHubCitrus.webp?v=1790741185&width=375",
+      "w": 286.66668701171875,
+      "x": 733.3333740234375,
+      "y": 1125.072998046875
+    },
+    {
+      "fit": "fill",
+      "h": 286.66668701171875,
+      "natural": 348,
+      "position": "0.879% 0.684%",
+      "src": "https://satechi.com/cdn/shop/files/citrussnaphub.webp?v=1786211908&width=375",
+      "w": 286.66668701171875,
+      "x": 733.3333740234375,
+      "y": 1125.072998046875
+    }
+  ],
+  "regions": [
+    {
+      "bg": "rgba(0, 0, 0, 0)",
+      "class": "shopify-section",
+      "h": 320.35418701171875,
+      "id": "shopify-section-template--27139880190040__section_ehwfYh",
+      "padding": "0px",
+      "tag": "DIV",
+      "w": 1424.666748046875,
+      "x": 0,
+      "y": 35.60416793823242
+    },
+    {
+      "bg": "rgb(27, 28, 33)",
+      "class": "custom-section relative row row--edge cg0 d-cg0 rg0 d-rg0 color-scheme-3 pb0 d-pb0 pt0 d-pt0 in-view",
+      "h": 320.35418701171875,
+      "id": "",
+      "padding": "0px",
+      "tag": "SECTION",
+      "w": 1424.666748046875,
+      "x": 0,
+      "y": 35.60416793823242
+    },
+    {
+      "bg": "rgba(0, 0, 0, 0)",
+      "class": "shopify-section",
+      "h": 72.80208587646484,
+      "id": "shopify-section-template--27139880190040__section_X98tzX",
+      "padding": "0px",
+      "tag": "DIV",
+      "w": 1424.666748046875,
+      "x": 0,
+      "y": 355.9583435058594
+    },
+    {
+      "bg": "rgb(249, 247, 243)",
+      "class": "custom-section relative row cg12 d-cg0 rg12 d-rg0 color-scheme-2 pb0 d-pb0 pt0 d-pt0 in-view",
+      "h": 72.80208587646484,
+      "id": "",
+      "padding": "0px 60px",
+      "tag": "SECTION",
+      "w": 1424.666748046875,
+      "x": 0,
+      "y": 355.9583435058594
+    },
+    {
+      "bg": "rgba(0, 0, 0, 0)",
+      "class": "shopify-section",
+      "h": 2834.67724609375,
+      "id": "shopify-section-template--27139880190040__product-grid",
+      "padding": "0px",
+      "tag": "DIV",
+      "w": 1424.666748046875,
+      "x": 0,
+      "y": 428.7604370117187
+    },
+    {
+      "bg": "rgba(0, 0, 0, 0)",
+      "class": "shopify-section",
+      "h": 60,
+      "id": "shopify-section-template--27139880190040__section_FEz86Q",
+      "padding": "0px",
+      "tag": "DIV",
+      "w": 1424.666748046875,
+      "x": 0,
+      "y": 3263.4375
+    },
+    {
+      "bg": "rgb(249, 247, 243)",
+      "class": "custom-section relative row  cg20 d-cg20 rg20 d-rg20 color-scheme-2 pb0 d-pb0 pt0 d-pt0",
+      "h": 60,
+      "id": "",
+      "padding": "0px 60px",
+      "tag": "SECTION",
+      "w": 1424.666748046875,
+      "x": 0,
+      "y": 3263.4375
+    },
+    {
+      "bg": "rgba(0, 0, 0, 0)",
+      "class": "shopify-section",
+      "h": 560.65625,
+      "id": "shopify-section-template--27139880190040__section_dcnnAc",
+      "padding": "0px",
+      "tag": "DIV",
+      "w": 1424.666748046875,
+      "x": 0,
+      "y": 3323.4375
+    },
+    {
+      "bg": "rgb(249, 247, 243)",
+      "class": "custom-section relative row  cg20 d-cg20 rg20 d-rg20 color-scheme-2 pb0 d-pb0 pt0 d-pt0",
+      "h": 560.65625,
+      "id": "",
+      "padding": "0px 60px",
+      "tag": "SECTION",
+      "w": 1424.666748046875,
+      "x": 0,
+      "y": 3323.4375
+    }
+  ],
+  "scrollWidth": 1425,
+  "title": "All Satechi Products | USB-C Hubs & Apple Accessories",
+  "url": "https://satechi.com/collections/all",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 900,
+    "width": 1440
+  }
+}

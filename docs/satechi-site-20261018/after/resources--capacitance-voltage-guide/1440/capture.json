@@ -1,0 +1,105 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/resources/capacitance-voltage-guide/",
+  "clientWidth": 1425,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 330,
+        "height": 96,
+        "left": 399.3333435058594,
+        "right": 1025.3333435058594,
+        "top": 234,
+        "width": 626,
+        "x": 399.3333435058594,
+        "y": 234
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "48px",
+      "size": "40px",
+      "text": "Capacitance and voltage ratings for motor capacitors"
+    }
+  ],
+  "headings": [
+    "µF, VAC and tolerance",
+    "Common reading mistakes",
+    "Sample markings",
+    "20 µF · 450 VAC · ±5%",
+    "Send your capacitor requirements.",
+    "References",
+    "Related resources"
+  ],
+  "height": 5664,
+  "images": [
+    {
+      "alt": "Illustrative close view of the capacitance and voltage printed on the supplied CBB65 sample.",
+      "box": {
+        "bottom": 1116.6666870117188,
+        "height": 746.6666870117188,
+        "left": 152.33334350585938,
+        "right": 1272.3333435058594,
+        "top": 370,
+        "width": 1120,
+        "x": 152.33334350585938,
+        "y": 370
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/guide-ratings.webp"
+    },
+    {
+      "alt": "CBB65 sample label showing 20 µF ±5%, 450 VAC and 50/60 Hz.",
+      "box": {
+        "bottom": 3501.25,
+        "height": 430,
+        "left": 472.3333435058594,
+        "right": 1232.3333435058594,
+        "top": 3071.25,
+        "width": 760,
+        "x": 472.3333435058594,
+        "y": 3071.25
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb65-2.jpg"
+    },
+    {
+      "alt": "Enlarged label area from the same CBB65 original photograph: 20 µF ±5%, 450VAC and 50/60Hz.",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "fit": "contain",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/real/cbb65-2.jpg"
+    }
+  ],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 1425,
+  "title": "Capacitance and voltage ratings for motor capacitors | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/resources/capacitance-voltage-guide/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 900,
+    "width": 1440
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

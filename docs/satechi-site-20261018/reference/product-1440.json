@@ -1,0 +1,291 @@
+{
+  "body": {
+    "background": "rgb(255, 255, 255)",
+    "font": "usual, sans-serif"
+  },
+  "h1Parents": [
+    {
+      "box": {
+        "bottom": 1530.6146240234375,
+        "height": 1334.2083740234375,
+        "left": 818.5521240234375,
+        "right": 1324.6667175292969,
+        "top": 196.40625,
+        "width": 506.1145935058594,
+        "x": 818.5521240234375,
+        "y": 196.40625
+      },
+      "class": "product-main__sticky-inner ",
+      "tag": "DIV"
+    }
+  ],
+  "headings": [
+    {
+      "box": {
+        "bottom": 332.4479217529297,
+        "height": 96,
+        "left": 818.5521240234375,
+        "right": 1324.6667175292969,
+        "top": 236.4479217529297,
+        "width": 506.1145935058594,
+        "x": 818.5521240234375,
+        "y": 236.4479217529297
+      },
+      "font": "urbane, sans-serif",
+      "line": "48px",
+      "size": "40px",
+      "text": "ChargeView™ 140W Desktop Charger",
+      "weight": "500"
+    },
+    {
+      "box": {
+        "bottom": 841.0104179382324,
+        "height": 17.604167938232422,
+        "left": 818.5521240234375,
+        "right": 1324.6667175292969,
+        "top": 823.40625,
+        "width": 506.1145935058594,
+        "x": 818.5521240234375,
+        "y": 823.40625
+      },
+      "font": "Urbane, sans-serif",
+      "line": "17.6px",
+      "size": "16px",
+      "text": "Popular Add-Ons",
+      "weight": "600"
+    },
+    {
+      "box": {
+        "bottom": 2770.2189140319824,
+        "height": 33.60416793823242,
+        "left": 571.2083740234375,
+        "right": 853.4583740234375,
+        "top": 2736.61474609375,
+        "width": 282.25,
+        "x": 571.2083740234375,
+        "y": 2736.61474609375
+      },
+      "font": "urbane, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "Power You Can See",
+      "weight": "500"
+    },
+    {
+      "box": {
+        "bottom": 3637.5834159851074,
+        "height": 33.60416793823242,
+        "left": 480.09375,
+        "right": 944.5625,
+        "top": 3603.979248046875,
+        "width": 464.46875,
+        "x": 480.09375,
+        "y": 3603.979248046875
+      },
+      "font": "urbane, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "Monitor Your Power in Real Time",
+      "weight": "500"
+    },
+    {
+      "box": {
+        "bottom": 3903.5834159851074,
+        "height": 33.60416793823242,
+        "left": 523.5208740234375,
+        "right": 901.1354675292968,
+        "top": 3869.979248046875,
+        "width": 377.6145935058594,
+        "x": 523.5208740234375,
+        "y": 3869.979248046875
+      },
+      "font": "urbane, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "Dual-Orientation Flexibility",
+      "weight": "500"
+    },
+    {
+      "box": {
+        "bottom": 5065.021160125732,
+        "height": 33.60416793823242,
+        "left": 729.8229370117188,
+        "right": 1328.6666870117188,
+        "top": 5031.4169921875,
+        "width": 598.84375,
+        "x": 729.8229370117188,
+        "y": 5031.4169921875
+      },
+      "font": "urbane, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "Smarter Fast Charging for iPhone",
+      "weight": "500"
+    },
+    {
+      "box": {
+        "bottom": 5767.843914031982,
+        "height": 33.60416793823242,
+        "left": 96,
+        "right": 694.84375,
+        "top": 5734.23974609375,
+        "width": 598.84375,
+        "x": 96,
+        "y": 5734.23974609375
+      },
+      "font": "urbane, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "Made for Modern Workspaces",
+      "weight": "500"
+    },
+    {
+      "box": {
+        "bottom": 6461.666667938232,
+        "height": 33.60416793823242,
+        "left": 729.8229370117188,
+        "right": 1328.6666870117188,
+        "top": 6428.0625,
+        "width": 598.84375,
+        "x": 729.8229370117188,
+        "y": 6428.0625
+      },
+      "font": "urbane, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "Clean & Compact Power",
+      "weight": "500"
+    },
+    {
+      "box": {
+        "bottom": 7146.489910125732,
+        "height": 33.60416793823242,
+        "left": 96,
+        "right": 694.84375,
+        "top": 7112.8857421875,
+        "width": 598.84375,
+        "x": 96,
+        "y": 7112.8857421875
+      },
+      "font": "urbane, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "Nothing Missing. Nothing Extra.",
+      "weight": "500"
+    },
+    {
+      "box": {
+        "bottom": 7675.604167938232,
+        "height": 33.60416793823242,
+        "left": 459,
+        "right": 965.6666870117188,
+        "top": 7642,
+        "width": 506.6666870117187,
+        "x": 459,
+        "y": 7642
+      },
+      "font": "urbane, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "Power Distribution for Every Device",
+      "weight": "500"
+    }
+  ],
+  "mainImages": [
+    {
+      "alt": "ChargeView™ 140W Desktop Charger Satechi US",
+      "box": {
+        "bottom": 924.9583740234376,
+        "height": 728.5521240234375,
+        "left": 40,
+        "right": 768.5521240234375,
+        "top": 196.40625,
+        "width": 728.5521240234375,
+        "x": 40,
+        "y": 196.40625
+      },
+      "fit": "fill",
+      "radius": "20px"
+    },
+    {
+      "alt": "ChargeView™ 140W Desktop Charger Satechi US",
+      "box": {
+        "bottom": 924.9583740234376,
+        "height": 728.5521240234375,
+        "left": 768.5521240234375,
+        "right": 1497.104248046875,
+        "top": 196.40625,
+        "width": 728.5521240234375,
+        "x": 768.5521240234375,
+        "y": 196.40625
+      },
+      "fit": "fill",
+      "radius": "20px"
+    },
+    {
+      "alt": "ChargeView™ 140W Desktop Charger Satechi US",
+      "box": {
+        "bottom": 930.6822967529296,
+        "height": 734.28125,
+        "left": 1497.0989990234375,
+        "right": 2225.651123046875,
+        "top": 196.4010467529297,
+        "width": 728.5521240234375,
+        "x": 1497.0989990234375,
+        "y": 196.4010467529297
+      },
+      "fit": "cover",
+      "radius": "20px"
+    },
+    {
+      "alt": "ChargeView™ 140W Desktop Charger Satechi US",
+      "box": {
+        "bottom": 924.9583740234376,
+        "height": 728.5521240234375,
+        "left": 2225.65625,
+        "right": 2954.2083740234375,
+        "top": 196.40625,
+        "width": 728.5521240234375,
+        "x": 2225.65625,
+        "y": 196.40625
+      },
+      "fit": "fill",
+      "radius": "20px"
+    },
+    {
+      "alt": "ChargeView™ 140W Desktop Charger Satechi US",
+      "box": {
+        "bottom": 924.9583740234376,
+        "height": 728.5521240234375,
+        "left": 2954.20849609375,
+        "right": 3682.760620117187,
+        "top": 196.40625,
+        "width": 728.5521240234375,
+        "x": 2954.20849609375,
+        "y": 196.40625
+      },
+      "fit": "fill",
+      "radius": "20px"
+    },
+    {
+      "alt": "ChargeView™ 140W Desktop Charger Satechi US",
+      "box": {
+        "bottom": 924.9583740234376,
+        "height": 728.5521240234375,
+        "left": 3682.760498046875,
+        "right": 4411.3126220703125,
+        "top": 196.40625,
+        "width": 728.5521240234375,
+        "x": 3682.760498046875,
+        "y": 196.40625
+      },
+      "fit": "fill",
+      "radius": "20px"
+    }
+  ],
+  "url": "https://satechi.com/products/chargeview-140w-desktop-charger/",
+  "viewport": [
+    1440,
+    900
+  ]
+}

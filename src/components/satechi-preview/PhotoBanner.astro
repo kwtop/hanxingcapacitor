@@ -1,0 +1,9 @@
+---
+interface Props { id: string; image: string; title: string[]; text: string; label: string; href: string; alt: string; }
+const { id, image, title, text, label, href, alt } = Astro.props;
+const root = '/images/previews/satechi-fidelity-20261018';
+---
+<section class="sp-photo-banner" aria-labelledby={`${id}-title`}>
+  <picture><source media="(max-width: 600px)" srcset={`${root}/${image}-mobile.webp`} width="780" height="1400" /><img src={`${root}/${image}-desktop.webp`} width="1966" height="800" loading="lazy" decoding="async" alt={alt} /></picture>
+  <div class="sp-banner-copy"><h2 id={`${id}-title`}>{title.map((line, index) => <>{index > 0 && <br />}{line}</>)}</h2><p>{text}</p><a class="button" href={href}>{label}</a></div>
+</section>

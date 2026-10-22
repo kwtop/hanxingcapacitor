@@ -1,0 +1,50 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/faq/",
+  "clientWidth": 375,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 288.40625762939453,
+        "height": 67.20833587646484,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 221.1979217529297,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 221.1979217529297
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "Motor capacitor buying questions"
+    }
+  ],
+  "headings": [
+    "Quotations and custom orders",
+    "Selecting a capacitor",
+    "Orders and shipping"
+  ],
+  "height": 2983,
+  "images": [],
+  "robots": [
+    "noindex,follow",
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 375,
+  "title": "Motor Capacitor Buyer FAQ | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/faq/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 844,
+    "width": 390
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

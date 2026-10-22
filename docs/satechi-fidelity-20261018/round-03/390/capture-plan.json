@@ -1,0 +1,61 @@
+{
+  "measurement_sha256": "1c2b2e5bf44fd3d3df35d2ebc153382fe492b9b4f75f5811233fba499920ec50",
+  "targets": [
+    {
+      "name": "header",
+      "selector": ".sp-header"
+    },
+    {
+      "name": "hero",
+      "selector": ".sp-hero"
+    },
+    {
+      "name": "series-strip",
+      "selector": ".sp-series-strip"
+    },
+    {
+      "name": "categories",
+      "selector": ".sp-categories"
+    },
+    {
+      "name": "label-banner",
+      "selector": ".sp-photo-banner:nth-of-type(3)"
+    },
+    {
+      "name": "series-rail",
+      "selector": ".sp-content-rail.sp-has-range-note"
+    },
+    {
+      "name": "fit-banner",
+      "selector": ".sp-photo-banner:nth-of-type(5)"
+    },
+    {
+      "name": "guide-rail",
+      "selector": ".sp-content-rail:not(.sp-has-range-note)"
+    },
+    {
+      "name": "applications",
+      "selector": ".sp-applications"
+    },
+    {
+      "name": "inquiry",
+      "selector": ".sp-inquiry-panel"
+    },
+    {
+      "name": "source-intro",
+      "selector": ".sp-source-intro"
+    },
+    {
+      "name": "source-stories",
+      "selector": ".sp-stories"
+    },
+    {
+      "name": "resource-bar",
+      "selector": ".sp-resource-bar"
+    },
+    {
+      "name": "footer",
+      "selector": ".site-footer"
+    }
+  ]
+}

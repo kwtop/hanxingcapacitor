@@ -1,0 +1,102 @@
+{
+  "bodyClass": "porcelain-site reference-site",
+  "canonical": "https://www.hanxingcapacitor.com/oem-quality/",
+  "clientWidth": 1425,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 245.28125762939453,
+        "height": 69.11458587646484,
+        "left": 72.33333587646484,
+        "right": 1054.3645858764648,
+        "top": 176.1666717529297,
+        "width": 982.03125,
+        "x": 72.33333587646484,
+        "y": 176.1666717529297
+      },
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "69.12px",
+      "size": "64px",
+      "text": "OEM and quality"
+    }
+  ],
+  "headings": [
+    "OEM & private label",
+    "Manufacturing & quality",
+    "Packing & dispatch",
+    "Before placing an order"
+  ],
+  "height": 1781,
+  "images": [
+    {
+      "alt": "Original CBB65 sample beside its printed carton.",
+      "box": {
+        "bottom": 681.9479370117188,
+        "height": 304,
+        "left": 72.33333587646484,
+        "right": 477.6666793823242,
+        "top": 377.9479370117187,
+        "width": 405.3333435058594,
+        "x": 72.33333587646484,
+        "y": 377.9479370117187
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 68%",
+      "src": "/images/real/cbb65-4.jpg"
+    },
+    {
+      "alt": "Operator beside production equipment in supplied process imagery.",
+      "box": {
+        "bottom": 681.9479370117188,
+        "height": 304,
+        "left": 509.6666870117187,
+        "right": 915.000030517578,
+        "top": 377.9479370117187,
+        "width": 405.3333435058594,
+        "x": 509.6666870117187,
+        "y": 377.9479370117187
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "58% 50%",
+      "src": "/images/real/inspection-station.jpg"
+    },
+    {
+      "alt": "Illustration of plain cartons with protective dividers.",
+      "box": {
+        "bottom": 681.9479370117188,
+        "height": 304,
+        "left": 947,
+        "right": 1352.3333435058594,
+        "top": 377.9479370117187,
+        "width": 405.3333435058594,
+        "x": 947,
+        "y": 377.9479370117187
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/illustrative/oem-hub-packing-20261012.webp"
+    }
+  ],
+  "robots": [
+    "noindex,follow"
+  ],
+  "scrollWidth": 1425,
+  "title": "OEM, Manufacturing & Quality | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4335/oem-quality/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 900,
+    "width": 1440
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

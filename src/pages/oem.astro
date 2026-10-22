@@ -1,4 +1,6 @@
 ---
+import { isSatechiPreview } from '../lib/visualPreview';
+import BrochurePhoto from '../components/satechi-preview/BrochurePhoto.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import InquiryCallout from '../components/InquiryCallout.astro';
 import { STANDARD_MOQ_PCS } from '../data/site';
@@ -18,37 +20,42 @@ const sampleTerms = [
 ];
 ---
 <BaseLayout title="OEM & Private Label Motor Capacitors" description="Prepare OEM motor capacitor requirements for electrical ratings, cases, connections, labels and packing, with sample approval and quotation terms.">
-  <article class="procurement-page procurement-oem">
+  <article class:list={['procurement-page procurement-oem', {'oem-editorial-page': isSatechiPreview}]}>
     <section class="procurement-hero"><div class="container procurement-oem-hero">
       <div>
         <p class="breadcrumbs"><a href="/">Home</a> / <a href="/oem-quality/">OEM &amp; Quality</a> / OEM</p>
         <h1>OEM motor capacitors</h1>
+        {isSatechiPreview && <p class="ss-media-lead">Agree the rating, connections, label and packing before approving the sample.</p>}
         <a class="button" href="/contact/?request=oem#inquiry-form">Prepare an OEM inquiry</a>
       </div>
-      <figure class="procurement-oem-photo"><img src="/images/real/cbb65-4.jpg" alt="Hanxing-marked CBB65 sample beside its printed retail carton." fetchpriority="high" width="2000" height="2000" /><figcaption>Artwork and packing require approval for your order.</figcaption></figure>
+      {isSatechiPreview ? <BrochurePhoto name="oem-formats" class="zi-oem-hero-photo" eager sizes="(max-width: 800px) calc(100vw - 32px), 52vw" /> : <figure class="procurement-oem-photo"><img src="/images/real/cbb65-4.jpg" alt="Hanxing-marked CBB65 sample beside its printed retail carton." fetchpriority="high" width="2000" height="2000" /><figcaption>Artwork and packing require approval for your order.</figcaption></figure>}
     </div></section>
     <section class="procurement-section" id="configuration-approval"><div class="container">
       <h2>Specify the capacitor you need</h2>
+      <div class:list={{'zi-configuration-table':isSatechiPreview}}>
       <table class="procurement-table procurement-configuration-table">
         <caption class="visually-hidden">Configuration requirements and the approval record to agree</caption>
         <thead><tr><th scope="col">Requirement</th><th scope="col">Approval record</th></tr></thead>
         <tbody>{configuration.map(item => <tr><th scope="row"><strong>{item.name}</strong><span>{item.requirement}</span></th><td><span class="procurement-mobile-label" aria-hidden="true">Approval record</span>{item.approval}</td></tr>)}</tbody>
       </table>
+      </div>
     </div></section>
     <section class="procurement-section" id="approval-process"><div class="container">
       <h2>From specification to approval</h2>
+      <div class:list={{'ss-approval-layout co-approval-flow':isSatechiPreview}}>
       <ol class="procurement-approval-steps">
         <li><span class="procurement-step-number" aria-hidden="true">01</span><h3>Send the specification</h3><p>Send the original label or drawing, duty, ratings, quantity and destination.</p><a class="card-link" href="/buying-guide/#rfq-template">Quotation checklist</a></li>
         <li><span class="procurement-step-number" aria-hidden="true">02</span><h3>Agree the drawings</h3><p>Agree case, mounting, connections, artwork and packing revisions.</p><a class="card-link" href="/factory/packing-and-dispatch/#packing-requirements">Packing requirements</a></li>
         <li><span class="procurement-step-number" aria-hidden="true">03</span><h3>Approve the sample</h3><p>Approve the sample, drawing, label and packing revisions in writing.</p><a class="card-link" href="/factory/#model-records">Product document checklist</a></li>
         <li><span class="procurement-step-number" aria-hidden="true">04</span><h3>Confirm the order</h3><p>Reference the approved configuration; record price, payment and delivery terms.</p><a class="card-link" href="/resources/motor-capacitor-order-shipment-checklist/">Order terms checklist</a></li>
       </ol>
+      </div>
     </div></section>
     <section class="procurement-section"><div class="container">
       <h2>Sample terms to agree</h2>
       <dl class="procurement-terms">{sampleTerms.map(([name, description]) => <div><dt>{name}</dt><dd>{description}</dd></div>)}</dl>
       <a class="card-link" href="/contact/?request=samples#inquiry-form">Request sample terms</a>
     </div></section>
-    <InquiryCallout href="/contact/?request=oem#inquiry-form" heading="Send your OEM requirements." description="Include ratings, artwork, quantity and destination." />
+    <InquiryCallout href="/contact/?request=oem#inquiry-form" heading="Send your OEM requirements" description="Include ratings, artwork, quantity and destination." />
   </article>
 </BaseLayout>

@@ -1,0 +1,124 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/resources/cbb60-vs-cbb61-vs-cbb65/",
+  "clientWidth": 375,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 272.3958396911621,
+        "height": 33.60416793823242,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 238.7916717529297,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 238.7916717529297
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "CBB60 vs CBB61 vs CBB65"
+    }
+  ],
+  "headings": [
+    "Three case formats",
+    "Compare the sample cases",
+    "CBB60: leads and stud mounting",
+    "CBB61: similar housings, different ratings",
+    "CBB65: metal can and terminal groups",
+    "Compare the installed part",
+    "Send your capacitor requirements.",
+    "References",
+    "Related resources"
+  ],
+  "height": 6276,
+  "images": [
+    {
+      "alt": "Illustrative arrangement of the three original run-capacitor case formats.",
+      "box": {
+        "bottom": 528.8333435058594,
+        "height": 228.4375,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 300.3958435058594,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 300.3958435058594
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/guide-series.webp"
+    },
+    {
+      "alt": "Two CBB60 samples showing lead exits and a threaded mounting stud.",
+      "box": {
+        "bottom": 2189.9583740234375,
+        "height": 297.96875,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 1891.9896240234375,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 1891.9896240234375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb60-18.jpg"
+    },
+    {
+      "alt": "Three CBB61 samples marked 4.5 µF, 5 µF and 6 µF.",
+      "box": {
+        "bottom": 2623.09375,
+        "height": 297.96875,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 2325.125,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 2325.125
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb61-13.jpg"
+    },
+    {
+      "alt": "CBB65 sample with two insulated terminal groups visible at the top.",
+      "box": {
+        "bottom": 3056.229248046875,
+        "height": 297.96875,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 2758.260498046875,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 2758.260498046875
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb65-2.jpg"
+    }
+  ],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 375,
+  "title": "CBB60 vs CBB61 vs CBB65 | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/resources/cbb60-vs-cbb61-vs-cbb65/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 844,
+    "width": 390
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

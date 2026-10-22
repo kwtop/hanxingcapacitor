@@ -1,0 +1,95 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/buying-guide/",
+  "clientWidth": 375,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 254.8020896911621,
+        "height": 33.60416793823242,
+        "left": 16,
+        "right": 256.875,
+        "top": 221.1979217529297,
+        "width": 240.875,
+        "x": 16,
+        "y": 221.1979217529297
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "Buying & shipping"
+    }
+  ],
+  "headings": [
+    "Prepare your inquiry",
+    "Quotation checklist",
+    "Send your capacitor requirements.",
+    "Motor and electrical specifications",
+    "Dimensions and connections",
+    "Quantity and model documents",
+    "Approve the sample",
+    "Confirm the order",
+    "Check packing & dispatch",
+    "Review shipping documents",
+    "Not sure which series?",
+    "Which equipment needs the capacitor?",
+    "Run and start duty for pumps"
+  ],
+  "height": 4815,
+  "images": [
+    {
+      "alt": "Illustrative packing still life with CBB65 samples, a plain carton and a blank notebook.",
+      "box": {
+        "bottom": 581.5729370117188,
+        "height": 228.4375,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 353.13543701171875,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 353.13543701171875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/guide-shipping.webp"
+    },
+    {
+      "alt": "Original CBB65 dual-run sample marked 50+5 µF and 450 VAC",
+      "box": {
+        "bottom": 2956.5521850585938,
+        "height": 342.66668701171875,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 2613.885498046875,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 2613.885498046875
+      },
+      "fit": "fill",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/real/cbb65-dual-run-7.jpg"
+    }
+  ],
+  "robots": [
+    "noindex,follow",
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 375,
+  "title": "Motor Capacitor Buying & Shipping Guide | HAN XING",
+  "url": "http://127.0.0.1:4340/buying-guide/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 844,
+    "width": 390
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

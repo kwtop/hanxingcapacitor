@@ -1,10 +1,11 @@
-import { applications, products, resourceSections, PUBLIC_BUSINESS_ADDRESS, PUBLIC_COMPANY_NAME, PUBLIC_EMAIL, PUBLIC_PHONE, SITE_NAME } from '../data/site';
+import { applications, products, resourceSections, PUBLIC_BRAND_NAME, PUBLIC_BUSINESS_ADDRESS, PUBLIC_COMPANY_NAME, PUBLIC_EMAIL, PUBLIC_PHONE, SITE_NAME } from '../data/site';
 import { guides } from '../data/guides';
 
 export function pageSeo(path: string, title: string, description: string, canonical: string) {
   const base = new URL(canonical);
   const absolute = (value: string) => new URL(value, base).toString();
   const organizationId = absolute('/#organization');
+  const brandId = absolute('/#brand');
   const websiteId = absolute('/#website');
   const product = products.find(p => path === `/products/${p.slug}/`);
   const application = applications.find(a => path === `/applications/${a.slug}/`);
@@ -14,16 +15,18 @@ export function pageSeo(path: string, title: string, description: string, canoni
   const pageType = path === '/about/' ? 'AboutPage' : path === '/contact/' ? 'ContactPage'
     : ['/products/', '/applications/', '/resources/', '/resources/articles/', '/products/photographs/'].includes(path) ? 'CollectionPage' : 'WebPage';
   const graph: Record<string, unknown>[] = [
-    { '@type': 'Organization', '@id': organizationId, name: PUBLIC_COMPANY_NAME, alternateName: SITE_NAME,
+    { '@type': 'Organization', '@id': organizationId, name: PUBLIC_COMPANY_NAME, brand: { '@id': brandId },
       url: absolute('/'), email: PUBLIC_EMAIL, telephone: PUBLIC_PHONE,
       description: `HAN XING motor run and start capacitor supply. ${PUBLIC_BUSINESS_ADDRESS}` },
     { '@type': 'WebSite', '@id': websiteId, url: absolute('/'), name: SITE_NAME, inLanguage: 'en', publisher: { '@id': organizationId } },
     { '@type': pageType, '@id': canonical + '#webpage', url: canonical, name: title, description,
       inLanguage: 'en', isPartOf: { '@id': websiteId }, publisher: { '@id': organizationId } },
   ];
+  graph.push({ '@type': 'Brand', '@id': brandId, name: PUBLIC_BRAND_NAME, alternateName: SITE_NAME, logo: absolute('/favicon.svg') });
   if (product) {
     // A series is a product group, not an invented purchasable SKU or offer.
     graph.push({ '@type': 'ProductGroup', '@id': canonical + '#series', name: product.title,
+      brand: { '@id': brandId },
       productGroupID: product.code, url: canonical, description: product.intro, image: absolute(product.image),
       category: `${product.function} motor capacitors`, mainEntityOfPage: { '@id': canonical + '#webpage' },
       additionalProperty: [

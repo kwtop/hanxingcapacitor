@@ -1,0 +1,107 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/resources/single-vs-dual-run-capacitors/",
+  "clientWidth": 1425,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 262.8020935058594,
+        "height": 48,
+        "left": 399.3333435058594,
+        "right": 1025.3333435058594,
+        "top": 214.80209350585935,
+        "width": 626,
+        "x": 399.3333435058594,
+        "y": 214.80209350585935
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "48px",
+      "size": "40px",
+      "text": "Single-run vs dual-run capacitors"
+    }
+  ],
+  "headings": [
+    "One section or two",
+    "Single-run and dual-run sample labels",
+    "Single-run sample: 20 µF · 450 VAC",
+    "Dual-run sample: 50+5 µF · 450 VAC",
+    "Record the values separately",
+    "Match the connections",
+    "Send your capacitor requirements.",
+    "References",
+    "Related resources"
+  ],
+  "height": 5428,
+  "images": [
+    {
+      "alt": "Illustrative view of single-run and dual-run CBB65 samples; original photographs remain in the guide.",
+      "box": {
+        "bottom": 1049.468780517578,
+        "height": 746.6666870117188,
+        "left": 152.33334350585938,
+        "right": 1272.3333435058594,
+        "top": 302.8020935058594,
+        "width": 1120,
+        "x": 152.33334350585938,
+        "y": 302.8020935058594
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/guide-dual.webp"
+    },
+    {
+      "alt": "CBB65 sample label showing 20 µF ±5%, 450 VAC and 50/60 Hz.",
+      "box": {
+        "bottom": 2319.041748046875,
+        "height": 368,
+        "left": 472.3333435058594,
+        "right": 840.3333435058594,
+        "top": 1951.041748046875,
+        "width": 368,
+        "x": 472.3333435058594,
+        "y": 1951.041748046875
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb65-2.jpg"
+    },
+    {
+      "alt": "Photograph of a CBB65 dual-run sample marked 50+5 µF and 450 VAC, with several terminal groups visible.",
+      "box": {
+        "bottom": 2319.041748046875,
+        "height": 368,
+        "left": 864.3333740234375,
+        "right": 1232.3333740234375,
+        "top": 1951.041748046875,
+        "width": 368,
+        "x": 864.3333740234375,
+        "y": 1951.041748046875
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb65-dual-run-7.jpg"
+    }
+  ],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 1425,
+  "title": "Single-run vs dual-run capacitors | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/resources/single-vs-dual-run-capacitors/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 900,
+    "width": 1440
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/oem-quality/",
+  "clientWidth": 375,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 254.8020896911621,
+        "height": 33.60416793823242,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 221.1979217529297,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 221.1979217529297
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "OEM and quality"
+    }
+  ],
+  "headings": [
+    "OEM & private label",
+    "Manufacturing & quality",
+    "Packing & dispatch",
+    "Before placing an order"
+  ],
+  "height": 3193,
+  "images": [
+    {
+      "alt": "Illustrative sample approval still life based on supplied Hanxing samples.",
+      "box": {
+        "bottom": 555.90625,
+        "height": 228.4375,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 327.46875,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 327.46875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/oem-approval.webp"
+    },
+    {
+      "alt": "Operator beside production equipment in supplied process imagery.",
+      "box": {
+        "bottom": 1023.4896240234376,
+        "height": 228.4375,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 795.0521240234375,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 795.0521240234375
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/inspection-station.jpg"
+    },
+    {
+      "alt": "Illustration of plain cartons with protective dividers.",
+      "box": {
+        "bottom": 1491.072998046875,
+        "height": 228.4375,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 1262.635498046875,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 1262.635498046875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/packing-concept.webp"
+    }
+  ],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 375,
+  "title": "OEM, Manufacturing & Quality | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/oem-quality/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 844,
+    "width": 390
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

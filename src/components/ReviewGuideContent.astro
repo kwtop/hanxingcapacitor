@@ -1,5 +1,6 @@
 ---
 import PhotoDetail from './PhotoDetail.astro';
+import MeasurementGuide from './MeasurementGuide.astro';
 import type { GuideSection } from '../data/guideLayouts';
 interface Props { sections: GuideSection[]; }
 const { sections } = Astro.props;
@@ -11,6 +12,7 @@ const { sections } = Astro.props;
     <div class="review-guide-section-body">
       <div class="review-guide-copy">
         {section.paragraphs?.map(paragraph => <p>{paragraph}</p>)}
+        {section.id === 'measure-the-space-available' && <MeasurementGuide />}
         {section.records && <dl class="review-guide-records">{section.records.map(record => <div><dt>{record.label}</dt><dd>{record.text}</dd></div>)}</dl>}
         {section.points && (section.orderedPoints
           ? <ol class="review-guide-points">{section.points.map(point => <li>{point}</li>)}</ol>

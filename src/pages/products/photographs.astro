@@ -2,8 +2,12 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import SamplePhotoLibrary from '../../components/StaticPhotoLibrary';
 import { publicSampleLibrary } from '../../data/productReference';
+import { readCatalogQuery } from '../../lib/catalogQuery';
+const initialFilters = readCatalogQuery(Astro.url.searchParams, 'series', ['All', 'CBB60', 'CBB61', 'CBB65', 'CD60', 'Additional samples']);
+const requestedState = import.meta.env.DEV ? Astro.url.searchParams.get('ui-state') : null;
+const previewState = requestedState === 'image-loading' ? 'loading' : requestedState === 'image-error' ? 'error' : undefined;
 ---
 <BaseLayout title="Product sample photographs" description="Browse supplied capacitor sample photographs by series and include the P reference with the rating you need in an inquiry.">
   <div class="review-photo-library"><section class="page-hero compact-page-hero"><div class="container"><p class="breadcrumbs"><a href="/">Home</a> / <a href="/products/">Products</a> / Photographs</p><h1>Product sample photographs</h1></div></section>
-  <section class="section"><div class="container"><SamplePhotoLibrary client:load photographs={publicSampleLibrary} /></div></section></div>
+  <section class="section"><div class="container"><SamplePhotoLibrary client:load photographs={publicSampleLibrary} initial={initialFilters} previewState={previewState} /></div></section></div>
 </BaseLayout>

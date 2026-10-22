@@ -1,0 +1,67 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/contact/",
+  "clientWidth": 375,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 250.81250762939453,
+        "height": 67.20833587646484,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 183.6041717529297,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 183.6041717529297
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "ContactHAN XING"
+    }
+  ],
+  "headings": [
+    "Your reference",
+    "Review your inquiry"
+  ],
+  "height": 2717,
+  "images": [
+    {
+      "alt": "Illustrative still life with original Hanxing capacitor samples and a blank notebook.",
+      "box": {
+        "bottom": 735.4166870117188,
+        "height": 228.4375,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 506.9791870117187,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 506.9791870117187
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/contact-desk.webp"
+    }
+  ],
+  "robots": [
+    "noindex,follow",
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 375,
+  "title": "Contact Hanxing Capacitor | Motor Capacitor Inquiries",
+  "url": "http://127.0.0.1:4340/contact/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 844,
+    "width": 390
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

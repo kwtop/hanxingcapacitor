@@ -9,7 +9,7 @@ export default defineConfig({
   // Concurrent builds must not replace the dev server's React JSX runtime.
   vite: {
     cacheDir: process.argv.includes('dev')
-      ? 'node_modules/.vite-hanxing-dev'
+      ? `node_modules/.vite-hanxing-dev${process.env.HANXING_VISUAL_PREVIEW === 'satechi' ? '-satechi' : ''}`
       : 'node_modules/.vite-hanxing-build',
   },
   devToolbar: { enabled: false },

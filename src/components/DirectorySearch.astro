@@ -1,0 +1,13 @@
+---
+interface Props { directory: string; label: string; placeholder: string; noun: string; emptyTitle: string; }
+const {directory,label,placeholder,noun,emptyTitle}=Astro.props;
+const query=(Astro.url.searchParams.get('q') || '').slice(0,120);
+---
+<div class="content-filter-controls" data-content-filter data-directory={directory} data-noun={noun} hidden>
+  <div class="catalog-query-toolbar"><label class="catalog-query-field" for={`${directory}-search`}><span>{label}</span><input id={`${directory}-search`} type="search" name="q" value={query} maxlength="120" placeholder={placeholder} aria-controls={directory} /></label><p class="catalog-query-count" data-filter-count role="status" aria-live="polite"></p><button class="button secondary" type="button" data-filter-clear hidden>Clear search</button></div>
+  <div class="catalog-empty" data-filter-empty hidden><h2>{emptyTitle}</h2><p>Try another term or clear your search to see all {noun}.</p></div>
+</div>
+<script>
+  import {initContentSearch} from '../lib/contentSearch';
+  initContentSearch();
+</script>

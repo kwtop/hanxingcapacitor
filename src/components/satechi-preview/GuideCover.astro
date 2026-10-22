@@ -1,0 +1,15 @@
+---
+import {guideVisuals} from '../../data/satechiSite';
+import SiteImage from './SiteImage.astro';
+interface Props { slug:string; class?:string; eager?:boolean; sizes?:string; }
+const {slug,class:className,eager=false,sizes}=Astro.props;
+const visual=guideVisuals[slug];
+const isLabel=slug==='read-motor-capacitor-label';
+const isRatings=slug==='capacitance-voltage-guide';
+---
+<figure class:list={['co-guide-visual',className,{'co-guide-visual--label':isLabel,'co-guide-visual--ratings':isRatings,'zi-guide-photo':visual.src.startsWith('/images/brochure/')}]} data-guide-visual={slug}>
+  {isRatings ? <div class="co-rating-fields" role="img" aria-label="µF identifies capacitance. VAC identifies rated AC voltage.">
+    <div aria-hidden="true"><strong>µF</strong><span>Capacitance</span></div>
+    <div aria-hidden="true"><strong>VAC</strong><span>Rated AC voltage</span></div>
+  </div> : <SiteImage src={visual.src} alt={visual.alt} sizes={sizes} eager={eager} />}
+</figure>

@@ -1,0 +1,182 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/products/photographs/",
+  "clientWidth": 1425,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 262.8020935058594,
+        "height": 48,
+        "left": 60,
+        "right": 811.1979370117188,
+        "top": 214.80209350585935,
+        "width": 751.1979370117188,
+        "x": 60,
+        "y": 214.80209350585935
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "48px",
+      "size": "40px",
+      "text": "Product sample photographs"
+    }
+  ],
+  "headings": [],
+  "height": 2178,
+  "images": [
+    {
+      "alt": "Black cylindrical sample",
+      "box": {
+        "bottom": 814.5521240234375,
+        "height": 276.16668701171875,
+        "left": 76,
+        "right": 352.16668701171875,
+        "top": 538.3854370117188,
+        "width": 276.16668701171875,
+        "x": 76,
+        "y": 538.3854370117188
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-0-thumb.webp"
+    },
+    {
+      "alt": "Multicolour wire leads",
+      "box": {
+        "bottom": 814.5521240234375,
+        "height": 276.16668701171875,
+        "left": 408.1666870117187,
+        "right": 684.3333740234375,
+        "top": 538.3854370117188,
+        "width": 276.16668701171875,
+        "x": 408.1666870117187,
+        "y": 538.3854370117188
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-1-thumb.webp"
+    },
+    {
+      "alt": "Lead wires and base stud",
+      "box": {
+        "bottom": 814.5521240234375,
+        "height": 276.16668701171875,
+        "left": 740.3333740234375,
+        "right": 1016.5000610351562,
+        "top": 538.3854370117188,
+        "width": 276.16668701171875,
+        "x": 740.3333740234375,
+        "y": 538.3854370117188
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-2-thumb.webp"
+    },
+    {
+      "alt": "Paired wired samples",
+      "box": {
+        "bottom": 814.5521240234375,
+        "height": 276.16668701171875,
+        "left": 1072.5,
+        "right": 1348.6666870117188,
+        "top": 538.3854370117188,
+        "width": 276.16668701171875,
+        "x": 1072.5,
+        "y": 538.3854370117188
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-3-thumb.webp"
+    },
+    {
+      "alt": "Case colours and markings",
+      "box": {
+        "bottom": 1269.1041870117188,
+        "height": 276.16668701171875,
+        "left": 76,
+        "right": 352.16668701171875,
+        "top": 992.9375,
+        "width": 276.16668701171875,
+        "x": 76,
+        "y": 992.9375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-4-thumb.webp"
+    },
+    {
+      "alt": "Yellow end-cap detail",
+      "box": {
+        "bottom": 1269.1041870117188,
+        "height": 276.16668701171875,
+        "left": 408.1666870117187,
+        "right": 684.3333740234375,
+        "top": 992.9375,
+        "width": 276.16668701171875,
+        "x": 408.1666870117187,
+        "y": 992.9375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-5-thumb.webp"
+    },
+    {
+      "alt": "White end-cap detail",
+      "box": {
+        "bottom": 1269.1041870117188,
+        "height": 276.16668701171875,
+        "left": 740.3333740234375,
+        "right": 1016.5000610351562,
+        "top": 992.9375,
+        "width": 276.16668701171875,
+        "x": 740.3333740234375,
+        "y": 992.9375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-6-thumb.webp"
+    },
+    {
+      "alt": "Yellow wired sample",
+      "box": {
+        "bottom": 1269.1041870117188,
+        "height": 276.16668701171875,
+        "left": 1072.5,
+        "right": 1348.6666870117188,
+        "top": 992.9375,
+        "width": 276.16668701171875,
+        "x": 1072.5,
+        "y": 992.9375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-7-thumb.webp"
+    }
+  ],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 1425,
+  "title": "Product sample photographs | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/products/photographs/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 900,
+    "width": 1440
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

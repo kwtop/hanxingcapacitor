@@ -24,6 +24,20 @@ import '../styles/page-rhythm.css'; // Shared module breathing room, independent
 import '../styles/application-editorial.css'; // Selected Applications index and detail hierarchy.
 import '../styles/layout-balance.css'; // Responsive image/copy proportions across existing templates.
 import Header from '../components/Header.astro';
+import PreviewHeader from '../components/satechi-preview/PreviewHeader.astro';
+import fidelityCss from '../styles/satechi-fidelity.css?url';
+import sitePreviewCss from '../styles/satechi-site.css?url';
+import innerPreviewCss from '../styles/satechi-inner.css?url';
+import mediaPreviewCss from '../styles/satechi-media.css?url';
+import linkNavigationCss from '../styles/satechi-link-navigation.css?url';
+import footerPreviewCss from '../styles/satechi-footer.css?url';
+import typographyPreviewCss from '../styles/satechi-typography.css?url';
+import coherencePreviewCss from '../styles/satechi-coherence.css?url';
+import oemImageryCss from '../styles/satechi-oem-imagery.css?url';
+import rhythmPreviewCss from '../styles/satechi-rhythm.css?url';
+import brochurePreviewCss from '../styles/satechi-brochure.css?url';
+import interactionCss from '../styles/interaction-states.css?url';
+import { isSatechiPreview } from '../lib/visualPreview';
 import Footer from '../components/Footer.astro';
 import { SITE_NAME } from '../data/site';
 import { publicSiteReady } from '../lib/publicSite';
@@ -46,7 +60,7 @@ const seo = pageSeo(Astro.url.pathname, fullTitle, description, canonical);
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    {(noindex || previewOnly) && <meta name="robots" content="noindex,follow" />}
+    {(noindex || previewOnly || isSatechiPreview) && <meta name="robots" content={isSatechiPreview ? 'noindex,nofollow,noarchive' : 'noindex,follow'} />}
     <meta property="og:type" content={seo.ogType} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
@@ -63,13 +77,18 @@ const seo = pageSeo(Astro.url.pathname, fullTitle, description, canonical);
     {breadcrumbs && <script type="application/ld+json" set:html={JSON.stringify(breadcrumbs).replace(/</g, '\\u003c')} />}
     <link rel="icon" href="/favicon.svg?v=hanxing" type="image/svg+xml" />
     <slot name="head" />
+    {isSatechiPreview && <><link rel="stylesheet" href={fidelityCss} /><link rel="stylesheet" href={sitePreviewCss} /><link rel="stylesheet" href={innerPreviewCss} /><link rel="stylesheet" href={mediaPreviewCss} /><link rel="stylesheet" href={linkNavigationCss} /><link rel="stylesheet" href={footerPreviewCss} /><link rel="stylesheet" href={typographyPreviewCss} /><link rel="stylesheet" href={coherencePreviewCss} /><link rel="stylesheet" href={oemImageryCss} /><link rel="stylesheet" href={rhythmPreviewCss} /><link rel="stylesheet" href={brochurePreviewCss} /></>}
+    <link rel="stylesheet" href={interactionCss} />
   </head>
-  <body class="porcelain-site reference-site">
+  <body class:list={[isSatechiPreview ? 'satechi-preview satechi-site' : 'porcelain-site reference-site', {'is-home': isSatechiPreview && Astro.url.pathname === '/', 'has-collection-cover':isSatechiPreview && ['/products/','/applications/'].includes(Astro.url.pathname)}]}>
     <a class="visually-hidden" href="#main">Skip to content</a>
-    <Header />
-    <main id="main"><slot /></main>
+    {isSatechiPreview ? <PreviewHeader /> : <Header />}
+    <main id="main" tabindex="-1"><slot /></main>
     <Footer />
-
+    <script>
+      import {initSiteImageFeedback} from '../lib/siteImageFeedback';
+      initSiteImageFeedback();
+    </script>
   </body>
 </html>
 

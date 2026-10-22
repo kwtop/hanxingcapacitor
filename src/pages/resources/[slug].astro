@@ -4,6 +4,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import InquiryCallout from '../../components/InquiryCallout.astro';
 import { guides, type Guide } from '../../data/guides';
 import { guideLayouts } from '../../data/guideLayouts';
+import { isSatechiPreview } from '../../lib/visualPreview';
+import GuideCover from '../../components/satechi-preview/GuideCover.astro';
 export const prerender = true;
 export function getStaticPaths() { return guides.map(guide => ({ params: { slug: guide.slug }, props: { guide } })); }
 interface Props { guide: Guide; }
@@ -16,20 +18,21 @@ const relatedInBody = new Set(layout.sections.flatMap(section => (section.links 
 const related = guide.related.filter(link => !relatedInBody.has(link.href) && link.href !== '/buying-guide/').slice(0, 3);
 ---
 <BaseLayout title={guide.title} description={guide.summary}>
-  <div class="review-resource-page">
+  <div class:list={['review-resource-page',{'co-reading-page':isSatechiPreview}]}>
     <section class="page-hero guide-hero review-guide-hero"><div class="container">
       <p class="breadcrumbs"><a href="/">Home</a> / <a href="/resources/">Resources</a> / <a href={isOrderGuide ? '/buying-guide/' : '/resources/articles/'}>{isOrderGuide ? 'Buying & shipping' : 'Technical guides'}</a> / {guide.title}</p>
-      <h1>{guide.title}</h1>
+      {isSatechiPreview ? <div class="ss-article-introduction co-reading-heading"><div><h1>{guide.title}</h1><p>{guide.summary}</p></div></div> : <h1>{guide.title}</h1>}
     </div></section>
     <section class="section guide-body review-guide-body"><div class="container review-guide-layout">
       <aside class="review-guide-navigation"><details class="guide-toc review-guide-toc" open>
         <summary>On this page</summary><nav aria-label="On this page">
           {layout.sections.map(section => <a href={`#${section.id}`}>{section.tocLabel || section.heading}</a>)}
-          <a href="#details-to-send">Inquiry details</a><a href="#references">References</a>
+          <a href="#details-to-send">Inquiry details</a>
         </nav>
       </details></aside>
       <article class="editorial review-guide-article">
         <p class="article-overview">{guide.answer}</p>
+        {isSatechiPreview && <GuideCover slug={guide.slug} class="co-article-visual" sizes="(max-width:800px) calc(100vw - 32px), 760px" eager />}
         <ReviewGuideContent sections={layout.sections} />
         <InquiryCallout id="details-to-send" contained href={discussHref} defaultSeries={guide.slug === 'single-vs-dual-run-capacitors' ? 'CBB65' : 'CBB60'}>
           <span id={sectionId(guide.inquiry.heading)} class="review-guide-anchor" aria-hidden="true"></span>
@@ -42,10 +45,7 @@ const related = guide.related.filter(link => !relatedInBody.has(link.href) && li
             <a class="card-link" href="/buying-guide/#rfq-template">Use the quotation checklist</a>
           </nav>
         </InquiryCallout>
-        <section class="article-references review-guide-references" id="references"><h2>References</h2>
-          
-          <ul>{guide.sources.map(source => <li><a href={source.href} target="_blank" rel="noopener noreferrer">{source.label}</a></li>)}</ul>
-        </section>
+        <span id="references" class="review-guide-anchor" aria-hidden="true"></span>
         <nav class="review-guide-related" aria-label="Related resources"><h2>Related resources</h2>
           {related.map(link => <a class="card-link" href={link.href}>{link.label}</a>)}<a class="card-link" href="/resources/">All resources</a>
         </nav>
@@ -53,6 +53,7 @@ const related = guide.related.filter(link => !relatedInBody.has(link.href) && li
     </div></section>
   </div>
   <script>
+    import {bindCopyFeedback} from '../../lib/copyFeedback';
     const guideContents = document.querySelector<HTMLDetailsElement>('.review-guide-toc');
     if (guideContents) {
       const narrowGuide = window.matchMedia('(max-width: 800px)');
@@ -60,17 +61,7 @@ const related = guide.related.filter(link => !relatedInBody.has(link.href) && li
       narrowGuide.addEventListener('change', event => { guideContents.open = !event.matches; });
     }
     document.querySelectorAll<HTMLElement>('[data-copy-block]').forEach(block => {
-      block.querySelector<HTMLButtonElement>('[data-copy-order]')?.addEventListener('click', async () => {
-        const template = block.querySelector<HTMLElement>('pre');
-        const status = block.querySelector<HTMLElement>('[role="status"]');
-        if (!template || !status) return;
-        try { await navigator.clipboard.writeText(template.textContent || ''); status.textContent = 'Order notes copied.'; }
-        catch {
-          const range = document.createRange(); range.selectNodeContents(template);
-          const selection = window.getSelection(); selection?.removeAllRanges(); selection?.addRange(range); template.focus();
-          status.textContent = 'Select and copy the order notes above.';
-        }
-      });
+      bindCopyFeedback(block.querySelector<HTMLButtonElement>('[data-copy-order]'),block.querySelector<HTMLElement>('pre'),block.querySelector<HTMLElement>('[role="status"]'),'Order notes copied.','Select and copy the order notes above.');
     });
   </script>
 </BaseLayout>

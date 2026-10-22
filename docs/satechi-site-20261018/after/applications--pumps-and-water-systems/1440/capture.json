@@ -1,0 +1,162 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/applications/pumps-and-water-systems/",
+  "clientWidth": 1425,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 329.32293701171875,
+        "height": 48,
+        "left": 60,
+        "right": 588.9791870117188,
+        "top": 281.32293701171875,
+        "width": 528.9791870117188,
+        "x": 60,
+        "y": 281.32293701171875
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "48px",
+      "size": "40px",
+      "text": "Water pumps"
+    }
+  ],
+  "headings": [
+    "Motor circuit & original capacitor",
+    "Run",
+    "Start",
+    "Both",
+    "Unknown",
+    "Compare capacitor series",
+    "CBB60",
+    "CD60",
+    "Fit and connection check",
+    "Body and base stud",
+    "Lead clearance",
+    "Separate parts",
+    "Send your capacitor requirements."
+  ],
+  "height": 4341,
+  "images": [
+    {
+      "alt": "Illustration of a centrifugal water pump and motor.",
+      "box": {
+        "bottom": 570.1771087646484,
+        "height": 402.5729370117187,
+        "left": 648.9791870117188,
+        "right": 1364.6666870117188,
+        "top": 167.6041717529297,
+        "width": 715.6875,
+        "x": 648.9791870117188,
+        "y": 167.6041717529297
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/application-pump.webp"
+    },
+    {
+      "alt": "Photograph of a Hanxing-marked white CBB60 capacitor sample with two insulated leads.",
+      "box": {
+        "bottom": 2017.8958740234375,
+        "height": 220,
+        "left": 399.53125,
+        "right": 881.7604370117188,
+        "top": 1797.8958740234375,
+        "width": 482.2291870117187,
+        "x": 399.53125,
+        "y": 1797.8958740234375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 55%",
+      "src": "/images/real/cbb60-hanxing-wired.jpg"
+    },
+    {
+      "alt": "Photograph of a CD60 cylindrical motor-start capacitor sample.",
+      "box": {
+        "bottom": 2047.8157958984375,
+        "height": 308,
+        "left": 785.3125,
+        "right": 1460.4479370117188,
+        "top": 1739.8157958984375,
+        "width": 675.1354370117188,
+        "x": 785.3125,
+        "y": 1739.8157958984375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 64%",
+      "src": "/images/real/cd60-25.jpg"
+    },
+    {
+      "alt": "Photograph of a Hanxing-marked white CBB60 capacitor sample with two insulated leads.",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "fit": "contain",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/real/cbb60-hanxing-wired.jpg"
+    },
+    {
+      "alt": "Photograph of a CD60 cylindrical motor-start capacitor sample.",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cd60-25.jpg"
+    },
+    {
+      "alt": "Two photographed CBB60 samples; the horizontal sample shows a threaded base stud.",
+      "box": {
+        "bottom": 3023.25,
+        "height": 500,
+        "left": 60,
+        "right": 588.9791870117188,
+        "top": 2523.25,
+        "width": 528.9791870117188,
+        "x": 60,
+        "y": 2523.25
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb60-18.jpg"
+    }
+  ],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 1425,
+  "title": "Water pumps | CBB60 motor run capacitors | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/applications/pumps-and-water-systems/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 900,
+    "width": 1440
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

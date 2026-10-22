@@ -1,0 +1,80 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/factory/",
+  "clientWidth": 1009,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 262.8020935058594,
+        "height": 48,
+        "left": 40,
+        "right": 791.1979370117188,
+        "top": 214.80209350585935,
+        "width": 751.1979370117188,
+        "x": 40,
+        "y": 214.80209350585935
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "48px",
+      "size": "40px",
+      "text": "Manufacturing and quality"
+    }
+  ],
+  "headings": [
+    "Process footage",
+    "Material and process",
+    "Electrical and product testing",
+    "Packing and warehouse handling",
+    "Product document checklist",
+    "Request model documents."
+  ],
+  "height": 4795,
+  "images": [
+    {
+      "alt": "AI-refined view of the operator and capacitor equipment in the supplied workshop image.",
+      "box": {
+        "bottom": 949.3750610351562,
+        "height": 522.6458740234375,
+        "left": 40,
+        "right": 968.6666870117188,
+        "top": 426.7291870117187,
+        "width": 928.6666870117188,
+        "x": 40,
+        "y": 426.7291870117187
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/factory-20261019/workshop.webp"
+    },
+    {
+      "alt": "Illustrative arrangement of the four original capacitor formats.",
+      "box": {
+        "bottom": 4075.3645935058594,
+        "height": 335.1770935058594,
+        "left": 80,
+        "right": 415.1770935058594,
+        "top": 3740.1875,
+        "width": 335.1770935058594,
+        "x": 80,
+        "y": 3740.1875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/inquiry.webp"
+    }
+  ],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 1009,
+  "title": "Manufacturing & Quality | Product Documents | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/factory/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 768,
+    "width": 1024
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "factory-exterior": {
+    "src": "/images/brochure/20261022/factory-exterior-1200.webp",
+    "width": 1200,
+    "height": 816,
+    "srcset": "/images/brochure/20261022/factory-exterior-360.webp 360w, /images/brochure/20261022/factory-exterior-720.webp 720w, /images/brochure/20261022/factory-exterior-1200.webp 1200w, /images/brochure/20261022/factory-exterior-1600.webp 1600w",
+    "alt": "Factory exterior with HAN XING signage, photographed in the company brochure.",
+    "sourceId": "ZB-P02-001",
+    "kind": "original-photograph"
+  },
+  "lobby": {
+    "src": "/images/brochure/20261022/lobby-1200.webp",
+    "width": 1200,
+    "height": 819,
+    "srcset": "/images/brochure/20261022/lobby-360.webp 360w, /images/brochure/20261022/lobby-720.webp 720w, /images/brochure/20261022/lobby-1200.webp 1200w, /images/brochure/20261022/lobby-1600.webp 1600w",
+    "alt": "Reception hall with HANXING signage, photographed in the company brochure.",
+    "sourceId": "ZB-P02-002",
+    "kind": "original-photograph"
+  },
+  "exhibition-meeting": {
+    "src": "/images/brochure/20261022/exhibition-meeting-457.webp",
+    "width": 457,
+    "height": 345,
+    "srcset": "/images/brochure/20261022/exhibition-meeting-320.webp 320w, /images/brochure/20261022/exhibition-meeting-457.webp 457w",
+    "alt": "People at a HAN XING exhibition stand in the original brochure photograph.",
+    "sourceId": "ZB-P14-023",
+    "kind": "original-photograph"
+  },
+  "exhibition-products": {
+    "src": "/images/brochure/20261022/exhibition-products-455.webp",
+    "width": 455,
+    "height": 345,
+    "srcset": "/images/brochure/20261022/exhibition-products-320.webp 320w, /images/brochure/20261022/exhibition-products-455.webp 455w",
+    "alt": "Visitors and staff discussing product samples at an exhibition counter.",
+    "sourceId": "ZB-P14-025",
+    "kind": "original-photograph"
+  },
+  "cbb60-terminals": {
+    "src": "/images/brochure/20261022/cbb60-terminals-1200.webp",
+    "width": 1200,
+    "height": 800,
+    "srcset": "/images/brochure/20261022/cbb60-terminals-360.webp 360w, /images/brochure/20261022/cbb60-terminals-720.webp 720w, /images/brochure/20261022/cbb60-terminals-1200.webp 1200w, /images/brochure/20261022/cbb60-terminals-1536.webp 1536w",
+    "alt": "Studio illustration based on the brochure: white CBB60 cases with blade terminals.",
+    "sourceId": "ZB-P04-002",
+    "kind": "illustration"
+  },
+  "cbb60-leads": {
+    "src": "/images/brochure/20261022/cbb60-leads-1200.webp",
+    "width": 1200,
+    "height": 703,
+    "srcset": "/images/brochure/20261022/cbb60-leads-360.webp 360w, /images/brochure/20261022/cbb60-leads-720.webp 720w, /images/brochure/20261022/cbb60-leads-1200.webp 1200w, /images/brochure/20261022/cbb60-leads-1600.webp 1600w",
+    "alt": "Studio illustration based on the brochure: cylindrical CBB60 cases with insulated wire leads.",
+    "sourceId": "ZB-P05-001",
+    "kind": "illustration"
+  },
+  "capacitor-cores": {
+    "src": "/images/brochure/20261022/capacitor-cores-1200.webp",
+    "width": 1200,
+    "height": 725,
+    "srcset": "/images/brochure/20261022/capacitor-cores-360.webp 360w, /images/brochure/20261022/capacitor-cores-720.webp 720w, /images/brochure/20261022/capacitor-cores-1200.webp 1200w, /images/brochure/20261022/capacitor-cores-1600.webp 1600w",
+    "alt": "Studio illustration of round and oval capacitor winding cores from the brochure.",
+    "sourceId": "ZB-P04-003",
+    "kind": "illustration"
+  },
+  "cbb61-family": {
+    "src": "/images/brochure/20261022/cbb61-family-1200.webp",
+    "width": 1200,
+    "height": 600,
+    "srcset": "/images/brochure/20261022/cbb61-family-360.webp 360w, /images/brochure/20261022/cbb61-family-720.webp 720w, /images/brochure/20261022/cbb61-family-1200.webp 1200w, /images/brochure/20261022/cbb61-family-1600.webp 1600w",
+    "alt": "Studio illustration of the brochure CBB61 family, with blade terminals and red wire leads.",
+    "sourceId": "ZB-P04-001",
+    "kind": "illustration"
+  },
+  "cbb61-terminal": {
+    "src": "/images/brochure/20261022/cbb61-terminal-1200.webp",
+    "width": 1200,
+    "height": 900,
+    "srcset": "/images/brochure/20261022/cbb61-terminal-360.webp 360w, /images/brochure/20261022/cbb61-terminal-720.webp 720w, /images/brochure/20261022/cbb61-terminal-1200.webp 1200w, /images/brochure/20261022/cbb61-terminal-1448.webp 1448w",
+    "alt": "Studio illustration of the black CBB61 case with two individual blade terminals.",
+    "sourceId": "ZB-P04-001",
+    "kind": "illustration"
+  },
+  "cbb61-leads": {
+    "src": "/images/brochure/20261022/cbb61-leads-1200.webp",
+    "width": 1200,
+    "height": 900,
+    "srcset": "/images/brochure/20261022/cbb61-leads-360.webp 360w, /images/brochure/20261022/cbb61-leads-720.webp 720w, /images/brochure/20261022/cbb61-leads-1200.webp 1200w, /images/brochure/20261022/cbb61-leads-1448.webp 1448w",
+    "alt": "Studio illustration of the black CBB61 case with two red insulated wire leads.",
+    "sourceId": "ZB-P04-001",
+    "kind": "illustration"
+  },
+  "oem-formats": {
+    "src": "/images/brochure/20261022/oem-formats-1200.webp",
+    "width": 1200,
+    "height": 800,
+    "srcset": "/images/brochure/20261022/oem-formats-360.webp 360w, /images/brochure/20261022/oem-formats-720.webp 720w, /images/brochure/20261022/oem-formats-1200.webp 1200w, /images/brochure/20261022/oem-formats-1536.webp 1536w",
+    "alt": "Illustrative case and connection study based on the brochure, using HAN XING CBB60 and CBB61 formats.",
+    "sourceId": "ZB-P04-004",
+    "kind": "illustration"
+  },
+  "cbb65-packaging": {
+    "src": "/images/brochure/20261022/cbb65-packaging-1200.webp",
+    "width": 1200,
+    "height": 800,
+    "srcset": "/images/brochure/20261022/cbb65-packaging-360.webp 360w, /images/brochure/20261022/cbb65-packaging-720.webp 720w, /images/brochure/20261022/cbb65-packaging-1200.webp 1200w, /images/brochure/20261022/cbb65-packaging-1536.webp 1536w",
+    "alt": "Illustrative CBB65 product and HAN XING box arrangement based on original product photographs.",
+    "sourceId": "ZB-P03-002",
+    "kind": "illustration"
+  }
+}

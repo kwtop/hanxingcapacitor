@@ -1,0 +1,128 @@
+{
+  "bg": "rgb(255, 255, 255)",
+  "body": "template-blog animation--none animation-text--active animation-text-type--fade",
+  "clientWidth": 375,
+  "fonts": "loaded",
+  "headings": [
+    {
+      "class": "my0",
+      "color": "rgb(27, 28, 33)",
+      "font": "urbane, sans-serif",
+      "h": 24.197917938232425,
+      "line": "24.2px",
+      "size": "22px",
+      "tag": "H2",
+      "text": "News",
+      "w": 68.70833587646484,
+      "weight": "500",
+      "x": 15,
+      "y": 697.4896240234375
+    },
+    {
+      "class": "my0",
+      "color": "rgb(27, 28, 33)",
+      "font": "urbane, sans-serif",
+      "h": 24.197917938232425,
+      "line": "24.2px",
+      "size": "22px",
+      "tag": "H2",
+      "text": "New Products",
+      "w": 172.8541717529297,
+      "weight": "500",
+      "x": 15,
+      "y": 1904.9375
+    },
+    {
+      "class": "my0",
+      "color": "rgb(27, 28, 33)",
+      "font": "urbane, sans-serif",
+      "h": 24.197917938232425,
+      "line": "24.2px",
+      "size": "22px",
+      "tag": "H2",
+      "text": "Shopping Guides",
+      "w": 210,
+      "weight": "500",
+      "x": 15,
+      "y": 3112.385498046875
+    }
+  ],
+  "height": 4695,
+  "images": [
+    {
+      "fit": "cover",
+      "h": 187.59375,
+      "natural": 390,
+      "position": "50% 50%",
+      "src": "https://satechi.com/cdn/shop/articles/Blog_Title_Image_iPhone_18_and_Duo.webp?v=1790725304&width=3000",
+      "w": 312.66668701171875,
+      "x": 31,
+      "y": 229.4010467529297
+    }
+  ],
+  "regions": [
+    {
+      "bg": "rgba(0, 0, 0, 0)",
+      "class": "shopify-section",
+      "h": 80,
+      "id": "shopify-section-template--27139880091736__section_Tc4qtg",
+      "padding": "0px",
+      "tag": "DIV",
+      "w": 374.6666870117187,
+      "x": 0,
+      "y": 49.60416793823242
+    },
+    {
+      "bg": "rgb(249, 247, 243)",
+      "class": "custom-section relative row cg20 d-cg20 rg20 d-rg20 color-scheme-2 pb0 d-pb0 pt0 d-pt0 in-view",
+      "h": 80,
+      "id": "",
+      "padding": "0px 16px",
+      "tag": "SECTION",
+      "w": 374.6666870117187,
+      "x": 0,
+      "y": 49.60416793823242
+    },
+    {
+      "bg": "rgba(0, 0, 0, 0)",
+      "class": "shopify-section",
+      "h": 56.80208587646485,
+      "id": "shopify-section-template--27139880091736__section_J6QzMB",
+      "padding": "0px",
+      "tag": "DIV",
+      "w": 374.6666870117187,
+      "x": 0,
+      "y": 129.6041717529297
+    },
+    {
+      "bg": "rgb(249, 247, 243)",
+      "class": "custom-section relative row cg20 d-cg20 rg20 d-rg20 color-scheme-2 pb0 d-pb0 pt0 d-pt0 in-view",
+      "h": 56.80208587646485,
+      "id": "",
+      "padding": "0px 16px",
+      "tag": "SECTION",
+      "w": 374.6666870117187,
+      "x": 0,
+      "y": 129.6041717529297
+    },
+    {
+      "bg": "rgba(0, 0, 0, 0)",
+      "class": "shopify-section section",
+      "h": 3539.98974609375,
+      "id": "shopify-section-template--27139880091736__main",
+      "padding": "0px",
+      "tag": "SECTION",
+      "w": 374.6666870117187,
+      "x": 0,
+      "y": 186.40625
+    }
+  ],
+  "scrollWidth": 375,
+  "title": "News – Satechi",
+  "url": "https://satechi.com/blogs/news",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 844,
+    "width": 390
+  }
+}

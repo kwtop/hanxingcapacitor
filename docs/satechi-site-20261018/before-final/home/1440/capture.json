@@ -1,0 +1,290 @@
+{
+  "bodyClass": "porcelain-site reference-site",
+  "canonical": "https://www.hanxingcapacitor.com/",
+  "clientWidth": 1425,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 542.09375,
+        "height": 184.1875,
+        "left": 72.33333587646484,
+        "right": 473.0937728881836,
+        "top": 357.90625,
+        "width": 400.7604370117187,
+        "x": 72.33333587646484,
+        "y": 357.90625
+      },
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "61.4016px",
+      "size": "59.04px",
+      "text": "Motor capacitorsfor equipmentmanufacturers"
+    }
+  ],
+  "headings": [
+    "Motor capacitor series",
+    "CBB60",
+    "CBB61",
+    "CBB65",
+    "CD60",
+    "Before choosing a capacitor",
+    "Duty",
+    "µF & VAC",
+    "Dimensions",
+    "Connections",
+    "Applications",
+    "Water pumps",
+    "Fans and blowers",
+    "Washing machines",
+    "Air conditioners / HVAC",
+    "Samples & production",
+    "Selection guides",
+    "Read the capacitor label",
+    "Dimensions & connections",
+    "Start or run?",
+    "Single or dual run",
+    "Send your capacitor requirements."
+  ],
+  "height": 5189,
+  "images": [
+    {
+      "alt": "Illustrative studio composition of four capacitor samples: wired CBB60, rectangular CBB61, metal-can CBB65 and CD60.",
+      "box": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 1424.666748046875,
+        "top": 0,
+        "width": 1424.666748046875,
+        "x": 0,
+        "y": 0
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "90% 50%",
+      "src": "/images/home-selected-20261012/hero-four-warm-v2.png"
+    },
+    {
+      "alt": "Studio illustration based on an original CBB60 capacitor sample.",
+      "box": {
+        "bottom": 1471.78125,
+        "height": 345.09375,
+        "left": 72.33333587646484,
+        "right": 369.8333358764648,
+        "top": 1126.6875,
+        "width": 297.5,
+        "x": 72.33333587646484,
+        "y": 1126.6875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/reference-20261012/cbb60-studio.webp"
+    },
+    {
+      "alt": "Studio illustration based on an original CBB61 capacitor sample.",
+      "box": {
+        "bottom": 1471.78125,
+        "height": 345.09375,
+        "left": 399.8333435058594,
+        "right": 697.3333435058594,
+        "top": 1126.6875,
+        "width": 297.5,
+        "x": 399.8333435058594,
+        "y": 1126.6875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/reference-20261012/cbb61-studio.webp"
+    },
+    {
+      "alt": "Studio illustration based on an original CBB65 capacitor sample.",
+      "box": {
+        "bottom": 1471.78125,
+        "height": 345.09375,
+        "left": 727.3333740234375,
+        "right": 1024.8333740234375,
+        "top": 1126.6875,
+        "width": 297.5,
+        "x": 727.3333740234375,
+        "y": 1126.6875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/reference-20261012/cbb65-studio.webp"
+    },
+    {
+      "alt": "Studio illustration based on an original CD60 capacitor sample.",
+      "box": {
+        "bottom": 1471.78125,
+        "height": 345.09375,
+        "left": 1054.8333740234375,
+        "right": 1352.3333740234375,
+        "top": 1126.6875,
+        "width": 297.5,
+        "x": 1054.8333740234375,
+        "y": 1126.6875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/reference-20261012/cd60-studio.webp"
+    },
+    {
+      "alt": "Illustrative edited CBB65 sample view showing its metal case, original label and two terminal groups.",
+      "box": {
+        "bottom": 2449.385498046875,
+        "height": 393.59375,
+        "left": 515.53125,
+        "right": 909.125,
+        "top": 2055.791748046875,
+        "width": 393.59375,
+        "x": 515.53125,
+        "y": 2055.791748046875
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/home-selected-20261012/cbb65-feature.png"
+    },
+    {
+      "alt": "Illustration of a centrifugal water pump and motor.",
+      "box": {
+        "bottom": 2997.635498046875,
+        "height": 226.5,
+        "left": 72.33333587646484,
+        "right": 374.3333358764648,
+        "top": 2771.135498046875,
+        "width": 302,
+        "x": 72.33333587646484,
+        "y": 2771.135498046875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/generated/site/home-application-water-pumps-20261013.webp"
+    },
+    {
+      "alt": "Illustration of a ventilation fan and motor.",
+      "box": {
+        "bottom": 2997.635498046875,
+        "height": 226.5,
+        "left": 398.3333435058594,
+        "right": 700.3333435058594,
+        "top": 2771.135498046875,
+        "width": 302,
+        "x": 398.3333435058594,
+        "y": 2771.135498046875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/generated/site/home-application-fans-blowers-20261013.webp"
+    },
+    {
+      "alt": "Illustration of a white front-loading washing machine.",
+      "box": {
+        "bottom": 2997.635498046875,
+        "height": 226.5,
+        "left": 724.3333740234375,
+        "right": 1026.3333740234375,
+        "top": 2771.135498046875,
+        "width": 302,
+        "x": 724.3333740234375,
+        "y": 2771.135498046875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/generated/site/home-application-washing-machines-20261013.webp"
+    },
+    {
+      "alt": "Illustration of an outdoor air-conditioning condenser.",
+      "box": {
+        "bottom": 2997.635498046875,
+        "height": 226.5,
+        "left": 1050.3333740234375,
+        "right": 1352.3333740234375,
+        "top": 2771.135498046875,
+        "width": 302,
+        "x": 1050.3333740234375,
+        "y": 2771.135498046875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/generated/site/home-application-hvac-20261013.webp"
+    },
+    {
+      "alt": "Film handling equipment from the supplied production footage.",
+      "box": {
+        "bottom": 3626.98974609375,
+        "height": 330,
+        "left": 72.33333587646484,
+        "right": 795.0104598999023,
+        "top": 3296.98974609375,
+        "width": 722.6771240234375,
+        "x": 72.33333587646484,
+        "y": 3296.98974609375
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/film-rolls.jpg"
+    },
+    {
+      "alt": "Original supplied photograph of multiple metal-can capacitor samples.",
+      "box": {
+        "bottom": 3626.98974609375,
+        "height": 330,
+        "left": 817.0104370117188,
+        "right": 1352.3333740234375,
+        "top": 3296.98974609375,
+        "width": 535.3229370117188,
+        "x": 817.0104370117188,
+        "y": 3296.98974609375
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/batch-products.jpg"
+    },
+    {
+      "alt": "Illustrative selection-guide composition with a CBB65 sample, caliper and outline drawing.",
+      "box": {
+        "bottom": 4314.052093505859,
+        "height": 426.0208435058594,
+        "left": 72.33333587646484,
+        "right": 711.3750228881836,
+        "top": 3888.03125,
+        "width": 639.0416870117188,
+        "x": 72.33333587646484,
+        "y": 3888.03125
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/home-selected-20261012/selection-guide.webp"
+    }
+  ],
+  "robots": [
+    "noindex,follow"
+  ],
+  "scrollWidth": 1425,
+  "title": "Motor Run & Start Capacitors | HAN XING",
+  "url": "http://127.0.0.1:4335/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 900,
+    "width": 1440
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

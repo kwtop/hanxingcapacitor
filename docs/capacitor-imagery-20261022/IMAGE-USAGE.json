@@ -1,0 +1,514 @@
+[
+  {
+    "key": "factory-exterior",
+    "original": "D:\\Hangxing\\Zebang-Refrigeration-images-20261022\\02_Extracted-originals-webp\\02_Factory-dispatch\\ZB-P02-001-factory-exterior.webp",
+    "originalSha256": "8c133642ac023ffa8cf123ac6bc7846b9b656f64fce0a82d8c91e244f81dfa6c",
+    "supportingReferences": [],
+    "master": "D:\\Hangxing\\Zebang-Refrigeration-images-20261022\\02_Extracted-originals-webp\\02_Factory-dispatch\\ZB-P02-001-factory-exterior.webp",
+    "masterSha256": "8c133642ac023ffa8cf123ac6bc7846b9b656f64fce0a82d8c91e244f81dfa6c",
+    "treatment": "Original photograph; resize and WebP only",
+    "alt": "Factory exterior with HAN XING signage, photographed in the company brochure.",
+    "pages": [
+      "/about/"
+    ],
+    "variants": [
+      {
+        "src": "/images/brochure/20261022/factory-exterior-360.webp",
+        "width": 360,
+        "height": 245,
+        "bytes": 17930
+      },
+      {
+        "src": "/images/brochure/20261022/factory-exterior-720.webp",
+        "width": 720,
+        "height": 490,
+        "bytes": 62296
+      },
+      {
+        "src": "/images/brochure/20261022/factory-exterior-1200.webp",
+        "width": 1200,
+        "height": 816,
+        "bytes": 150484
+      },
+      {
+        "src": "/images/brochure/20261022/factory-exterior-1600.webp",
+        "width": 1600,
+        "height": 1088,
+        "bytes": 230902
+      }
+    ],
+    "sourceDimensions": [
+      1692,
+      1151
+    ]
+  },
+  {
+    "key": "lobby",
+    "original": "D:\\Hangxing\\Zebang-Refrigeration-images-20261022\\02_Extracted-originals-webp\\02_Factory-dispatch\\ZB-P02-002-hanxing-lobby.webp",
+    "originalSha256": "682805f92c384e5be86495744de56045905b9de0a447cbcc5f5d01d30ab16998",
+    "supportingReferences": [],
+    "master": "D:\\Hangxing\\Zebang-Refrigeration-images-20261022\\02_Extracted-originals-webp\\02_Factory-dispatch\\ZB-P02-002-hanxing-lobby.webp",
+    "masterSha256": "682805f92c384e5be86495744de56045905b9de0a447cbcc5f5d01d30ab16998",
+    "treatment": "Original photograph; resize and WebP only",
+    "alt": "Reception hall with HANXING signage, photographed in the company brochure.",
+    "pages": [
+      "/about/"
+    ],
+    "variants": [
+      {
+        "src": "/images/brochure/20261022/lobby-360.webp",
+        "width": 360,
+        "height": 246,
+        "bytes": 16200
+      },
+      {
+        "src": "/images/brochure/20261022/lobby-720.webp",
+        "width": 720,
+        "height": 492,
+        "bytes": 67896
+      },
+      {
+        "src": "/images/brochure/20261022/lobby-1200.webp",
+        "width": 1200,
+        "height": 819,
+        "bytes": 171780
+      },
+      {
+        "src": "/images/brochure/20261022/lobby-1600.webp",
+        "width": 1600,
+        "height": 1092,
+        "bytes": 259562
+      }
+    ],
+    "sourceDimensions": [
+      1686,
+      1151
+    ]
+  },
+  {
+    "key": "exhibition-meeting",
+    "original": "D:\\Hangxing\\Zebang-Refrigeration-images-20261022\\02_Extracted-originals-webp\\13_Exhibitions\\ZB-P14-023-exhibition-01.webp",
+    "originalSha256": "bfe2508ec22f31a3c579fdb793236b1139648a067c4531de801c67e32f834cd2",
+    "supportingReferences": [],
+    "master": "D:\\Hangxing\\Zebang-Refrigeration-images-20261022\\02_Extracted-originals-webp\\13_Exhibitions\\ZB-P14-023-exhibition-01.webp",
+    "masterSha256": "bfe2508ec22f31a3c579fdb793236b1139648a067c4531de801c67e32f834cd2",
+    "treatment": "Original photograph; resize and WebP only",
+    "alt": "People at a HAN XING exhibition stand in the original brochure photograph.",
+    "pages": [
+      "/about/"
+    ],
+    "variants": [
+      {
+        "src": "/images/brochure/20261022/exhibition-meeting-320.webp",
+        "width": 320,
+        "height": 242,
+        "bytes": 21838
+      },
+      {
+        "src": "/images/brochure/20261022/exhibition-meeting-457.webp",
+        "width": 457,
+        "height": 345,
+        "bytes": 38266
+      }
+    ],
+    "sourceDimensions": [
+      457,
+      345
+    ]
+  },
+  {
+    "key": "exhibition-products",
+    "original": "D:\\Hangxing\\Zebang-Refrigeration-images-20261022\\02_Extracted-originals-webp\\13_Exhibitions\\ZB-P14-025-exhibition-03.webp",
+    "originalSha256": "f0bc15d022283357bcca629b89a39944e65e5a9d2fef269cfd31d71f72edde1f",
+    "supportingReferences": [],
+    "master": "D:\\Hangxing\\Zebang-Refrigeration-images-20261022\\02_Extracted-originals-webp\\13_Exhibitions\\ZB-P14-025-exhibition-03.webp",
+    "masterSha256": "f0bc15d022283357bcca629b89a39944e65e5a9d2fef269cfd31d71f72edde1f",
+    "treatment": "Original photograph; resize and WebP only",
+    "alt": "Visitors and staff discussing product samples at an exhibition counter.",
+    "pages": [
+      "/about/"
+    ],
+    "variants": [
+      {
+        "src": "/images/brochure/20261022/exhibition-products-320.webp",
+        "width": 320,
+        "height": 243,
+        "bytes": 16530
+      },
+      {
+        "src": "/images/brochure/20261022/exhibition-products-455.webp",
+        "width": 455,
+        "height": 345,
+        "bytes": 25516
+      }
+    ],
+    "sourceDimensions": [
+      455,
+      345
+    ]
+  },
+  {
+    "key": "cbb60-terminals",
+    "original": "D:\\Hangxing\\Zebang-Refrigeration-images-20261022\\02_Extracted-originals-webp\\03_Capacitors\\ZB-P04-002-cbb60-four-terminal-samples.webp",
+    "originalSha256": "8bdf76075ff2200cec7b8b9bf8938a55ed874d983081eb653d6f7ca7481a8c15",
+    "supportingReferences": [],
+    "master": "D:\\Hangxing\\Zebang-Refrigeration-photo-angles-20261022\\01_Final-webp\\03_Capacitors\\ZB-P04-002-cbb60-four-terminal-samples.webp",
+    "masterSha256": "fefe567ecc6955dc5c8497749e24ba23c396d63ccef2e428adf6d500e0b396ed",
+    "treatment": "Existing ImageGen version",
+    "alt": "Studio illustration based on the brochure: white CBB60 cases with blade terminals.",
+    "pages": [
+      "/products/cbb60-motor-run-capacitor/",
+      "/resources/dimensions-terminals-mounting/"
+    ],
+    "variants": [
+      {
+        "src": "/images/brochure/20261022/cbb60-terminals-360.webp",
+        "width": 360,
+        "height": 240,
+        "bytes": 6512
+      },
+      {
+        "src": "/images/brochure/20261022/cbb60-terminals-720.webp",
+        "width": 720,
+        "height": 480,
+        "bytes": 19682
+      },
+      {
+        "src": "/images/brochure/20261022/cbb60-terminals-1200.webp",
+        "width": 1200,
+        "height": 800,
+        "bytes": 41908
+      },
+      {
+        "src": "/images/brochure/20261022/cbb60-terminals-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 60340
+      }
+    ],
+    "sourceDimensions": [
+      1536,
+      1024
+    ]
+  },
+  {
+    "key": "cbb60-leads",
+    "original": "D:\\Hangxing\\Zebang-Refrigeration-images-20261022\\02_Extracted-originals-webp\\03_Capacitors\\ZB-P05-001-cbb60-wire-samples.webp",
+    "originalSha256": "deeb0a9774ac1268a8c5db4f8c74e8f7233ed07341486a4b596fe6c22934cdb3",
+    "supportingReferences": [],
+    "master": "D:\\Hangxing\\Zebang-Refrigeration-photo-angles-20261022\\01_Final-webp\\03_Capacitors\\ZB-P05-001-cbb60-wire-samples.webp",
+    "masterSha256": "155dd3dd228f1b3b7632c2cecc07a483f166aa4347739228c35085bab2b42ae4",
+    "treatment": "Existing ImageGen version",
+    "alt": "Studio illustration based on the brochure: cylindrical CBB60 cases with insulated wire leads.",
+    "pages": [
+      "/products/cbb60-motor-run-capacitor/"
+    ],
+    "variants": [
+      {
+        "src": "/images/brochure/20261022/cbb60-leads-360.webp",
+        "width": 360,
+        "height": 211,
+        "bytes": 6964
+      },
+      {
+        "src": "/images/brochure/20261022/cbb60-leads-720.webp",
+        "width": 720,
+        "height": 422,
+        "bytes": 19808
+      },
+      {
+        "src": "/images/brochure/20261022/cbb60-leads-1200.webp",
+        "width": 1200,
+        "height": 703,
+        "bytes": 42640
+      },
+      {
+        "src": "/images/brochure/20261022/cbb60-leads-1600.webp",
+        "width": 1600,
+        "height": 937,
+        "bytes": 65386
+      }
+    ],
+    "sourceDimensions": [
+      1639,
+      960
+    ]
+  },
+  {
+    "key": "capacitor-cores",
+    "original": "D:\\Hangxing\\Zebang-Refrigeration-images-20261022\\02_Extracted-originals-webp\\03_Capacitors\\ZB-P04-003-capacitor-cores.webp",
+    "originalSha256": "0c33ddfa43f6b90d56b40f14ae246a79822eb0618ecb0e30a7f60e83a8257d5d",
+    "supportingReferences": [],
+    "master": "D:\\Hangxing\\Zebang-Refrigeration-photo-angles-20261022\\01_Final-webp\\03_Capacitors\\ZB-P04-003-capacitor-cores.webp",
+    "masterSha256": "c15bd23b40194a4b3cd1d3175f5b84220ba464771659c809b6f43cbb347ebef1",
+    "treatment": "Existing ImageGen version",
+    "alt": "Studio illustration of round and oval capacitor winding cores from the brochure.",
+    "pages": [
+      "/factory/"
+    ],
+    "variants": [
+      {
+        "src": "/images/brochure/20261022/capacitor-cores-360.webp",
+        "width": 360,
+        "height": 217,
+        "bytes": 8230
+      },
+      {
+        "src": "/images/brochure/20261022/capacitor-cores-720.webp",
+        "width": 720,
+        "height": 435,
+        "bytes": 33346
+      },
+      {
+        "src": "/images/brochure/20261022/capacitor-cores-1200.webp",
+        "width": 1200,
+        "height": 725,
+        "bytes": 88678
+      },
+      {
+        "src": "/images/brochure/20261022/capacitor-cores-1600.webp",
+        "width": 1600,
+        "height": 967,
+        "bytes": 143064
+      }
+    ],
+    "sourceDimensions": [
+      1614,
+      975
+    ]
+  },
+  {
+    "key": "cbb61-family",
+    "original": "D:\\Hangxing\\Zebang-Refrigeration-images-20261022\\02_Extracted-originals-webp\\03_Capacitors\\ZB-P04-001-cbb61-seven-samples.webp",
+    "originalSha256": "aae3fc83fb8b03deeb237011406a1985832bc210d7a2d8047cc08b7b684b1875",
+    "supportingReferences": [],
+    "master": "D:\\Hangxing\\capacitor-image-presentation-20261022\\generated\\cbb61-family.png",
+    "masterSha256": "a8663ae0d1906b5052fa59beefa1a0e55fdd62d6abddc39ec23223fdd169f453",
+    "treatment": "ImageGen composition",
+    "alt": "Studio illustration of the brochure CBB61 family, with blade terminals and red wire leads.",
+    "pages": [
+      "/products/cbb61-fan-capacitor/"
+    ],
+    "variants": [
+      {
+        "src": "/images/brochure/20261022/cbb61-family-360.webp",
+        "width": 360,
+        "height": 180,
+        "bytes": 12192
+      },
+      {
+        "src": "/images/brochure/20261022/cbb61-family-720.webp",
+        "width": 720,
+        "height": 360,
+        "bytes": 36166
+      },
+      {
+        "src": "/images/brochure/20261022/cbb61-family-1200.webp",
+        "width": 1200,
+        "height": 600,
+        "bytes": 82690
+      },
+      {
+        "src": "/images/brochure/20261022/cbb61-family-1600.webp",
+        "width": 1600,
+        "height": 800,
+        "bytes": 136766
+      }
+    ],
+    "sourceDimensions": [
+      1774,
+      887
+    ]
+  },
+  {
+    "key": "cbb61-terminal",
+    "original": "D:\\Hangxing\\Zebang-Refrigeration-images-20261022\\02_Extracted-originals-webp\\03_Capacitors\\ZB-P04-001-cbb61-seven-samples.webp",
+    "originalSha256": "aae3fc83fb8b03deeb237011406a1985832bc210d7a2d8047cc08b7b684b1875",
+    "supportingReferences": [],
+    "master": "D:\\Hangxing\\capacitor-image-presentation-20261022\\generated\\cbb61-terminal.png",
+    "masterSha256": "3e86e6e5dd64ab547c8ca90b4791faa08651891e8dc78f12a28a084664f3f63a",
+    "treatment": "ImageGen composition",
+    "alt": "Studio illustration of the black CBB61 case with two individual blade terminals.",
+    "pages": [
+      "/products/cbb61-fan-capacitor/"
+    ],
+    "variants": [
+      {
+        "src": "/images/brochure/20261022/cbb61-terminal-360.webp",
+        "width": 360,
+        "height": 270,
+        "bytes": 7322
+      },
+      {
+        "src": "/images/brochure/20261022/cbb61-terminal-720.webp",
+        "width": 720,
+        "height": 540,
+        "bytes": 21914
+      },
+      {
+        "src": "/images/brochure/20261022/cbb61-terminal-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 61020
+      },
+      {
+        "src": "/images/brochure/20261022/cbb61-terminal-1448.webp",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 86616
+      }
+    ],
+    "sourceDimensions": [
+      1448,
+      1086
+    ]
+  },
+  {
+    "key": "cbb61-leads",
+    "original": "D:\\Hangxing\\Zebang-Refrigeration-images-20261022\\02_Extracted-originals-webp\\03_Capacitors\\ZB-P04-001-cbb61-seven-samples.webp",
+    "originalSha256": "aae3fc83fb8b03deeb237011406a1985832bc210d7a2d8047cc08b7b684b1875",
+    "supportingReferences": [],
+    "master": "D:\\Hangxing\\capacitor-image-presentation-20261022\\generated\\cbb61-leads.png",
+    "masterSha256": "07719aa511451a5f19866e1bee11188d3a48138f4480e75862407271690d71cd",
+    "treatment": "ImageGen composition",
+    "alt": "Studio illustration of the black CBB61 case with two red insulated wire leads.",
+    "pages": [
+      "/products/cbb61-fan-capacitor/"
+    ],
+    "variants": [
+      {
+        "src": "/images/brochure/20261022/cbb61-leads-360.webp",
+        "width": 360,
+        "height": 270,
+        "bytes": 10036
+      },
+      {
+        "src": "/images/brochure/20261022/cbb61-leads-720.webp",
+        "width": 720,
+        "height": 540,
+        "bytes": 27346
+      },
+      {
+        "src": "/images/brochure/20261022/cbb61-leads-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 63020
+      },
+      {
+        "src": "/images/brochure/20261022/cbb61-leads-1448.webp",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 82208
+      }
+    ],
+    "sourceDimensions": [
+      1448,
+      1086
+    ]
+  },
+  {
+    "key": "oem-formats",
+    "original": "D:\\Hangxing\\Zebang-Refrigeration-images-20261022\\02_Extracted-originals-webp\\03_Capacitors\\ZB-P04-004-export-capacitor-formats.webp",
+    "originalSha256": "41adaef591c14f099687a0a1ab29fa327c888347ec0251c80c5327ad6d918fdf",
+    "supportingReferences": [
+      {
+        "path": "D:\\Hangxing\\Zebang-Refrigeration-images-20261022\\02_Extracted-originals-webp\\03_Capacitors\\ZB-P04-001-cbb61-seven-samples.webp",
+        "sha256": "aae3fc83fb8b03deeb237011406a1985832bc210d7a2d8047cc08b7b684b1875"
+      },
+      {
+        "path": "D:\\Hangxing\\Zebang-Refrigeration-images-20261022\\02_Extracted-originals-webp\\03_Capacitors\\ZB-P04-002-cbb60-four-terminal-samples.webp",
+        "sha256": "8bdf76075ff2200cec7b8b9bf8938a55ed874d983081eb653d6f7ca7481a8c15"
+      }
+    ],
+    "master": "D:\\Hangxing\\capacitor-image-presentation-20261022\\generated\\oem-formats.png",
+    "masterSha256": "e6dbc19789b94f9fdc08ed562780df53ea1837d371a1cc040006bb9841ac72b2",
+    "treatment": "ImageGen composition",
+    "alt": "Illustrative case and connection study based on the brochure, using HAN XING CBB60 and CBB61 formats.",
+    "pages": [
+      "/oem/",
+      "/oem-quality/"
+    ],
+    "variants": [
+      {
+        "src": "/images/brochure/20261022/oem-formats-360.webp",
+        "width": 360,
+        "height": 240,
+        "bytes": 6346
+      },
+      {
+        "src": "/images/brochure/20261022/oem-formats-720.webp",
+        "width": 720,
+        "height": 480,
+        "bytes": 16794
+      },
+      {
+        "src": "/images/brochure/20261022/oem-formats-1200.webp",
+        "width": 1200,
+        "height": 800,
+        "bytes": 35112
+      },
+      {
+        "src": "/images/brochure/20261022/oem-formats-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 49656
+      }
+    ],
+    "sourceDimensions": [
+      1536,
+      1024
+    ]
+  },
+  {
+    "key": "cbb65-packaging",
+    "original": "D:\\Hangxing\\Zebang-Refrigeration-images-20261022\\02_Extracted-originals-webp\\03_Capacitors\\ZB-P03-002-cbb65-packaging-samples.webp",
+    "originalSha256": "db2810c9d684da8c48c47852599c0743de660beb799f18da4946bcefec63833c",
+    "supportingReferences": [
+      {
+        "path": "D:\\Hangxing\\workspace\\public\\images\\real\\cbb65-4.jpg",
+        "sha256": "100a6b371d5567c9725f53a1774e4f05db81f2a95912a050c763ee2c144bbe61"
+      }
+    ],
+    "master": "D:\\Hangxing\\capacitor-image-presentation-20261022\\generated\\cbb65-packaging.png",
+    "masterSha256": "718841905197e0bae1da388b3f05addd9bd9a873d142f25f8e6bc0e1c1c34fe6",
+    "treatment": "ImageGen composition",
+    "alt": "Illustrative CBB65 product and HAN XING box arrangement based on original product photographs.",
+    "pages": [
+      "/",
+      "/products/cbb65-air-conditioner-capacitor/",
+      "/factory/packing-and-dispatch/",
+      "/resources/",
+      "/resources/motor-capacitor-order-shipment-checklist/"
+    ],
+    "variants": [
+      {
+        "src": "/images/brochure/20261022/cbb65-packaging-360.webp",
+        "width": 360,
+        "height": 240,
+        "bytes": 11152
+      },
+      {
+        "src": "/images/brochure/20261022/cbb65-packaging-720.webp",
+        "width": 720,
+        "height": 480,
+        "bytes": 33838
+      },
+      {
+        "src": "/images/brochure/20261022/cbb65-packaging-1200.webp",
+        "width": 1200,
+        "height": 800,
+        "bytes": 76322
+      },
+      {
+        "src": "/images/brochure/20261022/cbb65-packaging-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 109460
+      }
+    ],
+    "sourceDimensions": [
+      1536,
+      1024
+    ]
+  }
+]

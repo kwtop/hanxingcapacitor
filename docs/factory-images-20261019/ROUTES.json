@@ -1,0 +1,27 @@
+[
+  {
+    "route": "/",
+    "kind": "home",
+    "slug": "home"
+  },
+  {
+    "route": "/about/",
+    "kind": "business",
+    "slug": "about"
+  },
+  {
+    "route": "/factory/",
+    "kind": "business",
+    "slug": "factory"
+  },
+  {
+    "route": "/factory/packing-and-dispatch/",
+    "kind": "business",
+    "slug": "factory--packing-and-dispatch"
+  },
+  {
+    "route": "/oem-quality/",
+    "kind": "business",
+    "slug": "oem-quality"
+  }
+]

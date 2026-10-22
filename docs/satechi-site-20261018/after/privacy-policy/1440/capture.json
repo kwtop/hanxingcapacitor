@@ -1,0 +1,51 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/privacy-policy/",
+  "clientWidth": 1425,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 262.8020935058594,
+        "height": 48,
+        "left": 312.3333435058594,
+        "right": 1063.531280517578,
+        "top": 214.80209350585935,
+        "width": 751.1979370117188,
+        "x": 312.3333435058594,
+        "y": 214.80209350585935
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "48px",
+      "size": "40px",
+      "text": "Privacy notice"
+    }
+  ],
+  "headings": [
+    "Creating an inquiry draft",
+    "Information you include",
+    "Website requests and cookies",
+    "Business contact",
+    "Questions about your information"
+  ],
+  "height": 2340,
+  "images": [],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 1425,
+  "title": "Privacy Notice & Contact Information | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/privacy-policy/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 900,
+    "width": 1440
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

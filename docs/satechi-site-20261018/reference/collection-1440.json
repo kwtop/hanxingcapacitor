@@ -1,0 +1,130 @@
+{
+  "background": "rgb(255, 255, 255)",
+  "headings": [
+    {
+      "box": {
+        "bottom": 428.7604370117187,
+        "height": 1,
+        "left": -1,
+        "right": 0,
+        "top": 427.7604370117187,
+        "width": 1,
+        "x": -1,
+        "y": 427.7604370117187
+      },
+      "font": "urbane, sans-serif",
+      "line": "48px",
+      "size": "40px",
+      "text": "Docking Stations",
+      "weight": "500"
+    },
+    {
+      "box": {
+        "bottom": 1010.6771049499512,
+        "height": 52.79166793823242,
+        "left": 1066,
+        "right": 1344.6666870117188,
+        "top": 957.8854370117188,
+        "width": 278.66668701171875,
+        "x": 1066,
+        "y": 957.8854370117188
+      },
+      "font": "urbane, sans-serif",
+      "line": "26.4px",
+      "size": "24px",
+      "text": "iPhone 18 Pro Accessories",
+      "weight": "500"
+    }
+  ],
+  "images": [
+    {
+      "alt": "Satechi Thunderbolt 5 CubeDock™ with SSD Enclosure sitting between two monitors on a wooden desk, showing its front USB-C port, card slots and power button.",
+      "box": {
+        "bottom": 355.9583549499512,
+        "height": 320.35418701171875,
+        "left": 0,
+        "right": 1424.666748046875,
+        "top": 35.60416793823242,
+        "width": 1424.666748046875,
+        "x": 0,
+        "y": 35.60416793823242
+      },
+      "radius": "0px"
+    },
+    {
+      "alt": "Satechi Thunderbolt 5 CubeDock with SSD Enclosure, front view showing ports and SD card slots, with TechRadar Pro 2026 Picks Awards winner badge",
+      "box": {
+        "bottom": 901.9479370117188,
+        "height": 286.66668701171875,
+        "left": 76,
+        "right": 362.6666870117187,
+        "top": 615.28125,
+        "width": 286.66668701171875,
+        "x": 76,
+        "y": 615.28125
+      },
+      "radius": "0px"
+    },
+    {
+      "alt": "A Satechi Thunderbolt 5 CubeDock™ with SSD Enclosure and Mac Mini M4 connected to two iMac monitors displaying software interfaces, a keyboard, and a mouse on a wooden desk.",
+      "box": {
+        "bottom": 901.9479370117188,
+        "height": 286.66668701171875,
+        "left": 76,
+        "right": 362.6666870117187,
+        "top": 615.28125,
+        "width": 286.66668701171875,
+        "x": 76,
+        "y": 615.28125
+      },
+      "radius": "0px"
+    },
+    {
+      "alt": "Satechi Mac Mini M6/M5 Pro/M4 Stand & Hub with SSD Enclosure in Silver under a Mac mini, front view showing SD slot and USB-A ports, with TechRadar Pro 2025 Picks Awards winner badge",
+      "box": {
+        "bottom": 901.9479370117188,
+        "height": 286.66668701171875,
+        "left": 404.6666870117187,
+        "right": 691.3333740234375,
+        "top": 615.28125,
+        "width": 286.66668701171875,
+        "x": 404.6666870117187,
+        "y": 615.28125
+      },
+      "radius": "0px"
+    },
+    {
+      "alt": "Mac Mini M6/M5 Pro/M4 Stand & Hub with SSD Enclosure under a Mac mini on a wooden desk",
+      "box": {
+        "bottom": 901.9479370117188,
+        "height": 286.66668701171875,
+        "left": 404.6666870117187,
+        "right": 691.3333740234375,
+        "top": 615.28125,
+        "width": 286.66668701171875,
+        "x": 404.6666870117187,
+        "y": 615.28125
+      },
+      "radius": "0px"
+    },
+    {
+      "alt": "Satechi Stand & Hub for Mac Studio M5 with NVMe SSD Enclosure under a Mac Studio, front view showing card reader, USB-A and USB-C ports",
+      "box": {
+        "bottom": 901.9479370117188,
+        "height": 286.66668701171875,
+        "left": 733.3333740234375,
+        "right": 1020.0000610351562,
+        "top": 615.28125,
+        "width": 286.66668701171875,
+        "x": 733.3333740234375,
+        "y": 615.28125
+      },
+      "radius": "0px"
+    }
+  ],
+  "url": "https://satechi.com/collections/docking-stations",
+  "viewport": [
+    1440,
+    900
+  ]
+}

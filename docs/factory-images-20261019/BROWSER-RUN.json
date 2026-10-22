@@ -1,0 +1,226 @@
+[
+  {
+    "phase": "before",
+    "route": "/",
+    "width": 1440,
+    "height": 7169,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "before",
+    "route": "/",
+    "width": 390,
+    "height": 8050,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "before",
+    "route": "/factory/",
+    "width": 1440,
+    "height": 4962,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "before",
+    "route": "/factory/",
+    "width": 390,
+    "height": 6195,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "before",
+    "route": "/factory/packing-and-dispatch/",
+    "width": 1440,
+    "height": 4778,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "before",
+    "route": "/factory/packing-and-dispatch/",
+    "width": 390,
+    "height": 6341,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "before",
+    "route": "/oem-quality/",
+    "width": 1440,
+    "height": 1785,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "before",
+    "route": "/oem-quality/",
+    "width": 390,
+    "height": 3200,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "before",
+    "route": "/about/",
+    "width": 1440,
+    "height": 3382,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "before",
+    "route": "/about/",
+    "width": 390,
+    "height": 4044,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/factory/",
+    "width": 1440,
+    "height": 5152,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/factory/",
+    "width": 390,
+    "height": 6253,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/factory/packing-and-dispatch/",
+    "width": 1440,
+    "height": 4809,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/factory/packing-and-dispatch/",
+    "width": 390,
+    "height": 6353,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/oem-quality/",
+    "width": 1440,
+    "height": 1817,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/oem-quality/",
+    "width": 390,
+    "height": 3263,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/about/",
+    "width": 1440,
+    "height": 3413,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/about/",
+    "width": 390,
+    "height": 4075,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/",
+    "width": 1440,
+    "height": 7200,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/",
+    "width": 390,
+    "height": 8112,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/factory/",
+    "width": 1024,
+    "height": 4795,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/factory/",
+    "width": 768,
+    "height": 5171,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/factory/packing-and-dispatch/",
+    "width": 1024,
+    "height": 4449,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/factory/packing-and-dispatch/",
+    "width": 768,
+    "height": 5847,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/oem-quality/",
+    "width": 1440,
+    "height": 1817,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/oem-quality/",
+    "width": 390,
+    "height": 3294,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/",
+    "width": 1440,
+    "height": 7200,
+    "overflow": 0,
+    "fontsReady": true
+  },
+  {
+    "phase": "after",
+    "route": "/",
+    "width": 390,
+    "height": 8112,
+    "overflow": 0,
+    "fontsReady": true
+  }
+]

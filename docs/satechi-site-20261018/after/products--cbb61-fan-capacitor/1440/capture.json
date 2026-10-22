@@ -1,0 +1,389 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/products/cbb61-fan-capacitor/",
+  "clientWidth": 1425,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 332.6041717529297,
+        "height": 96,
+        "left": 818.1354370117188,
+        "right": 1324.656280517578,
+        "top": 236.6041717529297,
+        "width": 506.5208435058594,
+        "x": 818.1354370117188,
+        "y": 236.6041717529297
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "48px",
+      "size": "40px",
+      "text": "CBB61fan capacitors"
+    }
+  ],
+  "headings": [
+    "Technical specifications",
+    "Electrical",
+    "Case & connection",
+    "Selecting a model",
+    "Sample configurations & fit",
+    "Blade-terminal samples",
+    "Wire-lead samples",
+    "Record the installed fit",
+    "Applications",
+    "Fans and blowers",
+    "Washing machines",
+    "Selected air conditioners",
+    "CBB61 datasheets & drawings",
+    "Ordering & samples",
+    "Send your capacitor requirements.",
+    "Other capacitor series",
+    "CBB60",
+    "CBB65",
+    "CD60"
+  ],
+  "height": 6731,
+  "images": [
+    {
+      "alt": "Illustrative studio view derived from the original CBB61 sample, preserving its markings.",
+      "box": {
+        "bottom": 924.7396087646484,
+        "height": 728.1354370117188,
+        "left": 40,
+        "right": 768.1354370117188,
+        "top": 196.6041717529297,
+        "width": 728.1354370117188,
+        "x": 40,
+        "y": 196.6041717529297
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/product-cbb61.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 1014.0729217529296,
+        "height": 74.66667175292969,
+        "left": 40.66666793823242,
+        "right": 115.33333969116212,
+        "top": 939.40625,
+        "width": 74.66667175292969,
+        "x": 40.66666793823242,
+        "y": 939.40625
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/product-cbb61.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 1014.0729217529296,
+        "height": 74.66667175292969,
+        "left": 126.66667175292967,
+        "right": 201.33334350585935,
+        "top": 939.40625,
+        "width": 74.66667175292969,
+        "x": 126.66667175292967,
+        "y": 939.40625
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb61-13.jpg"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 1014.0729217529296,
+        "height": 74.66667175292969,
+        "left": 212.6666717529297,
+        "right": 287.3333435058594,
+        "top": 939.40625,
+        "width": 74.66667175292969,
+        "x": 212.6666717529297,
+        "y": 939.40625
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb61-14.jpg"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 1014.0729217529296,
+        "height": 74.66667175292969,
+        "left": 298.66668701171875,
+        "right": 373.3333587646485,
+        "top": 939.40625,
+        "width": 74.66667175292969,
+        "x": 298.66668701171875,
+        "y": 939.40625
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb61-leads-10.jpg"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 1014.0729217529296,
+        "height": 74.66667175292969,
+        "left": 384.6666870117187,
+        "right": 459.3333587646485,
+        "top": 939.40625,
+        "width": 74.66667175292969,
+        "x": 384.6666870117187,
+        "y": 939.40625
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-19-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 1014.0729217529296,
+        "height": 74.66667175292969,
+        "left": 470.6666870117187,
+        "right": 545.3333587646484,
+        "top": 939.40625,
+        "width": 74.66667175292969,
+        "x": 470.6666870117187,
+        "y": 939.40625
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-20-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 1014.0729217529296,
+        "height": 74.66667175292969,
+        "left": 556.6666870117188,
+        "right": 631.3333587646484,
+        "top": 939.40625,
+        "width": 74.66667175292969,
+        "x": 556.6666870117188,
+        "y": 939.40625
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-21-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 1014.0729217529296,
+        "height": 74.66667175292969,
+        "left": 642.6666870117188,
+        "right": 717.3333587646484,
+        "top": 939.40625,
+        "width": 74.66667175292969,
+        "x": 642.6666870117188,
+        "y": 939.40625
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-23-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 1014.0729217529296,
+        "height": 74.66667175292969,
+        "left": 728.6666870117188,
+        "right": 803.3333587646484,
+        "top": 939.40625,
+        "width": 74.66667175292969,
+        "x": 728.6666870117188,
+        "y": 939.40625
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-24-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 1014.0729217529296,
+        "height": 74.66667175292969,
+        "left": 814.6666870117188,
+        "right": 889.3333587646484,
+        "top": 939.40625,
+        "width": 74.66667175292969,
+        "x": 814.6666870117188,
+        "y": 939.40625
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-25-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 1014.0729217529296,
+        "height": 74.66667175292969,
+        "left": 900.6666870117188,
+        "right": 975.3333587646484,
+        "top": 939.40625,
+        "width": 74.66667175292969,
+        "x": 900.6666870117188,
+        "y": 939.40625
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-26-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 1014.0729217529296,
+        "height": 74.66667175292969,
+        "left": 986.6666870117188,
+        "right": 1061.3333587646484,
+        "top": 939.40625,
+        "width": 74.66667175292969,
+        "x": 986.6666870117188,
+        "y": 939.40625
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-27-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 1014.0729217529296,
+        "height": 74.66667175292969,
+        "left": 1072.666748046875,
+        "right": 1147.3334197998047,
+        "top": 939.40625,
+        "width": 74.66667175292969,
+        "x": 1072.666748046875,
+        "y": 939.40625
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-86-thumb.webp"
+    },
+    {
+      "alt": "CBB61: Blade-terminal samples. Rectangular cases with blade terminals.",
+      "box": {
+        "bottom": 2660.4271240234375,
+        "height": 513.8646240234375,
+        "left": 40,
+        "right": 553.8646240234375,
+        "top": 2146.5625,
+        "width": 513.8646240234375,
+        "x": 40,
+        "y": 2146.5625
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb61-13.jpg"
+    },
+    {
+      "alt": "CBB61: Wire-lead samples. Red leads and mounting tabs visible.",
+      "box": {
+        "bottom": 3249.2918701171875,
+        "height": 513.8646240234375,
+        "left": 40,
+        "right": 553.8646240234375,
+        "top": 2735.42724609375,
+        "width": 513.8646240234375,
+        "x": 40,
+        "y": 2735.42724609375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb61-leads-10.jpg"
+    },
+    {
+      "alt": "Photograph of a Hanxing-marked white CBB60 capacitor sample with two insulated leads.",
+      "box": {
+        "bottom": 6007.96875,
+        "height": 190,
+        "left": 64,
+        "right": 174,
+        "top": 5817.96875,
+        "width": 110,
+        "x": 64,
+        "y": 5817.96875
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb60-hanxing-wired.jpg"
+    },
+    {
+      "alt": "Photograph of a CBB65 metal-can capacitor sample marked 20 µF and 450 VAC.",
+      "box": {
+        "bottom": 6007.96875,
+        "height": 190,
+        "left": 520.8854370117188,
+        "right": 630.8854370117188,
+        "top": 5817.96875,
+        "width": 110,
+        "x": 520.8854370117188,
+        "y": 5817.96875
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb65-2.jpg"
+    },
+    {
+      "alt": "Photograph of a CD60 cylindrical motor-start capacitor sample.",
+      "box": {
+        "bottom": 6007.96875,
+        "height": 190,
+        "left": 977.1041870117188,
+        "right": 1087.1041870117188,
+        "top": 5817.96875,
+        "width": 110,
+        "x": 977.1041870117188,
+        "y": 5817.96875
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cd60-25.jpg"
+    }
+  ],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 1425,
+  "title": "CBB61 fan capacitors | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/products/cbb61-fan-capacitor/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 900,
+    "width": 1440
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

@@ -1,11 +1,15 @@
 ---
 import { primaryNav, PUBLIC_BUSINESS_ADDRESS, PUBLIC_COMPANY_NAME, PUBLIC_EMAIL, PUBLIC_PHONE, WHATSAPP_URL } from '../data/site';
+import { isSatechiPreview } from '../lib/visualPreview';
 import '../styles/footer-navigation.css'; // Shared menu columns and contact icons.
 ---
-<footer class="site-footer">
+<footer class:list={['site-footer', { 'sp-footer': isSatechiPreview }]}>
   <div class="container">
     <div class="footer-main">
-      <div class="footer-brand"><a class="brand" href="/"><img class="selected-brand-mark" src="/favicon.svg" alt="" width="28" height="28" /><span class="brand-wordmark">HAN XING</span></a></div>
+      <div class="footer-brand">
+        <a class="brand" href="/"><img class="selected-brand-mark" src="/favicon.svg" alt="" width="28" height="28" /><span class="brand-wordmark">HAN XING</span></a>
+        {isSatechiPreview && <div class="footer-brand-actions">{primaryNav.filter(item => item.children.length === 0 && item.href !== '/').map(item => <a class="footer-about" href={item.href}>{item.label}</a>)}<a class="footer-inquiry" href="/contact/">Start an inquiry</a></div>}
+      </div>
       <div class="footer-contact">
         <h4>Contact</h4>
         <div class="footer-contact-details">
@@ -16,9 +20,9 @@ import '../styles/footer-navigation.css'; // Shared menu columns and contact ico
       </div>
       <nav class="footer-navigation" aria-label="Footer navigation">
         {primaryNav.filter(item => item.children.length > 0).map((item,index) => <div class="footer-nav-section">
-          <div class="footer-nav-heading"><a class="footer-nav-primary" href={item.href}>{item.label}</a>{item.children.length > 0 && <button class="footer-nav-toggle" type="button" aria-label={`Expand ${item.label}`} aria-expanded="true" aria-controls={`footer-nav-${index}`} data-label={item.label}><span aria-hidden="true">−</span></button>}</div>
-          {item.children.length > 0 && <div class="footer-nav-links" id={`footer-nav-${index}`}>{item.children.map(child => <a href={child.href}>{child.label}</a>)}</div>}
-          {item.href === '/resources/' && <div class="footer-other-links">{primaryNav.filter(link => link.children.length === 0 && link.href !== '/').map(link => <a href={link.href}>{link.label}</a>)}</div>}
+          <div class="footer-nav-heading"><a class="footer-nav-primary" href={item.href}>{item.label}</a>{item.children.length > 0 && <button class="footer-nav-toggle" type="button" aria-label={`${isSatechiPreview ? 'Collapse' : 'Expand'} ${item.label}`} aria-expanded="true" aria-controls={`footer-nav-${index}`} data-label={item.label}><span class:list={{ 'footer-nav-symbol': isSatechiPreview }} aria-hidden="true">{isSatechiPreview ? null : '−'}</span></button>}</div>
+          {item.children.length > 0 && (isSatechiPreview ? <div class="footer-nav-panel" id={`footer-nav-${index}`} data-expanded="true"><div class="footer-nav-clip"><div class="footer-nav-links">{item.children.map(child => <a href={child.href}>{child.label}</a>)}</div></div></div> : <div class="footer-nav-links" id={`footer-nav-${index}`}>{item.children.map(child => <a href={child.href}>{child.label}</a>)}</div>)}
+          {!isSatechiPreview && item.href === '/resources/' && <div class="footer-other-links">{primaryNav.filter(link => link.children.length === 0 && link.href !== '/').map(link => <a href={link.href}>{link.label}</a>)}</div>}
         </div>)}
       </nav>
     </div>
@@ -26,15 +30,25 @@ import '../styles/footer-navigation.css'; // Shared menu columns and contact ico
   </div>
 </footer>
 <script>
-  const footerToggles = document.querySelectorAll<HTMLButtonElement>('.footer-nav-toggle');
+  const footer = document.querySelector<HTMLElement>('.site-footer');
+  const footerToggles = footer?.querySelectorAll<HTMLButtonElement>('.footer-nav-toggle') ?? [];
+  const animatedFooter = footer?.classList.contains('sp-footer');
   const footerMobile = matchMedia('(max-width: 800px)');
   const setFooterExpanded = (toggle: HTMLButtonElement, expanded: boolean) => {
     const links = document.getElementById(toggle.getAttribute('aria-controls') ?? '');
-    if (links) links.hidden = !expanded;
+    if (links) {
+      if (animatedFooter) {
+        links.dataset.expanded = String(expanded);
+        links.inert = !expanded;
+        links.setAttribute('aria-hidden', String(!expanded));
+      } else {
+        links.hidden = !expanded;
+      }
+    }
     toggle.setAttribute('aria-expanded', String(expanded));
     toggle.setAttribute('aria-label', `${expanded ? 'Collapse' : 'Expand'} ${toggle.dataset.label}`);
     const symbol = toggle.querySelector('span');
-    if (symbol) symbol.textContent = expanded ? '−' : '+';
+    if (symbol && !animatedFooter) symbol.textContent = expanded ? '−' : '+';
   };
   const syncFooter = () => footerToggles.forEach(toggle => {
     setFooterExpanded(toggle, !footerMobile.matches);

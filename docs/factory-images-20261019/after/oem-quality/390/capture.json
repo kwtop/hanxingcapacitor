@@ -1,0 +1,95 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/oem-quality/",
+  "clientWidth": 375,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 254.8020896911621,
+        "height": 33.60416793823242,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 221.1979217529297,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 221.1979217529297
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "OEM and quality"
+    }
+  ],
+  "headings": [
+    "OEM & private label",
+    "Manufacturing & quality",
+    "Packing & dispatch",
+    "Before placing an order"
+  ],
+  "height": 3294,
+  "images": [
+    {
+      "alt": "Illustrative sample approval still life based on supplied Hanxing samples.",
+      "box": {
+        "bottom": 555.90625,
+        "height": 228.4375,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 327.46875,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 327.46875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/oem-approval.webp"
+    },
+    {
+      "alt": "AI-refined view of the operator and capacitor equipment in the supplied workshop image.",
+      "box": {
+        "bottom": 1054.6875,
+        "height": 228.4375,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 826.25,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 826.25
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/factory-20261019/workshop.webp"
+    },
+    {
+      "alt": "AI-reconstructed wider view of the packing worker and blue capacitor boxes in the supplied video still.",
+      "box": {
+        "bottom": 1553.46875,
+        "height": 228.4375,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 1325.03125,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 1325.03125
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/factory-20261019/packing.webp"
+    }
+  ],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 375,
+  "title": "OEM, Manufacturing & Quality | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/oem-quality/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 844,
+    "width": 390
+  }
+}

@@ -19,7 +19,13 @@ dist/
 /design/
 /public/home-directions-20261010/
 /innerWidth
-/tokens.css
+# Generated visual-review images stay local; website assets are under public/.
+/docs/**/*.png
+/docs/**/*.jpg
+/docs/**/*.jpeg
+/docs/**/*.webp
+/docs/**/*.svg
+/docs/**/*.diff
 /*.md
 !/README.md
 !/DESIGN.md

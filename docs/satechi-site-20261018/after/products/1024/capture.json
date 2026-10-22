@@ -1,0 +1,138 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/products/",
+  "clientWidth": 1009,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 262.8020935058594,
+        "height": 48,
+        "left": 40,
+        "right": 791.1979370117188,
+        "top": 214.80209350585935,
+        "width": 751.1979370117188,
+        "x": 40,
+        "y": 214.80209350585935
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "48px",
+      "size": "40px",
+      "text": "Motor capacitor series"
+    }
+  ],
+  "headings": [
+    "CBB60Motor run capacitor",
+    "CBB61Fan run capacitor",
+    "CBB65HVAC run capacitor",
+    "CD60Motor start capacitor",
+    "Series comparison",
+    "Send your capacitor requirements."
+  ],
+  "height": 3068,
+  "images": [
+    {
+      "alt": "Studio illustration based on an original CBB60 capacitor sample.",
+      "box": {
+        "bottom": 625.5312652587891,
+        "height": 197.6666717529297,
+        "left": 52,
+        "right": 249.6666717529297,
+        "top": 427.8645935058594,
+        "width": 197.6666717529297,
+        "x": 52,
+        "y": 427.8645935058594
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/product-cbb60.webp"
+    },
+    {
+      "alt": "Studio illustration based on an original CBB61 capacitor sample.",
+      "box": {
+        "bottom": 625.5312652587891,
+        "height": 197.6666717529297,
+        "left": 287.66668701171875,
+        "right": 485.3333587646485,
+        "top": 427.8645935058594,
+        "width": 197.6666717529297,
+        "x": 287.66668701171875,
+        "y": 427.8645935058594
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/product-cbb61.webp"
+    },
+    {
+      "alt": "Studio illustration based on an original CBB65 capacitor sample.",
+      "box": {
+        "bottom": 625.5312652587891,
+        "height": 197.6666717529297,
+        "left": 523.3333740234375,
+        "right": 721.0000457763672,
+        "top": 427.8645935058594,
+        "width": 197.6666717529297,
+        "x": 523.3333740234375,
+        "y": 427.8645935058594
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/product-cbb65.webp"
+    },
+    {
+      "alt": "Studio illustration based on an original CD60 capacitor sample.",
+      "box": {
+        "bottom": 625.5312652587891,
+        "height": 197.6666717529297,
+        "left": 759,
+        "right": 956.6666717529296,
+        "top": 427.8645935058594,
+        "width": 197.6666717529297,
+        "x": 759,
+        "y": 427.8645935058594
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/product-cd60.webp"
+    },
+    {
+      "alt": "Illustrative arrangement of the four original capacitor formats.",
+      "box": {
+        "bottom": 2352.729217529297,
+        "height": 335.1770935058594,
+        "left": 80,
+        "right": 415.1770935058594,
+        "top": 2017.5521240234375,
+        "width": 335.1770935058594,
+        "x": 80,
+        "y": 2017.5521240234375
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/inquiry.webp"
+    }
+  ],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 1009,
+  "title": "Motor Capacitor Series | CBB60, CBB61, CBB65 & CD60 | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/products/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 768,
+    "width": 1024
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

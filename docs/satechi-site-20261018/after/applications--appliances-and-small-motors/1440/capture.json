@@ -1,0 +1,161 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/applications/appliances-and-small-motors/",
+  "clientWidth": 1425,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 329.32293701171875,
+        "height": 48,
+        "left": 60,
+        "right": 588.9791870117188,
+        "top": 281.32293701171875,
+        "width": 528.9791870117188,
+        "x": 60,
+        "y": 281.32293701171875
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "48px",
+      "size": "40px",
+      "text": "Washing machines"
+    }
+  ],
+  "headings": [
+    "Motor circuit & original capacitor",
+    "Appliance and motor",
+    "Original capacitor",
+    "Case format",
+    "Compare capacitor series",
+    "CBB60",
+    "CBB61",
+    "Fit and connection check",
+    "Original labels",
+    "Wiring and connector",
+    "Installed dimensions",
+    "Send your capacitor requirements."
+  ],
+  "height": 4211,
+  "images": [
+    {
+      "alt": "Illustration of a white front-loading washing machine.",
+      "box": {
+        "bottom": 570.1771087646484,
+        "height": 402.5729370117187,
+        "left": 648.9791870117188,
+        "right": 1364.6666870117188,
+        "top": 167.6041717529297,
+        "width": 715.6875,
+        "x": 648.9791870117188,
+        "y": 167.6041717529297
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/application-washing.webp"
+    },
+    {
+      "alt": "Photograph of a Hanxing-marked white CBB60 capacitor sample with two insulated leads.",
+      "box": {
+        "bottom": 1862,
+        "height": 220,
+        "left": 399.53125,
+        "right": 881.7604370117188,
+        "top": 1642,
+        "width": 482.2291870117187,
+        "x": 399.53125,
+        "y": 1642
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 55%",
+      "src": "/images/real/cbb60-hanxing-wired.jpg"
+    },
+    {
+      "alt": "Photograph of three rectangular CBB61 samples with blade terminals.",
+      "box": {
+        "bottom": 1862,
+        "height": 220,
+        "left": 881.7604370117188,
+        "right": 1364.000030517578,
+        "top": 1642,
+        "width": 482.2395935058594,
+        "x": 881.7604370117188,
+        "y": 1642
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 84%",
+      "src": "/images/real/cbb61-13.jpg"
+    },
+    {
+      "alt": "Photograph of a Hanxing-marked white CBB60 capacitor sample with two insulated leads.",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "fit": "contain",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/real/cbb60-hanxing-wired.jpg"
+    },
+    {
+      "alt": "Photograph of three rectangular CBB61 samples with blade terminals.",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "fit": "contain",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/real/cbb61-13.jpg"
+    },
+    {
+      "alt": "Photograph of rectangular CBB61 samples with separate wire leads and mounting tabs.",
+      "box": {
+        "bottom": 2893.604248046875,
+        "height": 500,
+        "left": 60,
+        "right": 588.9791870117188,
+        "top": 2393.604248046875,
+        "width": 528.9791870117188,
+        "x": 60,
+        "y": 2393.604248046875
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb61-leads-10.jpg"
+    }
+  ],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 1425,
+  "title": "Washing machines | CBB60 and CBB61 motor capacitors | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/applications/appliances-and-small-motors/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 900,
+    "width": 1440
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

@@ -2,6 +2,10 @@
 import { products, type Application } from '../data/site';
 import InquiryCallout from './InquiryCallout.astro';
 import { applicationReference } from '../data/applicationReference';
+import { isSatechiPreview } from '../lib/visualPreview';
+import { applicationVisuals } from '../data/satechiSite';
+import { industrialApplications } from '../data/industrialApplications';
+import SiteImage from './satechi-preview/SiteImage.astro';
 import { seriesFormats } from '../data/productReference';
 import '../styles/hvac-reference.css';
 interface Props { application: Application }
@@ -12,8 +16,8 @@ const inquiry = '/contact/?application=' + application.slug + '&request=quote#in
 const compareRows = [
   { label: 'Duty', values: compared.map(p => content.functions[p.code]) },
   { label: 'Case / connection', values: compared.map(p => seriesFormats[p.code].case + ' · ' + seriesFormats[p.code].connections) },
-  { label: application.slug === 'fans-and-ventilation' ? 'Electrical rating' : 'µF / VAC range', values: compared.map(p => application.slug === 'fans-and-ventilation' ? 'Match the original µF. Series voltage range: ' + p.voltage + '. See the series page for capacitance ranges.' : p.capacitance + ' · ' + p.voltage) },
-  ...(content.showDimensions ? [{ label: 'Published case-size range', values: compared.map(p => p.dimensions + '. Use the model drawing for dimensions.') }] : []),
+  { label: application.slug === 'fans-and-ventilation' ? 'Electrical rating' : 'µF / VAC range', values: compared.map(p => application.slug === 'fans-and-ventilation' ? 'Series voltage range: ' + p.voltage + '. Capacitance ranges are on the series page.' : p.capacitance + ' · ' + p.voltage) },
+  ...(content.showDimensions ? [{ label: 'Series case-size range', values: compared.map(p => p.dimensions + '.') }] : []),
   { label: 'Important check', values: compared.map(p => content.confirmations[p.code]) },
 ];
 ---
@@ -26,7 +30,7 @@ const compareRows = [
         <p class="hvr-hero-summary">{application.listing}</p>
         <div class="hvr-actions"><a class="hvr-button" href="#review">Check motor requirements</a><a class="hvr-secondary" href="#quote-details">Inquiry checklist</a></div>
       </div>
-      <figure class="hvr-hero-photo"><img src={application.image} alt={application.imageAlt} width="1200" height={application.imageHeight} fetchpriority="high" /></figure>
+      <figure class="hvr-hero-photo"><SiteImage src={isSatechiPreview ? applicationVisuals[application.slug] : application.image} alt={isSatechiPreview ? industrialApplications[application.slug].alt : application.imageAlt} width={isSatechiPreview ? 1536 : 1200} height={isSatechiPreview ? 1024 : application.imageHeight} eager /></figure>
     </section>
 
     <section class="hvr-section" id="review" aria-labelledby="circuit-title">
@@ -41,14 +45,13 @@ const compareRows = [
         <table class="hvr-comparison"><caption class="visually-hidden">{content.comparisonTitle}</caption>
           <thead><tr><th scope="col">Field</th>{compared.map(p => <th scope="col"><a href={'/products/' + p.slug + '/'}><strong>{p.code}</strong></a><span>{p.function} duty · {p.shortName}</span></th>)}</tr></thead>
           <tbody>{compareRows.map(row => <tr><th scope="row">{row.label}</th>{row.values.map(value => <td>{value}</td>)}</tr>)}
-            <tr class="hvr-sample-row"><th scope="row">Sample photograph</th>{compared.map(p => <td><figure><div class="hvr-sample-photo" data-series={p.code}><img src={p.image} alt={p.imageAlt} width="2000" height="2000" loading="lazy" /></div><figcaption>{p.code === 'CBB61' ? 'Blade-terminal samples' : 'Series sample'}</figcaption></figure></td>)}</tr>
-            <tr><th scope="row">Full series details</th>{compared.map(p => <td><a class="hvr-series-link" href={'/products/' + p.slug + '/'}>View {p.code}</a></td>)}</tr>
+            <tr class="hvr-sample-row"><th scope="row">Sample photograph</th>{compared.map(p => <td><figure><div class="hvr-sample-photo" data-series={p.code}><img src={p.image} alt={p.imageAlt} width="2000" height="2000" loading="lazy" /></div>{p.code === 'CBB61' && <figcaption>Blade-terminal samples</figcaption>}</figure></td>)}</tr>
+            <tr class="hvr-series-actions"><th scope="row">Full series details</th>{compared.map(p => <td><a class="hvr-series-link" href={'/products/' + p.slug + '/'}>View {p.code}</a></td>)}</tr>
           </tbody>
         </table>
       </div>
       <div class="hvr-mobile-comparison">{compared.map((p,index) => <div class="hvr-series-summary"><h3><a href={'/products/' + p.slug + '/'}>{p.code}</a></h3><dl>{compareRows.map(row => <div><dt>{row.label}</dt><dd>{row.values[index]}</dd></div>)}</dl><div class="hvr-sample-photo"><img src={p.image} alt={p.imageAlt} width="2000" height="2000" loading="lazy" /></div><a class="hvr-series-link" href={'/products/' + p.slug + '/'}>View {p.code} details</a></div>)}</div>
-      <p class="technical-body-copy">{content.comparisonIntro}</p>
-      <p class="hvr-note">Use the proposed model datasheet and motor specification to confirm temperature, tolerance and dimensions.</p>
+      <p class="hvr-note">Check the model datasheet for temperature, tolerance and dimensions.</p>
     </section>
 
     <section class="hvr-section" id="fit-check" aria-labelledby="checks-title">

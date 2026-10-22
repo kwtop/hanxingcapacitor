@@ -1,0 +1,157 @@
+{
+  "reference": "reference/390-full.jpg",
+  "css_viewport_width": 390,
+  "expected": {
+    "url": "http://127.0.0.1:4335/previews/satechi-home/",
+    "title": "HAN XING — Satechi homepage study",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dpr": 1.0000000298023224,
+    "full_page": true,
+    "screenshot_scale": "css"
+  },
+  "regions": [
+    {
+      "name": "header",
+      "box": [
+        20,
+        56,
+        350,
+        63
+      ],
+      "selector": ".sp-header"
+    },
+    {
+      "name": "hero",
+      "box": [
+        0,
+        50,
+        390,
+        840
+      ],
+      "selector": ".sp-hero"
+    },
+    {
+      "name": "series-strip",
+      "box": [
+        0,
+        890,
+        390,
+        100
+      ],
+      "selector": ".sp-series-strip"
+    },
+    {
+      "name": "categories",
+      "box": [
+        0,
+        990,
+        390,
+        627
+      ],
+      "selector": ".sp-categories"
+    },
+    {
+      "name": "label-banner",
+      "box": [
+        0,
+        1616,
+        390,
+        700
+      ],
+      "selector": ".sp-photo-banner:nth-of-type(3)"
+    },
+    {
+      "name": "series-rail",
+      "box": [
+        0,
+        2317,
+        390,
+        708
+      ],
+      "selector": ".sp-content-rail.sp-has-range-note"
+    },
+    {
+      "name": "fit-banner",
+      "box": [
+        0,
+        3025,
+        390,
+        700
+      ],
+      "selector": ".sp-photo-banner:nth-of-type(5)"
+    },
+    {
+      "name": "guide-rail",
+      "box": [
+        0,
+        3725,
+        390,
+        708
+      ],
+      "selector": ".sp-content-rail:not(.sp-has-range-note)"
+    },
+    {
+      "name": "applications",
+      "box": [
+        0,
+        4434,
+        390,
+        816
+      ],
+      "selector": ".sp-applications"
+    },
+    {
+      "name": "inquiry",
+      "box": [
+        0,
+        5250,
+        390,
+        754
+      ],
+      "selector": ".sp-inquiry-panel"
+    },
+    {
+      "name": "source-intro",
+      "box": [
+        0,
+        6004,
+        390,
+        124
+      ],
+      "selector": ".sp-source-intro"
+    },
+    {
+      "name": "source-stories",
+      "box": [
+        0,
+        6128,
+        390,
+        560
+      ],
+      "selector": ".sp-stories"
+    },
+    {
+      "name": "resource-bar",
+      "box": [
+        0,
+        6688,
+        390,
+        259
+      ],
+      "selector": ".sp-resource-bar"
+    },
+    {
+      "name": "footer",
+      "box": [
+        0,
+        6947,
+        390,
+        950
+      ],
+      "selector": ".site-footer"
+    }
+  ]
+}

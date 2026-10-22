@@ -1,0 +1,25 @@
+---
+import { originalFactoryVisuals } from '../../data/factoryVisuals';
+import { brochureMedia } from '../../data/brochureMedia';
+import SiteImage from './SiteImage.astro';
+const stories = [
+  {image:originalFactoryVisuals.film, href:'/factory/', title:'Production footage'},
+  {image:brochureMedia['cbb65-packaging'], href:'/products/photographs/', title:'Products & packaging'},
+];
+---
+<section class="ha-sources" aria-labelledby="production-title">
+  <div class="container">
+    <header class="ha-section-heading">
+      <h2 id="production-title">Samples &amp; production</h2>
+      <p>Film processing, testing and finished capacitor samples.</p>
+    </header>
+    <div class="ha-source-grid">
+      {stories.map(story => <article class="ha-source-card">
+        <a class="ha-source-photo" href={story.href} aria-label={story.title}>
+          <SiteImage src={story.image.src} width={story.image.width} height={story.image.height} alt={story.image.alt} sizes="(max-width: 700px) calc(100vw - 32px), (min-width: 1480px) 640px, 46vw" />
+        </a>
+        <div class="ha-source-copy"><h3><a href={story.href}>{story.title}</a></h3></div>
+      </article>)}
+    </div>
+  </div>
+</section>

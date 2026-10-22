@@ -1,31 +1,34 @@
 ---
+import { isSatechiPreview } from '../lib/visualPreview';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import OemPhoto from '../components/satechi-preview/OemPhoto.astro';
+import BrochurePhoto from '../components/satechi-preview/BrochurePhoto.astro';
 import '../styles/oem-hub.css'; // Matching overview frames and route hierarchy.
 ---
 
 <BaseLayout title="OEM, Manufacturing & Quality" description="Motor capacitor OEM requirements, sample approval, production footage and product document checks, with packing and dispatch guidance for buyers.">
-  <article class="procurement-page procurement-hub">
+  <article class:list={['procurement-page procurement-hub', {'oem-editorial-page': isSatechiPreview}]}>
     <section class="procurement-hero"><div class="container">
       <p class="breadcrumbs"><a href="/">Home</a> / OEM &amp; Quality</p>
       <h1>OEM and quality</h1>
     </div></section>
-    <section class="procurement-section"><div class="container procurement-routes">
+    <section class="procurement-section"><div class:list={['container procurement-routes',{'co-oem-stories':isSatechiPreview}]}>
       <article>
-        <figure class="procurement-route-photo procurement-route-photo--sample"><img src="/images/real/cbb65-4.jpg" alt="Original CBB65 sample beside its printed carton." width="2000" height="2000" loading="eager" /></figure>
+        {isSatechiPreview ? <BrochurePhoto name="oem-formats" class="procurement-route-photo procurement-route-photo--sample" eager sizes="(max-width: 800px) calc(100vw - 32px), 48vw" /> : <figure class="procurement-route-photo procurement-route-photo--sample"><img src="/images/real/cbb65-4.jpg" alt="Original CBB65 sample beside its printed carton." width="2000" height="2000" loading="eager" /></figure>}
         <h2>OEM &amp; private label</h2>
-        <p>Agree ratings, connections, drawings and sample approval, including label and packing revisions.</p>
+        <p>Set the electrical rating, case and connections. Approve the sample, label artwork and packing specification.</p>
         <a class="card-link" href="/oem/">OEM requirements and approval</a>
       </article>
       <article>
-        <figure class="procurement-route-photo procurement-route-photo--process"><img src="/images/real/inspection-station.jpg" alt="Operator beside production equipment in supplied process imagery." width="1920" height="1080" loading="eager" /></figure>
+        {isSatechiPreview ? <OemPhoto name="workshop-station" class="procurement-route-photo procurement-route-photo--process" /> : <figure class="procurement-route-photo procurement-route-photo--process"><img src="/images/real/inspection-station.jpg" alt="Operator beside production equipment in supplied process imagery." width="1920" height="1080" loading="eager" /></figure>}
         <h2>Manufacturing &amp; quality</h2>
-        <p>View supplied production footage and request drawings, test reports and applicable model certificates.</p>
+        <p>Production stages, model drawings, inspection records and certificate checks.</p>
         <a class="card-link" href="/factory/">Production footage and documents</a>
       </article>
       <article>
-        <figure class="procurement-route-photo"><img src="/images/illustrative/oem-hub-packing-20261012.webp" alt="Illustration of plain cartons with protective dividers." width="1200" height="800" loading="eager" /></figure>
+        {isSatechiPreview ? <OemPhoto name="packing-worktable" class="procurement-route-photo" sizes="(max-width: 800px) calc(100vw - 48px), 38vw" /> : <figure class="procurement-route-photo"><img src="/images/illustrative/oem-hub-packing-20261012.webp" alt="Illustration of plain cartons with protective dividers." width="1200" height="800" loading="eager" /></figure>}
         <h2>Packing &amp; dispatch</h2>
-        <p>Agree protection, carton quantities and marks. Verify packing and handover against the order.</p>
+        <p>Unit protection, carton quantities, shipping marks and carrier handover records.</p>
         <a class="card-link" href="/factory/packing-and-dispatch/">Packing and dispatch checklist</a>
       </article>
     </div></section>
@@ -34,7 +37,7 @@ import '../styles/oem-hub.css'; // Matching overview frames and route hierarchy.
       <nav class="procurement-record-links" aria-label="Order preparation records">
         <a href="/buying-guide/#rfq-template"><strong>Quotation checklist</strong></a>
         <a href="/factory/#model-records"><strong>Product document checklist</strong></a>
-        <a href="/resources/motor-capacitor-order-shipment-checklist/"><strong>Order &amp; shipment checklist</strong></a>
+        <a href="/resources/motor-capacitor-order-shipment-checklist/"><strong>Order &amp; shipping checklist</strong></a>
       </nav>
     </div></section>
   </article>

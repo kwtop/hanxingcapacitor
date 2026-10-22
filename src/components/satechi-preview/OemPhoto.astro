@@ -1,0 +1,9 @@
+---
+import { oemMedia, type OemMediaName } from '../../data/oemMedia';
+interface Props { name: OemMediaName; class?: string; eager?: boolean; sizes?: string; }
+const { name, class: className, eager = false, sizes = '(max-width: 800px) calc(100vw - 48px), 58vw' } = Astro.props;
+const image = oemMedia[name];
+---
+<figure class:list={['ss-refined-photo', 'oem-editorial-photo', className]} data-oem-media={name} data-source-kind={image.provenance}>
+  <img src={image.src} srcset={image.srcset} sizes={sizes} width={image.width} height={image.height} alt={image.alt} loading={eager ? 'eager' : 'lazy'} fetchpriority={eager ? 'high' : undefined} decoding="async" />
+</figure>

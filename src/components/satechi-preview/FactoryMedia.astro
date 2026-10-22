@@ -1,0 +1,9 @@
+---
+import { originalFactoryVisuals, type FactoryVisualName } from '../../data/factoryVisuals';
+interface Props { name: FactoryVisualName; class?: string; eager?: boolean; }
+const { name, class: className, eager = false } = Astro.props;
+const asset = originalFactoryVisuals[name];
+---
+<figure class:list={['ss-factory-visual', className]} data-factory-source={name} data-documentary="true">
+  <img src={asset.src} alt={asset.alt} width={asset.width} height={asset.height} loading={eager ? 'eager' : 'lazy'} fetchpriority={eager ? 'high' : undefined} decoding="async" />
+</figure>

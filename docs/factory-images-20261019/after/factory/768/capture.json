@@ -1,0 +1,80 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/factory/",
+  "clientWidth": 753,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 263.6041679382324,
+        "height": 33.60416793823242,
+        "left": 25,
+        "right": 550.8333740234375,
+        "top": 230,
+        "width": 525.8333740234375,
+        "x": 25,
+        "y": 230
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "Manufacturing and quality"
+    }
+  ],
+  "headings": [
+    "Process footage",
+    "Material and process",
+    "Electrical and product testing",
+    "Packing and warehouse handling",
+    "Product document checklist",
+    "Request model documents."
+  ],
+  "height": 5171,
+  "images": [
+    {
+      "alt": "AI-refined view of the operator and capacitor equipment in the supplied workshop image.",
+      "box": {
+        "bottom": 888.9895935058594,
+        "height": 395.4583435058594,
+        "left": 25,
+        "right": 727.6666870117188,
+        "top": 493.53125,
+        "width": 702.6666870117188,
+        "x": 25,
+        "y": 493.53125
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/factory-20261019/workshop.webp"
+    },
+    {
+      "alt": "Illustrative arrangement of the four original capacitor formats.",
+      "box": {
+        "bottom": 3981.9270935058594,
+        "height": 245.86459350585935,
+        "left": 53,
+        "right": 298.8645935058594,
+        "top": 3736.0625,
+        "width": 245.86459350585935,
+        "x": 53,
+        "y": 3736.0625
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/inquiry.webp"
+    }
+  ],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 753,
+  "title": "Manufacturing & Quality | Product Documents | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/factory/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 1024,
+    "width": 768
+  }
+}

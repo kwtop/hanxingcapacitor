@@ -1,0 +1,258 @@
+{
+  "bg": "rgb(255, 255, 255)",
+  "body": "template-blog animation--none animation-text--active animation-text-type--fade",
+  "clientWidth": 1425,
+  "fonts": "loaded",
+  "headings": [
+    {
+      "class": "my0",
+      "color": "rgb(27, 28, 33)",
+      "font": "urbane, sans-serif",
+      "h": 33.60416793823242,
+      "line": "33.6px",
+      "size": "28px",
+      "tag": "H2",
+      "text": "News",
+      "w": 81.85417175292969,
+      "weight": "500",
+      "x": 117.33333587646484,
+      "y": 919.6041870117188
+    },
+    {
+      "class": "my0",
+      "color": "rgb(27, 28, 33)",
+      "font": "urbane, sans-serif",
+      "h": 33.60416793823242,
+      "line": "33.6px",
+      "size": "28px",
+      "tag": "H2",
+      "text": "New Products",
+      "w": 203.1979217529297,
+      "weight": "500",
+      "x": 117.33333587646484,
+      "y": 2684.15625
+    },
+    {
+      "class": "my0",
+      "color": "rgb(27, 28, 33)",
+      "font": "urbane, sans-serif",
+      "h": 33.60416793823242,
+      "line": "33.6px",
+      "size": "28px",
+      "tag": "H2",
+      "text": "Shopping Guides",
+      "w": 246.2604217529297,
+      "weight": "500",
+      "x": 117.33333587646484,
+      "y": 4448.70849609375
+    }
+  ],
+  "height": 5768,
+  "images": [
+    {
+      "fit": "cover",
+      "h": 571,
+      "natural": 1650,
+      "position": "50% 50%",
+      "src": "https://satechi.com/cdn/shop/articles/Blog_Title_Image_iPhone_18_and_Duo.webp?v=1790725304&width=3000",
+      "w": 571,
+      "x": 133.33334350585938,
+      "y": 235.40625
+    },
+    {
+      "fit": "cover",
+      "h": 348.66668701171875,
+      "natural": 550,
+      "position": "50% 50%",
+      "src": "https://satechi.com/cdn/shop/articles/pdp_chargeview_240w_desktop_charger_03_01_copy.webp?v=1786581277&width=550",
+      "w": 348.66668701171875,
+      "x": 133.33334350585938,
+      "y": 1015.40625
+    },
+    {
+      "fit": "cover",
+      "h": 348.66668701171875,
+      "natural": 550,
+      "position": "50% 50%",
+      "src": "https://satechi.com/cdn/shop/articles/Back_to_school_Mobile_Banner_2026_2f37bf52-43c1-451f-8298-6a5291f76c06.webp?v=1785525521&width=550",
+      "w": 348.66668701171875,
+      "x": 538,
+      "y": 1015.40625
+    },
+    {
+      "fit": "cover",
+      "h": 348.66668701171875,
+      "natural": 550,
+      "position": "50% 50%",
+      "src": "https://satechi.com/cdn/shop/articles/SATECHI_MacBook_Neo_Accessories.webp?v=1784397129&width=550",
+      "w": 348.66668701171875,
+      "x": 942.6666870117188,
+      "y": 1015.40625
+    },
+    {
+      "fit": "cover",
+      "h": 348.66668701171875,
+      "natural": 550,
+      "position": "50% 50%",
+      "src": "https://satechi.com/cdn/shop/articles/dotdisk.webp?v=1778195520&width=550",
+      "w": 348.66668701171875,
+      "x": 133.33334350585938,
+      "y": 1534.4583740234375
+    },
+    {
+      "fit": "cover",
+      "h": 348.66668701171875,
+      "natural": 550,
+      "position": "50% 50%",
+      "src": "https://satechi.com/cdn/shop/articles/Chargeview_140W.webp?v=1778195997&width=550",
+      "w": 348.66668701171875,
+      "x": 538,
+      "y": 1534.4583740234375
+    },
+    {
+      "fit": "cover",
+      "h": 348.66668701171875,
+      "natural": 550,
+      "position": "50% 50%",
+      "src": "https://satechi.com/cdn/shop/articles/satechi-findall-glasses-case-lifestyle-3_beb03b2f-eabb-4b3b-9809-5d0f570d6ad2.webp?v=1778196480&width=550",
+      "w": 348.66668701171875,
+      "x": 942.6666870117188,
+      "y": 1534.4583740234375
+    },
+    {
+      "fit": "cover",
+      "h": 348.66668701171875,
+      "natural": 550,
+      "position": "50% 50%",
+      "src": "https://satechi.com/cdn/shop/articles/lifestylelx3spaceblack.webp?v=1774392201&width=550",
+      "w": 348.66668701171875,
+      "x": 133.33334350585938,
+      "y": 2075.90625
+    },
+    {
+      "fit": "cover",
+      "h": 348.66668701171875,
+      "natural": 550,
+      "position": "50% 50%",
+      "src": "https://satechi.com/cdn/shop/articles/pdp_chargeview_240w_desktop_charger_03_01_copy.webp?v=1786581277&width=550",
+      "w": 348.66668701171875,
+      "x": 133.33334350585938,
+      "y": 2779.95849609375
+    },
+    {
+      "fit": "cover",
+      "h": 348.66668701171875,
+      "natural": 550,
+      "position": "50% 50%",
+      "src": "https://satechi.com/cdn/shop/articles/Back_to_school_Mobile_Banner_2026_2f37bf52-43c1-451f-8298-6a5291f76c06.webp?v=1785525521&width=550",
+      "w": 348.66668701171875,
+      "x": 538,
+      "y": 2779.95849609375
+    },
+    {
+      "fit": "cover",
+      "h": 348.66668701171875,
+      "natural": 550,
+      "position": "50% 50%",
+      "src": "https://satechi.com/cdn/shop/articles/SATECHI_MacBook_Neo_Accessories.webp?v=1784397129&width=550",
+      "w": 348.66668701171875,
+      "x": 942.6666870117188,
+      "y": 2779.95849609375
+    },
+    {
+      "fit": "cover",
+      "h": 348.66668701171875,
+      "natural": 550,
+      "position": "50% 50%",
+      "src": "https://satechi.com/cdn/shop/articles/dotdisk.webp?v=1778195520&width=550",
+      "w": 348.66668701171875,
+      "x": 133.33334350585938,
+      "y": 3299.010498046875
+    },
+    {
+      "fit": "cover",
+      "h": 348.66668701171875,
+      "natural": 550,
+      "position": "50% 50%",
+      "src": "https://satechi.com/cdn/shop/articles/Chargeview_140W.webp?v=1778195997&width=550",
+      "w": 348.66668701171875,
+      "x": 538,
+      "y": 3299.010498046875
+    },
+    {
+      "fit": "cover",
+      "h": 348.66668701171875,
+      "natural": 550,
+      "position": "50% 50%",
+      "src": "https://satechi.com/cdn/shop/articles/satechi-findall-glasses-case-lifestyle-3_beb03b2f-eabb-4b3b-9809-5d0f570d6ad2.webp?v=1778196480&width=550",
+      "w": 348.66668701171875,
+      "x": 942.6666870117188,
+      "y": 3299.010498046875
+    }
+  ],
+  "regions": [
+    {
+      "bg": "rgba(0, 0, 0, 0)",
+      "class": "shopify-section",
+      "h": 100,
+      "id": "shopify-section-template--27139880091736__section_Tc4qtg",
+      "padding": "0px",
+      "tag": "DIV",
+      "w": 1424.666748046875,
+      "x": 0,
+      "y": 35.60416793823242
+    },
+    {
+      "bg": "rgb(249, 247, 243)",
+      "class": "custom-section relative row cg20 d-cg20 rg20 d-rg20 color-scheme-2 pb0 d-pb0 pt0 d-pt0 in-view",
+      "h": 100,
+      "id": "",
+      "padding": "0px 60px",
+      "tag": "SECTION",
+      "w": 1424.666748046875,
+      "x": 0,
+      "y": 35.60416793823242
+    },
+    {
+      "bg": "rgba(0, 0, 0, 0)",
+      "class": "shopify-section",
+      "h": 56.80208587646485,
+      "id": "shopify-section-template--27139880091736__section_J6QzMB",
+      "padding": "0px",
+      "tag": "DIV",
+      "w": 1424.666748046875,
+      "x": 0,
+      "y": 135.6041717529297
+    },
+    {
+      "bg": "rgb(249, 247, 243)",
+      "class": "custom-section relative row cg20 d-cg20 rg20 d-rg20 color-scheme-2 pb0 d-pb0 pt0 d-pt0 in-view",
+      "h": 56.80208587646485,
+      "id": "",
+      "padding": "0px 60px",
+      "tag": "SECTION",
+      "w": 1424.666748046875,
+      "x": 0,
+      "y": 135.6041717529297
+    },
+    {
+      "bg": "rgba(0, 0, 0, 0)",
+      "class": "shopify-section section",
+      "h": 4981.55224609375,
+      "id": "shopify-section-template--27139880091736__main",
+      "padding": "0px",
+      "tag": "SECTION",
+      "w": 1424.666748046875,
+      "x": 0,
+      "y": 192.40625
+    }
+  ],
+  "scrollWidth": 1425,
+  "title": "News – Satechi",
+  "url": "https://satechi.com/blogs/news",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 900,
+    "width": 1440
+  }
+}

@@ -1,0 +1,610 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/products/cbb60-motor-run-capacitor/",
+  "clientWidth": 375,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 291.81250762939453,
+        "height": 67.20833587646484,
+        "left": 16,
+        "right": 283.5625,
+        "top": 224.6041717529297,
+        "width": 267.5625,
+        "x": 16,
+        "y": 224.6041717529297
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "CBB60motor run capacitors"
+    }
+  ],
+  "headings": [
+    "Technical specifications",
+    "Electrical",
+    "Case & connection",
+    "Selecting a model",
+    "Sample configurations & fit",
+    "Lead-wire sample with base stud",
+    "Record the installed fit",
+    "Applications",
+    "Water pumps",
+    "Washing machines",
+    "Fans and blowers",
+    "Other single-phase motors",
+    "CBB60 datasheets & drawings",
+    "Ordering & samples",
+    "Send your capacitor requirements.",
+    "Other capacitor series",
+    "CBB61",
+    "CBB65",
+    "CD60"
+  ],
+  "height": 9621,
+  "images": [
+    {
+      "alt": "Illustrative studio view derived from the original CBB60 sample, preserving its markings.",
+      "box": {
+        "bottom": 662.4791870117188,
+        "height": 342.66668701171875,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 319.8125,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 319.8125
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/product-cbb60.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 737.8125419616699,
+        "height": 60.66666793823242,
+        "left": 16.666667938232422,
+        "right": 77.33333587646484,
+        "top": 677.1458740234375,
+        "width": 60.66666793823242,
+        "x": 16.666667938232422,
+        "y": 677.1458740234375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/product-cbb60.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 737.8125419616699,
+        "height": 60.66666793823242,
+        "left": 88.66667175292969,
+        "right": 149.3333396911621,
+        "top": 677.1458740234375,
+        "width": 60.66666793823242,
+        "x": 88.66667175292969,
+        "y": 677.1458740234375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb60-hanxing-wired.jpg"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 737.8125419616699,
+        "height": 60.66666793823242,
+        "left": 160.6666717529297,
+        "right": 221.3333396911621,
+        "top": 677.1458740234375,
+        "width": 60.66666793823242,
+        "x": 160.6666717529297,
+        "y": 677.1458740234375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb60-17.jpg"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 737.8125419616699,
+        "height": 60.66666793823242,
+        "left": 232.6666717529297,
+        "right": 293.3333396911621,
+        "top": 677.1458740234375,
+        "width": 60.66666793823242,
+        "x": 232.6666717529297,
+        "y": 677.1458740234375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb60-16.jpg"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 737.8125419616699,
+        "height": 60.66666793823242,
+        "left": 304.66668701171875,
+        "right": 365.3333549499512,
+        "top": 677.1458740234375,
+        "width": 60.66666793823242,
+        "x": 304.66668701171875,
+        "y": 677.1458740234375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb60-18.jpg"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 737.8125419616699,
+        "height": 60.66666793823242,
+        "left": 376.6666870117187,
+        "right": 437.3333549499512,
+        "top": 677.1458740234375,
+        "width": 60.66666793823242,
+        "x": 376.6666870117187,
+        "y": 677.1458740234375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-3-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 737.8125419616699,
+        "height": 60.66666793823242,
+        "left": 448.6666870117187,
+        "right": 509.3333549499512,
+        "top": 677.1458740234375,
+        "width": 60.66666793823242,
+        "x": 448.6666870117187,
+        "y": 677.1458740234375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-4-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 737.8125419616699,
+        "height": 60.66666793823242,
+        "left": 520.6666870117188,
+        "right": 581.3333549499512,
+        "top": 677.1458740234375,
+        "width": 60.66666793823242,
+        "x": 520.6666870117188,
+        "y": 677.1458740234375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-5-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 737.8125419616699,
+        "height": 60.66666793823242,
+        "left": 592.6666870117188,
+        "right": 653.3333549499512,
+        "top": 677.1458740234375,
+        "width": 60.66666793823242,
+        "x": 592.6666870117188,
+        "y": 677.1458740234375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-6-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 737.8125419616699,
+        "height": 60.66666793823242,
+        "left": 664.6666870117188,
+        "right": 725.3333549499512,
+        "top": 677.1458740234375,
+        "width": 60.66666793823242,
+        "x": 664.6666870117188,
+        "y": 677.1458740234375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-7-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 737.8125419616699,
+        "height": 60.66666793823242,
+        "left": 736.6666870117188,
+        "right": 797.3333549499512,
+        "top": 677.1458740234375,
+        "width": 60.66666793823242,
+        "x": 736.6666870117188,
+        "y": 677.1458740234375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-8-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 737.8125419616699,
+        "height": 60.66666793823242,
+        "left": 808.6666870117188,
+        "right": 869.3333549499512,
+        "top": 677.1458740234375,
+        "width": 60.66666793823242,
+        "x": 808.6666870117188,
+        "y": 677.1458740234375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-9-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 737.8125419616699,
+        "height": 60.66666793823242,
+        "left": 880.6666870117188,
+        "right": 941.3333549499512,
+        "top": 677.1458740234375,
+        "width": 60.66666793823242,
+        "x": 880.6666870117188,
+        "y": 677.1458740234375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-10-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 737.8125419616699,
+        "height": 60.66666793823242,
+        "left": 952.6666870117188,
+        "right": 1013.3333549499512,
+        "top": 677.1458740234375,
+        "width": 60.66666793823242,
+        "x": 952.6666870117188,
+        "y": 677.1458740234375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-11-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 737.8125419616699,
+        "height": 60.66666793823242,
+        "left": 1024.666748046875,
+        "right": 1085.3334159851074,
+        "top": 677.1458740234375,
+        "width": 60.66666793823242,
+        "x": 1024.666748046875,
+        "y": 677.1458740234375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-14-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 737.8125419616699,
+        "height": 60.66666793823242,
+        "left": 1096.666748046875,
+        "right": 1157.3334159851074,
+        "top": 677.1458740234375,
+        "width": 60.66666793823242,
+        "x": 1096.666748046875,
+        "y": 677.1458740234375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-15-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 737.8125419616699,
+        "height": 60.66666793823242,
+        "left": 1168.666748046875,
+        "right": 1229.3334159851074,
+        "top": 677.1458740234375,
+        "width": 60.66666793823242,
+        "x": 1168.666748046875,
+        "y": 677.1458740234375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-16-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 737.8125419616699,
+        "height": 60.66666793823242,
+        "left": 1240.666748046875,
+        "right": 1301.3334159851074,
+        "top": 677.1458740234375,
+        "width": 60.66666793823242,
+        "x": 1240.666748046875,
+        "y": 677.1458740234375
+      },
+      "fit": "contain",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-69-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 737.8125419616699,
+        "height": 60.66666793823242,
+        "left": 1312.666748046875,
+        "right": 1373.3334159851074,
+        "top": 677.1458740234375,
+        "width": 60.66666793823242,
+        "x": 1312.666748046875,
+        "y": 677.1458740234375
+      },
+      "fit": "contain",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-74-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 737.8125419616699,
+        "height": 60.66666793823242,
+        "left": 1384.666748046875,
+        "right": 1445.3334159851074,
+        "top": 677.1458740234375,
+        "width": 60.66666793823242,
+        "x": 1384.666748046875,
+        "y": 677.1458740234375
+      },
+      "fit": "contain",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-75-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 737.8125419616699,
+        "height": 60.66666793823242,
+        "left": 1456.666748046875,
+        "right": 1517.3334159851074,
+        "top": 677.1458740234375,
+        "width": 60.66666793823242,
+        "x": 1456.666748046875,
+        "y": 677.1458740234375
+      },
+      "fit": "contain",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-79-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 737.8125419616699,
+        "height": 60.66666793823242,
+        "left": 1528.666748046875,
+        "right": 1589.3334159851074,
+        "top": 677.1458740234375,
+        "width": 60.66666793823242,
+        "x": 1528.666748046875,
+        "y": 677.1458740234375
+      },
+      "fit": "contain",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-80-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 737.8125419616699,
+        "height": 60.66666793823242,
+        "left": 1600.666748046875,
+        "right": 1661.3334159851074,
+        "top": 677.1458740234375,
+        "width": 60.66666793823242,
+        "x": 1600.666748046875,
+        "y": 677.1458740234375
+      },
+      "fit": "contain",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-81-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 737.8125419616699,
+        "height": 60.66666793823242,
+        "left": 1672.666748046875,
+        "right": 1733.3334159851074,
+        "top": 677.1458740234375,
+        "width": 60.66666793823242,
+        "x": 1672.666748046875,
+        "y": 677.1458740234375
+      },
+      "fit": "contain",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-82-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 737.8125419616699,
+        "height": 60.66666793823242,
+        "left": 1744.666748046875,
+        "right": 1805.3334159851072,
+        "top": 677.1458740234375,
+        "width": 60.66666793823242,
+        "x": 1744.666748046875,
+        "y": 677.1458740234375
+      },
+      "fit": "contain",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-83-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 737.8125419616699,
+        "height": 60.66666793823242,
+        "left": 1816.666748046875,
+        "right": 1877.3334159851072,
+        "top": 677.1458740234375,
+        "width": 60.66666793823242,
+        "x": 1816.666748046875,
+        "y": 677.1458740234375
+      },
+      "fit": "contain",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-84-thumb.webp"
+    },
+    {
+      "alt": "",
+      "box": {
+        "bottom": 737.8125419616699,
+        "height": 60.66666793823242,
+        "left": 1888.666748046875,
+        "right": 1949.3334159851072,
+        "top": 677.1458740234375,
+        "width": 60.66666793823242,
+        "x": 1888.666748046875,
+        "y": 677.1458740234375
+      },
+      "fit": "contain",
+      "loaded": false,
+      "position": "50% 50%",
+      "src": "/images/product-samples/sample-85-thumb.webp"
+    },
+    {
+      "alt": "CBB60: Lead-wire sample with base stud. Insulated leads; threaded base stud visible.",
+      "box": {
+        "bottom": 3607.9483337402344,
+        "height": 421.4798278808594,
+        "left": -23.40667724609375,
+        "right": 398.07330322265625,
+        "top": 3186.468505859375,
+        "width": 421.47998046875,
+        "x": -23.40667724609375,
+        "y": 3186.468505859375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb60-18.jpg"
+    },
+    {
+      "alt": "Photograph of three rectangular CBB61 samples with blade terminals.",
+      "box": {
+        "bottom": 8073.3857421875,
+        "height": 120,
+        "left": 36,
+        "right": 146,
+        "top": 7953.3857421875,
+        "width": 110,
+        "x": 36,
+        "y": 7953.3857421875
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb61-13.jpg"
+    },
+    {
+      "alt": "Photograph of a CBB65 metal-can capacitor sample marked 20 µF and 450 VAC.",
+      "box": {
+        "bottom": 8250.05224609375,
+        "height": 120,
+        "left": 36,
+        "right": 146,
+        "top": 8130.05224609375,
+        "width": 110,
+        "x": 36,
+        "y": 8130.05224609375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb65-2.jpg"
+    },
+    {
+      "alt": "Photograph of a CD60 cylindrical motor-start capacitor sample.",
+      "box": {
+        "bottom": 8426.71875,
+        "height": 120,
+        "left": 36,
+        "right": 146,
+        "top": 8306.71875,
+        "width": 110,
+        "x": 36,
+        "y": 8306.71875
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cd60-25.jpg"
+    }
+  ],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 375,
+  "title": "CBB60 motor run capacitors | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/products/cbb60-motor-run-capacitor/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 844,
+    "width": 390
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

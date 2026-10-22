@@ -1,0 +1,8 @@
+---
+// Legacy entry for the local study. Keep navigation and inquiry forms on one origin.
+export const prerender = false;
+if (!import.meta.env.DEV) return new Response('Not found', { status: 404 });
+const visualEntry = new URL('/', Astro.url);
+visualEntry.port = '4340';
+return Astro.redirect(visualEntry.href, 302);
+---

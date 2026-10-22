@@ -1,0 +1,111 @@
+/* Accepted Satechi preview: image purpose, editorial pacing and documentary frames. */
+body.satechi-site #main .co-guide-visual { display:block; position:relative; min-width:0; width:100%; aspect-ratio:3/2; margin:0; overflow:hidden; border-radius:12px; background:#eeece7; }
+body.satechi-site #main .co-guide-visual>img { display:block; width:100%; height:100%; margin:0; border-radius:0; aspect-ratio:auto; object-fit:cover; }
+body.satechi-site #main .co-guide-visual--label { aspect-ratio:6/5; }
+body.satechi-site #main .co-guide-visual--label>img { object-fit:contain; transform:none; }
+body.satechi-site #main .co-rating-fields { display:grid; grid-template-columns:1fr 1fr; height:100%; color:var(--sp-ink); }
+body.satechi-site #main .co-rating-fields>div { display:grid; align-content:center; justify-items:center; gap:20px; padding:20px 12px; background:#dce5ec; }
+body.satechi-site #main .co-rating-fields>div+div { background:#ece8df; }
+body.satechi-site #main .co-rating-fields strong { font:500 clamp(56px,6vw,92px)/1 var(--sp-heading); letter-spacing:-.03em; }
+body.satechi-site #main .co-rating-fields span { font-size:14px; line-height:1.4; text-align:center; }
+body.satechi-site #main .ss-featured-guide { grid-template-columns:1fr 1fr; gap:64px; padding:0; margin-bottom:56px; border:0; border-radius:0; background:transparent; }
+body.satechi-site #main .ss-featured-guide-image { overflow:hidden; border-radius:12px; }
+body.satechi-site #main .ss-featured-guide .co-guide-visual { aspect-ratio:6/5; }
+body.satechi-site #main .ss-featured-guide .co-guide-visual--label { aspect-ratio:6/5; }
+body.satechi-site #main .ss-featured-guide-copy { padding:24px 0; }
+body.satechi-site #main .ss-featured-guide-copy p { max-width:45ch; }
+body.satechi-site #main .resource-article-list .co-guide-visual { margin-bottom:20px; }
+body.satechi-site #main .resource-article-list .co-guide-visual>img { margin:0; }
+body.satechi-site #main .ss-guide-index .resource-hub-section { gap:40px; padding-block:40px; margin-bottom:0; }
+body.satechi-site #main .ss-guide-index .resource-article-list>a:only-child { grid-column:1/-1; display:grid; grid-template-columns:1.1fr 1fr; grid-template-rows:1fr 1fr; gap:0 32px; align-items:center; }
+body.satechi-site #main .ss-guide-index .resource-article-list>a:only-child .co-guide-visual { grid-column:1; grid-row:1/3; margin:0; }
+body.satechi-site #main .ss-guide-index .resource-article-list>a:only-child h3 { grid-column:2; align-self:end; margin:0 0 12px; }
+body.satechi-site #main .ss-guide-index .resource-article-list>a:only-child p { grid-column:2; align-self:start; margin:0; }
+
+/* Actual workshop and dispatch material retains its pixels and identifying detail. */
+body.satechi-site #main .ss-refined-photo[data-documentary] { overflow:hidden; border-radius:12px; }
+body.satechi-site #main .ss-refined-photo[data-documentary]>img { aspect-ratio:16/9; object-fit:cover; object-position:50% 75%; filter:brightness(1.035) saturate(.92); }
+body.satechi-site #main .procurement-hub .co-oem-stories { grid-template-columns:1.25fr .75fr; gap:56px 40px; align-items:start; }
+body.satechi-site #main .procurement-hub .co-oem-stories>article:not(:first-child) { padding:0; border:0; border-radius:0; background:transparent; text-align:left; }
+body.satechi-site #main .procurement-hub .co-oem-stories>article:not(:first-child)>.procurement-route-photo { width:100%; margin:0 0 24px; border-radius:12px; overflow:hidden; }
+body.satechi-site #main .procurement-hub .co-oem-stories>article:nth-child(2)>.procurement-route-photo img { aspect-ratio:2/1; object-fit:cover; object-position:50% 80%; }
+body.satechi-site #main .procurement-hub .co-oem-stories>article:nth-child(3)>.procurement-route-photo img { aspect-ratio:4/3; object-fit:cover; }
+body.satechi-site #main .procurement-hub .co-oem-stories>article:not(:first-child)>h2 { max-width:none; margin:0 0 14px; text-align:left; }
+body.satechi-site #main .procurement-hub .co-oem-stories>article:not(:first-child)>p { max-width:54ch; margin:0; text-align:left; }
+body.satechi-site #main .procurement-hub .co-oem-stories>article:not(:first-child)>.card-link { margin-top:20px; }
+
+/* One panoramic product study interrupts the catalogue before the application mosaic. */
+body.satechi-site #main .sp-home-a .ha-guides.co-home-guides { display:block; width:100%; max-width:none; background:var(--sp-canvas); padding:0 0 48px; }
+body.satechi-site #main .co-guide-banner { position:relative; min-height:520px; overflow:hidden; }
+body.satechi-site #main .co-guide-banner .ha-guide-photo { position:absolute; inset:0; min-height:0; margin:0; }
+body.satechi-site #main .co-guide-banner .ha-guide-photo>img { width:100%; height:100%; object-fit:cover; object-position:50% 50%; }
+body.satechi-site #main .co-guide-banner-content { position:relative; min-height:520px; display:flex; align-items:center; }
+body.satechi-site #main .co-guide-banner .ha-guide-copy { width:44%; max-width:520px; padding:48px 0; }
+body.satechi-site #main .co-guide-banner .ha-guide-copy h2 { max-width:20ch; margin:0 0 16px; text-align:left; }
+body.satechi-site #main .co-guide-banner .ha-guide-copy>p { max-width:34ch; margin:0; font-size:16px; line-height:1.6; }
+body.satechi-site #main .co-guide-banner .ha-guide-copy>.button { margin-top:28px; }
+body.satechi-site #main .sp-home-a .co-home-guides .ha-guide-columns { grid-template-columns:1fr 1fr; gap:24px; margin-top:28px; }
+body.satechi-site #main .co-guide-topics .ha-guide-topic-lead { min-height:112px; }
+
+/* Read pages answer first, then illustrate; they do not repeat a product landing hero. */
+body.satechi-site #main .co-reading-heading { display:block; text-align:center; }
+body.satechi-site #main .co-reading-heading h1 { max-width:28ch; margin:0 auto 20px; }
+body.satechi-site #main .co-reading-heading p { max-width:65ch; margin:0 auto; }
+body.satechi-site #main .co-reading-page .review-guide-hero { padding-bottom:40px; }
+body.satechi-site #main .co-reading-page .article-overview { max-width:68ch; margin:0 0 28px; padding:0; border:0; background:transparent; font-size:18px; line-height:1.65; }
+body.satechi-site #main .co-reading-page .co-article-visual { max-width:760px; margin:0 0 40px; }
+body.satechi-site #main .ss-product-story .co-product-study { margin:0; border-radius:16px; overflow:hidden; }
+body.satechi-site #main .ss-product-story .co-product-study>img { display:block; width:100%; height:auto; aspect-ratio:3/2; object-fit:contain; }
+body.satechi-site #main .co-approval-flow { display:block; }
+body.satechi-site #main .co-approval-flow .procurement-approval-steps { grid-template-columns:repeat(4,minmax(0,1fr)); gap:32px; }
+body.satechi-site #main .co-approval-flow .procurement-approval-steps>li { padding:24px 0 0; border:0; border-top:1px solid var(--sp-line); background:transparent; }
+body.satechi-site #main .co-approval-flow .procurement-approval-steps>li .procurement-step-number { margin-bottom:18px; }
+body.satechi-site #main .co-approval-flow .procurement-approval-steps>li p { font-size:14px; line-height:1.65; }
+
+@media(max-width:1020px) {
+ body.satechi-site #main .ss-featured-guide { gap:36px; }
+ body.satechi-site #main .ss-guide-index .resource-article-list>a:only-child { display:block; }
+ body.satechi-site #main .ss-guide-index .resource-article-list>a:only-child .co-guide-visual { margin-bottom:20px; }
+ body.satechi-site #main .ss-guide-index .resource-article-list>a:only-child h3 { margin-bottom:12px; }
+ body.satechi-site #main .procurement-hub .co-oem-stories { gap:40px 28px; }
+ body.satechi-site #main :is(.co-guide-banner,.co-guide-banner-content) { min-height:440px; }
+ body.satechi-site #main .co-guide-banner .ha-guide-photo>img { object-position:82% 50%; }
+ body.satechi-site #main .co-approval-flow .procurement-approval-steps { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media(max-width:800px) {
+ body.satechi-site #main .ss-featured-guide { gap:28px; }
+ body.satechi-site #main .ss-guide-index .resource-hub-section { padding-block:32px; }
+ body.satechi-site #main .procurement-hub .co-oem-stories { grid-template-columns:1fr; gap:40px; }
+ body.satechi-site #main .procurement-hub .co-oem-stories>article:not(:first-child)>.procurement-route-photo { margin-bottom:20px; }
+ body.satechi-site #main .procurement-hub .co-oem-stories>article:nth-child(2)>.procurement-route-photo img { aspect-ratio:16/9; }
+ body.satechi-site #main .co-reading-page .review-guide-toc>summary { display:flex; align-items:center; justify-content:space-between; gap:16px; }
+ body.satechi-site #main .co-reading-page .review-guide-toc>summary::after { content:'+'; font:400 20px/1 var(--sp-heading); }
+ body.satechi-site #main .co-reading-page .review-guide-toc[open]>summary::after { content:'−'; }
+}
+@media(max-width:600px) {
+ body.satechi-site #main .ss-featured-guide { grid-template-columns:1fr; gap:24px; padding:0; margin-bottom:40px; }
+ body.satechi-site #main .ss-featured-guide .co-guide-visual { aspect-ratio:5/4; }
+ body.satechi-site #main .ss-featured-guide .co-guide-visual--label { aspect-ratio:6/5; }
+ body.satechi-site #main .ss-featured-guide-copy { padding:0; }
+ body.satechi-site #main .co-rating-fields { gap:0; }
+ body.satechi-site #main .co-rating-fields>div { gap:14px; }
+ body.satechi-site #main .co-rating-fields strong { font-size:58px; }
+ body.satechi-site #main .co-rating-fields span { font-size:13px; }
+ body.satechi-site #main .sp-home-a .ha-guides.co-home-guides { padding-bottom:32px; }
+ body.satechi-site #main .co-guide-banner { display:flex; flex-direction:column; min-height:0; }
+ body.satechi-site #main .co-guide-banner .ha-guide-photo { position:relative; height:300px; width:100%; aspect-ratio:auto; }
+ body.satechi-site #main .co-guide-banner .ha-guide-photo>img { object-position:93% 50%; }
+ body.satechi-site #main .co-guide-banner-content { display:block; min-height:0; }
+ body.satechi-site #main .co-guide-banner .ha-guide-copy { width:100%; max-width:none; padding:28px 0 0; text-align:center; }
+ body.satechi-site #main .co-guide-banner .ha-guide-copy h2 { max-width:24ch; margin-inline:auto; text-align:center; }
+ body.satechi-site #main .co-guide-banner .ha-guide-copy>p { margin-inline:auto; font-size:15px; }
+ body.satechi-site #main .co-guide-banner .ha-guide-copy>.button { margin-top:24px; }
+ body.satechi-site #main .sp-home-a .co-home-guides .ha-guide-columns { grid-template-columns:1fr; gap:16px; margin-top:28px; }
+ body.satechi-site #main .co-guide-topics .ha-guide-topic-lead { min-height:0; }
+ body.satechi-site #main .co-reading-heading h1 { max-width:26ch; margin-bottom:18px; }
+ body.satechi-site #main .co-reading-heading p { font-size:15px; line-height:1.6; }
+ body.satechi-site #main .co-reading-page .review-guide-hero { padding-bottom:28px; }
+ body.satechi-site #main .co-reading-page .article-overview { font-size:16px; line-height:1.65; }
+ body.satechi-site #main .co-reading-page .co-article-visual { margin-bottom:32px; }
+ body.satechi-site #main .co-approval-flow .procurement-approval-steps { grid-template-columns:1fr; gap:28px; }
+}

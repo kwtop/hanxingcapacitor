@@ -1,0 +1,162 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/applications/pumps-and-water-systems/",
+  "clientWidth": 375,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 259.6041679382324,
+        "height": 33.60416793823242,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 226,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 226
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "Water pumps"
+    }
+  ],
+  "headings": [
+    "Motor circuit & original capacitor",
+    "Run",
+    "Start",
+    "Both",
+    "Unknown",
+    "Compare capacitor series",
+    "CBB60",
+    "CD60",
+    "Fit and connection check",
+    "Body and base stud",
+    "Lead clearance",
+    "Separate parts",
+    "Send your capacitor requirements."
+  ],
+  "height": 6721,
+  "images": [
+    {
+      "alt": "Illustration of a centrifugal water pump and motor.",
+      "box": {
+        "bottom": 739.9375,
+        "height": 192.75,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 547.1875,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 547.1875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/application-pump.webp"
+    },
+    {
+      "alt": "Photograph of a Hanxing-marked white CBB60 capacitor sample with two insulated leads.",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 55%",
+      "src": "/images/real/cbb60-hanxing-wired.jpg"
+    },
+    {
+      "alt": "Photograph of a CD60 cylindrical motor-start capacitor sample.",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 64%",
+      "src": "/images/real/cd60-25.jpg"
+    },
+    {
+      "alt": "Photograph of a Hanxing-marked white CBB60 capacitor sample with two insulated leads.",
+      "box": {
+        "bottom": 2812.58349609375,
+        "height": 350,
+        "left": -18.933330535888672,
+        "right": 393.6000556945801,
+        "top": 2462.58349609375,
+        "width": 412.5333862304687,
+        "x": -18.933330535888672,
+        "y": 2462.58349609375
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb60-hanxing-wired.jpg"
+    },
+    {
+      "alt": "Photograph of a CD60 cylindrical motor-start capacitor sample.",
+      "box": {
+        "bottom": 3543.479248046875,
+        "height": 350,
+        "left": -18.933330535888672,
+        "right": 393.6000556945801,
+        "top": 3193.479248046875,
+        "width": 412.5333862304687,
+        "x": -18.933330535888672,
+        "y": 3193.479248046875
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cd60-25.jpg"
+    },
+    {
+      "alt": "Two photographed CBB60 samples; the horizontal sample shows a threaded base stud.",
+      "box": {
+        "bottom": 4173.416687011719,
+        "height": 342.66668701171875,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": 3830.75,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": 3830.75
+      },
+      "fit": "contain",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/real/cbb60-18.jpg"
+    }
+  ],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 375,
+  "title": "Water pumps | CBB60 motor run capacitors | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/applications/pumps-and-water-systems/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 844,
+    "width": 390
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/factory/packing-and-dispatch/",
+  "clientWidth": 1009,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 358.3645935058594,
+        "height": 96,
+        "left": 40,
+        "right": 387.4583435058594,
+        "top": 262.3645935058594,
+        "width": 347.4583435058594,
+        "x": 40,
+        "y": 262.3645935058594
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "48px",
+      "size": "40px",
+      "text": "Packing and dispatch"
+    }
+  ],
+  "headings": [
+    "Packing requirements",
+    "Packing footage",
+    "Packout & carrier handover",
+    "Match the documents",
+    "Discuss packing and delivery.",
+    "References"
+  ],
+  "height": 4449,
+  "images": [
+    {
+      "alt": "AI-reconstructed wider view of the packing worker and blue capacitor boxes in the supplied video still.",
+      "box": {
+        "bottom": 515.0729217529297,
+        "height": 347.46875,
+        "left": 447.4583435058594,
+        "right": 968.6667175292968,
+        "top": 167.6041717529297,
+        "width": 521.2083740234375,
+        "x": 447.4583435058594,
+        "y": 167.6041717529297
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/factory-20261019/packing.webp"
+    },
+    {
+      "alt": "AI-refined view of the wrapped pallets in the supplied dispatch-area image; not an order or delivery record.",
+      "box": {
+        "bottom": 2409.3125,
+        "height": 325.75,
+        "left": 534.3333740234375,
+        "right": 968.6667175292968,
+        "top": 2083.5625,
+        "width": 434.3333435058594,
+        "x": 534.3333740234375,
+        "y": 2083.5625
+      },
+      "fit": "fill",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/factory-20261019/dispatch.webp"
+    },
+    {
+      "alt": "Illustrative arrangement of the four original capacitor formats.",
+      "box": {
+        "bottom": 3465.6043395996094,
+        "height": 335.1770935058594,
+        "left": 80,
+        "right": 415.1770935058594,
+        "top": 3130.42724609375,
+        "width": 335.1770935058594,
+        "x": 80,
+        "y": 3130.42724609375
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/inquiry.webp"
+    }
+  ],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 1009,
+  "title": "Packing, Dispatch & Order Records | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/factory/packing-and-dispatch/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 768,
+    "width": 1024
+  }
+}

@@ -1,0 +1,11 @@
+---
+import type { Guide } from '../../data/guides';
+import { guideHref } from '../../data/guides';
+import GuideCover from './GuideCover.astro';
+interface Props { guide: Guide; filterable?: boolean; }
+const { guide, filterable=false } = Astro.props;
+---
+<article class="ss-featured-guide" data-search-item={filterable ? '' : undefined}>
+  <a class="ss-featured-guide-image" href={guideHref(guide)} tabindex="-1" aria-hidden="true"><GuideCover slug={guide.slug} eager /></a>
+  <div class="ss-featured-guide-copy"><h2><a href={guideHref(guide)}>{guide.title}</a></h2><p>{guide.summary}</p><a class="card-link" href={guideHref(guide)}>Read the guide</a></div>
+</article>

@@ -1,0 +1,89 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/oem/",
+  "clientWidth": 1425,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 506.3541870117187,
+        "height": 48,
+        "left": 60,
+        "right": 557.8645935058594,
+        "top": 458.3541870117187,
+        "width": 497.8645935058594,
+        "x": 60,
+        "y": 458.3541870117187
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "48px",
+      "size": "40px",
+      "text": "OEM motor capacitors"
+    }
+  ],
+  "headings": [
+    "Specify the capacitor you need",
+    "From specification to approval",
+    "Send the specification",
+    "Agree the drawings",
+    "Approve the sample",
+    "Confirm the order",
+    "Sample terms to agree",
+    "Send your OEM requirements."
+  ],
+  "height": 3689,
+  "images": [
+    {
+      "alt": "Illustrative sample approval still life based on the original Hanxing capacitor samples.",
+      "box": {
+        "bottom": 765.0416717529297,
+        "height": 597.4375,
+        "left": 617.8646240234375,
+        "right": 1364.666748046875,
+        "top": 167.6041717529297,
+        "width": 746.8021240234375,
+        "x": 617.8646240234375,
+        "y": 167.6041717529297
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/oem-approval.webp"
+    },
+    {
+      "alt": "Illustrative arrangement of the four original capacitor formats.",
+      "box": {
+        "bottom": 2973.4376831054688,
+        "height": 494.9791870117187,
+        "left": 100,
+        "right": 594.9791870117188,
+        "top": 2478.45849609375,
+        "width": 494.9791870117187,
+        "x": 100,
+        "y": 2478.45849609375
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/inquiry.webp"
+    }
+  ],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 1425,
+  "title": "OEM & Private Label Motor Capacitors | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/oem/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 900,
+    "width": 1440
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "factory": [
+    {
+      "controls": true,
+      "paused": false,
+      "poster": "/images/previews/factory-20261019/film.webp",
+      "readyState": 4,
+      "src": "http://127.0.0.1:4340/videos/film-roll-equipment.mp4",
+      "time": 1.123012,
+      "width": 960
+    },
+    {
+      "controls": true,
+      "paused": false,
+      "poster": "/images/previews/factory-20261019/winding.webp",
+      "readyState": 4,
+      "src": "http://127.0.0.1:4340/videos/winding-equipment.mp4",
+      "time": 0.735342,
+      "width": 960
+    },
+    {
+      "controls": true,
+      "paused": false,
+      "poster": "/images/previews/factory-20261019/testing.webp",
+      "readyState": 4,
+      "src": "http://127.0.0.1:4340/videos/test-area-equipment.mp4",
+      "time": 0.331153,
+      "width": 960
+    }
+  ],
+  "packing": {
+    "controls": true,
+    "paused": false,
+    "poster": "/images/real/packing-scene.jpg",
+    "readyState": 4,
+    "src": "http://127.0.0.1:4340/videos/packing-scene.mp4",
+    "time": 0.322011,
+    "width": 540
+  },
+  "consoleErrors": []
+}

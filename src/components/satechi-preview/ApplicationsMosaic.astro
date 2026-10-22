@@ -1,0 +1,28 @@
+---
+import { applications, applicationHref } from '../../data/site';
+import { applicationVisuals } from '../../data/satechiSite';
+import { industrialApplications, homeHvacPanorama } from '../../data/industrialApplications';
+import SiteImage from './SiteImage.astro';
+const apps = [applications[0], applications[3], applications[1], applications[2]];
+const labels = ['Pumps & water systems', 'HVAC & refrigeration', 'Fans & ventilation', 'Appliances & small motors'];
+---
+<section class="sp-applications" aria-labelledby="applications-title">
+  <div class="container"><h2 id="applications-title">For the motors in your equipment</h2>
+    <div class="sp-application-mosaic">
+      {apps.slice(0,1).map((app, index) => <a class:list={['sp-application', `sp-application-${index}`]} href={applicationHref(app)}>
+        <SiteImage src={applicationVisuals[app.slug]} alt={industrialApplications[app.slug].alt} sizes="(max-width: 700px) calc((100vw - 44px) / 2), 46vw" />
+        <h3>{labels[index]}</h3>
+      </a>)}
+      <div class="sp-app-secondary">{apps.slice(1).map((app, index) => <a class:list={['sp-application', `sp-application-${index + 1}`]} href={applicationHref(app)}>
+        <picture class="sp-application-photo">
+          {index === 0 && <source media="(min-width: 1201px)" srcset={homeHvacPanorama.srcset} sizes="46vw" width={homeHvacPanorama.width} height={homeHvacPanorama.height} />}
+          <SiteImage src={applicationVisuals[app.slug]} alt={industrialApplications[app.slug].alt} sizes={index === 0 ? '(max-width: 700px) calc((100vw - 44px) / 2), 46vw' : '(max-width: 1020px) calc((100vw - 44px) / 2), 23vw'} />
+        </picture>
+        <h3>{labels[index + 1]}</h3>
+      </a>)}</div>
+    </div>
+  </div>
+</section>
+<style>
+  .sp-application-photo { display:block; width:100%; height:100%; }
+</style>

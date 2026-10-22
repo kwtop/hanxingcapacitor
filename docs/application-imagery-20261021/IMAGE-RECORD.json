@@ -1,0 +1,173 @@
+[
+  {
+    "key": "pump",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-f301de17-fe29-45c3-80d5-362f6fb8b820.png",
+    "reference": "D:/Hangxing/workspace/public/images/previews/satechi-site-20261018/application-pump.webp",
+    "originalCopy": "D:\\Hangxing\\application-industrial-20261021\\original-outputs\\pump.png",
+    "kind": "AI-generated generic equipment application illustration",
+    "variants": [
+      {
+        "file": "D:\\Hangxing\\workspace\\public\\images\\applications\\industrial-20261021\\pump-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 120820
+      },
+      {
+        "file": "D:\\Hangxing\\workspace\\public\\images\\applications\\industrial-20261021\\pump-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 54688
+      },
+      {
+        "file": "D:\\Hangxing\\workspace\\public\\images\\applications\\industrial-20261021\\pump-600.webp",
+        "width": 600,
+        "height": 400,
+        "bytes": 25806
+      }
+    ]
+  },
+  {
+    "key": "fan",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-006e4bbd-bd64-4c55-a597-564ba2862233.png",
+    "reference": "D:/Hangxing/workspace/public/images/previews/satechi-site-20261018/application-fan.webp",
+    "originalCopy": "D:\\Hangxing\\application-industrial-20261021\\original-outputs\\fan.png",
+    "kind": "AI-generated generic equipment application illustration",
+    "variants": [
+      {
+        "file": "D:\\Hangxing\\workspace\\public\\images\\applications\\industrial-20261021\\fan-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 129992
+      },
+      {
+        "file": "D:\\Hangxing\\workspace\\public\\images\\applications\\industrial-20261021\\fan-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 55252
+      },
+      {
+        "file": "D:\\Hangxing\\workspace\\public\\images\\applications\\industrial-20261021\\fan-600.webp",
+        "width": 600,
+        "height": 400,
+        "bytes": 23570
+      }
+    ]
+  },
+  {
+    "key": "washing",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-cc79afa2-f9c6-4ef5-b079-5436599b8cf6.png",
+    "reference": "D:/Hangxing/workspace/public/images/previews/satechi-site-20261018/application-washing.webp",
+    "originalCopy": "D:\\Hangxing\\application-industrial-20261021\\original-outputs\\washing.png",
+    "kind": "AI-generated generic equipment application illustration",
+    "variants": [
+      {
+        "file": "D:\\Hangxing\\workspace\\public\\images\\applications\\industrial-20261021\\washing-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 71198
+      },
+      {
+        "file": "D:\\Hangxing\\workspace\\public\\images\\applications\\industrial-20261021\\washing-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 32208
+      },
+      {
+        "file": "D:\\Hangxing\\workspace\\public\\images\\applications\\industrial-20261021\\washing-600.webp",
+        "width": 600,
+        "height": 400,
+        "bytes": 14470
+      }
+    ]
+  },
+  {
+    "key": "hvac",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-7d1d4790-c3bd-4872-914a-7a5a7f0b3021.png",
+    "reference": "D:/Hangxing/workspace/public/images/previews/satechi-site-20261018/application-hvac.webp",
+    "originalCopy": "D:\\Hangxing\\application-industrial-20261021\\original-outputs\\hvac.png",
+    "kind": "AI-generated generic equipment application illustration",
+    "variants": [
+      {
+        "file": "D:\\Hangxing\\workspace\\public\\images\\applications\\industrial-20261021\\hvac-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 123830
+      },
+      {
+        "file": "D:\\Hangxing\\workspace\\public\\images\\applications\\industrial-20261021\\hvac-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 64210
+      },
+      {
+        "file": "D:\\Hangxing\\workspace\\public\\images\\applications\\industrial-20261021\\hvac-600.webp",
+        "width": 600,
+        "height": 400,
+        "bytes": 30338
+      }
+    ]
+  },
+  {
+    "key": "cover",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-b6d761af-331e-47ae-8d62-35a2179c64fe.png",
+    "reference": [
+      "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-f301de17-fe29-45c3-80d5-362f6fb8b820.png",
+      "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-006e4bbd-bd64-4c55-a597-564ba2862233.png"
+    ],
+    "originalCopy": "D:\\Hangxing\\application-industrial-20261021\\original-outputs\\cover.png",
+    "kind": "AI-generated generic equipment application illustration",
+    "variants": [
+      {
+        "file": "D:\\Hangxing\\workspace\\public\\images\\applications\\industrial-20261021\\cover-2172.webp",
+        "width": 2172,
+        "height": 724,
+        "bytes": 102704
+      },
+      {
+        "file": "D:\\Hangxing\\workspace\\public\\images\\applications\\industrial-20261021\\cover-1440.webp",
+        "width": 1440,
+        "height": 480,
+        "bytes": 55018
+      },
+      {
+        "file": "D:\\Hangxing\\workspace\\public\\images\\applications\\industrial-20261021\\cover-960.webp",
+        "width": 960,
+        "height": 320,
+        "bytes": 27320
+      },
+      {
+        "file": "D:\\Hangxing\\workspace\\public\\images\\applications\\industrial-20261021\\cover-600.webp",
+        "width": 600,
+        "height": 200,
+        "bytes": 12592
+      }
+    ]
+  },
+  {
+    "key": "hvac-wide",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-75b64f2a-895b-4185-a628-d251dd4e8751.png",
+    "reference": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-7d1d4790-c3bd-4872-914a-7a5a7f0b3021.png",
+    "originalCopy": "D:\\Hangxing\\application-industrial-20261021\\original-outputs\\hvac-wide.png",
+    "kind": "AI-generated generic equipment application illustration",
+    "variants": [
+      {
+        "file": "D:\\Hangxing\\workspace\\public\\images\\applications\\industrial-20261021\\hvac-wide-1536.webp",
+        "width": 1536,
+        "height": 614,
+        "bytes": 73720
+      },
+      {
+        "file": "D:\\Hangxing\\workspace\\public\\images\\applications\\industrial-20261021\\hvac-wide-960.webp",
+        "width": 960,
+        "height": 384,
+        "bytes": 34278
+      },
+      {
+        "file": "D:\\Hangxing\\workspace\\public\\images\\applications\\industrial-20261021\\hvac-wide-600.webp",
+        "width": 600,
+        "height": 240,
+        "bytes": 16252
+      }
+    ]
+  }
+]

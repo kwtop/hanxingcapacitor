@@ -1,0 +1,157 @@
+[
+  {
+    "route": "/",
+    "kind": "home",
+    "slug": "home"
+  },
+  {
+    "route": "/about/",
+    "kind": "business",
+    "slug": "about"
+  },
+  {
+    "route": "/applications/",
+    "kind": "business",
+    "slug": "applications"
+  },
+  {
+    "route": "/applications/appliances-and-small-motors/",
+    "kind": "application",
+    "slug": "applications--appliances-and-small-motors"
+  },
+  {
+    "route": "/applications/fans-and-ventilation/",
+    "kind": "application",
+    "slug": "applications--fans-and-ventilation"
+  },
+  {
+    "route": "/applications/hvac-and-refrigeration/",
+    "kind": "application",
+    "slug": "applications--hvac-and-refrigeration"
+  },
+  {
+    "route": "/applications/pumps-and-water-systems/",
+    "kind": "application",
+    "slug": "applications--pumps-and-water-systems"
+  },
+  {
+    "route": "/buying-guide/",
+    "kind": "business",
+    "slug": "buying-guide"
+  },
+  {
+    "route": "/contact/",
+    "kind": "contact",
+    "slug": "contact"
+  },
+  {
+    "route": "/factory/",
+    "kind": "business",
+    "slug": "factory"
+  },
+  {
+    "route": "/factory/packing-and-dispatch/",
+    "kind": "business",
+    "slug": "factory--packing-and-dispatch"
+  },
+  {
+    "route": "/faq/",
+    "kind": "faq",
+    "slug": "faq"
+  },
+  {
+    "route": "/oem-quality/",
+    "kind": "business",
+    "slug": "oem-quality"
+  },
+  {
+    "route": "/oem/",
+    "kind": "business",
+    "slug": "oem"
+  },
+  {
+    "route": "/privacy-policy/",
+    "kind": "policy",
+    "slug": "privacy-policy"
+  },
+  {
+    "route": "/products/",
+    "kind": "business",
+    "slug": "products"
+  },
+  {
+    "route": "/products/cbb60-motor-run-capacitor/",
+    "kind": "product",
+    "slug": "products--cbb60-motor-run-capacitor"
+  },
+  {
+    "route": "/products/cbb61-fan-capacitor/",
+    "kind": "product",
+    "slug": "products--cbb61-fan-capacitor"
+  },
+  {
+    "route": "/products/cbb65-air-conditioner-capacitor/",
+    "kind": "product",
+    "slug": "products--cbb65-air-conditioner-capacitor"
+  },
+  {
+    "route": "/products/cd60-start-capacitor/",
+    "kind": "product",
+    "slug": "products--cd60-start-capacitor"
+  },
+  {
+    "route": "/products/photographs/",
+    "kind": "library",
+    "slug": "products--photographs"
+  },
+  {
+    "route": "/resources/",
+    "kind": "resources",
+    "slug": "resources"
+  },
+  {
+    "route": "/resources/articles/",
+    "kind": "resources",
+    "slug": "resources--articles"
+  },
+  {
+    "route": "/resources/capacitance-voltage-guide/",
+    "kind": "guide",
+    "slug": "resources--capacitance-voltage-guide"
+  },
+  {
+    "route": "/resources/cbb60-vs-cbb61-vs-cbb65/",
+    "kind": "guide",
+    "slug": "resources--cbb60-vs-cbb61-vs-cbb65"
+  },
+  {
+    "route": "/resources/dimensions-terminals-mounting/",
+    "kind": "guide",
+    "slug": "resources--dimensions-terminals-mounting"
+  },
+  {
+    "route": "/resources/motor-capacitor-order-shipment-checklist/",
+    "kind": "guide",
+    "slug": "resources--motor-capacitor-order-shipment-checklist"
+  },
+  {
+    "route": "/resources/read-motor-capacitor-label/",
+    "kind": "guide",
+    "slug": "resources--read-motor-capacitor-label"
+  },
+  {
+    "route": "/resources/single-vs-dual-run-capacitors/",
+    "kind": "guide",
+    "slug": "resources--single-vs-dual-run-capacitors"
+  },
+  {
+    "route": "/resources/start-vs-run-capacitors/",
+    "kind": "guide",
+    "slug": "resources--start-vs-run-capacitors"
+  },
+  {
+    "route": "/terms/",
+    "kind": "policy",
+    "slug": "terms"
+  }
+]

@@ -1,0 +1,67 @@
+{
+  "client": 375,
+  "duplicateIds": [],
+  "h1": [
+    "Motor capacitors.Run & start."
+  ],
+  "height": 8112,
+  "notLoaded": [],
+  "scroll": 375,
+  "theme": "satechi-preview satechi-site is-home",
+  "url": "http://127.0.0.1:4340/",
+  "width": 390,
+  "deferredRailImages": [
+    {
+      "clip": {
+        "bottom": -2146.2709045410156,
+        "height": 440.3958435058594,
+        "left": 16,
+        "right": 358.66668701171875,
+        "top": -2586.666748046875,
+        "width": 342.66668701171875,
+        "x": 16,
+        "y": -2586.666748046875
+      },
+      "image": {
+        "bottom": -2306.666748046875,
+        "height": 280,
+        "left": 916,
+        "right": 1196,
+        "top": -2586.666748046875,
+        "width": 280,
+        "x": 916,
+        "y": -2586.666748046875
+      },
+      "lazy": "lazy",
+      "loaded": false,
+      "src": "/images/previews/satechi-fidelity-20261018/category-cd60.webp",
+      "track": "sp-category-grid"
+    },
+    {
+      "clip": {
+        "bottom": 595.5208587646484,
+        "height": 465.1979370117187,
+        "left": 0,
+        "right": 374.6666870117187,
+        "top": 130.3229217529297,
+        "width": 374.6666870117187,
+        "x": 0,
+        "y": 130.3229217529297
+      },
+      "image": {
+        "bottom": 445.3229217529297,
+        "height": 305,
+        "left": 1025,
+        "right": 1330,
+        "top": 140.3229217529297,
+        "width": 305,
+        "x": 1025,
+        "y": 140.3229217529297
+      },
+      "lazy": "lazy",
+      "loaded": false,
+      "src": "/images/real/cbb65-2.jpg",
+      "track": "sp-card-track"
+    }
+  ]
+}

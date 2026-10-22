@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>HAN XING · Satechi 整站视觉预览与对比</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#eae8e2;color:#1b1c21;font:14px/1.6 system-ui,sans-serif}header{padding:24px 28px;background:#fff}h1{font-size:24px;font-weight:600;margin:0 0 8px}p{margin:6px 0}a{color:inherit;text-underline-offset:4px}.toolbar{position:sticky;top:0;z-index:5;display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;padding:16px 28px;background:#fff;border-block:1px solid #d3d4d5}label{display:flex;align-items:center;gap:8px}select{font:inherit;min-height:38px;max-width:520px;padding:6px 10px;color:inherit;background:#fff;border:1px solid #bbb;border-radius:4px}input{accent-color:#1b1c21}main{padding:24px;overflow:auto}.stage{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}.stage.single{display:block;max-width:var(--image-width);margin:auto}.stage.actual:not(.single){grid-template-columns:repeat(2,var(--image-width));width:max-content}.stage.actual.single{width:var(--image-width);max-width:none}figure{min-width:0;margin:0}figcaption{padding:10px 12px;background:#fff}img{display:block;width:100%;height:auto}#status{color:#555;font-size:13px;max-width:580px}.hidden{display:none!important}footer{background:#fff;padding:20px 28px}.overlay{position:relative;max-width:var(--image-width);margin:auto;overflow:hidden;background:#fff}.overlay img{position:absolute;inset:0 auto auto 0;width:100%;height:auto}.overlay img:first-child{position:relative}#overlay-after{opacity:.5}@media(max-width:700px){header{padding:20px}h1{font-size:20px}.toolbar{padding:12px;gap:12px}label{max-width:100%}select{max-width:calc(100vw - 90px)}main{padding:12px}.stage{gap:10px}figcaption{font-size:12px;padding:8px}footer{padding:20px}}
+</style>
+</head>
+<body>
+<header>
+<h1>HAN XING · Satechi 整站视觉预览</h1>
+<p><a href="../factory-images-20261019/comparison.html">2026-10-19 更新：基于真实工厂素材的 7 张图片及五页前后对比</a></p>
+<p>31 个页面保留原有导航、业务内容与询盘路径。原版继续保留；本版本仅供本地审阅。</p>
+<p><a id="live" href="http://127.0.0.1:4340/" target="_blank" rel="noopener">打开新版可操作页面</a> · <a id="original-live" href="http://127.0.0.1:4335/" target="_blank" rel="noopener">打开对应原版</a> · <a href="../satechi-fidelity-20261018/comparison.html" target="_blank" rel="noopener">Satechi 首页参考对照</a></p>
+<p><a href="VISUAL-REVIEW.md">验收与差异记录</a> · <a href="DESIGN-EXTENSION.md">整站设计规则</a> · <a href="IMAGE-RECORD.json">20 张新增图片记录</a></p>
+</header>
+<div class="toolbar">
+<label>页面<select id="page" aria-label="页面"></select></label>
+<label>视口<select id="viewport" aria-label="视口"><option value="1440">1440 × 900</option><option value="1024">1024 × 768</option><option value="768">768 × 1024</option><option value="390">390 × 844</option></select></label>
+<label>方式<select id="mode" aria-label="对比方式"><option value="side">原版 / 新版并排</option><option value="single">只看新版</option><option value="overlay">半透明叠加</option></select></label>
+<label id="actual-control"><input id="actual" type="checkbox">原始尺寸</label>
+<label id="opacity-control" class="hidden">新版透明度<input id="opacity" type="range" min="0" max="100" value="50" aria-label="新版透明度"></label>
+<span id="status" role="status"></span>
+</div>
+<main>
+<div id="stage" class="stage">
+<figure id="before-figure"><figcaption>原版 · <a id="before-link" target="_blank" rel="noopener">完整截图</a></figcaption><img id="before" alt="原版页面的完整截图"></figure>
+<figure><figcaption>新版 · <a id="after-link" target="_blank" rel="noopener">完整截图</a></figcaption><img id="after" alt="Satechi 视觉预览完整页面截图"></figure>
+</div>
+<div id="overlay" class="overlay hidden"><img id="overlay-before" alt="原版底层"><img id="overlay-after" alt="新版叠加层"></div>
+</main>
+<footer>
+<p>全部 31 页有桌面及手机完整截图；8 个代表页面另有 1024 / 768px 检查。9 个代表页面提供原版桌面及手机对比。</p>
+<p>同一 CSS 视口、100% 缩放、字体加载完成后截图。浏览器滚动条会占用少量宽度；两图按原始比例展示，不拉伸高度。半透明叠加用于检查整体位置，内容重组后模块高度允许不同。</p>
+<p>生成图仅作为产品展示与通用场景，原始产品图库、生产影像及业务资料继续保留。询盘功能创建草稿，发送仍由用户完成。</p>
+</footer>
+<script>
+const q=id=>document.getElementById(id);
+const beforeRoutes=new Set(['/','/products/','/products/cbb60-motor-run-capacitor/','/applications/hvac-and-refrigeration/','/about/','/resources/articles/','/resources/read-motor-capacitor-label/','/contact/','/oem-quality/']);
+const middleRoutes=new Set(['/','/products/','/products/cbb65-air-conditioner-capacitor/','/applications/hvac-and-refrigeration/','/resources/articles/','/resources/read-motor-capacitor-label/','/contact/','/about/']);
+const names={'/':'首页','/about/':'About','/products/':'Products 总览','/resources/':'Resources 总览','/resources/articles/':'Technical guides','/applications/':'Applications 总览','/contact/':'Contact','/oem-quality/':'OEM & quality','/buying-guide/':'Buying & shipping','/factory/':'Manufacturing & quality','/factory/packing-and-dispatch/':'Packing & dispatch','/faq/':'Buyer FAQ'};
+let routes=[];
+function resizeOverlay(){const box=q('overlay'),a=q('overlay-before'),b=q('overlay-after');if(!box.classList.contains('hidden')&&a.naturalWidth&&b.naturalWidth)box.style.height=Math.max(a.naturalHeight/a.naturalWidth,b.naturalHeight/b.naturalWidth)*box.clientWidth+'px'}
+function update(){
+ const r=routes.find(r=>r.route===q('page').value)||routes[0];
+ for(const o of q('viewport').options)o.disabled=['1024','768'].includes(o.value)&&!middleRoutes.has(r.route);
+ if(q('viewport').selectedOptions[0].disabled)q('viewport').value='1440';
+ const width=q('viewport').value,hasBefore=beforeRoutes.has(r.route)&&['1440','390'].includes(width);
+ for(const o of q('mode').options)o.disabled=o.value!=='single'&&!hasBefore;
+ const requested=q('mode').value,mode=hasBefore?requested:'single',single=mode==='single',overlay=mode==='overlay';
+ document.documentElement.style.setProperty('--image-width',width+'px');
+ const after=`after/${r.slug}/${width}/candidate.png`;
+ q('after').src=q('overlay-after').src=q('after-link').href=after;
+ if(hasBefore){const before=`before-final/${r.slug}/${width}/candidate.png`;q('before').src=q('overlay-before').src=q('before-link').href=before}else{q('before').removeAttribute('src');q('overlay-before').removeAttribute('src')}
+ q('before-figure').classList.toggle('hidden',single);q('stage').classList.toggle('single',single);q('stage').classList.toggle('actual',q('actual').checked);q('stage').classList.toggle('hidden',overlay);q('overlay').classList.toggle('hidden',!overlay);q('opacity-control').classList.toggle('hidden',!overlay);q('actual-control').classList.toggle('hidden',overlay);
+ q('live').href='http://127.0.0.1:4340'+r.route;q('original-live').href='http://127.0.0.1:4335'+r.route;
+ q('status').textContent=hasBefore?'当前视口有原版与新版完整截图。':'当前展示新版完整截图；对应原版可通过上方链接打开。';resizeOverlay();
+}
+for(const id of ['page','viewport','mode','actual'])q(id).addEventListener('change',update);
+q('opacity').addEventListener('input',()=>q('overlay-after').style.opacity=q('opacity').value/100);
+for(const id of ['overlay-before','overlay-after'])q(id).addEventListener('load',resizeOverlay);
+new ResizeObserver(resizeOverlay).observe(q('overlay'));
+fetch('ROUTES.json').then(r=>r.json()).then(data=>{routes=data;for(const r of routes){const o=document.createElement('option');o.value=r.route;o.textContent=names[r.route]||r.route;q('page').append(o)}update()}).catch(()=>q('status').textContent='请通过本地 HTTP 对比页打开，以加载截图目录。');
+</script>
+</body></html>

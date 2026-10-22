@@ -1,0 +1,31 @@
+{
+  "tool": "built-in image_gen",
+  "purpose": "Illustrative product photography, never documentary evidence",
+  "assets": [
+    {
+      "name": "terminal-comparison",
+      "paths": [
+        "D:/Hangxing/workspace/public/images/real/cbb65-2.jpg",
+        "D:/Hangxing/workspace/public/images/real/cbb65-dual-run-7.jpg"
+      ],
+      "prompt": "Use case: precise-object-edit. Create one high-end editorial product-detail photograph for a Hanxing motor-capacitor technical guide, landscape 3:2. Images 1 and 2 are the physical product references: the single-run CBB65 has exactly TWO black terminal bases; the dual-run CBB65 has exactly THREE terminal bases including the green one. Remove the carton and tabletop clutter. Arrange these TWO source-faithful capacitors side by side on a quiet matte cool blue-grey surface, photographed from a high three-quarter angle so both terminal layouts are fully visible and occupy the main visual field. The upper halves of the silver cylinders, the crimped rims, black/green insulators and all blades must be complete, crisp and physically faithful. Preserve the Hanxing brand and original markings on any visible body portions; do not invent new wording, ratings or approval symbols. Soft directional daylight, believable brushed aluminum, restrained highlights, natural contact shadows, premium product photography with subtle material texture. This is an illustrative product comparison, not a test, installation, factory or customer photograph. No additional text, arrows, callouts, graphics, people, wires, decorative props, badges, glows or UI. Keep 10 percent breathing room around the terminal tips and outer sides; avoid two identically shaped terminal tops.",
+      "output": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-c76fc6fc-c9c2-4ef4-befb-832d161d4c35.png"
+    },
+    {
+      "name": "measurement-flatlay",
+      "paths": [
+        "D:/Hangxing/workspace/public/images/real/cbb60-hanxing-wired.jpg"
+      ],
+      "prompt": "Use case: precise-object-edit. Create ONE premium editorial still-life for a technical article about capacitor dimensions and connections. Landscape 3:2 composition, about 1536x1024 or larger. The supplied photograph is the physical reference for a white cylindrical Hanxing CBB60, with exactly two black flexible leads, exposed copper wire tips, and the source Hanxing logo and printed 35 microfarad plus/minus 5 percent, 450VAC markings. Keep that product's geometry, original branding and visible text faithful. Place the source-faithful capacitor lying gently on its side diagonally on a pale warm-grey precision work surface, with the complete black leads curved naturally and safely inside the frame. An unbranded stainless vernier caliper lies alongside, NOT clamped and NOT implying a measured result; do not display a digital reading or add dimensions. A small edge of plain blank paper may enter one corner. Overhead/slightly oblique photography, medium-close crop, soft window daylight from upper left, restrained cool metal reflections, fine real textures. Strong clear separation between white case, black wires and silver measuring tool. The product and tool fill around 70 percent of the image, with 10 percent margin; no stone plinth, no plant, no extra products, no hands, no engineering drawing, no UI, no added labels or decorative arrows. This is an illustrative product study, never an inspection or measurement record.",
+      "output": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-847741b6-3dc2-49d3-9345-248924efb8ac.png"
+    },
+    {
+      "name": "fit-panorama",
+      "paths": [
+        "D:/Hangxing/workspace/public/images/real/cbb65-2.jpg"
+      ],
+      "prompt": "Use case: precise-object-edit. Produce ONE very wide premium website editorial banner photograph, approximately 2.8:1 landscape, around 2688x960. This is a close-up of the exact Hanxing CBB65 capacitor in the reference: silver brushed cylindrical can, TWO black circular terminal bases with the original metal blades, crimped top rim, Hanxing logo and the original 20 microfarad plus/minus 5 percent / 450VAC printed label. Preserve the actual physical design and original branding; do not add terminal groups, components, certifications or alter printed data. Art direction: refined Satechi-like commercial product photography, a calm matte muted slate-blue studio background and matching work surface, natural soft daylight and controlled aluminum highlights. Place a single large capacitor on the RIGHT 45 percent of the image, with both terminal groups fully inside the frame, its upper two-thirds in close focus. The lower body can naturally exit the bottom edge. Leave the LEFT 48 percent quiet and uniformly pale blue-grey for dark HTML headline and button; keep subject, hard shadows and props out of that text area. No vignette, gradient overlay, text added to image, watermark, icons, diagrams, plants, caliper, hands, factory or extra products. The banner should have real photographic depth and a crisp focus on the terminals, with enough margin at top and right for responsive cropping. It is an illustrative material/detail study, not documentary evidence.",
+      "output": "C:\\Users\\Administrator\\.codex\\generated_images\\01a12e45-120c-7121-b105-37f6c2dcb9df\\exec-19f2320c-89ab-4dc0-abeb-8b3f2f240c4f.png"
+    }
+  ]
+}

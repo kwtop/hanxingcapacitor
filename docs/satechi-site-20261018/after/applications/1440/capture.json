@@ -1,0 +1,137 @@
+{
+  "bodyClass": "satechi-preview satechi-site",
+  "canonical": "https://www.hanxingcapacitor.com/applications/",
+  "clientWidth": 1425,
+  "fontsReady": true,
+  "h1": [
+    {
+      "box": {
+        "bottom": 262.8020935058594,
+        "height": 48,
+        "left": 60,
+        "right": 811.1979370117188,
+        "top": 214.80209350585935,
+        "width": 751.1979370117188,
+        "x": 60,
+        "y": 214.80209350585935
+      },
+      "font": "\"Manrope Preview\", Arial, sans-serif",
+      "line": "48px",
+      "size": "40px",
+      "text": "Applications"
+    }
+  ],
+  "headings": [
+    "Water pumps",
+    "Fans and blowers",
+    "Washing machines",
+    "Air conditioners / HVAC",
+    "Send your capacitor requirements."
+  ],
+  "height": 2323,
+  "images": [
+    {
+      "alt": "Illustration of a centrifugal water pump and motor.",
+      "box": {
+        "bottom": 609.84375,
+        "height": 174.25,
+        "left": 60,
+        "right": 321.375,
+        "top": 435.59375,
+        "width": 261.375,
+        "x": 60,
+        "y": 435.59375
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/application-pump.webp"
+    },
+    {
+      "alt": "Illustration of a ventilation fan and motor.",
+      "box": {
+        "bottom": 609.84375,
+        "height": 174.25,
+        "left": 724.3333740234375,
+        "right": 985.7083740234376,
+        "top": 435.59375,
+        "width": 261.375,
+        "x": 724.3333740234375,
+        "y": 435.59375
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/application-fan.webp"
+    },
+    {
+      "alt": "Illustration of a white front-loading washing machine.",
+      "box": {
+        "bottom": 892.4375,
+        "height": 174.25,
+        "left": 60,
+        "right": 321.375,
+        "top": 718.1875,
+        "width": 261.375,
+        "x": 60,
+        "y": 718.1875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/application-washing.webp"
+    },
+    {
+      "alt": "Illustration of an outdoor air-conditioning condenser.",
+      "box": {
+        "bottom": 892.4375,
+        "height": 174.25,
+        "left": 724.3333740234375,
+        "right": 985.7083740234376,
+        "top": 718.1875,
+        "width": 261.375,
+        "x": 724.3333740234375,
+        "y": 718.1875
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-site-20261018/application-hvac.webp"
+    },
+    {
+      "alt": "Illustrative arrangement of the four original capacitor formats.",
+      "box": {
+        "bottom": 1607.7604370117188,
+        "height": 494.9791870117187,
+        "left": 100,
+        "right": 594.9791870117188,
+        "top": 1112.78125,
+        "width": 494.9791870117187,
+        "x": 100,
+        "y": 1112.78125
+      },
+      "fit": "cover",
+      "loaded": true,
+      "position": "50% 50%",
+      "src": "/images/previews/satechi-fidelity-20261018/inquiry.webp"
+    }
+  ],
+  "robots": [
+    "noindex,nofollow,noarchive"
+  ],
+  "scrollWidth": 1425,
+  "title": "Motor capacitors by application | Hanxing Capacitor",
+  "url": "http://127.0.0.1:4340/applications/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 900,
+    "width": 1440
+  },
+  "capture": {
+    "method": "Tab.screenshot",
+    "fullPage": true,
+    "viewportCapability": true,
+    "clipScale": "browser CSS screenshot",
+    "rawCdpOverride": false
+  }
+}

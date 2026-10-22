@@ -1,0 +1,164 @@
+{
+  "background": "rgb(255, 255, 255)",
+  "headings": [
+    {
+      "box": {
+        "bottom": 192.40625,
+        "height": 1,
+        "left": 116.33333587646484,
+        "right": 117.33333587646484,
+        "top": 191.40625,
+        "width": 1,
+        "x": 116.33333587646484,
+        "y": 191.40625
+      },
+      "font": "urbane, sans-serif",
+      "line": "48px",
+      "size": "40px",
+      "text": "News",
+      "weight": "500"
+    },
+    {
+      "box": {
+        "bottom": 953.2083549499512,
+        "height": 33.60416793823242,
+        "left": 117.33333587646484,
+        "right": 199.18750762939453,
+        "top": 919.6041870117188,
+        "width": 81.85417175292969,
+        "x": 117.33333587646484,
+        "y": 919.6041870117188
+      },
+      "font": "urbane, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "News",
+      "weight": "500"
+    },
+    {
+      "box": {
+        "bottom": 2717.7604179382324,
+        "height": 33.60416793823242,
+        "left": 117.33333587646484,
+        "right": 320.53125762939453,
+        "top": 2684.15625,
+        "width": 203.1979217529297,
+        "x": 117.33333587646484,
+        "y": 2684.15625
+      },
+      "font": "urbane, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "New Products",
+      "weight": "500"
+    },
+    {
+      "box": {
+        "bottom": 4482.312664031982,
+        "height": 33.60416793823242,
+        "left": 117.33333587646484,
+        "right": 363.5937576293946,
+        "top": 4448.70849609375,
+        "width": 246.2604217529297,
+        "x": 117.33333587646484,
+        "y": 4448.70849609375
+      },
+      "font": "urbane, sans-serif",
+      "line": "33.6px",
+      "size": "28px",
+      "text": "Shopping Guides",
+      "weight": "500"
+    }
+  ],
+  "images": [
+    {
+      "alt": "The Complete iPhone 18 Charger and Accessory Guide 2026",
+      "box": {
+        "bottom": 806.40625,
+        "height": 571,
+        "left": 133.33334350585938,
+        "right": 704.3333435058594,
+        "top": 235.40625,
+        "width": 571,
+        "x": 133.33334350585938,
+        "y": 235.40625
+      },
+      "radius": "0px"
+    },
+    {
+      "alt": "Power You Can See: The 240W USB-C Charger for Your Desk",
+      "box": {
+        "bottom": 1364.0729370117188,
+        "height": 348.66668701171875,
+        "left": 133.33334350585938,
+        "right": 482.0000305175781,
+        "top": 1015.40625,
+        "width": 348.66668701171875,
+        "x": 133.33334350585938,
+        "y": 1015.40625
+      },
+      "radius": "0px"
+    },
+    {
+      "alt": "Color your Semester: The MacBook Accessories made for your Neo",
+      "box": {
+        "bottom": 1364.0729370117188,
+        "height": 348.66668701171875,
+        "left": 538,
+        "right": 886.6666870117188,
+        "top": 1015.40625,
+        "width": 348.66668701171875,
+        "x": 538,
+        "y": 1015.40625
+      },
+      "radius": "0px"
+    },
+    {
+      "alt": "Meet the 3 Accessories Made for Your MacBook Neo",
+      "box": {
+        "bottom": 1364.0729370117188,
+        "height": 348.66668701171875,
+        "left": 942.6666870117188,
+        "right": 1291.3333740234375,
+        "top": 1015.40625,
+        "width": 348.66668701171875,
+        "x": 942.6666870117188,
+        "y": 1015.40625
+      },
+      "radius": "0px"
+    },
+    {
+      "alt": "DotDisk™: An 80Gbps NVMe SSD Enclosure That Keeps Up",
+      "box": {
+        "bottom": 1883.125061035156,
+        "height": 348.66668701171875,
+        "left": 133.33334350585938,
+        "right": 482.0000305175781,
+        "top": 1534.4583740234375,
+        "width": 348.66668701171875,
+        "x": 133.33334350585938,
+        "y": 1534.4583740234375
+      },
+      "radius": "0px"
+    },
+    {
+      "alt": "ChargeView™ 140W desktop charger featuring a digital power display, simultaneously charging a laptop and smartphone on a clean home office desk.",
+      "box": {
+        "bottom": 1883.125061035156,
+        "height": 348.66668701171875,
+        "left": 538,
+        "right": 886.6666870117188,
+        "top": 1534.4583740234375,
+        "width": 348.66668701171875,
+        "x": 538,
+        "y": 1534.4583740234375
+      },
+      "radius": "0px"
+    }
+  ],
+  "url": "https://satechi.com/blogs/news",
+  "viewport": [
+    1440,
+    900
+  ]
+}

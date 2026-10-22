@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import SatechiHome from '../components/satechi-preview/SatechiHome.astro';
+import { isSatechiPreview } from '../lib/visualPreview';
 import InquiryCallout from '../components/InquiryCallout.astro';
 import { products, productHref, applications, applicationHref } from '../data/site';
 import '../styles/home-reference.css';
@@ -8,12 +10,12 @@ const studio = (code: string) => `/images/reference-20261012/${code.toLowerCase(
 const selectionGuides = [
   { title: 'Read the capacitor label', detail: 'Find the µF, VAC and other markings needed for a replacement.', href: '/resources/read-motor-capacitor-label/' },
   { title: 'Dimensions & connections', detail: 'Check the case, mounting space and terminal arrangement.', href: '/resources/dimensions-terminals-mounting/' },
-  { title: 'Start or run?', detail: 'Understand which duty the motor circuit requires.', href: '/resources/start-vs-run-capacitors/' },
+  { title: 'Run and start duty', detail: 'Understand which duty the motor circuit requires.', href: '/resources/start-vs-run-capacitors/' },
   { title: 'Single or dual run', detail: 'Read the two independent values on a dual-run capacitor.', href: '/resources/single-vs-dual-run-capacitors/' },
 ];
 ---
 <BaseLayout title="Motor Run & Start Capacitors | HAN XING" description="CBB60, CBB61 and CBB65 run capacitors and CD60 start capacitors for equipment sourcing. Compare ratings, case formats and sample photos from HAN XING.">
-<div class="home-selected">
+{isSatechiPreview ? <SatechiHome /> : <div class="home-selected">
   <section class="selected-hero" aria-labelledby="home-title">
     <img class="selected-hero-image" src="/images/home-selected-20261012/hero-four-warm-v2.png" alt="Illustrative studio composition of four capacitor samples: wired CBB60, rectangular CBB61, metal-can CBB65 and CD60." width="1817" height="866" fetchpriority="high" />
     <div class="container selected-hero-copy"><h1 id="home-title">Motor capacitors<br />for equipment<br />manufacturers</h1><a class="button" href="/products/">Compare capacitor series</a></div>
@@ -49,6 +51,6 @@ const selectionGuides = [
     </section>
   </div>
   <InquiryCallout id="home-inquiry" defaultSeries="CBB60" />
-</div>
+</div>}
 </BaseLayout>
 

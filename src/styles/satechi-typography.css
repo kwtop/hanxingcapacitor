@@ -1,0 +1,96 @@
+/* Final typography owner for the local preview. Values follow the live Satechi
+   study; layout exceptions describe a visual role, rather than a page's age.
+   The important type values intentionally supersede legacy route rules. */
+body.satechi-site #main {
+ --ss-type-title:40px; --ss-type-section:28px; --ss-type-subsection:20px;
+ --ss-type-label:18px; --ss-type-small-heading:22px; --ss-section-leading:1.2;
+ --ss-display-tracking:-.01em; --ss-cta-size:15px;
+}
+body.satechi-site #main :is(h1,h2,h3) { letter-spacing:normal!important; text-wrap:balance; }
+/* Small metric compensation for Manrope; the reference's Urbane uses normal tracking. */
+body.satechi-site #main :is(h1,h2) { letter-spacing:var(--ss-display-tracking)!important; }
+body.satechi-site #main h1 { font-size:var(--ss-type-title)!important; line-height:1.2!important; }
+body.satechi-site #main h2 { font-size:var(--ss-type-section)!important; line-height:var(--ss-section-leading)!important; }
+body.satechi-site #main h3 { font-size:var(--ss-type-subsection)!important; line-height:1.3!important; }
+/* A carousel slide remains a display heading even when its HTML element is h2. */
+body.satechi-site #main .sp-hero :is(h1,h2) { font-size:var(--ss-type-title)!important; line-height:1.2!important; }
+body.satechi-site #main :is(.ha-section-heading,.sp-applications) h2 { max-width:34ch; width:100%; margin-inline:auto; text-align:center; }
+body.satechi-site #main .ha-section-heading p { max-width:58ch; margin:12px auto 0; font-size:14px; line-height:1.5; text-align:center; }
+body.satechi-site #main .sp-hero-description { text-wrap:pretty; }
+/* Primary body actions share one type scale; menus and footer retain their own roles. */
+body.satechi-site #main :is(.button,.pdr-button,.hvr-button,.pdr-secondary,.hvr-secondary) { font-size:var(--ss-cta-size)!important; font-weight:600!important; line-height:1.2!important; letter-spacing:.04em!important; padding:12px 24px; min-height:44px; white-space:normal; }
+
+/* Overview introductions are one centered block. Photo-led feature copy,
+   article bodies, specifications, source captions and forms keep their own axis. */
+body.satechi-site #main .resource-hub .page-hero { text-align:center; padding-bottom:48px; }
+body.satechi-site #main .resource-hub .page-hero>.container { display:block; }
+body.satechi-site #main .resource-hub .page-hero .breadcrumbs { margin-bottom:28px; text-align:left; }
+body.satechi-site #main .resource-hub .page-hero h1 { width:100%; max-width:30ch; margin:0 auto; text-align:center; }
+body.satechi-site #main .resource-hub .page-hero .lead { max-width:56ch; margin:18px auto 0; font-size:16px; line-height:1.5; text-align:center; }
+body.satechi-site #main .procurement-hub .procurement-hero h1 { max-width:30ch; margin-inline:auto; text-align:center; }
+body.satechi-site #main :is(.catalog-comparison,.pdr-related)>h2,
+body.satechi-site #main .catalog-comparison>.container>h2 { max-width:none; text-align:center; }
+
+/* Homepage series copy follows the photograph's center axis. */
+body.satechi-site #main .ha-series-copy h3 { width:auto; max-width:none; margin:0; font-size:18px!important; line-height:1.3!important; text-align:center; }
+body.satechi-site #main .series-catalog .card-title { width:100%; max-width:none; margin-inline:auto; text-align:center; }
+body.satechi-site #main .series-catalog .card-title { font-size:var(--ss-type-subsection)!important; line-height:1.3!important; }
+body.satechi-site #main .series-catalog .series-name { font-size:16px; line-height:1.4; }
+body.satechi-site #main .series-catalog .catalog-duty { text-align:center; }
+body.satechi-site #main :is(.ha-series-purpose,.ha-series-ratings) { text-align:center; }
+body.satechi-site #main :is(.catalog-purpose,.catalog-ratings) { text-align:left; }
+body.satechi-site #main .ha-source-copy { text-align:center; }
+body.satechi-site #main .ha-source-copy h3 { max-width:none; }
+body.satechi-site #main .application-directory .card-body { text-align:center; }
+body.satechi-site #main .application-directory .card-title { max-width:none; font-size:var(--ss-type-small-heading)!important; }
+body.satechi-site #main .application-directory .application-series { max-width:42ch; margin-inline:auto; }
+body.satechi-site #main .resource-hub-routes>a { text-align:center; }
+body.satechi-site #main .resource-hub-routes h2 { max-width:none; font-size:var(--ss-type-small-heading)!important; }
+body.satechi-site #main .resource-hub-routes p { max-width:38ch; margin-inline:auto; line-height:1.6; }
+body.satechi-site #main .procurement-routes>article:not(:first-child) { text-align:center; }
+body.satechi-site #main .procurement-routes>article:not(:first-child)>h2 { max-width:26ch; margin-inline:auto; font-size:var(--ss-type-small-heading)!important; }
+body.satechi-site #main .procurement-routes>article:not(:first-child)>p { max-width:48ch; margin-inline:auto; }
+
+/* Smaller roles stay smaller; a photo caption is not a section headline. */
+body.satechi-site #main :is(.ha-guide-topic-lead,.pdr-applications,.hvr-circuit-paths) h3 { font-size:var(--ss-type-label)!important; }
+body.satechi-site #main .review-guide-photo h3 { font-size:16px!important; line-height:1.3!important; }
+body.satechi-site #main .sp-application h3 { font-size:18px!important; line-height:1.35!important; }
+body.satechi-site #main .ss-source-story .sp-story h3 { font-size:var(--ss-type-section)!important; line-height:1.2!important; }
+body.satechi-site #main :is(.faq-group,.ss-guide-index .resource-hub-section)>h2 { font-size:var(--ss-type-small-heading)!important; line-height:1.25!important; }
+body.satechi-site #main :is(.ss-featured-guide-copy,.ss-product-story>div,.ss-product-applications>div)>p { max-width:48ch; line-height:1.6; }
+body.satechi-site #main :is(.review-guide-article,.procurement-readable) p { max-width:68ch; line-height:1.7; }
+body.satechi-site #main :is(.review-guide-section,.pdr-section,.hvr-section)>h2 { line-height:1.25!important; }
+
+@media(max-width:800px) {
+ body.satechi-site #main { --ss-type-title:32px; --ss-type-section:24px; }
+ body.satechi-site #main :is(.procurement-about,.procurement-packing) .procurement-hero .procurement-lead { margin-top:0; }
+}
+@media(min-width:601px) and (max-width:800px) {
+ body.satechi-site #main .ss-article-introduction { grid-template-columns:1fr; gap:24px; }
+ body.satechi-site #main .ss-article-introduction h1 { max-width:26ch; }
+ body.satechi-site #main .ss-article-introduction .ss-guide-cover img { aspect-ratio:1.5; }
+}
+@media(max-width:600px) {
+ body.satechi-site #main { --ss-type-title:28px; --ss-type-section:22px; --ss-type-subsection:18px; --ss-section-leading:1.1; --ss-cta-size:14px; }
+ body.satechi-site #main .ha-series-copy h3 { font-size:16px!important; }
+ body.satechi-site #main .resource-hub .page-hero { padding-bottom:32px; }
+ body.satechi-site #main .resource-hub .page-hero .lead { max-width:38ch; margin-top:16px; font-size:15px; line-height:1.6; }
+ body.satechi-site #main .ha-section-heading p { max-width:36ch; font-size:14px; line-height:1.5; }
+ body.satechi-site #main .series-catalog .series-name { font-size:14px; line-height:1.4; }
+ body.satechi-site #main .sp-application h3 { font-size:14px!important; }
+ body.satechi-site #main .procurement-hero h1 { width:100%; max-width:none; text-align:center; }
+ body.satechi-site #main .procurement-hero .procurement-lead { max-width:40ch; margin-inline:auto; text-align:center; }
+ body.satechi-site #main .procurement-oem-hero>div { text-align:center; }
+ body.satechi-site #main .procurement-oem-hero .ss-media-lead { margin-inline:auto; text-align:center; }
+ body.satechi-site #main .procurement-hero .procurement-actions { width:100%; justify-content:center; gap:12px; margin-inline:auto; }
+ body.satechi-site #main .rfq-hero-copy { text-align:center; }
+ body.satechi-site #main .rfq-hero-copy .ss-media-lead { margin-inline:auto; }
+ body.satechi-site #main .ss-faq-intro>div { text-align:center; }
+ body.satechi-site #main .ss-faq-intro h1 { max-width:none; }
+ body.satechi-site #main .ss-faq-jump { justify-content:center; }
+ body.satechi-site #main .contact-focused-intro>h1 { width:100%; max-width:none; text-align:center; }
+ body.satechi-site #main .sp-home-a .ha-guide-copy>h2 { width:100%; max-width:none; text-align:center; }
+ body.satechi-site #main .sp-home-a .ha-guide-copy>p { max-width:38ch; margin-inline:auto; text-align:center; }
+ body.satechi-site #main .sp-home-a .inquiry-callout-heading { width:100%; max-width:none; text-align:center; }
+ body.satechi-site #main .sp-home-a .inquiry-callout-description { max-width:36ch; margin-inline:auto; text-align:center; }
+}

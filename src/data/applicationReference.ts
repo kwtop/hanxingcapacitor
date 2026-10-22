@@ -20,12 +20,12 @@ type ApplicationReferenceContent = {
 
 export const applicationReference: Record<string, ApplicationReferenceContent> = {
   'pumps-and-water-systems': {
-    lead: 'Check which capacitor the pump motor actually uses.',
-    decision: 'A pump motor may specify a run capacitor, a separately switched start capacitor, or both. Check the wiring diagram before comparing CBB60 and CD60; the two duties cannot substitute for each other.',
+    lead: 'Identify the capacitor duty in the pump motor circuit.',
+    decision: 'Use the motor wiring diagram to identify run duty, switched start duty or both. CBB60 and CD60 have different circuit roles.',
     comparisonTitle: 'Run and start capacitors for pump motors',
-    comparisonIntro: 'Once the circuit is identified, compare the original capacitor rating and mounting space with the series below.',
+    comparisonIntro: 'Match the original µF and VAC, then compare case dimensions and connections.',
     functions: {
-      CBB60: 'Run duty, where specified by the pump motor manufacturer.',
+      CBB60: 'Run duty for the pump motor circuit.',
       CD60: 'Start duty in a circuit that switches the capacitor out after starting.',
     },
     confirmations: {
@@ -34,10 +34,10 @@ export const applicationReference: Record<string, ApplicationReferenceContent> =
     },
     showDimensions: false,
     paths: [
-      { title: 'Run', text: 'For a motor that specifies run duty, compare CBB60 with the original run capacitor.', href: '/products/cbb60-motor-run-capacitor/', link: 'CBB60 run capacitors' },
-      { title: 'Start', text: 'For a separately switched start circuit, compare CD60 and ask for the model’s starting-duty limits.', href: '/products/cd60-start-capacitor/', link: 'CD60 start capacitors' },
+      { title: 'Run', text: 'Match a CBB60 to the original run-capacitor rating and connections.', href: '/products/cbb60-motor-run-capacitor/', link: 'CBB60 run capacitors' },
+      { title: 'Start', text: 'Use CD60 in a switched starting circuit, within its rated starting time and interval between starts.', href: '/products/cd60-start-capacitor/', link: 'CD60 start capacitors' },
       { title: 'Both', text: 'List the two parts separately. Each needs its own µF, VAC, connections and position on the motor diagram.', href: '/resources/start-vs-run-capacitors/', link: 'Start and run explained' },
-      { title: 'Unknown', text: 'Send the original labels and motor diagram. A pump name alone cannot identify capacitor duty.', href: '/contact/?application=pumps-and-water-systems&request=quote#inquiry-form', link: 'Ask about the original part' },
+      { title: 'Identify the duty', text: 'Send the capacitor labels and motor wiring diagram to identify the duty.', href: '/contact/?application=pumps-and-water-systems&request=quote#inquiry-form', link: 'Ask about the original part' },
     ],
     fitChecks: [
       ['Body and base stud', 'Measure body diameter, height, stud and fixing dimensions against the proposed model drawing.'],
@@ -58,12 +58,12 @@ export const applicationReference: Record<string, ApplicationReferenceContent> =
   },
   'fans-and-ventilation': {
     lead: 'The rating and case both have to suit the motor.',
-    decision: 'Use the original label and circuit to confirm the run rating. Then check the case and connections at the mounting point; matching the µF value alone is not enough.',
+    decision: 'The original label gives the rating. The motor diagram and mounting space determine the connection layout and case format.',
     comparisonTitle: 'Run-capacitor formats for fan motors',
-    comparisonIntro: 'Both series are for run duty. Use the motor specification to choose the rating and the available mounting space to check the case format.',
+    comparisonIntro: 'Both series are run capacitors. Choose the rating from the motor specification and the case format from the installation space.',
     functions: {
-      CBB61: 'Rectangular run capacitor for fan and blower motors that specify this format.',
-      CBB60: 'Cylindrical run capacitor, subject to the motor specification and available space.',
+      CBB61: 'Rectangular run format for fan and blower motors.',
+      CBB60: 'Cylindrical run format for the specified motor circuit.',
     },
     confirmations: {
       CBB61: 'Rectangular case; verify mounting tabs and the lead or blade-terminal arrangement.',
@@ -73,7 +73,7 @@ export const applicationReference: Record<string, ApplicationReferenceContent> =
     paths: [
       { title: 'Motor rating', text: 'Find run duty, µF and VAC in the motor specification and original capacitor label.', href: '/resources/read-motor-capacitor-label/', link: 'Read the capacitor label' },
       { title: 'Rectangular case', text: 'Compare CBB61 case size and mounting tabs, then check the blade or wire connections against the drawing.', href: '/products/cbb61-fan-capacitor/', link: 'CBB61 fan capacitors' },
-      { title: 'Cylindrical case', text: 'CBB60 needs the rating and format specified by the motor, with enough room for the case and connections.', href: '/products/cbb60-motor-run-capacitor/', link: 'CBB60 run capacitors' },
+      { title: 'Cylindrical case', text: 'Compare the CBB60 body, fixing and lead clearance with the available mounting space.', href: '/products/cbb60-motor-run-capacitor/', link: 'CBB60 run capacitors' },
     ],
     fitChecks: [
       ['Case and mounting tabs', 'Record L / W / H for a rectangular case or D / H for a cylindrical body. Include fixing positions and the available mounting space.'],
@@ -94,12 +94,12 @@ export const applicationReference: Record<string, ApplicationReferenceContent> =
   },
   'appliances-and-small-motors': {
     lead: 'Start with the motor served by the capacitor.',
-    decision: 'A washing machine may contain more than one motor. Identify the one that uses the capacitor, then check the original part’s duty, rating, wiring and mounting space.',
+    decision: 'Identify the motor connected to the capacitor. Use its label and wiring diagram to record the duty, rating and connection layout.',
     comparisonTitle: 'Run-capacitor formats for appliance motors',
-    comparisonIntro: 'CBB60 and CBB61 are run series. Consider them only where the motor specifies run duty and the case and connections fit the appliance.',
+    comparisonIntro: 'Compare these run-capacitor formats against the motor specification and available installation space.',
     functions: {
-      CBB60: 'Cylindrical run format for single-phase appliance motors that specify it.',
-      CBB61: 'Compact rectangular run format, subject to the motor and installation requirements.',
+      CBB60: 'Cylindrical run format for single-phase appliance motors.',
+      CBB61: 'Compact rectangular run format for appliance motors.',
     },
     confirmations: {
       CBB60: 'Cylindrical body; verify fixing and lead clearance.',
@@ -107,16 +107,16 @@ export const applicationReference: Record<string, ApplicationReferenceContent> =
     },
     showDimensions: false,
     paths: [
-      { title: 'Appliance and motor', text: 'Identify the appliance and the motor served by the capacitor. Other motors in the same appliance may need different parts.', href: '/resources/read-motor-capacitor-label/', link: 'Read the original label' },
-      { title: 'Original capacitor', text: 'Copy duty, µF and VAC, then add wiring and installed dimensions. Mark unclear fields as unknown.', href: '/buying-guide/#rfq-template', link: 'Quotation checklist' },
-      { title: 'Case format', text: 'With the motor requirement and wiring identified, compare cylindrical CBB60 and rectangular CBB61 cases.', href: '/products/', link: 'Compare product series' },
+      { title: 'Appliance and motor', text: 'Record the appliance model and the motor connected to the capacitor.', href: '/resources/read-motor-capacitor-label/', link: 'Read the original label' },
+      { title: 'Original capacitor', text: 'Record duty, µF, VAC, wiring and installed dimensions. Attach a clear photo of any unreadable marking.', href: '/buying-guide/#rfq-template', link: 'Quotation checklist' },
+      { title: 'Case format', text: 'Compare CBB60 cylindrical and CBB61 rectangular cases against the available mounting space.', href: '/products/', link: 'Compare product series' },
     ],
     fitChecks: [
       ['Original labels', 'Send the capacitor label and motor plate for the specific motor being serviced. Copy its required ratings into the inquiry.'],
       ['Wiring and connector', 'Include the wiring diagram, lead or blade arrangement and connector. Parts with the same wire count can have different connections.'],
       ['Installed dimensions', 'Measure the case and fixing points, including clearance inside the appliance for the connections.'],
     ],
-    inquiryFields: ['Appliance model and the motor served by the capacitor.', 'Original capacitor label and motor plate; mark unreadable fields as unknown.', 'Duty, µF / VAC and original wiring diagram.', 'Installed dimensions, fixing and connection format.', 'Initial quantity or forecast and destination country / market.'],
+    inquiryFields: ['Appliance model and the motor served by the capacitor.', 'Original capacitor label and motor plate, including any unreadable markings.', 'Duty, µF / VAC and original wiring diagram.', 'Installed dimensions, fixing and connection format.', 'Initial quantity or forecast and destination country / market.'],
     checks: [
       ['Equipment, motor and rating', 'Identify the appliance and specific motor served. Provide its specification or diagram and record the original duty, capacitance and rated voltage.'],
       ['Original part record', 'Include clear capacitor-label, side and connection photographs, or the original drawing.'],

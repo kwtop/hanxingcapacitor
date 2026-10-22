@@ -1,0 +1,45 @@
+---
+import { sampleEvidence, sampleEvidenceNotes } from '../data/sampleEvidence';
+interface Props { series: string; }
+const { series } = Astro.props;
+const records = sampleEvidence.filter(sample => sample.series === series);
+---
+<div class="sample-evidence" aria-label={`${series} photographed sample records`}>
+  <div class="sample-evidence-table">
+    <table>
+      <caption>{series} · sample label ratings</caption>
+      <thead><tr><th scope="col">Photo reference</th><th scope="col">Capacitance</th><th scope="col">Rated AC voltage</th><th scope="col">Tolerance / frequency</th><th scope="col">Visible connection</th><th scope="col">Inquiry</th></tr></thead>
+      <tbody>{records.map(sample => <tr>
+        <th scope="row">{sample.reference}<span>{sample.location}</span></th>
+        <td data-label="Capacitance">{sample.capacitance}</td>
+        <td data-label="Rated AC voltage">{sample.voltage}</td>
+        <td data-label="Tolerance / frequency"><span>{sample.tolerance}<br />{sample.frequency}</span></td>
+        <td data-label="Visible connection">{sample.connection}</td>
+        <td data-label="Inquiry"><a class="sample-evidence-action" href={`/contact/?series=${series}&configuration=${sample.id}&request=documents#inquiry-form`}>Request model details</a></td>
+      </tr>)}</tbody>
+    </table>
+  </div>
+  <p class="sample-evidence-note">{sampleEvidenceNotes[series]}</p>
+  <p class="sample-evidence-note">Use the <a href="/resources/dimensions-terminals-mounting/#measure-the-space-available">dimension checklist</a> to record case, mounting and connection measurements in mm.</p>
+</div>
+<style>
+ .sample-evidence{margin:24px 0 36px}
+ .sample-evidence-intro,.sample-evidence-note{font-size:14px;line-height:1.6;color:#535a60;max-width:66ch!important}
+ .sample-evidence-intro{margin:0 0 18px}.sample-evidence-note{margin:14px 0 0}
+ .sample-evidence-table table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.5;text-align:left}
+ .sample-evidence-table caption{text-align:left;font-size:14px;font-weight:600;margin-bottom:12px;color:#30363a}
+ .sample-evidence-table :is(th,td){padding:16px 14px;border-bottom:1px solid #dce0e2;vertical-align:top}
+ .sample-evidence-table thead{background:#eeefec}.sample-evidence-table th{font-weight:550}
+ .sample-evidence-table th span{display:block;font-size:13px;font-weight:400;color:#596167;margin-top:6px}
+ .sample-evidence-table a,.sample-evidence-note a{text-decoration:underline;text-underline-offset:3px}
+ .sample-evidence-table .sample-evidence-action{display:inline-flex;border:1px solid #899299;border-radius:2px;padding:9px 12px;text-decoration:none;font-size:13px;line-height:1.5;max-width:180px}
+ .sample-evidence-action:hover{background:#e9ece7}
+ @media(max-width:800px){
+  .sample-evidence-table :is(table,tbody,tr,th,td){display:block;width:100%}.sample-evidence-table thead{display:none}
+  .sample-evidence-table tr{padding:18px 0;border-top:1px solid #d5dadd}.sample-evidence-table :is(th,td){border:0;padding:7px 0}
+  .sample-evidence-table tbody th{font-size:16px;padding-bottom:12px}.sample-evidence-table td{display:grid;grid-template-columns:1fr 1.2fr;gap:12px}
+  .sample-evidence-table td::before{content:attr(data-label);color:#60686e;font-weight:400}
+  .sample-evidence-table caption{display:block;width:100%}
+  .sample-evidence-intro,.sample-evidence-note{font-size:14px}
+ }
+</style>

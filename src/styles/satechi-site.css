@@ -1,0 +1,693 @@
+/* Local whole-site extension of the measured Satechi study. Activated by dev:visual only. */
+body.satechi-site { --ink:var(--sp-ink); --muted:var(--sp-muted); --accent:var(--sp-ink); --line:var(--sp-line); --paper:var(--sp-canvas); --font-heading:var(--sp-heading); --max-width:1360px; }
+body.satechi-site #main { padding-top:112px; min-height:65vh; }
+body.satechi-site.is-home #main { padding-top:0; }
+body.satechi-site { --ss-radius:20px; }
+body.satechi-site #main :is(h1,h2,h3,h4) { font-family:var(--sp-heading)!important; font-weight:500!important; letter-spacing:0; text-transform:none; }
+body.satechi-site:not(.is-home) #main :is(h1,h2,h3,h4) { color:var(--sp-ink); }
+/* The header starts as part of the photograph, then becomes a floating surface. */
+body.satechi-site .site-header.sp-header {
+ --sp-header-inset:0px; --sp-header-top:0px; --sp-header-height:88px; --sp-header-padding:clamp(24px,4.1667vw,80px); --sp-header-inner-gap:32px; --sp-header-nav-gap:26px; --sp-header-nav-size:15px;
+ position:fixed!important; top:var(--sp-header-top)!important; left:var(--sp-header-inset)!important; width:calc(100% - var(--sp-header-inset) - var(--sp-header-inset))!important; height:var(--sp-header-height)!important; z-index:100; border:0!important; border-radius:0!important; background:transparent!important; box-shadow:none!important; backdrop-filter:none!important;
+ transition:top .32s cubic-bezier(.22,1,.36,1),left .32s cubic-bezier(.22,1,.36,1),width .32s cubic-bezier(.22,1,.36,1),height .32s cubic-bezier(.22,1,.36,1),border-radius .32s,background-color .2s,box-shadow .2s;
+}
+body.satechi-site .site-header.sp-header.is-scrolled { --sp-header-top:16px; --sp-header-inset:clamp(24px,4vw,64px); --sp-header-height:72px; --sp-header-padding:28px; border-radius:12px!important; background:rgb(255 255 255 / 94%)!important; box-shadow:0 3px 16px rgb(0 0 0 / 9%)!important; backdrop-filter:blur(14px)!important; }
+body.satechi-site .site-header.sp-header:has(:focus-visible),
+body.satechi-site .site-header.sp-header:has(.nav-link[aria-expanded='true'],.menu-toggle[aria-expanded='true']) { background:rgb(255 255 255 / 97%)!important; box-shadow:0 3px 16px rgb(0 0 0 / 9%)!important; backdrop-filter:blur(14px)!important; }
+body.satechi-site .sp-header .header-inner { width:100%!important; max-width:none!important; min-height:0!important; height:100%!important; padding:0 var(--sp-header-padding)!important; margin:0!important; transition:padding .32s cubic-bezier(.22,1,.36,1); }
+/* Route-level legacy styles must not hide the wordmark or compact product-page menus. */
+body.satechi-site .site-header.sp-header .header-inner { gap:var(--sp-header-inner-gap)!important; }
+body.satechi-site .site-header.sp-header .brand-wordmark { display:block; }
+body.satechi-site .site-header.sp-header .desktop-nav { gap:var(--sp-header-nav-gap)!important; }
+body.satechi-site .site-header.sp-header .nav-link { font:500 var(--sp-header-nav-size)/1.4 var(--font-body)!important; }
+body.satechi-site .sp-header .desktop-nav { height:100%; align-items:stretch; }
+body.satechi-site .sp-header .nav-item { display:flex; align-items:center; height:100%; }
+body.satechi-site .sp-header .nav-link { position:relative; isolation:isolate; height:100%; padding-block:0!important; color:var(--sp-ink); text-decoration:none!important; }
+body.satechi-site .sp-header .nav-link::before { content:''; position:absolute; inset:calc(50% - 22px) -9px; z-index:-1; border-radius:6px; background:#f1eee8; opacity:0; transition:opacity .18s; pointer-events:none; }
+body.satechi-site .sp-header .nav-link::after { content:''; position:absolute; left:0; right:0; bottom:calc(50% - 17px); height:1px; background:currentColor; transform:scaleX(0); transform-origin:left; transition:transform .2s; pointer-events:none; }
+body.satechi-site .sp-header .nav-link:is([aria-current='page'],[aria-expanded='true'],:focus-visible)::after { transform:scaleX(1); }
+body.satechi-site .sp-header .nav-link:is([aria-expanded='true'],:focus-visible)::before { opacity:1; }
+body.satechi-site .sp-header :is(a,button):focus-visible { outline:2px solid var(--sp-ink); outline-offset:4px; }
+body.satechi-site .sp-header .brand { transition:opacity .18s; }
+body.satechi-site .sp-header .menu-toggle { border-radius:6px; transition:background-color .18s; }
+body.satechi-site .sp-header .menu-toggle[aria-expanded='true'] { background:#f1eee8; }
+/* Dropdowns share the floating header surface; the invisible bridge preserves hover. */
+body.satechi-site .site-header.sp-header .nav-dropdown {
+ top:calc(100% + 8px); left:-16px; min-width:280px; max-width:calc(100vw - 40px); padding:0; border:1px solid #e6e4df; border-radius:12px; background:rgb(255 255 255 / 98%); box-shadow:0 10px 28px rgb(27 28 33 / 10%); overflow:visible;
+ opacity:0; transform:translateY(-6px); pointer-events:none; transition:opacity 160ms ease,transform 160ms cubic-bezier(.22,1,.36,1);
+}
+body.satechi-site .site-header.sp-header .nav-dropdown::before { content:''; position:absolute; left:0; right:0; top:-10px; height:10px; }
+body.satechi-site .site-header.sp-header .nav-dropdown[data-state='open'] { opacity:1; transform:translateY(0); pointer-events:auto; transition-duration:200ms,220ms; }
+body.satechi-site .site-header.sp-header .nav-dropdown-links { display:grid; gap:2px; padding:8px; max-height:calc(100dvh - var(--sp-header-top) - var(--sp-header-height) - 24px); overflow-y:auto; overscroll-behavior:contain; scrollbar-width:thin; }
+body.satechi-site .site-header.sp-header .nav-dropdown a { display:flex; align-items:center; min-height:48px; padding:12px 14px; border:0; border-radius:7px; color:var(--sp-ink); background:transparent; font:500 14px/1.5 var(--font-body); text-decoration:none!important; transition:background-color 160ms ease; }
+body.satechi-site .site-header.sp-header .nav-dropdown a[aria-current='page'] { background:#f1eee8; font-weight:600; }
+body.satechi-site .site-header.sp-header .nav-dropdown a:focus-visible { background:#f1eee8; outline-offset:-2px; }
+@media(hover:hover) and (pointer:fine) {
+ body.satechi-site .site-header.sp-header .nav-dropdown a:hover { background:#f1eee8; }
+}
+@media(max-width:1020px) {
+ body.satechi-site .site-header.sp-header .has-menu-motion .mobile-menu-motion {
+  padding:8px; border:1px solid #e6e4df; border-radius:12px; background:#fff; box-shadow:0 10px 28px rgb(27 28 33 / 10%); overscroll-behavior:contain; scrollbar-width:thin;
+  opacity:0; transform:translateY(-6px); visibility:hidden; pointer-events:none; transition:opacity 160ms ease,transform 220ms cubic-bezier(.22,1,.36,1),visibility 0s 220ms;
+ }
+ body.satechi-site .site-header.sp-header .has-menu-motion .mobile-menu-motion[data-open='true'] { opacity:1; transform:translateY(0); visibility:visible; pointer-events:auto; transition-delay:0s; }
+ body.satechi-site .site-header.sp-header .has-menu-motion .mobile-menu-row { min-height:54px; border-bottom:1px solid #e9e7e2; }
+ body.satechi-site .site-header.sp-header .has-menu-motion .mobile-menu-section:last-child .mobile-menu-row { border-bottom:0; }
+ body.satechi-site .site-header.sp-header .has-menu-motion .mobile-menu-primary { min-width:0; padding:16px 12px; border-radius:7px; color:var(--sp-ink); font:500 16px/1.4 var(--font-body); text-decoration:none!important; transition:background-color 160ms ease; }
+ body.satechi-site .site-header.sp-header .has-menu-motion .mobile-menu-primary[aria-current] { font-weight:600; }
+ body.satechi-site .site-header.sp-header .has-menu-motion .mobile-submenu-toggle { flex:0 0 44px; margin-right:4px; border-radius:7px; transition:background-color 160ms ease; }
+ body.satechi-site .site-header.sp-header .has-menu-motion .mobile-submenu-toggle[aria-expanded='true'] { background:#f1eee8; }
+ body.satechi-site .site-header.sp-header .mobile-submenu-symbol { display:block; position:relative; width:16px; height:16px; margin:auto; }
+ body.satechi-site .site-header.sp-header .mobile-submenu-symbol::before,body.satechi-site .site-header.sp-header .mobile-submenu-symbol::after { content:''; position:absolute; inset:7px 0 auto; height:1.5px; background:currentColor; }
+ body.satechi-site .site-header.sp-header .mobile-submenu-symbol::after { transform:rotate(90deg); transition:transform 220ms cubic-bezier(.22,1,.36,1); }
+ body.satechi-site .site-header.sp-header [aria-expanded='true']>.mobile-submenu-symbol::after { transform:rotate(0); }
+ body.satechi-site .site-header.sp-header .has-menu-motion .mobile-submenu { display:grid; grid-template-rows:0fr; min-height:0; padding:0; opacity:0; visibility:hidden; pointer-events:none; transition:grid-template-rows 260ms cubic-bezier(.22,1,.36,1),opacity 160ms ease,visibility 0s 260ms; }
+ body.satechi-site .site-header.sp-header .has-menu-motion .mobile-submenu[data-expanded='true'] { grid-template-rows:1fr; opacity:1; visibility:visible; pointer-events:auto; transition-delay:0s; }
+ body.satechi-site .site-header.sp-header .mobile-submenu-clip { min-height:0; overflow:hidden; }
+ body.satechi-site .site-header.sp-header .mobile-submenu-links { display:grid; gap:2px; padding:8px 4px 12px; }
+ body.satechi-site .site-header.sp-header .has-menu-motion .mobile-submenu a { display:flex; align-items:center; min-height:44px; padding:11px 16px; border-radius:7px; color:var(--sp-ink); background:transparent; font:400 14px/1.5 var(--font-body); text-decoration:none!important; transition:background-color 160ms ease; }
+ body.satechi-site .site-header.sp-header .has-menu-motion .mobile-submenu a[aria-current='page'] { background:#f1eee8; font-weight:600; }
+ body.satechi-site .site-header.sp-header .has-menu-motion .mobile-menu :is(a,button):focus-visible { outline-offset:-2px; }
+ @media(hover:hover) and (pointer:fine) {
+  body.satechi-site .site-header.sp-header .has-menu-motion .mobile-menu :is(a,button):hover { background:#f1eee8; }
+ }
+}
+@media(hover:hover) and (pointer:fine) {
+ body.satechi-site .site-header.sp-header:hover { background:rgb(255 255 255 / 97%)!important; box-shadow:0 3px 16px rgb(0 0 0 / 9%)!important; backdrop-filter:blur(14px)!important; }
+ body.satechi-site .sp-header .nav-link:hover::before { opacity:1; }
+ body.satechi-site .sp-header .nav-link:hover::after { transform:scaleX(1); }
+ body.satechi-site .sp-header .brand:hover { opacity:.72; }
+ body.satechi-site .sp-header .menu-toggle:hover { background:#f1eee8; }
+ body.satechi-site .sp-header .mobile-quote:hover { text-decoration:underline; text-underline-offset:5px; }
+}
+body.satechi-site .sp-header .header-cta { border-radius:80px!important; font-size:12px!important; min-height:44px!important; padding:14px 20px!important; }
+body.satechi-site #main .button { border-radius:80px!important; }
+body.satechi-site #main :is(.pdr-button,.pdr-secondary,.hvr-button,.hvr-secondary) { border-radius:80px!important; }
+body.satechi-site:not(.is-home) #main h1 { font-size:40px; line-height:1.2; }
+body.satechi-site:not(.is-home) #main h2 { font-size:28px; line-height:1.2; }
+body.satechi-site:not(.is-home) #main h3 { font-size:20px; line-height:1.3; }
+body.satechi-site:not(.is-home) #main :is(p,li,dd) { color:var(--sp-ink); }
+body.satechi-site #main :is(.page-hero,.procurement-hero,.rfq-hero) { padding:20px 0 48px; background:transparent; border:0; }
+body.satechi-site #main :is(.breadcrumbs,.pdr-breadcrumbs,.hvr-breadcrumbs) { margin:0 0 28px; color:var(--sp-muted); font-size:12px; line-height:1.6; }
+body.satechi-site #main .breadcrumbs a:hover { text-decoration:underline; }
+body.satechi-site #main :is(.lead,.procurement-lead) { max-width:58ch; margin-top:24px; font-size:16px; line-height:1.6; }
+body.satechi-site #main .section { padding-block:48px 64px; background:transparent; }
+body.satechi-site #main .alt { background:transparent; }
+body.satechi-site #main :is(.card-link,.pdr-text-link,.hvr-path-link,.hvr-series-link,.procurement-file-link,.rfq-guide-link) { color:var(--sp-ink); text-decoration:underline; text-underline-offset:5px; font-size:14px; line-height:1.5; font-weight:500; border:0; background:none; padding:0; width:fit-content; min-height:0; }
+body.satechi-site #main :is(.card-link,.pdr-text-link,.hvr-path-link,.hvr-series-link):hover { color:var(--sp-accent); }
+body.satechi-site #main .card-link { box-shadow:none; text-underline-offset:5px; }
+body.satechi-site #main .card-link::after,body.satechi-site #main .rfq-arrow { display:none; }
+body.satechi-site #main :is(.pdr-button,.hvr-button,.pdr-secondary,.hvr-secondary) { display:inline-flex; align-items:center; justify-content:center; width:fit-content; min-height:44px; padding:14px 22px; border:1px solid var(--sp-ink); border-radius:80px; background:var(--sp-ink); color:#fff; font:600 13px/1.3 var(--font-body); letter-spacing:.3px; text-transform:uppercase; }
+body.satechi-site #main :is(.pdr-secondary,.hvr-secondary,.button.secondary) { background:transparent; color:var(--sp-ink); border:1px solid var(--sp-ink); }
+body.satechi-site #main :is(.pdr-button,.hvr-button):hover { background:#fff; color:var(--sp-ink); }
+body.satechi-site #main :is(.pdr-secondary,.hvr-secondary,.button.secondary):hover { background:var(--sp-ink); color:white; }
+body.satechi-site #main :is(.button-group,.hvr-actions,.procurement-actions,.pdr-resource-actions,.resource-hub-actions) { display:flex; flex-wrap:wrap; align-items:center; gap:20px; margin-top:28px; }
+body.satechi-site .nav-link[aria-current='page'] { text-decoration:underline; text-underline-offset:7px; }
+body.satechi-site #main .ss-image-note,body.satechi-site #main .ss-editorial-visual figcaption,body.satechi-site #main .ss-evidence-lead figcaption { display:block; margin-top:12px; color:var(--sp-muted); font-size:12px; line-height:1.6; }
+body.satechi-site #main .ss-image-note a { text-decoration:underline; text-underline-offset:3px; }
+body.satechi-site #main .ss-editorial-visual { min-width:0; margin:0; }
+body.satechi-site #main .ss-editorial-visual img { width:100%; aspect-ratio:3/2; object-fit:cover; border-radius:var(--ss-radius); }
+
+/* Collection: square photography and quiet, complete specification cards. */
+body.satechi-site #main .catalog-heading { display:block; text-align:center; }
+body.satechi-site #main .catalog-photo-link { display:inline-flex; gap:12px; margin-top:24px; color:var(--sp-muted); font-size:13px; }
+body.satechi-site #main .catalog-photo-link:hover { text-decoration:underline; }
+body.satechi-site #main .catalog-section { padding-top:0!important; }
+body.satechi-site #main .catalog-page-hero { padding-bottom:28px; }
+body.satechi-site #main .catalog-heading h1 { margin:0!important; }
+body.satechi-site #main .catalog-photo-link { margin-top:20px; margin-bottom:0; }
+body.satechi-site #main .filter-row { display:flex; justify-content:center; gap:28px; margin-bottom:40px; }
+body.satechi-site #main .filter-chip { border:0; border-bottom:1px solid transparent; border-radius:0; background:transparent; color:var(--sp-muted); padding:10px 0; font:500 14px/1.4 var(--font-body); }
+body.satechi-site #main .filter-chip.active { color:var(--sp-ink); border-bottom-color:var(--sp-ink); }
+body.satechi-site #main .series-catalog { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px; }
+body.satechi-site #main .series-catalog .product-card { display:flex; flex-direction:column; padding:16px 16px 24px; border:0; border-radius:20px; box-shadow:none; background:white; overflow:hidden; }
+body.satechi-site #main .series-catalog .catalog-product-image { width:100%; height:auto; aspect-ratio:1; padding:0; background:var(--sp-canvas); border-radius:12px; overflow:hidden; }
+body.satechi-site #main .series-catalog .catalog-product-image img { width:100%; height:100%; object-fit:contain; transform:none; }
+body.satechi-site #main .series-catalog .card-body { padding:24px 4px 0; display:flex; flex:1; flex-direction:column; gap:12px; }
+body.satechi-site #main .catalog-duty { font-size:12px; color:var(--sp-muted); }
+body.satechi-site #main .series-catalog .card-title { font-size:20px; line-height:1.3; margin:0; }
+body.satechi-site #main .series-name { display:block; margin-top:5px; font-size:16px; }
+body.satechi-site #main .catalog-purpose { min-height:60px; font-size:13px; line-height:1.55; }
+body.satechi-site #main .catalog-ratings { display:grid; gap:12px; margin:0; padding-top:12px; border-top:1px solid #e8e7e3; }
+body.satechi-site #main .catalog-ratings>div { display:grid; gap:4px; }
+body.satechi-site #main .catalog-ratings dt { font-size:11px; color:var(--sp-muted); }
+body.satechi-site #main .catalog-ratings dd { margin:0; font-size:14px; line-height:1.5; }
+body.satechi-site #main .catalog-ratings dd span { display:block; }
+body.satechi-site #main .series-catalog .card-link { margin-top:auto; padding-top:12px; font-size:13px; }
+body.satechi-site #main .catalog-comparison h2 { margin-bottom:28px; }
+body.satechi-site #main .compare-range-note { margin-top:20px; max-width:85ch; font-size:14px; line-height:1.6; }
+
+/* Technical tables stay HTML and scroll inside their own region. */
+body.satechi-site #main :is(.compare-wrap,.pdr-table-wrap,.hvr-table-wrap,.review-guide-table-wrap) { overflow:auto; max-width:100%; border-radius:12px; border:1px solid var(--sp-line); background:white; }
+body.satechi-site #main table { width:100%; border-collapse:collapse; background:white; color:var(--sp-ink); font-size:14px; line-height:1.6; }
+body.satechi-site #main :is(th,td) { padding:18px 22px; text-align:left; vertical-align:top; border:0; border-bottom:1px solid #e8e7e3; }
+body.satechi-site #main thead th { background:#f0efeb; font-weight:600; }
+body.satechi-site #main tbody th { font-weight:500; }
+body.satechi-site #main tr:last-child :is(th,td) { border-bottom:0; }
+body.satechi-site #main table caption:not(.visually-hidden) { text-align:left; padding:18px 22px; background:white; font-weight:500; }
+
+/* Product detail: gallery left, specification and inquiry right, like the reference PDP. */
+body.satechi-site #main .pdr-reference { background:transparent; font:400 16px/1.6 var(--font-body); color:var(--sp-ink); --pdr-accent:var(--sp-ink); --pdr-line:var(--sp-line); --pdr-muted:var(--sp-muted); }
+body.satechi-site #main .pdr-wrap { width:min(1360px,calc(100% - 80px)); margin-inline:auto; }
+body.satechi-site #main .pdr-hero { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-areas:'crumb crumb' 'gallery copy'; gap:0 64px; padding:0 0 40px; align-items:center; }
+body.satechi-site #main .pdr-breadcrumbs { grid-area:crumb; margin:0 0 28px; }
+body.satechi-site #main .pdr-hero-copy { grid-area:copy; align-self:center; padding:0; }
+body.satechi-site #main .pdr-reference h1 { font-size:40px; line-height:48px; max-width:none; }
+body.satechi-site #main .pdr-key-facts { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0; margin:28px 0; padding:0; border-block:1px solid var(--sp-line); }
+body.satechi-site #main .pdr-key-facts>div { display:block; min-width:0; padding:20px 0; border:0; }
+body.satechi-site #main .pdr-key-facts>.pdr-duty-fact { display:grid; grid-column:1/-1; grid-template-columns:84px minmax(0,1fr); gap:20px; align-items:baseline; padding:16px 0; border-bottom:1px solid var(--sp-line); }
+body.satechi-site #main .pdr-key-facts>div:last-child { border-left:1px solid var(--sp-line); padding-left:24px; }
+body.satechi-site #main .pdr-key-facts dt { margin:0 0 8px; font-size:13px; line-height:1.5; text-wrap:balance; }
+body.satechi-site #main .pdr-key-facts dd { margin:0; font:500 22px/1.35 var(--sp-heading); letter-spacing:0; text-wrap:balance; }
+body.satechi-site #main .pdr-key-facts dd small { display:block; margin-top:6px; font:400 13px/1.5 var(--font-body); color:var(--sp-muted); }
+body.satechi-site #main .pdr-hero-scope { font-size:14px; line-height:1.65; margin-bottom:24px; }
+body.satechi-site #main .pdr-gallery { grid-area:gallery; min-width:0; width:100%; max-width:600px; justify-self:start; }
+body.satechi-site #main .ss-product-gallery .pg-stage { position:relative; width:100%; padding:0; }
+body.satechi-site #main .ss-product-gallery .pg-main { width:100%; aspect-ratio:1; background:var(--sp-canvas); border-radius:20px; overflow:hidden; }
+body.satechi-site #main .ss-product-gallery .pg-main img { width:100%; height:100%; object-fit:contain; }
+/* The shared loading wrapper must not inherit the old absolute photo-badge styles. */
+body.satechi-site #main .ss-product-gallery .pg-main>.media-feedback { position:relative; inset:auto; padding:0; background:transparent; color:inherit; font:inherit; }
+body.satechi-site #main .ss-product-gallery .pg-main .media-feedback-message { inset:0; padding:16px; background:var(--sp-canvas); font:inherit; }
+body.satechi-site #main .ss-product-gallery .pg-main .media-feedback-message>span { position:static; padding:0; background:transparent; color:inherit; font:inherit; }
+body.satechi-site #main .ss-product-gallery .pg-step { width:44px; height:44px; position:absolute; top:calc(50% - 22px); border:1px solid var(--sp-line); background:#fff; border-radius:50%; color:var(--sp-ink); display:grid; place-items:center; font-size:18px; }
+body.satechi-site #main .ss-product-gallery .pg-previous { left:12px; }
+body.satechi-site #main .ss-product-gallery .pg-next { right:12px; }
+body.satechi-site #main .ss-product-gallery .pg-filmstrip { display:flex; gap:10px; overflow-x:auto; scrollbar-width:thin; margin-top:14px; padding-bottom:8px; }
+body.satechi-site #main .ss-product-gallery .pg-filmstrip button { flex:0 0 64px; width:64px; height:64px; padding:0; border:1px solid transparent; border-radius:10px; background:white; overflow:hidden; }
+body.satechi-site #main .ss-product-gallery .pg-filmstrip button[aria-pressed='true'] { border-color:var(--sp-ink); }
+body.satechi-site #main .ss-product-gallery .pg-filmstrip img { width:100%; height:100%; object-fit:contain; }
+body.satechi-site #main .pg-caption-row { padding:10px 0 0; }
+body.satechi-site #main .pg-caption { display:flex; flex-wrap:wrap; gap:4px 12px; font-size:12px; line-height:1.6; }
+body.satechi-site #main .pg-caption strong { font-weight:400; }
+body.satechi-site #main .pg-caption .ss-image-note { margin-top:0; }
+body.satechi-site #main .pdr-section { margin:0; padding:64px 0; border-top:1px solid var(--sp-line); }
+body.satechi-site #main .pdr-section h2 { margin-bottom:32px; }
+body.satechi-site #main .pdr-section h3 { margin-bottom:16px; }
+body.satechi-site #main .pdr-spec-groups { display:grid; grid-template-columns:1fr 1fr; gap:60px; margin-top:32px; }
+body.satechi-site #main .pdr-specifications>div { display:grid; grid-template-columns:1fr 1.4fr; gap:20px; padding:16px 0; border-bottom:1px solid var(--sp-line); }
+body.satechi-site #main .pdr-specifications dt { font-size:14px; color:var(--sp-muted); }
+body.satechi-site #main .pdr-specifications dd { font-size:14px; line-height:1.6; }
+body.satechi-site #main .technical-body-copy { max-width:85ch; font-size:15px; line-height:1.75; margin-top:24px; }
+body.satechi-site #main .pdr-note { font-size:13px; line-height:1.65; color:var(--sp-muted); margin-top:20px; }
+body.satechi-site #main .pdr-sample-configurations { display:grid; grid-template-columns:1fr; gap:44px; }
+body.satechi-site #main .pdr-sample-configuration { display:grid; grid-template-columns:minmax(240px,.8fr) minmax(0,1.2fr); gap:60px; align-items:center; }
+body.satechi-site #main .pdr-detail-photo { border-radius:20px; background:transparent; aspect-ratio:1; }
+body.satechi-site #main .pdr-detail-photo img { width:100%; height:100%; object-fit:contain; }
+body.satechi-site #main .pdr-sample-copy dl>div { padding:14px 0; border-top:1px solid var(--sp-line); }
+body.satechi-site #main .pdr-sample-copy dt { font-size:13px; color:var(--sp-muted); }
+body.satechi-site #main .pdr-sample-copy dd { font-size:15px; margin-top:5px; }
+body.satechi-site #main .pdr-sample-copy li { margin-top:10px; font-size:15px; }
+body.satechi-site #main .pdr-fit-record { margin-top:44px; }
+body.satechi-site #main :is(.pdr-fit-list,.pdr-applications) { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:32px; list-style:none; padding:0; }
+body.satechi-site #main :is(.pdr-fit-list p,.pdr-applications p) { font-size:14px; line-height:1.65; margin-top:12px; }
+body.satechi-site #main :is(.pdr-document-list,.pdr-purchase-list)>div { display:grid; grid-template-columns:240px minmax(0,1fr); padding:20px 0; gap:36px; border-top:1px solid var(--sp-line); font-size:15px; line-height:1.7; }
+body.satechi-site #main .pdr-related { padding:60px 0 80px; }
+body.satechi-site #main .pdr-related-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; margin-top:32px; }
+body.satechi-site #main .pdr-related-grid>a { background:white; border-radius:20px; padding:24px; }
+body.satechi-site #main .pdr-related-grid img { width:100%; height:190px; object-fit:contain; margin-bottom:24px; }
+body.satechi-site #main .pdr-related-grid p { font-size:13px; line-height:1.5; margin-top:10px; }
+
+/* Application photography remains complete; technical comparisons retain their task. */
+body.satechi-site #main .application-directory-heading { display:block; text-align:center; }
+body.satechi-site #main .application-directory-heading p { max-width:60ch; margin:24px auto 0; border:0; padding:0; font-size:16px; line-height:1.65; }
+body.satechi-site #main .application-directory { padding-top:0; }
+body.satechi-site #main .application-directory .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:40px 24px; }
+body.satechi-site #main .app-card { padding:0; background:transparent; border:0; box-shadow:none; }
+body.satechi-site #main .application-card-image { margin:0; background:transparent; border-radius:20px; overflow:hidden; }
+body.satechi-site #main .application-card-image img { width:100%; aspect-ratio:3/2; object-fit:cover; padding:0; }
+body.satechi-site #main .app-card .card-body { padding:24px 0 0; }
+body.satechi-site #main .app-card .card-title { font-size:24px; margin-bottom:12px; }
+body.satechi-site #main .app-card .application-series { font-size:15px; line-height:1.65; }
+body.satechi-site #main .app-card .card-link { display:inline-block; margin-top:20px; }
+body.satechi-site #main .app-card .card-link span { display:none; }
+body.satechi-site #main .hvr-reference { background:transparent; font:400 16px/1.65 var(--font-body); --hvr-ink:var(--sp-ink); --hvr-muted:var(--sp-muted); --hvr-line:var(--sp-line); }
+body.satechi-site #main .hvr-wrap { width:min(1360px,calc(100% - var(--sp-gutter)*2)); margin:auto; }
+body.satechi-site #main .hvr-hero { display:grid; grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr); gap:60px; align-items:center; padding:20px 0 64px; }
+body.satechi-site #main .hvr-hero h1 { font-size:40px; line-height:48px; margin-bottom:24px; }
+body.satechi-site #main .hvr-hero-summary { font-size:16px; line-height:1.65; max-width:48ch; }
+body.satechi-site #main .hvr-hero-photo { margin:0; width:100%; background:transparent; }
+body.satechi-site #main .hvr-hero-photo img { display:block; width:100%; height:auto; aspect-ratio:3/2; object-fit:cover; padding:0; border-radius:20px; }
+body.satechi-site #main .hvr-reference[data-application] .hvr-hero-photo img { aspect-ratio:3/2; object-fit:cover; background:transparent; }
+body.satechi-site #main .hvr-section { padding:64px 0; margin:0; border-top:1px solid var(--sp-line); }
+body.satechi-site #main .hvr-section>h2 { margin-bottom:32px; }
+body.satechi-site #main .hvr-circuit-paths { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:40px; }
+body.satechi-site #main .hvr-circuit-paths p { margin:16px 0 20px; font-size:15px; line-height:1.7; }
+body.satechi-site #main .hvr-comparison thead th strong { font:500 24px/1.2 var(--sp-heading); }
+body.satechi-site #main .hvr-comparison thead th span { display:block; font-size:13px; margin-top:8px; }
+body.satechi-site #main .hvr-series-actions :is(th,td) { vertical-align:middle; }
+body.satechi-site #main .hvr-series-actions td { text-align:center; }
+body.satechi-site #main :is(.hvr-comparison,.hvr-mobile-comparison) .hvr-series-link { display:inline-flex; align-items:center; justify-content:center; min-width:136px; max-width:100%; min-height:44px; padding:10px 22px; border:1px solid var(--sp-ink); border-radius:80px; background:white; color:var(--sp-ink); font:500 14px/1.4 var(--font-body); text-align:center; text-decoration:none; transition:background-color 180ms ease,color 180ms ease; }
+body.satechi-site #main :is(.hvr-comparison,.hvr-mobile-comparison) .hvr-series-link:is(:hover,:active) { background:var(--sp-ink); color:white; text-decoration:none; }
+body.satechi-site #main :is(.hvr-comparison,.hvr-mobile-comparison) .hvr-series-link:focus-visible { outline:2px solid var(--sp-ink); outline-offset:3px; }
+body.satechi-site #main .hvr-mobile-comparison .hvr-series-link { display:flex; width:fit-content; margin:20px auto 0; }
+@media(prefers-reduced-motion:reduce) { body.satechi-site #main :is(.hvr-comparison,.hvr-mobile-comparison) .hvr-series-link { transition:none; } }
+body.satechi-site #main .hvr-sample-photo { background:transparent; border:0; }
+body.satechi-site #main .hvr-sample-photo img { width:100%; height:220px; object-fit:contain; }
+body.satechi-site #main .hvr-sample-pair { display:flex; gap:16px; }
+body.satechi-site #main .hvr-sample-pair figure { flex:1; min-width:0; }
+body.satechi-site #main .hvr-reference figcaption { font-size:12px; line-height:1.6; margin-top:12px; color:var(--sp-muted); }
+body.satechi-site #main .hvr-mobile-comparison { display:none; }
+body.satechi-site #main .hvr-note { margin-top:20px; font-size:13px; line-height:1.65; }
+body.satechi-site #main .hvr-other-formats { margin-top:32px; }
+body.satechi-site #main .hvr-other-formats p { margin:16px 0; font-size:15px; }
+body.satechi-site #main .hvr-check-layout { display:grid; grid-template-columns:.85fr 1.15fr; align-items:center; gap:60px; }
+body.satechi-site #main .hvr-fit-image { background:transparent; border-radius:20px; overflow:hidden; }
+body.satechi-site #main .hvr-fit-image img { width:100%; max-height:500px; object-fit:contain; }
+body.satechi-site #main .hvr-inquiry-checklist { margin:0; padding:0; list-style:none; display:grid; gap:28px; }
+body.satechi-site #main .hvr-inquiry-checklist p { font-size:15px; line-height:1.7; margin-top:12px; }
+body.satechi-site #main .hvr-fit-guides { display:flex; flex-wrap:wrap; gap:16px; margin-top:32px; }
+
+/* Editorial resources: photography leads, body copy has a reading measure. */
+body.satechi-site #main .resource-hub .page-hero { text-align:center; }
+body.satechi-site #main .resource-hub .lead { margin-inline:auto; }
+body.satechi-site #main .resource-hub-body { padding-bottom:80px; }
+body.satechi-site #main .resource-hub-routes { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; padding:0 0 64px; border:0; }
+body.satechi-site #main .resource-hub-routes>a { padding:0 0 28px; border:0; border-radius:20px; background:white; overflow:hidden; }
+body.satechi-site #main .ss-resource-cover { display:block; width:100%; aspect-ratio:3/2; object-fit:cover; margin-bottom:24px; }
+body.satechi-site #main .resource-hub-routes :is(h2,p) { margin-inline:24px; }
+body.satechi-site #main .resource-hub-routes h2 { font-size:22px; line-height:1.3; margin-bottom:12px; }
+body.satechi-site #main .resource-hub-routes p { font-size:14px; line-height:1.65; }
+body.satechi-site #main .resource-hub-section { padding:0; margin:0 0 64px; border:0; }
+body.satechi-site #main .resource-hub-section>h2 { margin-bottom:32px; }
+body.satechi-site #main .resource-hub-section>p { max-width:75ch; font-size:15px; line-height:1.75; }
+body.satechi-site #main .resource-article-list { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
+body.satechi-site #main .resource-article-list>a { padding:0 0 28px; border:0; background:white; border-radius:20px; overflow:hidden; }
+body.satechi-site #main .resource-article-list :is(h3,p) { margin-inline:24px; }
+body.satechi-site #main .resource-article-list h3 { font-size:20px; line-height:1.4; margin-bottom:12px; }
+body.satechi-site #main .resource-article-list p { font-size:14px; line-height:1.65; }
+body.satechi-site #main .resource-article-list>a:only-child { grid-column:1/-1; display:grid; grid-template-columns:1fr 1fr; grid-template-rows:1fr 1fr; column-gap:36px; padding:0; align-items:center; }
+body.satechi-site #main .resource-article-list>a:only-child img { grid-column:1; grid-row:1/3; margin:0; }
+body.satechi-site #main .resource-article-list>a:only-child h3 { grid-column:2; align-self:end; margin:0 30px 16px 0; }
+body.satechi-site #main .resource-article-list>a:only-child p { grid-column:2; align-self:start; margin:0 30px 0 0; }
+body.satechi-site #main .guide-hero { padding-bottom:32px; text-align:center; }
+body.satechi-site #main .guide-hero h1 { max-width:25ch; margin:0 auto; }
+body.satechi-site #main .ss-guide-cover { width:min(1120px,100%); margin:40px auto 0; }
+body.satechi-site #main .ss-guide-cover img { width:100%; height:auto; aspect-ratio:3/2; max-height:none; object-fit:contain; border-radius:20px; }
+body.satechi-site.is-home #main .sp-hero-copy :is(h1,h2) { font-size:40px; line-height:48px; }
+body.satechi-site #main .ss-guide-cover figcaption { margin-top:12px; color:var(--sp-muted); font-size:11px; line-height:1.6; }
+body.satechi-site #main .review-guide-layout { display:grid; grid-template-columns:220px minmax(0,760px); gap:60px; justify-content:center; align-items:start; }
+body.satechi-site #main .review-guide-navigation { position:sticky; top:120px; }
+body.satechi-site #main .review-guide-toc { border:0; background:transparent; padding:0; }
+body.satechi-site #main .review-guide-toc summary { font-size:15px; font-weight:500; padding:0 0 16px; }
+body.satechi-site #main .review-guide-toc nav { display:flex; flex-direction:column; gap:0; border-top:1px solid var(--sp-line); padding-top:12px; }
+body.satechi-site #main .review-guide-toc nav a { font-size:13px; line-height:1.5; padding:10px 0; color:var(--sp-muted); }
+body.satechi-site #main .review-guide-toc nav a:hover { color:var(--sp-ink); text-decoration:underline; text-underline-offset:4px; }
+body.satechi-site #main .review-guide-article { min-width:0; background:transparent; }
+body.satechi-site #main .review-guide-article .article-overview { font-size:19px; line-height:1.65; margin:0 0 48px; }
+body.satechi-site #main .review-guide-section { margin-bottom:56px; }
+body.satechi-site #main .review-guide-section h2 { margin:0 0 24px; }
+body.satechi-site #main .review-guide-copy>p { font-size:16px; line-height:1.8; margin-bottom:24px; }
+body.satechi-site #main .review-guide-copy li { font-size:16px; line-height:1.75; margin:12px 0; }
+body.satechi-site #main .review-guide-records { margin:0 0 24px; }
+body.satechi-site #main .review-guide-records>div { padding:20px 0; border-top:1px solid var(--sp-line); }
+body.satechi-site #main .review-guide-records dt { font-size:16px; font-weight:500; margin-bottom:10px; }
+body.satechi-site #main .review-guide-records dd { margin:0; font-size:15px; line-height:1.75; }
+body.satechi-site #main .review-guide-section-links { display:flex; flex-wrap:wrap; gap:14px 24px; margin-top:24px; }
+body.satechi-site #main .review-guide-note { font-size:14px; line-height:1.75; margin:24px 0; }
+body.satechi-site #main .review-guide-photos { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; margin:28px 0; }
+body.satechi-site #main .review-guide-photos:has(>figure:only-child) { grid-template-columns:1fr; }
+body.satechi-site #main .review-guide-photo { margin:0; min-width:0; }
+body.satechi-site #main .review-guide-photo :is(.photo-detail,.photo-detail-image,.photo-detail-button) { background:transparent; width:100%; border-radius:16px; }
+body.satechi-site #main .review-guide-photo img { width:100%; max-height:430px; object-fit:contain; }
+body.satechi-site #main .review-guide-photo h3 { font-size:16px; margin-top:18px; }
+body.satechi-site #main .review-guide-photo figcaption p { font-size:13px; line-height:1.6; margin-top:10px; }
+body.satechi-site #main .review-label-detail { display:none; }
+body.satechi-site #main .review-guide-references,body.satechi-site #main .review-guide-related { padding-top:32px; margin-top:40px; border-top:1px solid var(--sp-line); }
+body.satechi-site #main .review-guide-references ul { padding-left:18px; }
+body.satechi-site #main .review-guide-references li { font-size:13px; line-height:1.65; margin-top:12px; }
+body.satechi-site #main .review-guide-related .card-link { display:block; margin-top:20px; }
+
+/* Business pages use large editorial images, and original footage stays evidence. */
+body.satechi-site #main .procurement-section { padding:56px 0; border-top:1px solid var(--sp-line); }
+body.satechi-site #main .procurement-section h2 { margin-bottom:28px; }
+body.satechi-site #main .procurement-section p { font-size:15px; line-height:1.75; }
+body.satechi-site #main :is(.procurement-oem-hero,.procurement-about .procurement-hero>.container,.procurement-packing .procurement-hero>.container,.rfq-hero>.container) { display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr); gap:24px 60px; align-items:center; }
+body.satechi-site #main :is(.procurement-about,.procurement-packing) .procurement-hero>.container>.breadcrumbs { grid-column:1; align-self:end; margin:0; }
+body.satechi-site #main :is(.procurement-about,.procurement-packing) .procurement-hero h1 { grid-column:1; align-self:center; }
+body.satechi-site #main :is(.procurement-about,.procurement-packing) .procurement-hero .procurement-actions { grid-column:1; align-self:start; margin:0; }
+body.satechi-site #main :is(.procurement-about,.procurement-packing) .procurement-hero .ss-editorial-visual { grid-column:2; grid-row:1/4; }
+body.satechi-site #main .procurement-oem-hero .ss-editorial-visual img { aspect-ratio:1.25; }
+body.satechi-site #main .procurement-company-records { background:white; padding:20px 36px; border-radius:20px; margin:0; }
+body.satechi-site #main .procurement-company-records>div { display:grid; grid-template-columns:220px minmax(0,1fr); gap:36px; padding:24px 0; border-bottom:1px solid var(--sp-line); font-size:15px; line-height:1.7; }
+body.satechi-site #main .procurement-company-records>div:last-child { border:0; }
+body.satechi-site #main .procurement-company-records dt { color:var(--sp-muted); }
+body.satechi-site #main .procurement-company-records dd { margin:0; overflow-wrap:anywhere; }
+body.satechi-site #main .procurement-readable { max-width:78ch; }
+body.satechi-site #main .procurement-company-story { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; }
+body.satechi-site #main .procurement-company-story p { margin:0 0 24px; }
+body.satechi-site #main .procurement-company-photo img { width:100%; aspect-ratio:3/2; object-fit:cover; border-radius:20px; }
+body.satechi-site #main .procurement-routes { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
+body.satechi-site #main .procurement-routes>article { background:white; border:0; border-radius:20px; padding:0 24px 32px; overflow:hidden; }
+body.satechi-site #main .procurement-route-photo { margin:0 -24px 28px; width:calc(100% + 48px); }
+body.satechi-site #main .procurement-route-photo img { width:100%; height:auto; aspect-ratio:3/2; object-fit:cover; padding:0; }
+body.satechi-site #main .procurement-routes h2 { font-size:22px; margin-bottom:16px; }
+body.satechi-site #main .procurement-routes .card-link { display:block; margin-top:24px; }
+body.satechi-site #main .procurement-record-links { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:32px; }
+body.satechi-site #main .procurement-record-links>a { font-size:15px; padding:20px 0; border-top:1px solid var(--sp-line); }
+body.satechi-site #main .procurement-approval-steps { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:32px; list-style:none; margin:0; padding:0; }
+body.satechi-site #main .procurement-step-number { display:block; margin-bottom:24px; font:500 28px/1 var(--sp-heading); color:var(--sp-muted); }
+body.satechi-site #main .procurement-approval-steps p { margin:16px 0 20px; }
+body.satechi-site #main .procurement-terms { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 60px; margin:0 0 28px; }
+body.satechi-site #main .procurement-terms>div { padding:24px 0; border-top:1px solid var(--sp-line); }
+body.satechi-site #main .procurement-terms dt { font-weight:500; margin-bottom:10px; }
+body.satechi-site #main .procurement-terms dd { margin:0; font-size:15px; line-height:1.7; }
+body.satechi-site #main .procurement-table th span { display:block; margin-top:10px; font-weight:400; }
+body.satechi-site #main .procurement-mobile-label { display:none; }
+body.satechi-site #main .ss-evidence-lead { margin-top:40px; }
+body.satechi-site #main .ss-evidence-lead img { width:100%; aspect-ratio:2.15; object-fit:cover; border-radius:20px; }
+body.satechi-site #main .ss-factory-visual { min-width:0; }
+body.satechi-site #main .ss-factory-visual img { width:100%; height:auto; border-radius:20px; }
+body.satechi-site #main .ss-factory-visual figcaption { margin-top:12px; color:var(--sp-muted); font-size:12px; line-height:1.6; }
+body.satechi-site #main .ss-factory-visual figcaption a { text-decoration:underline; text-underline-offset:3px; }
+body.satechi-site #main .procurement-factory .ss-factory-visual img { aspect-ratio:auto; }
+body.satechi-site #main .procurement-route-photo figcaption { margin-top:12px; padding-inline:24px; color:var(--sp-muted); font-size:12px; line-height:1.6; }
+body.satechi-site #main .procurement-route-photo figcaption a { text-decoration:underline; text-underline-offset:3px; }
+body.satechi-site #main .ss-source-story { min-width:0; }
+body.satechi-site #main .ss-source-story .sp-story { display:block; }
+body.satechi-site #main .ss-source-story .sp-story>div { left:0; right:0; bottom:0; padding:18px 24px; background:rgb(27 28 33 / 78%); }
+body.satechi-site #main .ss-source-story .sp-story h3 { color:white; font-size:28px; line-height:1.2; margin-top:6px; margin-bottom:0; }
+@media(max-width:1020px){body.satechi-site #main .ss-source-story .sp-story h3 { font-size:22px; }}
+body.satechi-site #main .procurement-process-index { display:flex; flex-wrap:wrap; gap:20px 36px; margin-bottom:24px; font-size:14px; }
+body.satechi-site #main .procurement-process-stage { padding:40px 0; border-top:1px solid var(--sp-line); }
+body.satechi-site #main .procurement-process-stage>div:first-child { max-width:85ch; margin-bottom:32px; }
+body.satechi-site #main .procurement-process-stage h3 { margin-bottom:16px; }
+body.satechi-site #main .procurement-video-pair { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+body.satechi-site #main .procurement-video :is(video,.video-frame) { width:100%; border-radius:16px; overflow:hidden; }
+body.satechi-site #main .procurement-video--single { max-width:800px; margin:auto; }
+body.satechi-site #main .procurement-caption { margin:16px 0; font-size:13px!important; color:var(--sp-muted); }
+body.satechi-site #main .procurement-packing-footage { display:grid; grid-template-columns:1fr .75fr; gap:60px; align-items:center; }
+body.satechi-site #main .procurement-video--portrait { width:min(100%,340px); justify-self:center; }
+body.satechi-site #main .procurement-video--portrait video { aspect-ratio:9/16; }
+body.satechi-site #main .procurement-handover-layout { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; }
+body.satechi-site #main .procurement-handover-records>div { padding:20px 0; border-bottom:1px solid var(--sp-line); }
+body.satechi-site #main .procurement-handover-records dd { margin:10px 0 0; font-size:15px; line-height:1.7; }
+body.satechi-site #main .procurement-dispatch-photo img { width:100%; border-radius:20px; }
+body.satechi-site #main .procurement-references { padding-block:40px 64px; font-size:13px; }
+
+/* Buying tools retain copy, anchors, model context and progressive disclosure. */
+body.satechi-site #main .rfq-hero>.container>.breadcrumbs { grid-column:1; margin:0; align-self:end; }
+body.satechi-site #main .rfq-hero-copy { grid-column:1; display:block; align-self:start; }
+body.satechi-site #main .rfq-hero-copy .card-link { display:block; margin-top:28px; }
+body.satechi-site #main .rfq-hero .ss-editorial-visual { grid-column:2; grid-row:1/3; }
+body.satechi-site #main .buying-stages { display:flex; flex-wrap:wrap; gap:20px 32px; padding-block:24px 32px; border-block:1px solid var(--sp-line); font-size:13px; }
+body.satechi-site #main .rfq-message,body.satechi-site #main .rfq-field-notes { padding:56px 0; background:transparent; }
+body.satechi-site #main .buying-intro { margin:20px 0 24px; font-size:15px; line-height:1.75; max-width:80ch; }
+body.satechi-site #main .buying-checklist-label { margin-bottom:24px; }
+body.satechi-site #main .rfq-message-grid { display:grid; grid-template-columns:1.2fr .8fr; align-items:start; gap:40px; }
+body.satechi-site #main :is(.rfq-template,.review-order-notes) { background:white; border:1px solid var(--sp-line); border-radius:16px; padding:28px; overflow:auto; white-space:pre-wrap; overflow-wrap:anywhere; font:400 14px/1.9 var(--font-body); margin:0 0 24px; }
+body.satechi-site #main :is(.buying-checklist-help,.rfq-application-help) { padding-block:24px; border-block:1px solid var(--sp-line); }
+body.satechi-site #main :is(.buying-checklist-help,.rfq-application-help) summary { font-size:18px; padding-block:4px; cursor:pointer; }
+body.satechi-site #main .rfq-field-rows>div { display:grid; grid-template-columns:.7fr 1.3fr; gap:40px; padding:36px 0; border-top:1px solid var(--sp-line); }
+body.satechi-site #main .rfq-field-rows p { font-size:15px; line-height:1.75; }
+body.satechi-site #main .rfq-field-rows nav { display:grid; gap:16px; margin-top:24px; }
+body.satechi-site #main .review-rfq-sample { max-width:450px; margin:28px 0 0; }
+body.satechi-site #main .review-rfq-sample img { width:100%; border-radius:16px; }
+body.satechi-site #main .review-rfq-sample figcaption { font-size:12px; line-height:1.6; margin-top:12px; }
+body.satechi-site #main .buying-next-stages>section { display:grid; grid-template-columns:.7fr 1.3fr; gap:40px; padding:40px 0; border-bottom:1px solid var(--sp-line); }
+body.satechi-site #main .buying-next-stages p { font-size:15px; line-height:1.75; margin-bottom:20px; }
+body.satechi-site #main .review-rfq-selection { padding-top:48px; }
+body.satechi-site #main .review-rfq-selection>.card-link { display:block; margin:20px 0; }
+
+/* The inquiry is one calm image + form panel, rather than a detached grey strip. */
+body.satechi-site:not(.is-home) #main .inquiry-callout { width:min(1360px,calc(100% - var(--sp-gutter)*2)); margin:48px auto 80px; padding:0; background:white; border:0; border-radius:20px; overflow:hidden; }
+body.satechi-site:not(.is-home) #main .inquiry-callout-inner { display:grid; grid-template-columns:.85fr 1.15fr; align-items:center; gap:24px 60px; width:100%; padding:40px; }
+body.satechi-site:not(.is-home) #main .ss-inquiry-visual { grid-column:1; grid-row:1/3; margin:0; }
+body.satechi-site:not(.is-home) #main .ss-inquiry-visual img { width:100%; aspect-ratio:1; object-fit:cover; border-radius:16px; }
+body.satechi-site:not(.is-home) #main .inquiry-callout-layout { display:block; grid-column:2; }
+body.satechi-site:not(.is-home) #main .inquiry-callout-heading { font-size:28px; line-height:1.2; margin:0 0 16px; }
+body.satechi-site:not(.is-home) #main .inquiry-callout-description { font-size:15px; line-height:1.6; margin:0; max-width:44ch; }
+body.satechi-site:not(.is-home) #main .inquiry-callout-form { display:grid; grid-template-columns:1fr; gap:12px; margin-top:28px; }
+body.satechi-site:not(.is-home) #main .inquiry-callout-form label { font-size:13px; font-weight:400; }
+body.satechi-site:not(.is-home) #main .inquiry-callout-form select { width:100%; height:48px; border:1px solid var(--sp-line); border-radius:6px; background:white; padding:0 14px; font:400 var(--ui-input-size,15px) var(--font-body); }
+body.satechi-site:not(.is-home) #main .inquiry-callout-button { margin-top:10px; min-width:190px; }
+body.satechi-site:not(.is-home) #main .inquiry-callout-details { grid-column:2; margin:0; border:0; padding:0; font-size:13px; line-height:1.6; }
+body.satechi-site:not(.is-home) #main .inquiry-callout-details nav { display:flex; flex-wrap:wrap; gap:16px 24px; }
+body.satechi-site:not(.is-home) #main .inquiry-callout-details ul { padding-left:18px; margin:0 0 20px; }
+body.satechi-site:not(.is-home) #main .inquiry-callout-details li { font-size:13px; margin-top:8px; }
+body.satechi-site:not(.is-home) #main .inquiry-callout-contained { width:100%; margin:40px 0; padding:32px; }
+body.satechi-site:not(.is-home) #main .inquiry-callout-contained .inquiry-callout-inner { display:block; padding:0; }
+body.satechi-site:not(.is-home) #main .inquiry-callout-contained .inquiry-callout-details { margin-top:24px; }
+
+/* Contact and FAQ use the same type and surfaces, while keeping their own tasks. */
+body.satechi-site #main .contact-focused { padding:20px 0 80px; background:transparent; }
+body.satechi-site #main .contact-focused-layout { display:grid; grid-template-columns:.85fr 1.15fr; align-items:start; gap:80px; }
+body.satechi-site #main .contact-focused-intro { display:flex; flex-direction:column; gap:32px; }
+body.satechi-site #main .contact-focused-intro h1 { margin:0; font-size:40px; line-height:48px; }
+body.satechi-site #main .contact-focused-intro .ss-editorial-visual { order:2; }
+body.satechi-site #main .contact-focused-details { display:grid; gap:24px; font-size:15px; line-height:1.7; }
+body.satechi-site #main .contact-focused-details :is(a,address) { display:flex; align-items:flex-start; gap:14px; font-style:normal; overflow-wrap:anywhere; }
+body.satechi-site #main .contact-focused-details address { margin-top:10px; font-size:14px; }
+body.satechi-site #main .contact-focused-details address strong { display:block; margin-bottom:12px; font-weight:500; }
+body.satechi-site #main .contact-focused-icon { flex:0 0 20px; width:20px; height:20px; margin-top:3px; color:var(--sp-muted); }
+body.satechi-site #main .contact-focused-form { display:grid; gap:24px; min-width:0; padding:40px; background:white; border-radius:20px; }
+body.satechi-site #main .contact-focused-form .field { display:grid; gap:10px; margin:0; font-size:14px; }
+body.satechi-site #main .contact-focused-form .field :is(input,select,textarea) { width:100%; min-width:0; min-height:50px; padding:13px 14px; border:1px solid #bdbebb; background:white; color:var(--sp-ink); border-radius:6px; font:400 var(--ui-input-size,15px)/1.6 var(--font-body); box-shadow:none; }
+body.satechi-site #main .contact-focused-form :is(.contact-draft-note,.contact-privacy-note) { margin:0; font-size:13px; line-height:1.65; }
+body.satechi-site #main .contact-focused-channel { display:flex; flex-wrap:wrap; gap:24px; padding:0; border:0; margin:0; font-size:14px; }
+body.satechi-site #main .contact-focused-channel label { display:flex; align-items:center; gap:8px; }
+body.satechi-site #main .contact-focused-channel input { accent-color:var(--sp-ink); }
+body.satechi-site #main :is(.contact-context,.draft-result) { padding:24px; background:var(--sp-canvas); border-radius:12px; font-size:14px; line-height:1.6; }
+body.satechi-site #main :is(.contact-context,.draft-result) h2 { font-size:20px; margin-bottom:16px; }
+body.satechi-site #main #draft-text { width:100%; padding:16px; border:1px solid var(--sp-line); background:white; font:14px/1.7 var(--font-body); }
+body.satechi-site #main .review-faq-page .page-hero { text-align:center; }
+body.satechi-site #main .review-faq-page h1 { max-width:24ch; margin:auto; }
+body.satechi-site #main .faq-group { display:grid; grid-template-columns:280px minmax(0,1fr); column-gap:70px; margin-bottom:64px; }
+body.satechi-site #main .faq-group h2 { grid-column:1; grid-row:1/9; font-size:24px; line-height:1.4; padding-top:24px; }
+body.satechi-site #main .faq-group details { grid-column:2; padding:0; background:transparent; border:0; border-bottom:1px solid var(--sp-line); }
+body.satechi-site #main .faq-group summary { padding:24px 40px 24px 0; font:500 18px/1.5 var(--sp-heading); cursor:pointer; }
+body.satechi-site #main .faq-group details p { max-width:75ch; margin:0 0 20px; padding:0; font-size:15px; line-height:1.8; }
+body.satechi-site #main .faq-group .faq-next-step { display:block; margin-bottom:24px; }
+body.satechi-site #main>.page-hero+.section>.container.editorial { max-width:800px; }
+body.satechi-site #main .editorial :is(p,li) { font-size:16px; line-height:1.8; }
+body.satechi-site #main .editorial>h2 { margin:40px 0 20px; }
+body.satechi-site #main .editorial>p { margin-bottom:24px; }
+body.satechi-site #main .procurement-privacy-wrap { max-width:800px; }
+body.satechi-site #main .procurement-privacy-body { padding-bottom:80px; }
+body.satechi-site #main .procurement-privacy-body>section { margin-top:40px; }
+body.satechi-site #main .procurement-privacy-body :is(p,li) { font-size:15px; line-height:1.8; margin:16px 0; }
+body.satechi-site #main .procurement-privacy-body .card-link { display:inline-block; margin:8px 24px 8px 0; }
+body.satechi-site #main .sample-library-filters { display:flex; flex-wrap:wrap; gap:14px 28px; margin-bottom:24px; }
+body.satechi-site #main .sample-library-filters button { border:0; border-bottom:1px solid transparent; background:none; padding:10px 0; color:var(--sp-muted); font-size:14px; border-radius:0; }
+body.satechi-site #main .sample-library-filters button[aria-pressed='true'] { border-color:var(--sp-ink); color:var(--sp-ink); }
+body.satechi-site #main .sample-library-filters span { margin-left:8px; font-size:11px; }
+body.satechi-site #main .sample-library-reference-note { font-size:14px; line-height:1.7; max-width:78ch; margin-bottom:32px; }
+body.satechi-site #main .sample-library-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:24px; }
+body.satechi-site #main .sample-library-grid>figure { margin:0; padding:16px; background:white; border-radius:20px; }
+body.satechi-site #main .sample-library-grid img { width:100%; aspect-ratio:1; object-fit:contain; border-radius:12px; }
+body.satechi-site #main .sample-library-grid figcaption { display:grid; gap:8px; padding-top:20px; font-size:12px; line-height:1.6; }
+body.satechi-site #main .sample-library-grid figcaption strong { font-size:16px; font-weight:500; }
+body.satechi-site #main .sample-library-footer { display:flex; align-items:center; flex-wrap:wrap; gap:24px; margin-top:40px; font-size:13px; }
+
+@media(max-width:1300px){
+ body.satechi-site .site-header.sp-header { --sp-header-inner-gap:24px; --sp-header-nav-gap:14px; }
+}
+@media(max-width:1200px){
+ body.satechi-site .site-header.sp-header.is-scrolled { --sp-header-padding:24px; }
+ body.satechi-site .site-header.sp-header { --sp-header-nav-size:14px; }
+ body.satechi-site #main .pdr-wrap { width:calc(100% - 60px); }
+ body.satechi-site #main .pdr-hero { grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 40px; }
+ body.satechi-site #main .series-catalog { gap:14px; }
+ body.satechi-site #main .series-catalog .product-card { padding:12px 12px 24px; }
+ body.satechi-site #main .resource-article-list { gap:18px; }
+ body.satechi-site #main :is(.hvr-hero,.hvr-check-layout,.procurement-oem-hero,.procurement-company-story,.contact-focused-layout) { gap:40px; }
+ body.satechi-site #main .procurement-approval-steps { grid-template-columns:1fr 1fr; gap:40px; }
+ body.satechi-site #main .review-guide-layout { grid-template-columns:180px minmax(0,760px); gap:32px; }
+}
+@media(max-width:1020px){
+ body.satechi-site.is-home #main .sp-hero-copy :is(h1,h2) { font-size:28px; line-height:33.6px; }
+ body.satechi-site .site-header.sp-header { --sp-header-height:80px; --sp-header-padding:32px; --sp-header-inner-gap:8px; }
+ body.satechi-site .site-header.sp-header.is-scrolled { --sp-header-top:12px; --sp-header-inset:24px; --sp-header-height:72px; --sp-header-padding:24px; }
+ body.satechi-site .sp-header .mobile-menu { inset:calc(100% + 8px) 0 auto; max-height:calc(100dvh - var(--sp-header-top) - var(--sp-header-height) - 20px); }
+ body.satechi-site .sp-header .header-cta { display:none!important; }
+ body.satechi-site .sp-header .mobile-quote { display:inline-flex!important; background:transparent!important; color:var(--sp-ink)!important; border:0!important; border-radius:0!important; min-width:0!important; width:auto!important; padding:0!important; font:500 13px/20px var(--font-body)!important; }
+ body.satechi-site #main .series-catalog { grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+ body.satechi-site #main .catalog-purpose { min-height:42px; }
+ body.satechi-site #main .resource-hub-routes { gap:16px; }
+ body.satechi-site #main .resource-hub-routes :is(h2,p) { margin-inline:18px; }
+ body.satechi-site #main .resource-hub-routes h2 { font-size:20px; }
+ body.satechi-site #main .pdr-reference h1,body.satechi-site #main .hvr-hero h1 { font-size:32px; line-height:1.2; }
+ body.satechi-site #main .pdr-key-facts>div { padding-block:18px; }
+ body.satechi-site #main .pdr-key-facts { margin:24px 0; }
+ body.satechi-site #main .pdr-key-facts dd { font-size:20px; }
+ body.satechi-site #main .procurement-routes { gap:16px; }
+ body.satechi-site #main .procurement-routes>article { padding-inline:18px; }
+ body.satechi-site #main .procurement-route-photo { margin-inline:-18px; width:calc(100% + 36px); }
+ body.satechi-site #main .procurement-record-links { gap:24px; }
+ body.satechi-site #main .contact-focused-layout { gap:32px; }
+ body.satechi-site #main .contact-focused-form { padding:28px; }
+ body.satechi-site #main .review-guide-layout { display:flex; flex-direction:column; gap:32px; }
+ body.satechi-site #main .review-guide-navigation { position:static; width:100%; }
+ body.satechi-site #main .review-guide-toc nav { display:grid; grid-template-columns:1fr 1fr; column-gap:24px; }
+ body.satechi-site #main .review-guide-article { width:100%; max-width:760px; align-self:center; }
+ body.satechi-site #main .faq-group { grid-template-columns:210px minmax(0,1fr); gap:36px; }
+ body.satechi-site:not(.is-home) #main .inquiry-callout-inner { gap:32px; padding:28px; }
+}
+@media(max-width:1020px){
+ body.satechi-site #main .pdr-hero { display:flex; flex-direction:column; align-items:stretch; gap:0; padding-top:12px; }
+ body.satechi-site #main .pdr-breadcrumbs { order:0; }
+ body.satechi-site #main .pdr-hero-copy { display:contents; }
+ body.satechi-site #main .pdr-hero h1 { order:1; margin-bottom:0; }
+ body.satechi-site #main .pdr-gallery { order:3; max-width:560px; align-self:center; margin-bottom:28px; }
+ body.satechi-site #main .pdr-key-facts { order:4; width:100%; margin:0 0 24px; }
+ body.satechi-site #main .pdr-hero-scope { order:5; }
+ body.satechi-site #main .pdr-hero .pdr-button { order:6; align-self:flex-start; }
+}
+@media(max-width:800px){
+ body.satechi-site #main .sample-library-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ body.satechi-site #main :is(.procurement-about,.procurement-packing) .procurement-hero>.container>.breadcrumbs { align-self:flex-start; }
+ body.satechi-site #main { padding-top:130px; }
+ body.satechi-site #main :is(h1,.pdr-reference h1,.hvr-hero h1,.contact-focused-intro h1) { font-size:28px; line-height:33.6px; }
+ body.satechi-site #main h2 { font-size:22px; line-height:1.2; }
+ body.satechi-site #main h3 { font-size:18px; }
+ body.satechi-site #main :is(.pdr-hero,.hvr-hero) { padding-bottom:40px; }
+ body.satechi-site #main .hvr-hero { grid-template-columns:1fr; gap:32px; }
+ body.satechi-site #main .hvr-introduction { max-width:65ch; }
+ body.satechi-site #main .hvr-hero-photo img { aspect-ratio:3/2; }
+ body.satechi-site #main .hvr-section { padding-block:40px; }
+ body.satechi-site #main .hvr-circuit-paths { grid-template-columns:1fr; gap:32px; }
+ body.satechi-site #main .hvr-circuit-paths>div { border-top:1px solid var(--sp-line); padding-top:24px; }
+ body.satechi-site #main .hvr-desktop-comparison { display:none; }
+ body.satechi-site #main .hvr-mobile-comparison { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+ body.satechi-site #main .hvr-series-summary { padding:24px; background:white; border-radius:20px; }
+ body.satechi-site #main .hvr-series-summary h3 { font-size:24px; margin-bottom:20px; }
+ body.satechi-site #main .hvr-series-summary dl>div { padding:14px 0; border-top:1px solid var(--sp-line); }
+ body.satechi-site #main .hvr-series-summary dt { color:var(--sp-muted); font-size:12px; margin-bottom:8px; }
+ body.satechi-site #main .hvr-series-summary dd { margin:0; font-size:14px; line-height:1.65; }
+ body.satechi-site #main :is(.hvr-check-layout,.procurement-company-story,.procurement-packing-footage,.procurement-handover-layout,.rfq-message-grid) { grid-template-columns:1fr; gap:32px; }
+ body.satechi-site #main :is(.hvr-fit-photo,.pdr-detail-photo) { max-width:500px; margin-inline:auto; }
+ body.satechi-site #main :is(.procurement-oem-hero,.procurement-about .procurement-hero>.container,.procurement-packing .procurement-hero>.container,.rfq-hero>.container) { display:flex; flex-direction:column; align-items:stretch; gap:24px; }
+ body.satechi-site #main :is(.procurement-about,.procurement-packing) .procurement-hero .ss-editorial-visual { margin-top:8px; }
+ body.satechi-site #main .procurement-section { padding-block:40px; }
+ body.satechi-site #main .procurement-routes { grid-template-columns:1fr; }
+ body.satechi-site #main .procurement-routes>article { display:grid; grid-template-columns:1fr 1fr; grid-template-rows:repeat(3,auto); gap:12px 24px; padding:24px; align-items:center; }
+ body.satechi-site #main .procurement-route-photo { grid-column:1; grid-row:1/4; width:100%; margin:0; }
+ body.satechi-site #main .procurement-route-photo img { aspect-ratio:1; border-radius:12px; }
+ body.satechi-site #main .procurement-routes :is(h2,p,.card-link) { margin:0; }
+ body.satechi-site #main .procurement-record-links { grid-template-columns:1fr; gap:12px; }
+ body.satechi-site #main .ss-evidence-lead img { aspect-ratio:3/2; }
+ body.satechi-site #main .contact-focused-layout { grid-template-columns:1fr; gap:40px; }
+ body.satechi-site #main .contact-focused-intro { display:grid; grid-template-columns:.8fr 1.2fr; gap:24px 32px; }
+ body.satechi-site #main .contact-focused-intro h1 { grid-column:1/-1; }
+ body.satechi-site #main .contact-focused-intro .ss-editorial-visual { grid-column:1; grid-row:2; }
+ body.satechi-site #main .contact-focused-intro .ss-editorial-visual img { aspect-ratio:1; }
+ body.satechi-site #main .contact-focused-details { grid-column:2; gap:16px; }
+ body.satechi-site #main .resource-hub-routes { grid-template-columns:1fr; gap:24px; }
+ body.satechi-site #main .resource-hub-routes>a { display:grid; grid-template-columns:1fr 1fr; grid-template-rows:1fr 1fr; gap:12px 24px; padding:0 24px 0 0; align-items:center; }
+ body.satechi-site #main .resource-hub-routes img { grid-row:1/3; aspect-ratio:1; margin:0; }
+ body.satechi-site #main .resource-hub-routes h2 { align-self:end; margin:0; }
+ body.satechi-site #main .resource-hub-routes p { align-self:start; margin:0; }
+ body.satechi-site #main .resource-article-list { grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+ body.satechi-site #main .resource-article-list h3 { font-size:18px; }
+ body.satechi-site #main .faq-group { grid-template-columns:1fr; gap:0; margin-bottom:40px; }
+ body.satechi-site #main .faq-group h2 { grid-column:1; grid-row:auto; padding:0 0 24px; }
+ body.satechi-site #main .faq-group details { grid-column:1; }
+ body.satechi-site #main .pdr-spec-groups { gap:32px; }
+ body.satechi-site #main .pdr-specifications>div { grid-template-columns:1fr; gap:8px; }
+ body.satechi-site #main .pdr-sample-configuration { gap:32px; grid-template-columns:1fr 1.1fr; }
+ body.satechi-site #main :is(.pdr-fit-list,.pdr-applications) { grid-template-columns:1fr; gap:24px; }
+ body.satechi-site #main :is(.pdr-document-list,.pdr-purchase-list)>div { grid-template-columns:1fr; gap:10px; }
+ body.satechi-site:not(.is-home) #main .inquiry-callout-inner { grid-template-columns:.8fr 1.2fr; }
+}
+@media(max-width:600px){
+ body.satechi-site.is-home #main .sp-hero-copy :is(h1,h2) { font-size:28px; line-height:33.6px; }
+ body.satechi-site #main .sample-library-grid { gap:16px; }
+ body.satechi-site #main .sample-library-grid>figure { padding:12px; }
+ body.satechi-site #main .sample-library-filters { gap:8px 20px; }
+ body.satechi-site .site-header.sp-header { --sp-header-height:72px; --sp-header-padding:16px; }
+ body.satechi-site .site-header.sp-header.is-scrolled { --sp-header-top:10px; --sp-header-inset:10px; --sp-header-height:63px; --sp-header-padding:14px; }
+ body.satechi-site #main { padding-top:114px; }
+ body.satechi-site #main :is(.page-hero,.procurement-hero,.rfq-hero) { padding-top:16px; padding-bottom:32px; }
+ body.satechi-site #main :is(.breadcrumbs,.pdr-breadcrumbs,.hvr-breadcrumbs) { font-size:11px; margin-bottom:24px; }
+ body.satechi-site #main .section { padding-block:32px 40px; }
+ body.satechi-site #main .catalog-section { padding-top:0; }
+ body.satechi-site #main .series-catalog { grid-template-columns:1fr 1fr; gap:12px; }
+ body.satechi-site #main .series-catalog .product-card { border-radius:14px; padding:10px 10px 20px; }
+ body.satechi-site #main .series-catalog .card-body { padding-top:18px; gap:10px; }
+ body.satechi-site #main .series-catalog .card-title { font-size:19px; }
+ body.satechi-site #main .series-name { font-size:13px; line-height:1.5; }
+ body.satechi-site #main .catalog-purpose { min-height:84px; font-size:12px; }
+ body.satechi-site #main .catalog-ratings dd { font-size:13px; }
+ body.satechi-site #main .catalog-ratings dt { font-size:10px; }
+ body.satechi-site #main .series-catalog .card-link { font-size:11px; }
+ body.satechi-site #main .filter-row { margin-bottom:28px; }
+ body.satechi-site #main :is(.compare-table,.pdr-data-table) { min-width:600px; }
+ body.satechi-site #main :is(th,td) { padding:16px; font-size:13px; }
+ body.satechi-site #main .pdr-wrap { width:calc(100% - 32px); }
+ body.satechi-site #main .pdr-hero { display:flex; flex-direction:column; gap:0; padding-top:16px; }
+ body.satechi-site #main .pdr-breadcrumbs { order:0; }
+ body.satechi-site #main .pdr-hero-copy { display:contents; }
+ body.satechi-site #main .pdr-hero h1 { order:1; margin-bottom:16px; }
+ body.satechi-site #main .pdr-gallery { order:3; width:100%; margin-bottom:24px; }
+ body.satechi-site #main .pdr-key-facts { order:4; width:100%; margin:0 0 24px; }
+ body.satechi-site #main .pdr-key-facts>div { grid-template-columns:120px 1fr; gap:16px; padding-block:16px; }
+ body.satechi-site #main .pdr-key-facts>div:last-child { padding-left:16px; }
+ body.satechi-site #main .pdr-key-facts dd { font-size:18px; }
+ body.satechi-site #main .pdr-hero-scope { order:5; }
+ body.satechi-site #main .pdr-hero .pdr-button { order:6; }
+ body.satechi-site #main .ss-product-gallery .pg-filmstrip button { flex-basis:62px; width:62px; height:62px; }
+ body.satechi-site #main .pdr-section { padding-block:40px; }
+ body.satechi-site #main .pdr-spec-groups,body.satechi-site #main .pdr-sample-configuration { grid-template-columns:1fr; gap:32px; }
+ body.satechi-site #main .pdr-specifications>div { grid-template-columns:1fr 1.2fr; gap:20px; }
+ body.satechi-site #main .pdr-sample-configuration figure { width:100%; }
+ body.satechi-site #main .pdr-detail-photo { width:100%; }
+ body.satechi-site #main .pdr-related-grid { grid-template-columns:1fr; gap:16px; }
+ body.satechi-site #main .pdr-related-grid>a { display:grid; grid-template-columns:110px 1fr; align-items:center; gap:24px; padding:20px; }
+ body.satechi-site #main .pdr-related-grid img { height:120px; margin:0; }
+ body.satechi-site #main .application-directory .grid { grid-template-columns:1fr; gap:40px; }
+ body.satechi-site #main .app-card .card-title { font-size:22px; }
+ body.satechi-site #main .hvr-hero { padding-top:16px; gap:28px; }
+ body.satechi-site #main .hvr-hero h1 { margin-bottom:20px; }
+ body.satechi-site #main .hvr-actions { gap:14px; }
+ body.satechi-site #main .hvr-actions :is(.hvr-button,.hvr-secondary) { font-size:11px; padding-inline:16px; }
+ body.satechi-site #main .hvr-mobile-comparison { grid-template-columns:1fr; }
+ body.satechi-site #main .hvr-sample-photo img { height:250px; }
+ body.satechi-site #main .resource-hub-routes>a { display:block; padding:0 0 28px; }
+ body.satechi-site #main .resource-hub-routes img { aspect-ratio:3/2; margin:0 0 24px; }
+ body.satechi-site #main .resource-hub-routes :is(h2,p) { margin-inline:24px; }
+ body.satechi-site #main .resource-hub-routes h2 { margin-bottom:12px; }
+ body.satechi-site #main .resource-article-list { grid-template-columns:1fr; }
+ body.satechi-site #main .resource-article-list>a:only-child { display:block; padding:0 0 28px; }
+ body.satechi-site #main .resource-article-list>a:only-child img { margin-bottom:24px; }
+ body.satechi-site #main .resource-article-list>a:only-child :is(h3,p) { margin-inline:24px; }
+ body.satechi-site #main .resource-hub-section { margin-bottom:40px; }
+ body.satechi-site #main .ss-guide-cover { margin-top:28px; }
+ body.satechi-site #main .ss-guide-cover img { aspect-ratio:3/2; }
+ body.satechi-site #main .guide-body { padding-top:16px; }
+ body.satechi-site #main .review-guide-toc nav { display:flex; }
+ body.satechi-site #main .review-guide-article .article-overview { font-size:17px; line-height:1.75; margin-bottom:36px; }
+ body.satechi-site #main .review-guide-section { margin-bottom:40px; }
+ body.satechi-site #main .review-guide-photos { grid-template-columns:1fr; }
+ body.satechi-site #main .review-guide-table { min-width:500px; }
+ body.satechi-site #main .procurement-company-records { padding:8px 24px; }
+ body.satechi-site #main .procurement-company-records>div { grid-template-columns:1fr; gap:10px; padding-block:20px; }
+ body.satechi-site #main .procurement-routes>article { display:block; padding:0 24px 28px; }
+ body.satechi-site #main .procurement-route-photo { margin:0 -24px 24px; width:calc(100% + 48px); }
+ body.satechi-site #main .procurement-route-photo img { aspect-ratio:3/2; border-radius:0; }
+ body.satechi-site #main .procurement-routes h2 { margin-bottom:16px; }
+ body.satechi-site #main .procurement-routes .card-link { margin-top:20px; }
+ body.satechi-site #main .procurement-approval-steps { grid-template-columns:1fr; gap:32px; }
+ body.satechi-site #main .procurement-approval-steps li { border-top:1px solid var(--sp-line); padding-top:24px; }
+ body.satechi-site #main .procurement-step-number { font-size:22px; margin-bottom:20px; }
+ body.satechi-site #main .procurement-terms,body.satechi-site #main .procurement-video-pair { grid-template-columns:1fr; gap:0; }
+ body.satechi-site #main .procurement-video-pair { gap:32px; }
+ body.satechi-site #main .procurement-table { display:block; overflow:auto; border-radius:12px; }
+ body.satechi-site #main .procurement-table thead { display:none; }
+ body.satechi-site #main .procurement-table tbody { display:block; }
+ body.satechi-site #main .procurement-table tr { display:block; padding:20px; border-bottom:1px solid var(--sp-line); }
+ body.satechi-site #main .procurement-table :is(th,td) { display:block; padding:8px 0; border:0; }
+ body.satechi-site #main .procurement-mobile-label { display:block; color:var(--sp-muted); font-size:11px; margin-bottom:8px; }
+ body.satechi-site #main .rfq-field-rows>div,body.satechi-site #main .buying-next-stages>section { grid-template-columns:1fr; gap:20px; }
+ body.satechi-site #main .buying-stages { gap:16px 24px; font-size:12px; }
+ body.satechi-site #main .rfq-template { padding:20px; font-size:13px; }
+ body.satechi-site #main .contact-focused-intro { display:flex; gap:28px; }
+ body.satechi-site #main .contact-focused-intro .ss-editorial-visual img { aspect-ratio:3/2; }
+ body.satechi-site #main .contact-focused-form { padding:24px; }
+ body.satechi-site #main .faq-group summary { font-size:16px; }
+ body.satechi-site:not(.is-home) #main .inquiry-callout { margin-block:32px 48px; }
+ body.satechi-site:not(.is-home) #main .inquiry-callout-inner { display:block; padding:24px; }
+ body.satechi-site:not(.is-home) #main .ss-inquiry-visual { margin-bottom:28px; }
+ body.satechi-site:not(.is-home) #main .ss-inquiry-visual img { aspect-ratio:3/2; }
+ body.satechi-site:not(.is-home) #main .inquiry-callout-heading { font-size:22px; }
+ body.satechi-site:not(.is-home) #main .inquiry-callout-details { margin-top:24px; }
+ body.satechi-site:not(.is-home) #main .inquiry-callout-contained { padding:24px; }
+}

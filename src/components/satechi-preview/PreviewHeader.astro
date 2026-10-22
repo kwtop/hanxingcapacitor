@@ -1,0 +1,127 @@
+---
+import { primaryNav } from '../../data/site';
+import MobileNav from '../MobileNav';
+const currentPath = Astro.url.pathname.startsWith('/previews/') ? '/' : Astro.url.pathname;
+const isActive = (item: (typeof primaryNav)[number]) => item.href === '/' ? currentPath === '/' : currentPath.startsWith(item.href) || item.children.some(child => currentPath.startsWith(child.href));
+---
+<header class="site-header sp-header">
+  <div class="header-inner">
+    <a class="brand" href="/" aria-label="Hanxing home"><img class="selected-brand-mark" src="/favicon.svg" alt="" width="32" height="32" /><span class="brand-wordmark">HAN XING</span></a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      {primaryNav.map((item, index) => <div class:list={['nav-item', { 'has-submenu': item.children.length > 0 }]}>
+        <a class="nav-link" href={item.href} aria-haspopup={item.children.length ? 'true' : undefined} aria-expanded={item.children.length ? 'false' : undefined} aria-controls={item.children.length ? `preview-submenu-${index}` : undefined} aria-current={isActive(item) ? 'page' : undefined}>{item.label}</a>
+        {item.children.length > 0 && <div class="nav-dropdown" id={`preview-submenu-${index}`} data-state="closed" aria-hidden="true" inert hidden><div class="nav-dropdown-links">{item.children.map(child => <a href={child.href} aria-current={child.href === currentPath ? 'page' : undefined}>{child.label}</a>)}</div></div>}
+      </div>)}
+    </nav>
+    <a class="button header-cta" href="/contact/">Start an inquiry</a>
+    <MobileNav client:load nav={primaryNav} currentPath={currentPath} desktopBreakpoint={1021} animated />
+    <a class="mobile-quote" href="/contact/">Contact</a>
+  </div>
+</header>
+<script>
+  const header = document.querySelector<HTMLElement>('.sp-header');
+  if (header) {
+    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+    const menus = Array.from(header.querySelectorAll<HTMLElement>('.has-submenu'), item => ({
+      item,
+      link: item.querySelector<HTMLAnchorElement>('.nav-link')!,
+      panel: item.querySelector<HTMLElement>('.nav-dropdown')!,
+      leaveTimer: 0,
+      hideTimer: 0,
+      frame: 0,
+    }));
+    type Dropdown = (typeof menus)[number];
+    const cancelPending = (menu: Dropdown) => {
+      clearTimeout(menu.leaveTimer);
+      clearTimeout(menu.hideTimer);
+      cancelAnimationFrame(menu.frame);
+      menu.leaveTimer = menu.hideTimer = menu.frame = 0;
+    };
+    const close = (menu: Dropdown, immediate = false) => {
+      cancelPending(menu);
+      menu.link.setAttribute('aria-expanded', 'false');
+      menu.panel.inert = true;
+      menu.panel.setAttribute('aria-hidden', 'true');
+      if (immediate || reducedMotion.matches || menu.panel.hidden) {
+        menu.panel.hidden = true;
+        menu.panel.dataset.state = 'closed';
+        return;
+      }
+      menu.panel.dataset.state = 'closing';
+      menu.hideTimer = window.setTimeout(() => {
+        menu.panel.hidden = true;
+        menu.panel.dataset.state = 'closed';
+        menu.hideTimer = 0;
+      }, 160);
+    };
+    const closeAll = (immediate = false) => menus.forEach(menu => close(menu, immediate));
+    const open = (menu: Dropdown, keyboard = false) => {
+      cancelPending(menu);
+      menus.forEach(other => { if (other !== menu) close(other, true); });
+      const wasHidden = menu.panel.hidden;
+      menu.link.setAttribute('aria-expanded', 'true');
+      menu.panel.inert = false;
+      menu.panel.setAttribute('aria-hidden', 'false');
+      menu.panel.hidden = false;
+      if (wasHidden && !keyboard && !reducedMotion.matches) {
+        menu.panel.dataset.state = 'entering';
+        menu.frame = requestAnimationFrame(() => {
+          menu.frame = requestAnimationFrame(() => {
+            menu.panel.dataset.state = 'open';
+            menu.frame = 0;
+          });
+        });
+      } else {
+        // Re-entering during the exit reverses the transition without a new jump.
+        menu.panel.dataset.state = 'open';
+      }
+    };
+    menus.forEach(menu => {
+      const { item, link, panel } = menu;
+      item.addEventListener('pointerenter', event => { if (event.pointerType !== 'touch') open(menu); });
+      item.addEventListener('pointerleave', () => {
+        const focused = document.activeElement;
+        if (focused && item.contains(focused) && focused.matches(':focus-visible')) return;
+        clearTimeout(menu.leaveTimer);
+        menu.leaveTimer = window.setTimeout(() => close(menu), reducedMotion.matches ? 0 : 140);
+      });
+      link.addEventListener('keydown', event => {
+        if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+          event.preventDefault(); open(menu, true);
+          const links = panel.querySelectorAll<HTMLAnchorElement>('a');
+          links[event.key === 'ArrowDown' ? 0 : links.length - 1]?.focus();
+        }
+      });
+      item.addEventListener('keydown', event => {
+        if (event.key === 'Escape') { event.preventDefault(); close(menu, true); link.focus(); }
+        const links = [...panel.querySelectorAll<HTMLAnchorElement>('a')];
+        const current = links.indexOf(document.activeElement as HTMLAnchorElement);
+        if (current >= 0 && event.target instanceof Node && panel.contains(event.target) && ['ArrowDown', 'ArrowUp', 'Home', 'End'].includes(event.key)) {
+          event.preventDefault();
+          links[event.key === 'Home' ? 0 : event.key === 'End' ? links.length - 1 : (current + (event.key === 'ArrowDown' ? 1 : -1) + links.length) % links.length]?.focus();
+        }
+      });
+      item.addEventListener('focusin', () => { clearTimeout(menu.leaveTimer); });
+      item.addEventListener('focusout', event => {
+        if (!item.contains(event.relatedTarget as Node | null)) close(menu);
+      });
+    });
+    header.querySelectorAll('.nav-item:not(.has-submenu)').forEach(item => {
+      item.addEventListener('pointerenter', () => closeAll());
+    });
+    document.addEventListener('click', event => {
+      if (!menus.some(({ item }) => event.target instanceof Node && item.contains(event.target))) closeAll();
+    });
+    // Separate enter/leave thresholds keep the floating state stable near the top.
+    const update = () => {
+      const threshold = header.classList.contains('is-scrolled') ? 32 : 64;
+      header.classList.toggle('is-scrolled', window.scrollY > threshold);
+    };
+    let scrollFrame = 0;
+    update(); window.addEventListener('scroll', () => {
+      if (scrollFrame) return;
+      scrollFrame = requestAnimationFrame(() => { scrollFrame = 0; update(); });
+    }, { passive: true });
+    matchMedia('(max-width: 1020px)').addEventListener('change', () => closeAll(true));
+  }
+</script>

@@ -1,0 +1,1002 @@
+{
+  "status": "截图身份与渲染前提通过；视觉仍需复核",
+  "manifest": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-02\\768\\run.json",
+  "capture": {
+    "assets": {},
+    "captured_at": "2026-10-18T14:55:18.232Z",
+    "document_height": 8134,
+    "document_overflow_x": false,
+    "dpr": 1.0000000298023224,
+    "elements": [
+      {
+        "box": [
+          20,
+          52.79166793823242,
+          728,
+          72
+        ],
+        "computed": {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgb(27, 28, 33)",
+          "display": "block",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "count": 1,
+        "name": "header",
+        "selector": ".sp-header",
+        "status": "measured",
+        "text": "HAN XINGHomeProductsCBB60 · Motor runCBB61 · Fan runCBB65 · HVAC runCD60 · Motor startSample photographsApplicationsWater pumpsFans and blowersWashing machinesAir conditioners / HVACOEM & qualityOEM & private labelManufacturing & qualityPacking & dispatchResourcesTechnical guidesBuying & shippingBuy",
+        "viewport_intersects": true
+      },
+      {
+        "box": [
+          0,
+          32.802085876464844,
+          768,
+          840
+        ],
+        "computed": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(27, 28, 33)",
+          "display": "block",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "count": 1,
+        "name": "hero",
+        "selector": ".sp-hero",
+        "status": "measured",
+        "text": "HAN XING CAPACITORSMotor capacitors.Run & start.Run and start series for equipment manufacturers.Compare capacitor seriesCBB65 · HVAC RUNSingle ordual run.Check the original rating and terminal layout.Explore CBB65CBB60 · MOTOR RUNCheck the rating.Then the fit.Match the case, leads and mounting spac",
+        "viewport_intersects": true
+      },
+      {
+        "box": [
+          0,
+          872.8021240234375,
+          768,
+          100
+        ],
+        "computed": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(27, 28, 33)",
+          "display": "flex",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "count": 1,
+        "name": "series-strip",
+        "selector": ".sp-series-strip",
+        "status": "measured",
+        "text": "CBB60CBB61CBB65CD60",
+        "viewport_intersects": true
+      },
+      {
+        "box": [
+          0,
+          972.8021240234376,
+          768,
+          970.8125
+        ],
+        "computed": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(27, 28, 33)",
+          "display": "block",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "count": 1,
+        "name": "categories",
+        "selector": ".sp-categories",
+        "status": "measured",
+        "text": "Motor capacitor seriesCBB60 · Motor runRun capacitors for pumps and other single-phase motors.CBB61 · Fan runCompact run capacitors for fans and blowers.CBB65 · HVAC runMetal-can run capacitors for HVAC and refrigeration.CD60 · Motor startStart capacitors for separately switched starting circuits.",
+        "viewport_intersects": true
+      },
+      {
+        "box": [
+          0,
+          1943.6146240234375,
+          768,
+          312.94793701171875
+        ],
+        "computed": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(27, 28, 33)",
+          "display": "block",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "count": 1,
+        "name": "label-banner",
+        "selector": ".sp-photo-banner:nth-of-type(3)",
+        "status": "measured",
+        "text": "Read the label.Copy the original µF and VAC. Confirm the motor duty before choosing a series.Read the label",
+        "viewport_intersects": false
+      },
+      {
+        "box": [
+          0,
+          2256.5625,
+          768,
+          708.59375
+        ],
+        "computed": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(27, 28, 33)",
+          "display": "block",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "count": 1,
+        "name": "series-rail",
+        "selector": ".sp-content-rail.sp-has-range-note",
+        "status": "measured",
+        "text": "Series specificationsOriginal samplesCBB60 · Motor run2–100 µF110–450 VACCBB61 · Fan run0.5–35 µF110–450 VACCBB65 · HVAC runSingle: 2–100 µF · 110–450 VACDual: 1+15 to 15+80 µF · 370–450 VACCD60 · Motor start20–1500 µF110–330 VACPublished series ranges. Model availability and rating combinations nee",
+        "viewport_intersects": false
+      },
+      {
+        "box": [
+          0,
+          2965.15625,
+          768,
+          312.94793701171875
+        ],
+        "computed": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(27, 28, 33)",
+          "display": "block",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "count": 1,
+        "name": "fit-banner",
+        "selector": ".sp-photo-banner:nth-of-type(5)",
+        "status": "measured",
+        "text": "Check the installed fit.Compare the case, terminals and mounting space with the original part and drawing.Check dimensions",
+        "viewport_intersects": false
+      },
+      {
+        "box": [
+          0,
+          3278.104248046875,
+          768,
+          707.59375
+        ],
+        "computed": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(27, 28, 33)",
+          "display": "block",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "count": 1,
+        "name": "guide-rail",
+        "selector": ".sp-content-rail:not(.sp-has-range-note)",
+        "status": "measured",
+        "text": "Technical guidesBuying & shippingRead the capacitor labelCopy the original µF and VAC, along with the other label markings.Dimensions & connectionsCheck the case, mounting space, terminals and wiring.Start or run?The motor circuit specifies the duty. Check it before choosing a series.Single or dual ",
+        "viewport_intersects": false
+      },
+      {
+        "box": [
+          0,
+          3985.697998046875,
+          768,
+          1152.197998046875
+        ],
+        "computed": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(27, 28, 33)",
+          "display": "block",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "count": 1,
+        "name": "applications",
+        "selector": ".sp-applications",
+        "status": "measured",
+        "text": "Find your applicationWater pumpsAir conditioners / HVACFans and blowersWashing machines",
+        "viewport_intersects": false
+      },
+      {
+        "box": [
+          0,
+          5137.89599609375,
+          768,
+          1082.197998046875
+        ],
+        "computed": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(27, 28, 33)",
+          "display": "block",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "count": 1,
+        "name": "inquiry",
+        "selector": ".sp-inquiry-panel",
+        "status": "measured",
+        "text": "Send your requirementsShare the original label, quantity and destination.Capacitor series (optional)CBB60CBB61CBB65CD60Not sure yetPrepare an inquiryEmail usWhatsApp",
+        "viewport_intersects": false
+      },
+      {
+        "box": [
+          0,
+          6220.09375,
+          768,
+          107
+        ],
+        "computed": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(27, 28, 33)",
+          "display": "block",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "count": 1,
+        "name": "source-intro",
+        "selector": ".sp-source-intro",
+        "status": "measured",
+        "text": "Samples & productionIllustrative displays above. Original sample photographs and footage below.",
+        "viewport_intersects": false
+      },
+      {
+        "box": [
+          0,
+          6327.09375,
+          768,
+          760
+        ],
+        "computed": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(27, 28, 33)",
+          "display": "block",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "count": 1,
+        "name": "source-stories",
+        "selector": ".sp-stories",
+        "status": "measured",
+        "text": "Production footageManufacturing & qualityOriginal sample photographsBrowse the supplied samples",
+        "viewport_intersects": false
+      },
+      {
+        "box": [
+          0,
+          7087.09375,
+          768,
+          257.5833435058594
+        ],
+        "computed": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(27, 28, 33)",
+          "display": "grid",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "count": 1,
+        "name": "resource-bar",
+        "selector": ".sp-resource-bar",
+        "status": "measured",
+        "text": "Technical guidesRatings, connections and installed fit.Buying & shippingPrepare an inquiry and confirm the order.Original photographsCheck the supplied product samples.Contact HanxingContinue by email or WhatsApp.",
+        "viewport_intersects": false
+      },
+      {
+        "box": [
+          0,
+          7344.67724609375,
+          768,
+          789.0625
+        ],
+        "computed": {
+          "backgroundColor": "rgb(27, 28, 33)",
+          "color": "rgb(252, 252, 250)",
+          "display": "block",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "count": 1,
+        "name": "footer",
+        "selector": ".site-footer",
+        "status": "measured",
+        "text": "HAN XINGContactManuelaMusio570@gmail.com+86 153 3339 4111Hangzhou Zebang Refrigeration Equipment Co., Ltd.Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, ChinaProducts+CBB60 · Motor runCBB61 · Fan runCBB65 · HVAC runCD60 · Motor startSample photographsApplications+Water pumpsFans an",
+        "viewport_intersects": false
+      }
+    ],
+    "fonts_ready": true,
+    "images_ready": true,
+    "measurement_sha256": "6f06902038aa2096e6ae1c4d1ca8cfe935df6549f95340b9f9aa82275f2d39a5",
+    "scroll": {
+      "x": 0,
+      "y": 0
+    },
+    "title": "HAN XING — Satechi homepage study",
+    "url": "http://127.0.0.1:4335/previews/satechi-home/",
+    "viewport": {
+      "height": 1024,
+      "width": 768
+    },
+    "full_page": true,
+    "screenshot_scale": "css",
+    "capture_options": {
+      "format": "png",
+      "clipScale": 1,
+      "captureBeyondViewport": true,
+      "reducedMotion": true,
+      "stitchedContiguousClips": true,
+      "mobile": true,
+      "deviceScaleFactor": 1,
+      "neutralPointer": "noninteractive H1"
+    }
+  },
+  "section_positions": [],
+  "comparison": "D:\\Hangxing\\workspace\\docs\\satechi-fidelity-20261018\\pass-02\\768\\verified\\verify-metrics.json",
+  "geometry": {
+    "measurement_sha256": "6f06902038aa2096e6ae1c4d1ca8cfe935df6549f95340b9f9aa82275f2d39a5",
+    "complete": true,
+    "unavailable_regions": [],
+    "regions": [
+      {
+        "name": "header",
+        "selector": ".sp-header",
+        "status": "measured",
+        "box_type": "element",
+        "actual_css_box": [
+          20,
+          52.79166793823242,
+          728,
+          72
+        ],
+        "computed": {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgb(27, 28, 33)",
+          "display": "block",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "reference_css_box": [
+          20.0,
+          24.0,
+          728.0,
+          72.0
+        ],
+        "delta_css": [
+          0.0,
+          28.792,
+          0.0,
+          0.0
+        ],
+        "max_abs_delta_css": 28.792
+      },
+      {
+        "name": "hero",
+        "selector": ".sp-hero",
+        "status": "measured",
+        "box_type": "element",
+        "actual_css_box": [
+          0,
+          32.802085876464844,
+          768,
+          840
+        ],
+        "computed": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(27, 28, 33)",
+          "display": "block",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "reference_css_box": [
+          0.0,
+          33.0,
+          768.0,
+          840.0
+        ],
+        "delta_css": [
+          0.0,
+          -0.198,
+          0.0,
+          0.0
+        ],
+        "max_abs_delta_css": 0.198
+      },
+      {
+        "name": "series-strip",
+        "selector": ".sp-series-strip",
+        "status": "measured",
+        "box_type": "element",
+        "actual_css_box": [
+          0,
+          872.8021240234375,
+          768,
+          100
+        ],
+        "computed": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(27, 28, 33)",
+          "display": "flex",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "reference_css_box": [
+          0.0,
+          873.0,
+          768.0,
+          100.0
+        ],
+        "delta_css": [
+          0.0,
+          -0.198,
+          0.0,
+          0.0
+        ],
+        "max_abs_delta_css": 0.198
+      },
+      {
+        "name": "categories",
+        "selector": ".sp-categories",
+        "status": "measured",
+        "box_type": "element",
+        "actual_css_box": [
+          0,
+          972.8021240234376,
+          768,
+          970.8125
+        ],
+        "computed": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(27, 28, 33)",
+          "display": "block",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "reference_css_box": [
+          0.0,
+          973.0,
+          768.0,
+          961.0
+        ],
+        "delta_css": [
+          0.0,
+          -0.198,
+          0.0,
+          9.812
+        ],
+        "max_abs_delta_css": 9.812
+      },
+      {
+        "name": "label-banner",
+        "selector": ".sp-photo-banner:nth-of-type(3)",
+        "status": "measured",
+        "box_type": "element",
+        "actual_css_box": [
+          0,
+          1943.6146240234375,
+          768,
+          312.94793701171875
+        ],
+        "computed": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(27, 28, 33)",
+          "display": "block",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "reference_css_box": [
+          0.0,
+          1934.0,
+          768.0,
+          313.0
+        ],
+        "delta_css": [
+          0.0,
+          9.615,
+          0.0,
+          -0.052
+        ],
+        "max_abs_delta_css": 9.615
+      },
+      {
+        "name": "series-rail",
+        "selector": ".sp-content-rail.sp-has-range-note",
+        "status": "measured",
+        "box_type": "element",
+        "actual_css_box": [
+          0,
+          2256.5625,
+          768,
+          708.59375
+        ],
+        "computed": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(27, 28, 33)",
+          "display": "block",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "reference_css_box": [
+          0.0,
+          2247.0,
+          768.0,
+          704.0
+        ],
+        "delta_css": [
+          0.0,
+          9.562,
+          0.0,
+          4.594
+        ],
+        "max_abs_delta_css": 9.562
+      },
+      {
+        "name": "fit-banner",
+        "selector": ".sp-photo-banner:nth-of-type(5)",
+        "status": "measured",
+        "box_type": "element",
+        "actual_css_box": [
+          0,
+          2965.15625,
+          768,
+          312.94793701171875
+        ],
+        "computed": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(27, 28, 33)",
+          "display": "block",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "reference_css_box": [
+          0.0,
+          2951.0,
+          768.0,
+          313.0
+        ],
+        "delta_css": [
+          0.0,
+          14.156,
+          0.0,
+          -0.052
+        ],
+        "max_abs_delta_css": 14.156
+      },
+      {
+        "name": "guide-rail",
+        "selector": ".sp-content-rail:not(.sp-has-range-note)",
+        "status": "measured",
+        "box_type": "element",
+        "actual_css_box": [
+          0,
+          3278.104248046875,
+          768,
+          707.59375
+        ],
+        "computed": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(27, 28, 33)",
+          "display": "block",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "reference_css_box": [
+          0.0,
+          3263.0,
+          768.0,
+          704.0
+        ],
+        "delta_css": [
+          0.0,
+          15.104,
+          0.0,
+          3.594
+        ],
+        "max_abs_delta_css": 15.104
+      },
+      {
+        "name": "applications",
+        "selector": ".sp-applications",
+        "status": "measured",
+        "box_type": "element",
+        "actual_css_box": [
+          0,
+          3985.697998046875,
+          768,
+          1152.197998046875
+        ],
+        "computed": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(27, 28, 33)",
+          "display": "block",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "reference_css_box": [
+          0.0,
+          3967.0,
+          768.0,
+          832.0
+        ],
+        "delta_css": [
+          0.0,
+          18.698,
+          0.0,
+          320.198
+        ],
+        "max_abs_delta_css": 320.198
+      },
+      {
+        "name": "inquiry",
+        "selector": ".sp-inquiry-panel",
+        "status": "measured",
+        "box_type": "element",
+        "actual_css_box": [
+          0,
+          5137.89599609375,
+          768,
+          1082.197998046875
+        ],
+        "computed": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(27, 28, 33)",
+          "display": "block",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "reference_css_box": [
+          0.0,
+          4799.0,
+          768.0,
+          1056.0
+        ],
+        "delta_css": [
+          0.0,
+          338.896,
+          0.0,
+          26.198
+        ],
+        "max_abs_delta_css": 338.896
+      },
+      {
+        "name": "source-intro",
+        "selector": ".sp-source-intro",
+        "status": "measured",
+        "box_type": "element",
+        "actual_css_box": [
+          0,
+          6220.09375,
+          768,
+          107
+        ],
+        "computed": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(27, 28, 33)",
+          "display": "block",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "reference_css_box": [
+          0.0,
+          5856.0,
+          768.0,
+          107.0
+        ],
+        "delta_css": [
+          0.0,
+          364.094,
+          0.0,
+          0.0
+        ],
+        "max_abs_delta_css": 364.094
+      },
+      {
+        "name": "source-stories",
+        "selector": ".sp-stories",
+        "status": "measured",
+        "box_type": "element",
+        "actual_css_box": [
+          0,
+          6327.09375,
+          768,
+          760
+        ],
+        "computed": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(27, 28, 33)",
+          "display": "block",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "reference_css_box": [
+          0.0,
+          5963.0,
+          768.0,
+          760.0
+        ],
+        "delta_css": [
+          0.0,
+          364.094,
+          0.0,
+          0.0
+        ],
+        "max_abs_delta_css": 364.094
+      },
+      {
+        "name": "resource-bar",
+        "selector": ".sp-resource-bar",
+        "status": "measured",
+        "box_type": "element",
+        "actual_css_box": [
+          0,
+          7087.09375,
+          768,
+          257.5833435058594
+        ],
+        "computed": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(27, 28, 33)",
+          "display": "grid",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "reference_css_box": [
+          0.0,
+          6723.0,
+          768.0,
+          259.0
+        ],
+        "delta_css": [
+          0.0,
+          364.094,
+          0.0,
+          -1.417
+        ],
+        "max_abs_delta_css": 364.094
+      },
+      {
+        "name": "footer",
+        "selector": ".site-footer",
+        "status": "measured",
+        "box_type": "element",
+        "actual_css_box": [
+          0,
+          7344.67724609375,
+          768,
+          789.0625
+        ],
+        "computed": {
+          "backgroundColor": "rgb(27, 28, 33)",
+          "color": "rgb(252, 252, 250)",
+          "display": "block",
+          "fontFamily": "\"Inter Variable\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        "reference_css_box": [
+          0.0,
+          6981.0,
+          768.0,
+          883.0
+        ],
+        "delta_css": [
+          0.0,
+          363.677,
+          0.0,
+          -93.938
+        ],
+        "max_abs_delta_css": 363.677
+      }
+    ],
+    "note": "偏差是 CSS 像素，不是还原率；布局可测量不证明未遮挡、字体正确或交互可用。",
+    "changes": [
+      {
+        "name": "header",
+        "before": 28.792,
+        "after": 28.792,
+        "delta": 0.0,
+        "change": "unchanged"
+      },
+      {
+        "name": "hero",
+        "before": 0.198,
+        "after": 0.198,
+        "delta": 0.0,
+        "change": "unchanged"
+      },
+      {
+        "name": "series-strip",
+        "before": 0.198,
+        "after": 0.198,
+        "delta": 0.0,
+        "change": "unchanged"
+      },
+      {
+        "name": "categories",
+        "before": 212.875,
+        "after": 9.812,
+        "delta": -203.063,
+        "change": "reduced"
+      },
+      {
+        "name": "label-banner",
+        "before": 212.677,
+        "after": 9.615,
+        "delta": -203.062,
+        "change": "reduced"
+      },
+      {
+        "name": "series-rail",
+        "before": 212.208,
+        "after": 9.562,
+        "delta": -202.646,
+        "change": "reduced"
+      },
+      {
+        "name": "fit-banner",
+        "before": 284.604,
+        "after": 14.156,
+        "delta": -270.448,
+        "change": "reduced"
+      },
+      {
+        "name": "guide-rail",
+        "before": 285.135,
+        "after": 15.104,
+        "delta": -270.031,
+        "change": "reduced"
+      },
+      {
+        "name": "applications",
+        "before": 400.198,
+        "after": 320.198,
+        "delta": -80.0,
+        "change": "reduced"
+      },
+      {
+        "name": "inquiry",
+        "before": 722.729,
+        "after": 338.896,
+        "delta": -383.833,
+        "change": "reduced"
+      },
+      {
+        "name": "source-intro",
+        "before": 717.333,
+        "after": 364.094,
+        "delta": -353.239,
+        "change": "reduced"
+      },
+      {
+        "name": "source-stories",
+        "before": 740.729,
+        "after": 364.094,
+        "delta": -376.635,
+        "change": "reduced"
+      },
+      {
+        "name": "resource-bar",
+        "before": 740.729,
+        "after": 364.094,
+        "delta": -376.635,
+        "change": "reduced"
+      },
+      {
+        "name": "footer",
+        "before": 740.312,
+        "after": 363.677,
+        "delta": -376.635,
+        "change": "reduced"
+      }
+    ]
+  }
+}

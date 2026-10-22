@@ -1,0 +1,81 @@
+/* Content spacing for the selected preview. Keep compact product cards, navigation,
+   forms and photographic heroes on their own layout rules. */
+body.satechi-site #main {
+  --ss-flow-gap:24px;
+  --ss-note-gap:20px;
+  --ss-table-gap:28px;
+  --ss-reading-break:40px;
+}
+
+/* Reading blocks need a paragraph rhythm even when the preview reset removes
+   browser margins. Existing larger section gaps remain with their components. */
+body.satechi-site #main :is(.review-guide-copy,.procurement-readable,.editorial)>:is(p,ul,ol,dl,table,figure)+:is(p,ul,ol,dl,table,figure) {
+  margin-top:var(--ss-flow-gap);
+}
+body.satechi-site #main :is(.review-guide-copy,.procurement-readable,.editorial)>:is(p,ul,ol,dl,table,figure)+:is(h2,h3,h4) {
+  margin-top:var(--ss-reading-break);
+}
+body.satechi-site #main :is(.review-guide-copy,.procurement-readable,.editorial)>:is(h3,h4)+:is(p,ul,ol,dl) {
+  margin-top:16px;
+}
+
+/* Tables, their limits and the next action are separate reading steps. */
+body.satechi-site #main :is(.pdr-section,.hvr-section,.procurement-section,.review-guide-copy) :is(table,.pdr-table-wrap,.hvr-table-wrap)+p {
+  margin-top:var(--ss-table-gap);
+}
+body.satechi-site #main :is(.pdr-section,.hvr-section,.procurement-section,.review-guide-copy,.reference-utility) p+:is(a.card-link,a.button,a.pdr-button,a.pdr-secondary,a.hvr-button) {
+  margin-top:var(--ss-flow-gap);
+}
+body.satechi-site #main .resource-hub-section>p+.resource-hub-actions {
+  margin-top:var(--ss-flow-gap);
+}
+body.satechi-site #main :is(.pdr-table-hint,.compare-scroll-hint) {
+  margin-bottom:var(--ss-note-gap);
+  line-height:1.6;
+}
+body.satechi-site #main .pdr-variant-specifications+.pdr-spec-groups {
+  margin-top:var(--ss-reading-break);
+}
+
+/* Sample records: introduction, data and explanatory notes must not run together. */
+body.satechi-site #main .sample-evidence {
+  margin:0 0 48px;
+}
+body.satechi-site #main .sample-evidence-intro {
+  margin:0 0 var(--ss-flow-gap);
+  line-height:1.7;
+}
+body.satechi-site #main .sample-evidence-note {
+  margin:var(--ss-table-gap) 0 0;
+  line-height:1.7;
+}
+body.satechi-site #main .sample-evidence-note+.sample-evidence-note {
+  margin-top:var(--ss-note-gap);
+}
+body.satechi-site #main .pdr-sample-copy>dl+ul {
+  margin-top:var(--ss-flow-gap);
+}
+body.satechi-site #main .pdr-sample-copy>ul+.pdr-note {
+  margin-top:var(--ss-flow-gap);
+}
+body.satechi-site #main .reference-utility .feature-box>h2+p {
+  margin-top:var(--ss-note-gap);
+}
+
+@media(max-width:600px) {
+  body.satechi-site #main {
+    --ss-flow-gap:20px;
+    --ss-note-gap:16px;
+    --ss-table-gap:24px;
+    --ss-reading-break:32px;
+  }
+  body.satechi-site #main .sample-evidence {
+    margin-bottom:36px;
+  }
+  body.satechi-site #main .procurement-hub .co-oem-stories>article:first-child>.procurement-route-photo {
+    margin-bottom:24px;
+  }
+  body.satechi-site #main .procurement-hub .co-oem-stories>article:first-child>.card-link {
+    margin-top:var(--ss-flow-gap);
+  }
+}

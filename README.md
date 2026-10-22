@@ -13,6 +13,18 @@ npm run dev
 
 Open the local URL printed by Astro. `npm run check` validates Astro/TypeScript and `npm run build` creates a Node standalone build. `npm run start` runs that build.
 
+### Current visual preview
+
+To open the current Satechi-inspired version, including the updated navigation, product pages and brochure imagery:
+
+```bash
+npm run dev:visual
+```
+
+Open `http://127.0.0.1:4340/`. This command sets `HANXING_VISUAL_PREVIEW=satechi` for the local development server. The visual variant is intentionally gated to development; `npm run dev` and the standard production build retain the baseline presentation. Pushing this repository does not promote the visual preview to production.
+
+The latest product accuracy review is in [product-accuracy-audit-20261022.md](docs/product-accuracy-audit-20261022.md). It records unresolved model, label and source discrepancies; uploading the current code does not mean those items have been corrected or independently verified.
+
 ## Site structure
 
 - Products: CBB60, CBB61, CBB65, CD60, plus comparison and duty filter.
@@ -67,6 +79,8 @@ git push origin main
 ```
 
 The repository excludes dependencies, build output, environment secrets, local inquiry records and review archives. The `.env.example` file contains configuration names and safe defaults. Pushing to GitHub saves the project; publishing the website requires a separate deployment.
+
+Generated PNG, JPEG, WebP and SVG review captures, plus saved patch snapshots, under `docs/` stay local to avoid committing the large screenshot archive. Written review records, image provenance and the actual website assets under `public/` are versioned. Screenshot links in review records require the original local review files.
 
 ## Visual redesign — 2026-09-23
 

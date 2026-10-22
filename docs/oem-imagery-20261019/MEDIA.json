@@ -1,0 +1,212 @@
+{
+  "packing-worktable": {
+    "src": "/images/previews/oem-imagery-20261019/packing-worktable-1536.webp",
+    "srcset": "/images/previews/oem-imagery-20261019/packing-worktable-640.webp 640w, /images/previews/oem-imagery-20261019/packing-worktable-960.webp 960w, /images/previews/oem-imagery-20261019/packing-worktable-1536.webp 1536w",
+    "width": 1536,
+    "height": 1024,
+    "original": "/images/real/packing-scene.jpg",
+    "provenance": "imagegen-source-bound-reconstruction",
+    "nativeWidth": 1536,
+    "nativeHeight": 1024,
+    "variants": [
+      {
+        "src": "/images/previews/oem-imagery-20261019/packing-worktable-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 46700
+      },
+      {
+        "src": "/images/previews/oem-imagery-20261019/packing-worktable-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 82632
+      },
+      {
+        "src": "/images/previews/oem-imagery-20261019/packing-worktable-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 156876
+      }
+    ]
+  },
+  "workshop-station": {
+    "src": "/images/previews/oem-imagery-20261019/workshop-station-1536.webp",
+    "srcset": "/images/previews/oem-imagery-20261019/workshop-station-640.webp 640w, /images/previews/oem-imagery-20261019/workshop-station-960.webp 960w, /images/previews/oem-imagery-20261019/workshop-station-1536.webp 1536w",
+    "width": 1536,
+    "height": 1024,
+    "original": "/images/real/inspection-station.jpg",
+    "provenance": "imagegen-source-bound-reconstruction",
+    "nativeWidth": 1536,
+    "nativeHeight": 1024,
+    "variants": [
+      {
+        "src": "/images/previews/oem-imagery-20261019/workshop-station-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 42512
+      },
+      {
+        "src": "/images/previews/oem-imagery-20261019/workshop-station-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 77362
+      },
+      {
+        "src": "/images/previews/oem-imagery-20261019/workshop-station-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 147564
+      }
+    ]
+  },
+  "film-process": {
+    "src": "/images/previews/oem-imagery-20261019/film-process-1536.webp",
+    "srcset": "/images/previews/oem-imagery-20261019/film-process-640.webp 640w, /images/previews/oem-imagery-20261019/film-process-960.webp 960w, /images/previews/oem-imagery-20261019/film-process-1536.webp 1536w",
+    "width": 1536,
+    "height": 864,
+    "original": "/images/real/film-rolls.jpg",
+    "provenance": "imagegen-source-bound-reconstruction",
+    "nativeWidth": 1672,
+    "nativeHeight": 941,
+    "variants": [
+      {
+        "src": "/images/previews/oem-imagery-20261019/film-process-640.webp",
+        "width": 640,
+        "height": 360,
+        "bytes": 28290
+      },
+      {
+        "src": "/images/previews/oem-imagery-20261019/film-process-960.webp",
+        "width": 960,
+        "height": 540,
+        "bytes": 47752
+      },
+      {
+        "src": "/images/previews/oem-imagery-20261019/film-process-1536.webp",
+        "width": 1536,
+        "height": 864,
+        "bytes": 86880
+      }
+    ]
+  },
+  "winding-process": {
+    "src": "/images/previews/oem-imagery-20261019/winding-process-1536.webp",
+    "srcset": "/images/previews/oem-imagery-20261019/winding-process-640.webp 640w, /images/previews/oem-imagery-20261019/winding-process-960.webp 960w, /images/previews/oem-imagery-20261019/winding-process-1536.webp 1536w",
+    "width": 1536,
+    "height": 864,
+    "original": "/images/real/winding-equipment.jpg",
+    "provenance": "imagegen-source-bound-reconstruction",
+    "nativeWidth": 1672,
+    "nativeHeight": 941,
+    "variants": [
+      {
+        "src": "/images/previews/oem-imagery-20261019/winding-process-640.webp",
+        "width": 640,
+        "height": 360,
+        "bytes": 28960
+      },
+      {
+        "src": "/images/previews/oem-imagery-20261019/winding-process-960.webp",
+        "width": 960,
+        "height": 540,
+        "bytes": 48980
+      },
+      {
+        "src": "/images/previews/oem-imagery-20261019/winding-process-1536.webp",
+        "width": 1536,
+        "height": 864,
+        "bytes": 88080
+      }
+    ]
+  },
+  "testing-area": {
+    "src": "/images/previews/oem-imagery-20261019/testing-area-1536.webp",
+    "srcset": "/images/previews/oem-imagery-20261019/testing-area-640.webp 640w, /images/previews/oem-imagery-20261019/testing-area-960.webp 960w, /images/previews/oem-imagery-20261019/testing-area-1536.webp 1536w",
+    "width": 1536,
+    "height": 864,
+    "original": "/images/real/test-area.jpg",
+    "provenance": "imagegen-source-bound-reconstruction",
+    "nativeWidth": 1672,
+    "nativeHeight": 941,
+    "variants": [
+      {
+        "src": "/images/previews/oem-imagery-20261019/testing-area-640.webp",
+        "width": 640,
+        "height": 360,
+        "bytes": 27498
+      },
+      {
+        "src": "/images/previews/oem-imagery-20261019/testing-area-960.webp",
+        "width": 960,
+        "height": 540,
+        "bytes": 48896
+      },
+      {
+        "src": "/images/previews/oem-imagery-20261019/testing-area-1536.webp",
+        "width": 1536,
+        "height": 864,
+        "bytes": 90218
+      }
+    ]
+  },
+  "dispatch-area": {
+    "src": "/images/previews/oem-imagery-20261019/dispatch-area-1536.webp",
+    "srcset": "/images/previews/oem-imagery-20261019/dispatch-area-640.webp 640w, /images/previews/oem-imagery-20261019/dispatch-area-960.webp 960w, /images/previews/oem-imagery-20261019/dispatch-area-1536.webp 1536w",
+    "width": 1536,
+    "height": 1024,
+    "original": "/images/real/dispatch-pallets.jpg",
+    "provenance": "imagegen-source-bound-reconstruction",
+    "nativeWidth": 1536,
+    "nativeHeight": 1024,
+    "variants": [
+      {
+        "src": "/images/previews/oem-imagery-20261019/dispatch-area-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 59168
+      },
+      {
+        "src": "/images/previews/oem-imagery-20261019/dispatch-area-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 125856
+      },
+      {
+        "src": "/images/previews/oem-imagery-20261019/dispatch-area-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 291506
+      }
+    ]
+  },
+  "oem-label-review": {
+    "src": "/images/previews/oem-imagery-20261019/oem-label-review-1536.webp",
+    "srcset": "/images/previews/oem-imagery-20261019/oem-label-review-640.webp 640w, /images/previews/oem-imagery-20261019/oem-label-review-960.webp 960w, /images/previews/oem-imagery-20261019/oem-label-review-1536.webp 1536w",
+    "width": 1536,
+    "height": 1024,
+    "original": "/images/real/cbb65-4.jpg",
+    "provenance": "imagegen-source-bound-reconstruction",
+    "nativeWidth": 1536,
+    "nativeHeight": 1024,
+    "variants": [
+      {
+        "src": "/images/previews/oem-imagery-20261019/oem-label-review-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 34292
+      },
+      {
+        "src": "/images/previews/oem-imagery-20261019/oem-label-review-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 67814
+      },
+      {
+        "src": "/images/previews/oem-imagery-20261019/oem-label-review-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 147318
+      }
+    ]
+  }
+}
