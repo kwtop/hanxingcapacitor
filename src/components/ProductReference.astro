@@ -32,11 +32,11 @@ const mechanical = [
 ];
 const sampleChecks: Record<string, string[]> = {
   'cbb60-stud': ['Measure the body diameter and height separately from the base stud.', 'Include stud and fixing dimensions, lead length and clearance around the installed leads.'],
-  'cbb61-blades': ['Each label belongs to a separate sample. Specify the individual rating required.', 'Measure case L / W / H, blade spacing and fixing positions; include a photo of the blade pattern.'],
-  'cbb61-leads': ['Specify the required µF and VAC for the wire-lead version.', 'Specify lead exit, length, connector and mounting-tab positions on the wiring drawing.'],
-  'cbb65-single': ['Copy the single µF value and rated VAC from the original part.', 'Use the model drawing to check can diameter, height, mounting and terminal clearance.'],
-  'cbb65-dual': ['Keep the rating as 50+5 µF: it describes two independent sections.', 'Match each terminal-group marking to its connection in the motor and capacitor drawings.'],
-  'cd60-start': ['Use the 500 µF ±5%, 300 VAC sample label as the reference for this configuration.', 'Measure the body, terminal or lead connections and installed clearance.', 'Request the permitted starting time, interval between starts and switching arrangement.'],
+  'cbb61-blades': ['Include case L / W / H, blade spacing and fixing positions on the drawing.'],
+  'cbb61-leads': ['Include lead exit, length, connector and mounting-tab positions on the drawing.'],
+  'cbb65-single': ['Allow room above the terminals as well as around the can and mounting hardware.'],
+  'cbb65-dual': [],
+  'cd60-start': ['Include body dimensions, terminal or lead connections and installed clearance on the drawing.'],
 };
 const documents = [
   ['Current datasheet', 'Exact model number and revision, µF, VAC, tolerance, frequency and operating temperature.'],
@@ -59,7 +59,7 @@ const documents = [
             <div><dt>Dual run</dt><dd>1+15 to 15+80 µF<small>370–450 VAC</small></dd></div>
           </> : <><div><dt>Capacitance range</dt><dd>{product.capacitance}</dd></div><div><dt>Rated voltage</dt><dd>{product.voltage}</dd></div></>}
         </dl>
-        {code === 'CBB65' && <p class="pdr-hero-scope"><a href="#single-run-specifications">Single-run specifications</a><span aria-hidden="true"> · </span><a href="#dual-run-specifications">Dual-run specifications</a>. Record both dual-run µF values.</p>}
+        {code === 'CBB65' && <p class="pdr-hero-scope"><a href="#single-run-specifications">Single-run specifications</a><span aria-hidden="true"> · </span><a href="#dual-run-specifications">Dual-run specifications</a></p>}
         {code === 'CD60' && <p class="pdr-hero-scope">The circuit must disconnect CD60 after startup. Follow the rated starting time and interval between starts.</p>}
         <a class="pdr-button" href={rfq}>Request a {code} quote</a>
       </div>
@@ -74,11 +74,11 @@ const documents = [
 
     <section class="pdr-section" id="specifications">
       <h2>Technical specifications</h2>
-      {code === 'CBB65' && <div class="pdr-variant-specifications"><h3>Single and dual-run ranges</h3><p class="pdr-table-hint">Swipe horizontally to compare the two configurations.</p><div class="pdr-table-wrap" role="region" aria-label="Single and dual-run specifications" tabindex="0"><table class="pdr-data-table"><thead><tr><th scope="col">Field</th><th scope="col" id="single-run-specifications">Single run</th><th scope="col" id="dual-run-specifications">Dual run</th></tr></thead><tbody><tr><th scope="row">Capacitance range</th><td>2–100 µF</td><td>1+15 to 15+80 µF</td></tr><tr><th scope="row">Rated voltage</th><td>110–450 VAC</td><td>370–450 VAC</td></tr><tr><th scope="row">Series case-size range</th><td>D 30–65 × H 55–135 mm</td><td>D 50–65 × H 75–125 mm</td></tr><tr><th scope="row">Connection check</th><td>Verify the terminal-group layout.</td><td>Record both values and verify each terminal-group mapping.</td></tr></tbody></table></div><p class="pdr-note">A dual-run marking gives two independent capacitance values. Do not add them. <a href="/resources/single-vs-dual-run-capacitors/">Compare single and dual run</a>.</p></div>}
+      {code === 'CBB65' && <div class="pdr-variant-specifications"><h3>Single and dual-run ranges</h3><p class="pdr-table-hint">Swipe horizontally to compare the two configurations.</p><div class="pdr-table-wrap" role="region" aria-label="Single and dual-run specifications" tabindex="0"><table class="pdr-data-table"><thead><tr><th scope="col">Field</th><th scope="col" id="single-run-specifications">Single run</th><th scope="col" id="dual-run-specifications">Dual run</th></tr></thead><tbody><tr><th scope="row">Capacitance range</th><td>2–100 µF</td><td>1+15 to 15+80 µF</td></tr><tr><th scope="row">Rated voltage</th><td>110–450 VAC</td><td>370–450 VAC</td></tr><tr><th scope="row">Series case-size range</th><td>D 30–65 × H 55–135 mm</td><td>D 50–65 × H 75–125 mm</td></tr></tbody></table></div><p class="pdr-note">Each dual-run µF value belongs to a separate capacitance section; do not add the values together. Use the model wiring diagram to identify each terminal group. <a href="/resources/single-vs-dual-run-capacitors/">Compare single and dual run</a>.</p></div>}
       <div class="pdr-spec-groups"><div><h3>Electrical</h3><dl class="pdr-specifications">{electrical.map(([label,value]) => <div><dt>{label}</dt><dd>{value}</dd></div>)}</dl></div><div><h3>Case & connection</h3><dl class="pdr-specifications">{mechanical.map(([label,value]) => <div><dt>{label}</dt><dd>{value}</dd></div>)}</dl></div></div>
       <p class="pdr-note pdr-series-scope">These ranges cover the series. The selected model’s datasheet defines its exact ratings, dimensions and duty limits.</p>
       {!isSatechiPreview && <p class="technical-body-copy">{product.intro}</p>}
-      <div class="pdr-model-confirmation"><h3>Selecting a model</h3><p>{code === 'CD60' ? 'The starting circuit, switching arrangement and duty limits must match the motor requirements.' : 'Match the electrical rating to the original motor specification, then use the model drawing to check connections and installation space.'}</p><p class="pdr-note"><a href="#model-documents">Datasheet and drawing requirements</a></p></div>
+      <div class="pdr-model-confirmation"><h3>Selecting a model</h3><p>{code === 'CD60' ? 'The starting circuit, switching arrangement and duty limits must match the motor requirements.' : 'Use the motor specification for the electrical rating and the model drawing for dimensions and connections.'}</p><p class="pdr-note"><a href="#model-documents">Datasheet and drawing requirements</a></p></div>
     </section>
 
     <section class="pdr-section" id="sample-configurations">
@@ -87,7 +87,7 @@ const documents = [
       <SampleEvidence series={code} />
       <div class:list={['pdr-sample-configurations', { 'pdr-sample-pair': samples.length > 1 }]}>{samples.map(sample => {
         const reference = photos.find(photo => photo.src === sample.image);
-        return <div class="pdr-sample-configuration"><figure><div class="pdr-detail-photo"><img src={sample.image} alt={code + ': ' + sample.name + '. ' + sample.connection + '.'} width="2000" height="2000" loading="lazy" /></div>{code !== 'CBB60' && reference?.id && <figcaption>{reference.id}</figcaption>}</figure><div class="pdr-sample-copy"><h3>{sample.name}</h3><dl><div><dt>Visible markings</dt><dd>{sample.rating}</dd></div><div><dt>Connection / fixing</dt><dd>{sample.connection}</dd></div></dl><ul>{sampleChecks[sample.id].map(check => <li>{check}</li>)}</ul></div></div>;
+        return <div class="pdr-sample-configuration"><figure><div class="pdr-detail-photo"><img src={sample.image} alt={code + ': ' + sample.name + '. ' + sample.connection + '.'} width="2000" height="2000" loading="lazy" /></div>{code !== 'CBB60' && reference?.id && <figcaption>{reference.id}</figcaption>}</figure><div class="pdr-sample-copy"><h3>{sample.name}</h3><dl><div><dt>Visible markings</dt><dd>{sample.rating}</dd></div><div><dt>Connection / fixing</dt><dd>{sample.connection}</dd></div></dl>{sampleChecks[sample.id].length > 0 && <ul>{sampleChecks[sample.id].map(check => <li>{check}</li>)}</ul>}</div></div>;
       })}</div>
       <div class="pdr-fit-record"><div class="pdr-fit-actions"><a class="pdr-text-link" href="/resources/dimensions-terminals-mounting/">Dimensions & connection guide</a></div></div>
     </section>
@@ -100,7 +100,7 @@ const documents = [
       {isSatechiPreview && code === 'CBB65' ? <div class="zi-purchase-layout"><BrochurePhoto name="cbb65-packaging" zoom label="CBB65 product and packaging" sizes="(max-width: 800px) calc(100vw - 32px), 46vw" /><div><ProductOrderDetails /></div></div> : <ProductOrderDetails />}
     </section>
 
-    <InquiryCallout id="prepare-rfq" contained href={rfq} defaultSeries={code}><ul><li>Original capacitor label or model number and motor duty</li><li>{code === 'CBB65' ? 'Single or dual run; both dual-run µF values and rated VAC' : 'Required µF and rated VAC from the original label'}</li><li>{code === 'CD60' ? 'Starting circuit, switching arrangement and any known duty or time limits' : 'Case dimensions, fixing and connections'}</li>{code === 'CD60' && <li>Body dimensions, terminal format and installed clearance</li>}<li>Quantity by model and destination country or market</li></ul><a class="card-link" href="/buying-guide/#rfq-template">Quotation checklist</a></InquiryCallout>
+    <InquiryCallout id="prepare-rfq" contained href={rfq} defaultSeries={code} heading={`Request a ${code} quote`} description="Send the original part reference and the quantity you need." buttonLabel={`Prepare a ${code} inquiry`}><ul><li>Motor model and capacitor label or specification</li><li>Drawing or measurements for the case, mounting and connections</li>{code === 'CD60' && <li>Starting circuit, switching arrangement and duty limits</li>}<li>Quantity by rating and destination</li></ul><a class="card-link" href="/buying-guide/#rfq-template">Quotation checklist</a></InquiryCallout>
 
     <section class="pdr-related"><h2>Other capacitor series</h2><div class="pdr-related-grid">{others.map(p => <a href={'/products/' + p.slug + '/'}><img src={isSatechiPreview ? siteVisual('product-' + p.code.toLowerCase()) : p.image} alt={isSatechiPreview ? `Studio illustration of a ${p.code} capacitor.` : p.imageAlt} width="240" height="240" loading="lazy" /><div><h3>{p.code}</h3><p>{p.function} duty · {seriesFormats[p.code].case}</p></div></a>)}</div></section>
   </div>

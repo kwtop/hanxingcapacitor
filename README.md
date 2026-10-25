@@ -1,6 +1,6 @@
 # Hanxing independent site
 
-An Astro 7 + React 19 B2B motor capacitor website. This is a **local working prototype**, not a published Hanxing service.
+An Astro 7 + React 19 B2B motor capacitor website, with a Chinese admin, Cloudflare Pages Functions and D1 inquiry storage. The backend is implemented and tested locally; this revision has **not been published**.
 
 ## Run locally
 
@@ -25,34 +25,41 @@ Open `http://127.0.0.1:4340/`. This command sets `HANXING_VISUAL_PREVIEW=satechi
 
 The latest product accuracy review is in [product-accuracy-audit-20261022.md](docs/product-accuracy-audit-20261022.md). It records unresolved model, label and source discrepancies; uploading the current code does not mean those items have been corrected or independently verified.
 
+### Website with real local inquiries and admin
+
+```bash
+npm run setup:admin
+npm run dev:admin
+```
+
+Open `http://127.0.0.1:4342/` and `http://127.0.0.1:4342/admin/`. Setup creates a private local administrator in `.admin-local/access.txt` and migrates a persistent local D1 database under `.wrangler/state`. These files are ignored by Git. All local visits and inquiries are internal test records; select **包含内部测试** to inspect them in the admin. The existing visual-only preview at port 4340 remains separate.
+
+Cloudflare bindings, authentication, Turnstile, metric definitions and release prerequisites: [ADMIN-SETUP.md](docs/ADMIN-SETUP.md).
+
 ## Site structure
 
 - Products: CBB60, CBB61, CBB65, CD60, plus comparison and duty filter.
 - Applications: HVAC, pumps, fans and small appliances.
 - OEM & Quality: requirements and evidence to request for an exact model.
 - Resources: six technical guides, a buying and shipping guide with quotation and order checklists, and buyer FAQ.
-- Inquiry: an email or WhatsApp message draft, with product, sample, application and guide references retained.
+- Inquiry: a server-saved form with product, sample and guide references, plus direct email and WhatsApp options.
+- Admin: inquiry follow-up, CSV export, anonymous visitor journeys, and filtered traffic / conversion trends.
 
 Content is in `src/data/site.ts`, `src/data/guides.ts` and `src/data/guideLayouts.ts`. Page templates live in `src/pages`. Shared styles are imported in `src/layouts/BaseLayout.astro`; the confirmed porcelain direction and content review are implemented in `src/styles/review-*.css`. The approved content and layout plan is `docs/整站内容与布局修改方案-20261012.md`.
 
 ## Inquiry behavior
 
-The current `/contact/` form prepares a message in the browser. The customer reviews or copies it and sends it from their own email or WhatsApp app. Attachments are added in that app. The form does not submit a request to the site's API or send email. Purpose changes preserve entered requirements and valid references; changing series removes incompatible sample references.
+The `/contact/` form posts to Pages Functions. A successful D1 transaction saves the inquiry and one server-generated success event, then returns a reference. Retrying the same submission does not create another inquiry. Production submissions require real Turnstile validation; only loopback requests with `APP_ENV=local` use the local proof flow.
 
-A retained API and legacy inquiry-status page exist for compatibility. They are not used by the current draft form. Activating that API would be separate work; its settings are:
+Authorised admins can search inquiries, mark them read / unread, change status, add notes and export CSV. Password sessions are stored as hashed opaque tokens; Cloudflare Access JWT authentication is also supported. Direct email and WhatsApp clicks are contact events, not received inquiries. This version does not send email notifications or support file attachments. Labels and drawings can still be sent through the existing direct contact options.
 
-| Setting | Purpose |
-| --- | --- |
-| `PUBLIC_SITE_URL` | The final domain for canonical URLs, sitemap and indexing |
-| `INQUIRY_STORE_DIR` | Absolute, persistent, private directory outside public assets |
-| `SALES_NOTIFY_EMAIL` | Verified receiving mailbox |
-| `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASSWORD`, `SMTP_FROM` | Mail transport |
-
-The server saves the record before attempting notification. If sales notification fails, the response includes the saved reference and reports a delivery failure. The browser then retains the entered form, rather than claiming a successful sale inquiry. Customer acknowledgement failure is reported separately. Deployment requires an operator to define access control, retention, backups, spam protection, monitoring and a final privacy policy. No live SMTP was configured or exercised during this build.
+Anonymous activity records contain paths and interaction metadata, not keystrokes or form values. Bot traffic is excluded, internal traffic is excluded by default, and unknown geography stays unknown. Analytics errors do not block form submissions.
 
 ## Publication status
 
-The confirmed canonical target is `https://www.hanxingcapacitor.com`. Local previews keep robots blocking, noindex HTML/headers and an empty sitemap until `PUBLIC_SITE_URL` is set consistently at build and runtime. Set that value **before building** so prerendered product, application and article pages receive the correct indexing directives; rebuilding is required after any origin change. The English relaunch includes 301 redirects for the retired Spanish/Arabic URLs and three legacy English sections. Use the Node standalone runtime, not an HTML fallback for unknown URLs or a client-only directory upload. Public legal identity, certificates and model records still require business review. The project has not been deployed or connected to a live mailbox.
+The confirmed canonical target is `https://www.hanxingcapacitor.com`. Existing Cloudflare previews use `hanxing-capacitor-preview`. The current backend has not been uploaded to that project, and a dedicated Hanxing D1 must be created and bound before publication. No other business database is reused.
+
+`npm run build:cloudflare` exports the current Satechi presentation to `.cloudflare-site`; `functions/` supplies its backend at deployment. The isolated export keeps noindex headers and existing migration redirects. It does not deploy anything. The ordinary `npm run build` remains a Node standalone baseline build; it does not supply a production D1 backend. See the admin setup document before choosing a deployment command. Public legal identity, certificates and model records retain the existing business review boundary.
 
 Technical SEO/GEO results, priorities and release commands: [SEO-GEO-AUDIT-20261012.md](docs/SEO-GEO-AUDIT-20261012.md). Existing robots and sitemap routes share an automatic route/content index with `llms.txt`; no fabricated modification dates are generated. `npm run check:release -- <candidate> https://www.hanxingcapacitor.com` performs read-only initial-HTML, Meta, Schema, asset, utility-page and migration checks.
 
@@ -63,9 +70,12 @@ Images now combine labelled ImageGen illustrations with supplied photographs and
 ```bash
 npm run check
 npm run build
+npm run test:backend
+npm run build:cloudflare
+npm run test:pages
 ```
 
-The local browser QA includes desktop, tablet and mobile layouts, page navigation, product filter and an end-to-end preview inquiry. See `CONTENT_SOURCES.md` for the source and uncertainty boundary.
+Backend tests use isolated real local D1 databases and Cloudflare runtimes. They cover saved inquiries, concurrent retries, authentication, CSRF, CSV, event order, metrics, filters, notes and persistence after restart. The Pages smoke test checks the actual Pages Functions routing against the static export. Browser QA includes a real form submission, product-source transfer, Chinese inbox, follow-up, visitor linkage, CSV download and responsive layouts. See [ADMIN-VERIFICATION-20261022.md](docs/ADMIN-VERIFICATION-20261022.md) for the current results and `CONTENT_SOURCES.md` for product evidence boundaries.
 
 ## Save changes to GitHub
 

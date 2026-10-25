@@ -5,7 +5,7 @@ import InquiryCallout from '../components/InquiryCallout.astro';
 import { applications } from '../data/site';
 import { sampleConfigurations } from '../data/sampleConfigurations';
 import sampleLibrary from '../data/sampleLibrary.json';
-const allowedSeries = ['CBB60', 'CBB61', 'CBB65', 'CD60'];
+const allowedSeries = ['CBB60', 'CBB61', 'CBB65', 'CD60', 'unknown'];
 const contactUrl = new URL('/contact/', Astro.url);
 const request = Astro.url.searchParams.get('request') || '';
 const guide = Astro.url.searchParams.get('guide') || '';
@@ -22,7 +22,7 @@ if (applications.some(item => item.slug === application) || ['hvac', 'pump', 'fa
   contactUrl.searchParams.set('application', application);
 }
 ---
-<BaseLayout title="Request a Motor Capacitor Quote" description="Prepare the motor and capacitor details for your quotation request, with quantity and destination, then send it from your email or WhatsApp app." noindex>
+<BaseLayout title="Request a Motor Capacitor Quote" description="Submit your motor capacitor requirements online, or contact HAN XING by email or WhatsApp. Include the original part details, quantity and destination." noindex>
   <div class="reference-utility">
   <section class="page-hero"><div class="container"><p class="breadcrumbs"><a href="/">Home</a> / Request a Quote</p><h1>Request a motor capacitor quote</h1></div></section>
   <section class="section"><div class="container quote-layout">

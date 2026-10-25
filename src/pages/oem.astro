@@ -3,7 +3,7 @@ import { isSatechiPreview } from '../lib/visualPreview';
 import BrochurePhoto from '../components/satechi-preview/BrochurePhoto.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import InquiryCallout from '../components/InquiryCallout.astro';
-import { STANDARD_MOQ_PCS } from '../data/site';
+import { STANDARD_MOQ_DESCRIPTION } from '../data/site';
 const configuration = [
   { name: 'Electrical', requirement: 'Run or start duty, capacitance (µF), rated voltage (VAC), tolerance and frequency.', approval: 'The agreed model specification and datasheet or drawing revision.' },
   { name: 'Case and mounting', requirement: 'Body dimensions, fixing method and the available installation space.', approval: 'The dimensioned drawing revision and agreed sample reference.' },
@@ -11,12 +11,9 @@ const configuration = [
   { name: 'Label and packing', requirement: 'Label artwork, unit protection, inner pack, carton quantities, dimensions, weights and marks.', approval: 'The approved artwork revision and packing specification.' },
 ];
 const sampleTerms = [
-  ['Sample quantity', 'Number of samples needed for the configuration being reviewed.'],
-  ['Sample charges', 'Any charges to include in the quotation.'],
-  ['Freight', 'Destination and the cost of sending the samples.'],
-  ['Preparation time', 'The agreed date or time needed to prepare the samples.'],
-  ['Standard MOQ', `${STANDARD_MOQ_PCS.toLocaleString('en-US')} pieces. Ask for the minimum that applies to your model, label and packing.`],
-  ['Production lead time', 'The production schedule stated in the written offer.'],
+  ['Samples', 'Agree the quantity, charges, freight and preparation date for the configuration you want to approve.'],
+  ['Standard MOQ', STANDARD_MOQ_DESCRIPTION],
+  ['Production timing', 'The written quotation sets out production lead time and delivery terms for the approved configuration.'],
 ];
 ---
 <BaseLayout title="OEM & Private Label Motor Capacitors" description="Prepare OEM motor capacitor requirements for electrical ratings, cases, connections, labels and packing, with sample approval and quotation terms.">
@@ -52,10 +49,10 @@ const sampleTerms = [
       </div>
     </div></section>
     <section class="procurement-section"><div class="container">
-      <h2>Sample terms to agree</h2>
+      <h2>Samples and order terms</h2>
       <dl class="procurement-terms">{sampleTerms.map(([name, description]) => <div><dt>{name}</dt><dd>{description}</dd></div>)}</dl>
       <a class="card-link" href="/contact/?request=samples#inquiry-form">Request sample terms</a>
     </div></section>
-    <InquiryCallout href="/contact/?request=oem#inquiry-form" heading="Send your OEM requirements" description="Include ratings, artwork, quantity and destination." />
+    <InquiryCallout href="/contact/?request=oem#inquiry-form" heading="Send your OEM requirements" description="Include ratings, artwork, quantity and destination." buttonLabel="Prepare an OEM inquiry" />
   </article>
 </BaseLayout>

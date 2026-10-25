@@ -25,7 +25,7 @@ export const sampleEvidence: SampleEvidence[] = [
 export const sampleEvidenceNotes: Record<string, string> = {
   CBB60: 'P003 records the horizontal sample. The same photograph includes a separate D&L-marked part.',
   CBB61: 'P018 shows three individual capacitors. The labels show 40/70/21 and do not identify a brand.',
-  CBB65: 'The 50+5 µF sample has two independent sections. Match each section to its terminal group using the model drawing.',
+  CBB65: 'The dual-run sample is marked 50+5 µF, with a separate value for each capacitance section.',
   CD60: 'P038 is marked ±5% and −40°C/70°C/21; the series values are ±10% / ±20% and −20 to +65 °C. Use this sample’s datasheet for its approved tolerance, temperature and starting duty.',
 };
 

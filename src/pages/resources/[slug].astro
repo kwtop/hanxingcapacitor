@@ -34,7 +34,7 @@ const related = guide.related.filter(link => !relatedInBody.has(link.href) && li
         <p class="article-overview">{guide.answer}</p>
         {isSatechiPreview && <GuideCover slug={guide.slug} class="co-article-visual" sizes="(max-width:800px) calc(100vw - 32px), 760px" eager />}
         <ReviewGuideContent sections={layout.sections} />
-        <InquiryCallout id="details-to-send" contained href={discussHref} defaultSeries={guide.slug === 'single-vs-dual-run-capacitors' ? 'CBB65' : 'CBB60'}>
+        <InquiryCallout id="details-to-send" contained href={discussHref} heading={guide.inquiry.heading} description={guide.inquiry.note} buttonLabel={guide.inquiry.label} defaultSeries={guide.slug === 'single-vs-dual-run-capacitors' ? 'CBB65' : 'CBB60'}>
           <span id={sectionId(guide.inquiry.heading)} class="review-guide-anchor" aria-hidden="true"></span>
           
           <ul>{layout.details.map(detail => <li>{detail}</li>)}</ul>

@@ -4,6 +4,7 @@ export const PUBLIC_COMPANY_NAME = 'Hangzhou Zebang Refrigeration Equipment Co.,
 export const PUBLIC_BUSINESS_ADDRESS: string = 'Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China';
 export const PUBLIC_EMAIL = 'ManuelaMusio570@gmail.com';
 export const STANDARD_MOQ_PCS = 1000;
+export const STANDARD_MOQ_DESCRIPTION = `${STANDARD_MOQ_PCS.toLocaleString('en-US')} pieces. The quotation confirms the minimum for your selected rating, label and packing.`;
 export const PUBLIC_PHONE = '+86 153 3339 4111';
 export const WHATSAPP_NUMBER = PUBLIC_PHONE.replace(/\D/g, '');
 export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
@@ -78,7 +79,7 @@ export const products: Product[] = [
     code: 'CBB65', slug: 'cbb65-air-conditioner-capacitor', title: 'CBB65 HVAC capacitors',
     shortName: 'HVAC run', function: 'Run',
     tagline: 'Single and dual-run metal-can capacitors for HVAC and refrigeration motors.',
-    intro: 'CBB65 metal-can run capacitors are for air conditioners, compressors, cold dryers and other HVAC equipment. Single and dual-run versions have different ratings and terminal layouts.',
+    intro: 'CBB65 metal-can run capacitors are for air conditioners, compressors, refrigerated air dryers and other HVAC equipment. Single and dual-run versions have different ratings and terminal layouts.',
     image: '/images/real/cbb65-2.jpg', imageAlt: 'Photograph of a CBB65 metal-can capacitor sample marked 20 µF and 450 VAC.',
     catalogImage: '/images/generated/site/cbb65-main.webp', catalogImageAlt: 'Metal-can motor-run capacitor with two terminal groups.', capacitance: 'Single: 2–100 µF; dual: 1+15 to 15+80 µF',
     voltage: 'Single: 110–450 VAC; dual: 370–450 VAC', tolerance: '±5% (J), ±10% (K)',
@@ -86,9 +87,9 @@ export const products: Product[] = [
     dimensions: 'Single: D 30–65 × H 55–135 mm; dual: D 50–65 × H 75–125 mm',
     construction: 'Metallized polypropylene film in a metal can.',
     terminals: 'Terminal-group layouts vary by model; match the layout to the wiring diagram.',
-    applications: ['Air conditioners', 'Compressors', 'Cold dryers', 'HVAC motor systems'],
+    applications: ['Air conditioners', 'Compressors', 'Refrigerated air dryers', 'HVAC motor systems'],
     procurement: ['Single or dual-run function', 'Each µF value and rated VAC', 'Original terminal-group layout', 'Diameter, height and mounting', 'Equipment model, quantity and destination'],
-    notes: ['A dual-run label gives two independent capacitance values. Copy both as printed.', 'Use the model drawing to identify each terminal group and its connection.'],
+    notes: ['A dual-run label gives a separate value for each capacitance section. Copy both as printed.', 'Use the model drawing to identify each terminal group and its connection.'],
     decisionChecks: ['Identify single-run or dual-run from the motor documentation.', 'For dual-run, record both µF values and the rated VAC.', 'Send a clear terminal-group photo or the drawing for the proposed model.'],
     decisionGuide: { label: 'Compare single and dual run', href: '/resources/single-vs-dual-run-capacitors/' },
     source: `${OFFICIAL_SITE}/products/cbb65-air-conditioner-capacitor/`,
@@ -101,9 +102,9 @@ export const products: Product[] = [
     image: '/images/real/cd60-25.jpg', imageAlt: 'Photograph of a CD60 cylindrical motor-start capacitor sample.',
     catalogImage: '/images/generated/site/cd60-main.webp', catalogImageAlt: 'Cylindrical motor-start capacitor with two blade terminals.', capacitance: '20–1500 µF', voltage: '110–330 VAC',
     tolerance: '±10% (K), ±20% (M)', frequency: '50/60 Hz', temperature: '−20 to +65 °C',
-    dimensions: 'Approximately 34 × 60 to 63 × 110 mm (published series envelope)',
+    dimensions: 'Approximately 34 × 60 to 63 × 110 mm; use the model drawing for exact dimensions.',
     construction: 'Aluminium electrolytic start-capacitor construction.',
-    terminals: 'Double-welded sheet terminals or lead output.',
+    terminals: 'Blade terminals or wire leads, depending on the model.',
     applications: ['Compatible single-phase AC motor starting', 'Selected pumps', 'Selected compressors'],
     procurement: ['Original start-capacitor label and motor model', 'Capacitance and rated VAC', 'Starting circuit / duty details', 'Body size and terminal configuration', 'Quantity and destination'],
     notes: ['CD60 is for starting duty. It cannot replace a continuously connected run capacitor, even at the same capacitance and case size.', 'Request the starting-duty and time ratings for the model quoted.'],
@@ -132,7 +133,7 @@ export type Application = {
 export const applications: Application[] = [
   {
     slug: 'pumps-and-water-systems', title: 'Water pumps | CBB60 motor run capacitors', shortName: 'Water pumps',
-    listing: 'CBB60 cylindrical run capacitors for water-pump motors. Match the original rating, mounting and lead or terminal layout.',
+    listing: 'CBB60 cylindrical run capacitors for water-pump motors.',
     intro: 'CBB60 run capacitors and CD60 start capacitors for water-pump motors. Select the duty from the motor circuit, then match the rating and installed fit.',
     image: '/images/generated/site/home-application-water-pumps-20261013.webp', imageHeight: 800, imageAlt: 'Illustration of a centrifugal water pump and motor.',
     series: ['CBB60', 'CD60'],
@@ -140,7 +141,7 @@ export const applications: Application[] = [
   },
   {
     slug: 'fans-and-ventilation', title: 'Fans and blowers | CBB61 motor run capacitors', shortName: 'Fans and blowers',
-    listing: 'CBB61 rectangular run capacitors for fans and blowers. Match the original µF, VAC, connections and mounting dimensions.',
+    listing: 'CBB61 rectangular run capacitors for fans and blowers.',
     intro: 'CBB61 rectangular and CBB60 cylindrical run capacitors for fan and blower motors. Compare ratings, wiring and mounting dimensions.',
     image: '/images/generated/site/home-application-fans-blowers-20261013.webp', imageHeight: 800, imageAlt: 'Illustration of a ventilation fan and motor.',
     series: ['CBB61', 'CBB60'],
@@ -148,7 +149,7 @@ export const applications: Application[] = [
   },
   {
     slug: 'appliances-and-small-motors', title: 'Washing machines | CBB60 and CBB61 motor capacitors', shortName: 'Washing machines',
-    listing: 'CBB60 cylindrical and CBB61 rectangular run capacitors for washing-machine motors. Match the original motor rating, wiring and installed dimensions.',
+    listing: 'CBB60 cylindrical and CBB61 rectangular run capacitors for washing-machine motors.',
     intro: 'CBB60 and CBB61 run-capacitor formats for washing-machine motors, with rating, wiring and mounting checks.',
     image: '/images/generated/site/home-application-washing-machines-20261013.webp', imageHeight: 1000, imageAlt: 'Illustration of a white front-loading washing machine.',
     series: ['CBB60', 'CBB61'],
@@ -156,7 +157,7 @@ export const applications: Application[] = [
   },
   {
     slug: 'hvac-and-refrigeration', title: 'Air conditioners / HVAC | CBB65 run capacitors', shortName: 'Air conditioners / HVAC',
-    listing: 'CBB65 metal-can run capacitors for air conditioners, compressors and cold dryers. Match the single or dual-run configuration, ratings and terminal groups.',
+    listing: 'CBB65 single and dual-run capacitors for air conditioners, compressors and refrigerated air dryers.',
     intro: 'CBB65 single and dual-run capacitors for HVAC motors, with CD60 for separately switched starting circuits.',
     image: '/images/generated/site/home-application-hvac-20261013.webp', imageHeight: 800, imageAlt: 'Illustration of an outdoor air-conditioning condenser.',
     series: ['CBB65', 'CD60'],

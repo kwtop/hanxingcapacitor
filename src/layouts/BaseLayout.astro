@@ -87,7 +87,9 @@ const seo = pageSeo(Astro.url.pathname, fullTitle, description, canonical);
     <Footer />
     <script>
       import {initSiteImageFeedback} from '../lib/siteImageFeedback';
+      import {initSiteTracking} from '../lib/siteTracking';
       initSiteImageFeedback();
+      initSiteTracking();
     </script>
   </body>
 </html>

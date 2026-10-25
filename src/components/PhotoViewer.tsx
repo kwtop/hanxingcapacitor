@@ -12,6 +12,7 @@ export default function PhotoViewer({ photos, active, onSelect, onClose, preview
   const heading = useId();
   const open = active !== null && !!photos[active];
   const photo = open ? photos[active!] : null;
+  useEffect(()=>{if(open&&photo)window.dispatchEvent(new CustomEvent('hx:track',{detail:{type:'image_view',options:{product:photo.series,position:'photo_viewer'}}}));},[open,active]);
   useEffect(() => {
     const element = dialog.current;
     if (!element || !open) return;

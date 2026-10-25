@@ -16,11 +16,9 @@ const paths = [
   { title: 'Separate start circuit', text: 'CD60 serves a separately switched starting circuit. Specify its starting time and interval between starts.', href: '/products/cd60-start-capacitor/', link: 'CD60 starting duty' },
 ];
 const fields = [
-  'Equipment model, specific motor and original circuit / capacitor record.',
-  'Single or dual-run configuration, or separately switched start duty.',
-  'Original µF and VAC; both independent values for dual run.',
-  'Terminal-group mapping, can dimensions, fixing and installed clearance.',
-  'Quantity by model, destination and requested model documents.',
+  'Equipment and motor model, with the original capacitor label and circuit diagram.',
+  'Drawing or measurements for the can, mounting and terminal connections.',
+  'Quantity for each part, destination and required documents.',
 ];
 const fitChecks = [
   ['Terminal groups', 'Show each group marking in a terminal-end photo or drawing, then match it to the original motor diagram.'],
@@ -33,14 +31,14 @@ const compared = [
     ['Case / connection', 'Metal can; model-specific terminal groups.'],
     ['Single-run range', '2–100 µF · 110–450 VAC'],
     ['Dual-run range', '1+15 to 15+80 µF · 370–450 VAC'],
-    ['Important check', 'Two independent dual-run values and their terminal mapping.'],
+    ['Important check', 'Both dual-run µF values and their terminal mapping.'],
   ], samples: [
     { image: '/images/real/cbb65-2.jpg', alt: 'CBB65 single-run sample marked 20 µF and 450 VAC.', caption: 'Single · 20 µF / 450 VAC' },
     { image: '/images/real/cbb65-dual-run-7.jpg', alt: 'CBB65 dual-run sample marked 50+5 µF and 450 VAC.', caption: 'Dual · 50+5 µF / 450 VAC' },
   ] },
   { product: start, rows: [
     ['Duty', 'Start; separately switched starting circuit.'],
-    ['Case / connection', 'Electrolytic start-capacitor case; sheet terminals or lead output.'],
+    ['Case / connection', 'Electrolytic start-capacitor case; blade terminals or wire leads.'],
     ['Start range', start.capacitance + ' · ' + start.voltage],
     ['Important check', 'Rated starting time, interval between starts and switching arrangement.'],
   ], samples: [{ image: start.image, alt: start.imageAlt, caption: 'Start · 500 µF / 300 VAC sample' }] },
@@ -61,7 +59,6 @@ const compared = [
     <section class="hvr-section" id="review" aria-labelledby="circuit-title">
       <h2 id="circuit-title">Motor circuits &amp; original capacitors</h2>
       <div class="hvr-circuit-paths">{paths.map(path => <div><h3>{path.title}</h3><p>{path.text}</p><a class="hvr-path-link" href={path.href}>{path.link}</a></div>)}</div>
-      <p class="technical-body-copy">Identify each capacitor from the original labels and motor wiring diagram. Record run and switched-start parts separately.</p>
     </section>
 
     <section class="hvr-section" id="series-comparison" aria-labelledby="comparison-title">
@@ -71,7 +68,7 @@ const compared = [
         <thead><tr><th scope="col">Field</th>{compared.map(({product:p}) => <th scope="col"><a href={'/products/' + p.slug + '/'}><strong>{p.code}</strong></a><span>{p.function} duty</span></th>)}</tr></thead>
         <tbody>
           <tr><th scope="row">Duty</th><td>Run; single or dual configuration.</td><td>Start; separately switched starting circuit.</td></tr>
-          <tr><th scope="row">Case / connection</th><td>Metal can; model-specific terminal groups.</td><td>Electrolytic start-capacitor case; sheet terminals or lead output.</td></tr>
+          <tr><th scope="row">Case / connection</th><td>Metal can; model-specific terminal groups.</td><td>Electrolytic start-capacitor case; blade terminals or wire leads.</td></tr>
           <tr><th scope="row">Single-run µF / VAC</th><td>2–100 µF · 110–450 VAC</td><td>Not applicable</td></tr>
           <tr><th scope="row">Dual-run µF / VAC</th><td>1+15 to 15+80 µF · 370–450 VAC</td><td>Not applicable</td></tr>
           <tr><th scope="row">Start µF / VAC</th><td>Not applicable</td><td>{start.capacitance} · {start.voltage}</td></tr>
@@ -91,7 +88,7 @@ const compared = [
       </div>
     </section>
 
-    <InquiryCallout id="quote-details" contained href={inquiry} defaultSeries="CBB65">
+    <InquiryCallout id="quote-details" contained href={inquiry} defaultSeries="CBB65" heading="HVAC capacitor inquiry" description="Identify the compressor or motor and the capacitor required." buttonLabel="Prepare an HVAC inquiry">
       <ul>{fields.map(field => <li>{field}</li>)}</ul>
       <a class="card-link" href="/buying-guide/#rfq-template">Quotation checklist</a>
     </InquiryCallout>

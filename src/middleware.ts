@@ -1,7 +1,9 @@
 import { defineMiddleware } from 'astro:middleware';
 import { indexablePaths, utilityPaths } from './lib/seoRoutes';
 import { publicSiteReady } from './lib/publicSite';
+import {localBackendProxy} from './server/localProxy';
 export const onRequest = defineMiddleware(async (context, next) => {
+  if(import.meta.env.DEV&&(context.url.pathname.startsWith('/api/')||context.url.pathname==='/admin'||context.url.pathname.startsWith('/admin/')))return localBackendProxy(context.request);
   const retired: Record<string, string> = { '/certificates/': '/factory/#model-records', '/case-studies/': '/applications/', '/markets/': '/buying-guide/' };
   const normalized = context.url.pathname.endsWith('/') ? context.url.pathname : context.url.pathname + '/';
   if (retired[normalized]) return context.redirect(retired[normalized], 301);

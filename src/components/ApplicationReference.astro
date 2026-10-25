@@ -36,7 +36,6 @@ const compareRows = [
     <section class="hvr-section" id="review" aria-labelledby="circuit-title">
       <h2 id="circuit-title">Motor circuit &amp; original capacitor</h2>
       <div class="hvr-circuit-paths">{content.paths.map(path => <div><h3>{path.title}</h3><p>{path.text}</p><a class="hvr-path-link" href={path.href}>{path.link}</a></div>)}</div>
-      <p class="technical-body-copy">{content.decision}</p>
     </section>
 
     <section class="hvr-section" id="series-comparison" aria-labelledby="comparison-title">
@@ -62,7 +61,7 @@ const compareRows = [
       </div>
     </section>
 
-    <InquiryCallout id="quote-details" contained href={inquiry} defaultSeries={application.series[0]}>
+    <InquiryCallout id="quote-details" contained href={inquiry} defaultSeries={application.series[0]} heading={`Ask about capacitors for ${application.shortName.toLowerCase()}`} description="Send the motor details and the quantity you need." buttonLabel={content.inquiryLabel}>
       <ul>{content.inquiryFields.map(field => <li>{field}</li>)}</ul>
       <a class="card-link" href="/buying-guide/#rfq-template">Quotation checklist</a>
     </InquiryCallout>

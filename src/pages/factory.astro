@@ -22,15 +22,14 @@ const records = [
       <div class:list={{'ss-factory-intro':isSatechiPreview}}><div>
       <h1 id="factory-title">Manufacturing and quality</h1>
       <p class="procurement-lead">Capacitor production stages and the quality records for your order.</p>
-      <nav class="procurement-actions" aria-label="Manufacturing information"><a class="button" href="#model-records">Documents for your model</a><a class="card-link" href={documentRequest}>Request model documents</a><a class="card-link" href="/about/#supplier-records">Supplier identity information</a></nav>
+      <nav class="procurement-actions" aria-label="Manufacturing information"><a class="button" href="#model-records">Documents for your model</a><a class="card-link" href={documentRequest}>Request model documents</a><a class="card-link" href="/about/#supplier-records">Company details</a></nav>
       </div>{isSatechiPreview && <OemPhoto name="workshop-station" eager />}</div>
     </div></section>
     <section class="procurement-section" id="factory-process-title" aria-labelledby="factory-footage-title"><div class="container">
       <h2 id="factory-footage-title">Process footage</h2>
       <nav class="procurement-process-index" aria-label="Process stages"><a href="#material-process">Material and process</a><a href="#electrical-testing">Electrical and product testing</a><a href="#packing-warehouse">Packing and warehouse handling</a></nav>
-      <p class="procurement-caption">Request inspection records for the model and manufacturing site named in your quotation.</p>
       <article class="procurement-process-stage" id="material-process">
-        <div class:list={{'zi-material-intro':isSatechiPreview}}><div><h3>Material and process</h3><p>Process stages include incoming inspection, winding, metal spraying, heat setting, rolling, oil injection and sealing.</p></div>{isSatechiPreview && <BrochurePhoto name="capacitor-cores" zoom label="Capacitor winding forms" sizes="(max-width: 800px) calc(100vw - 32px), 49vw" />}</div>
+        <div class:list={{'zi-material-intro':isSatechiPreview}}><div><h3>Material and process</h3><p>Film-processing equipment is shown below. CBB60, CBB61 and CBB65 use film construction; CD60 uses aluminium electrolytic construction.</p></div>{isSatechiPreview && <BrochurePhoto name="capacitor-cores" zoom label="Capacitor winding forms" sizes="(max-width: 800px) calc(100vw - 32px), 49vw" />}</div>
         <div class="procurement-video-pair">
           <div class="procurement-video"><VideoFigure src="/videos/film-roll-equipment.mp4" poster="/images/real/film-rolls.jpg" label="Supplied video showing a film roll moving through equipment" cover={isSatechiPreview ? oemMedia['film-process'] : undefined} /><p class="procurement-caption">A film roll passes through processing equipment.</p></div>
           <div class="procurement-video"><VideoFigure src="/videos/winding-equipment.mp4" poster="/images/real/winding-equipment.jpg" label="Supplied video showing enclosed production equipment and its control panel" cover={isSatechiPreview ? oemMedia['winding-process'] : undefined} /><p class="procurement-caption">Enclosed equipment and its control panel during operation.</p></div>

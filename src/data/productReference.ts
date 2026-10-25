@@ -41,7 +41,7 @@ export const seriesFormats: Record<string, { case: string; connections: string }
   CBB60: { case: 'Insulated cylindrical case', connections: 'Lead wires / quick-connect terminals' },
   CBB61: { case: 'Insulated rectangular case', connections: 'Lead wires / blade terminals' },
   CBB65: { case: 'Metal can', connections: 'Model-specific terminal groups' },
-  CD60: { case: 'Electrolytic start-capacitor case', connections: 'Sheet terminals / lead output' },
+  CD60: { case: 'Electrolytic start-capacitor case', connections: 'Blade terminals / wire leads' },
 };
 
 type ProductReferenceContent = {
@@ -97,13 +97,13 @@ export const productReference: Record<string, ProductReferenceContent> = {
     intro: 'Single and dual-run metal-can capacitors for HVAC and refrigeration motors.',
     dutyContext: 'Single and dual-run configurations', detailId: 'cbb65-dual',
     fit: [
-      { title: 'Single or dual run', text: 'The photos show a 20 µF single-run sample and a 50+5 µF dual-run sample. The dual values describe two independent sections and must be kept separate.' },
+      { title: 'Single or dual run', text: 'The photos show a 20 µF single-run sample and a 50+5 µF dual-run sample. Each dual-run value belongs to a separate capacitance section.' },
       { title: 'Terminal groups', text: 'Send both dual-run µF values, rated VAC and a clear terminal-end photo or drawing. Each marked group must match its connection in the circuit.' },
       { title: 'Can and mounting', text: 'Use the drawing to compare can diameter, height, fixing and terminal clearance. Any certificate requested must cover the same model and configuration.' },
     ],
     applicationIntro: 'CBB65 is listed for HVAC and refrigeration motors that require run capacitors.',
     applications: [
-      { title: 'Air conditioners / HVAC', examples: 'Air conditioners, compressors, cold dryers and HVAC motor systems. Identify single or dual run from the original motor documentation.', href: '/applications/hvac-and-refrigeration/' },
+      { title: 'Air conditioners / HVAC', examples: 'Air conditioners, compressors, refrigerated air dryers and HVAC motor systems. Identify single or dual run from the original motor documentation.', href: '/applications/hvac-and-refrigeration/' },
     ],
     documentDimensions: 'Can diameter, height, fixing and installed terminal clearance.',
     documentConnections: 'Single or dual-run configuration, with both dual-run values and terminal-group mapping.',

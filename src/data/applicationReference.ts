@@ -44,7 +44,7 @@ export const applicationReference: Record<string, ApplicationReferenceContent> =
       ['Lead clearance', 'Include the lead exit, length and connector, allowing room to route the leads at the installed location.'],
       ['Separate parts', 'A motor with both start and run capacitors needs separate installation and connection details for each part.'],
     ],
-    inquiryFields: ['Pump / motor model and its circuit or diagram.', 'Original label, duty and µF / VAC for each separate part.', 'Body size, base stud, fixing and installed lead clearance.', 'Connection photograph or drawing; start-duty limits if relevant.', 'Quantity by model and destination country / market.'],
+    inquiryFields: ['Pump and motor model, with the original capacitor label and circuit diagram.', 'Drawing or measurements for the installation described above.', 'Quantity for each part, destination and any required documents.'],
     checks: [
       ['Pump, motor and circuit', 'Provide the equipment and motor model with its diagram or specification. Identify run duty, switched start duty or both; list each part separately and request start-duty and time limits where needed.'],
       ['Original rating', 'Include a clear capacitor-label photograph showing the original µF, VAC and any duty marking for each part.'],
@@ -77,10 +77,10 @@ export const applicationReference: Record<string, ApplicationReferenceContent> =
     ],
     fitChecks: [
       ['Case and mounting tabs', 'Record L / W / H for a rectangular case or D / H for a cylindrical body. Include fixing positions and the available mounting space.'],
-      ['Wire leads', 'Specify exit direction, wire count, length and connector, with the wiring diagram. Include the original label to establish the required rating.'],
+      ['Wire leads', 'Specify exit direction, wire count, length and connector on the wiring diagram.'],
       ['Blade terminals', 'Include the blade pattern and spacing from the model drawing. Check these separately from wire-lead connections.'],
     ],
-    inquiryFields: ['Fan / motor model, specification and original capacitor label.', 'Required µF / VAC and confirmed motor duty.', 'Case L / W / H or D / H, mounting tabs and fixing positions.', 'Lead / connector details or blade pattern and wiring drawing.', 'Quantity by model and destination country / market.'],
+    inquiryFields: ['Fan and motor model, with the original capacitor label.', 'Drawing or measurements showing the case, mounting and connections.', 'Quantity by rating and destination.'],
     checks: [
       ['Fan, motor and rating', 'Provide the equipment and motor model with the original motor specification. Include the capacitor label showing µF and VAC, and confirm that the motor calls for run duty.'],
       ['Case and mounting', 'Measure case length, width and height or body diameter and height, fixing positions and available space at the mounting point.'],
@@ -108,15 +108,15 @@ export const applicationReference: Record<string, ApplicationReferenceContent> =
     showDimensions: false,
     paths: [
       { title: 'Appliance and motor', text: 'Record the appliance model and the motor connected to the capacitor.', href: '/resources/read-motor-capacitor-label/', link: 'Read the original label' },
-      { title: 'Original capacitor', text: 'Record duty, µF, VAC, wiring and installed dimensions. Attach a clear photo of any unreadable marking.', href: '/buying-guide/#rfq-template', link: 'Quotation checklist' },
+      { title: 'Original capacitor', text: 'Read the electrical ratings from the capacitor label and identify run or start duty from the motor wiring diagram. Send a clear photo by email or WhatsApp if a marking is difficult to read.', href: '/buying-guide/#rfq-template', link: 'Quotation checklist' },
       { title: 'Case format', text: 'Compare CBB60 cylindrical and CBB61 rectangular cases against the available mounting space.', href: '/products/', link: 'Compare product series' },
     ],
     fitChecks: [
-      ['Original labels', 'Send the capacitor label and motor plate for the specific motor being serviced. Copy its required ratings into the inquiry.'],
+      ['Original labels', 'Use the capacitor label and motor plate for the specific motor being serviced.'],
       ['Wiring and connector', 'Include the wiring diagram, lead or blade arrangement and connector. Parts with the same wire count can have different connections.'],
       ['Installed dimensions', 'Measure the case and fixing points, including clearance inside the appliance for the connections.'],
     ],
-    inquiryFields: ['Appliance model and the motor served by the capacitor.', 'Original capacitor label and motor plate, including any unreadable markings.', 'Duty, µF / VAC and original wiring diagram.', 'Installed dimensions, fixing and connection format.', 'Initial quantity or forecast and destination country / market.'],
+    inquiryFields: ['Washing-machine and motor model, with the original capacitor label.', 'Wiring diagram and measurements for the installed part.', 'Initial quantity or forecast, destination and required documents.'],
     checks: [
       ['Equipment, motor and rating', 'Identify the appliance and specific motor served. Provide its specification or diagram and record the original duty, capacitance and rated voltage.'],
       ['Original part record', 'Include clear capacitor-label, side and connection photographs, or the original drawing.'],

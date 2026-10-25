@@ -5,6 +5,14 @@
   "scripts": {
     "dev": "astro dev --host 127.0.0.1",
     "dev:visual": "node scripts/start-visual-preview.mjs",
+    "setup:admin": "node scripts/setup-admin.mjs",
+    "dev:backend": "wrangler dev --config wrangler.backend.jsonc --local --ip 127.0.0.1 --port 8796 --persist-to .wrangler/state",
+    "dev:admin": "node scripts/start-admin.mjs",
+    "db:migrate:local": "wrangler d1 migrations apply DB --local --config wrangler.backend.jsonc --persist-to .wrangler/state",
+    "admin:password": "node scripts/admin-password.mjs",
+    "build:cloudflare": "node scripts/build-cloudflare.mjs",
+    "test:backend": "node --test tests/backend.test.mjs",
+    "test:pages": "node --test tests/pages-smoke.test.mjs",
     "build": "astro build",
     "preview": "astro preview --host 127.0.0.1",
     "start": "node ./dist/server/entry.mjs",
@@ -16,16 +24,17 @@
     "@astrojs/react": "^7.0.0",
     "@fontsource-variable/inter": "^5.3.0",
     "astro": "^7.3.4",
-    "nodemailer": "^10.0.10",
+    "jose": "^6.2.13",
     "react": "^19.3.0",
     "react-dom": "^19.3.0"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
+    "@cloudflare/workers-types": "^5.20261022.1",
     "@types/node": "^22.0.0",
-    "@types/nodemailer": "^7.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "typescript": "^5.9.0"
+    "typescript": "^5.9.0",
+    "wrangler": "^4.151.3"
   }
 }

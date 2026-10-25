@@ -9,18 +9,20 @@ export default function ProductReferenceGallery({ photos: originals, code, displ
   const [viewing, setViewing] = useState(false);
   const rail = useRef<HTMLDivElement>(null);
   const touchStart = useRef<{ x: number; y: number } | null>(null);
+  const lastTracked = useRef(active);
   const photo = photos[active];
 
   function step(delta: number) { setActive(i => (i + delta + photos.length) % photos.length); }
 
   useEffect(() => {
+    if(lastTracked.current!==active){if(!viewing)window.dispatchEvent(new CustomEvent('hx:track',{detail:{type:'image_view',options:{product:code,position:'product_gallery'}}}));lastTracked.current=active;}
     const track = rail.current;
     const thumb = track?.children[active] as HTMLElement | undefined;
     if (track && thumb) {
       if (thumb.offsetLeft < track.scrollLeft) track.scrollLeft = thumb.offsetLeft;
       else if (thumb.offsetLeft + thumb.offsetWidth > track.scrollLeft + track.clientWidth) track.scrollLeft = thumb.offsetLeft + thumb.offsetWidth - track.clientWidth;
     }
-  }, [active]);
+  }, [active,code,viewing]);
 
   if (!photo) return null;
   const viewerPhotos = photos.map((item, index) => ({
