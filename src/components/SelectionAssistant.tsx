@@ -26,8 +26,8 @@ export default function SelectionAssistant({ variant }: { variant?: 'field-guide
     </div>
     <div className="selection-result">
       <div className="selection-result-copy"><div aria-live="polite" aria-atomic="true"><h3>{result.title}</h3><p>{result.body}</p></div>
-        <ul className="pill-list">{result.series.map(s=>{const product=products.find(p=>p.code===s); return <li key={s}><a href={product ? `/products/${product.slug}/` : '/contact/#inquiry-form'}>{s}{fieldGuide && <span className="rfq-arrow" aria-hidden="true" />}</a></li>;})}</ul>
-        <a className={compact ? 'button secondary' : 'button'} href={`/contact/?application=${encodeURIComponent(choice)}&request=quote#inquiry-form`}>Ask about your capacitor{fieldGuide && <span className="rfq-arrow" aria-hidden="true" />}</a>
+        <ul className="pill-list">{result.series.map(s=>{const product=products.find(p=>p.code===s); return <li key={s}><a href={product ? `/products/${product.slug}/` : '/contact/#inquiry-form'}>{s}</a></li>;})}</ul>
+        <a className={compact ? 'button secondary' : 'button'} href={`/contact/?application=${encodeURIComponent(choice)}&request=quote#inquiry-form`}>Ask about your capacitor</a>
       </div>
       {fieldGuide && sample && <figure className={`rfq-selection-photo rfq-selection-photo--${choice}`}><div className="rfq-photo-window"><img src={sample.src} alt={sample.alt} width="2000" height="2000" loading="lazy" /></div>{choice === 'hvac' && <figcaption>Terminal detail</figcaption>}</figure>}
     </div>

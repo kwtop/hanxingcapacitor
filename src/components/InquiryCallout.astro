@@ -2,7 +2,7 @@
 import { products } from '../data/site';
 import '../styles/inquiry-callout.css';
 import { isSatechiPreview } from '../lib/visualPreview';
-import {editorialMedia} from '../data/editorialMedia';
+import {sundayIndustrial} from '../data/sundayIndustrial';
 import SiteImage from './satechi-preview/SiteImage.astro';
 
 interface Props {
@@ -33,10 +33,9 @@ const context = [...destination.searchParams].filter(([name]) => !chooseSeries |
 if (!destination.searchParams.has('request')) context.push(['request', 'quote']);
 const hasDetails = Astro.slots.has('default');
 const requestKind = destination.searchParams.get('request');
-const inquiryVisual = requestKind === 'documents' ? editorialMedia['order-documents']
-  : requestKind === 'packing' ? editorialMedia['packing-protection']
-  : requestKind === 'oem' ? editorialMedia['oem-connections']
-  : editorialMedia['buying-inquiry'];
+const inquiryVisual = requestKind === 'documents' ? sundayIndustrial.technical
+  : requestKind === 'packing' ? sundayIndustrial.packing
+  : requestKind === 'oem' ? sundayIndustrial.connections : sundayIndustrial.catalog;
 ---
 <section id={id} class:list={['inquiry-callout', { 'inquiry-callout-contained': contained }]} aria-labelledby={`${id}-title`}>
   <div class:list={['inquiry-callout-inner', { container: !contained }]}>

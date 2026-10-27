@@ -1,0 +1,8 @@
+---
+import {sundayIndustrial} from '../../data/sundayIndustrial';
+import SiteImage from '../satechi-preview/SiteImage.astro';
+interface Props {name:keyof typeof sundayIndustrial;class?:string;eager?:boolean;sizes?:string;}
+const {name,class:className,eager=false,sizes}=Astro.props;
+const asset=sundayIndustrial[name];
+---
+<figure class:list={['su-industrial-photo',className]} data-image-kind="product-illustration" data-industrial-media={name}><SiteImage src={asset.src} alt={asset.alt} eager={eager} sizes={sizes} /></figure>

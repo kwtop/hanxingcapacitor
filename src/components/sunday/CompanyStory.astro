@@ -1,0 +1,16 @@
+---
+import Action from './Action.astro';
+import { brochureMedia } from '../../data/brochureMedia';
+import { PUBLIC_COMPANY_NAME } from '../../data/site';
+---
+<section class="su-shell su-company" aria-labelledby="company-title">
+  <div class="su-company-grid">
+    <a class="su-company-photo" href="/about/"><img src={brochureMedia['factory-exterior'].src} srcset={brochureMedia['factory-exterior'].srcset} sizes="(max-width: 819px) 100vw, 50vw" width="1200" height="816" loading="lazy" alt={brochureMedia['factory-exterior'].alt}/></a>
+    <div class="su-company-copy">
+      <h2 id="company-title">About Hanxing</h2>
+      <p>Motor run and start capacitors for equipment manufacturers, with OEM labels, connections and packing.</p>
+      <dl class="su-company-records"><div><dt>Brand</dt><dd>HAN XING</dd></div><div><dt>Business contact</dt><dd>{PUBLIC_COMPANY_NAME}</dd></div></dl>
+      <Action href="/about/" quiet>Company information</Action>
+    </div>
+  </div>
+</section>

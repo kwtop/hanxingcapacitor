@@ -10,8 +10,9 @@ export function pageSeo(path: string, title: string, description: string, canoni
   const product = products.find(p => path === `/products/${p.slug}/`);
   const application = applications.find(a => path === `/applications/${a.slug}/`);
   const guide = guides.find(g => path === `/resources/${g.slug}/`);
-  const image = product?.image || application?.image || '/images/real/batch-products.jpg';
-  const imageAlt = product?.imageAlt || application?.imageAlt || 'Supplied photograph of Hanxing-marked capacitor samples.';
+  const gallery = path === '/factory/process-gallery/';
+  const image = product?.image || application?.image || (gallery ? '/images/process-gallery-20261026/02-film-machine.webp' : '/images/real/batch-products.jpg');
+  const imageAlt = product?.imageAlt || application?.imageAlt || (gallery ? 'Illustrative refinement of film-processing equipment from supplied video.' : 'Supplied photograph of Hanxing-marked capacitor samples.');
   const pageType = path === '/about/' ? 'AboutPage' : path === '/contact/' ? 'ContactPage'
     : ['/products/', '/applications/', '/resources/', '/resources/articles/', '/products/photographs/'].includes(path) ? 'CollectionPage' : 'WebPage';
   const graph: Record<string, unknown>[] = [

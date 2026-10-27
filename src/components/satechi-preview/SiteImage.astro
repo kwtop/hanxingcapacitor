@@ -1,10 +1,13 @@
 ---
+import {findSundayIndustrial} from '../../data/sundayIndustrial';
+import {findPolishedMedia} from '../../data/imagePolish';
 import {findEditorialMedia} from '../../data/editorialMedia';
 import {findCoherenceMedia} from '../../data/coherenceMedia';
 import {findIndustrialApplication} from '../../data/industrialApplications';
 import {findBrochureMedia} from '../../data/brochureMedia';
 interface Props { src:string; alt:string; width?:number; height?:number; sizes?:string; eager?:boolean; class?:string; }
 const {src,alt,width,height,sizes='(max-width: 600px) calc(100vw - 32px), (max-width: 1020px) 48vw, 46vw',eager=false,class:className} = Astro.props;
-const asset=findEditorialMedia(src) ?? findCoherenceMedia(src) ?? findIndustrialApplication(src) ?? findBrochureMedia(src);
+const sundayAsset=findPolishedMedia(src) ?? findSundayIndustrial(src);
+const asset=sundayAsset ?? findEditorialMedia(src) ?? findCoherenceMedia(src) ?? findIndustrialApplication(src) ?? findBrochureMedia(src);
 ---
-<img src={src} srcset={asset?.srcset} sizes={asset ? sizes : undefined} alt={alt} width={width ?? asset?.width ?? 1536} height={height ?? asset?.height ?? 1024} class={className} loading={eager ? 'eager' : 'lazy'} fetchpriority={eager ? 'high' : undefined} decoding={eager ? 'sync' : 'async'} />
+<img src={src} srcset={asset?.srcset} sizes={asset ? sizes : undefined} alt={sundayAsset?.alt ?? alt} width={width ?? asset?.width ?? 1536} height={height ?? asset?.height ?? 1024} class={className} loading={eager ? 'eager' : 'lazy'} fetchpriority={eager ? 'high' : undefined} decoding={eager ? 'sync' : 'async'} />

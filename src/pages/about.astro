@@ -5,6 +5,8 @@ import EditorialVisual from '../components/satechi-preview/EditorialVisual.astro
 import FactoryMedia from '../components/satechi-preview/FactoryMedia.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import InquiryCallout from '../components/InquiryCallout.astro';
+import WorkshopPhotoStory from '../components/sunday/WorkshopPhotoStory.astro';
+import { workshopStorySets } from '../data/workshopPhotos';
 import { PUBLIC_BRAND_NAME, PUBLIC_BUSINESS_ADDRESS, PUBLIC_COMPANY_NAME, PUBLIC_EMAIL, PUBLIC_PHONE, WHATSAPP_URL } from '../data/site';
 ---
 <BaseLayout title="About HAN XING | Company & Contact Information" description="HAN XING motor run and start capacitors, company information and business contacts, with product and OEM inquiry links.">
@@ -13,7 +15,7 @@ import { PUBLIC_BRAND_NAME, PUBLIC_BUSINESS_ADDRESS, PUBLIC_COMPANY_NAME, PUBLIC
       <p class="breadcrumbs"><a href="/">Home</a> / About</p>
       <h1>About HAN XING</h1>
       <p class="procurement-lead">{PUBLIC_BRAND_NAME} supplies motor run and start capacitors for equipment manufacturers.</p>
-      <nav class="procurement-actions" aria-label="Company information"><a class="card-link" href="#supplier-records">Company details</a><a class="card-link" href="/contact/">Contact Hanxing</a></nav>
+      <nav class="procurement-actions" aria-label="Company information"><a class="card-link" href="/contact/">Contact Hanxing</a></nav>
       {isSatechiPreview && <EditorialVisual name="brand-story" alt="Illustrative arrangement of the four original capacitor formats, preserving sample markings." eager />}
     </div></section>
     <section class="procurement-section procurement-company-information" id="supplier-records"><div class="container">
@@ -24,6 +26,7 @@ import { PUBLIC_BRAND_NAME, PUBLIC_BUSINESS_ADDRESS, PUBLIC_COMPANY_NAME, PUBLIC
       <div><h2>Motor capacitor supply</h2><p>The range includes CBB60, CBB61 and CBB65 run capacitors and CD60 start capacitors for pumps, fans, refrigeration and other single-phase motor circuits.</p><a class="card-link" href="/oem/">OEM requirements and approval</a></div>
       {isSatechiPreview ? <FactoryMedia name="batch" class="procurement-company-photo" /> : <figure class="procurement-company-photo"><img src="/images/real/batch-products.jpg" alt="Hanxing-marked capacitor samples on a work surface in a supplied photograph." width="1920" height="1080" loading="lazy" /></figure>}
     </div></section>
+    <WorkshopPhotoStory id="visit-photos" eyebrow="Visits and samples" title="From the sample table into the workshop" intro="Supplied photographs show discussions around components and a walk through the production area." photos={workshopStorySets.about} />
     <InquiryCallout><nav aria-label="Product records"><a class="card-link" href="/factory/#model-records">Documents for your model</a><a class="card-link" href="/products/">Explore the capacitor series</a></nav></InquiryCallout>
   </article>}
 </BaseLayout>

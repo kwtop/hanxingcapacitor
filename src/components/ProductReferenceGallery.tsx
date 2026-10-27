@@ -2,9 +2,10 @@ import { useEffect, useRef, useState } from 'react';
 import type { ReferenceGalleryPhoto } from '../data/productReference';
 import ImageWithFeedback from './ImageWithFeedback';
 import PhotoViewer from './PhotoViewer';
+import { findPolishedMedia } from '../data/imagePolish';
 
 export default function ProductReferenceGallery({ photos: originals, code, display }: { photos: ReferenceGalleryPhoto[]; code: string; display?: {src: string; alt: string} }) {
-  const photos: ReferenceGalleryPhoto[] = display ? [{...display, label: `${code} product view`}, ...originals] : originals;
+  const photos: ReferenceGalleryPhoto[] = display ? [{...display, thumb:findPolishedMedia(display.src)?.thumb, label: `${code} product view`}, ...originals] : originals;
   const [active, setActive] = useState(0);
   const [viewing, setViewing] = useState(false);
   const rail = useRef<HTMLDivElement>(null);
@@ -40,9 +41,9 @@ export default function ProductReferenceGallery({ photos: originals, code, displ
     },
   };
 
-  return <div className={'pdr-gallery pg-gallery' + (display ? ' ss-product-gallery' : '')} id="sample-photographs">
+  return <div className={'pdr-gallery pg-gallery' + (display ? ' ss-product-gallery' : '')} id="sample-photographs" data-photo-kind={display && active === 0 ? 'display' : 'sample'}>
     <div className="pg-stage" {...swipe}>
-      <button type="button" className="pdr-main-photo pg-main" onClick={() => setViewing(true)} aria-label={`Enlarge ${photo.label}`}><ImageWithFeedback key={photo.src} src={photo.src} alt={photo.alt} width={2000} height={2000} retryable={false} /></button>
+      <button type="button" className="pdr-main-photo pg-main" onClick={() => setViewing(true)} aria-label={`Enlarge ${photo.label}`}><ImageWithFeedback key={photo.src} src={photo.src} alt={photo.alt} width={2000} height={2000} sizes="(max-width: 800px) calc(100vw - 48px), (max-width: 1420px) 50vw, 686px" retryable={false} /></button>
       <button className="pg-step pg-previous" type="button" onClick={() => step(-1)} aria-label={display ? 'Previous product view' : 'Previous sample photograph'}><span aria-hidden="true">←</span></button>
       <button className="pg-step pg-next" type="button" onClick={() => step(1)} aria-label={display ? 'Next product view' : 'Next sample photograph'}><span aria-hidden="true">→</span></button>
     </div>

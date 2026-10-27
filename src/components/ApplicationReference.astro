@@ -28,7 +28,6 @@ const compareRows = [
         <nav class="hvr-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/applications/">Applications</a><span>/</span><span aria-current="page">{application.shortName}</span></nav>
         <h1 id="application-title">{application.shortName}</h1>
         <p class="hvr-hero-summary">{application.listing}</p>
-        <div class="hvr-actions"><a class="hvr-button" href="#review">Check motor requirements</a><a class="hvr-secondary" href="#quote-details">Inquiry checklist</a></div>
       </div>
       <figure class="hvr-hero-photo"><SiteImage src={isSatechiPreview ? applicationVisuals[application.slug] : application.image} alt={isSatechiPreview ? industrialApplications[application.slug].alt : application.imageAlt} width={isSatechiPreview ? 1536 : 1200} height={isSatechiPreview ? 1024 : application.imageHeight} eager /></figure>
     </section>

@@ -25,9 +25,8 @@ if (applications.some(item => item.slug === application) || ['hvac', 'pump', 'fa
 <BaseLayout title="Request a Motor Capacitor Quote" description="Submit your motor capacitor requirements online, or contact HAN XING by email or WhatsApp. Include the original part details, quantity and destination." noindex>
   <div class="reference-utility">
   <section class="page-hero"><div class="container"><p class="breadcrumbs"><a href="/">Home</a> / Request a Quote</p><h1>Request a motor capacitor quote</h1></div></section>
-  <section class="section"><div class="container quote-layout">
+  <section class="section"><div class="container quote-reading">
     <InquiryCallout contained href={contactUrl.pathname + contactUrl.search + '#inquiry-form'} chooseSeries={!contactUrl.searchParams.has('photo') || contactUrl.searchParams.has('series')}><ul><li>Original capacitor label or exact part number</li><li>Equipment model and run or start function</li><li>Capacitance, voltage, body dimensions and terminal or lead details</li><li>Quantity, destination and any document requirement</li></ul><a class="card-link" href="/buying-guide/">Quotation checklist</a></InquiryCallout>
-    <aside class="side-panel quote-help" aria-label="Selection guides"><a href="/products/">Compare capacitor series</a><a href="/resources/read-motor-capacitor-label/">Read a capacitor label</a><a href="/resources/start-vs-run-capacitors/">Check run versus start duty</a></aside>
   </div></section>
   </div>
 </BaseLayout>

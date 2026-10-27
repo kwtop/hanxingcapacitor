@@ -1,56 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import SatechiHome from '../components/satechi-preview/SatechiHome.astro';
-import { isSatechiPreview } from '../lib/visualPreview';
-import InquiryCallout from '../components/InquiryCallout.astro';
-import { products, productHref, applications, applicationHref } from '../data/site';
-import '../styles/home-reference.css';
-import '../styles/home-applications.css';
-const studio = (code: string) => `/images/reference-20261012/${code.toLowerCase()}-studio.webp`;
-const selectionGuides = [
-  { title: 'Read the capacitor label', detail: 'Find the µF, VAC and other markings needed for a replacement.', href: '/resources/read-motor-capacitor-label/' },
-  { title: 'Dimensions & connections', detail: 'Check the case, mounting space and terminal arrangement.', href: '/resources/dimensions-terminals-mounting/' },
-  { title: 'Run and start duty', detail: 'Understand which duty the motor circuit requires.', href: '/resources/start-vs-run-capacitors/' },
-  { title: 'Single or dual run', detail: 'Read both capacitance values on a dual-run capacitor.', href: '/resources/single-vs-dual-run-capacitors/' },
-];
+import SundayHome from '../components/sunday/SundayHome.astro';
 ---
-<BaseLayout title="Motor Run & Start Capacitors | HAN XING" description="CBB60, CBB61 and CBB65 run capacitors and CD60 start capacitors for equipment sourcing. Compare ratings, case formats and sample photos from HAN XING.">
-{isSatechiPreview ? <SatechiHome /> : <div class="home-selected">
-  <section class="selected-hero" aria-labelledby="home-title">
-    <img class="selected-hero-image" src="/images/home-selected-20261012/hero-four-warm-v2.png" alt="Illustrative studio composition of four capacitor samples: wired CBB60, rectangular CBB61, metal-can CBB65 and CD60." width="1817" height="866" fetchpriority="high" />
-    <div class="container selected-hero-copy"><h1 id="home-title">Motor capacitors<br />for equipment<br />manufacturers</h1><a class="button" href="/products/">Compare capacitor series</a></div>
-  </section>
-  <div class="container">
-    <section class="selected-products" aria-labelledby="products-title">
-      <div class="selected-intro"><div><h2 id="products-title">Motor capacitor series</h2></div><div class="selected-duty"><p>CBB60, CBB61 and CBB65 are motor run series.<br />CD60 is for switched motor-start duty.</p><span>Ratings shown are series ranges; model availability varies.</span></div></div>
-      <div class="selected-product-grid">{products.map(product => <article><a class="selected-product-link" href={productHref(product)}><img src={studio(product.code)} alt={`Studio illustration based on an original ${product.code} capacitor sample.`} width="1254" height="1254" loading="lazy" /><h3>{product.code}</h3></a><p class="selected-muted">{product.shortName}</p>{product.code === 'CBB65' ? <div class="selected-ratings"><p>Single: 2–100 µF<br />110–450 VAC</p><p>Dual: 1+15 to 15+80 µF<br />370–450 VAC</p></div> : <p class="selected-ratings">{product.capacitance}<br />{product.voltage}</p>}</article>)}</div>
-    </section>
-    <section class="selected-match" aria-labelledby="match-title"><h2 id="match-title">Before choosing a capacitor</h2><div class="selected-match-stage"><span class="selected-match-word" aria-hidden="true">CBB65</span><div class="selected-checks"><div><h3>Duty</h3><p>The circuit specifies run or start.</p></div><div><h3>µF &amp; VAC</h3><p>Copy both from the original label.</p></div></div><a class="selected-feature" href="/products/cbb65-air-conditioner-capacitor/"><img src="/images/home-selected-20261012/cbb65-feature.png" alt="Illustrative edited CBB65 sample view showing its metal case, original label and two terminal groups." width="1254" height="1254" loading="lazy" /></a><div class="selected-checks"><div><h3>Dimensions</h3><p>Allow for the case and mounting.</p></div><div><h3>Connections</h3><p>Match the terminals and wiring.</p></div></div></div></section>
-    <section class="selected-applications" aria-labelledby="applications-title">
-      <div class="selected-applications-heading">
-        <h2 id="applications-title">Applications</h2>
-      </div>
-      <div class="selected-application-grid">
-        {applications.map(application => <article class="selected-application-card">
-          <a href={applicationHref(application)}>
-            <img src={application.image} alt={application.imageAlt} width="1200" height={application.imageHeight} loading="lazy" decoding="async" />
-            <div class="selected-application-content">
-              <h3>{application.shortName}</h3>
-            </div>
-          </a>
-        </article>)}
-      </div>
-    </section>
-    <section class="selected-production" aria-labelledby="production-title"><div class="selected-production-heading"><div><h2 id="production-title">Samples &amp; production</h2></div></div><div class="selected-source-grid"><figure><a href="/factory/" aria-label="View production footage"><img src="/images/real/film-rolls.jpg" alt="Film handling equipment from the supplied production footage." width="1920" height="1080" loading="lazy" /></a></figure><figure><a href="/products/photographs/" aria-label="View original capacitor sample photographs"><img src="/images/real/batch-products.jpg" alt="Original supplied photograph of multiple metal-can capacitor samples." width="2000" height="2000" loading="lazy" /></a></figure></div></section>
-    <section class="selected-resources" aria-labelledby="resources-title">
-      <h2 id="resources-title">Selection guides</h2>
-      <div class="selected-resource-layout">
-        <figure class="selected-resource-image"><img src="/images/home-selected-20261012/selection-guide.webp" alt="Illustrative selection-guide composition with a CBB65 sample, caliper and outline drawing." width="1536" height="1024" loading="lazy" /></figure>
-        <nav class="selected-resource-list" aria-label="Capacitor selection guides">{selectionGuides.map(guide => <a href={guide.href}><h3>{guide.title}</h3></a>)}</nav>
-      </div>
-    </section>
-  </div>
-  <InquiryCallout id="home-inquiry" defaultSeries="CBB60" />
-</div>}
+<BaseLayout homeDesign title="Motor Run & Start Capacitors | HAN XING" description="CBB60, CBB61 and CBB65 run capacitors and CD60 start capacitors for equipment sourcing. Compare ratings, case formats and sample photos from HAN XING.">
+  <SundayHome />
 </BaseLayout>
-

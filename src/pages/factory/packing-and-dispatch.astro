@@ -1,12 +1,15 @@
 ---
+import InnerHero from '../../components/sunday/InnerHero.astro';
+import {sundayIndustrial} from '../../data/sundayIndustrial';
 import { isSatechiPreview } from '../../lib/visualPreview';
 import OemPhoto from '../../components/satechi-preview/OemPhoto.astro';
 import { oemMedia } from '../../data/oemMedia';
-import RefinedPhoto from '../../components/satechi-preview/RefinedPhoto.astro';
 import BrochurePhoto from '../../components/satechi-preview/BrochurePhoto.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import InquiryCallout from '../../components/InquiryCallout.astro';
 import VideoFigure from '../../components/VideoFigure.astro';
+import WorkshopPhotoStory from '../../components/sunday/WorkshopPhotoStory.astro';
+import { workshopStorySets } from '../../data/workshopPhotos';
 const checklist = '/resources/motor-capacitor-order-shipment-checklist/';
 const requirements = [
   { name: 'Individual protection', description: 'Space around terminals and leads, with protection against contact or movement.', values: 'The protection and clearance agreed for the model.' },
@@ -21,12 +24,7 @@ const shippingRecords = [
 ---
 <BaseLayout title="Packing, Dispatch & Order Records" description="Capacitor packing requirements, carton quantities, shipping marks and the documents to check before carrier handover.">
   <article class:list={['procurement-page procurement-packing', {'oem-editorial-page': isSatechiPreview}]}>
-    <section class="procurement-hero"><div class="container">
-      <p class="breadcrumbs"><a href="/">Home</a> / <a href="/oem-quality/">OEM &amp; Quality</a> / Packing &amp; Dispatch</p>
-      <h1 id="packing-title">Packing and dispatch</h1>
-      <nav class="procurement-actions" aria-label="Packing information"><a class="button" href="#packing-requirements">Review packing requirements</a><a class="card-link" href="/contact/?request=packing#inquiry-form">Discuss your packing</a></nav>
-      {isSatechiPreview && <RefinedPhoto name="packing-protection" class="ss-editorial-visual ss-packing-workshop" eager />}
-    </div></section>
+    <InnerHero titleId="packing-title" title="Packing and dispatch" description="Product protection, carton quantities and clear records for carrier handover." image={sundayIndustrial.packing.src} alt={sundayIndustrial.packing.alt} trail="OEM & quality / Packing & dispatch"><nav class="procurement-actions" aria-label="Packing information"><a class="card-link" href="/contact/?request=packing#inquiry-form">Discuss your packing</a></nav></InnerHero>
     <section class="procurement-section" id="packing-requirements" aria-labelledby="pack-title"><div class="container">
       <h2 id="pack-title">Packing requirements</h2>
       <div class:list={{'ss-packing-spec':isSatechiPreview}}>
@@ -43,6 +41,7 @@ const shippingRecords = [
       <div class="procurement-packing-footage-copy"><h2 id="packing-footage-title">Packing footage</h2><ul><li>Keep terminals and leads clear of pressure or contact.</li><li>Check dividers, inner protection and package counts.</li><li>Match the marks to the model and order reference.</li></ul></div>
       <div class:list={['procurement-video', isSatechiPreview ? 'oem-packing-player' : 'procurement-video--portrait']}><VideoFigure src="/videos/packing-scene.mp4" poster="/images/real/packing-scene.jpg" label="Supplied footage of small product boxes being handled at a packing worktable" ratio="9/16" displayRatio={isSatechiPreview ? '3/2' : undefined} cover={isSatechiPreview ? oemMedia['packing-worktable'] : undefined} /></div>
     </div></section>
+    <WorkshopPhotoStory id="packing-dispatch-photos" eyebrow="Packing and dispatch stills" title="Boxes, pallets and the loading lane" intro="Video frames follow the visible work from individual boxes through pallet staging and truck loading. The wider overview is an illustrative reconstruction." photos={workshopStorySets.packing} moreHref="/factory/process-gallery/#finish-pack" moreLabel="See the full packing and dispatch sequence" />
     <section class="procurement-section" id="handover" aria-labelledby="handover-title"><div class="container">
       <h2 id="handover-title">Packout &amp; carrier handover</h2>
       <div class="procurement-handover-layout">

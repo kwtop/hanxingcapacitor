@@ -147,11 +147,11 @@
   #main .pdr-photo-grid { grid-template-columns:repeat(4,minmax(0,1fr)); }
 }
 @media (min-width:801px) and (max-width:1100px) {
-  body:has(.pdr-reference) .site-header .brand-wordmark { display:none; }
-  body:has(.pdr-reference) .site-header .header-inner { gap:18px; }
-  body:has(.pdr-reference) .site-header .nav-link { font-size:13px; }
-  body:has(.pdr-reference) .site-header .desktop-nav { gap:8px; }
-  body:has(.pdr-reference) .site-header .header-cta { padding-inline:16px; font-size:13px; }
+  body:not(.sunday-site):has(.pdr-reference) .site-header .brand-wordmark { display:none; }
+  body:not(.sunday-site):has(.pdr-reference) .site-header .header-inner { gap:18px; }
+  body:not(.sunday-site):has(.pdr-reference) .site-header .nav-link { font-size:13px; }
+  body:not(.sunday-site):has(.pdr-reference) .site-header .desktop-nav { gap:8px; }
+  body:not(.sunday-site):has(.pdr-reference) .site-header .header-cta { padding-inline:16px; font-size:13px; }
 }
 @media (max-width:760px) {
   #main .pdr-wrap { width:calc(100% - 40px); }

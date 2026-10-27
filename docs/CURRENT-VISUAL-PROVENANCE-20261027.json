@@ -1,0 +1,1596 @@
+{
+  "status": "Current local visual preview restored on 2026-10-27; GitHub source checkpoint.",
+  "scope": "Published web renditions and their source mapping. Original source footage, source stills and generated PNG archives are retained locally, outside this repository.",
+  "evidence_boundary": "Generated images are illustrations; markings and generated scenes do not establish product specifications, company identity, certification or shipment.",
+  "groups": {
+    "home_banner": [
+      {
+        "id": "desktop",
+        "kind": "AI product presentation, not company evidence",
+        "original": "local-archive/exec-60ca9303-65b1-4854-89db-c643e5b376ff.png",
+        "outputs": [
+          {
+            "path": "public/images/home-industrial-banner/desktop-1024.webp",
+            "sha256": "9d712aec8894b8bb41b053564d21779f3b04f3912675256d2e3f68731b45f0e3",
+            "bytes": 71086,
+            "dimensions": [
+              1024,
+              576
+            ]
+          },
+          {
+            "path": "public/images/home-industrial-banner/desktop-1440.webp",
+            "sha256": "a9358b5b422db4c068f5c06c6a6b8d1f5dc4c95e650f441403176115c15e11a5",
+            "bytes": 116768,
+            "dimensions": [
+              1440,
+              810
+            ]
+          },
+          {
+            "path": "public/images/home-industrial-banner/desktop-1672.webp",
+            "sha256": "9552426df08bfd3cfe982ac6bc08d87f5a7fc9a8db46a3d8602323601cb1a402",
+            "bytes": 139772,
+            "dimensions": [
+              1672,
+              941
+            ]
+          }
+        ]
+      },
+      {
+        "id": "tablet",
+        "kind": "AI product presentation, not company evidence",
+        "original": "local-archive/exec-c05e6d60-b562-4425-97d6-f7d8ae4e00e6.png",
+        "outputs": [
+          {
+            "path": "public/images/home-industrial-banner/tablet-800.webp",
+            "sha256": "4dfa98bc4ab5ce2e667618482915c041fac2c54f63a0d586572dbc58879bdef7",
+            "bytes": 84194,
+            "dimensions": [
+              800,
+              1067
+            ]
+          },
+          {
+            "path": "public/images/home-industrial-banner/tablet-1086.webp",
+            "sha256": "6c97a837689f46c90fedf086ea365e6f46237f2d107cafd3d4d04b48fb497cf0",
+            "bytes": 130000,
+            "dimensions": [
+              1086,
+              1448
+            ]
+          }
+        ]
+      },
+      {
+        "id": "mobile",
+        "kind": "AI product presentation, not company evidence",
+        "original": "local-archive/exec-24998407-d874-4689-9cfd-2cd9aad37d19.png",
+        "outputs": [
+          {
+            "path": "public/images/home-industrial-banner/mobile-480.webp",
+            "sha256": "f8bd5c81976d4fe72d657ba79b675a5929a9b8f61c7c9f0240bbb6d72e56ac17",
+            "bytes": 47040,
+            "dimensions": [
+              480,
+              894
+            ]
+          },
+          {
+            "path": "public/images/home-industrial-banner/mobile-800.webp",
+            "sha256": "e84f443b5d6310fde97df31a32937a27d954333f50eea846bf7da23525bccf1b",
+            "bytes": 96648,
+            "dimensions": [
+              800,
+              1490
+            ]
+          },
+          {
+            "path": "public/images/home-industrial-banner/mobile-918.webp",
+            "sha256": "32b27e1ac9034a13d2fabf34f977002868ea5c06546a27759d6870d77f6ad1bf",
+            "bytes": 118430,
+            "dimensions": [
+              918,
+              1710
+            ]
+          }
+        ]
+      }
+    ],
+    "industrial_polish": [
+      {
+        "id": "cbb60",
+        "role": "Single product",
+        "kind": "Illustrative studio presentation; not original sample, factory, certificate or shipment evidence",
+        "inputs": [
+          "public/images/sunday-home/cbb60-800.webp",
+          "public/images/real/cbb60-hanxing-wired.jpg"
+        ],
+        "original": "local-archive/exec-30828cb2-8ff7-46fd-aef3-17084a674df1.png",
+        "outputs": [
+          {
+            "path": "public/images/industrial-polish-20261026/cbb60-1024.webp",
+            "sha256": "49a24f27f3a2bbc7039c1a42a3565b729553f6eaef1fe9748fcb08c0d0c4e9c4",
+            "bytes": 106946,
+            "dimensions": [
+              1024,
+              1536
+            ]
+          },
+          {
+            "path": "public/images/industrial-polish-20261026/cbb60-240.webp",
+            "sha256": "c7a0d7f6bcd07c3da1ff2e0e22dc88216e99273bd783a0b51850123229a5c44b",
+            "bytes": 8018,
+            "dimensions": [
+              240,
+              360
+            ]
+          },
+          {
+            "path": "public/images/industrial-polish-20261026/cbb60-480.webp",
+            "sha256": "0342d205667cf2247bea7de97873af117b64425e201433fa59ccef4fd1480539",
+            "bytes": 29420,
+            "dimensions": [
+              480,
+              720
+            ]
+          },
+          {
+            "path": "public/images/industrial-polish-20261026/cbb60-800.webp",
+            "sha256": "78d149072c076be073e8fb5466e44e152086da0a6b52f2f345cb7443175fe3aa",
+            "bytes": 70020,
+            "dimensions": [
+              800,
+              1200
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cbb61",
+        "role": "Single product",
+        "kind": "Illustrative studio presentation; not original sample, factory, certificate or shipment evidence",
+        "inputs": [
+          "public/images/sunday-industrial/cbb61-800.webp",
+          "public/images/real/cbb61-13.jpg"
+        ],
+        "original": "local-archive/exec-17376855-2e6e-41a6-886a-b98a54946eab.png",
+        "outputs": [
+          {
+            "path": "public/images/industrial-polish-20261026/cbb61-1024.webp",
+            "sha256": "1643db89680b6f4c9ba98f2396de134197c101d580305679d010107b1cd9ae6f",
+            "bytes": 199916,
+            "dimensions": [
+              1024,
+              1536
+            ]
+          },
+          {
+            "path": "public/images/industrial-polish-20261026/cbb61-240.webp",
+            "sha256": "258c8d1c073fd7d21260de36c91cc5e119fdade226e628f205fd89498a5e3bb8",
+            "bytes": 11874,
+            "dimensions": [
+              240,
+              360
+            ]
+          },
+          {
+            "path": "public/images/industrial-polish-20261026/cbb61-480.webp",
+            "sha256": "bf7e71202cd582b1ee5667c179ca4ca1dfc06e74f00d1c393fc4a31920e82afc",
+            "bytes": 47208,
+            "dimensions": [
+              480,
+              720
+            ]
+          },
+          {
+            "path": "public/images/industrial-polish-20261026/cbb61-800.webp",
+            "sha256": "df6cb714fdf38f24ac70a08eb47fb9066e854298609c799555f082006a07a02f",
+            "bytes": 126502,
+            "dimensions": [
+              800,
+              1200
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cbb65",
+        "role": "Single product",
+        "kind": "Illustrative studio presentation; not original sample, factory, certificate or shipment evidence",
+        "inputs": [
+          "public/images/sunday-home/cbb65-800.webp",
+          "public/images/real/cbb65-2.jpg"
+        ],
+        "original": "local-archive/exec-15f02cf7-1937-4835-b51f-9742056bcff5.png",
+        "outputs": [
+          {
+            "path": "public/images/industrial-polish-20261026/cbb65-1024.webp",
+            "sha256": "81c7232c189410758d829b4c5744017adfd1e0c589cb575305e14593e74b55c6",
+            "bytes": 132612,
+            "dimensions": [
+              1024,
+              1536
+            ]
+          },
+          {
+            "path": "public/images/industrial-polish-20261026/cbb65-240.webp",
+            "sha256": "3a0cefc8caef523686d41dd32456b30b499e148ead325a01a42e789736f3ac93",
+            "bytes": 9310,
+            "dimensions": [
+              240,
+              360
+            ]
+          },
+          {
+            "path": "public/images/industrial-polish-20261026/cbb65-480.webp",
+            "sha256": "f1c914f81a7e8d454392deeb386ba485c72dffe5ae25eee4cffe73ffb984fdeb",
+            "bytes": 32968,
+            "dimensions": [
+              480,
+              720
+            ]
+          },
+          {
+            "path": "public/images/industrial-polish-20261026/cbb65-800.webp",
+            "sha256": "3143829d687597026a60ab0d4ddb59591ad8af90d02198db938d9e6a4dd1ad35",
+            "bytes": 82402,
+            "dimensions": [
+              800,
+              1200
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cd60",
+        "role": "Single product",
+        "kind": "Illustrative studio presentation; not original sample, factory, certificate or shipment evidence",
+        "inputs": [
+          "public/images/sunday-home/cd60-800.webp",
+          "public/images/real/cd60-25.jpg"
+        ],
+        "original": "local-archive/exec-c4ab5205-77e9-473d-87fb-20c1f0e28432.png",
+        "outputs": [
+          {
+            "path": "public/images/industrial-polish-20261026/cd60-1024.webp",
+            "sha256": "cb5110a94b1122073efbdbdc7f396ef2a0d0d19daaa8194c48e30acccd179166",
+            "bytes": 105286,
+            "dimensions": [
+              1024,
+              1536
+            ]
+          },
+          {
+            "path": "public/images/industrial-polish-20261026/cd60-240.webp",
+            "sha256": "3208dbfc56f0820e5d29ec29c713f19997f9257fc369cd9958f37e5b649aae45",
+            "bytes": 8210,
+            "dimensions": [
+              240,
+              360
+            ]
+          },
+          {
+            "path": "public/images/industrial-polish-20261026/cd60-480.webp",
+            "sha256": "05f7c35736d398a95aa1211ed2dc5e057633284a6330676803797e98e5229cab",
+            "bytes": 29984,
+            "dimensions": [
+              480,
+              720
+            ]
+          },
+          {
+            "path": "public/images/industrial-polish-20261026/cd60-800.webp",
+            "sha256": "c7a7291aa5146ab5bb5604d0f4f063ffd42d701473499096b169a099ffb56cff",
+            "bytes": 68990,
+            "dimensions": [
+              800,
+              1200
+            ]
+          }
+        ]
+      },
+      {
+        "id": "connections",
+        "role": "Connection formats",
+        "kind": "Illustrative studio presentation; not original sample, factory, certificate or shipment evidence",
+        "inputs": [
+          "public/images/real/cbb60-hanxing-wired.jpg",
+          "public/images/real/cbb61-13.jpg",
+          "local-archive/exec-30828cb2-8ff7-46fd-aef3-17084a674df1.png"
+        ],
+        "original": "local-archive/exec-801c8ed2-f6f6-42ab-b50e-933391620ea4.png",
+        "outputs": [
+          {
+            "path": "public/images/industrial-polish-20261026/connections-1280.webp",
+            "sha256": "c05642c8a61150f20925249029b80d33f99eb2bca31bac0493de470c80cb3e5c",
+            "bytes": 73186,
+            "dimensions": [
+              1280,
+              853
+            ]
+          },
+          {
+            "path": "public/images/industrial-polish-20261026/connections-1536.webp",
+            "sha256": "83b5f4dab3fac4b36d5957e0ca557182490ad9173299634e74abcfdbedd473dd",
+            "bytes": 98756,
+            "dimensions": [
+              1536,
+              1024
+            ]
+          },
+          {
+            "path": "public/images/industrial-polish-20261026/connections-480.webp",
+            "sha256": "2a81d6525f4c1cfcb6dbad64c18e03138473e55e8e0c76ef11f8979462b93bcb",
+            "bytes": 13356,
+            "dimensions": [
+              480,
+              320
+            ]
+          },
+          {
+            "path": "public/images/industrial-polish-20261026/connections-800.webp",
+            "sha256": "b14af4a77c3d30edf5714c0e7c36846417633ddee14af6c0c5284169fdbdab08",
+            "bytes": 32886,
+            "dimensions": [
+              800,
+              533
+            ]
+          }
+        ]
+      },
+      {
+        "id": "terminals",
+        "role": "Terminal macro",
+        "kind": "Illustrative studio presentation; not original sample, factory, certificate or shipment evidence",
+        "inputs": [
+          "public/images/sunday-home/terminals-1280.webp",
+          "public/images/real/cbb65-2.jpg",
+          "local-archive/exec-15f02cf7-1937-4835-b51f-9742056bcff5.png"
+        ],
+        "original": "local-archive/exec-443f30f6-5bd4-4c87-adcc-25f4833a4367.png",
+        "outputs": [
+          {
+            "path": "public/images/industrial-polish-20261026/terminals-1280.webp",
+            "sha256": "28b02f9fc5ed3b2819c90910f342fd3fbd07ee95fff021875f3475b9eb8b504b",
+            "bytes": 154530,
+            "dimensions": [
+              1280,
+              853
+            ]
+          },
+          {
+            "path": "public/images/industrial-polish-20261026/terminals-1536.webp",
+            "sha256": "94b73b8a784808a81babcc083c6e2ad9c009ea75a700ceda2cca5af25b87851f",
+            "bytes": 214106,
+            "dimensions": [
+              1536,
+              1024
+            ]
+          },
+          {
+            "path": "public/images/industrial-polish-20261026/terminals-480.webp",
+            "sha256": "75e7c0cca00c2f889f52bf3d2eca66248d20c1e6624062dd5814731d8ce33050",
+            "bytes": 26458,
+            "dimensions": [
+              480,
+              320
+            ]
+          },
+          {
+            "path": "public/images/industrial-polish-20261026/terminals-800.webp",
+            "sha256": "c4005c3960da70aceca4a4e210294b062069cb570fb3564d6cf7e03bd84fc20c",
+            "bytes": 67140,
+            "dimensions": [
+              800,
+              533
+            ]
+          }
+        ]
+      },
+      {
+        "id": "packing",
+        "role": "Product packing",
+        "kind": "Illustrative studio presentation; not original sample, factory, certificate or shipment evidence",
+        "inputs": [
+          "public/images/real/cbb65-4.jpg",
+          "public/images/sunday-industrial/packing-1536.webp",
+          "local-archive/exec-15f02cf7-1937-4835-b51f-9742056bcff5.png"
+        ],
+        "original": "local-archive/exec-7c6ec022-c8ad-4e46-9b90-4365550de3b4.png",
+        "outputs": [
+          {
+            "path": "public/images/industrial-polish-20261026/packing-1280.webp",
+            "sha256": "138cf26695d63c0f378bdd25ebfd6ec8b9bc2687906f8a12a69bca0ff33fa513",
+            "bytes": 138174,
+            "dimensions": [
+              1280,
+              853
+            ]
+          },
+          {
+            "path": "public/images/industrial-polish-20261026/packing-1536.webp",
+            "sha256": "808318832091eaea31f9ab6a189efe2b5c452d93e200699f765e979b219eb786",
+            "bytes": 177892,
+            "dimensions": [
+              1536,
+              1024
+            ]
+          },
+          {
+            "path": "public/images/industrial-polish-20261026/packing-480.webp",
+            "sha256": "1cee0288a2db32026602ea5863a62d473c21fc11044d00033e00a585693b04d4",
+            "bytes": 25608,
+            "dimensions": [
+              480,
+              320
+            ]
+          },
+          {
+            "path": "public/images/industrial-polish-20261026/packing-800.webp",
+            "sha256": "18af19d58cb8d6337e0d12fada25758aad6ebc69dfe4c591f90326d46aa3e1df",
+            "bytes": 61810,
+            "dimensions": [
+              800,
+              533
+            ]
+          }
+        ]
+      },
+      {
+        "id": "technical",
+        "role": "Technical still life",
+        "kind": "Illustrative studio presentation; not original sample, factory, certificate or shipment evidence",
+        "inputs": [
+          "public/images/sunday-industrial/technical-1536.webp",
+          "public/images/real/cbb60-hanxing-wired.jpg",
+          "public/images/real/cbb65-2.jpg",
+          "local-archive/exec-15f02cf7-1937-4835-b51f-9742056bcff5.png"
+        ],
+        "original": "local-archive/exec-535cd814-06b6-4aab-b959-180e37c75c72.png",
+        "outputs": [
+          {
+            "path": "public/images/industrial-polish-20261026/technical-1280.webp",
+            "sha256": "5903fcee6dee027cc3d9e5e2cd59a8c317f0671d0e90eabe454a6cd729211fbd",
+            "bytes": 143938,
+            "dimensions": [
+              1280,
+              853
+            ]
+          },
+          {
+            "path": "public/images/industrial-polish-20261026/technical-1536.webp",
+            "sha256": "222bae371cb26e80f02be6b12c40cb7831222f9c8de863cf5ace30fcacbce243",
+            "bytes": 192482,
+            "dimensions": [
+              1536,
+              1024
+            ]
+          },
+          {
+            "path": "public/images/industrial-polish-20261026/technical-480.webp",
+            "sha256": "ae0f008c6463b58eb993e8d11bd65411cf135d008779eccdb9698cf3720c1403",
+            "bytes": 24194,
+            "dimensions": [
+              480,
+              320
+            ]
+          },
+          {
+            "path": "public/images/industrial-polish-20261026/technical-800.webp",
+            "sha256": "c719cb12feba2c64fc1bef2024a870edbc8b6bbd95245be7e04d164960031546",
+            "bytes": 63662,
+            "dimensions": [
+              800,
+              533
+            ]
+          }
+        ]
+      },
+      {
+        "id": "catalog",
+        "role": "Product family",
+        "kind": "Illustrative studio presentation; not original sample, factory, certificate or shipment evidence",
+        "inputs": [
+          "public/images/real/cbb60-hanxing-wired.jpg",
+          "public/images/real/cbb61-13.jpg",
+          "public/images/real/cbb65-2.jpg",
+          "public/images/real/cd60-25.jpg",
+          "local-archive/exec-15f02cf7-1937-4835-b51f-9742056bcff5.png"
+        ],
+        "original": "local-archive/exec-95d28a1c-24f3-4361-a8d5-23bb04ca3d52.png",
+        "outputs": [
+          {
+            "path": "public/images/industrial-polish-20261026/catalog-1280.webp",
+            "sha256": "36d4f2d8ea6a7cb1a599cb798cd074daadba370a4a3745b10e65255dba8ca756",
+            "bytes": 82952,
+            "dimensions": [
+              1280,
+              853
+            ]
+          },
+          {
+            "path": "public/images/industrial-polish-20261026/catalog-1536.webp",
+            "sha256": "a238997f51f5fb7bc94cfeefd4a0cd32dab35a49a595b70a9c8d4f924007f26e",
+            "bytes": 111986,
+            "dimensions": [
+              1536,
+              1024
+            ]
+          },
+          {
+            "path": "public/images/industrial-polish-20261026/catalog-480.webp",
+            "sha256": "1e9f40d85ea5a632aa1b91602b7f7215d56fc24d39f64a3fe1a31c82f628dae2",
+            "bytes": 16972,
+            "dimensions": [
+              480,
+              320
+            ]
+          },
+          {
+            "path": "public/images/industrial-polish-20261026/catalog-800.webp",
+            "sha256": "0d311963be6b2e5e0becc662016588427d441998534b3f4de53eee83a7adfbe4",
+            "bytes": 38496,
+            "dimensions": [
+              800,
+              533
+            ]
+          }
+        ]
+      }
+    ],
+    "sunday_home": [
+      {
+        "id": "family",
+        "kind": "AI product presentation",
+        "input": "public/images/previews/satechi-fidelity-20261018/hero-desktop.webp",
+        "original": "local-archive/exec-884704ea-86a3-4b4b-b5a2-4b66b4902751.png",
+        "outputs": [
+          {
+            "path": "public/images/sunday-home/family-1280.webp",
+            "sha256": "165eb31a3dcd5387e5bf83af4decbd00deefbc208554edc856e695b3ccc423e6",
+            "bytes": 285656,
+            "dimensions": [
+              1254,
+              1254
+            ]
+          },
+          {
+            "path": "public/images/sunday-home/family-480.webp",
+            "sha256": "16954feaae9f37b84efc55079d7958565d0c952704a0019679ecf90472659433",
+            "bytes": 61760,
+            "dimensions": [
+              480,
+              480
+            ]
+          },
+          {
+            "path": "public/images/sunday-home/family-800.webp",
+            "sha256": "9495b4ca305c0f8a82f785590e043e7350241676c810c1166f2903728c7879f2",
+            "bytes": 142450,
+            "dimensions": [
+              800,
+              800
+            ]
+          }
+        ]
+      },
+      {
+        "id": "connections",
+        "kind": "AI product presentation",
+        "input": "public/images/brochure/20261022/oem-formats-1200.webp",
+        "original": "local-archive/exec-a1f90fbf-c24d-4349-b30e-d8e3ee2591ca.png",
+        "outputs": [
+          {
+            "path": "public/images/sunday-home/connections-1280.webp",
+            "sha256": "5bd844081141f994f175c7b263547bc5bce299d8e8dfd93687d316195e916617",
+            "bytes": 47734,
+            "dimensions": [
+              1280,
+              853
+            ]
+          },
+          {
+            "path": "public/images/sunday-home/connections-480.webp",
+            "sha256": "d7e74a32f88ea227c3466520164ad03e19ab818286ed93eab339e15393954be2",
+            "bytes": 11336,
+            "dimensions": [
+              480,
+              320
+            ]
+          },
+          {
+            "path": "public/images/sunday-home/connections-800.webp",
+            "sha256": "f0e93a3cd9f724673673230b6dd050a98f5a8b172d95a59c982c2d0a271e3898",
+            "bytes": 23584,
+            "dimensions": [
+              800,
+              533
+            ]
+          }
+        ]
+      },
+      {
+        "id": "packaging",
+        "kind": "AI product presentation",
+        "input": "public/images/brochure/20261022/cbb65-packaging-1200.webp",
+        "original": "local-archive/exec-f2a166f6-198c-4d1f-8d68-ee7fea49686c.png",
+        "outputs": [
+          {
+            "path": "public/images/sunday-home/packaging-1280.webp",
+            "sha256": "2ffb36b9a6ea8d2ffa31ae3354a4436f314ff8f9d084e332c412de7a057838ac",
+            "bytes": 75774,
+            "dimensions": [
+              1280,
+              853
+            ]
+          },
+          {
+            "path": "public/images/sunday-home/packaging-480.webp",
+            "sha256": "8dd3a45fa224557eb43b603fad150468050418f10f2e7be6c5aeece6e872b582",
+            "bytes": 16044,
+            "dimensions": [
+              480,
+              320
+            ]
+          },
+          {
+            "path": "public/images/sunday-home/packaging-800.webp",
+            "sha256": "97966d8332b843f41739e0223243eeaad4350a7b7b7e8b91d9736c10451c4776",
+            "bytes": 36610,
+            "dimensions": [
+              800,
+              533
+            ]
+          }
+        ]
+      },
+      {
+        "id": "terminals",
+        "kind": "AI product presentation",
+        "input": "public/images/brochure/20261022/cbb65-packaging-1200.webp",
+        "original": "local-archive/exec-a95fae6c-f928-44a1-b469-524ba9c4cb87.png",
+        "outputs": [
+          {
+            "path": "public/images/sunday-home/terminals-1280.webp",
+            "sha256": "5129e907e4919990686bb4920cde5cb250f19f60154478e7e1787dc67bafcf41",
+            "bytes": 154288,
+            "dimensions": [
+              1254,
+              1254
+            ]
+          },
+          {
+            "path": "public/images/sunday-home/terminals-480.webp",
+            "sha256": "a3150b831dbdafb0645e47e5771dedaeef712e62789112b984b94218acd75f32",
+            "bytes": 27426,
+            "dimensions": [
+              480,
+              480
+            ]
+          },
+          {
+            "path": "public/images/sunday-home/terminals-800.webp",
+            "sha256": "740de7a783cacd649d9a5c4cb37c1db3a2d8592dc13f871221b3505bf6ab7734",
+            "bytes": 70842,
+            "dimensions": [
+              800,
+              800
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cbb60",
+        "kind": "AI product presentation",
+        "input": "public/images/previews/satechi-fidelity-20261018/category-cbb60.webp",
+        "original": "local-archive/exec-5c2ed8db-67cc-4fd7-9d73-24a161bc249e.png",
+        "outputs": [
+          {
+            "path": "public/images/sunday-home/cbb60-480.webp",
+            "sha256": "bc95b2a789daf3d36b73b3be063928673707708d08a0bffd44985b43c5e52a84",
+            "bytes": 11450,
+            "dimensions": [
+              480,
+              720
+            ]
+          },
+          {
+            "path": "public/images/sunday-home/cbb60-800.webp",
+            "sha256": "e6cc0524876c932283330a6cb919d18ede321f012ac3f5dc46cd3a514845147c",
+            "bytes": 24022,
+            "dimensions": [
+              800,
+              1200
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cbb61",
+        "kind": "AI product presentation",
+        "input": "public/images/previews/satechi-fidelity-20261018/category-cbb61.webp",
+        "original": "local-archive/exec-04e9958d-f5e9-44e0-8d20-b10e7e581412.png",
+        "outputs": [
+          {
+            "path": "public/images/sunday-home/cbb61-480.webp",
+            "sha256": "f7e18d1f278590dafb9f2d888b5c97ca2569830e3b013dbe52497d270954a40d",
+            "bytes": 26382,
+            "dimensions": [
+              480,
+              720
+            ]
+          },
+          {
+            "path": "public/images/sunday-home/cbb61-800.webp",
+            "sha256": "a9ca273ada800bce9dbd3f31873bc543e558c84e5193bba27a98ebd5bdf3e28e",
+            "bytes": 71948,
+            "dimensions": [
+              800,
+              1200
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cbb65",
+        "kind": "AI product presentation",
+        "input": "public/images/previews/satechi-fidelity-20261018/category-cbb65.webp",
+        "original": "local-archive/exec-7253d8fe-95dd-4e03-92fd-c772b5485299.png",
+        "outputs": [
+          {
+            "path": "public/images/sunday-home/cbb65-480.webp",
+            "sha256": "e17cbdff7351af42830bf5b0dd09380f1d582dee14bc0e21a5a701591d393073",
+            "bytes": 16950,
+            "dimensions": [
+              480,
+              720
+            ]
+          },
+          {
+            "path": "public/images/sunday-home/cbb65-800.webp",
+            "sha256": "643fec7d8ba682bc0450b76f54d88ca33a07b8a8cd66f3e5b9202fadbc623830",
+            "bytes": 41800,
+            "dimensions": [
+              800,
+              1200
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cd60",
+        "kind": "AI product presentation",
+        "input": "public/images/previews/satechi-fidelity-20261018/category-cd60.webp",
+        "original": "local-archive/exec-de09fab6-66cb-4796-b4e6-79e550c83b4f.png",
+        "outputs": [
+          {
+            "path": "public/images/sunday-home/cd60-480.webp",
+            "sha256": "64872ea8ddfb416ce6b716a1912cca063b35eb5513377136c7dfbdf6cd05ba37",
+            "bytes": 11084,
+            "dimensions": [
+              480,
+              720
+            ]
+          },
+          {
+            "path": "public/images/sunday-home/cd60-800.webp",
+            "sha256": "c330224e141484a733ad4d2152c380feb23c39d606f5cc92243ac22c179bc496",
+            "bytes": 26578,
+            "dimensions": [
+              800,
+              1200
+            ]
+          }
+        ]
+      }
+    ],
+    "source_checked": [
+      {
+        "id": "cbb60-leads",
+        "kind": "original-photograph",
+        "source": "local-archive/ZB-P05-001-cbb60-wire-samples.webp",
+        "output": {
+          "path": "public/images/source-checked-20261026/cbb60-wire-samples.webp",
+          "sha256": "deeb0a9774ac1268a8c5db4f8c74e8f7233ed07341486a4b596fe6c22934cdb3",
+          "bytes": 70070,
+          "dimensions": [
+            651,
+            382
+          ]
+        }
+      }
+    ],
+    "process_gallery": [
+      {
+        "id": "01-film-control",
+        "kind": "source frame",
+        "source": "原始素材/生产视频/6A1A7122.MOV",
+        "time_seconds": 3.96,
+        "output": {
+          "path": "public/images/process-gallery-20261026/01-film-control.webp",
+          "sha256": "991005786a7ae8a7b609fdd754a1375998fec91e37e57a656a7d83c0251f7a17",
+          "bytes": 64250,
+          "dimensions": [
+            1600,
+            900
+          ]
+        }
+      },
+      {
+        "id": "02-film-machine",
+        "kind": "ImageGen-refined illustration",
+        "source": "原始素材/生产视频/6A1A7125.MOV",
+        "time_seconds": 5.21,
+        "output": {
+          "path": "public/images/process-gallery-20261026/02-film-machine.webp",
+          "sha256": "3ddca9a38ec59d71eb1bbca0b4587ffb0527d4702bc5210b9e1d3426e94ca757",
+          "bytes": 67234,
+          "dimensions": [
+            1600,
+            900
+          ]
+        }
+      },
+      {
+        "id": "03-machine-output",
+        "kind": "ImageGen wide-scene illustration",
+        "source": "原始素材/电容新细节/微信视频2026-04-29_165401_888.mp4",
+        "time_seconds": 8.51,
+        "output": {
+          "path": "public/images/process-gallery-20261026/03-machine-output.webp",
+          "sha256": "3bcab41eb07ba81a3e0c0fe97334c428b026301abd0f56c7acec1015d060ac87",
+          "bytes": 258898,
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      },
+      {
+        "id": "04-workstation-operator",
+        "kind": "ImageGen-refined illustration",
+        "source": "原始素材/新电容5.17/微信视频2026-05-16_160440_581.mp4",
+        "time_seconds": 29.9,
+        "output": {
+          "path": "public/images/process-gallery-20261026/04-workstation-operator.webp",
+          "sha256": "8d6d7c573e3b28cdd7633a66b7776898047064b4acfdd17bcdf04cd52ed16ec5",
+          "bytes": 173146,
+          "dimensions": [
+            900,
+            1600
+          ]
+        }
+      },
+      {
+        "id": "05-line-wide",
+        "kind": "ImageGen-refined illustration",
+        "source": "原始素材/生产视频1/6A1A7133.MOV",
+        "time_seconds": 10.21,
+        "output": {
+          "path": "public/images/process-gallery-20261026/05-line-wide.webp",
+          "sha256": "d5d4646d691615ea7a5c5c3c67bbc1fd92f017e1005c70e73e26b99c32661cf4",
+          "bytes": 105458,
+          "dimensions": [
+            1600,
+            900
+          ]
+        }
+      },
+      {
+        "id": "06-press-worker",
+        "kind": "ImageGen-refined illustration",
+        "source": "原始素材/生产视频1/6A1A7136.MOV",
+        "time_seconds": 3.86,
+        "output": {
+          "path": "public/images/process-gallery-20261026/06-press-worker.webp",
+          "sha256": "c613f72b2f527d4e573ae10bae116ff0f3fdf04d1d74803de6cfa51ae6e75cbf",
+          "bytes": 84220,
+          "dimensions": [
+            1600,
+            900
+          ]
+        }
+      },
+      {
+        "id": "07-reel-equipment",
+        "kind": "ImageGen wide-scene illustration",
+        "source": "原始素材/新电容5.16/微信视频2026-05-15_144736_215.mp4",
+        "time_seconds": 5.28,
+        "output": {
+          "path": "public/images/process-gallery-20261026/07-reel-equipment.webp",
+          "sha256": "860bdfee0536d3fe818003ded88ed1a17c7df280390ebb80284427c104f83e32",
+          "bytes": 226798,
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      },
+      {
+        "id": "08-can-sorting",
+        "kind": "ImageGen-refined illustration",
+        "source": "原始素材/电容细节1/微信视频2026-04-29_162215_267.mp4",
+        "time_seconds": 9.32,
+        "output": {
+          "path": "public/images/process-gallery-20261026/08-can-sorting.webp",
+          "sha256": "88cc028a60eb4fd4c9cd80a0349cbc375e02c74795e622e5ffa9e82c84ba5403",
+          "bytes": 157254,
+          "dimensions": [
+            900,
+            1600
+          ]
+        }
+      },
+      {
+        "id": "09-assembly-machine",
+        "kind": "ImageGen wide-scene illustration",
+        "source": "原始素材/电容细节1/微信视频2026-04-29_162320_650.mp4",
+        "time_seconds": 6.09,
+        "output": {
+          "path": "public/images/process-gallery-20261026/09-assembly-machine.webp",
+          "sha256": "ef7e744790de331abec06a19449ff10df453b3c9418e7bf7771acffd71ef040c",
+          "bytes": 205514,
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      },
+      {
+        "id": "10-assembly-hand",
+        "kind": "ImageGen-refined illustration",
+        "source": "原始素材/电容细节1/微信视频2026-04-29_162347_044.mp4",
+        "time_seconds": 9.32,
+        "output": {
+          "path": "public/images/process-gallery-20261026/10-assembly-hand.webp",
+          "sha256": "e89ef1941350a28d8d87f6e634c1f2911bce5efc4e623bb1813f33967551128c",
+          "bytes": 187760,
+          "dimensions": [
+            900,
+            1600
+          ]
+        }
+      },
+      {
+        "id": "11-bench-detail",
+        "kind": "ImageGen-refined illustration",
+        "source": "原始素材/电容细节1/微信视频2026-04-29_163137_900.mp4",
+        "time_seconds": 4.61,
+        "output": {
+          "path": "public/images/process-gallery-20261026/11-bench-detail.webp",
+          "sha256": "c5242194084c5f191e5ab3b15e61f33bafc76063d60d93ed0db9d204e4313e83",
+          "bytes": 140714,
+          "dimensions": [
+            900,
+            1600
+          ]
+        }
+      },
+      {
+        "id": "12-can-arrangement",
+        "kind": "ImageGen-refined illustration",
+        "source": "原始素材/电容细节1/微信视频2026-04-29_163305_132.mp4",
+        "time_seconds": 3.95,
+        "output": {
+          "path": "public/images/process-gallery-20261026/12-can-arrangement.webp",
+          "sha256": "ebeec80bdb9058fcbde68199732f451ae9445427b0095866218f3989e6ebd75a",
+          "bytes": 124478,
+          "dimensions": [
+            900,
+            1600
+          ]
+        }
+      },
+      {
+        "id": "13-terminal-array",
+        "kind": "ImageGen wide-scene illustration",
+        "source": "原始素材/电容细节1/微信视频2026-04-29_163400_004.mp4",
+        "time_seconds": 8.09,
+        "output": {
+          "path": "public/images/process-gallery-20261026/13-terminal-array.webp",
+          "sha256": "5cdc60fe61adfda84a5239e254201b7f81e387e98262400cc6c315017fdbd866",
+          "bytes": 141298,
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      },
+      {
+        "id": "14-press-detail",
+        "kind": "ImageGen wide-scene illustration",
+        "source": "原始素材/电容细节1/微信视频2026-04-29_163426_395.mp4",
+        "time_seconds": 5.02,
+        "output": {
+          "path": "public/images/process-gallery-20261026/14-press-detail.webp",
+          "sha256": "50ce88aca660f53f1ad362b129aeff264e1d4fb42e265d6ca867fa1234315569",
+          "bytes": 203322,
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      },
+      {
+        "id": "15-cans-on-table",
+        "kind": "ImageGen-refined illustration",
+        "source": "原始素材/电容细节1/微信视频2026-04-29_163627_202.mp4",
+        "time_seconds": 10.61,
+        "output": {
+          "path": "public/images/process-gallery-20261026/15-cans-on-table.webp",
+          "sha256": "b4179fa1d4a2cc0c8ac040f47948ebdc8037cdd44d1ae210cb83f71699e5688f",
+          "bytes": 195550,
+          "dimensions": [
+            900,
+            1600
+          ]
+        }
+      },
+      {
+        "id": "16-gloved-can",
+        "kind": "ImageGen-refined illustration",
+        "source": "原始素材/电容细节1/微信视频2026-04-29_163859_697.mp4",
+        "time_seconds": 8.23,
+        "output": {
+          "path": "public/images/process-gallery-20261026/16-gloved-can.webp",
+          "sha256": "4ed82ade549b09f5377b43b06f711005531ecb0eb25f48df0514d672a8b3451a",
+          "bytes": 134204,
+          "dimensions": [
+            900,
+            1600
+          ]
+        }
+      },
+      {
+        "id": "17-empty-cans",
+        "kind": "ImageGen wide-scene illustration",
+        "source": "原始素材/电容新细节/微信视频2026-04-29_164359_137.mp4",
+        "time_seconds": 4.14,
+        "output": {
+          "path": "public/images/process-gallery-20261026/17-empty-cans.webp",
+          "sha256": "da0b04090e163dd93c5cd4b50f6ca523d076b02cc9e8b57cd485e6e596411f69",
+          "bytes": 202258,
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      },
+      {
+        "id": "18-can-grid",
+        "kind": "ImageGen-refined illustration",
+        "source": "原始素材/电容新细节/微信视频2026-04-29_164551_065.mp4",
+        "time_seconds": 2.78,
+        "output": {
+          "path": "public/images/process-gallery-20261026/18-can-grid.webp",
+          "sha256": "7e2f0629cd409a6c35fb950cd541688423f9accb568ebdbdccb40857c5d15ba6",
+          "bytes": 163804,
+          "dimensions": [
+            900,
+            1600
+          ]
+        }
+      },
+      {
+        "id": "19-equipment-station",
+        "kind": "ImageGen-refined illustration",
+        "source": "原始素材/电容新细节/微信视频2026-04-29_164747_531.mp4",
+        "time_seconds": 3.78,
+        "output": {
+          "path": "public/images/process-gallery-20261026/19-equipment-station.webp",
+          "sha256": "4d4dbdcd7a5193ed9ab340a7eb3b4290537a9fcf71e57afc23fc60828da53408",
+          "bytes": 183106,
+          "dimensions": [
+            900,
+            1600
+          ]
+        }
+      },
+      {
+        "id": "20-component-pile",
+        "kind": "ImageGen wide-scene illustration",
+        "source": "原始素材/电容新细节/微信视频2026-04-29_165341_354.mp4",
+        "time_seconds": 2.66,
+        "output": {
+          "path": "public/images/process-gallery-20261026/20-component-pile.webp",
+          "sha256": "0fe2a0338679d11cfaec159931d034e5abf71b29a06ec903af54b07143d7174c",
+          "bytes": 198812,
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      },
+      {
+        "id": "21-can-machine",
+        "kind": "ImageGen-refined illustration",
+        "source": "原始素材/电容新细节/微信视频2026-04-29_165518_176.mp4",
+        "time_seconds": 3.36,
+        "output": {
+          "path": "public/images/process-gallery-20261026/21-can-machine.webp",
+          "sha256": "3be4abecc819f51e621e04d85b877cdb7d9fab8429594c3dadbdfbc6d68978bd",
+          "bytes": 172030,
+          "dimensions": [
+            900,
+            1600
+          ]
+        }
+      },
+      {
+        "id": "22-blue-cartons",
+        "kind": "source frame",
+        "source": "原始素材/电容新细节/微信视频2026-04-29_164015_826.mp4",
+        "time_seconds": 3.98,
+        "output": {
+          "path": "public/images/process-gallery-20261026/22-blue-cartons.webp",
+          "sha256": "6cbabfe0c030f2b7f09f96f73050a503056e9ffdbef7cde57542915296adfb70",
+          "bytes": 208566,
+          "dimensions": [
+            900,
+            1600
+          ]
+        }
+      },
+      {
+        "id": "23-tray-racks",
+        "kind": "ImageGen wide-scene illustration",
+        "source": "原始素材/电容新细节/微信视频2026-04-29_164607_708.mp4",
+        "time_seconds": 4.92,
+        "output": {
+          "path": "public/images/process-gallery-20261026/23-tray-racks.webp",
+          "sha256": "e0099cb57c7f13924b65d3fa9998d06f066eac374c253a7d114b8874732677ef",
+          "bytes": 214928,
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      },
+      {
+        "id": "24-test-display",
+        "kind": "source frame",
+        "source": "原始素材/电容新细节/微信视频2026-04-29_165424_168.mp4",
+        "time_seconds": 3.33,
+        "output": {
+          "path": "public/images/process-gallery-20261026/24-test-display.webp",
+          "sha256": "986d735dde12341feae1dd190803a531926b6eb2a1e88ca6be5ca2b3fdf1bae9",
+          "bytes": 63516,
+          "dimensions": [
+            900,
+            1600
+          ]
+        }
+      },
+      {
+        "id": "25-packing-worker",
+        "kind": "ImageGen-refined illustration",
+        "source": "原始素材/电容新细节/微信视频2026-04-29_165953_257.mp4",
+        "time_seconds": 3.96,
+        "output": {
+          "path": "public/images/process-gallery-20261026/25-packing-worker.webp",
+          "sha256": "d604e0d564ff320104a117bf4a188856c19637df79318fcae1e2d1d8079898a7",
+          "bytes": 215322,
+          "dimensions": [
+            900,
+            1600
+          ]
+        }
+      },
+      {
+        "id": "26-boxing-table",
+        "kind": "source frame",
+        "source": "原始素材/新电容5.16/微信视频2026-05-16_153251_015.mp4",
+        "time_seconds": 10.44,
+        "output": {
+          "path": "public/images/process-gallery-20261026/26-boxing-table.webp",
+          "sha256": "7a24b2fa0249c00311d95be5b4e0a74664d9067c82d7e16a8584f95147e6f2c8",
+          "bytes": 116688,
+          "dimensions": [
+            900,
+            1600
+          ]
+        }
+      },
+      {
+        "id": "27-bench-rows",
+        "kind": "ImageGen-refined illustration",
+        "source": "原始素材/新电容5.17/微信视频2026-05-16_154603_137.mp4",
+        "time_seconds": 10.31,
+        "output": {
+          "path": "public/images/process-gallery-20261026/27-bench-rows.webp",
+          "sha256": "fb077ecfd5616e3f965b213bd72e7c19b26fab0d6583df39369166f9373ac3a7",
+          "bytes": 145928,
+          "dimensions": [
+            900,
+            1600
+          ]
+        }
+      },
+      {
+        "id": "28-outdoor-pallets",
+        "kind": "ImageGen wide-scene illustration",
+        "source": "原始素材/发货素材5.6/微信视频2026-05-06_171729_425.mp4",
+        "time_seconds": 14.87,
+        "output": {
+          "path": "public/images/process-gallery-20261026/28-outdoor-pallets.webp",
+          "sha256": "8123dc70c0bebaf0a543a653c2fa4452875f56e00dd55b65c4862dc34daad326",
+          "bytes": 231154,
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      },
+      {
+        "id": "29-lift-to-truck",
+        "kind": "source frame",
+        "source": "原始素材/发货素材5.6/微信视频2026-05-06_171906_539.mp4",
+        "time_seconds": 8.61,
+        "output": {
+          "path": "public/images/process-gallery-20261026/29-lift-to-truck.webp",
+          "sha256": "bf8183f2393bdcb814a406eb81cacb99dfc4ea307a82e17ba605e8bbb27f1408",
+          "bytes": 193172,
+          "dimensions": [
+            900,
+            1600
+          ]
+        }
+      },
+      {
+        "id": "30-truck-handover",
+        "kind": "source frame",
+        "source": "原始素材/发货素材5.6/微信视频2026-05-06_172644_040.mp4",
+        "time_seconds": 5.64,
+        "output": {
+          "path": "public/images/process-gallery-20261026/30-truck-handover.webp",
+          "sha256": "5ad948a3cd030e04ea9a270dc2ea9b87a2626fa2134ad44f4d3543aedd69100d",
+          "bytes": 208426,
+          "dimensions": [
+            900,
+            1600
+          ]
+        }
+      }
+    ],
+    "workshop_stories": [
+      {
+        "kind": "source-still",
+        "source": "原始素材/生产视频/6A1A7119.MOV",
+        "time_seconds": 3.54,
+        "output": {
+          "path": "public/images/workshop-stories-20261026/film-floor.webp",
+          "sha256": "fd9040b62c772f574f979dfa7b1275c06bf4290f8743f94c956e4f763bb6b3e3",
+          "bytes": 82470,
+          "dimensions": [
+            1800,
+            1013
+          ]
+        }
+      },
+      {
+        "kind": "source-still",
+        "source": "原始素材/生产视频/6A1A7120.MOV",
+        "time_seconds": 7.09,
+        "output": {
+          "path": "public/images/workshop-stories-20261026/film-web.webp",
+          "sha256": "5ee7fffe2f3abcc02a2ed299d14a176ca88b6768f1ac227b94c4c9b94531275a",
+          "bytes": 79020,
+          "dimensions": [
+            1800,
+            1013
+          ]
+        }
+      },
+      {
+        "kind": "source-still",
+        "source": "原始素材/生产视频/6A1A7121.MOV",
+        "time_seconds": 3.38,
+        "output": {
+          "path": "public/images/workshop-stories-20261026/film-roll.webp",
+          "sha256": "0e3e0afce6fafeb44652030e60e23e4e5974af1e81c491536eb22d39142f65b4",
+          "bytes": 55072,
+          "dimensions": [
+            1800,
+            1013
+          ]
+        }
+      },
+      {
+        "kind": "source-still",
+        "source": "原始素材/生产视频/6A1A7123.MOV",
+        "time_seconds": 3.87,
+        "output": {
+          "path": "public/images/workshop-stories-20261026/production-line.webp",
+          "sha256": "524636d78fba24534c84acc009b8c2c1f59ef22b533efde14bf8ad92a99fffc6",
+          "bytes": 79794,
+          "dimensions": [
+            1800,
+            1013
+          ]
+        }
+      },
+      {
+        "kind": "source-still",
+        "source": "原始素材/生产视频/6A1A7128.MOV",
+        "time_seconds": 3.98,
+        "output": {
+          "path": "public/images/workshop-stories-20261026/testing.webp",
+          "sha256": "87fc18cd28382a6c05186fe701a8ac73ad9fb84721a17dd1c317626ec9589a88",
+          "bytes": 49330,
+          "dimensions": [
+            1800,
+            1013
+          ]
+        }
+      },
+      {
+        "kind": "source-still",
+        "source": "原始素材/生产视频1/6A1A7134.MOV",
+        "time_seconds": 3.96,
+        "output": {
+          "path": "public/images/workshop-stories-20261026/can-process.webp",
+          "sha256": "d4de41f1031af027f865a236afd9838c87d538bb2854c48ef74aa4c947db485e",
+          "bytes": 73666,
+          "dimensions": [
+            1800,
+            1013
+          ]
+        }
+      },
+      {
+        "kind": "source-still",
+        "source": "原始素材/生产视频1/6A1A7138.MOV",
+        "time_seconds": 4.81,
+        "output": {
+          "path": "public/images/workshop-stories-20261026/can-group.webp",
+          "sha256": "3614de27c67b99eb8e6ea9729fe438f4ab0239d6f9abb8dd3e664aec1d92227a",
+          "bytes": 137096,
+          "dimensions": [
+            1800,
+            1013
+          ]
+        }
+      },
+      {
+        "kind": "source-still",
+        "source": "原始素材/电容细节1/微信视频2026-04-29_163226_508.mp4",
+        "time_seconds": 3.51,
+        "output": {
+          "path": "public/images/workshop-stories-20261026/can-handling.webp",
+          "sha256": "18d3b5f20a3a3720d1ff17ebdef3d30a3b157d90801c2d2a088b952d97a92c5f",
+          "bytes": 126564,
+          "dimensions": [
+            1012,
+            1800
+          ]
+        }
+      },
+      {
+        "kind": "source-still",
+        "source": "原始素材/电容新细节/微信视频2026-04-29_164723_233.mp4",
+        "time_seconds": 3.75,
+        "output": {
+          "path": "public/images/workshop-stories-20261026/terminal-assembly.webp",
+          "sha256": "ceb46490e8b747839bace9ea17576b4f4271fa3b3ed87e3c0ff6ec6faf6b6b1a",
+          "bytes": 141994,
+          "dimensions": [
+            1012,
+            1800
+          ]
+        }
+      },
+      {
+        "kind": "source-still",
+        "source": "原始素材/电容新细节/微信视频2026-04-29_164902_056.mp4",
+        "time_seconds": 5.1,
+        "output": {
+          "path": "public/images/workshop-stories-20261026/terminal-detail.webp",
+          "sha256": "ec6662d72eed5914b0ed29415357056f79cf33b65844ed261a52c9ceb241c9a2",
+          "bytes": 148072,
+          "dimensions": [
+            1012,
+            1800
+          ]
+        }
+      },
+      {
+        "kind": "source-still",
+        "source": "原始素材/包装新/1.mp4",
+        "time_seconds": 9.42,
+        "output": {
+          "path": "public/images/workshop-stories-20261026/box-packing.webp",
+          "sha256": "8a01b03cecd21d674550be37535260904bc0fd21def5bb1d125074cc47b01b1b",
+          "bytes": 141810,
+          "dimensions": [
+            1012,
+            1800
+          ]
+        }
+      },
+      {
+        "kind": "source-still",
+        "source": "原始素材/包装新/微信视频2026-04-27_142218_825.mp4",
+        "time_seconds": 9.3,
+        "output": {
+          "path": "public/images/workshop-stories-20261026/packing-close.webp",
+          "sha256": "bc6a01c82ebdf7bc154c8cdb715c837f2c58a8fedf178e5ab0b550781c2e85a2",
+          "bytes": 158096,
+          "dimensions": [
+            1012,
+            1800
+          ]
+        }
+      },
+      {
+        "kind": "source-still",
+        "source": "原始素材/发货素材5.6/微信视频2026-05-06_161916_507.mp4",
+        "time_seconds": 12.18,
+        "output": {
+          "path": "public/images/workshop-stories-20261026/pallets-staged.webp",
+          "sha256": "d6f78d62ccde10c1c3f0e28f5b0455fb99cde1594394086feaf79f37f945ac68",
+          "bytes": 135630,
+          "dimensions": [
+            1012,
+            1800
+          ]
+        }
+      },
+      {
+        "kind": "source-still",
+        "source": "原始素材/发货素材5.6/微信视频2026-05-06_171819_243.mp4",
+        "time_seconds": 14.08,
+        "output": {
+          "path": "public/images/workshop-stories-20261026/truck-loading.webp",
+          "sha256": "d499d3e39e181fa9ea34be4eb596b31aa9cc6504aae1092b5fbce04e9041e94a",
+          "bytes": 190000,
+          "dimensions": [
+            1012,
+            1800
+          ]
+        }
+      },
+      {
+        "kind": "source-still",
+        "source": "原始素材/发货素材5.6/微信视频2026-05-06_172248_263.mp4",
+        "time_seconds": 4.88,
+        "output": {
+          "path": "public/images/workshop-stories-20261026/forklift.webp",
+          "sha256": "538a6c6c839daa20714c33add5cfedec8ac4f961eacedbc2c843ad20f6c24b16",
+          "bytes": 188064,
+          "dimensions": [
+            1012,
+            1800
+          ]
+        }
+      },
+      {
+        "kind": "source-still",
+        "source": "原始素材/发货素材5.6/微信视频2026-05-06_172616_296.mp4",
+        "time_seconds": 5.0,
+        "output": {
+          "path": "public/images/workshop-stories-20261026/truck-boxes.webp",
+          "sha256": "ee82f1c836ce72c990e52e97f730c45361bbc98180abad943b6277e717386b34",
+          "bytes": 249578,
+          "dimensions": [
+            1012,
+            1800
+          ]
+        }
+      },
+      {
+        "kind": "source-still",
+        "source": "原始素材/发货素材5.6/微信视频2026-05-06_172710_833.mp4",
+        "time_seconds": 8.1,
+        "output": {
+          "path": "public/images/workshop-stories-20261026/truck-departure.webp",
+          "sha256": "aecaf8bc2e6b5f9da9818cca51ab9ab8053bfaeabcdfcdf2a90b4246d0052b7a",
+          "bytes": 137998,
+          "dimensions": [
+            1012,
+            1800
+          ]
+        }
+      },
+      {
+        "kind": "source-still",
+        "source": "原始素材/印度客户，徐总接待照/微信图片_20260716100856_11_2.jpg",
+        "time_seconds": null,
+        "output": {
+          "path": "public/images/workshop-stories-20261026/sample-discussion.webp",
+          "sha256": "c206cf50633bedd5a81ac4cc402282687a05f54943f96840683ab788310059e1",
+          "bytes": 204866,
+          "dimensions": [
+            1350,
+            1800
+          ]
+        }
+      },
+      {
+        "kind": "source-still",
+        "source": "原始素材/印度客户，徐总接待照/微信图片_20260716100919_26_2.jpg",
+        "time_seconds": null,
+        "output": {
+          "path": "public/images/workshop-stories-20261026/sample-review.webp",
+          "sha256": "78f2143c1e86ae0e4c9896d23bd7196d78541d9961c3fbbb412018f4879cfc94",
+          "bytes": 164042,
+          "dimensions": [
+            1350,
+            1800
+          ]
+        }
+      },
+      {
+        "kind": "source-still",
+        "source": "原始素材/印度客户，徐总接待照/微信图片_20260716100946_45_2.jpg",
+        "time_seconds": null,
+        "output": {
+          "path": "public/images/workshop-stories-20261026/factory-walk.webp",
+          "sha256": "29189c907c79fac87049ce6864c8c020eb38e77e97de0134e1435db982b41e8a",
+          "bytes": 274992,
+          "dimensions": [
+            1350,
+            1800
+          ]
+        }
+      },
+      {
+        "kind": "source-still",
+        "source": "原始素材/印度客户，徐总接待照/微信图片_20260716101004_54_2.jpg",
+        "time_seconds": null,
+        "output": {
+          "path": "public/images/workshop-stories-20261026/factory-visit.webp",
+          "sha256": "bf26401735b3cddabe969ffad9fad6d1f60e826ba7bd5309373383c1ac620038",
+          "bytes": 188100,
+          "dimensions": [
+            1350,
+            1800
+          ]
+        }
+      },
+      {
+        "kind": "ImageGen editorial reconstruction",
+        "source": "原始素材/生产视频/6A1A7119.MOV",
+        "time_seconds": 3.54,
+        "output": {
+          "path": "public/images/workshop-stories-20261026/film-floor-editorial.webp",
+          "sha256": "dfe9689f7805e6acd1429bc8ca0f73cf19626b5a9ca34e99cfee17535c745fe4",
+          "bytes": 142902,
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      },
+      {
+        "kind": "ImageGen editorial reconstruction",
+        "source": "原始素材/生产视频1/6A1A7138.MOV",
+        "time_seconds": 4.81,
+        "output": {
+          "path": "public/images/workshop-stories-20261026/can-group-editorial.webp",
+          "sha256": "1249cf9764336dd94ef4575a2f32b1be54b9d1d877894c65ab018c428ab5ccbc",
+          "bytes": 255596,
+          "dimensions": [
+            1448,
+            1086
+          ]
+        }
+      },
+      {
+        "kind": "ImageGen editorial reconstruction",
+        "source": "原始素材/发货素材5.6/微信视频2026-05-06_171819_243.mp4",
+        "time_seconds": 14.08,
+        "output": {
+          "path": "public/images/workshop-stories-20261026/truck-loading-editorial.webp",
+          "sha256": "da35f7dad1a87fe88a154654399217f1211eb8ac3c587cbb83c0796909068ec0",
+          "bytes": 223204,
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+---
+import { applications, applicationHref } from '../../data/site';
+import { industrialApplications } from '../../data/industrialApplications';
+const items = applications.map(a => ({ ...industrialApplications[a.slug], label: a.shortName, href: applicationHref(a) }));
+---
+<section class="su-applications su-shell" aria-labelledby="applications-title">
+  <header class="su-centered-heading"><h2 id="applications-title">Motor applications</h2><p>Capacitor formats for pumps, fans, appliances and HVAC equipment.</p></header>
+  <div class="su-photo-wall" id="application-photo-wall">{items.map(item => <a class="su-wall-tile" href={item.href}><img src={item.src} srcset={item.srcset} sizes="(max-width: 599px) calc(100vw - 48px), (max-width: 1420px) calc((100vw - 80px) / 2), 670px" width="1536" height="1024" loading="lazy" decoding="async" alt={item.alt}/><span>{item.label}</span></a>)}</div>
+</section>

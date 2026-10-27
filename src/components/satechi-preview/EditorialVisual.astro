@@ -1,9 +1,10 @@
 ---
+import { sundayIndustrial } from '../../data/sundayIndustrial';
 import { siteVisual } from '../../data/satechiSite';
 import SiteImage from './SiteImage.astro';
 interface Props { name: string; alt: string; eager?: boolean; class?: string; }
 const {name,alt,eager=false,class:className=''} = Astro.props;
 ---
 <figure class:list={['ss-editorial-visual',className]}>
-  <SiteImage src={siteVisual(name)} alt={alt} eager={eager} />
+  <SiteImage src={siteVisual(name)} alt={name==='contact-desk'?sundayIndustrial.technical.alt:alt} eager={eager} />
 </figure>

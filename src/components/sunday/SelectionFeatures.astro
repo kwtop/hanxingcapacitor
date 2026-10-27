@@ -1,0 +1,15 @@
+---
+import Action from './Action.astro';
+import ProductImage from './ProductImage.astro';
+import SiteImage from '../satechi-preview/SiteImage.astro';
+import { polishedEditorial } from '../../data/imagePolish';
+---
+<section class="su-shell su-features" id="fit" aria-labelledby="fit-title">
+  <header class="su-split-heading"><div><h2 id="fit-title">Choose your configuration</h2></div><div><p>Compare the electrical rating, case, connections and installation space for your motor.</p><Action href="/products/" quiet>Explore the series</Action></div></header>
+  <div class="su-bento">
+    <a class="su-feature su-feature--connections" href="/oem/"><div class="su-feature-copy"><h3>Connection formats</h3><p>Lead wires and blade terminals for different motor connections.</p></div><ProductImage name="connections" alt="Illustrative studio view of CBB60 lead-wire and CBB61 blade-terminal formats." /></a>
+    <a class="su-feature su-feature--terminals" href="/resources/dimensions-terminals-mounting/"><ProductImage name="terminals" alt="Illustrative close view of the blade terminals and insulating bases on a CBB65 sample." /><div class="su-feature-copy"><h3>Terminal detail</h3><p>Compare the terminal layout, mounting and clearance.</p></div></a>
+    <a class="su-feature su-feature--packing" href="/factory/packing-and-dispatch/"><div class="su-feature-copy"><h3>Product packing</h3><p>Inner protection, carton quantities and shipping marks.</p></div><ProductImage name="packaging" alt="Illustrative Hanxing CBB65 samples and a blue branded retail box based on the brochure." /></a>
+    <a class="su-feature su-feature--label" href="/resources/read-motor-capacitor-label/" id="label"><div class="su-feature-copy"><h3>Read the label</h3><p>Find the capacitance and voltage on the original label.</p></div><SiteImage src={polishedEditorial.technical.src} alt={polishedEditorial.technical.alt} sizes="(max-width: 599px) calc(100vw - 48px), 40vw" /></a>
+  </div>
+</section>

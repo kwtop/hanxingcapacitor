@@ -1,11 +1,13 @@
 ---
 import { isSatechiPreview } from '../lib/visualPreview';
-import OemPhoto from '../components/satechi-preview/OemPhoto.astro';
+import FactoryMedia from '../components/satechi-preview/FactoryMedia.astro';
 import BrochurePhoto from '../components/satechi-preview/BrochurePhoto.astro';
 import { oemMedia } from '../data/oemMedia';
 import VideoFigure from '../components/VideoFigure.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import InquiryCallout from '../components/InquiryCallout.astro';
+import WorkshopPhotoStory from '../components/sunday/WorkshopPhotoStory.astro';
+import { workshopStorySets } from '../data/workshopPhotos';
 const documentRequest = '/contact/?request=documents#inquiry-form';
 const records = [
   { name: 'Product samples', request: 'Sample reference or configuration, model number and sample for approval.' },
@@ -21,13 +23,12 @@ const records = [
       <p class="breadcrumbs"><a href="/">Home</a> / <a href="/oem-quality/">OEM &amp; Quality</a> / Manufacturing</p>
       <div class:list={{'ss-factory-intro':isSatechiPreview}}><div>
       <h1 id="factory-title">Manufacturing and quality</h1>
-      <p class="procurement-lead">Capacitor production stages and the quality records for your order.</p>
-      <nav class="procurement-actions" aria-label="Manufacturing information"><a class="button" href="#model-records">Documents for your model</a><a class="card-link" href={documentRequest}>Request model documents</a><a class="card-link" href="/about/#supplier-records">Company details</a></nav>
-      </div>{isSatechiPreview && <OemPhoto name="workshop-station" eager />}</div>
+      <p class="procurement-lead">Capacitor production footage and a checklist for your model documents.</p>
+      <nav class="procurement-actions" aria-label="Manufacturing information"><a class="button" href={documentRequest}>Request model documents</a><a class="card-link" href="/about/#supplier-records">Company details</a></nav>
+      </div>{isSatechiPreview && <FactoryMedia name="workshop" eager />}</div>
     </div></section>
     <section class="procurement-section" id="factory-process-title" aria-labelledby="factory-footage-title"><div class="container">
       <h2 id="factory-footage-title">Process footage</h2>
-      <nav class="procurement-process-index" aria-label="Process stages"><a href="#material-process">Material and process</a><a href="#electrical-testing">Electrical and product testing</a><a href="#packing-warehouse">Packing and warehouse handling</a></nav>
       <article class="procurement-process-stage" id="material-process">
         <div class:list={{'zi-material-intro':isSatechiPreview}}><div><h3>Material and process</h3><p>Film-processing equipment is shown below. CBB60, CBB61 and CBB65 use film construction; CD60 uses aluminium electrolytic construction.</p></div>{isSatechiPreview && <BrochurePhoto name="capacitor-cores" zoom label="Capacitor winding forms" sizes="(max-width: 800px) calc(100vw - 32px), 49vw" />}</div>
         <div class="procurement-video-pair">
@@ -44,6 +45,7 @@ const records = [
         <div><a class="card-link" href="/factory/packing-and-dispatch/#packing-requirements">Review packing requirements and footage</a></div>
       </article>
     </div></section>
+    <WorkshopPhotoStory id="workshop-photo-sequence" eyebrow="Production stills" title="A closer look around the workshop" intro="Frames extracted from the supplied videos show film equipment, metal can handling and the test area. The video clips above provide the motion and context." photos={workshopStorySets.factory} moreHref="/factory/process-gallery/" moreLabel="Explore the 30-photo process gallery" />
     <section class="procurement-section" id="model-records" aria-labelledby="factory-records-title"><div class="container">
       <h2 id="factory-records-title">Product document checklist</h2>
       <table class="procurement-table procurement-model-records">

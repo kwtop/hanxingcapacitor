@@ -1,4 +1,5 @@
 ---
+import { sundayIndustrial } from '../../data/sundayIndustrial';
 import type { Product } from '../../data/site';
 import { siteVisual } from '../../data/satechiSite';
 import {coherenceMedia} from '../../data/coherenceMedia';
@@ -6,7 +7,7 @@ import SiteImage from './SiteImage.astro';
 import BrochurePhoto from './BrochurePhoto.astro';
 interface Props { product: Product; }
 const { product } = Astro.props;
-const visual = product.code === 'CBB60' ? coherenceMedia.measurement
+const visual = product.code === 'CBB60' ? sundayIndustrial.technical
   : product.code === 'CBB65' ? coherenceMedia.terminals
   : {src:siteVisual('product-'+product.code.toLowerCase()),alt:`Illustrative ${product.code} product study based on its supplied sample.`};
 const heading = { CBB60:'A cylindrical format for motor run duty', CBB61:'A compact format for fan motors', CBB65:'Single and dual-run configurations', CD60:'For a switched starting circuit' }[product.code];

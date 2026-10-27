@@ -1,8 +1,11 @@
 ---
+import InnerHero from '../components/sunday/InnerHero.astro';
+import {sundayIndustrial} from '../data/sundayIndustrial';
 import { isSatechiPreview } from '../lib/visualPreview';
-import BrochurePhoto from '../components/satechi-preview/BrochurePhoto.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import InquiryCallout from '../components/InquiryCallout.astro';
+import WorkshopPhotoStory from '../components/sunday/WorkshopPhotoStory.astro';
+import { workshopStorySets } from '../data/workshopPhotos';
 import { STANDARD_MOQ_DESCRIPTION } from '../data/site';
 const configuration = [
   { name: 'Electrical', requirement: 'Run or start duty, capacitance (µF), rated voltage (VAC), tolerance and frequency.', approval: 'The agreed model specification and datasheet or drawing revision.' },
@@ -18,15 +21,7 @@ const sampleTerms = [
 ---
 <BaseLayout title="OEM & Private Label Motor Capacitors" description="Prepare OEM motor capacitor requirements for electrical ratings, cases, connections, labels and packing, with sample approval and quotation terms.">
   <article class:list={['procurement-page procurement-oem', {'oem-editorial-page': isSatechiPreview}]}>
-    <section class="procurement-hero"><div class="container procurement-oem-hero">
-      <div>
-        <p class="breadcrumbs"><a href="/">Home</a> / <a href="/oem-quality/">OEM &amp; Quality</a> / OEM</p>
-        <h1>OEM motor capacitors</h1>
-        {isSatechiPreview && <p class="ss-media-lead">Agree the rating, connections, label and packing before approving the sample.</p>}
-        <a class="button" href="/contact/?request=oem#inquiry-form">Prepare an OEM inquiry</a>
-      </div>
-      {isSatechiPreview ? <BrochurePhoto name="oem-formats" class="zi-oem-hero-photo" eager sizes="(max-width: 800px) calc(100vw - 32px), 52vw" /> : <figure class="procurement-oem-photo"><img src="/images/real/cbb65-4.jpg" alt="Hanxing-marked CBB65 sample beside its printed retail carton." fetchpriority="high" width="2000" height="2000" /><figcaption>Artwork and packing require approval for your order.</figcaption></figure>}
-    </div></section>
+    <InnerHero title="OEM motor capacitors" description="Agree the rating, connections, label and packing before approving the sample." image={sundayIndustrial.connections.src} alt={sundayIndustrial.connections.alt} trail="OEM & quality / OEM"><a class="button" href="/contact/?request=oem#inquiry-form">Prepare an OEM inquiry</a></InnerHero>
     <section class="procurement-section" id="configuration-approval"><div class="container">
       <h2>Specify the capacitor you need</h2>
       <div class:list={{'zi-configuration-table':isSatechiPreview}}>
@@ -48,6 +43,7 @@ const sampleTerms = [
       </ol>
       </div>
     </div></section>
+    <WorkshopPhotoStory id="oem-workbench-photos" eyebrow="Samples and workbench" title="Details to review with a sample" intro="The supplied material shows metal can forms, component handling and individual packing. Confirm dimensions, terminals and labels against the approved drawing and sample." photos={workshopStorySets.oem} moreHref="/factory/process-gallery/#can-assembly" moreLabel="See more component and assembly views" />
     <section class="procurement-section"><div class="container">
       <h2>Samples and order terms</h2>
       <dl class="procurement-terms">{sampleTerms.map(([name, description]) => <div><dt>{name}</dt><dd>{description}</dd></div>)}</dl>

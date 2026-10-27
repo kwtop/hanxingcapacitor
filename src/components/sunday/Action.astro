@@ -1,0 +1,5 @@
+---
+interface Props { href: string; quiet?: boolean; }
+const { href, quiet = false } = Astro.props;
+---
+<a class:list={['su-action', { 'su-action--quiet': quiet }]} href={href}><slot /></a>

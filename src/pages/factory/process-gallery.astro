@@ -1,0 +1,71 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import InnerHero from '../../components/sunday/InnerHero.astro';
+import WorkshopPhotoStory from '../../components/sunday/WorkshopPhotoStory.astro';
+import { processGallery } from '../../data/processGallery';
+const imageBase = '/images/process-gallery-20261026/';
+---
+<BaseLayout title="Manufacturing Process Gallery" description="Thirty source-video stills showing Hanxing workshop equipment, metal can handling, packing and dispatch scenes.">
+  <article class="pg-page">
+    <InnerHero
+      titleId="pg-title"
+      title="Inside the workshop"
+      description="Thirty different source videos, thirty stills across the visible work."
+      image={`${imageBase}02-film-machine.webp`}
+      alt="Illustrative ImageGen refinement of film-processing equipment in the supplied footage."
+      trail="Manufacturing / Process gallery"
+    >
+      <nav class="pg-hero-actions" aria-label="Gallery links">
+        <a href="/factory/">Manufacturing &amp; quality</a>
+        <a href="/factory/packing-and-dispatch/">Packing &amp; dispatch</a>
+      </nav>
+    </InnerHero>
+    <section class="pg-intro" aria-labelledby="pg-intro-title">
+      <div class="pg-intro-inner">
+        <div>
+          <p class="pg-kicker">Source-based gallery</p>
+          <h2 id="pg-intro-title">A closer view, from equipment to loading</h2>
+          <p>The gallery groups visible scenes by subject. It is not a verified step-by-step process map for any one model. Each image comes from a different supplied video.</p>
+          <p>Twenty-four images are ImageGen-refined illustrations. Nine were reframed as wider scene views; the original video stills remain available for comparison. Six images use their original frames because readable screens or printed marks changed during refinement. For exact readings, markings and order details, use the original footage and model records.</p>
+        </div>
+        <nav class="pg-index" aria-label="Gallery chapters">
+          {processGallery.map((chapter, index) => <a href={`#${chapter.id}`}><span>{String(index + 1).padStart(2, '0')}</span>{chapter.title}</a>)}
+        </nav>
+      </div>
+    </section>
+    {processGallery.map(chapter => <WorkshopPhotoStory
+      id={chapter.id}
+      eyebrow={chapter.eyebrow}
+      title={chapter.title}
+      intro={chapter.intro}
+      photos={chapter.photos}
+      imageBase={imageBase}
+    />)}
+    <section class="pg-end"><p>Need the dimensions, tests or packing details for a specific model? Check its drawing and inspection records.</p><a href="/contact/?request=documents#inquiry-form">Request model documents</a></section>
+  </article>
+</BaseLayout>
+<style>
+  .pg-page { color: #14202a; background: #f4f6f7; }
+  .pg-hero-actions { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 28px; }
+  .pg-hero-actions a { color: inherit; font-size: 14px; font-weight: 650; text-underline-offset: 5px; }
+  .pg-intro { padding: 68px 24px 55px; background: #fff; }
+  .pg-intro-inner { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr); gap: 70px; align-items: start; max-width: 1240px; margin: 0 auto; }
+  .pg-kicker { color: #b84b08; text-transform: uppercase; letter-spacing: .13em; font-size: 12px; font-weight: 750; margin: 0 0 12px; }
+  .pg-intro h2 { font: 700 clamp(29px, 3.4vw, 43px)/1.12 'Sunday Jakarta', sans-serif; letter-spacing: -.04em; max-width: 660px; margin: 0 0 21px; }
+  .pg-intro p:not(.pg-kicker) { max-width: 720px; color: #52606b; font: 400 16px/1.65 'Sunday Geist', sans-serif; margin: 0 0 14px; }
+  .pg-index { border-top: 1px solid #d7dde0; }
+  .pg-index a { display: flex; gap: 19px; align-items: baseline; padding: 17px 4px; border-bottom: 1px solid #d7dde0; color: #14202a; font: 650 16px/1.35 'Sunday Geist', sans-serif; text-decoration: none; }
+  .pg-index a:hover, .pg-index a:focus-visible { color: #b84b08; }
+  .pg-index span { color: #b84b08; font-size: 11px; letter-spacing: .1em; }
+  :global(.pg-page > .su-photo-story:nth-of-type(odd)) { background: #fff; }
+  .pg-end { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; padding: 52px max(24px, calc((100vw - 1240px)/2)); background: #14202a; color: #fff; }
+  .pg-end p { max-width: 680px; color: #fff !important; font: 500 17px/1.5 'Sunday Geist', sans-serif; margin: 0; }
+  :global(body.sunday-site.sunday-inner #main) .pg-end p { color: #fff !important; }
+  .pg-end a { display: inline-flex; padding: 13px 21px; color: #fff; border: 1px solid rgba(255,255,255,.65); border-radius: 100px; text-decoration: none; font-weight: 650; }
+  .pg-end a:hover, .pg-end a:focus-visible { background: #fff; color: #14202a; }
+  @media (max-width: 800px) {
+    .pg-intro { padding: 56px 20px 42px; }
+    .pg-intro-inner { grid-template-columns: 1fr; gap: 26px; }
+    .pg-end { padding: 43px 20px; }
+  }
+</style>

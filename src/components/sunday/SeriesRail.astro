@@ -1,0 +1,9 @@
+---
+import { products, productHref } from '../../data/site';
+import { polishedProducts } from '../../data/imagePolish';
+---
+<section class="su-series" id="series" aria-label="Motor capacitor series">
+  <div class="su-series-rail">
+    {products.map((p,i)=><article class={`su-series-card su-series-card--${i}`}><a href={productHref(p)}><img src={polishedProducts[p.code].src} srcset={polishedProducts[p.code].srcset} sizes="(max-width: 599px) calc((100vw - 64px) / 2), (max-width: 900px) calc((100vw - 80px) / 2), (max-width: 1420px) calc((100vw - 144px) / 4), 320px" width="1024" height="1536" loading="lazy" decoding="async" alt={polishedProducts[p.code].alt} /><div class="su-series-label"><h2>{p.code}</h2><p>{p.shortName}</p><div class="su-series-values">{p.code==='CBB65' ? <><span>Single: 2–100 µF · 110–450 VAC</span><span>Dual: 1+15 to 15+80 µF · 370–450 VAC</span></> : <><span>{p.capacitance}</span><span>{p.voltage}</span></>}</div></div></a></article>)}
+  </div>
+</section>

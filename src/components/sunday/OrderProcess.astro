@@ -1,0 +1,10 @@
+---
+import Action from './Action.astro';
+const steps=[
+ {title:'Share your requirements',text:'Send the original label, quantity and destination.',href:'/contact/'},
+ {title:'Approve the sample',text:'Review the drawing, terminals, label and packing.',href:'/oem/'},
+ {title:'Confirm the order',text:'Agree the model, quantities and quotation in writing.',href:'/buying-guide/#confirm-order'},
+ {title:'Prepare for dispatch',text:'Check protection, carton marks and shipping documents.',href:'/factory/packing-and-dispatch/'},
+];
+---
+<section class="su-shell su-process" aria-labelledby="process-title"><header class="su-split-heading"><div><h2 id="process-title">From inquiry to dispatch</h2></div><div><p>The specifications, approvals and packing details to agree before your order is shipped.</p><Action href="/buying-guide/" quiet>Buying & shipping</Action></div></header><ol class="su-step-rail" aria-label="Four steps for a capacitor order">{steps.map((s,i)=><li><span class="su-step-number" aria-hidden="true">0{i+1}</span><a href={s.href}><h3>{s.title}</h3></a><p>{s.text}</p></li>)}</ol></section>

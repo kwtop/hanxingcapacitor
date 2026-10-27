@@ -1,0 +1,551 @@
+[
+  {
+    "slug": "01-film-control",
+    "chapter": "film-equipment",
+    "subject": "Control display beside film-processing equipment",
+    "source": "原始素材/生产视频/6A1A7122.MOV",
+    "time_seconds": 3.96,
+    "width": 1920,
+    "height": 1080,
+    "source_still": "docs/image-generation-20261026/additional30/source/01-film-control.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/01-film-control.png",
+    "presentation": "landscape",
+    "published_dimensions": [
+      1600,
+      900
+    ],
+    "published_variant": "source frame",
+    "published_webp": "public/images/process-gallery-20261026/01-film-control.webp"
+  },
+  {
+    "slug": "02-film-machine",
+    "chapter": "film-equipment",
+    "subject": "Enclosed film-processing machinery and rollers",
+    "source": "原始素材/生产视频/6A1A7125.MOV",
+    "time_seconds": 5.21,
+    "width": 1920,
+    "height": 1080,
+    "source_still": "docs/image-generation-20261026/additional30/source/02-film-machine.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/02-film-machine.png",
+    "presentation": "landscape",
+    "published_dimensions": [
+      1600,
+      900
+    ],
+    "published_variant": "ImageGen-refined illustration",
+    "published_webp": "public/images/process-gallery-20261026/02-film-machine.webp"
+  },
+  {
+    "slug": "03-machine-output",
+    "chapter": "film-equipment",
+    "subject": "Metal can tooling and output path",
+    "source": "原始素材/电容新细节/微信视频2026-04-29_165401_888.mp4",
+    "time_seconds": 8.51,
+    "width": 1080,
+    "height": 1920,
+    "source_still": "docs/image-generation-20261026/additional30/source/03-machine-output.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/03-machine-output.png",
+    "wide_scene_result": "docs/image-generation-20261026/additional30/wide-scene/03-machine-output.png",
+    "presentation": "landscape",
+    "published_dimensions": [
+      1536,
+      1024
+    ],
+    "published_variant": "ImageGen wide-scene illustration",
+    "published_webp": "public/images/process-gallery-20261026/03-machine-output.webp"
+  },
+  {
+    "slug": "04-workstation-operator",
+    "chapter": "film-equipment",
+    "subject": "Operator beside assembly equipment",
+    "source": "原始素材/新电容5.17/微信视频2026-05-16_160440_581.mp4",
+    "time_seconds": 29.9,
+    "width": 1080,
+    "height": 1920,
+    "source_still": "docs/image-generation-20261026/additional30/source/04-workstation-operator.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/04-workstation-operator.png",
+    "presentation": "portrait",
+    "published_dimensions": [
+      900,
+      1600
+    ],
+    "published_variant": "ImageGen-refined illustration",
+    "published_webp": "public/images/process-gallery-20261026/04-workstation-operator.webp"
+  },
+  {
+    "slug": "05-line-wide",
+    "chapter": "film-equipment",
+    "subject": "Equipment line and operator",
+    "source": "原始素材/生产视频1/6A1A7133.MOV",
+    "time_seconds": 10.21,
+    "width": 1920,
+    "height": 1080,
+    "source_still": "docs/image-generation-20261026/additional30/source/05-line-wide.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/05-line-wide.png",
+    "presentation": "landscape",
+    "published_dimensions": [
+      1600,
+      900
+    ],
+    "published_variant": "ImageGen-refined illustration",
+    "published_webp": "public/images/process-gallery-20261026/05-line-wide.webp"
+  },
+  {
+    "slug": "06-press-worker",
+    "chapter": "film-equipment",
+    "subject": "Operator working beside a press",
+    "source": "原始素材/生产视频1/6A1A7136.MOV",
+    "time_seconds": 3.86,
+    "width": 1920,
+    "height": 1080,
+    "source_still": "docs/image-generation-20261026/additional30/source/06-press-worker.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/06-press-worker.png",
+    "presentation": "landscape",
+    "published_dimensions": [
+      1600,
+      900
+    ],
+    "published_variant": "ImageGen-refined illustration",
+    "published_webp": "public/images/process-gallery-20261026/06-press-worker.webp"
+  },
+  {
+    "slug": "07-reel-equipment",
+    "chapter": "film-equipment",
+    "subject": "Reels and automated equipment",
+    "source": "原始素材/新电容5.16/微信视频2026-05-15_144736_215.mp4",
+    "time_seconds": 5.28,
+    "width": 1080,
+    "height": 1920,
+    "source_still": "docs/image-generation-20261026/additional30/source/07-reel-equipment.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/07-reel-equipment.png",
+    "wide_scene_result": "docs/image-generation-20261026/additional30/wide-scene/07-reel-equipment.png",
+    "presentation": "landscape",
+    "published_dimensions": [
+      1536,
+      1024
+    ],
+    "published_variant": "ImageGen wide-scene illustration",
+    "published_webp": "public/images/process-gallery-20261026/07-reel-equipment.webp"
+  },
+  {
+    "slug": "08-can-sorting",
+    "chapter": "can-assembly",
+    "subject": "Worker sorting metal can bodies",
+    "source": "原始素材/电容细节1/微信视频2026-04-29_162215_267.mp4",
+    "time_seconds": 9.32,
+    "width": 1080,
+    "height": 1920,
+    "source_still": "docs/image-generation-20261026/additional30/source/08-can-sorting.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/08-can-sorting.png",
+    "presentation": "portrait",
+    "published_dimensions": [
+      900,
+      1600
+    ],
+    "published_variant": "ImageGen-refined illustration",
+    "published_webp": "public/images/process-gallery-20261026/08-can-sorting.webp"
+  },
+  {
+    "slug": "09-assembly-machine",
+    "chapter": "can-assembly",
+    "subject": "Gloved hands at assembly equipment",
+    "source": "原始素材/电容细节1/微信视频2026-04-29_162320_650.mp4",
+    "time_seconds": 6.09,
+    "width": 1080,
+    "height": 1920,
+    "source_still": "docs/image-generation-20261026/additional30/source/09-assembly-machine.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/09-assembly-machine.png",
+    "wide_scene_result": "docs/image-generation-20261026/additional30/wide-scene/09-assembly-machine.png",
+    "presentation": "landscape",
+    "published_dimensions": [
+      1536,
+      1024
+    ],
+    "published_variant": "ImageGen wide-scene illustration",
+    "published_webp": "public/images/process-gallery-20261026/09-assembly-machine.webp"
+  },
+  {
+    "slug": "10-assembly-hand",
+    "chapter": "can-assembly",
+    "subject": "Gloved hand guiding a metal can at machinery",
+    "source": "原始素材/电容细节1/微信视频2026-04-29_162347_044.mp4",
+    "time_seconds": 9.32,
+    "width": 1080,
+    "height": 1920,
+    "source_still": "docs/image-generation-20261026/additional30/source/10-assembly-hand.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/10-assembly-hand.png",
+    "presentation": "portrait",
+    "published_dimensions": [
+      900,
+      1600
+    ],
+    "published_variant": "ImageGen-refined illustration",
+    "published_webp": "public/images/process-gallery-20261026/10-assembly-hand.webp"
+  },
+  {
+    "slug": "11-bench-detail",
+    "chapter": "can-assembly",
+    "subject": "Hands working at a component bench",
+    "source": "原始素材/电容细节1/微信视频2026-04-29_163137_900.mp4",
+    "time_seconds": 4.61,
+    "width": 1080,
+    "height": 1920,
+    "source_still": "docs/image-generation-20261026/additional30/source/11-bench-detail.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/11-bench-detail.png",
+    "presentation": "portrait",
+    "published_dimensions": [
+      900,
+      1600
+    ],
+    "published_variant": "ImageGen-refined illustration",
+    "published_webp": "public/images/process-gallery-20261026/11-bench-detail.webp"
+  },
+  {
+    "slug": "12-can-arrangement",
+    "chapter": "can-assembly",
+    "subject": "Worker arranging can bodies",
+    "source": "原始素材/电容细节1/微信视频2026-04-29_163305_132.mp4",
+    "time_seconds": 3.95,
+    "width": 1080,
+    "height": 1920,
+    "source_still": "docs/image-generation-20261026/additional30/source/12-can-arrangement.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/12-can-arrangement.png",
+    "presentation": "portrait",
+    "published_dimensions": [
+      900,
+      1600
+    ],
+    "published_variant": "ImageGen-refined illustration",
+    "published_webp": "public/images/process-gallery-20261026/12-can-arrangement.webp"
+  },
+  {
+    "slug": "13-terminal-array",
+    "chapter": "can-assembly",
+    "subject": "Array of metal cans with terminal ends",
+    "source": "原始素材/电容细节1/微信视频2026-04-29_163400_004.mp4",
+    "time_seconds": 8.09,
+    "width": 1080,
+    "height": 1920,
+    "source_still": "docs/image-generation-20261026/additional30/source/13-terminal-array.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/13-terminal-array.png",
+    "wide_scene_result": "docs/image-generation-20261026/additional30/wide-scene/13-terminal-array.png",
+    "presentation": "landscape",
+    "published_dimensions": [
+      1536,
+      1024
+    ],
+    "published_variant": "ImageGen wide-scene illustration",
+    "published_webp": "public/images/process-gallery-20261026/13-terminal-array.webp"
+  },
+  {
+    "slug": "14-press-detail",
+    "chapter": "can-assembly",
+    "subject": "Press tooling at the workstation",
+    "source": "原始素材/电容细节1/微信视频2026-04-29_163426_395.mp4",
+    "time_seconds": 5.02,
+    "width": 1080,
+    "height": 1920,
+    "source_still": "docs/image-generation-20261026/additional30/source/14-press-detail.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/14-press-detail.png",
+    "wide_scene_result": "docs/image-generation-20261026/additional30/wide-scene/14-press-detail.png",
+    "presentation": "landscape",
+    "published_dimensions": [
+      1536,
+      1024
+    ],
+    "published_variant": "ImageGen wide-scene illustration",
+    "published_webp": "public/images/process-gallery-20261026/14-press-detail.webp"
+  },
+  {
+    "slug": "15-cans-on-table",
+    "chapter": "can-assembly",
+    "subject": "Metal can assemblies on a worktable",
+    "source": "原始素材/电容细节1/微信视频2026-04-29_163627_202.mp4",
+    "time_seconds": 10.61,
+    "width": 1080,
+    "height": 1920,
+    "source_still": "docs/image-generation-20261026/additional30/source/15-cans-on-table.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/15-cans-on-table.png",
+    "presentation": "portrait",
+    "published_dimensions": [
+      900,
+      1600
+    ],
+    "published_variant": "ImageGen-refined illustration",
+    "published_webp": "public/images/process-gallery-20261026/15-cans-on-table.webp"
+  },
+  {
+    "slug": "16-gloved-can",
+    "chapter": "can-assembly",
+    "subject": "Gloved hands working at an open metal can",
+    "source": "原始素材/电容细节1/微信视频2026-04-29_163859_697.mp4",
+    "time_seconds": 8.23,
+    "width": 1080,
+    "height": 1920,
+    "source_still": "docs/image-generation-20261026/additional30/source/16-gloved-can.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/16-gloved-can.png",
+    "presentation": "portrait",
+    "published_dimensions": [
+      900,
+      1600
+    ],
+    "published_variant": "ImageGen-refined illustration",
+    "published_webp": "public/images/process-gallery-20261026/16-gloved-can.webp"
+  },
+  {
+    "slug": "17-empty-cans",
+    "chapter": "can-assembly",
+    "subject": "Empty metal can bodies in trays",
+    "source": "原始素材/电容新细节/微信视频2026-04-29_164359_137.mp4",
+    "time_seconds": 4.14,
+    "width": 1080,
+    "height": 1920,
+    "source_still": "docs/image-generation-20261026/additional30/source/17-empty-cans.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/17-empty-cans.png",
+    "wide_scene_result": "docs/image-generation-20261026/additional30/wide-scene/17-empty-cans.png",
+    "presentation": "landscape",
+    "published_dimensions": [
+      1536,
+      1024
+    ],
+    "published_variant": "ImageGen wide-scene illustration",
+    "published_webp": "public/images/process-gallery-20261026/17-empty-cans.webp"
+  },
+  {
+    "slug": "18-can-grid",
+    "chapter": "can-assembly",
+    "subject": "Grid of metal can bodies",
+    "source": "原始素材/电容新细节/微信视频2026-04-29_164551_065.mp4",
+    "time_seconds": 2.78,
+    "width": 1080,
+    "height": 1920,
+    "source_still": "docs/image-generation-20261026/additional30/source/18-can-grid.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/18-can-grid.png",
+    "presentation": "portrait",
+    "published_dimensions": [
+      900,
+      1600
+    ],
+    "published_variant": "ImageGen-refined illustration",
+    "published_webp": "public/images/process-gallery-20261026/18-can-grid.webp"
+  },
+  {
+    "slug": "19-equipment-station",
+    "chapter": "can-assembly",
+    "subject": "Close view of equipment station",
+    "source": "原始素材/电容新细节/微信视频2026-04-29_164747_531.mp4",
+    "time_seconds": 3.78,
+    "width": 1080,
+    "height": 1920,
+    "source_still": "docs/image-generation-20261026/additional30/source/19-equipment-station.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/19-equipment-station.png",
+    "presentation": "portrait",
+    "published_dimensions": [
+      900,
+      1600
+    ],
+    "published_variant": "ImageGen-refined illustration",
+    "published_webp": "public/images/process-gallery-20261026/19-equipment-station.webp"
+  },
+  {
+    "slug": "20-component-pile",
+    "chapter": "can-assembly",
+    "subject": "Small white components in a work bin",
+    "source": "原始素材/电容新细节/微信视频2026-04-29_165341_354.mp4",
+    "time_seconds": 2.66,
+    "width": 1080,
+    "height": 1920,
+    "source_still": "docs/image-generation-20261026/additional30/source/20-component-pile.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/20-component-pile.png",
+    "wide_scene_result": "docs/image-generation-20261026/additional30/wide-scene/20-component-pile.png",
+    "presentation": "landscape",
+    "published_dimensions": [
+      1536,
+      1024
+    ],
+    "published_variant": "ImageGen wide-scene illustration",
+    "published_webp": "public/images/process-gallery-20261026/20-component-pile.webp"
+  },
+  {
+    "slug": "21-can-machine",
+    "chapter": "can-assembly",
+    "subject": "Can body at assembly tooling",
+    "source": "原始素材/电容新细节/微信视频2026-04-29_165518_176.mp4",
+    "time_seconds": 3.36,
+    "width": 1080,
+    "height": 1920,
+    "source_still": "docs/image-generation-20261026/additional30/source/21-can-machine.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/21-can-machine.png",
+    "presentation": "portrait",
+    "published_dimensions": [
+      900,
+      1600
+    ],
+    "published_variant": "ImageGen-refined illustration",
+    "published_webp": "public/images/process-gallery-20261026/21-can-machine.webp"
+  },
+  {
+    "slug": "22-blue-cartons",
+    "chapter": "finish-pack",
+    "subject": "Stacks of blue individual boxes",
+    "source": "原始素材/电容新细节/微信视频2026-04-29_164015_826.mp4",
+    "time_seconds": 3.98,
+    "width": 1080,
+    "height": 1920,
+    "source_still": "docs/image-generation-20261026/additional30/source/22-blue-cartons.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/22-blue-cartons.png",
+    "presentation": "portrait",
+    "published_dimensions": [
+      900,
+      1600
+    ],
+    "published_variant": "source frame",
+    "published_webp": "public/images/process-gallery-20261026/22-blue-cartons.webp"
+  },
+  {
+    "slug": "23-tray-racks",
+    "chapter": "finish-pack",
+    "subject": "Rows of metal cans in cardboard trays",
+    "source": "原始素材/电容新细节/微信视频2026-04-29_164607_708.mp4",
+    "time_seconds": 4.92,
+    "width": 1080,
+    "height": 1920,
+    "source_still": "docs/image-generation-20261026/additional30/source/23-tray-racks.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/23-tray-racks.png",
+    "wide_scene_result": "docs/image-generation-20261026/additional30/wide-scene/23-tray-racks.png",
+    "presentation": "landscape",
+    "published_dimensions": [
+      1536,
+      1024
+    ],
+    "published_variant": "ImageGen wide-scene illustration",
+    "published_webp": "public/images/process-gallery-20261026/23-tray-racks.webp"
+  },
+  {
+    "slug": "24-test-display",
+    "chapter": "finish-pack",
+    "subject": "Electrical equipment display",
+    "source": "原始素材/电容新细节/微信视频2026-04-29_165424_168.mp4",
+    "time_seconds": 3.33,
+    "width": 1080,
+    "height": 1920,
+    "source_still": "docs/image-generation-20261026/additional30/source/24-test-display.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/24-test-display.png",
+    "presentation": "portrait",
+    "published_dimensions": [
+      900,
+      1600
+    ],
+    "published_variant": "source frame",
+    "published_webp": "public/images/process-gallery-20261026/24-test-display.webp"
+  },
+  {
+    "slug": "25-packing-worker",
+    "chapter": "finish-pack",
+    "subject": "Worker placing product boxes at workstation",
+    "source": "原始素材/电容新细节/微信视频2026-04-29_165953_257.mp4",
+    "time_seconds": 3.96,
+    "width": 1080,
+    "height": 1920,
+    "source_still": "docs/image-generation-20261026/additional30/source/25-packing-worker.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/25-packing-worker.png",
+    "presentation": "portrait",
+    "published_dimensions": [
+      900,
+      1600
+    ],
+    "published_variant": "ImageGen-refined illustration",
+    "published_webp": "public/images/process-gallery-20261026/25-packing-worker.webp"
+  },
+  {
+    "slug": "26-boxing-table",
+    "chapter": "finish-pack",
+    "subject": "Worker arranging individual boxes at table",
+    "source": "原始素材/新电容5.16/微信视频2026-05-16_153251_015.mp4",
+    "time_seconds": 10.44,
+    "width": 1080,
+    "height": 1920,
+    "source_still": "docs/image-generation-20261026/additional30/source/26-boxing-table.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/26-boxing-table.png",
+    "presentation": "portrait",
+    "published_dimensions": [
+      900,
+      1600
+    ],
+    "published_variant": "source frame",
+    "published_webp": "public/images/process-gallery-20261026/26-boxing-table.webp"
+  },
+  {
+    "slug": "27-bench-rows",
+    "chapter": "finish-pack",
+    "subject": "Worker beside rows of metal cans",
+    "source": "原始素材/新电容5.17/微信视频2026-05-16_154603_137.mp4",
+    "time_seconds": 10.31,
+    "width": 1080,
+    "height": 1920,
+    "source_still": "docs/image-generation-20261026/additional30/source/27-bench-rows.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/27-bench-rows.png",
+    "presentation": "portrait",
+    "published_dimensions": [
+      900,
+      1600
+    ],
+    "published_variant": "ImageGen-refined illustration",
+    "published_webp": "public/images/process-gallery-20261026/27-bench-rows.webp"
+  },
+  {
+    "slug": "28-outdoor-pallets",
+    "chapter": "dispatch",
+    "subject": "Wrapped cartons on pallets outside warehouse",
+    "source": "原始素材/发货素材5.6/微信视频2026-05-06_171729_425.mp4",
+    "time_seconds": 14.87,
+    "width": 1080,
+    "height": 1920,
+    "source_still": "docs/image-generation-20261026/additional30/source/28-outdoor-pallets.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/28-outdoor-pallets.png",
+    "wide_scene_result": "docs/image-generation-20261026/additional30/wide-scene/28-outdoor-pallets.png",
+    "presentation": "landscape",
+    "published_dimensions": [
+      1536,
+      1024
+    ],
+    "published_variant": "ImageGen wide-scene illustration",
+    "published_webp": "public/images/process-gallery-20261026/28-outdoor-pallets.webp"
+  },
+  {
+    "slug": "29-lift-to-truck",
+    "chapter": "dispatch",
+    "subject": "Forklift lifting wrapped cartons toward truck",
+    "source": "原始素材/发货素材5.6/微信视频2026-05-06_171906_539.mp4",
+    "time_seconds": 8.61,
+    "width": 1080,
+    "height": 1920,
+    "source_still": "docs/image-generation-20261026/additional30/source/29-lift-to-truck.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/29-lift-to-truck.png",
+    "presentation": "portrait",
+    "published_dimensions": [
+      900,
+      1600
+    ],
+    "published_variant": "source frame",
+    "published_webp": "public/images/process-gallery-20261026/29-lift-to-truck.webp"
+  },
+  {
+    "slug": "30-truck-handover",
+    "chapter": "dispatch",
+    "subject": "People handling cartons at red truck",
+    "source": "原始素材/发货素材5.6/微信视频2026-05-06_172644_040.mp4",
+    "time_seconds": 5.64,
+    "width": 1080,
+    "height": 1920,
+    "source_still": "docs/image-generation-20261026/additional30/source/30-truck-handover.jpg",
+    "imagegen_result": "docs/image-generation-20261026/additional30/imagegen/30-truck-handover.png",
+    "presentation": "portrait",
+    "published_dimensions": [
+      900,
+      1600
+    ],
+    "published_variant": "source frame",
+    "published_webp": "public/images/process-gallery-20261026/30-truck-handover.webp"
+  }
+]

@@ -1,0 +1,49 @@
+---
+import type { Product } from '../data/site';
+import { seriesFormats } from '../data/productReference';
+import { productSpecificationBasis } from '../data/productSpecificationBasis';
+interface Props { product: Product; }
+const { product } = Astro.props;
+const { code } = product;
+const basis = productSpecificationBasis[code];
+const electrical = [
+  ['Function', product.function + ' duty'],
+  ...(code === 'CBB65' ? [] : [['Capacitance range', product.capacitance], ['Rated voltage', product.voltage]]),
+  [code === 'CBB61' ? 'Sample tolerance' : 'Series tolerance', product.tolerance],
+  ['Frequency', product.frequency],
+  [code === 'CBB61' ? 'Sample climatic category' : 'Series temperature range', product.temperature],
+];
+const mechanical = [
+  ['Case format', seriesFormats[code].case],
+  ...(code === 'CBB65' ? [] : [['Series case-size range', product.dimensions]]),
+  ['Construction', product.construction], ['Connection', product.terminals],
+];
+---
+<section class="pdr-section" id="specifications" aria-labelledby="specifications-title">
+  <header class="pdr-spec-heading">
+    <h2 id="specifications-title">Technical specifications</h2>
+    <div><p>{basis.scope}</p><p class="pdr-source-reference">{basis.source}</p></div>
+  </header>
+  {code === 'CBB65' && <div class="pdr-variant-specifications">
+    <div class="pdr-variant-grid">
+      <div class="pdr-variant-summary" id="single-run-specifications"><h3>Single run</h3><dl>
+        <div><dt>Capacitance</dt><dd>2–100 µF</dd></div>
+        <div><dt>Rated voltage</dt><dd>110–450 VAC</dd></div>
+        <div><dt>Case dimensions</dt><dd>D 30–60 × H 55–125 mm</dd></div>
+      </dl></div>
+      <div class="pdr-variant-summary" id="dual-run-specifications"><h3>Dual run</h3><dl>
+        <div><dt>Capacitance</dt><dd>1+15 to 15+80 µF</dd></div>
+        <div><dt>Rated voltage</dt><dd>370–450 VAC</dd></div>
+        <div><dt>Case dimensions</dt><dd>Use the drawing for the selected combination</dd></div>
+      </dl></div>
+    </div>
+    <p class="pdr-note">Keep both dual-run µF values separate. Identify the terminal groups from the model wiring diagram. <a href="/resources/single-vs-dual-run-capacitors/">Single and dual run explained</a></p>
+  </div>}
+  <div class="pdr-spec-groups">
+    <div><h3>Electrical</h3><dl class="pdr-specifications">{electrical.map(([label,value]) => <div><dt>{label}</dt><dd>{value}</dd></div>)}</dl></div>
+    <div><h3>Case &amp; connection</h3><dl class="pdr-specifications">{mechanical.map(([label,value]) => <div><dt>{label}</dt><dd>{value}</dd></div>)}</dl></div>
+  </div>
+  <div class="pdr-model-confirmation">
+    <p>{basis.note}</p>
+  </div>
+</section>

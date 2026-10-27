@@ -1,0 +1,20 @@
+---
+import Action from './Action.astro';
+import { sundayIndustrial } from '../../data/sundayIndustrial';
+import { polishedEditorial } from '../../data/imagePolish';
+import { coherenceMedia } from '../../data/coherenceMedia';
+import SiteImage from '../satechi-preview/SiteImage.astro';
+const guides=[
+ {title:'Read the capacitor label',copy:'Find the capacitance, rated voltage and duty markings on the original part.',href:'/resources/read-motor-capacitor-label/',image:sundayIndustrial.technical.src,alt:sundayIndustrial.technical.alt},
+ {title:'Dimensions & connections',copy:'Measure the body, fixing points and clearance for leads or terminals.',href:'/resources/dimensions-terminals-mounting/',image:polishedEditorial.terminals.src,alt:polishedEditorial.terminals.alt},
+ {title:'Run or start duty',copy:'Run capacitors stay in the motor circuit. Start capacitors are disconnected after startup.',href:'/resources/start-vs-run-capacitors/',image:sundayIndustrial.catalog.src,alt:sundayIndustrial.catalog.alt},
+ {title:'Single or dual run',copy:'A dual-run capacitor has two capacitance sections. Record both values and the terminal layout.',href:'/resources/single-vs-dual-run-capacitors/',image:coherenceMedia.terminals.src,alt:coherenceMedia.terminals.alt},
+ {title:'Quotation checklist',copy:'Put the label, connections, quantity and destination together for a complete inquiry.',href:'/buying-guide/',image:sundayIndustrial.connections.src,alt:sundayIndustrial.connections.alt},
+ {title:'Order & shipping checklist',copy:'Review packing, dispatch milestones and the documents required for your shipment.',href:'/resources/motor-capacitor-order-shipment-checklist/',image:sundayIndustrial.packing.src,alt:sundayIndustrial.packing.alt},
+];
+---
+<section class="su-shell su-guides" id="guides" aria-labelledby="guides-title"><header class="su-split-heading"><div><h2 id="guides-title">Technical and buying guides</h2></div><div><p>Read the label, check dimensions and prepare the details for an order.</p><Action href="/resources/" quiet>All resources</Action></div></header><div class="su-guide-layout"><div class="su-accordions">{guides.map((g,i)=><details name="sunday-guides" open={i===0} data-guide-index={i}><summary>{g.title}<span aria-hidden="true">+</span></summary><div class="su-guide-copy"><p>{g.copy}</p><a href={g.href}>Read the guide</a></div></details>)}</div><div class="su-guide-images">{guides.map((g,i)=><div class="su-guide-image" data-guide-image={i} hidden={i!==0}><SiteImage src={g.image} alt={g.alt} sizes="(max-width: 1023px) calc(100vw - 48px), 50vw" /></div>)}</div></div></section>
+<script>
+ const details=[...document.querySelectorAll<HTMLDetailsElement>('.su-accordions details')];
+ details.forEach(item=>item.addEventListener('toggle',()=>{if(!item.open)return;details.forEach(other=>{if(other!==item)other.open=false;});document.querySelectorAll<HTMLElement>('[data-guide-image]').forEach(image=>image.hidden=image.dataset.guideImage!==item.dataset.guideIndex);}));
+</script>

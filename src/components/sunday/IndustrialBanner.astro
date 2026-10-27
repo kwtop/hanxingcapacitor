@@ -1,0 +1,18 @@
+---
+import SeriesInquiry from './SeriesInquiry.astro';
+import '../../styles/home-industrial-banner.css';
+---
+<section class="su-home-banner" aria-labelledby="home-title">
+  <picture class="su-home-banner-photo">
+    <source media="(max-width: 599px)" srcset="/images/home-industrial-banner/mobile-480.webp 480w, /images/home-industrial-banner/mobile-800.webp 800w, /images/home-industrial-banner/mobile-918.webp 918w" sizes="100vw" width="918" height="1710" />
+    <source media="(max-width: 1023px)" srcset="/images/home-industrial-banner/tablet-800.webp 800w, /images/home-industrial-banner/tablet-1086.webp 1086w" sizes="100vw" width="1086" height="1448" />
+    <img src="/images/home-industrial-banner/desktop-1672.webp" srcset="/images/home-industrial-banner/desktop-1024.webp 1024w, /images/home-industrial-banner/desktop-1440.webp 1440w, /images/home-industrial-banner/desktop-1672.webp 1672w" sizes="100vw" width="1672" height="941" loading="eager" fetchpriority="high" decoding="async" alt="Illustrative industrial product photograph of Hanxing CBB60, CBB61, CBB65 and CD60 capacitors on a stainless steel workbench." />
+  </picture>
+  <div class="su-shell su-home-banner-inner">
+    <div class="su-home-banner-copy">
+      <h1 id="home-title">Motor capacitors<br /><span>From run to start</span></h1>
+      <p>CBB60, CBB61 and CBB65 run capacitors.<br class="su-banner-desktop-break" /> CD60 for starting duty.</p>
+      <SeriesInquiry id="hero-inquiry" />
+    </div>
+  </div>
+</section>

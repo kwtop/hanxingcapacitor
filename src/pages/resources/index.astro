@@ -1,4 +1,5 @@
 ---
+import {sundayIndustrial} from '../../data/sundayIndustrial';
 import { isSatechiPreview } from '../../lib/visualPreview';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { resourceSections } from '../../data/site';
@@ -19,10 +20,10 @@ const featured = ['read-motor-capacitor-label', 'cbb60-vs-cbb61-vs-cbb65', 'moto
   <div class="review-resource-page resource-hub">
     <section class="page-hero"><div class="container"><p class="breadcrumbs"><a href="/">Home</a> / Resources</p><h1>Motor capacitor resources</h1><p class="lead">Check a capacitor specification and prepare the details for your quotation.</p></div></section>
     <div class="container resource-hub-body">
-      {isSatechiPreview && <FeaturedGuide guide={featured[0]} />}
       <nav class="resource-hub-routes" aria-label="Resource categories">
-        {resourceSections.map(section => <a href={section.href}>{isSatechiPreview && <SiteImage class="ss-resource-cover" src={section.href === '/resources/articles/' ? coherenceMedia.measurement.src : section.href === '/buying-guide/' ? brochureMedia['cbb65-packaging'].src : siteVisual(sectionVisuals[section.href])} alt={section.href === '/resources/articles/' ? coherenceMedia.measurement.alt : section.href === '/faq/' ? editorialMedia['buyer-photo-details'].alt : brochureMedia['cbb65-packaging'].alt} sizes="(max-width:600px) calc(100vw - 32px), 30vw" />}<h2 id={section.href === '/resources/articles/' ? 'resource-electrical' : section.href === '/buying-guide/' ? 'resource-ordering' : undefined}>{section.href === '/resources/articles/' && <><span id="resource-formats" aria-hidden="true"></span><span id="resource-mechanical" aria-hidden="true"></span></>}{section.label}</h2><p>{section.description}</p></a>)}
+        {resourceSections.map(section => <a href={section.href}>{isSatechiPreview && <SiteImage class="ss-resource-cover" src={section.href === '/resources/articles/' ? sundayIndustrial.connections.src : section.href === '/buying-guide/' ? sundayIndustrial.packing.src : siteVisual(sectionVisuals[section.href])} alt={section.href === '/resources/articles/' ? coherenceMedia.measurement.alt : section.href === '/faq/' ? editorialMedia['buyer-photo-details'].alt : brochureMedia['cbb65-packaging'].alt} sizes="(max-width:600px) calc(100vw - 32px), 30vw" />}<h2 id={section.href === '/resources/articles/' ? 'resource-electrical' : section.href === '/buying-guide/' ? 'resource-ordering' : undefined}>{section.href === '/resources/articles/' && <><span id="resource-formats" aria-hidden="true"></span><span id="resource-mechanical" aria-hidden="true"></span></>}{section.label}</h2><p>{section.description}</p></a>)}
       </nav>
+      {isSatechiPreview && <FeaturedGuide guide={featured[0]} />}
       <section class="resource-hub-section" aria-labelledby="featured-guides"><h2 id="featured-guides">Selection and order guides</h2><div class="resource-article-list">
         {(isSatechiPreview ? featured.slice(1) : featured).map(guide => <a href={guideHref(guide)}>{isSatechiPreview && <GuideCover class="ss-resource-cover" slug={guide.slug} />}<h3>{guide.title}</h3><p>{guide.summary}</p></a>)}
       </div></section>

@@ -10,8 +10,7 @@ import { applicationCover, industrialApplications } from '../../data/industrialA
 <BaseLayout title="Motor capacitors by application" description="Explore capacitor options for water pumps, fans and blowers, washing machines, and air conditioners or HVAC equipment. Match the original motor rating and connections before selecting a series.">
   <div class="review-application-directory">
     {isSatechiPreview ? <>
-      <CollectionCover title="Applications" description={APPLICATION_SELECTION_INTRO} image={applicationCover.src} mobileImage={industrialApplications['pumps-and-water-systems'].src} alt={applicationCover.alt} />
-      <div class="container ss-collection-trail"><p class="breadcrumbs"><a href="/">Home</a> / Applications</p><a href="/products/">Compare capacitor series</a></div>
+      <CollectionCover title="Applications" description={APPLICATION_SELECTION_INTRO} image={applicationCover.src} mobileImage={industrialApplications['pumps-and-water-systems'].src} alt={applicationCover.alt}><a class="card-link" href="/products/">Compare capacitor series</a></CollectionCover>
     </> : <section class="page-hero compact-page-hero application-page-hero"><div class="container"><p class="breadcrumbs"><a href="/">Home</a> / Applications</p><div class="application-directory-heading"><h1>Applications</h1><p>{APPLICATION_SELECTION_INTRO}</p></div></div></section>}
     <section class="section application-directory"><div class="container"><div class="grid two">{applications.map(application => <ApplicationCard application={application} />)}</div></div></section>
     <InquiryCallout><nav aria-label="Selection references"><a class="card-link" href="/products/">Compare products</a><a class="card-link" href="/resources/read-motor-capacitor-label/">Read the label guide</a></nav></InquiryCallout>

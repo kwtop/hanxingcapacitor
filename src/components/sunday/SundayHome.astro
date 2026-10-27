@@ -1,0 +1,14 @@
+---
+import CapacitorHero from './CapacitorHero.astro';
+import IndustrialBanner from './IndustrialBanner.astro';
+import SeriesRail from './SeriesRail.astro';
+import SelectionFeatures from './SelectionFeatures.astro';
+import ApplicationsWall from './ApplicationsWall.astro';
+import OrderProcess from './OrderProcess.astro';
+import GuideAccordion from './GuideAccordion.astro';
+import ProductionStory from './ProductionStory.astro';
+import CompanyStory from './CompanyStory.astro';
+import WorkshopPhotoStory from './WorkshopPhotoStory.astro';
+import { workshopStorySets } from '../../data/workshopPhotos';
+---
+<div class="su-home"><IndustrialBanner /><SeriesRail /><SelectionFeatures /><ApplicationsWall /><OrderProcess /><ProductionStory /><WorkshopPhotoStory id="workshop-moments" eyebrow="Seen in the supplied material" title="From the line to the loading area" intro="A closer view of film processing, packing, pallet handling and sample discussion." photos={workshopStorySets.home} moreHref="/factory/process-gallery/" moreLabel="Explore 30 more workshop stills" /><GuideAccordion /><CompanyStory /><div class="su-closing"><CapacitorHero closing /></div></div>

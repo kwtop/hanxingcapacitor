@@ -1,0 +1,9 @@
+---
+import { products } from '../../data/site';
+interface Props { id: string; }
+const { id } = Astro.props;
+---
+<form class="su-inquiry" action="/contact/#inquiry-form" method="get" data-analytics-position={id}>
+  <label for={`${id}-series`}>Choose your capacitor series</label>
+  <div class="su-inquiry-field"><select id={`${id}-series`} name="series">{products.map(p=><option value={p.code}>{p.code} · {p.shortName}</option>)}<option value="unknown">Not sure yet</option></select><input type="hidden" name="request" value="quote" /><button class="su-action" type="submit">Start an inquiry</button></div>
+</form>

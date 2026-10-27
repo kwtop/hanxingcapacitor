@@ -1,0 +1,15 @@
+---
+import ProductImage from './ProductImage.astro';
+import SeriesInquiry from './SeriesInquiry.astro';
+const { closing = false } = Astro.props;
+---
+<section class:list={['su-hero', { 'su-hero--closing': closing }]} aria-labelledby={closing ? 'home-inquiry-title' : 'home-title'} id={closing ? 'home-inquiry' : undefined}>
+  <div class="su-shell su-hero-inner">
+    <div class="su-hero-art"><ProductImage name="family" eager={!closing} alt="Studio illustration of Hanxing CBB60, CBB61, CBB65 and CD60 capacitor samples, retaining their case and connection formats." sizes="(max-width: 767px) 100vw, (max-width: 1023px) 700px, 780px" /></div>
+    <div class="su-hero-copy">
+      {closing ? <h2 id="home-inquiry-title">Request a quote</h2> : <h1 id="home-title">Motor capacitors<br /><span>From run to start</span></h1>}
+      <p>{closing ? 'Send the original label, quantity and destination. We’ll work through the rating, connections and packing with you.' : 'CBB60, CBB61 and CBB65 run capacitors. CD60 for starting duty. Find the right format for your equipment, from the label to the connections.'}</p>
+      <SeriesInquiry id={closing ? 'closing-inquiry' : 'hero-inquiry'} />
+    </div>
+  </div>
+</section>

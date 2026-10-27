@@ -1,0 +1,275 @@
+[
+  {
+    "asset": "/images/workshop-stories-20261026/film-floor.webp",
+    "source": "原始素材/生产视频/6A1A7119.MOV",
+    "source_type": "video",
+    "video_time_seconds": 3.54,
+    "treatment": "source-still",
+    "output_px": [
+      1800,
+      1013
+    ]
+  },
+  {
+    "asset": "/images/workshop-stories-20261026/film-web.webp",
+    "source": "原始素材/生产视频/6A1A7120.MOV",
+    "source_type": "video",
+    "video_time_seconds": 7.09,
+    "treatment": "source-still",
+    "output_px": [
+      1800,
+      1013
+    ]
+  },
+  {
+    "asset": "/images/workshop-stories-20261026/film-roll.webp",
+    "source": "原始素材/生产视频/6A1A7121.MOV",
+    "source_type": "video",
+    "video_time_seconds": 3.38,
+    "treatment": "source-still",
+    "output_px": [
+      1800,
+      1013
+    ]
+  },
+  {
+    "asset": "/images/workshop-stories-20261026/production-line.webp",
+    "source": "原始素材/生产视频/6A1A7123.MOV",
+    "source_type": "video",
+    "video_time_seconds": 3.87,
+    "treatment": "source-still",
+    "output_px": [
+      1800,
+      1013
+    ]
+  },
+  {
+    "asset": "/images/workshop-stories-20261026/testing.webp",
+    "source": "原始素材/生产视频/6A1A7128.MOV",
+    "source_type": "video",
+    "video_time_seconds": 3.98,
+    "treatment": "source-still",
+    "output_px": [
+      1800,
+      1013
+    ]
+  },
+  {
+    "asset": "/images/workshop-stories-20261026/can-process.webp",
+    "source": "原始素材/生产视频1/6A1A7134.MOV",
+    "source_type": "video",
+    "video_time_seconds": 3.96,
+    "treatment": "source-still",
+    "output_px": [
+      1800,
+      1013
+    ]
+  },
+  {
+    "asset": "/images/workshop-stories-20261026/can-group.webp",
+    "source": "原始素材/生产视频1/6A1A7138.MOV",
+    "source_type": "video",
+    "video_time_seconds": 4.81,
+    "treatment": "source-still",
+    "output_px": [
+      1800,
+      1013
+    ]
+  },
+  {
+    "asset": "/images/workshop-stories-20261026/can-handling.webp",
+    "source": "原始素材/电容细节1/微信视频2026-04-29_163226_508.mp4",
+    "source_type": "video",
+    "video_time_seconds": 3.51,
+    "treatment": "source-still",
+    "output_px": [
+      1012,
+      1800
+    ]
+  },
+  {
+    "asset": "/images/workshop-stories-20261026/terminal-assembly.webp",
+    "source": "原始素材/电容新细节/微信视频2026-04-29_164723_233.mp4",
+    "source_type": "video",
+    "video_time_seconds": 3.75,
+    "treatment": "source-still",
+    "output_px": [
+      1012,
+      1800
+    ]
+  },
+  {
+    "asset": "/images/workshop-stories-20261026/terminal-detail.webp",
+    "source": "原始素材/电容新细节/微信视频2026-04-29_164902_056.mp4",
+    "source_type": "video",
+    "video_time_seconds": 5.1,
+    "treatment": "source-still",
+    "output_px": [
+      1012,
+      1800
+    ]
+  },
+  {
+    "asset": "/images/workshop-stories-20261026/box-packing.webp",
+    "source": "原始素材/包装新/1.mp4",
+    "source_type": "video",
+    "video_time_seconds": 9.42,
+    "treatment": "source-still",
+    "output_px": [
+      1012,
+      1800
+    ]
+  },
+  {
+    "asset": "/images/workshop-stories-20261026/packing-close.webp",
+    "source": "原始素材/包装新/微信视频2026-04-27_142218_825.mp4",
+    "source_type": "video",
+    "video_time_seconds": 9.3,
+    "treatment": "source-still",
+    "output_px": [
+      1012,
+      1800
+    ]
+  },
+  {
+    "asset": "/images/workshop-stories-20261026/pallets-staged.webp",
+    "source": "原始素材/发货素材5.6/微信视频2026-05-06_161916_507.mp4",
+    "source_type": "video",
+    "video_time_seconds": 12.18,
+    "treatment": "source-still",
+    "output_px": [
+      1012,
+      1800
+    ]
+  },
+  {
+    "asset": "/images/workshop-stories-20261026/truck-loading.webp",
+    "source": "原始素材/发货素材5.6/微信视频2026-05-06_171819_243.mp4",
+    "source_type": "video",
+    "video_time_seconds": 14.08,
+    "treatment": "source-still",
+    "output_px": [
+      1012,
+      1800
+    ]
+  },
+  {
+    "asset": "/images/workshop-stories-20261026/forklift.webp",
+    "source": "原始素材/发货素材5.6/微信视频2026-05-06_172248_263.mp4",
+    "source_type": "video",
+    "video_time_seconds": 4.88,
+    "treatment": "source-still",
+    "output_px": [
+      1012,
+      1800
+    ]
+  },
+  {
+    "asset": "/images/workshop-stories-20261026/truck-boxes.webp",
+    "source": "原始素材/发货素材5.6/微信视频2026-05-06_172616_296.mp4",
+    "source_type": "video",
+    "video_time_seconds": 5.0,
+    "treatment": "source-still",
+    "output_px": [
+      1012,
+      1800
+    ]
+  },
+  {
+    "asset": "/images/workshop-stories-20261026/truck-departure.webp",
+    "source": "原始素材/发货素材5.6/微信视频2026-05-06_172710_833.mp4",
+    "source_type": "video",
+    "video_time_seconds": 8.1,
+    "treatment": "source-still",
+    "output_px": [
+      1012,
+      1800
+    ]
+  },
+  {
+    "asset": "/images/workshop-stories-20261026/sample-discussion.webp",
+    "source": "原始素材/印度客户，徐总接待照/微信图片_20260716100856_11_2.jpg",
+    "source_type": "photo",
+    "video_time_seconds": null,
+    "treatment": "source-still",
+    "output_px": [
+      1350,
+      1800
+    ]
+  },
+  {
+    "asset": "/images/workshop-stories-20261026/sample-review.webp",
+    "source": "原始素材/印度客户，徐总接待照/微信图片_20260716100919_26_2.jpg",
+    "source_type": "photo",
+    "video_time_seconds": null,
+    "treatment": "source-still",
+    "output_px": [
+      1350,
+      1800
+    ]
+  },
+  {
+    "asset": "/images/workshop-stories-20261026/factory-walk.webp",
+    "source": "原始素材/印度客户，徐总接待照/微信图片_20260716100946_45_2.jpg",
+    "source_type": "photo",
+    "video_time_seconds": null,
+    "treatment": "source-still",
+    "output_px": [
+      1350,
+      1800
+    ]
+  },
+  {
+    "asset": "/images/workshop-stories-20261026/factory-visit.webp",
+    "source": "原始素材/印度客户，徐总接待照/微信图片_20260716101004_54_2.jpg",
+    "source_type": "photo",
+    "video_time_seconds": null,
+    "treatment": "source-still",
+    "output_px": [
+      1350,
+      1800
+    ]
+  },
+  {
+    "asset": "/images/workshop-stories-20261026/film-floor-editorial.webp",
+    "source": "原始素材/生产视频/6A1A7119.MOV",
+    "source_type": "video",
+    "video_time_seconds": 3.54,
+    "treatment": "ImageGen editorial reconstruction",
+    "output_px": [
+      1536,
+      1024
+    ],
+    "generated_from_asset": "/images/workshop-stories-20261026/film-floor.webp",
+    "generated_original": "docs/image-generation-20261026/film-floor-editorial.png",
+    "use": "Illustrative only; not proof of exact equipment or product detail."
+  },
+  {
+    "asset": "/images/workshop-stories-20261026/can-group-editorial.webp",
+    "source": "原始素材/生产视频1/6A1A7138.MOV",
+    "source_type": "video",
+    "video_time_seconds": 4.81,
+    "treatment": "ImageGen editorial reconstruction",
+    "output_px": [
+      1448,
+      1086
+    ],
+    "generated_from_asset": "/images/workshop-stories-20261026/can-group.webp",
+    "generated_original": "docs/image-generation-20261026/can-group-editorial.png",
+    "use": "Illustrative only; not proof of exact equipment or product detail."
+  },
+  {
+    "asset": "/images/workshop-stories-20261026/truck-loading-editorial.webp",
+    "source": "原始素材/发货素材5.6/微信视频2026-05-06_171819_243.mp4",
+    "source_type": "video",
+    "video_time_seconds": 14.08,
+    "treatment": "ImageGen editorial reconstruction",
+    "output_px": [
+      1536,
+      1024
+    ],
+    "generated_from_asset": "/images/workshop-stories-20261026/truck-loading.webp",
+    "generated_original": "docs/image-generation-20261026/truck-loading-editorial.png",
+    "use": "Illustrative only; not proof of exact equipment or product detail."
+  }
+]

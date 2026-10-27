@@ -15,7 +15,7 @@ Open the local URL printed by Astro. `npm run check` validates Astro/TypeScript 
 
 ### Current visual preview
 
-To open the current Satechi-inspired version, including the updated navigation, product pages and brochure imagery:
+To open the current Hanxing industrial visual version, including the updated homepage, navigation, product pages and workshop imagery:
 
 ```bash
 npm run dev:visual
@@ -59,11 +59,13 @@ Anonymous activity records contain paths and interaction metadata, not keystroke
 
 The confirmed canonical target is `https://www.hanxingcapacitor.com`. Existing Cloudflare previews use `hanxing-capacitor-preview`. The current backend has not been uploaded to that project, and a dedicated Hanxing D1 must be created and bound before publication. No other business database is reused.
 
-`npm run build:cloudflare` exports the current Satechi presentation to `.cloudflare-site`; `functions/` supplies its backend at deployment. The isolated export keeps noindex headers and existing migration redirects. It does not deploy anything. The ordinary `npm run build` remains a Node standalone baseline build; it does not supply a production D1 backend. See the admin setup document before choosing a deployment command. Public legal identity, certificates and model records retain the existing business review boundary.
+`npm run build:cloudflare` exports the current visual presentation to `.cloudflare-site`; `functions/` supplies its backend at deployment. The isolated export keeps noindex headers and existing migration redirects. It does not deploy anything. The ordinary `npm run build` remains a Node standalone baseline build; it does not supply a production D1 backend. See the admin setup document before choosing a deployment command. Public legal identity, certificates and model records retain the existing business review boundary.
 
 Technical SEO/GEO results, priorities and release commands: [SEO-GEO-AUDIT-20261012.md](docs/SEO-GEO-AUDIT-20261012.md). Existing robots and sitemap routes share an automatic route/content index with `llms.txt`; no fabricated modification dates are generated. `npm run check:release -- <candidate> https://www.hanxingcapacitor.com` performs read-only initial-HTML, Meta, Schema, asset, utility-page and migration checks.
 
 Images now combine labelled ImageGen illustrations with supplied photographs and production video stills. Generated images are not model drawings or factory evidence. See MEDIA-AUDIT.md and CONTENT_SOURCES.md for coverage and provenance.
+
+For the current visual version, see [the image provenance manifest](docs/CURRENT-VISUAL-PROVENANCE-20261027.json), [the process gallery record](docs/PROCESS-GALLERY-20261026.md) and [the workshop photo record](docs/WORKSHOP-PHOTO-STORIES-20261026.md). Original source footage and generated PNG archives are retained locally and are not included in this repository.
 
 ## Validation
 

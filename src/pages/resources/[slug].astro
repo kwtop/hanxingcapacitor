@@ -6,11 +6,14 @@ import { guides, type Guide } from '../../data/guides';
 import { guideLayouts } from '../../data/guideLayouts';
 import { isSatechiPreview } from '../../lib/visualPreview';
 import GuideCover from '../../components/satechi-preview/GuideCover.astro';
+import WorkshopPhotoStory from '../../components/sunday/WorkshopPhotoStory.astro';
+import { guideWorkshopStories } from '../../data/workshopPhotos';
 export const prerender = true;
 export function getStaticPaths() { return guides.map(guide => ({ params: { slug: guide.slug }, props: { guide } })); }
 interface Props { guide: Guide; }
 const { guide } = Astro.props;
 const layout = guideLayouts[guide.slug];
+const workshopStory = guideWorkshopStories[guide.slug];
 const isOrderGuide = guide.slug === 'motor-capacitor-order-shipment-checklist';
 const discussHref = `/contact/?guide=${guide.slug}&request=${guide.inquiry.request}#inquiry-form`;
 const sectionId = (heading: string) => heading.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -23,17 +26,12 @@ const related = guide.related.filter(link => !relatedInBody.has(link.href) && li
       <p class="breadcrumbs"><a href="/">Home</a> / <a href="/resources/">Resources</a> / <a href={isOrderGuide ? '/buying-guide/' : '/resources/articles/'}>{isOrderGuide ? 'Buying & shipping' : 'Technical guides'}</a> / {guide.title}</p>
       {isSatechiPreview ? <div class="ss-article-introduction co-reading-heading"><div><h1>{guide.title}</h1><p>{guide.summary}</p></div></div> : <h1>{guide.title}</h1>}
     </div></section>
-    <section class="section guide-body review-guide-body"><div class="container review-guide-layout">
-      <aside class="review-guide-navigation"><details class="guide-toc review-guide-toc" open>
-        <summary>On this page</summary><nav aria-label="On this page">
-          {layout.sections.map(section => <a href={`#${section.id}`}>{section.tocLabel || section.heading}</a>)}
-          <a href="#details-to-send">Inquiry details</a>
-        </nav>
-      </details></aside>
+    <section class="section guide-body review-guide-body"><div class="container review-guide-reading">
       <article class="editorial review-guide-article">
         <p class="article-overview">{guide.answer}</p>
-        {isSatechiPreview && <GuideCover slug={guide.slug} class="co-article-visual" sizes="(max-width:800px) calc(100vw - 32px), 760px" eager />}
+        {isSatechiPreview && <GuideCover slug={guide.slug} class="co-article-visual" sizes="(max-width:1288px) calc(100vw - 48px), 1240px" eager />}
         <ReviewGuideContent sections={layout.sections} />
+        {workshopStory && <WorkshopPhotoStory id="guide-workshop-photos" eyebrow={workshopStory.eyebrow} title={workshopStory.title} intro={workshopStory.intro} photos={workshopStory.photos} compact />}
         <InquiryCallout id="details-to-send" contained href={discussHref} heading={guide.inquiry.heading} description={guide.inquiry.note} buttonLabel={guide.inquiry.label} defaultSeries={guide.slug === 'single-vs-dual-run-capacitors' ? 'CBB65' : 'CBB60'}>
           <span id={sectionId(guide.inquiry.heading)} class="review-guide-anchor" aria-hidden="true"></span>
           
@@ -54,12 +52,6 @@ const related = guide.related.filter(link => !relatedInBody.has(link.href) && li
   </div>
   <script>
     import {bindCopyFeedback} from '../../lib/copyFeedback';
-    const guideContents = document.querySelector<HTMLDetailsElement>('.review-guide-toc');
-    if (guideContents) {
-      const narrowGuide = window.matchMedia('(max-width: 800px)');
-      guideContents.open = !narrowGuide.matches;
-      narrowGuide.addEventListener('change', event => { guideContents.open = !event.matches; });
-    }
     document.querySelectorAll<HTMLElement>('[data-copy-block]').forEach(block => {
       bindCopyFeedback(block.querySelector<HTMLButtonElement>('[data-copy-order]'),block.querySelector<HTMLElement>('pre'),block.querySelector<HTMLElement>('[role="status"]'),'Order notes copied.','Select and copy the order notes above.');
     });

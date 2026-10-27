@@ -1,0 +1,9 @@
+# Process gallery source record
+
+The local page at `/factory/process-gallery/` contains 30 distinct stills, each taken from a different supplied video. They are grouped by visible subject: equipment (7), can bodies and assembly (14), testing and packing (6), and dispatch (3). This grouping does not assert a complete production sequence for a specific capacitor model.
+
+Every selected frame was sent through the built-in ImageGen editing tool. We published 24 refined results as illustrative visuals and retained the source frame for six scenes where the edit changed a readable display, carton print, or shipping label. Nine of the 24 refinements were regenerated as 3:2 wide-scene illustrations where the portrait view hid the workshop context. The other portrait images now use taller page frames, and each image opens at its full dimensions. ImageGen results are not proof of an exact machine setting, product marking, specification, carton count, shipment, or handover. The newly visible surroundings in wide-scene illustrations are inferred rather than documented by the source video.
+
+The machine-readable [provenance manifest](process-gallery-20261026.json) records the source video, timestamp, selected variant, dimensions, and paths for each still. Source JPGs, first-pass ImageGen PNGs, and nine wide-scene PNGs are saved locally under `docs/image-generation-20261026/additional30/`; repository ignore rules keep these review originals out of Git. The 30 optimized public WebP files are under `public/images/process-gallery-20261026/`.
+
+The web images can be regenerated from the local originals with `python .qa/video-media-20261026/additional30/package.py`. That script reads the source and generated manifests, copies review originals, selects the published variant and writes the WebP images and provenance manifest. Source videos remain in `D:/Hangxing/原始素材/`.

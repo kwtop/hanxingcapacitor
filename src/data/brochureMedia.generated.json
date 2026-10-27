@@ -45,13 +45,13 @@
     "kind": "illustration"
   },
   "cbb60-leads": {
-    "src": "/images/brochure/20261022/cbb60-leads-1200.webp",
-    "width": 1200,
-    "height": 703,
-    "srcset": "/images/brochure/20261022/cbb60-leads-360.webp 360w, /images/brochure/20261022/cbb60-leads-720.webp 720w, /images/brochure/20261022/cbb60-leads-1200.webp 1200w, /images/brochure/20261022/cbb60-leads-1600.webp 1600w",
-    "alt": "Studio illustration based on the brochure: cylindrical CBB60 cases with insulated wire leads.",
+    "src": "/images/source-checked-20261026/cbb60-wire-samples.webp",
+    "width": 651,
+    "height": 382,
+    "srcset": "/images/source-checked-20261026/cbb60-wire-samples.webp 651w",
+    "alt": "Original catalogue photograph of cylindrical CBB60 samples with insulated wire leads.",
     "sourceId": "ZB-P05-001",
-    "kind": "illustration"
+    "kind": "original-photograph"
   },
   "capacitor-cores": {
     "src": "/images/brochure/20261022/capacitor-cores-1200.webp",

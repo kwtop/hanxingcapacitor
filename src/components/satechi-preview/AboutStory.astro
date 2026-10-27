@@ -2,6 +2,8 @@
 import BrochurePhoto from './BrochurePhoto.astro';
 import FactoryMedia from './FactoryMedia.astro';
 import InquiryCallout from '../InquiryCallout.astro';
+import WorkshopPhotoStory from '../sunday/WorkshopPhotoStory.astro';
+import { workshopStorySets } from '../../data/workshopPhotos';
 import { PUBLIC_BRAND_NAME, PUBLIC_BUSINESS_ADDRESS, PUBLIC_COMPANY_NAME, PUBLIC_EMAIL, PUBLIC_PHONE, WHATSAPP_URL } from '../../data/site';
 ---
 <article class="procurement-page zi-about">
@@ -10,7 +12,7 @@ import { PUBLIC_BRAND_NAME, PUBLIC_BUSINESS_ADDRESS, PUBLIC_COMPANY_NAME, PUBLIC
       <p class="breadcrumbs"><a href="/">Home</a> / About</p>
       <h1>About HAN XING</h1>
       <p class="procurement-lead">{PUBLIC_BRAND_NAME} supplies motor run and start capacitors for equipment manufacturers.</p>
-      <nav class="procurement-actions" aria-label="Company information"><a class="card-link" href="#supplier-records">Company details</a><a class="card-link" href="/contact/">Contact Hanxing</a></nav>
+      <nav class="procurement-actions" aria-label="Company information"><a class="card-link" href="/contact/">Contact Hanxing</a></nav>
     </div>
     <BrochurePhoto name="factory-exterior" eager sizes="(max-width: 800px) calc(100vw - 32px), (min-width: 1480px) 780px, 57vw" />
   </section>
@@ -44,5 +46,6 @@ import { PUBLIC_BRAND_NAME, PUBLIC_BUSINESS_ADDRESS, PUBLIC_COMPANY_NAME, PUBLIC
     </div>
   </section>
 
+  <WorkshopPhotoStory id="visit-photos" eyebrow="Visits and samples" title="From the sample table into the workshop" intro="Supplied photographs show discussions around components and a walk through the production area." photos={workshopStorySets.about} />
   <InquiryCallout><nav aria-label="Product records"><a class="card-link" href="/factory/#model-records">Documents for your model</a><a class="card-link" href="/products/">Explore the capacitor series</a></nav></InquiryCallout>
 </article>

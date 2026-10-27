@@ -39,12 +39,17 @@ import brochurePreviewCss from '../styles/satechi-brochure.css?url';
 import interactionCss from '../styles/interaction-states.css?url';
 import { isSatechiPreview } from '../lib/visualPreview';
 import Footer from '../components/Footer.astro';
+import SundayHeader from '../components/sunday/SundayHeader.astro';
+import SundayFooter from '../components/sunday/SundayFooter.astro';
+import sundayCss from '../styles/sunday-home.css?url';
+import sundayInnerCss from '../styles/sunday-inner.css?url';
 import { SITE_NAME } from '../data/site';
 import { publicSiteReady } from '../lib/publicSite';
 import { pageBreadcrumbs } from '../lib/pageBreadcrumbs';
 import { pageSeo } from '../lib/pageSeo';
-interface Props { title: string; description: string; noindex?: boolean; }
-const { title, description, noindex = false } = Astro.props;
+interface Props { title: string; description: string; noindex?: boolean; homeDesign?: boolean; }
+const { title, description, noindex = false, homeDesign = false } = Astro.props;
+const sundayTheme = !/^\/(previews|visual-directions|typography-preview|interaction-preview)/.test(Astro.url.pathname);
 const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
 const previewOnly = !publicSiteReady(Astro.site);
 const breadcrumbs = noindex ? null : pageBreadcrumbs(Astro.url.pathname, title, canonical);
@@ -79,12 +84,13 @@ const seo = pageSeo(Astro.url.pathname, fullTitle, description, canonical);
     <slot name="head" />
     {isSatechiPreview && <><link rel="stylesheet" href={fidelityCss} /><link rel="stylesheet" href={sitePreviewCss} /><link rel="stylesheet" href={innerPreviewCss} /><link rel="stylesheet" href={mediaPreviewCss} /><link rel="stylesheet" href={linkNavigationCss} /><link rel="stylesheet" href={footerPreviewCss} /><link rel="stylesheet" href={typographyPreviewCss} /><link rel="stylesheet" href={coherencePreviewCss} /><link rel="stylesheet" href={oemImageryCss} /><link rel="stylesheet" href={rhythmPreviewCss} /><link rel="stylesheet" href={brochurePreviewCss} /></>}
     <link rel="stylesheet" href={interactionCss} />
+    {sundayTheme && <><link rel="preload" href="/fonts/sunday/jakarta-latin.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/fonts/sunday/geist-latin.woff2" as="font" type="font/woff2" crossorigin /><link rel="stylesheet" href={sundayCss} />{!homeDesign && <link rel="stylesheet" href={sundayInnerCss} />}</>}
   </head>
-  <body class:list={[isSatechiPreview ? 'satechi-preview satechi-site' : 'porcelain-site reference-site', {'is-home': isSatechiPreview && Astro.url.pathname === '/', 'has-collection-cover':isSatechiPreview && ['/products/','/applications/'].includes(Astro.url.pathname)}]}>
+  <body class:list={[homeDesign ? 'sunday-home sunday-site' : (isSatechiPreview ? 'satechi-preview satechi-site' : 'porcelain-site reference-site') + (sundayTheme ? ' sunday-site sunday-inner' : ''), {'is-home': isSatechiPreview && Astro.url.pathname === '/', 'has-collection-cover':isSatechiPreview && ['/products/','/applications/'].includes(Astro.url.pathname)}]}>
     <a class="visually-hidden" href="#main">Skip to content</a>
-    {isSatechiPreview ? <PreviewHeader /> : <Header />}
+    {sundayTheme ? <SundayHeader /> : isSatechiPreview ? <PreviewHeader /> : <Header />}
     <main id="main" tabindex="-1"><slot /></main>
-    <Footer />
+    {sundayTheme ? <SundayFooter /> : <Footer />}
     <script>
       import {initSiteImageFeedback} from '../lib/siteImageFeedback';
       import {initSiteTracking} from '../lib/siteTracking';

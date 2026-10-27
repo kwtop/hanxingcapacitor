@@ -1,0 +1,11 @@
+---
+import SiteImage from '../satechi-preview/SiteImage.astro';
+interface Props {title: string; description: string; image: string; alt: string; trail?: string; dark?: boolean; compact?: boolean; showImage?: boolean; titleId?: string;}
+const {title,description,image,alt,trail=title,dark=false,compact=false,showImage=true,titleId='inner-title'} = Astro.props;
+---
+<section class:list={['su-inner-hero', {'su-inner-hero--dark': dark, 'su-inner-hero--collection': compact, 'su-inner-hero--text': !showImage}]} aria-labelledby={titleId}>
+  <div class="su-shell su-inner-hero-grid">
+    <div class="su-inner-hero-copy"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span>{trail}</span></nav><h1 id={titleId}>{title}</h1><p class="su-inner-lead">{description}</p><slot /></div>
+    {showImage && <figure><SiteImage src={image} alt={alt} eager sizes="(max-width: 800px) calc(100vw - 48px), 55vw" /></figure>}
+  </div>
+</section>

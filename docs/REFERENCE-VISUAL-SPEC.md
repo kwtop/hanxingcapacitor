@@ -1,192 +1,138 @@
-# Satechi 首页视觉复刻规格
+# Team Sunday → HAN XING homepage visual specification
 
-参考：[https://satechi.com/](https://satechi.com/)。首页实测日期：2026-10-18；内页补充实测：2026-10-19。目标项目：HAN XING / Astro。本地整站预览为 `http://127.0.0.1:4340/`，通过 `npm run dev:visual` 启动。旧的 `/previews/satechi-home/` 入口在开发环境中跳转到这一整站预览，避免内页回到原版。原站 `4335` 和生产构建保持原有设计，不部署。
+Reference: https://teamsunday.com/ · inspected 2026-10-25. Scope: the Hanxing homepage only. Existing navigation labels, destinations, product facts, contact handling and tracking remain authoritative. Initial reference: `D:/jinyi/design-reference/DESIGN.md`, cross-checked against the live page. The prior Satechi site rules continue to apply to other routes.
 
-本规格以根目录 `D:/Hangxing/DESIGN.md` 为初始参考，以本次浏览器实测修正。`workspace/DESIGN.md` 中的事实、原始证据、技术参数、URL 与询盘约束继续生效；该文件的旧视觉值不用于本次独立预览。
+## Evidence and measurement conditions
 
-证据级别：**实测**为浏览器 DOM / Computed Styles / CDP 字体信息；**声明值**为原站 CSS；**转译**为保留目标业务所作的实施选择；**估计**不作精确实测使用。原始数据、四个视口截图及截图条件在 [satechi-fidelity-20261018/reference](satechi-fidelity-20261018/reference/)。没有用像素差异推导所谓还原度百分比。
+Real Chromium browser, CSS pixels, DPR 1, four viewports: 1440×900, 1024×768, 768×1024 and 390×844. Full-page screenshots and computed-style/geometry captures are in `sunday-home-20261025/reference/`. Baseline Hanxing captures are in `before/`. Fonts were awaited and the full document scrolled before capture. Seasonal modal and cookie overlay were dismissed; the seasonal announcement remains in the reference. Hero artwork rotates, so the brand depicted differs between captures. It is not a geometry difference.
 
-## 1. 完整模块结构与内容映射
+The reference's Vimeo embeds do not render playable content in this environment. Their 720px container, overlays and text are observable; video content and playback are unverified. The reference gallery reserves nine desktop tiles, but some were blank at the initial capture; later DOM inspection confirmed nine image resources. We will not reproduce unloaded content or invent testimonials.
 
-| 顺序 | Satechi 视觉角色 | HAN XING 内容 | 保留的设计规律 |
-|---|---|---|---|
-| 0 | 公告条 + 悬浮导航 | 询价所需资料；当前六个一级菜单及全部子导航 | 墨色窄条、白色 10px 圆角悬浮导航；滚动后距顶部20px |
-| 1 | 四画面整幅摄影轮播 | 四系列总览、CBB65、CBB60、CBB61 | 840px 首屏；桌面左下文案、手机上方居中；四段进度控制 |
-| 2 | 媒体标志轨道 | 四系列代码及有效产品链接 | 100px 高低密度过渡；不复制媒体标志或声称媒体背书 |
-| 3 | 四类入口 | 四个真实电容系列 | 方形场景图、居中系列名及短说明；桌面四列，小屏横轨（768卡宽658px，390卡宽280px） |
-| 4 | 第一幅整幅产品摄影 | 原标签、µF / VAC 与选型检查 | 无圆角的全宽摄影，左下标题、短正文、单一CTA |
-| 5 | 第一组商品轨道 | 系列规格 / 原始样品照片 | 下划线标签、325px卡片、10px间距；保留所有系列范围与限制 |
-| 6 | 第二幅整幅产品摄影 | 外形尺寸、端子与安装适配 | 同样的全宽比例；以不同摄影色调形成节奏 |
-| 7 | 第二组商品轨道 | 技术指南 / 采购与发运 | 同一货架语法，文章图与准确标题、摘要；不伪造商品价格或评分 |
-| 8 | 大图 + 宽图 + 两张方图 | 水泵、HVAC、风机、洗衣机 | 不对称场景拼版；手机一张主图 + 三张横向场景卡 |
-| 9 | 白色摄影 / 会员图文板 | 原有型号选择与询盘 | 左方形摄影、右短文及表单；保留默认 CBB60、GET 参数和联系页 |
-| 10 | 品牌短文 | Samples & production | 居中短标题与一段可核实说明 |
-| 11 | 两张故事摄影 | 原始生产录像静帧 / 原始样品照片 | 两幅横图与真实资料链接；不生成企业证据 |
-| 12 | 四项服务说明 | 技术指南、采购发运、原始照片、Email / WhatsApp | 桌面四列紧凑信息；手机纵排；不照搬保修、退货、免运费承诺 |
-| 13 | 深色页脚 | 当前公司、联系方式、导航与法律入口 | 左联系信息、右四组导航；手机折叠栏目 |
+## 1. Complete reference structure and business mapping
 
-以上复用参考的模块顺序与视觉职责。由于目标是B2B网站，零售订阅、购物车、价格、折扣、会员奖励、媒体和保修信息均不作为本企业事实使用。
+| Order | Reference visual role | Hanxing mapping |
+|---|---|---|
+| 1 | Seasonal announcement, 56px desktop / 44px mobile | Omitted: no matching promotion; previously removed by user |
+| 2 | Floating translucent pill navigation | Existing Hanxing menu content, same URLs and inquiry CTA |
+| 3 | Bold two-line heading, form left; large isolated merch group right | Motor capacitor family; series selector linking into existing inquiry form |
+| 4 | Unequal-height photo rail | Four capacitor series; genuine series ranges and detail links |
+| 5 | Split introduction; four asymmetric gray feature tiles | Connections, terminal fit, packing and label selection |
+| 6 | Centered title and three-column square photo wall | Equipment applications and product details, not customer endorsements |
+| 7 | Split introduction and four-step image sequence | Inquiry, sample approval, order confirmation, packing |
+| 8 | 720px edge-to-edge video with dark overlay and rounded white edges | Original supplied production image and production link |
+| 9 | Split introduction; accordion left / media right | Existing technical and buying guides; image changes with topic |
+| 10 | Image/story beside vertical metric rows | Actual company image and four named series / run-start distinction; no invented commercial metrics |
+| 11 | Repeated hero CTA, overlapping footer by 60px | Existing model-aware inquiry path; Email and WhatsApp remain contact actions |
+| 12 | Dark footer, grouped links and fine separator | Existing footer links and contact details |
 
-## 2. 布局测量与容器
+## 2. Layout and measured geometry
 
-- **实测**：桌面 Hero 块高840px。1024×768 下首屏仍为840px，不能按视口高度缩到一屏。
-- **实测**：手机/平板首屏块高840px，内部图片/幻灯片约800px，末尾有约40px承托区域。手机单独取图。
-- **实测**：1440窗口下正文实际宽约1424.67px，差值来自浏览器滚动条；几何比较必须同时记录 `innerWidth` 和元素外框，不能把15px差值误作布局偏移。
-- **实测**：导航外边距20px，高72px；390px下高63px。导航标志图形盒为150×45px（桌面），并非可见字形墨迹大小。当前 HAN XING 标志保留自身比例。
-- **实测**：主内容边距：1440时60px，1024时40px，768时25px，390时16px。货架另用桌面40px / 小屏10px，不与其他模块强行共用边距。
-- **实测＋既有验证**：宽屏主要内容在约1360px处收束；本次四个指定视口不单独证明更宽窗口的最大值。1360px沿用初始DESIGN中1920px的验证结果。
-- **实测**：桌面首屏文字容器占33.3%宽，内距上60 / 右0 / 下96 / 左96；按钮外层另有约30px下距。因此 CTA 底部距摄影底约126px。1440首张标题x=96、y≈545.21；1024仍x=96但因标题多一行，y≈474.81。
-- **实测**：桌面首张 H1 40/48，1440为两行，1024为三行。390首张 H1 28/33.6，两行，文档y≈149.60；正文在其下，CTA约41px高。
-- **实测**：分类入口图片正方形，桌面卡间距约36px；外容器再有10px轨道内距。分类标题距模块顶约60px，标题到图片约60px。
-- **实测**：商品卡固定325px，间距10px。桌面内距20px、圆角20px；小屏内距10px、圆角10px。卡体不抬升、不加投影。
-- **实测**：场景拼版桌面外侧60px，标题28/33.6；图片上方约50px空隙。1440主图约642.32×673.17，右上约642.33×340，右下两张约309.17方形，纵向间距24px、左右主列间距20px。1024右上仍340px高，右下约215.17方形，左图随右列总高变化。
-- **实测**：手机拼版主图358×358，下面图片为300×300横轨。768主图718×718；该宽度下次级图片组在本次原站渲染中未显示，保留为参考站异常，目标预览仍提供全部应用入口。
-- **实测**：白色图文板在1440内图约574.41方形，摄影左距外容器约40px；图文间距约70px。该模块完整加载后高约734px，初始未加载状态的434px不是最终值。手机摄影约318方形，白板内距20px。
-- **实测**：故事图桌面高340px，两列、间距20px；手机改上下两张约240px高。原站图片自身/父级圆角需共同检查。
-- **实测**：页脚约595.51px高（1440和1024）；768约883px、390约950px。目标联系信息替代订阅，允许因真实文字长度产生高度差。
+Measurements below are actual DOM values unless identified as implementation choices.
 
-详细模块坐标/高度表由同目录 `reference/*.json` 汇总，见文末数据表。
-
-## 3. 字体规格
-
-原站通过两个 Adobe Typekit 样式表加载 `urbane, sans-serif` 和 `usual, sans-serif`。CDP `CSS.getPlatformFontsForNode` 实际确认首页首张标题使用 **Urbane-Medium**。不下载或分发原站商业字体。
-
-转译字体：本地 OFL 授权 **Manrope Variable** 用于标题、分类和产品名称；已安装的 **Inter Variable** 用于正文、导航、按钮及表单。Manrope 的部分字形和字宽与 Urbane 不同，Inter 的笔画及词宽与 Usual 不同；通过字号、字重、行距、容器宽和明确换行校准，不能宣称字体完全相同。
-
-| 角色 | 原站 family | Desktop | Mobile | weight / tracking |
+| Element | 1440 | 1024 | 768 | 390 |
 |---|---|---|---|---|
-| 首张H1 | Urbane | 40px / 48px | 28px / 33.6px | 500；normal |
-| 模块标题 | Urbane | 28px / 33.6px | 22px / 24.2px | 500；normal |
-| 分类名 | Urbane | 18px / 22.4px | 约16px，依分类组件 | 500 |
-| 商品名称 | Urbane | 16px / 19.2px | 14px / 16.8px | 500 |
-| 主正文 | Usual | 16px / 22.4px | 16px / 19.2px | 400 |
-| 分类简介 | Usual | 14px / 19.6px | 14px / 19.6px | 400 |
-| 图文板正文 | Usual | 15px / 18px | 15px / 18px | 400 |
-| 主导航 | Usual | 17px / 22.4px | 菜单展开项，保持可读 | 600；原声明4%字距不直接换算成已实测px |
-| 按钮 | Usual | 15px / 12px，44px高 | 14px，约41px高 | 600；0.56–0.6px；uppercase |
-| 四项说明标题 | Usual | 14px / 18.2px | 同字号 | 600 |
-| 四项说明正文 | Urbane | 13px / 18.2px | 同字号 | 500 |
+| Main content width | 1372 | 976 | 720 | 342 |
+| Main left edge | 34 | 24 | 24 | 24 |
+| Header panel | 1392×72 | 976×72 | 720×72 | 342×56 |
+| Header top with seasonal bar | 66 | 64 | 64 | 52 |
+| Hero minimum height | 900 | 768 | 1024 | 844 |
+| Hero actual height | 900 | 768 | 1162 | 855 |
+| Isolated hero artwork | 780×780 | 780×780 | 768×512 | 390×260 |
+| Hero heading | 54/55.62 | 54/55.62 | 40/41.2 | 30/31.5 |
 
-H1/H2不是全站大写。主导航、CTA及部分有明确职责的摄影小标题才使用大写。不得把商业字体候选列表当作已确认加载结果，也不把截图中的字形框当作CSS文本外框。
+Content shell: `max-width:1420px; padding-inline:24px; margin-inline:auto`. Header gutter 24px; radius40px. On Hanxing the header begins at 10px/8px because there is no seasonal bar; hero still starts at document top. Preserve the 56/44px offset difference in comparison notes, not as unexplained drift.
 
-## 4. 色彩令牌
+Desktop section sequence and measured heights: hero900; stories630; feature section1240; gallery1767; process880; full-width media720; logistics1062; statistics770; closingCTA580; footer~872. Photography and business copy differ, so heights are targets, not forced empty space. Gallery image grid is 1372×1372 at desktop, three columns ~446.7px with16px gaps.
 
-| Token | 真实值 | 作用 |
-|---|---|---|
-| `--sp-canvas` | `#F9F7F3` | 货架、分类和主要承托面 |
-| White | `#FFFFFF` | 导航、商品卡、图文板 |
-| `--sp-ink` | `#1B1C21` | 主文、主按钮、公告条、页脚 |
-| Light | `#FCFCFA` | 浅色按钮与反转态 |
-| `--sp-accent` | `#DA5A2A` | 小面积摄影提示、焦点 |
-| `--sp-muted` | `#6D6D6D` | 未选中的轨道标签 |
-| `--sp-line` | `#D3D4D5` | 有功能的边框和分隔线 |
-| Sand | `#EDE6E0` | 支持色，不能铺到所有模块 |
+Feature grid: upper row1.4:1,516px high; lower row.66:1,352px high;32px row/column gap. Below870px it becomes a horizontal rail,420px-tall cards and24px gaps. Process cards form four columns at desktop, horizontal scrolling below1240px. Customer rail uses280–320px widths and420–490px heights with32px gaps, bottom alignment. These distinctions must remain visible.
 
-摄影中的蓝、木色和灰色属于素材，不做全局强调色。首张 Hero 未测得必须增加的全局暗罩。按钮默认 ink/light，hover 反转 light/ink，200ms；DevTools强制伪类初始过渡中出现的中间灰色不是新色彩token。原站没有单独证明不同的active配色，不自行编造。
+## 3. Typography
 
-导航阴影仅 `0 2px 4px rgba(0,0,0,.15)`，不使用模糊玻璃。平面内容卡无阴影。故事和拼版的白字如需要遮罩，只允许为可读性采用参考已存在的图片底部处理；不添加装饰渐变、发光或漂浮元素。
+Actual reference heading/nav family: `Plus Jakarta Sans, Plus Jakarta Sans Fallback`; body/actions: `Geist, Geist Fallback`. Both are open-source OFL fonts. Hanxing uses the same families, self-hosted Latin variable WOFF2 files from Google Fonts, with licenses saved in `public/fonts/sunday/`. Fallback: Arial, sans-serif. No font imitation is necessary.
 
-## 5. 间距与网格令牌
+| Role | Family / weight | Desktop size / line / tracking | Responsive |
+|---|---|---|---|
+| H1 | Jakarta800 | 54 /55.62 /−1.3px | 40/41.2 tablet;30/31.5/−1px mobile |
+| H2 | Jakarta700 | 48 /48 /−2.4px | 36px below1080;30px below768 |
+| Center gallery H2 | Jakarta800 | 44 /48.4 /−1.2px | 36/39.6;30/33 |
+| Feature H3 | Jakarta700 | 28 /35 /−.7px | 22/27.5 in narrow cards |
+| Step H3 | Jakarta600 | 22 /27.5 /−.55px | same unless wrapping needs more height |
+| Hero body | Geist500 | 19 /30.875; max470px | 17/27.625 mobile |
+| Body | Geist400 | 16 /24 | same |
+| Nav | Jakarta700 | 16 /24 | keep readable; collapse before overlap |
+| CTA | Geist500 | 16 /24 | 14/20 mobile |
+| Field label | Geist600 | 12 /18 | same |
 
-- 工作基准4px；原站常见6 / 10 / 12 / 16 / 20 / 24 / 30 / 36 / 40 / 50 / 56 / 60 / 70 / 72 / 80 / 96px。
-- `--sp-gutter`：60 → 40 → 25 → 16px，依1440 / 1024 / 768 / 390视口。
-- `--sp-rail-gutter`：40px桌面，10px小屏；固定卡宽325px / gap10px。
-- 第一商品轨道 padding-top72 / bottom56；手机60 / 60。第二轨道遵循相同骨架，但因标签和内容差异不硬凑相同总高。
-- 分类与拼版标题上方60px；标题到分类图60px，到拼版图50px。白色图文板与后面的品牌短文之间保留约80px。
-- radius：导航10px；桌面商品/分类/场景20px；首页手机轨道10px；CTA80px。
-- 不给所有section套同一个上下padding。整幅影像贴边、轨道局部内距、阅读区受控宽度、拼版分层构成同一页的疏密关系。
+Headings use sentence case. Preserve meaningful line breaks. Do not add terminal full stops to titles. Gallery and mobile section introductions center; desktop split introductions and technical text align left. One H1 only; closing CTA uses H2 even though the source repeats H1.
 
-## 6. 图片规格与 ImageGen 构图
+## 4. Color tokens
 
-先定图位，再生图。所有新图都是展示/概念素材；原始样品、生产静帧、公司信息不替换。每张新图保留输入、完整提示词、输出与最终WebP记录。
+```css
+--su-purple:#7c35ff;
+--su-ink:#0e0e10;
+--su-body:#686c6f;
+--su-white:#fff;
+--su-veil:#fafafa;
+--su-surface:#f0f1f3;
+--su-border:#e4e5e7;
+--su-border-hover:#c8c9cb;
+--su-lilac:#e8e2ff;
+```
 
-| 图片位 | 画幅/图位 | 构图与真实性 |
-|---|---|---|
-| Hero桌面 | 1440×840视觉区 | 产品/器件承担右侧与中下部重心；左下x96起约380px文案区保持低细节；柔和日光、木色与低饱和蓝；不生成工厂场景或工作人员 |
-| Hero手机 | 390×800摄影区 | 上部约100–300px供标题正文CTA；产品组在下半，完整端子和引线，左右留裁切余量；单独生成，不强裁桌面图 |
-| 分类四图 | 方形，约294–300px显示 | 从现有样品照片约束产品结构；统一柔光，四幅有不同但协调的材料/色调；按用户后续要求保留原有韩兴标志、型号和完整可见标签，不新增原样品没有的标志或数值 |
-| 两幅整幅摄影桌面 | 源约1440:586；显示高随宽度 | 主体右侧，左下文案安全区；第一幅偏冷中性、第二幅偏暖；不在主体上加正文 |
-| 两幅整幅摄影手机 | 390×700图位 | 上方文字安全区，下面完整产品；各有手机版本 |
-| 第一轨道 | 方形白底商品图 | 沿用现有四张样品衍生图；原始照片标签仍在原产品/样品页核验 |
-| 技术轨道 | 方形图片 | 标签、尺寸、连接、run/start示意；生成图不作为实际参数或图纸证据 |
-| 场景拼版 | 左约1:1.05、右上约1.9:1、两张1:1 | 通用水泵、空调、风机、洗衣机；完整设备、自然光、不含客户安装或交付语境 |
-| 询盘白板 | 方形 | 四系列产品在简洁浅色基座上，和表单保持主次；概念展示 |
-| 两张证据图 | 340px高桌面 / 240px手机 | 沿用真实 film-rolls.jpg 与 batch-products.jpg，不进行生成替换 |
+Reference secondary accents: #3ABEFF blue, #2EE6A9 green, #FFD84D review yellow. They do not imply a need for Hanxing rating stars. Header fill is white60% with16px backdrop blur. Footer background#0E0E10, separators white10%. Hero veil: elliptical radial gradient centered27%50%,46%62% size, #FAFAFA opaque to32%,55%alpha at60%,transparent100%. This is reference-measured, not a new decorative effect. Closing CTA has #F5F5F5→#EBEBEB background.
 
-图片用WebP、明确width/height、首图高优先级、后续懒加载。首张桌面优先目标约100–200KB，手机约60–150KB，此为优化目标而非实测结果。实际字节、完整提示词和原图关联保存在 `satechi-fidelity-20261018/IMAGE-RECORD.json`。不引入远程图片依赖。
+## 5. Spacing and grids
 
-用户中途明确要求生成图保留原产品的韩兴标志和标签内容。因此首批仅有型号的12张候选全部弃用；最终15张产品展示图重新生成/编辑（含笔记本、平板的补充构图），原有品牌、型号及标签按原样品保留。CBB61和CD60对应原照片未印韩兴字样，不额外加上；原照片已有的标记保留，不据此推导企业认证状态。另有4张全新通用应用场景，共19张新素材。产品印字仍属于展示衍生图；选型和核对以原照片、页面参数和具体型号图纸为准。
+Tokens:4,8,12,16,24,32,40,48,56,64,80,96,120px. Standard desktop section top120; gallery96; mobile64. Intro-to-bento/process80, intro-to-accordion56, statistics media64. Feature card radius22, image wall16–24, input/button fully round. Body line lengths about470–580px. Header center navigation keeps a separate brand/action zone.
 
-## 7. 导航与按钮交互
+## 6. Image roles and composition
 
-- 保留 Home、Products、Applications、OEM & quality、Resources、About 及当前全部子项与URL；保留 Start an inquiry。
-- 原站桌面导航于1021px开始展示；目标在1024px需容纳更多业务文字，因此允许压缩菜单间距/字号，不能删导航或裁掉CTA。此为明确转译差异。
-- 白色悬浮导航的深度、边距和高度按实测。桌面下拉保留原业务分组的白色菜单；父项仍直接进入原总览URL。键盘ArrowDown打开、Escape关闭，焦点可见。没有为了仿造零售菜单引入额外宣传入口。
-- 手机显示品牌、Contact和菜单；原有子项可展开，父项可直接点击。菜单有最大高度和内部滚动，不能挡住关闭操作。
-- Hero保留四个可操作画面，首次固定第一张，优先手动操作；不新增影响阅读的强制轮播。参考站自动播放8秒是已观察行为，目标关闭自动播放是为B2B阅读作的有意差异。
-- 两组轨道标签使用下划线选中态，支持键盘切换，左右轨道控制必须真实滚动且有可用状态；小屏仍可横向浏览。
-- 询盘继续使用现有GET交接：默认CBB60；选择CBB65应进入 `/contact/?series=CBB65&request=quote#inquiry-form`。不声称发出消息、上传附件或提交后端。
+Hero: isolated family on transparent alpha, displayed with `object-fit:contain`; right-side780px image desktop; narrower landscape composition or contained image below copy on mobile. Every product retains leads and terminals; no copy baked into the image. New ImageGen family uses existing Hanxing samples, original model/brand labels, no added certification.
 
-## 8. 响应式规则与参考异常
+Rail: full product / product plus setting, alternating heights with consistent bottom labels. Bento: lower-right product groups with negative space for HTML headings; one macro detail is deliberately cropped, while whole product presentations retain complete edges. Gallery: square application and detail photographs,9 desktop entries;4 initially on mobile with an explicit expansion button. Production: original source image in full-width720px frame; image cover with a40% dark overlay for white text. Company story: original brochure factory exterior. New generated assets remain product illustrations in alt text and provenance logs.
 
-| 视口 | 参考规律 | 目标处理 |
-|---|---|---|
-| 1440×900 | 完整导航；Hero840；四类；325px货架；桌面拼版 | 使用同一尺寸和留白体系 |
-| 1024×768 | 完整导航仍在；Hero840；标题变三行；分类四列；轨道露下一项 | 压缩业务菜单，保持父/子链接；正文仍可读 |
-| 768×1024 | 汉堡导航72；分类658px宽卡横轨；货架横轨；白板上下叠放 | 保留所有内容和入口，源站异常不复制；首屏有独立平板构图 |
-| 390×844 | 汉堡63；Hero内部800；分类横轨；全宽摄影700；主场景+次级横轨；白板上下；Footer折叠 | 独立竖幅图片，所有设备关键结构完整，无整页溢出 |
+## 7. Navigation and interactions
 
-**本次参考异常（实测）**：精确768px下，首张幻灯片可见但标题/正文没有渲染，次级拼版内容也未显示。390和1024均存在相应内容。目标保留文字和应用入口，不复刻信息丢失。第三方Cookie/订阅/聊天/优惠浮层不属于品牌核心设计，关闭可关闭弹窗，截图中剩余第三方浮标不向目标迁移。
+Primary CTA:48px pill; padding-left24/right6; gap12; internal39px translucent circular arrow. Mobile40px pill/internal31px circle. Purple hover at90% opacity, arrow rotates45deg over300ms. Source shadow `0 8px 20px -8px rgba(124,53,255,.45)` plus subtle inset white; no unrelated cards/shadows.
 
-## 9. 上版预览与参考的主要差异 / 本轮改正方向
+Input/selector group: max500px; white rounded enclosure; padding6px; border#E4E5E7; shallow reference shadow. This is a GET transition to `/contact/?series=...&request=quote#inquiry-form`, not a fake successful inquiry.
 
-1. 上版Hero约763px且文字居左中；参考840px、文案左下。恢复摄影高度与文字坐标。
-2. 上版只有一组四卡和应用拼版，缺少摄影横幅与双轨道节奏。恢复对应视觉角色，不填充虚假零售信息。
-3. 上版全站仅Inter且字距偏紧；改为Manrope/Inter分工，按实测40/28/22和500字重校准。
-4. 上版卡片宽度随列收缩；商品轨道应固定325px，分类和轨道不能混用同一网格。
-5. 上版应用拼版高度和宽图处理偏离参考；按340px宽图、24px纵距和手机300px横轨重做。
-6. 上版选型图文板代替了多个角色；本轮分别承担横幅、技术轨道和询盘白板，不重复堆机械左右图文。
-7. 上版Footer为品牌一整行、联系靠右；本轮在同一真实数据下转为左联系、右四列的参考分工。
-8. 参考商业字体和目标的B2B内容不同是明确剩余差异；不以假文案、极小字或缩短内容强行消除。
+Desktop Resources hover was observed open; mobile Open menu and Escape tested. Expanded accordion includes plus rotation and purple active circle. Preserve keyboard/focus support, aria-expanded, inert closed panels and reduced-motion behavior. Current Hanxing menus retain all original entries.
 
-## 10. 截图对比与纠偏要求
+## 8. Responsive rules
 
-四个视口都用同一浏览器、DPR≈1、CSS像素、JPEG90%、滚动回顶部后采集完整页面。参考轮播通过有限虚拟时间预算固定，再暂停计时；不以不同时刻轮播画面作像素一致性比较。GIF/第三方浮层与不同产品内容单独标记。侧对比保持原始宽度，不拉伸整页去对齐高度；关键区域可做半透明叠加辅助比较。
+- 1280+: hero copy allowance1100px; narrower desktop900px; prevent text/art overlap by veil and controlled text width.
+- 1170: desktop navigation becomes mobile navigation. Hanxing has six groups rather than four, so actual fitting is checked at1440/1024.
+- 1080: introductions stack and center; H2 becomes36px.
+- Below1024: hero illustration goes below copy; mobile/tablet artwork retains full product outlines.
+- 870: asymmetric feature grid becomes swipeable horizontal rail.
+- 820: company story stacks, with compact facts before image.
+- 768: header56px, H1=30, H2=30, section64px. Left/right gutter24px.
+- No page-wide horizontal overflow. Rails alone scroll, with accessible labels and focusable links.
 
-至少执行三轮：结构/位置 → 图片/裁切 → 字体/留白/交互。每轮保存四张候选截图、DOM几何和真实问题/修改记录。最终检查导航、型号传递、链接、noindex、生产构建预览404保护、Astro check/build及原首页/共享源文件哈希。
+## 9. Baseline differences and acceptance
+
+The current Hanxing page uses Manrope/Inter-like lighter headings, a full-bleed photographic hero, repeated centered series cards, warm surfaces and a short resource block. Sunday uses much heavier/tighter typography, isolated transparent objects, image rails, cool gray asymmetric panels, long alternating visual rhythms and purple actions.
+
+Acceptance is by four actual browser screenshots per round, measured container/header/hero geometry, no overflow, correct photo boundaries and readable heading wraps. At least three rounds are retained. Different copy, industrial objects, navigation length, absent seasonal bar, no customer claims, and unavailable reference video prevent pixel identity and are explicitly recorded. No numerical “fidelity percentage” is asserted.
+
+## Public-page industrial extension, 2026-10-25
+
+The latest authorized scope extends the homepage system to public inner pages. Shared fonts, navigation, footer and purple actions remain. Inner pages add steel #EDF0F3 and graphite #1D252F, with source-bound product presentations and industrial equipment. The shell remains1420px including24px side padding.
+
+Inner H1 uses54px/1.04/800 and H2 uses40px/1.1/700, reducing for long technical titles at tablet and phone widths. These are implementation choices for Hanxing content, not measurements of uninspected Sunday inner pages. Product galleries and technical records remain; procurement uses steps and ruled information; articles keep a reading column and table of contents. This extension supersedes the earlier homepage-only visual boundary below, while retaining the business and backend constraints.
+
+Implementation: `src/styles/sunday-inner.css`. Evidence and image provenance: `sunday-site-20261025/REVIEW.md` and `ASSETS.md`.
+
+## Initial implementation boundary
+
+Only `/` gets the new design. Other routes, product specifications, menus, the real contact form, D1 persistence and admin backend remain intact. No Cloudflare or GitHub deployment is part of this task. Original assets are retained. Current work and provenance: `sunday-home-20261025/`.
 
 
-## 附录：模块高度实测表（px）
+## Final measured implementation
 
-| 模块 | 1440 | 1024 | 768 | 390 |
-|---|---:|---:|---:|---:|
-| image_slideshow | 840.00 | 840.00 | 840.00 | 840.00 |
-| logo_carousel | 100.00 | 100.00 | 100.00 | 100.00 |
-| collection_list | 705.75 | 656.54 | 961.41 | 626.59 |
-| section_RE7Aaw | 580.54 | 411.03 | 312.75 | 700.38 |
-| tabbed_collection_SAT277 | 756.79 | 756.79 | 703.60 | 708.40 |
-| image_banner | 580.54 | 411.03 | 312.75 | 700.38 |
-| tabbed_collection_kGApQ4 | 688.79 | 688.79 | 703.60 | 708.40 |
-| collage | 896.77 | 802.77 | 832.20 | 816.40 |
-| image_with_text | 734.41 | 546.00 | 1056.41 | 754.00 |
-| rich_text | 102.00 | 102.00 | 107.00 | 123.80 |
-| multicolumns | 420.00 | 420.00 | 760.00 | 560.00 |
-| icons_with_text_PYngVP | 122.40 | 116.99 | 258.75 | 258.75 |
-| Footer | 595.51 | 595.51 | 883.01 | 950.13 |
+The four H1 font sizes, line heights, weights and letter spacing match the reference values above. Header navigation uses15px rather than16px because Hanxing retains six groups. All four viewport scroll widths equal their viewport widths. At1024, the artwork is reduced to650px and the hero is768px tall; full product edges take precedence over copying the source's780px artwork width.
 
-## 2026-10-19 · 内页实测与整站转译
+Completed initial capture plus three correction passes: `round-1` → `round-2` → `round-3` → `final`. Final image decoding was checked; offscreen horizontal lazy images are not treated as broken requests. Reference screenshots were refreshed after images loaded. Geometry, remaining differences and actual functional checks are in `sunday-home-20261025/REVIEW.md` and `final/metrics-comparison.json`. `comparison.html` presents the full pages and matched-viewport hero overlays.
 
-补充观察：[全部产品](https://satechi.com/collections/all)、[CubeDock 产品页](https://satechi.com/products/thunderbolt-5-cubedock-with-ssd-enclosure)、[News](https://satechi.com/blogs/news)。原始测量与截图保存在 `satechi-inner-refinement-20261019/reference/`。
-
-| 参考结构 | 实测 | 本地实现及明确差异 |
-|---|---|---|
-| 产品分类页摄影横幅 | 1440 视口实际正文宽约 1424.67；横幅高 320.35；墨色遮罩，白色标题在左下 | 应用分类高320px；产品分类采用430px，以容纳完整四系列产品及悬浮导航。本项为适配，不声称等高还原 |
-| 分类页面包屑与结果区 | 横幅后约72.80px；左右60px；再进入胶囊筛选与四列白色商品陈列 | 保留真实 Run / Start 筛选、四系列参数及样品入口；不复制零售价格、评分、折扣或虚构标签 |
-| 产品详情首屏 | 图片左侧，右侧H1 40/48px，正文16px；参考标题右栏宽约506px；宽屏图库约占55% | 保留原型图库、全部原始缩略图，补充真实用途短文与参数；预览展示图与原样品分开标注 |
-| 产品详情叙事 | 页面内锚点导航后接整幅媒体、交替图文；图文区左右60px；示例区块高度约634–781px | 以产品概览、安装适配、应用和模型文档分工；大图与参数白区交替，全部规格仍在可读取HTML中 |
-| News重点文章 | 1440下为左图右文；图片近方形，内距约16；标题28/33.6px；390下图片在上、标题在下 | Resources和技术栏目采用一个重点指南，再列分类与其余文章；暖灰板为近似提取 `#EDE7E1`，不是精确采色声明 |
-| 文章与公司内容 | 沿用实测字体比例和图文关系，不将产品叙事强套到全部正文 | 文章采用分栏导读、760px阅读宽度和白色正文区；公司页用记录表、原始资料和图文组合 |
-
-手机横幅360px、主标题28/33.6px；产品宽幅另有943×747构图裁切，保持四系列完整。图片始终作为展示示意，原始样品、生产录像与出处保留。商业字体 Urbane / Usual 未分发，使用已记录的 Manrope / Inter 近似替代，字形和换行无法完全相同。
-
-三轮记录：`round-1/`为结构调整后；`round-2/`记录旧网格、规格碎格和图片空白的修正；`after/`为最终结果。1440/390覆盖31页，1024/768各补查6个代表页面。部分长产品页因浏览器整页截图失败，采用真实滚动截图，按记录的scrollY去除重复导航并拼合；原始分段与坐标在 `after/segments/`，没有改变页面内容。
+Reference hero emphasis is a rough-notation SVG stroke, measured `#E50914` / `5px` in the final mobile observation (`reference/underline.json`). Hanxing uses a static underline in this measured color/weight; the animated hand-drawn path and rotating customer-brand colors are not reproduced. Header CTA retains the measured circular arrow treatment.

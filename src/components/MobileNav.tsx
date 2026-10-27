@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 type Nav = { label: string; href: string; children: { label: string; href: string }[] }[];
-export default function MobileNav({ nav, currentPath, desktopBreakpoint = 801, animated = false }: { nav: Nav; currentPath: string; desktopBreakpoint?: number; animated?: boolean }) {
+export default function MobileNav({ nav, currentPath, desktopBreakpoint = 801, animated = false, inquiryAction = false }: { nav: Nav; currentPath: string; desktopBreakpoint?: number; animated?: boolean; inquiryAction?: boolean }) {
   const [open, setOpen] = useState(false);
   const [expanded, setExpanded] = useState<string | null>(() => nav.find(item => ((item.href === '/resources/' && currentPath.startsWith('/resources/')) || item.children.some(child => child.href === currentPath)))?.href ?? null);
   const toggle = useRef<HTMLButtonElement>(null);
@@ -33,7 +33,7 @@ export default function MobileNav({ nav, currentPath, desktopBreakpoint = 801, a
         </div>
         {item.children.length > 0 && <div className="mobile-submenu" id={`mobile-submenu-${index}`} hidden={animated ? undefined : expanded !== item.href} data-expanded={animated ? expanded === item.href : undefined} aria-hidden={animated ? !open || expanded !== item.href : undefined} inert={animated ? !open || expanded !== item.href : undefined}>{animated ? <div className="mobile-submenu-clip"><div className="mobile-submenu-links">{item.children.map(child => <a key={child.href} href={child.href} aria-current={child.href === currentPath ? 'page' : undefined}>{child.label}</a>)}</div></div> : item.children.map(child => <a key={child.href} href={child.href} aria-current={child.href === currentPath ? 'page' : undefined}>{child.label}</a>)}</div>}
       </div>)}
-
+      {inquiryAction && <a className="su-mobile-inquiry" href="/contact/">Start an inquiry</a>}
     </nav>
   </div>;
 }

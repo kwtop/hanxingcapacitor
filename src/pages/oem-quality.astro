@@ -1,8 +1,8 @@
 ---
 import { isSatechiPreview } from '../lib/visualPreview';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import OemPhoto from '../components/satechi-preview/OemPhoto.astro';
-import BrochurePhoto from '../components/satechi-preview/BrochurePhoto.astro';
+import IndustrialPhoto from '../components/sunday/IndustrialPhoto.astro';
+import FactoryMedia from '../components/satechi-preview/FactoryMedia.astro';
 import '../styles/oem-hub.css'; // Matching overview frames and route hierarchy.
 ---
 
@@ -14,19 +14,19 @@ import '../styles/oem-hub.css'; // Matching overview frames and route hierarchy.
     </div></section>
     <section class="procurement-section"><div class:list={['container procurement-routes',{'co-oem-stories':isSatechiPreview}]}>
       <article>
-        {isSatechiPreview ? <BrochurePhoto name="oem-formats" class="procurement-route-photo procurement-route-photo--sample" eager sizes="(max-width: 800px) calc(100vw - 32px), 48vw" /> : <figure class="procurement-route-photo procurement-route-photo--sample"><img src="/images/real/cbb65-4.jpg" alt="Original CBB65 sample beside its printed carton." width="2000" height="2000" loading="eager" /></figure>}
+        {isSatechiPreview ? <IndustrialPhoto name="connections" class="procurement-route-photo procurement-route-photo--sample" eager sizes="(max-width: 800px) calc(100vw - 32px), 48vw" /> : <figure class="procurement-route-photo procurement-route-photo--sample"><img src="/images/real/cbb65-4.jpg" alt="Original CBB65 sample beside its printed carton." width="2000" height="2000" loading="eager" /></figure>}
         <h2>OEM &amp; private label</h2>
         <p>Set the electrical rating, case and connections. Approve the sample, label artwork and packing specification.</p>
         <a class="card-link" href="/oem/">OEM requirements and approval</a>
       </article>
       <article>
-        {isSatechiPreview ? <OemPhoto name="workshop-station" class="procurement-route-photo procurement-route-photo--process" /> : <figure class="procurement-route-photo procurement-route-photo--process"><img src="/images/real/inspection-station.jpg" alt="Operator beside production equipment in supplied process imagery." width="1920" height="1080" loading="eager" /></figure>}
+        {isSatechiPreview ? <FactoryMedia name="workshop" class="procurement-route-photo procurement-route-photo--process" /> : <figure class="procurement-route-photo procurement-route-photo--process"><img src="/images/real/inspection-station.jpg" alt="Operator beside production equipment in supplied process imagery." width="1920" height="1080" loading="eager" /></figure>}
         <h2>Manufacturing &amp; quality</h2>
-        <p>Production stages, model drawings, inspection records and certificate checks.</p>
+        <p>Production footage and a checklist for model drawings, inspection reports and certificates.</p>
         <a class="card-link" href="/factory/">Production footage and documents</a>
       </article>
       <article>
-        {isSatechiPreview ? <OemPhoto name="packing-worktable" class="procurement-route-photo" sizes="(max-width: 800px) calc(100vw - 48px), 38vw" /> : <figure class="procurement-route-photo"><img src="/images/illustrative/oem-hub-packing-20261012.webp" alt="Illustration of plain cartons with protective dividers." width="1200" height="800" loading="eager" /></figure>}
+        {isSatechiPreview ? <IndustrialPhoto name="packing" class="procurement-route-photo" sizes="(max-width: 800px) calc(100vw - 48px), 38vw" /> : <figure class="procurement-route-photo"><img src="/images/illustrative/oem-hub-packing-20261012.webp" alt="Illustration of plain cartons with protective dividers." width="1200" height="800" loading="eager" /></figure>}
         <h2>Packing &amp; dispatch</h2>
         <p>Unit protection, carton quantities, shipping marks and carrier handover records.</p>
         <a class="card-link" href="/factory/packing-and-dispatch/">Packing and dispatch checklist</a>

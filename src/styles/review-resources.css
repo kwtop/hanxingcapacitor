@@ -22,15 +22,10 @@
 .porcelain-site #main .review-supplier-records nav { display: flex; flex-wrap: wrap; gap: 12px; }
 
 .porcelain-site #main .review-guide-hero .container,
-.porcelain-site #main .review-guide-body .review-guide-layout { width: min(calc(100% - 80px), 1090px); }
+.porcelain-site #main .review-guide-body .review-guide-reading { width: min(calc(100% - 80px), 1240px); }
 .porcelain-site #main .review-guide-body { padding-block: 36px 64px; }
-.porcelain-site #main .review-guide-layout { display: grid; grid-template-columns: minmax(0, 760px) 264px; gap: 56px; align-items: start; }
-.porcelain-site #main .review-guide-layout > * { min-width: 0; }
-.porcelain-site #main .review-guide-navigation { grid-column: 2; grid-row: 1; position: sticky; top: calc(var(--nav-h) + 20px); }
-.porcelain-site #main .review-guide-article { grid-column: 1; grid-row: 1; width: 100%; max-width: 760px; }
-.porcelain-site #main .review-guide-toc summary { font-family: var(--font-body); font-size: 18px; line-height: 1.4; font-weight: 500; }
-.porcelain-site #main .review-guide-toc nav a { padding: 10px 0; font-size: 15px; line-height: 1.5; min-height: 44px; color: var(--ink); }
-.porcelain-site #main .review-guide-toc nav a:hover { color: var(--accent); }
+.porcelain-site #main .review-guide-reading { display: block; }
+.porcelain-site #main .review-guide-article { min-width: 0; width: 100%; max-width: none; }
 .porcelain-site #main .review-guide-sections { display: block; }
 .porcelain-site #main .review-guide-article :is(h2, h3) { max-width: none; }
 .porcelain-site #main .review-guide-article h2 { font-size: 32px; line-height: 1.25; margin: 0 0 20px; }
@@ -118,7 +113,6 @@
 .porcelain-site #main .review-faq-list details .faq-next-step { margin: 0 0 18px; }
 
 @media (max-width: 1100px) {
-  .porcelain-site #main .review-guide-layout { grid-template-columns: minmax(0, 1fr) 240px; gap: 36px; }
   .porcelain-site #main .review-guide-section.is-label .review-guide-section-body { display: flex; flex-direction: column; gap: 24px; }
   .porcelain-site #main .review-guide-section.is-label .review-guide-photos { order: -1; max-width: 380px; width: 100%; }
   .porcelain-site #main .review-guide-section.is-label .review-guide-copy { width: 100%; }
@@ -139,11 +133,8 @@
   .porcelain-site #main .review-resource-library .task-guide-row { grid-template-columns: minmax(0, 1fr); gap: 12px; padding-block: 20px; }
   .porcelain-site #main .review-resource-library .task-guide-row .card-title { font-size: 20px; }
   .porcelain-site #main .review-guide-hero .container,
-  .porcelain-site #main .review-guide-body .review-guide-layout { width: calc(100% - 40px); }
+  .porcelain-site #main .review-guide-body .review-guide-reading { width: calc(100% - 40px); }
   .porcelain-site #main .review-guide-body { padding-block: 24px 48px; }
-  .porcelain-site #main .review-guide-layout { display: flex; flex-direction: column; gap: 28px; }
-  .porcelain-site #main .review-guide-navigation { position: static; width: 100%; }
-  .porcelain-site #main .review-guide-toc { border: 1px solid var(--line); padding: 8px 16px; }
   .porcelain-site #main .review-guide-article { width: 100%; max-width: none; }
   .porcelain-site #main .review-guide-article h2 { font-size: 28px; line-height: 1.28; }
   .porcelain-site #main .review-guide-section { margin-bottom: 36px; }
