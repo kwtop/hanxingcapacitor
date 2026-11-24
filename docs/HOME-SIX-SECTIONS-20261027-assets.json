@@ -1,0 +1,176 @@
+{
+  "date": "2026-10-27",
+  "scope": "Five original photographs for the homepage customer visits and exhibitions wall",
+  "assets": [
+    {
+      "id": "exhibition-group",
+      "source": "原始素材\\客户照片可取\\fb7a6365fe376bd7686b120b0c25c0a4.jpg",
+      "source_sha256": "a2a3f5fb69fa50bd42418dfb4755a78dff8ce7f8f2e7b1163f451a8681ee92b1",
+      "source_dimensions": [
+        1706,
+        1279
+      ],
+      "kind": "original supplied photograph",
+      "treatment": "EXIF orientation correction, proportional resize and WebP encoding only; no creative alteration",
+      "outputs": [
+        {
+          "path": "/images/customer-visits-20261027/exhibition-group-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 42542,
+          "sha256": "ab64869ad334fd47d8653ddbf34fdb4f7edced3fd6b3d244fce3d60aabb660b9"
+        },
+        {
+          "path": "/images/customer-visits-20261027/exhibition-group-800.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 96700,
+          "sha256": "b166eed2260f4bdb13f6fef422f614a19bf0c254fdfa384fcbc6bdb0bf03d76f"
+        },
+        {
+          "path": "/images/customer-visits-20261027/exhibition-group-1200.webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 172216,
+          "sha256": "bcd4e42ccc7cf5cef051072b7d575b569952d37d5e904c511460c14cb4748deb"
+        }
+      ]
+    },
+    {
+      "id": "capacitor-booth",
+      "source": "原始素材\\客户照片可取\\ac414324f8ed533e0af138d20f35d8b3.jpg",
+      "source_sha256": "85c683bc5018728be344a3a60f0b5e10c7159124ef55c78bdb505e2e8cfe31f2",
+      "source_dimensions": [
+        1279,
+        1706
+      ],
+      "kind": "original supplied photograph",
+      "treatment": "EXIF orientation correction, proportional resize and WebP encoding only; no creative alteration",
+      "outputs": [
+        {
+          "path": "/images/customer-visits-20261027/capacitor-booth-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 70400,
+          "sha256": "faa9f35b64ff3275dff0f846a1cf24981a6db0d26f7d0612ab93cc924e3c8af4"
+        },
+        {
+          "path": "/images/customer-visits-20261027/capacitor-booth-800.webp",
+          "width": 800,
+          "height": 1067,
+          "bytes": 146014,
+          "sha256": "a3fdd5512dfb0cfeae7529d56dfe56a8d09f5d9c1d5ec5297c63e2e79ba72c81"
+        },
+        {
+          "path": "/images/customer-visits-20261027/capacitor-booth-1200.webp",
+          "width": 1200,
+          "height": 1601,
+          "bytes": 247776,
+          "sha256": "b14b7cdcc29dae8e0dae7347d72dbd8ffff359adda0d3cf89412ad2f30806e4e"
+        }
+      ]
+    },
+    {
+      "id": "exhibition-meeting",
+      "source": "原始素材\\客户照片可取\\微信图片_2026-04-13_114146_979.jpg",
+      "source_sha256": "c3bedbb99ac62814cb6776aa0ae1528dc8e8204e608836e2c0f92b1ec2f10a98",
+      "source_dimensions": [
+        3072,
+        4096
+      ],
+      "kind": "original supplied photograph",
+      "treatment": "EXIF orientation correction, proportional resize and WebP encoding only; no creative alteration",
+      "outputs": [
+        {
+          "path": "/images/customer-visits-20261027/exhibition-meeting-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 63320,
+          "sha256": "6bbfb3260765012e4820a65bea6c49ab656d7770adf08ea6d94545cfc9f63053"
+        },
+        {
+          "path": "/images/customer-visits-20261027/exhibition-meeting-800.webp",
+          "width": 800,
+          "height": 1067,
+          "bytes": 126034,
+          "sha256": "d96ce2b6348a44307907f096f2d5e097edec26f1f79a4e1dd609965d6c325fce"
+        },
+        {
+          "path": "/images/customer-visits-20261027/exhibition-meeting-1200.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 212918,
+          "sha256": "bc7fa7432c8959d390cfefd39c48e5574f25d5f5e01e8b056e27da53525c90b7"
+        }
+      ]
+    },
+    {
+      "id": "sample-discussion",
+      "source": "原始素材\\客户照片可取\\22240716115ef3a6899ac72a2d6e5360.jpg",
+      "source_sha256": "7837476c46c73004d06575524b4d9f7a34517ba3ddff04d37b205f48851d7142",
+      "source_dimensions": [
+        1706,
+        1279
+      ],
+      "kind": "original supplied photograph",
+      "treatment": "EXIF orientation correction, proportional resize and WebP encoding only; no creative alteration",
+      "outputs": [
+        {
+          "path": "/images/customer-visits-20261027/sample-discussion-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 47248,
+          "sha256": "1500ea3aee573a18e2a188388e427823527901d699035d3dee08d23917864057"
+        },
+        {
+          "path": "/images/customer-visits-20261027/sample-discussion-800.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 106936,
+          "sha256": "dc0629f31d197ccbfd40e4456e8fb7bc1465df7fd2ae2f207fbf08e107d35304"
+        },
+        {
+          "path": "/images/customer-visits-20261027/sample-discussion-1200.webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 206048,
+          "sha256": "1feb69371b05a902e4d4ee5be23b53f90d6d1dd19678c5437c6f2a088e52041b"
+        }
+      ]
+    },
+    {
+      "id": "workshop-visit",
+      "source": "原始素材\\客户照片可取\\微信图片_20260716100950_47_2.jpg",
+      "source_sha256": "e8f0878ef5de32fce001ba8ae863d0a9d4d951c194b67bf76acd49e37e8c52bc",
+      "source_dimensions": [
+        3024,
+        4032
+      ],
+      "kind": "original supplied photograph",
+      "treatment": "EXIF orientation correction, proportional resize and WebP encoding only; no creative alteration",
+      "outputs": [
+        {
+          "path": "/images/customer-visits-20261027/workshop-visit-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 63708,
+          "sha256": "ca023654c3c1b09324912ed629a8225cf7b51669b9e7128e6f19388777cae0e7"
+        },
+        {
+          "path": "/images/customer-visits-20261027/workshop-visit-800.webp",
+          "width": 800,
+          "height": 1067,
+          "bytes": 138100,
+          "sha256": "88af6418ab4ad67cf4747e0a77ce400bfad23afb404810492d9f60f0f2779ff0"
+        },
+        {
+          "path": "/images/customer-visits-20261027/workshop-visit-1200.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 264322,
+          "sha256": "e2c4776ec0666402ae5be8d376881e94e047fbfdf342785ef1f18a83ed125987"
+        }
+      ]
+    }
+  ]
+}

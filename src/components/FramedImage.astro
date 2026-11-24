@@ -1,0 +1,16 @@
+---
+import { getFramedPhotography } from '../data/framedPhotography';
+import { getImageDelivery } from '../data/imageDelivery';
+interface Props { src: string; alt: string; sizes?: string; eager?: boolean; }
+const { src, alt, sizes = '(max-width: 700px) calc(100vw - 40px), 46vw', eager = false } = Astro.props;
+const image = getFramedPhotography(src) ?? getImageDelivery(src);
+---
+<img src={image?.src ?? src} srcset={image?.srcset} sizes={image ? sizes : undefined}
+  width={image?.width ?? 2000} height={image?.height ?? 2000}
+  alt={alt}
+  loading={eager ? 'eager' : 'lazy'} decoding="async" fetchpriority={eager ? 'high' : undefined}
+  data-framed-source={image?.originalSrc} />
+
+<style>
+  img[data-framed-source] { display: block; width: 100%; height: 100%; object-fit: cover !important; object-position: center !important; transform: none !important; }
+</style>

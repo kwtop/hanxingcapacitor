@@ -1,0 +1,9 @@
+---
+import {translatedPaths} from '../../i18n/routes';
+export const prerender = true;
+export function getStaticPaths(){
+  return [...translatedPaths].map(path=>({params:{path:path==='/'?undefined:path.slice(1,-1)}}));
+}
+// Middleware rewrites to the matching English template and localizes the
+// complete response at build time. No duplicated layouts or client-only copy.
+---

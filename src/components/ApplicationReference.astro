@@ -2,15 +2,24 @@
 import { products, type Application } from '../data/site';
 import InquiryCallout from './InquiryCallout.astro';
 import { applicationReference } from '../data/applicationReference';
-import { isSatechiPreview } from '../lib/visualPreview';
+import { usesEditorialPresentation } from '../lib/visualPreview';
+const useEditorial = usesEditorialPresentation(Astro.url.pathname);
 import { applicationVisuals } from '../data/satechiSite';
 import { industrialApplications } from '../data/industrialApplications';
 import SiteImage from './satechi-preview/SiteImage.astro';
+import ProductPresentation from './satechi-preview/ProductPresentation.astro';
 import { seriesFormats } from '../data/productReference';
+import ApplicationCircuitReview from './ApplicationCircuitReview.astro';
+import circuitPhotos from '../data/applicationCircuitPhotography.generated.json';
+import FramedImage from './FramedImage.astro';
 import '../styles/hvac-reference.css';
+import '../styles/application-comparison.css';
 interface Props { application: Application }
 const { application } = Astro.props;
 const content = applicationReference[application.slug];
+const circuitPhoto = circuitPhotos[application.slug as keyof typeof circuitPhotos];
+const existingReviewLinks = content.paths.filter(path=>!path.href.startsWith('/products/')&&path.href!==content.guide.href&&path.href!=='/buying-guide/#rfq-template').map(path=>({href:path.href,label:path.link}));
+const reviewLinks = existingReviewLinks.length ? existingReviewLinks : [{href:content.guide.href,label:content.guide.label}];
 const compared = application.series.map(code => products.find(p => p.code === code)!);
 const inquiry = '/contact/?application=' + application.slug + '&request=quote#inquiry-form';
 const compareRows = [
@@ -18,7 +27,7 @@ const compareRows = [
   { label: 'Case / connection', values: compared.map(p => seriesFormats[p.code].case + ' · ' + seriesFormats[p.code].connections) },
   { label: application.slug === 'fans-and-ventilation' ? 'Electrical rating' : 'µF / VAC range', values: compared.map(p => application.slug === 'fans-and-ventilation' ? 'Series voltage range: ' + p.voltage + '. Capacitance ranges are on the series page.' : p.capacitance + ' · ' + p.voltage) },
   ...(content.showDimensions ? [{ label: 'Series case-size range', values: compared.map(p => p.dimensions + '.') }] : []),
-  { label: 'Important check', values: compared.map(p => content.confirmations[p.code]) },
+  { label: 'Installation requirement', values: compared.map(p => content.confirmations[p.code]) },
 ];
 ---
 <article class="hvr-reference review-application-reference" data-application={application.slug}>
@@ -26,16 +35,13 @@ const compareRows = [
     <section class="hvr-hero" aria-labelledby="application-title">
       <div class="hvr-introduction">
         <nav class="hvr-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/applications/">Applications</a><span>/</span><span aria-current="page">{application.shortName}</span></nav>
-        <h1 id="application-title">{application.shortName}</h1>
-        <p class="hvr-hero-summary">{application.listing}</p>
+        <h1 id="application-title">Capacitors for {application.shortName.toLowerCase()}</h1>
+        <p class="hvr-hero-summary">{application.intro}</p>
       </div>
-      <figure class="hvr-hero-photo"><SiteImage src={isSatechiPreview ? applicationVisuals[application.slug] : application.image} alt={isSatechiPreview ? industrialApplications[application.slug].alt : application.imageAlt} width={isSatechiPreview ? 1536 : 1200} height={isSatechiPreview ? 1024 : application.imageHeight} eager /></figure>
+      <figure class="hvr-hero-photo"><SiteImage src={useEditorial ? applicationVisuals[application.slug] : application.image} alt={useEditorial ? industrialApplications[application.slug].alt : application.imageAlt} width={useEditorial ? 1536 : 1200} height={useEditorial ? 1024 : application.imageHeight} eager /></figure>
     </section>
 
-    <section class="hvr-section" id="review" aria-labelledby="circuit-title">
-      <h2 id="circuit-title">Motor circuit &amp; original capacitor</h2>
-      <div class="hvr-circuit-paths">{content.paths.map(path => <div><h3>{path.title}</h3><p>{path.text}</p><a class="hvr-path-link" href={path.href}>{path.link}</a></div>)}</div>
-    </section>
+    <ApplicationCircuitReview title="Motor circuit and capacitor requirements" image={circuitPhoto} paths={content.paths} links={reviewLinks} />
 
     <section class="hvr-section" id="series-comparison" aria-labelledby="comparison-title">
       <h2 id="comparison-title">Compare capacitor series</h2>
@@ -43,19 +49,19 @@ const compareRows = [
         <table class="hvr-comparison"><caption class="visually-hidden">{content.comparisonTitle}</caption>
           <thead><tr><th scope="col">Field</th>{compared.map(p => <th scope="col"><a href={'/products/' + p.slug + '/'}><strong>{p.code}</strong></a><span>{p.function} duty · {p.shortName}</span></th>)}</tr></thead>
           <tbody>{compareRows.map(row => <tr><th scope="row">{row.label}</th>{row.values.map(value => <td>{value}</td>)}</tr>)}
-            <tr class="hvr-sample-row"><th scope="row">Sample photograph</th>{compared.map(p => <td><figure><div class="hvr-sample-photo" data-series={p.code}><img src={p.image} alt={p.imageAlt} width="2000" height="2000" loading="lazy" /></div>{p.code === 'CBB61' && <figcaption>Blade-terminal samples</figcaption>}</figure></td>)}</tr>
+            <tr class="hvr-sample-row"><th scope="row">{useEditorial ? 'Product view' : 'Sample photograph'}</th>{compared.map(p => <td><figure><div class="hvr-sample-photo" data-series={p.code}>{useEditorial ? <ProductPresentation code={p.code} /> : <img src={p.image} alt={p.imageAlt} width="2000" height="2000" loading="lazy" />}</div></figure></td>)}</tr>
             <tr class="hvr-series-actions"><th scope="row">Full series details</th>{compared.map(p => <td><a class="hvr-series-link" href={'/products/' + p.slug + '/'}>View {p.code}</a></td>)}</tr>
           </tbody>
         </table>
       </div>
-      <div class="hvr-mobile-comparison">{compared.map((p,index) => <div class="hvr-series-summary"><h3><a href={'/products/' + p.slug + '/'}>{p.code}</a></h3><dl>{compareRows.map(row => <div><dt>{row.label}</dt><dd>{row.values[index]}</dd></div>)}</dl><div class="hvr-sample-photo"><img src={p.image} alt={p.imageAlt} width="2000" height="2000" loading="lazy" /></div><a class="hvr-series-link" href={'/products/' + p.slug + '/'}>View {p.code} details</a></div>)}</div>
-      <p class="hvr-note">Check the model datasheet for temperature, tolerance and dimensions.</p>
+      <div class="hvr-mobile-comparison">{compared.map((p,index) => <div class="hvr-series-summary"><h3><a href={'/products/' + p.slug + '/'}>{p.code}</a></h3><div class="hvr-sample-photo" data-series={p.code}>{useEditorial ? <ProductPresentation code={p.code} /> : <img src={p.image} alt={p.imageAlt} width="2000" height="2000" loading="lazy" />}</div><dl>{compareRows.map(row => <div><dt>{row.label}</dt><dd>{row.values[index]}</dd></div>)}</dl><a class="hvr-series-link" href={'/products/' + p.slug + '/'}>View {p.code} details</a></div>)}</div>
+      <p class="hvr-note">The model datasheet provides the applicable temperature, tolerance and dimensional limits.</p>
     </section>
 
     <section class="hvr-section" id="fit-check" aria-labelledby="checks-title">
-      <h2 id="checks-title">Fit and connection check</h2>
+      <h2 id="checks-title">Mounting and connection requirements</h2>
       <div class="hvr-check-layout">
-        <figure class="hvr-fit-photo"><div class="hvr-fit-image"><img src={content.detail.image} alt={content.detail.alt} width="2000" height="2000" loading="lazy" /></div><figcaption>{content.detail.caption}</figcaption></figure>
+        <figure class="hvr-fit-photo"><div class="hvr-fit-image hvr-fit-image--framed"><FramedImage src={content.detail.image} alt={content.detail.alt} sizes="(max-width: 800px) calc(100vw - 48px), 35vw" /></div><figcaption>{content.detail.caption}</figcaption></figure>
         <div><ul class="hvr-inquiry-checklist">{content.fitChecks.map(([title,description]) => <li><h3>{title}</h3><p>{description}</p></li>)}</ul><div class="hvr-fit-guides"><a class="hvr-secondary hvr-guide" href={content.guide.href}>{content.guide.label}</a>{application.slug === 'pumps-and-water-systems' && <a class="hvr-secondary hvr-guide" href="/resources/dimensions-terminals-mounting/">Record dimensions & connections</a>}</div></div>
       </div>
     </section>

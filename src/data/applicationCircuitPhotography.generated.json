@@ -1,0 +1,38 @@
+{
+  "appliances-and-small-motors": {
+    "src": "/images/applications/application-circuits-20261030/appliance-1280.webp",
+    "srcset": "/images/applications/application-circuits-20261030/appliance-480.webp 480w, /images/applications/application-circuits-20261030/appliance-800.webp 800w, /images/applications/application-circuits-20261030/appliance-1280.webp 1280w, /images/applications/application-circuits-20261030/appliance-1536.webp 1536w",
+    "width": 1536,
+    "height": 1024,
+    "alt": "CBB60 and CBB61 capacitors on a workbench beside a washing machine.",
+    "focus": "50% 50%",
+    "provenance": "imagegen-illustration-from-user-product-references"
+  },
+  "fans-and-ventilation": {
+    "src": "/images/applications/application-circuits-20261030/fan-1280.webp",
+    "srcset": "/images/applications/application-circuits-20261030/fan-480.webp 480w, /images/applications/application-circuits-20261030/fan-800.webp 800w, /images/applications/application-circuits-20261030/fan-1280.webp 1280w, /images/applications/application-circuits-20261030/fan-1536.webp 1536w",
+    "width": 1536,
+    "height": 1024,
+    "alt": "CBB61 and CBB60 capacitors beside a ventilation blower.",
+    "focus": "59% 50%",
+    "provenance": "imagegen-illustration-from-user-product-references"
+  },
+  "hvac-and-refrigeration": {
+    "src": "/images/cd60-presentation-20261110/hvac-1280.webp",
+    "srcset": "/images/cd60-presentation-20261110/hvac-480.webp 480w, /images/cd60-presentation-20261110/hvac-800.webp 800w, /images/cd60-presentation-20261110/hvac-1280.webp 1280w, /images/cd60-presentation-20261110/hvac-1536.webp 1536w",
+    "width": 1536,
+    "height": 1024,
+    "alt": "CBB65 and CD60 capacitors with a compressor and fan motor behind them.",
+    "focus": "50% 50%",
+    "provenance": "imagegen-illustration-from-user-product-references"
+  },
+  "pumps-and-water-systems": {
+    "src": "/images/cd60-presentation-20261110/pump-1280.webp",
+    "srcset": "/images/cd60-presentation-20261110/pump-480.webp 480w, /images/cd60-presentation-20261110/pump-800.webp 800w, /images/cd60-presentation-20261110/pump-1280.webp 1280w, /images/cd60-presentation-20261110/pump-1536.webp 1536w",
+    "width": 1536,
+    "height": 1024,
+    "alt": "CBB60 and CD60 capacitors on a workbench in front of a water pump and motor.",
+    "focus": "50% 50%",
+    "provenance": "imagegen-illustration-from-user-product-references"
+  }
+}

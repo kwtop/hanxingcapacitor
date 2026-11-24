@@ -1,0 +1,23 @@
+{
+  "oem-lineup": {
+    "src": "/images/oem-layout-20261027/oem-lineup-1280.webp",
+    "srcset": "/images/oem-layout-20261027/oem-lineup-480.webp 480w, /images/oem-layout-20261027/oem-lineup-800.webp 800w, /images/oem-layout-20261027/oem-lineup-1280.webp 1280w, /images/oem-layout-20261027/oem-lineup-1536.webp 1536w",
+    "width": 1774,
+    "height": 887,
+    "alt": "CBB60 wire leads, CBB61 blade terminals and CBB65 terminal groups on a sample bench."
+  },
+  "terminal-detail": {
+    "src": "/images/oem-layout-20261027/terminal-detail-1280.webp",
+    "srcset": "/images/oem-layout-20261027/terminal-detail-480.webp 480w, /images/oem-layout-20261027/terminal-detail-800.webp 800w, /images/oem-layout-20261027/terminal-detail-1280.webp 1280w, /images/oem-layout-20261027/terminal-detail-1536.webp 1536w",
+    "width": 1536,
+    "height": 1024,
+    "alt": "Close view of CBB65 terminal groups and CBB61 blade terminals."
+  },
+  "packing-clearance": {
+    "src": "/images/oem-content-20261028/packing-clearance-1280.webp",
+    "srcset": "/images/oem-content-20261028/packing-clearance-480.webp 480w, /images/oem-content-20261028/packing-clearance-800.webp 800w, /images/oem-content-20261028/packing-clearance-1280.webp 1280w, /images/oem-content-20261028/packing-clearance-1536.webp 1536w",
+    "width": 1536,
+    "height": 1024,
+    "alt": "CBB60 and CBB65 capacitors separated by cardboard dividers, with space around their leads and terminals."
+  }
+}

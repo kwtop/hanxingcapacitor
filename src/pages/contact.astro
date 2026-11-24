@@ -1,15 +1,16 @@
 ---
-import { isSatechiPreview } from '../lib/visualPreview';
+import { usesEditorialPresentation } from '../lib/visualPreview';
+const useEditorial = usesEditorialPresentation(Astro.url.pathname);
 import EditorialVisual from '../components/satechi-preview/EditorialVisual.astro';
+import AboutChatContacts from '../components/sunday/AboutChatContacts.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/contact-focused.css';
-import { countries } from '../data/countries';
 import { sampleConfigurations } from '../data/sampleConfigurations';
 import { sampleEvidence, sampleEvidenceText } from '../data/sampleEvidence';
 import sampleLibrary from '../data/sampleLibrary.json';
 import { getProductGallery } from '../data/productReference';
 import { guides } from '../data/guides';
-import { PUBLIC_BUSINESS_ADDRESS, PUBLIC_COMPANY_NAME, PUBLIC_EMAIL, PUBLIC_PHONE, WHATSAPP_NUMBER, WHATSAPP_URL } from '../data/site';
+import { PUBLIC_HEADQUARTERS_ADDRESS, PUBLIC_FACTORY_ADDRESS, PUBLIC_COMPANY_RELATIONSHIP, PUBLIC_EMAIL, PUBLIC_PHONE, WHATSAPP_NUMBER, WHATSAPP_URL } from '../data/site';
 const photoReferences = Object.fromEntries(sampleLibrary.map(photo => [photo.id, {series:photo.series, text:photo.id+' · '+photo.label}]));
 // A photograph without a library ID still carries its verified caption into the inquiry.
 for (const series of ['CBB60', 'CBB61', 'CBB65', 'CD60']) {
@@ -30,22 +31,24 @@ const previewState = ['validation', 'draft-ready', 'copy-error', 'prepare-error'
     <div class="container contact-focused-layout">
       <div class="contact-focused-intro">
         <h1>Contact<br />HAN XING</h1>
-        {isSatechiPreview && <EditorialVisual name="contact-desk" alt="Illustrative still life with original Hanxing capacitor samples and a blank notebook." />}
+        {useEditorial && <EditorialVisual name="contact-desk" alt="HAN XING capacitor samples beside a blank notebook." />}
+        <AboutChatContacts />
         <div class="contact-focused-details">
+          <p class="contact-entity-note">{PUBLIC_COMPANY_RELATIONSHIP}</p>
           <a data-contact-email href={`mailto:${PUBLIC_EMAIL}`}><svg class="contact-focused-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg><span>{PUBLIC_EMAIL}</span></a>
           <a data-contact-whatsapp href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" aria-label={`WhatsApp ${PUBLIC_PHONE}`}><svg class="contact-focused-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 11.8a8.6 8.6 0 0 1-12.8 7.5L3 20.6l1.3-4.7A8.6 8.6 0 1 1 20.6 11.8Z"/><path d="M8.1 7.5c-.5.6-.6 1.3-.3 2.1 1 2.7 3 4.7 5.7 5.7.8.3 1.5.2 2.1-.3l.9-1-2.3-1.2-.8.8c-1.6-.7-2.8-1.9-3.5-3.5l.8-.8-1.2-2.3Z"/></svg><span>{PUBLIC_PHONE}</span></a>
-          <address><svg class="contact-focused-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span><strong>{PUBLIC_COMPANY_NAME}</strong>{PUBLIC_BUSINESS_ADDRESS !== PUBLIC_COMPANY_NAME && PUBLIC_BUSINESS_ADDRESS}</span></address>
+          <address><svg class="contact-focused-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span><strong>Headquarters — Hangzhou</strong>{PUBLIC_HEADQUARTERS_ADDRESS}<br /><br /><strong>Manufacturing facility — Hebei</strong>{PUBLIC_FACTORY_ADDRESS}</span></address>
         </div>
       </div>
       <form id="contact-inquiry-form" method="post" action="/api/inquiries/" class="contact-focused-form" data-preview-state={previewState} data-configurations={JSON.stringify(configurationNames)} data-photo-references={JSON.stringify(photoReferences)} data-guides={JSON.stringify(guideNames)} data-email={PUBLIC_EMAIL} data-whatsapp={WHATSAPP_NUMBER}>
         <div id="contact-context" class="contact-context" hidden><h2>Your reference</h2><ul id="contact-context-value"></ul><a id="contact-reference-link" class="card-link" href="/products/">Return to the reference</a></div>
-        <p class="contact-draft-note">Submit your requirements below. For photos or drawings, use the email or WhatsApp links on this page and include your inquiry reference after submitting the form.</p>
+        <p class="contact-draft-note">Tell us about the capacitor and quantity you need. Send photos or drawings by email or WhatsApp; if you submit this form first, include your inquiry reference with the files.</p>
         <div id="contact-errors" class="contact-error-summary" role="alert" hidden><p>Check the highlighted fields.</p><ul id="contact-error-list"></ul></div>
         <label class="field" for="inquiry-name"><span id="inquiry-name-label">Name *</span><input id="inquiry-name" name="name" type="text" autocomplete="name" maxlength="120" placeholder="Your name" aria-labelledby="inquiry-name-label" aria-describedby="inquiry-name-error" required /><span id="inquiry-name-error" class="field-error" hidden></span></label>
         <label class="field" for="inquiry-company"><span>Company</span><input id="inquiry-company" name="company" autocomplete="organization" maxlength="160" placeholder="Company name" /></label>
-        <label class="field" for="inquiry-destination"><span id="inquiry-destination-label">Country *</span><select id="inquiry-destination" name="country" autocomplete="country-name" aria-labelledby="inquiry-destination-label" aria-describedby="inquiry-destination-error" required><option value="" selected disabled>Select a country</option>{countries.map(country => <option value={country.name}>{country.name}</option>)}</select><span id="inquiry-destination-error" class="field-error" hidden></span></label>
-        <label class="field" id="email-field" for="inquiry-email"><span id="inquiry-email-label">Email address *</span><input id="inquiry-email" name="email" type="email" autocomplete="email" maxlength="200" placeholder="you@company.com" aria-labelledby="inquiry-email-label" aria-describedby="inquiry-email-error" required /><span id="inquiry-email-error" class="field-error" hidden></span></label>
-        <label class="field" for="inquiry-phone"><span>Phone / WhatsApp</span><input id="inquiry-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="80" placeholder="Include country code" /></label>
+        <label class="field" for="inquiry-destination"><span id="inquiry-destination-label">Country *</span><input id="inquiry-destination" name="country" type="text" autocomplete="country-name" maxlength="100" placeholder="Your country" aria-labelledby="inquiry-destination-label" aria-describedby="inquiry-destination-error" required /><span id="inquiry-destination-error" class="field-error" hidden></span></label>
+        <label class="field" id="email-field" for="inquiry-email"><span id="inquiry-email-label">Email address</span><input id="inquiry-email" name="email" type="email" autocomplete="email" maxlength="200" placeholder="you@company.com" aria-labelledby="inquiry-email-label" aria-describedby="inquiry-contact-help inquiry-email-error" /><span id="inquiry-email-error" class="field-error" hidden></span></label>
+        <label class="field" for="inquiry-phone"><span>Phone / WhatsApp</span><input id="inquiry-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="80" placeholder="Include country code" aria-describedby="inquiry-contact-help" /><span id="inquiry-contact-help">Provide an email address or a Phone / WhatsApp number. At least one is required.</span></label>
         <fieldset class="online-products"><legend>Product series *</legend>{['CBB60','CBB61','CBB65','CD60'].map((code,index)=><label><input type="checkbox" name="products" value={code} checked={index===0} /><span>{code}</span></label>)}<label><input type="checkbox" name="products" value="unknown" /><span>Not sure yet</span></label></fieldset>
         <label class="field" for="inquiry-message"><span>Your requirements *</span><textarea id="inquiry-message" name="message" rows="5" minlength="10" maxlength="4000" placeholder="Capacitance, voltage, quantity and any other requirements" required></textarea></label>
         <div class="inquiry-honeypot" aria-hidden="true"><label>Website<input name="website" type="text" tabindex="-1" autocomplete="off" /></label></div>
@@ -65,6 +68,8 @@ const previewState = ['validation', 'draft-ready', 'copy-error', 'prepare-error'
   </script>
 </BaseLayout>
 <style>
+  .contact-focused-details { margin-top: 24px; }
+  #inquiry-contact-help{font-size:13px;line-height:1.5;font-weight:400;color:#52606b}
   .online-products{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;border:0;padding:0;margin:0;min-width:0}
   .online-products legend{margin-bottom:14px;font-weight:500}
   .online-products label{display:flex;align-items:center;gap:9px;cursor:pointer}

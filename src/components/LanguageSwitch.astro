@@ -1,0 +1,14 @@
+---
+import {alternates} from '../i18n/routes';
+const links=alternates(Astro.url.pathname,'https://www.hanxingcapacitor.com').filter(link=>link.lang!=='x-default');
+---
+{links.length>0&&<nav class="hx-language" data-language-switch aria-label="Language">{links.map(link=><a href={new URL(link.href).pathname} hreflang={link.lang} lang={link.lang} aria-current={link.lang==='en'?'page':undefined}>{link.lang==='en'?'EN':'ES'}</a>)}</nav>}
+<style>
+  .hx-language{display:flex;gap:2px;align-items:center;flex-shrink:0;font:500 12px/1.2 var(--su-font,inherit)}
+  .hx-language a{display:inline-flex;align-items:center;justify-content:center;min-width:30px;min-height:36px;border-radius:5px;text-decoration:none}
+  .hx-language a[aria-current=page]{text-decoration:underline;text-underline-offset:4px;font-weight:700}
+  .hx-language a:hover{background:#8882}
+  .hx-language a:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+  :global(.su-header-actions) .hx-language{margin-right:4px}
+  @media(max-width:1169px){:global(.su-header-actions) .hx-language{display:none}}
+</style>

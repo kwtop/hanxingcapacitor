@@ -1,4 +1,4 @@
-export type PhotoExample = { src: string; alt: string; title: string; text: string; focus?: string; zoom?: number; showLabelDetail?: boolean };
+export type PhotoExample = { src: string; alt: string; title: string; text: string; focus?: string; zoom?: number; showLabelDetail?: boolean; original?: boolean };
 
 const cbb65Label: PhotoExample = {
   src: '/images/real/cbb65-2.jpg',
@@ -18,7 +18,7 @@ const cbb65Terminals: PhotoExample = {
 };
 const cbb65Dual: PhotoExample = {
   src: '/images/real/cbb65-dual-run-7.jpg',
-  alt: 'Photograph of a CBB65 dual-run sample marked 50+5 µF and 450 VAC, with several terminal groups visible.',
+  alt: 'CBB65 dual-run capacitor marked 50+5 µF and 450 VAC, with terminal groups visible.',
   title: 'Both ratings on a dual-run sample',
   text: 'The label shows 50+5 µF ±5% and 450 VAC. A replacement must match both capacitance values and the terminal connections specified for the original circuit.',
   focus: '50%',
@@ -36,7 +36,7 @@ const cbb61Samples: PhotoExample = {
   src: '/images/real/cbb61-13.jpg',
   alt: 'Three CBB61 samples marked 4.5 µF, 5 µF and 6 µF.',
   title: 'CBB61: similar housings, different ratings',
-  text: 'These similar CBB61 cases are marked 4.5 µF, 5 µF and 6 µF. Read the rating on each label before checking the case dimensions.',
+  text: 'The three CBB61 samples are marked 4.5 µF, 5 µF and 6 µF. Each is a separate capacitor with its own electrical rating.',
   focus: '50%',
   zoom: 1.3,
 };
@@ -55,10 +55,10 @@ export const guideExamples: Record<string, { heading: string; photos: PhotoExamp
   'single-vs-dual-run-capacitors': { heading: 'Read the label and terminal end together', photos: [{ ...cbb65Label, title: 'Single-run sample: 20 µF · 450 VAC', text: 'The CBB65 sample is marked 20 µF ±5%, 450 VAC and 50/60 Hz. It has one capacitance value.' }, { ...cbb65Dual, title: 'Dual-run sample: 50+5 µF · 450 VAC' }] },
   'read-motor-capacitor-label': { heading: 'Electrical ratings on sample labels', photos: [{ ...cbb65Label }, { ...cbb61Samples, title: 'Different capacitance values within one series' }] },
   'capacitance-voltage-guide': { heading: 'Capacitance and voltage on sample labels', photos: [{ ...cbb65Label, title: '20 µF · 450 VAC · ±5%', text: 'On this CBB65 label, 20 µF ±5% gives the capacitance and tolerance. The voltage rating is 450 VAC.', showLabelDetail: true }, { ...cbb61Samples, title: 'One voltage rating, three capacitances', text: 'All three CBB61 samples show 450 VAC. Their capacitances are 4.5 µF, 5 µF and 6 µF.' }] },
-  'dimensions-terminals-mounting': { heading: 'Mounting and connection details in the samples', photos: [{ ...cbb60Stud, title: 'The stud extends beyond the case', text: 'Measure the CBB60 base stud as well as the leads and connector clearance. Check these measurements against the model drawing.' }, { src: '/images/real/cbb61-leads-10.jpg', alt: 'Two rectangular CBB61 samples with red lead wires, visible wire ends and a mounting lug on one case.', title: 'Leads and mounting lug', text: 'Red leads on both CBB61 samples; one case has a mounting lug. Measure the body, mounting position and full lead route against the drawing.' }] },
+  'dimensions-terminals-mounting': { heading: 'Mounting and connection details in the samples', photos: [{ ...cbb60Stud, title: 'The stud extends beyond the case', text: 'Record the CBB60 body and base-stud dimensions separately, with the space required for leads and the fitted connector.' }, { src: '/images/real/cbb61-leads-10.jpg', original: true, alt: 'Two rectangular CBB61 samples with red lead wires, visible wire ends and a mounting lug on one case.', title: 'Leads and mounting lug', text: 'Red leads on both CBB61 samples; one case has a mounting lug. Measure the body, mounting position and full lead route against the drawing.' }] },
   'motor-capacitor-order-shipment-checklist': { heading: 'Packing and shipment checks', photos: [
-    { src: '/images/real/packing-scene.jpg', alt: 'Supplied packing photograph showing capacitor boxes and packing work.', title: 'Protection inside the carton', text: 'Compare packing photos with the approved protection, dividers and units per carton.' },
-    { src: '/images/illustrative/warehouse-staging.webp', alt: 'Illustration of cartons grouped on pallets in a warehouse staging area.', title: 'Carton count and marks', text: 'Use dated photos of the packed order to compare carton count and marks with the packing list.' },
-    { src: '/images/illustrative/export-document-review.webp', alt: 'Illustration of shipping forms being checked beside a carton.', title: 'Order references on shipping documents', text: 'Check the actual invoice, packing list and transport record for the same order reference and quantities.' },
+    { src: '/images/real/packing-scene.jpg', alt: 'Product boxes and capacitor packing work at a worktable.', title: 'Protection inside the carton', text: 'Compare packing photos with the approved protection, dividers and units per carton.' },
+    { src: '/images/illustrative/warehouse-staging.webp', alt: 'Cartons grouped on pallets in a warehouse staging area.', title: 'Carton count and marks', text: 'Use dated photos of the packed order to compare carton count and marks with the packing list.' },
+    { src: '/images/illustrative/export-document-review.webp', alt: 'Shipping forms being checked beside a carton.', title: 'Order references on shipping documents', text: 'Check the actual invoice, packing list and transport record for the same order reference and quantities.' },
   ] },
 };

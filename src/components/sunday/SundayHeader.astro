@@ -1,6 +1,8 @@
 ---
-import { primaryNav } from '../../data/site';
+import { primaryNav, PUBLIC_PHONE, WHATSAPP_URL } from '../../data/site';
 import MobileNav from '../MobileNav';
+import ContactIcon from '../ContactIcon.astro';
+import LanguageSwitch from '../LanguageSwitch.astro';
 const currentPath = Astro.url.pathname.startsWith('/previews/') ? '/' : Astro.url.pathname;
 const isActive = (item: (typeof primaryNav)[number]) => item.href === '/' ? currentPath === '/' : currentPath.startsWith(item.href) || item.children.some(child => currentPath.startsWith(child.href));
 ---
@@ -10,14 +12,30 @@ const isActive = (item: (typeof primaryNav)[number]) => item.href === '/' ? curr
     <nav class="desktop-nav" aria-label="Primary navigation">
       {primaryNav.map((item, index) => <div class:list={['nav-item', { 'has-submenu': item.children.length > 0 }]}>
         <a class="nav-link" href={item.href} aria-haspopup={item.children.length ? 'true' : undefined} aria-expanded={item.children.length ? 'false' : undefined} aria-controls={item.children.length ? `preview-submenu-${index}` : undefined} aria-current={isActive(item) ? 'page' : undefined}>{item.label}</a>
-        {item.children.length > 0 && <div class="nav-dropdown" id={`preview-submenu-${index}`} data-state="closed" aria-hidden="true" inert hidden><div class="nav-dropdown-links">{item.children.map(child => <a href={child.href} aria-current={child.href === currentPath ? 'page' : undefined}>{child.label}</a>)}</div></div>}
+        {item.children.length > 0 && <div class="nav-dropdown" id={`preview-submenu-${index}`} data-state="closed" aria-hidden="true" inert hidden>
+          <div class="nav-dropdown-links">{item.children.map(child => <a href={child.href} aria-current={child.href === currentPath ? 'page' : undefined}>{child.label}</a>)}</div>
+        </div>}
       </div>)}
     </nav>
-    <a class="button header-cta" href="/contact/">Start an inquiry</a>
+    <div class="su-header-actions">
+      <LanguageSwitch />
+      <a class="su-header-whatsapp" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" aria-label={`WhatsApp ${PUBLIC_PHONE}`}><ContactIcon name="whatsapp" size={30} /></a>
+      <a class="button header-cta" href="/contact/">Start an inquiry</a>
+    </div>
     <MobileNav client:load nav={primaryNav} currentPath={currentPath} desktopBreakpoint={1170} animated inquiryAction />
     <a class="mobile-quote" href="/contact/">Contact</a>
   </div>
 </header>
+<style>
+  .su-header-actions { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+  .su-header-actions > .header-cta { margin-left: 0; }
+  .su-header-whatsapp { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; flex-shrink: 0; border-radius: 50%; color: #25d366; transition: background-color .2s; }
+  .su-header-whatsapp:hover { background-color: #25d3661a; }
+  .su-header-whatsapp:focus-visible { outline: 2px solid #25d366; outline-offset: 3px; }
+  @media (max-width: 1169px) {
+    .su-header-actions { margin-left: auto; }
+  }
+</style>
 <script>
   const header = document.querySelector<HTMLElement>('.su-header');
   if (header) {

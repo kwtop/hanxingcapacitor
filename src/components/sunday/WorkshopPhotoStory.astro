@@ -1,5 +1,7 @@
 ---
 import type { WorkshopPhoto } from '../../data/workshopPhotos';
+import { zoomImageUrl } from '../../data/imageDelivery';
+import imageDimensions from '../../data/storyImageDimensions.generated.json';
 
 interface Props {
   id: string;
@@ -12,24 +14,28 @@ interface Props {
   moreHref?: string;
   moreLabel?: string;
 }
-const { id, eyebrow, title, intro, photos, compact = false, imageBase = '/images/workshop-stories-20261026/', moreHref, moreLabel = 'View the full process gallery' } = Astro.props;
+const { id, title, intro, photos, compact = false, imageBase = '/images/workshop-stories-20261026/', moreHref, moreLabel = 'View the full process gallery' } = Astro.props;
+const dimensions: Record<string, { width: number; height: number }> = imageDimensions;
 ---
 <section id={id} class:list={['su-photo-story', {
   'su-photo-story--compact': compact,
+  'su-photo-story--two': photos.length === 2,
   'su-photo-story--triptych': !compact && photos.length === 3,
+  'su-photo-story--four': photos.length === 4,
+  'su-photo-story--lead-with-portrait': !compact && photos[0]?.frame !== 'portrait' && photos[1]?.frame === 'portrait',
   'su-photo-story--six': !compact && photos.length === 6,
   'su-photo-story--seven': !compact && photos.length === 7,
   'su-photo-story--five-portrait': !compact && photos.length === 5 && photos[0]?.frame === 'portrait',
 }]} aria-labelledby={`${id}-title`}>
   <div class="su-photo-story-inner">
     <header class="su-photo-story-head">
-      <div><p class="su-photo-story-eyebrow">{eyebrow}</p><h2 id={`${id}-title`}>{title}</h2>{moreHref && <a class="su-photo-story-more" href={moreHref}>{moreLabel} <span aria-hidden="true">↗</span></a>}</div>
+      <div><h2 id={`${id}-title`}>{title}</h2>{moreHref && <a class="su-photo-story-more" href={moreHref}>{moreLabel}</a>}</div>
       <p>{intro}</p>
     </header>
     <div class="su-photo-story-grid">
-      {photos.map((item, index) => <figure class="su-photo-story-item" data-frame={item.frame ?? 'landscape'}>
-        <a class="su-photo-story-image" href={item.src ?? `${imageBase}${item.slug}.webp`} target="_blank" rel="noopener" aria-label={`Open full image: ${item.caption}`}><img src={item.src ?? `${imageBase}${item.slug}.webp`} alt={item.alt} loading="lazy" decoding="async" style={item.focus ? `object-position:${item.focus}` : undefined} /></a>
-        <figcaption><span class="su-photo-story-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span><span>{item.caption}{item.illustrative && <small>Illustrative visual based on supplied footage</small>}</span></figcaption>
+      {photos.map((item, index) => <figure class="su-photo-story-item" data-frame={item.frame ?? 'landscape'} data-fit={item.fit ?? 'cover'} data-original={item.originalSrc ? 'true' : undefined}>
+        <a class="su-photo-story-image" href={zoomImageUrl(item.originalSrc ?? item.src ?? `${imageBase}${item.slug}.webp`)} target="_blank" rel="noopener" aria-label={`Open full image: ${item.caption}`}><img src={item.src ?? `${imageBase}${item.slug}.webp`} srcset={item.srcset} sizes={item.srcset ? '(max-width: 850px) 90vw, 60vw' : undefined} width={item.width ?? dimensions[item.src ?? `${imageBase}${item.slug}.webp`]?.width} height={item.height ?? dimensions[item.src ?? `${imageBase}${item.slug}.webp`]?.height} alt={item.alt} loading="lazy" decoding="async" style={item.focus ? `object-position:${item.focus}` : undefined} /></a>
+        <figcaption><span class="su-photo-story-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span><span>{item.caption}</span></figcaption>
       </figure>)}
     </div>
   </div>
@@ -48,16 +54,19 @@ const { id, eyebrow, title, intro, photos, compact = false, imageBase = '/images
   .su-photo-story-item:first-child:not([data-frame='portrait']) { grid-column: span 8; }
   .su-photo-story-image { display: block; width: 100%; height: 0; padding-bottom: 73%; position: relative; overflow: hidden; border-radius: 16px; background: #dfe5e9; }
   .su-photo-story-item:first-child:not([data-frame='portrait']) .su-photo-story-image { padding-bottom: 35.5%; }
+  :global(.su-photo-story--lead-with-portrait) .su-photo-story-item:first-child:not([data-frame='portrait']) .su-photo-story-image { padding-bottom: 60%; }
   .su-photo-story-item[data-frame='portrait'] .su-photo-story-image { padding-bottom: 122%; }
   :global(.su-photo-story--triptych) .su-photo-story-item:first-child:not([data-frame='portrait']) { grid-column: span 6; }
   :global(.su-photo-story--triptych) .su-photo-story-item:not(:first-child) { grid-column: span 3; }
   :global(.su-photo-story--triptych) .su-photo-story-item:first-child:not([data-frame='portrait']) .su-photo-story-image { padding-bottom: 64%; }
-  :global(.su-photo-story--seven) .su-photo-story-item:nth-last-child(2) { grid-column: span 6; }
+  :global(.su-photo-story--seven) .su-photo-story-item:nth-last-child(-n+2) { grid-column: span 6; }
   :global(.su-photo-story--six) .su-photo-story-item:last-child { grid-column: 5 / span 4; }
   :global(.su-photo-story--five-portrait) .su-photo-story-item:nth-last-child(2) { grid-column: 3 / span 4; }
   :global(.su-photo-story--five-portrait) .su-photo-story-item:last-child { grid-column: 7 / span 4; }
   .su-photo-story-image img { position: absolute; inset: 0; width: 100%; height: 100% !important; object-fit: cover; display: block; transition: transform .5s ease; }
+  .su-photo-story-item[data-fit='contain'] img { object-fit: contain; background: #e9edf0; }
   .su-photo-story-item:hover img { transform: scale(1.025); }
+  .su-photo-story-item[data-fit='contain']:hover img { transform: none; }
   .su-photo-story-image:focus-visible { outline: 3px solid #b84b08; outline-offset: 4px; }
   .su-photo-story-item figcaption { display: flex; gap: 12px; padding: 12px 2px 0; font: 500 14px/1.45 'Sunday Geist', sans-serif; color: #1c2934; }
   .su-photo-story-number { flex: 0 0 auto; color: #b84b08; font-size: 11px; letter-spacing: .08em; line-height: 1.85; }
@@ -70,6 +79,10 @@ const { id, eyebrow, title, intro, photos, compact = false, imageBase = '/images
   .su-photo-story--compact .su-photo-story-item:first-child:not([data-frame='portrait']) { grid-column: span 4; }
   .su-photo-story--compact .su-photo-story-image, .su-photo-story--compact .su-photo-story-item:first-child .su-photo-story-image { padding-bottom: 72%; }
   .su-photo-story--compact .su-photo-story-item[data-frame='portrait'] .su-photo-story-image { padding-bottom: 122%; }
+  :global(.su-photo-story--compact.su-photo-story--two) .su-photo-story-item,
+  :global(.su-photo-story--compact.su-photo-story--four) .su-photo-story-item { grid-column: span 6; }
+  :global(.su-photo-story--compact.su-photo-story--two) .su-photo-story-item:first-child:not([data-frame='portrait']),
+  :global(.su-photo-story--compact.su-photo-story--four) .su-photo-story-item:first-child:not([data-frame='portrait']) { grid-column: span 6; }
   :global(body.sunday-site.sunday-inner) .su-photo-story { padding-block: 76px; }
   :global(body.sunday-site.sunday-inner) .su-photo-story-inner { max-width: 1240px; }
   :global(body.sunday-site.sunday-inner) .su-photo-story--compact { padding-block: 46px; }
@@ -81,17 +94,22 @@ const { id, eyebrow, title, intro, photos, compact = false, imageBase = '/images
     .su-photo-story-item, .su-photo-story-item:first-child { grid-column: span 1; }
     .su-photo-story-item:first-child:not([data-frame='portrait']) { grid-column: span 2; }
     .su-photo-story-item:first-child:not([data-frame='portrait']) .su-photo-story-image { padding-bottom: 52%; }
+    :global(.su-photo-story--lead-with-portrait) .su-photo-story-item:first-child:not([data-frame='portrait']) .su-photo-story-image { padding-bottom: 52%; }
     .su-photo-story-image { padding-bottom: 82%; }
     .su-photo-story-item[data-frame='portrait'] .su-photo-story-image { padding-bottom: 122%; }
     :global(.su-photo-story--triptych) .su-photo-story-item:first-child:not([data-frame='portrait']) { grid-column: span 2; }
     :global(.su-photo-story--triptych) .su-photo-story-item:not(:first-child),
-    :global(.su-photo-story--seven) .su-photo-story-item:nth-last-child(2),
+    :global(.su-photo-story--seven) .su-photo-story-item:nth-last-child(-n+2),
     :global(.su-photo-story--six) .su-photo-story-item:last-child,
     :global(.su-photo-story--five-portrait) .su-photo-story-item:nth-last-child(2),
     :global(.su-photo-story--five-portrait) .su-photo-story-item:last-child { grid-column: span 1; }
     :global(.su-photo-story--triptych) .su-photo-story-item:first-child:not([data-frame='portrait']) .su-photo-story-image { padding-bottom: 52%; }
     .su-photo-story--compact .su-photo-story-item:first-child:not([data-frame='portrait']) { grid-column: span 2; }
     .su-photo-story--compact .su-photo-story-item:first-child:not([data-frame='portrait']) .su-photo-story-image { padding-bottom: 52%; }
+    :global(.su-photo-story--compact.su-photo-story--two) .su-photo-story-item,
+    :global(.su-photo-story--compact.su-photo-story--four) .su-photo-story-item,
+    :global(.su-photo-story--compact.su-photo-story--two) .su-photo-story-item:first-child:not([data-frame='portrait']),
+    :global(.su-photo-story--compact.su-photo-story--four) .su-photo-story-item:first-child:not([data-frame='portrait']) { grid-column: span 1; }
   }
   @media (max-width: 520px) {
     .su-photo-story { padding: 58px 20px; }
@@ -100,7 +118,11 @@ const { id, eyebrow, title, intro, photos, compact = false, imageBase = '/images
     .su-photo-story-grid { gap: 26px 12px; }
     .su-photo-story-image { padding-bottom: 110%; border-radius: 12px; }
     .su-photo-story-item:first-child:not([data-frame='portrait']) .su-photo-story-image { padding-bottom: 69%; }
+    :global(.su-photo-story--lead-with-portrait) .su-photo-story-item:first-child:not([data-frame='portrait']) .su-photo-story-image { padding-bottom: 69%; }
     .su-photo-story-item[data-frame='portrait'] .su-photo-story-image { padding-bottom: 122%; }
+    :global(.su-photo-story--compact) .su-photo-story-item[data-original='true'],
+    :global(.su-photo-story--compact.su-photo-story--two) .su-photo-story-item[data-original='true'],
+    :global(.su-photo-story--compact.su-photo-story--four) .su-photo-story-item[data-original='true'] { grid-column: span 2; }
     .su-photo-story-item figcaption { gap: 6px; padding-top: 8px; font-size: 12px; line-height: 1.35; }
     .su-photo-story-number { font-size: 10px; }
     .su-photo-story-item small { font-size: 10px; }

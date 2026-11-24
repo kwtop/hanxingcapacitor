@@ -45,7 +45,7 @@ export const guideCovers: Record<string, GuideCover> = {
   },
   'motor-capacitor-order-shipment-checklist': {
     photos: [
-      { src: '/images/real/packing-scene.jpg', alt: 'Supplied photograph of Hanxing capacitor packaging work', focus: '50% 49%' },
+      { src: '/images/real/packing-scene.jpg', alt: 'Hanxing capacitor packaging work', focus: '50% 49%' },
     ],
   },
 };

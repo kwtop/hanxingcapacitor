@@ -2,10 +2,9 @@
 import type { Product } from '../data/site';
 import { seriesFormats } from '../data/productReference';
 import { productSpecificationBasis } from '../data/productSpecificationBasis';
-interface Props { product: Product; }
-const { product } = Astro.props;
+interface Props { product: Product; showIntroduction?: boolean; }
+const { product, showIntroduction = true } = Astro.props;
 const { code } = product;
-const basis = productSpecificationBasis[code];
 const electrical = [
   ['Function', product.function + ' duty'],
   ...(code === 'CBB65' ? [] : [['Capacitance range', product.capacitance], ['Rated voltage', product.voltage]]),
@@ -22,7 +21,7 @@ const mechanical = [
 <section class="pdr-section" id="specifications" aria-labelledby="specifications-title">
   <header class="pdr-spec-heading">
     <h2 id="specifications-title">Technical specifications</h2>
-    <div><p>{basis.scope}</p><p class="pdr-source-reference">{basis.source}</p></div>
+    {showIntroduction && <p class="pdr-series-scope">{product.intro}</p>}
   </header>
   {code === 'CBB65' && <div class="pdr-variant-specifications">
     <div class="pdr-variant-grid">
@@ -43,7 +42,15 @@ const mechanical = [
     <div><h3>Electrical</h3><dl class="pdr-specifications">{electrical.map(([label,value]) => <div><dt>{label}</dt><dd>{value}</dd></div>)}</dl></div>
     <div><h3>Case &amp; connection</h3><dl class="pdr-specifications">{mechanical.map(([label,value]) => <div><dt>{label}</dt><dd>{value}</dd></div>)}</dl></div>
   </div>
-  <div class="pdr-model-confirmation">
-    <p>{basis.note}</p>
-  </div>
+  {code === 'CD60' && <aside class="pdr-spec-source-note" aria-label="CD60 catalogue and sample scope">
+    <h3>Catalogue ranges and the photographed sample</h3>
+    <p><strong>Series catalogue:</strong> {productSpecificationBasis.CD60.source} lists ±10% (K) / ±20% (M) tolerance and a −20 to +65 °C temperature range.</p>
+    <p><strong>Sample P038:</strong> the photographed 500 µF, 300 VAC part is marked ±5% and −40°C/70°C/21. These markings describe that sample; the catalogue ranges describe the published series.</p>
+    <p>Use the approved model datasheet to confirm tolerance, temperature limits and starting duty before ordering. <a href="/resources/cd60-start-capacitor-duty-cycle/">Read the CD60 sample and duty explanation</a>.</p>
+  </aside>}
 </section>
+<style>
+  .pdr-series-scope { max-width: 68ch; margin: 16px 0 0; line-height: 1.7; }
+  .pdr-spec-source-note { margin-top: 28px; padding: 24px; border-left: 3px solid #a63d00; background: #f4f6f7; }
+  .pdr-spec-source-note p { max-width: 76ch; margin: 12px 0 0; }
+</style>

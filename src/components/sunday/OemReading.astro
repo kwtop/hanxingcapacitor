@@ -1,0 +1,7 @@
+---
+interface Props {title?:string; links:{title:string;description:string;href:string}[];}
+const {title='Related guides',links}=Astro.props;
+---
+<section class="oe-reading"><div class="oe-shell"><h2>{title}</h2><nav class="oe-reading-grid" aria-label={title}>
+  {links.map(item=><a href={item.href}><h3>{item.title}</h3><p>{item.description}</p></a>)}
+</nav></div></section>

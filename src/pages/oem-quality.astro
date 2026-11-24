@@ -1,44 +1,45 @@
 ---
-import { isSatechiPreview } from '../lib/visualPreview';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import IndustrialPhoto from '../components/sunday/IndustrialPhoto.astro';
-import FactoryMedia from '../components/satechi-preview/FactoryMedia.astro';
-import '../styles/oem-hub.css'; // Matching overview frames and route hierarchy.
+import OemPageHero from '../components/sunday/OemPageHero.astro';
+import OemReading from '../components/sunday/OemReading.astro';
+import OemPhotography from '../components/sunday/OemPhotography.astro';
+import OemWorkshopImage from '../components/sunday/OemWorkshopImage.astro';
+import '../styles/oem-editorial.css';
+const reading=[
+ {title:'Approve an OEM sample',description:'Link the sample to its drawing, electrical specification and artwork revision.',href:'/resources/oem-capacitor-sample-approval/'},
+ {title:'Prepare a quotation',description:'Ratings, connection details, quantities and destination in one inquiry.',href:'/buying-guide/#rfq-template'},
+ {title:'Plan the shipment',description:'Packing quantities, delivery terms and the records for carrier handover.',href:'/resources/motor-capacitor-order-shipment-checklist/'}
+];
 ---
-
-<BaseLayout title="OEM, Manufacturing & Quality" description="Motor capacitor OEM requirements, sample approval, production footage and product document checks, with packing and dispatch guidance for buyers.">
-  <article class:list={['procurement-page procurement-hub', {'oem-editorial-page': isSatechiPreview}]}>
-    <section class="procurement-hero"><div class="container">
-      <p class="breadcrumbs"><a href="/">Home</a> / OEM &amp; Quality</p>
-      <h1>OEM and quality</h1>
-    </div></section>
-    <section class="procurement-section"><div class:list={['container procurement-routes',{'co-oem-stories':isSatechiPreview}]}>
-      <article>
-        {isSatechiPreview ? <IndustrialPhoto name="connections" class="procurement-route-photo procurement-route-photo--sample" eager sizes="(max-width: 800px) calc(100vw - 32px), 48vw" /> : <figure class="procurement-route-photo procurement-route-photo--sample"><img src="/images/real/cbb65-4.jpg" alt="Original CBB65 sample beside its printed carton." width="2000" height="2000" loading="eager" /></figure>}
-        <h2>OEM &amp; private label</h2>
-        <p>Set the electrical rating, case and connections. Approve the sample, label artwork and packing specification.</p>
-        <a class="card-link" href="/oem/">OEM requirements and approval</a>
-      </article>
-      <article>
-        {isSatechiPreview ? <FactoryMedia name="workshop" class="procurement-route-photo procurement-route-photo--process" /> : <figure class="procurement-route-photo procurement-route-photo--process"><img src="/images/real/inspection-station.jpg" alt="Operator beside production equipment in supplied process imagery." width="1920" height="1080" loading="eager" /></figure>}
-        <h2>Manufacturing &amp; quality</h2>
-        <p>Production footage and a checklist for model drawings, inspection reports and certificates.</p>
-        <a class="card-link" href="/factory/">Production footage and documents</a>
-      </article>
-      <article>
-        {isSatechiPreview ? <IndustrialPhoto name="packing" class="procurement-route-photo" sizes="(max-width: 800px) calc(100vw - 48px), 38vw" /> : <figure class="procurement-route-photo"><img src="/images/illustrative/oem-hub-packing-20261012.webp" alt="Illustration of plain cartons with protective dividers." width="1200" height="800" loading="eager" /></figure>}
-        <h2>Packing &amp; dispatch</h2>
-        <p>Unit protection, carton quantities, shipping marks and carrier handover records.</p>
-        <a class="card-link" href="/factory/packing-and-dispatch/">Packing and dispatch checklist</a>
-      </article>
-    </div></section>
-    <section class="procurement-section procurement-related"><div class="container">
-      <h2>Before placing an order</h2>
-      <nav class="procurement-record-links" aria-label="Order preparation records">
-        <a href="/buying-guide/#rfq-template"><strong>Quotation checklist</strong></a>
-        <a href="/factory/#model-records"><strong>Product document checklist</strong></a>
-        <a href="/resources/motor-capacitor-order-shipment-checklist/"><strong>Order &amp; shipping checklist</strong></a>
-      </nav>
-    </div></section>
+<BaseLayout title="Motor Capacitor OEM, Manufacturing & Quality" description="OEM labels and packaging for motor capacitors, workshop footage, model document requests and packing information for CBB60, CBB61, CBB65 and CD60 orders.">
+  <article class="oem-suite oe-hub">
+    <OemPageHero title="OEM and quality" description="Private-label motor capacitors, sample approval, model documents and packing requirements for your order." current="OEM & quality" layout="text" />
+    <div class="oe-shell oe-hub-grid">
+      <section class="oe-hub-card" id="oem-supply" aria-labelledby="oem-supply-title">
+        <a href="/oem/">
+          <div class="oe-hub-photo"><OemPhotography name="oem-lineup" eager sizes="(max-width:700px) calc(100vw - 40px), (min-width:1360px) 620px, 46vw" /></div>
+          <div class="oe-hub-card-copy"><h2 id="oem-supply-title">OEM and private label</h2><p>CBB60, CBB61, CBB65 and CD60 with your label and packaging. Electrical or structural changes are quoted for the specific model.</p><span class="oe-hub-action">Explore OEM requirements</span></div>
+        </a>
+      </section>
+      <section class="oe-hub-card" id="quality-workshop-views" aria-labelledby="quality-workshop-views-title">
+        <a href="/factory/">
+          <div class="oe-hub-photo"><OemWorkshopImage name="film-floor" eager sizes="(max-width:700px) calc(100vw - 40px), (min-width:1360px) 620px, 46vw" /></div>
+          <div class="oe-hub-card-copy"><h2 id="quality-workshop-views-title">Manufacturing and quality</h2><p>Film processing, component handling and the test area, with a guide to the model references, test conditions and results needed in an inspection report.</p><span class="oe-hub-action">View manufacturing and records</span></div>
+        </a>
+      </section>
+      <section class="oe-hub-card" id="process-gallery" aria-labelledby="process-gallery-title">
+        <a href="/factory/process-gallery/">
+          <div class="oe-hub-photo"><OemWorkshopImage name="09-assembly-machine" sizes="(max-width:700px) calc(100vw - 40px), (min-width:1360px) 620px, 46vw" /></div>
+          <div class="oe-hub-card-copy"><h2 id="process-gallery-title">Inside the workshop</h2><p>Equipment, can assembly, packing and loading in the workshop gallery.</p><span class="oe-hub-action">Explore the process gallery</span></div>
+        </a>
+      </section>
+      <section class="oe-hub-card" id="packing-dispatch" aria-labelledby="packing-dispatch-title">
+        <a href="/factory/packing-and-dispatch/">
+          <div class="oe-hub-photo"><OemWorkshopImage name="25-packing-worker" sizes="(max-width:700px) calc(100vw - 40px), (min-width:1360px) 620px, 46vw" /></div>
+          <div class="oe-hub-card-copy"><h2 id="packing-dispatch-title">Packing and dispatch</h2><p>Protection for capacitor bodies, leads and terminals, plus carton quantities, shipping marks and carrier handover records.</p><span class="oe-hub-action">Plan packing and dispatch</span></div>
+        </a>
+      </section>
+    </div>
+    <OemReading title="Before placing an order" links={reading} />
   </article>
 </BaseLayout>

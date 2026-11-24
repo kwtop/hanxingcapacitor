@@ -24,10 +24,11 @@ export const sampleEvidence: SampleEvidence[] = [
 ];
 
 export const sampleEvidenceNotes: Record<string, string> = {
-  CBB60: 'The 35 µF sample is the wired Hanxing part in the gallery. P003 records the horizontal 25 µF sample; that photograph also includes a separate D&L-marked part.',
-  CBB61: 'P018 shows three individual capacitors. The labels show 40/70/21 and do not identify a brand.',
+  // P003 also contains a separate D&L-marked part; P018 does not identify a brand.
+  // These references do not establish the brand or order configuration of every pictured part.
+  CBB60: 'The 35 µF wired sample and the horizontal 25 µF sample in P003 are separate references. Specify which configuration you need when requesting a quote.',
+  CBB61: 'P018 contains three blade-terminal reference samples. Use the individual ratings in the table to specify the part you need.',
   CBB65: 'The dual-run sample is marked 50+5 µF, with a separate value for each capacitance section.',
-  CD60: 'P038 is marked ±5% and −40°C/70°C/21; the series values are ±10% / ±20% and −20 to +65 °C. Use this sample’s datasheet for its approved tolerance, temperature and starting duty.',
 };
 
 export const sampleEvidenceText = (sample: SampleEvidence) =>

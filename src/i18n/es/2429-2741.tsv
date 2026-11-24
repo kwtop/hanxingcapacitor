@@ -1,0 +1,274 @@
+2429|Utilice el mismo número de modelo y revisión de plano en la cotización, el registro de muestra y la orden de compra. Revise los resultados de inspección, la etiqueta y el embalaje con la especificación acordada antes de autorizar el pedido.
+2430|Qué enviar a un fabricante de condensadores de marcha
+2431|Para un diseño nuevo, envíe modelo de equipo, especificación del motor y plano de instalación. Para una compra repetida, incluya el último plano y muestra aprobados. Enumere los cambios necesarios y asigne una cantidad a cada configuración.
+2432|Revise el modelo propuesto y los puntos pendientes de la cotización. Acuerde cantidad de muestras, documentos de aprobación, cantidad de producción y destino. Pregunte cuándo empieza el plazo cotizado. Si solo cambia el diseño gráfico, compruebe la nueva etiqueta en la muestra. Un cambio de características necesita otra revisión frente a la especificación del motor.
+2433|Especifique tipo de servicio, capacitancia nominal, tolerancia, VAC nominales, frecuencia y condiciones de funcionamiento.
+2434|Muestre en el plano la carcasa, dimensiones instaladas, fijación y geometría de terminales o cables terminados con su conector.
+2435|Incluya los diseños de etiqueta y embalaje, ensayos o certificados de aprobación, cantidad y destino.
+2436|Condensadores personalizados HAN XING y cotizaciones OEM
+2437|Empiece por una referencia de modelo
+2438|La especificación de muestra necesita el servicio de marcha o arranque del motor, capacitancia, tensión nominal de CA, tolerancia y frecuencia. Utilice el número de modelo completo del proveedor en el registro de muestra y la cotización.
+2439|Para un condensador doble, especifique ambos valores y sus terminales asignados. Evalúe cada sección según los requisitos de su equipo.
+2440|Campos de especificación OEM
+2441|Compruebe el plano frente a la muestra
+2442|La medida de la carcasa no incluye el espacio de cables, terminales y conectores. Compare la muestra con el plano acotado, incluidos el punto de montaje y la altura instalada. Anote la revisión del plano junto a la referencia de muestra.
+2443|En un condensador cilíndrico, las dimensiones principales del cuerpo son diámetro y altura. En uno rectangular, largo, ancho y alto. Las dimensiones completas de instalación incluyen también las fijaciones y conexiones.
+2444|Cables: número, longitud, color, aislamiento y conector.
+2445|Terminales de lengüeta: disposición de grupos, dimensiones, orientación y separación.
+2446|Montaje: detalles de abrazadera o espárrago y espacio de ensamblaje.
+2447|Guía de dimensiones y conexiones
+2448|Revise el registro de ensayo
+2449|El informe debe indicar modelo ensayado, referencia de muestra o lote, fecha, método, instrumento, condiciones, límites de aceptación y resultados medidos.
+2450|Archive el informe con la especificación y el plano revisados. Un certificado requerido debe identificar emisor, número, modelos cubiertos, alcance y vigencia para el destino.
+2451|Apruebe etiquetas y embalaje
+2452|La etiqueta debe coincidir con la especificación eléctrica acordada. Revise en la muestra la revisión del diseño, texto, posición e idioma. La marca y los distintivos de aprobación necesitan la autorización o documentación correspondiente.
+2453|Compruebe el embalaje con el condensador completo dentro. Cables y terminales necesitan espacio libre y el inserto debe sujetar el cuerpo. La especificación también debe incluir unidades por embalaje interior y caja, marcas de envío, dimensiones y pesos.
+2454|Registre la aprobación de muestra
+2455|Registre modelo, muestra, revisión del plano e informe de ensayo, junto con las revisiones de diseño y embalaje, el revisor y la fecha. Relacione los cambios pendientes con la pieza afectada antes de aprobarla para el pedido.
+2456|Utilice las referencias aprobadas en la orden de compra. Un cambio posterior de características, carcasa, conexión, etiqueta o embalaje necesita una nueva revisión y decidir si se requiere otra muestra. Conserve las aprobaciones originales y revisadas para poder rastrear los cambios.
+2457|Compare cotizaciones con los mismos requisitos de modelo
+2458|Facilite a todos los proveedores los mismos requisitos eléctricos, plano, conexiones y embalaje. Compare el modelo ofrecido y las excepciones pendientes junto con el precio unitario. Una cotización de otra configuración necesita revisión técnica antes de comparar los importes totales.
+2459|Anote moneda, precio unitario y cantidad de cada valor y versión.
+2460|Identifique los costes de muestras, diseño gráfico o útiles y cualquier embalaje cotizado por separado.
+2461|Indique la condición de entrega y el lugar convenido, con el flete incluido o desglosado.
+2462|Pregunte el mínimo por versión y qué aprobación o pago inicia el plazo de entrega.
+2463|Conserve en la referencia de cotización los ensayos, documentos del modelo y revisiones de etiqueta o embalaje aprobadas.
+2464|Requisitos de pedido y envío
+2465|Preguntas sobre muestras, cantidad mínima y entrega
+2466|Prepare la aprobación de muestras
+2467|Envíe el modelo y el diseño gráfico con los ensayos y documentos necesarios para aprobar la muestra.
+2468|Consultar sobre una muestra OEM
+2469|Especificación del motor y servicio necesario en el circuito.
+2470|Plano y disposición de conexiones, con revisión.
+2471|Cantidad de muestras, registros de aprobación y requisitos del destino.
+2479|Producto y aplicación relacionados
+2480|Cómo leer una etiqueta de condensador | Hanxing Capacitor
+2481|La etiqueta identifica capacitancia (µF), tensión nominal de CA (VAC), tolerancia y frecuencia. El marcado climático y de servicio describe otras condiciones de funcionamiento. Conserve los códigos de modelo y lote junto con las características para identificar la pieza.
+2482|Interpretación de la etiqueta
+2483|Anote el modelo, lote y características que sean legibles. Para un dato ilegible, utilice la especificación del motor o la ficha técnica correspondiente; el intervalo de una serie abarca varios modelos.
+2484|Texto visible en la muestra CBB65
+2485|Texto visible de la muestra
+2486|Qué debe anotar
+2487|Serie / modelo
+2489|CBB65 identifica la serie. Anote un número de modelo independiente cuando exista.
+2490|El valor original en µF, o ambos valores en una pieza doble.
+2492|Los VAC del condensador, separados de la tensión de alimentación del motor.
+2493|La variación permitida de capacitancia. Copie el marcado exacto.
+2495|El marcado de frecuencia tal como está impreso.
+2496|Marcado de temperatura / categoría climática
+2497|Copie el código completo y compruebe su significado en la ficha técnica del modelo.
+2498|No indicado
+2499|Anote el tipo de servicio según el circuito del motor y la documentación del modelo.
+2500|Otro código / marcado de lote
+2502|Anote cada código tal como aparece.
+2503|El código climático aporta información de categorías de temperatura y ensayo de calor húmedo. Los distintivos de aprobación remiten a documentos de certificación independientes para los modelos enumerados.
+2504|Revisar configuraciones de muestras CBB65
+2505|Qué significa 40/85/21 en un condensador
+2506|Clases de seguridad y vida IEC 60252-1
+2507|Características en una etiqueta CBB65
+2508|La etiqueta indica 20 µF ±5%, 450 VAC y 50/60 Hz.
+2509|Etiquetas CBB65 de 20 µF y 50+5 µF
+2510|P029 está marcada 20 µF ±5%. El cinco por ciento de 20 es 1 µF, lo que da un intervalo calculado de 19–21 µF.
+2511|Muestra CBB65 de marcha doble de 50+5 µF y 450 VAC
+2512|Valor impreso de la sección
+2513|Tolerancia impresa
+2514|Intervalo nominal calculado
+2518|P034 tiene secciones independientes de 50 µF y 5 µF. Evalúe cada una según su propio valor, la correspondencia de terminales, las condiciones de medición y los límites de aceptación del modelo.
+2519|Consultar sobre P029 · 20 µF / 450 VAC
+2520|Consultar sobre P034 · 50+5 µF / 450 VAC
+2521|Muestra de marcha doble: 50+5 µF · 450 VAC
+2522|La etiqueta muestra 50+5 µF ±5% y 450 VAC. Un repuesto debe respetar ambos valores de capacitancia y las conexiones de terminales especificadas para el circuito original.
+2523|Marcado ausente o ilegible
+2524|Texto ilegible
+2525|Adjunte la fotografía de la etiqueta completa e identifique el dato ilegible.
+2526|Mida por separado el cuerpo y el montaje. Incluya el espacio de las conexiones.
+2527|Distintivo de conformidad
+2528|Solicite el certificado que indique modelos cubiertos, alcance y vigencia para el mercado de destino.
+2529|Comprobar documentación y alcance del certificado
+2530|Fotografías que debe preparar
+2531|Etiqueta completa
+2532|Muestre todos los marcados y códigos de modelo o lote en una fotografía clara. Incluya ambos valores si la pieza es doble.
+2533|Muestre las etiquetas de grupos de terminales y sus lengüetas, o las salidas de cables y la forma del conector.
+2534|Lateral y montaje
+2535|Muestre la carcasa y las fijaciones con el espacio alrededor de las conexiones. Añada las medidas a sus notas.
+2536|Placa del motor
+2537|Incluya la identificación del equipo y motor y, si está disponible, el esquema eléctrico.
+2538|Medir dimensiones, terminales y montaje
+2539|Envíe una fotografía de la etiqueta completa por correo electrónico o WhatsApp. Incluya la referencia de consulta si ya ha enviado el formulario.
+2540|Fotografías claras de la etiqueta completa y las conexiones
+2541|Modelo de motor o equipo
+2542|Marcado de etiqueta y fotografía de cualquier dato ilegible
+2543|Dimensiones del cuerpo y montaje, con cantidad y destino
+2544|Guía de capacitancia y tensión
+2545|Servicio de arranque frente a marcha
+2550|Vista retocada de muestra. CBB65 de marcha doble marcado 50+5 µF y 450 VAC, con grupos de terminales visibles.
+2553|Selección de CBB65 simples y dobles | Hanxing Capacitor
+2554|Un condensador de marcha simple tiene una sección capacitiva; uno doble tiene dos en una carcasa, normalmente para el compresor y el ventilador de climatización. Utilice el valor o pareja en µF, los VAC y los terminales asignados que especifica el equipo para elegir un repuesto CBB65.
+2555|Marcha simple o doble según el equipo
+2556|Utilice la especificación del equipo para identificar la disposición del condensador de marcha. Una pieza simple tiene una sección capacitiva. Una doble contiene dos secciones en una carcasa con conexión común. En una disposición habitual de climatización, estas sirven al compresor y al ventilador.
+2557|Una solicitud de condensador doble para aire acondicionado necesita la pareja completa de valores en µF. Léala en la etiqueta original y en los documentos del equipo y después compare el modelo CBB65 propuesto y sus terminales.
+2558|Comprobaciones de compra de CBB65 simples y dobles
+2559|Comprobación
+2560|Marcha simple
+2561|Marcha doble
+2562|Requisito de capacitancia
+2563|Un valor nominal en µF.
+2564|Dos valores nominales en µF, cada uno asignado a su circuito.
+2565|Muestra original de esta página
+2568|Registro de conexión
+2569|Grupos de terminales especificados y esquema eléctrico.
+2570|Conexión común y asignación de ambas secciones en el esquema eléctrico.
+2571|Especificaciones de CBB65 simples y dobles
+2572|¿Puede un condensador 45/5 sustituir a uno 35/5?
+2573|Utilice 45/5 solo cuando el equipo especifique 45 µF para el compresor y 5 µF para el ventilador. MARS enumera 35/5 y 45/5 como valores dobles distintos. Comparten 5 µF en el ventilador, pero difieren en 10 µF en el compresor.
+2574|Catálogo MARS JARD: valores 35/5 y 45/5
+2575|Lea ambos valores junto con los VAC necesarios. Un cambio de capacitancia propuesto necesita aprobación según la especificación del equipo. Asigne una cantidad a cada pareja al preparar el pedido.
+2576|Ejemplos de valores dobles de climatización del catálogo MARS
+2577|Sección del compresor
+2578|Sección del ventilador
+2582|Son ejemplos de valores nominales. Solicite cotización y plano del modelo CBB65 exacto para la pareja y tensión necesarias.
+2583|Interprete C, HERM y FAN en el modelo real
+2584|Un esquema convencional de marcha doble para climatización puede identificar la conexión común como C o COMMON, la sección del compresor como HERM y la del ventilador como FAN. Las instrucciones de AmRad muestran estas etiquetas en sus propios circuitos de ejemplo. Siga los esquemas del equipo y del condensador propuesto para la instalación real.
+2585|AmRad: ejemplos de marcado de terminales dobles
+2586|Registre los grupos de terminales aislados y las lengüetas de cada grupo como elementos distintos. Los µF identifican las secciones capacitivas. El número y separación de lengüetas describen la disposición del conector.
+2587|El personal cualificado debe identificar las conexiones originales con el equipo aislado y asegurado conforme a sus instrucciones de servicio. Conserve una fotografía clara de los terminales y el esquema eléctrico con la solicitud de repuesto.
+2588|Etiquetas habituales de marcha doble que deben cotejarse con el esquema
+2589|Referencia del circuito en el ejemplo
+2590|Dato de compra que debe registrar
+2592|Conexión común.
+2593|Posición real de terminales y disposición de conectores.
+2595|Sección capacitiva del compresor.
+2596|µF necesarios del compresor y su grupo de terminales.
+2598|Sección capacitiva del ventilador.
+2599|µF necesarios del ventilador y su grupo de terminales.
+2600|20 µF y 50+5 µF en etiquetas originales CBB65
+2601|La muestra original simple está marcada 20 µF ±5%, 450 VAC y 50/60 Hz. La doble está marcada 50+5 µF ±5% y 450 VAC. Mantenga cada muestra identificada con sus características al tratar el pedido propuesto.
+2602|Muestra de marcha simple de 20 µF
+2603|La etiqueta indica una única capacitancia nominal.
+2604|Muestra de marcha doble de 50+5 µF
+2605|Los dos valores corresponden a las dos secciones de circuito especificadas.
+2606|Compruebe el espacio para carcasa, abrazadera y conector
+2607|Anote la forma de la carcasa y sus dimensiones en milímetros. En una redonda, mida diámetro y altura del cuerpo e incluya la abrazadera y los terminales o conectores instalados en el volumen total. Compruebe el acceso para montar y asegurar la pieza.
+2608|Para sustituir un CBB65, identifique cada dimensión en el plano del modelo. Si el material de carcasa, el medio de relleno, la clase de protección o una aprobación forman parte de los requisitos de compra, solicite los documentos correspondientes del modelo.
+2609|Lista de plano dimensional y conexiones
+2610|Marcado climático de una etiqueta CBB65
+2611|Prepare una línea de cotización por modelo necesario
+2612|Una solicitud de cotización (RFQ) debe mantener juntos la referencia del equipo, la pareja eléctrica y la versión mecánica. Dos condensadores con la misma pareja de valores pueden necesitar dimensiones o conexiones distintas.
+2613|Información para pedidos de repuestos CBB65
+2614|Circuito
+2615|Modelo del equipo y disposición simple o doble.
+2616|Cada valor nominal en µF, tolerancia, VAC y frecuencia.
+2617|Fotografía de terminales, esquema y detalles del conector acoplado.
+2618|Instalación
+2619|Dimensiones de carcasa, abrazadera y espacio de instalación.
+2620|Documentos
+2621|Plano, ficha técnica y registros de inspección o aprobación necesarios.
+2622|Pedido
+2623|Cantidad por modelo, destino y requisitos de etiqueta y embalaje.
+2624|Revise la muestra frente a la configuración cotizada
+2625|Compare la etiqueta, grupos de terminales y ajuste conectado de la muestra propuesta con el plano identificado en la cotización. Mantenga cualquier cambio de capacitancia, carcasa o terminales en su propia especificación revisada.
+2626|Pida que la cotización identifique las condiciones de muestras, el mínimo de cada versión y el hito que inicia el plazo de producción. Utilice las referencias de modelo y documentos aprobados al hacer el pedido.
+2627|Aprobación de muestras y revisiones de plano
+2628|Preguntas de compradores sobre muestras y entrega
+2629|Especifique la disposición del condensador de marcha
+2630|Para una pieza doble, envíe ambos valores de capacitancia e identifique las conexiones de terminales.
+2631|Solicitar cotización de condensador de marcha
+2632|Referencia de equipo, ambos µF cuando corresponda, VAC nominales y frecuencia.
+2633|Fotografía original de terminales y esquema eléctrico.
+2634|Dimensiones de carcasa y montaje, cantidad por modelo y destino.
+2635|Especificaciones del producto CBB65
+2636|Requisitos de equipos de climatización
+2639|Vista retocada de muestra. CBB65 marcado 20 µF ±5%, 450 VAC y 50/60 Hz.
+2641|Vista retocada de muestra. CBB65 doble marcado 50+5 µF y 450 VAC junto a su caja.
+2644|Condensadores de marcha y arranque: diferencias | Hanxing
+2645|El condensador de marcha permanece conectado mientras funciona el motor. El de arranque se utiliza durante el intervalo de arranque previsto por el diseño del motor. Para un repuesto, respete el servicio indicado en la documentación, además de las características eléctricas y la carcasa.
+2646|Servicio de marcha y servicio de arranque
+2647|El esquema del motor indica si utiliza un condensador de marcha, uno de arranque o ambos.
+2648|Comparación de condensadores de arranque y marcha
+2649|Condensador de marcha
+2650|Condensador de arranque
+2651|Función en el circuito
+2652|Permanece conectado mientras funciona el motor.
+2653|Funciona durante el arranque según el diseño del motor.
+2654|Ejemplos de series
+2656|Construcción de estas series
+2657|Película
+2658|Electrolítica de aluminio
+2659|Requisitos de servicio
+2660|Servicio de marcha y características especificados para el motor.
+2661|Sistema de desconexión, tiempo de arranque permitido y límites de repetición indicados en la documentación del modelo.
+2662|Ver series de marcha
+2663|Respete el servicio del esquema del motor. Para un condensador de arranque, compruebe la desconexión, el tiempo permitido y el reposo entre arranques en los documentos del modelo. Verifique por separado servicio, capacitancia y tensión.
+2664|KEMET: ficha técnica de arranque MS/MD
+2665|Cómo se especifican el tiempo y la repetición de arranque CD60
+2666|Identifique la disposición antes de solicitar un repuesto
+2667|El nombre del equipo no define su sistema de arranque. Utilice la documentación del motor para identificar qué condensador permanece conectado, cuál se desconecta y si el conjunto utiliza ambos.
+2668|Decisiones de compra según la documentación del motor
+2669|Disposición documentada
+2670|Requisito de compra
+2671|Siguiente referencia
+2672|El condensador de marcha permanece conectado
+2673|Características, carcasa y conexiones de marcha especificadas.
+2674|Selección de CBB60, CBB61 o CBB65 según el motor.
+2675|El condensador de arranque se desconecta
+2676|Características de arranque, sistema de desconexión y límites temporales especificados.
+2677|Selección de servicio de arranque CD60.
+2678|Condensadores de arranque y marcha independientes
+2679|Dos piezas identificadas por separado, cada una con sus características y cantidad.
+2680|Conserve ambas referencias de condensador con el esquema del motor.
+2681|La etiqueta o el circuito original están incompletos
+2682|Identificación del motor y documentación de servicio.
+2683|Complete los requisitos antes de aprobar un sustituto.
+2684|Selección de condensador de marcha para bombas
+2685|Selección de servicio de arranque CD60
+2686|Muestras CBB65 de marcha y CD60 de arranque
+2687|Muestra de condensador de arranque CD60
+2688|Muestra de condensador de arranque CD60 marcada 500 µF y 300 VAC.
+2689|Datos para una consulta de repuesto
+2690|Motor y circuito
+2691|Modelo de equipo, modelo de motor y esquema eléctrico original.
+2692|Marcado eléctrico
+2693|Copie los µF, VAC y la frecuencia originales, junto con tolerancia y cualquier marcado de servicio.
+2694|Espacio de instalación
+2695|Mida el cuerpo y el montaje. Reserve espacio para cables, terminales y conectores.
+2696|Facilite el sistema de desconexión, el tiempo de arranque nominal y el intervalo entre arranques indicados en la ficha técnica.
+2697|Medir dimensiones y conexiones
+2698|Ciclo de servicio y repetición de arranques CD60
+2699|Solicite datos de condensadores de arranque o marcha
+2700|Envíe el esquema del motor y una fotografía de la etiqueta original. Señale cualquier dato de servicio ilegible o ausente al solicitar la ficha técnica.
+2701|Solicitar información de servicio
+2702|Modelo del motor y esquema eléctrico original
+2703|µF, VAC y frecuencia originales
+2704|Servicio de marcha o arranque
+2705|Dimensiones de carcasa, montaje y conexiones
+2710|Vista retocada de muestra. CD60 marcado 500 µF y 300 VAC, con terminales de lengüeta visibles.
+2712|Condiciones de cotización y pedido | HAN XING
+2713|Condiciones de cotización y pedido
+2714|. Esta página explica los puntos que deben acordarse antes de un pedido. Contacto empresarial: Hangzhou Zebang Refrigeration Equipment Co., Ltd.,
+2715|Selección y aprobación de productos
+2716|Los intervalos de las series abarcan varias configuraciones. Antes de pedir, acuerde modelo exacto, ficha técnica vigente, plano acotado y muestra de aprobación para las características, dimensiones y terminales requeridos.
+2717|Cotización y cantidad mínima
+2718|MOQ habitual: 1000 unidades. La cotización indica el mínimo de las características, etiqueta y embalaje seleccionados. Cantidad de muestras, costes, transporte y plazo de preparación se acuerdan antes de enviar. La oferta escrita debe indicar precios, moneda, calendario de pagos, condiciones de entrega, plazo de producción y vigencia de la cotización.
+2719|Aprobación de muestras y OEM
+2720|Vendedor, calidad y entrega
+2721|La cotización y el contrato deben identificar al vendedor legal y al fabricante. Acuerde ensayos, límites de aceptación, certificados, marcado y embalaje aprobados para el pedido. Registre por escrito el destino y las responsabilidades de entrega y distinga las estimaciones de envío de los registros reales de entrega al transportista.
+2722|Datos de la empresa
+2723|Garantía y pedidos existentes
+2724|Acuerde por escrito duración de garantía, exclusiones, inspecciones y soluciones antes de aceptar el pedido. Para un pedido existente, envíe referencia, modelo, marcado de lote y descripción del problema.
+2725|Cambios, cancelaciones y devoluciones
+2726|Antes de pedir, acuerde cómo tratar cambios de especificación, cancelaciones, devoluciones y productos no conformes, incluidos aprobaciones, plazos y costes. Para un pedido existente, consulte sus condiciones y contacte con el vendedor antes de devolver productos.
+2727|Condiciones aplicables y controversias
+2728|Especifique la legislación aplicable, el procedimiento de resolución de controversias y la prioridad entre documentos en el acuerdo del pedido.
+2729|Consultas y acuerdo del pedido
+2730|El formulario guarda los requisitos enviados para su revisión y seguimiento. Enviar una consulta no realiza un pedido ni efectúa un pago. Las condiciones se establecen mediante el contrato firmado y la cotización escrita acordada; esta página enumera los puntos que deben convenirse.
+2731|Enviar una consulta
+2732|Aprobación de modelos, cantidades mínimas, muestras, pagos y entrega que deben acordarse por escrito antes de pedir condensadores HAN XING.
+2733|Condiciones de cotización y pedido
+2734|Estado de la consulta | Hanxing Capacitor
+2735|Estado de la consulta
+2736|Referencia de su consulta
+2737|El formulario muestra una referencia después de guardar su consulta. Abrir esta página no envía una consulta ni verifica un envío anterior.
+2738|Conserve la referencia del formulario para el seguimiento por correo electrónico o WhatsApp.
+2739|Abrir el formulario de contacto
+2740|Ver productos
+2741|Dónde encontrar la referencia devuelta tras guardar una consulta a Hanxing.

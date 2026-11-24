@@ -93,3 +93,35 @@ The three site-referenced gallery images with clearly visible faces were regener
 | `public/images/illustrative/buyer-discussion-v3.webp` | Wide environmental technical review at a used workshop bench; metal capacitor samples, drawing, caliper and fixture fill most of the foreground; exactly two colleagues aged 34 and 38 compare a sample while looking down; side/three-quarter faces, natural skin and clothing, documentary 35mm perspective, real workshop light. |
 
 The common negative prompt was: no additional people, camera-facing smiles, model styling, central portraits, cinematic lighting, showroom symmetry, fake company identity, legible customer paperwork or watermark. Initial variants with older-looking people were superseded after the 30–40 age direction; only the v3 assets are referenced by the website.
+
+## Sitewide Hanxing editorial set — 2026-10-26
+
+The homepage banner (desktop, tablet, mobile), four series portraits, product-family cover, OEM configuration image and packing image were created or edited with the built-in ImageGen tool. The Hanxing emblem and wordmark were supplied as a reference from `public/images/hanxing-logo.svg`; a photographed CBB60 sample was also used to check how the brand sits on a case. Earlier unbranded renders, edited PNG originals, source mappings, SHA-256 hashes and published responsive WebP sizes are recorded in `docs/sitewide-editorial-20261026-assets.json`. The working decisions and route roles are in `docs/SITEWIDE-IMAGE-PLAN-20261026.md`.
+
+All eleven images are editorial illustrations. Their Hanxing marks establish brand identity but do not establish the existence, specification, certification, approved packaging or shipment of any pictured configuration. The four series portraits and the technical workbench image intentionally omit model ratings and certification marks. Label-reading placements instead use the original CBB60 sample photograph. Use original sample photographs and approved documents for technical evidence. Previous generated assets remain on disk for rollback.
+
+## Selective sitewide reuse — 2026-10-27
+
+The earlier sitewide redesign was rolled back. Eight existing editorial illustrations are now selectively reused in the product directory, home inquiry, resources, OEM, packing and technical-guide contexts; the selected industrial homepage banner is unchanged. Original sample photographs are used where readers need to inspect markings or terminals. See `docs/IMAGE-REUSE-20261027.md` and `docs/IMAGE-REUSE-20261027-assets.json` for placements and source mappings.
+
+## Homepage brand and factory media — 2026-10-27
+
+Following two homepage browser comments, the built-in ImageGen tool edited the OEM composition using the actual supplied blue-orange emblem and `HAN XING` lettering, and generated three coordinated factory, testing and packing illustrations from supplied process references. The old assets and original footage remain intact. The six-section homepage, selected banner, four product panels and real customer photographs are unchanged.
+
+The factory images carry visible illustration labels; the main cover starts the original winding-equipment clip, then hides the generated cover and its label. The reference identity is a raster image wrapped in SVG; the edited product rendering is not a claim of pixel-identical vector reproduction, approved product specifications or actual factory scale. Source PNGs, exact prompts, reference hashes and 16 responsive WebPs are recorded in `docs/HOME-IMAGE-REFINEMENT-20261027-assets.json` and `docs/image-generation-20261027/home-refinement/prompts.json`.
+
+## User-selected product references and original site photography — 2026-10-27
+
+The latest sitewide pass replaces the remaining old homepage OEM illustration and factory presentations. Three new banner compositions were edited with the four user-provided CBB60, CBB61, CBB65 and CD60 photographs as the authoritative product references. No Hanxing logo is added to a reference that does not have one. Seven generation attempts were reviewed; three final compositions are used. Prompt, original PNG path, selection and correction records are in `docs/source-photo-pass-20261027/FINAL-SELECTION.json` and `GENERATIONS-INDEX.json`.
+
+The factory overview, process-video covers, dispatch image and all30 process-gallery images now use original photographs/video stills, resized and WebP-encoded without inventing scene content. CBB65 single/dual comparisons use actual sample photographs. Original files and the earlier generated assets remain intact. The new source registry prepares41 original images and3 banner compositions as144 responsive WebPs under `public/images/source-photography-20261027/`; provenance and hashes are in `docs/source-photo-pass-20261027/ASSETS.json`. This is a local-only update.
+
+## Homepage manufacturing selection restored — 2026-10-27
+
+The user explicitly reselected the bright design-A factory illustrations and the existing one-large / two-small layout, with product props based on the supplied capacitor photographs. Three scenes were edited using built-in ImageGen, retaining their original environments and camera compositions. CBB60 wire leads, CBB65 metal cans with two terminal groups and CBB61 black two-blade cases are the product references. Five generation calls produced three selected final images; the testing image required two corrections, including removing a white blade-terminal prop. Generated environments retain the illustration note and do not provide factory, certification, test-result or shipment evidence. Inner-page original photography and video remain unchanged. Source mappings, prompts, selected native outputs, 12 responsive WebPs and four-viewport screenshots are documented in `docs/manufacturing-real-products-20261027/README.md`. Local only.
+
+## Inner-page editorial refresh — 2026-10-27
+
+Five new product presentations were generated with the built-in ImageGen tool for inner pages only: a four-series composition, CBB60/CBB61 connections, CBB60/CBB65 technical still life, CBB65 packaging and a CBB60 wire-lead study. All corresponding user-selected capacitor photographs were actual reference inputs, and the real blue-white carton was supplied as a supporting packaging reference. Five calls produced five selected outputs. Products retain the supplied case/lead/terminal forms and their existing brand ownership; no Hanxing mark was added to CBB61 or CD60.
+
+The selected images use natural light and pale industrial work surfaces, encoded into20 responsive WebPs. They are illustrations/presentations, not model certification, measurements, installation, factory scale or shipment evidence. Inner pages also reuse the previously selected bright manufacturing/packing scenes; original documentary labels, people, factory photographs and footage remain separate. The existing homepage registries and source files are unchanged. Exact prompts, native outputs, copied PNGs, hashes and rendered checks are in `docs/inner-editorial-refresh-20261027/`. Local only.

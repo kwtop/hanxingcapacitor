@@ -1,60 +1,69 @@
 ---
-import { isSatechiPreview } from '../lib/visualPreview';
-import FactoryMedia from '../components/satechi-preview/FactoryMedia.astro';
-import BrochurePhoto from '../components/satechi-preview/BrochurePhoto.astro';
-import { oemMedia } from '../data/oemMedia';
-import VideoFigure from '../components/VideoFigure.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import OemPageHero from '../components/sunday/OemPageHero.astro';
+import OemFeature from '../components/sunday/OemFeature.astro';
+import OemPhotoCollection from '../components/sunday/OemPhotoCollection.astro';
+import OemReading from '../components/sunday/OemReading.astro';
+import FactoryExteriorPhoto from '../components/sunday/FactoryExteriorPhoto.astro';
+import VideoFigure from '../components/VideoFigure.astro';
 import InquiryCallout from '../components/InquiryCallout.astro';
-import WorkshopPhotoStory from '../components/sunday/WorkshopPhotoStory.astro';
-import { workshopStorySets } from '../data/workshopPhotos';
-const documentRequest = '/contact/?request=documents#inquiry-form';
-const records = [
-  { name: 'Product samples', request: 'Sample reference or configuration, model number and sample for approval.' },
-  { name: 'Datasheets and drawings', request: 'Current model datasheet and dimensioned drawing, with revision or date.' },
-  { name: 'Test and inspection reports', request: 'Model and sample or batch reference, test date, method and conditions, instrument ID, acceptance limits, measured results and reviewer signature.' },
-  { name: 'Certificates', request: 'Issuer, certificate number, covered models, destination requirements and validity.' },
-  { name: 'Marking and packing', request: 'Approved label or artwork revision and packing specification, linked to the order reference.' },
+import { oemWorkshopImages, oemWorkshopPhoto } from '../data/oemWorkshopPhotography';
+import '../styles/oem-editorial.css';
+import { PUBLIC_COMPANY_RELATIONSHIP } from '../data/site';
+const documentRequest='/contact/?request=documents#inquiry-form';
+const inspectionImage = '/images/inspection-two-lead-20261105/inspection-cbb65';
+const records=[
+ {name:'Product samples',request:'Sample reference, full model number and the sample submitted for approval.'},
+ {name:'Datasheets and drawings',request:'Current model datasheet and dimensioned drawing, with revision or date.'},
+ {name:'Test and inspection reports',request:'Model and sample or batch reference; test date, method and conditions; instrument ID; acceptance limits, measured results and reviewer signature.'},
+ {name:'Certificates',request:'Certificate holder, issuer, certificate number, covered models and ratings, standard edition, destination requirements and validity.'},
+ {name:'Marking and packing',request:'Approved label artwork and packing specification, linked to the order reference.'}
 ];
 ---
-<BaseLayout title="Manufacturing & Quality | Product Documents" description="Capacitor production stages, electrical testing and packing, with a checklist for model drawings, inspection records and certificates.">
-  <article class:list={['procurement-page procurement-factory', {'oem-editorial-page': isSatechiPreview}]}>
-    <section class="procurement-hero"><div class="container">
-      <p class="breadcrumbs"><a href="/">Home</a> / <a href="/oem-quality/">OEM &amp; Quality</a> / Manufacturing</p>
-      <div class:list={{'ss-factory-intro':isSatechiPreview}}><div>
-      <h1 id="factory-title">Manufacturing and quality</h1>
-      <p class="procurement-lead">Capacitor production footage and a checklist for your model documents.</p>
-      <nav class="procurement-actions" aria-label="Manufacturing information"><a class="button" href={documentRequest}>Request model documents</a><a class="card-link" href="/about/#supplier-records">Company details</a></nav>
-      </div>{isSatechiPreview && <FactoryMedia name="workshop" eager />}</div>
+<BaseLayout title="Motor Capacitor Manufacturing & Quality" description="Motor capacitor production equipment and component handling, with a checklist for model drawings, capacitance tests and inspection records.">
+  <article class="oem-suite oe-factory">
+    <OemPageHero titleId="factory-title" title="Manufacturing and quality" description={PUBLIC_COMPANY_RELATIONSHIP} current="Manufacturing">
+      <a class="button" href={documentRequest}>Request model documents</a>
+      <FactoryExteriorPhoto slot="media" eager sizes="(max-width: 800px) calc(100vw - 48px), (min-width: 1360px) 700px, 54vw" />
+    </OemPageHero>
+    <div id="factory-process-title"><span id="factory-footage-title"></span>
+      <OemFeature id="material-process" title="Film processing">
+        <div slot="media"><VideoFigure src="/videos/film-roll-equipment.mp4" poster="/images/real/film-rolls.jpg" label="Film roll moving through workshop processing equipment" displayRatio="3/2" cover={oemWorkshopImages['07-reel-equipment']} /></div>
+        <p>CBB60, CBB61 and CBB65 use film construction. The footage shows a film roll passing through the processing equipment.</p>
+        <p>CD60 uses aluminium electrolytic construction for starting duty. Its circuit disconnects it after startup.</p>
+        <a class="oe-link" href="/resources/start-vs-run-capacitors/">Start and run capacitor construction</a>
+      </OemFeature>
+      <OemFeature id="winding-equipment" title="Equipment and component handling" reverse tone="steel">
+        <div slot="media"><VideoFigure src="/videos/winding-equipment.mp4" poster="/images/real/winding-equipment.jpg" label="Enclosed production equipment and its control panel in operation" displayRatio="3/2" cover={oemWorkshopImages['02-film-machine']} /></div>
+        <p>Reels and tooling sit alongside the operator workstations. The assembly views show metal can bodies and terminal ends before final assembly.</p>
+        <p>Use a dimensioned drawing to check that the capacitor body, mounting and connections fit the available space in your equipment.</p>
+        <a class="oe-link" href="/factory/process-gallery/#film-equipment">Equipment and tooling gallery</a>
+      </OemFeature>
+      <OemFeature id="electrical-testing" title="Reading an inspection report">
+        <figure slot="media" data-image-kind="ai-refined-illustration">
+          <img
+            src={`${inspectionImage}-1536.webp`}
+            srcset={`${inspectionImage}-480.webp 480w, ${inspectionImage}-768.webp 768w, ${inspectionImage}-1536.webp 1536w`}
+            sizes="(max-width: 800px) calc(100vw - 48px), 52vw"
+            width="1536"
+            height="1024"
+            alt="Red and black test leads clipped to separate terminal groups on a CBB65 single-run capacitor."
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
+        <p>A capacitance inspection report needs the model, sample or batch reference, nominal value, tolerance and measured result, together with the measurement conditions.</p>
+        <p>Insulation-resistance and voltage-withstand results need their own test conditions and acceptance limits. The report should also identify the test date.</p>
+        <a class="oe-link" href="/resources/oem-capacitor-sample-approval/#review-the-test-record">Review a sample test record</a>
+      </OemFeature>
+    </div>
+    <OemPhotoCollection id="workshop-photo-sequence" title="Can bodies and assembly work" intro="Metal cans at an assembly station, with a closer view of the terminal ends arranged in a tray." photos={[oemWorkshopPhoto('09-assembly-machine','Assembly station'),oemWorkshopPhoto('13-terminal-array','Terminal groups in the tray')]} moreHref="/factory/process-gallery/" moreLabel="Explore the complete process gallery" />
+    <section class="oe-section" id="model-records"><div class="oe-shell">
+      <header class="oe-section-heading"><h2 id="factory-records-title">Documents for your selected model</h2><p>Include the full model number, ratings and destination in your document request. Match the drawing revision and sample reference across the quotation, approval and inspection records.</p></header>
+      <table class="procurement-table oe-table procurement-model-records"><caption class="visually-hidden">Documents and details for the selected motor capacitor model</caption><thead><tr><th scope="col">Record</th><th scope="col">Details to request</th></tr></thead><tbody>{records.map(record=><tr><th scope="row">{record.name}</th><td><span class="procurement-mobile-label" aria-hidden="true">Details to request</span>{record.request}</td></tr>)}</tbody></table>
+      <div class="oe-note" id="inspection-records"><h3>Sample approval and batch inspection</h3><p>A sample report covers the part submitted for approval; a batch report covers the production lot inspected. State which report you need in the order requirements.</p><a class="oe-link" href="/downloads/model-document-request.txt" download="hanxing-model-document-request.txt">Download document request checklist</a></div>
     </div></section>
-    <section class="procurement-section" id="factory-process-title" aria-labelledby="factory-footage-title"><div class="container">
-      <h2 id="factory-footage-title">Process footage</h2>
-      <article class="procurement-process-stage" id="material-process">
-        <div class:list={{'zi-material-intro':isSatechiPreview}}><div><h3>Material and process</h3><p>Film-processing equipment is shown below. CBB60, CBB61 and CBB65 use film construction; CD60 uses aluminium electrolytic construction.</p></div>{isSatechiPreview && <BrochurePhoto name="capacitor-cores" zoom label="Capacitor winding forms" sizes="(max-width: 800px) calc(100vw - 32px), 49vw" />}</div>
-        <div class="procurement-video-pair">
-          <div class="procurement-video"><VideoFigure src="/videos/film-roll-equipment.mp4" poster="/images/real/film-rolls.jpg" label="Supplied video showing a film roll moving through equipment" cover={isSatechiPreview ? oemMedia['film-process'] : undefined} /><p class="procurement-caption">A film roll passes through processing equipment.</p></div>
-          <div class="procurement-video"><VideoFigure src="/videos/winding-equipment.mp4" poster="/images/real/winding-equipment.jpg" label="Supplied video showing enclosed production equipment and its control panel" cover={isSatechiPreview ? oemMedia['winding-process'] : undefined} /><p class="procurement-caption">Enclosed equipment and its control panel during operation.</p></div>
-        </div>
-      </article>
-      <article class="procurement-process-stage" id="electrical-testing">
-        <div><h3>Electrical and product testing</h3><p>Specify the test method and acceptance limits when requesting capacitance and product test reports.</p></div>
-        <div class="procurement-video procurement-video--single"><VideoFigure src="/videos/test-area-equipment.mp4" poster="/images/real/test-area.jpg" label="Supplied video showing a worker and equipment in a test area" cover={isSatechiPreview ? oemMedia['testing-area'] : undefined} coverSizes="(max-width: 800px) calc(100vw - 48px), 58vw" /><p class="procurement-caption">A worker and equipment in the testing area.</p></div>
-      </article>
-      <article class="procurement-process-stage procurement-process-stage--text" id="packing-warehouse">
-        <div><h3>Packing and warehouse handling</h3><p>Packing requirements cover unit protection, inner packs, carton quantities and shipping marks.</p></div>
-        <div><a class="card-link" href="/factory/packing-and-dispatch/#packing-requirements">Review packing requirements and footage</a></div>
-      </article>
-    </div></section>
-    <WorkshopPhotoStory id="workshop-photo-sequence" eyebrow="Production stills" title="A closer look around the workshop" intro="Frames extracted from the supplied videos show film equipment, metal can handling and the test area. The video clips above provide the motion and context." photos={workshopStorySets.factory} moreHref="/factory/process-gallery/" moreLabel="Explore the 30-photo process gallery" />
-    <section class="procurement-section" id="model-records" aria-labelledby="factory-records-title"><div class="container">
-      <h2 id="factory-records-title">Product document checklist</h2>
-      <table class="procurement-table procurement-model-records">
-        <caption class="visually-hidden">Documents and details for the selected model</caption>
-        <thead><tr><th scope="col">Record</th><th scope="col">Details to request</th></tr></thead>
-        <tbody>{records.map(record => <tr><th scope="row">{record.name}</th><td><span class="procurement-mobile-label" aria-hidden="true">Details to request</span>{record.request}</td></tr>)}</tbody>
-      </table>
-      <div class="procurement-readable" id="inspection-records"><h3>File the inspection record</h3><p>Keep the report with the quotation and approved drawing under the same model and order reference.</p><a class="card-link" href="/contact/?request=documents#inquiry-form">Request the inspection record for your model</a></div>
-    </div></section>
-    <InquiryCallout href={documentRequest} heading="Request model documents" description="Include the configuration, destination and required records." buttonLabel="Request documents"><a class="card-link" href="/buying-guide/#rfq-template">Quotation checklist</a></InquiryCallout>
+    <div id="packing-warehouse"><OemReading links={[{title:'Packing and dispatch',description:'Unit protection, carton quantities and carrier handover.',href:'/factory/packing-and-dispatch/'},{title:'Approve an OEM sample',description:'A practical record for drawing, sample and label approval.',href:'/resources/oem-capacitor-sample-approval/'},{title:'Company information',description:'Business details to keep with the quotation and supplier records.',href:'/about/#supplier-records'}]} /></div>
+    <InquiryCallout showVisual={false} href={documentRequest} defaultSeries="unknown" heading="Request model documents" description="Include the full model reference, destination and records you need." buttonLabel="Request documents"><a class="card-link" href="/buying-guide/#rfq-template">Quotation checklist</a></InquiryCallout>
   </article>
 </BaseLayout>

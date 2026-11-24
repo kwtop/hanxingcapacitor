@@ -17,10 +17,10 @@ const illustration = (name: string, alt: string): ApplicationIllustration => ({
 });
 
 export const industrialApplications: Record<string, ApplicationIllustration> = {
-  'pumps-and-water-systems': illustration('pump', 'Illustrative centrifugal water pump and enclosed motor in a neutral industrial equipment bay.'),
-  'fans-and-ventilation': illustration('fan', 'Illustrative compact centrifugal ventilation blower with an enclosed motor in an industrial equipment bay.'),
-  'appliances-and-small-motors': illustration('washing', 'Illustrative conventional twin-tub washing machine in an appliance inspection workshop.'),
-  'hvac-and-refrigeration': illustration('hvac', 'Illustrative conventional air-conditioning condensing unit in an industrial service area.'),
+  'pumps-and-water-systems': illustration('pump', 'Centrifugal water pump connected to an enclosed electric motor.'),
+  'fans-and-ventilation': illustration('fan', 'Centrifugal ventilation blower with an enclosed electric motor.'),
+  'appliances-and-small-motors': illustration('washing', 'Twin-tub washing machine in an appliance workshop.'),
+  'hvac-and-refrigeration': illustration('hvac', 'Outdoor air-conditioning condensing unit.'),
 };
 
 export const applicationCover: ApplicationIllustration = {
@@ -28,7 +28,7 @@ export const applicationCover: ApplicationIllustration = {
   srcset: [600, 960, 1440, 2172].map(width => `${root}cover-${width}.webp ${width}w`).join(', '),
   width: 2172,
   height: 724,
-  alt: 'Illustrative motor-driven equipment in a neutral industrial inspection bay.',
+  alt: 'Motor-driven equipment arranged in an industrial equipment bay.',
 };
 
 export const homeHvacPanorama: ApplicationIllustration = {

@@ -1,8 +1,9 @@
 ---
 import { products } from '../data/site';
 import '../styles/inquiry-callout.css';
-import { isSatechiPreview } from '../lib/visualPreview';
-import {sundayIndustrial} from '../data/sundayIndustrial';
+import { usesEditorialPresentation } from '../lib/visualPreview';
+const useEditorial = usesEditorialPresentation(Astro.url.pathname);
+import { interiorPhotography as sundayIndustrial } from '../data/interiorPhotography';
 import SiteImage from './satechi-preview/SiteImage.astro';
 
 interface Props {
@@ -14,6 +15,8 @@ interface Props {
   heading?: string;
   description?: string;
   buttonLabel?: string;
+  showVisual?: boolean;
+  showDetails?: boolean;
 }
 
 const {
@@ -23,15 +26,17 @@ const {
   contained = false,
   chooseSeries = true,
   heading = 'Send your capacitor requirements',
-  description = 'Share the original label, quantity and destination.',
-  buttonLabel = 'Prepare an inquiry',
+  description = 'Tell us which capacitor you need, how many, and where the order will go.',
+  buttonLabel = 'Start an inquiry',
+  showVisual = true,
+  showDetails,
 } = Astro.props;
 const destination = new URL(href, Astro.url);
 const candidate = defaultSeries ?? destination.searchParams.get('series') ?? 'CBB60';
 const selectedSeries = products.some(product => product.code === candidate) ? candidate : 'unknown';
 const context = [...destination.searchParams].filter(([name]) => !chooseSeries || name !== 'series');
 if (!destination.searchParams.has('request')) context.push(['request', 'quote']);
-const hasDetails = Astro.slots.has('default');
+const hasDetails = showDetails ?? Astro.slots.has('default');
 const requestKind = destination.searchParams.get('request');
 const inquiryVisual = requestKind === 'documents' ? sundayIndustrial.technical
   : requestKind === 'packing' ? sundayIndustrial.packing
@@ -39,7 +44,7 @@ const inquiryVisual = requestKind === 'documents' ? sundayIndustrial.technical
 ---
 <section id={id} class:list={['inquiry-callout', { 'inquiry-callout-contained': contained }]} aria-labelledby={`${id}-title`}>
   <div class:list={['inquiry-callout-inner', { container: !contained }]}>
-    {isSatechiPreview && !contained && <figure class="ss-inquiry-visual"><SiteImage src={inquiryVisual.src} alt={inquiryVisual.alt} class="ss-contextual-inquiry" /></figure>}
+    {showVisual && useEditorial && !contained && <figure class="ss-inquiry-visual"><SiteImage src={inquiryVisual.src} alt={inquiryVisual.alt} class="ss-contextual-inquiry" /></figure>}
     <div class="inquiry-callout-layout">
       <div class="inquiry-callout-copy">
         <h2 class="inquiry-callout-heading" id={`${id}-title`}>{heading}</h2>

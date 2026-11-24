@@ -1,0 +1,10 @@
+---
+import photos from '../../data/oemPhotography.generated.json';
+interface Props { name:keyof typeof photos; eager?:boolean; sizes?:string; class?:string; caption?:string; }
+const { name,eager=false,sizes='(max-width:800px) calc(100vw - 40px), 60vw',class:className,caption }=Astro.props;
+const photo=photos[name];
+---
+<figure class:list={['oe-product-photo',className,{'oe-product-photo--captioned':!!caption}]} data-photo-kind="generated-product-presentation">
+  <img src={photo.src} srcset={photo.srcset} sizes={sizes} width={photo.width} height={photo.height} alt={photo.alt} loading={eager?'eager':'lazy'} fetchpriority={eager?'high':undefined} decoding="async" />
+  {caption && <figcaption>{caption}</figcaption>}
+</figure>

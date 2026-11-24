@@ -1,0 +1,547 @@
+{
+  "generatedAt": "2026-11-10T01:33:02.117Z",
+  "sourceFilesUnchanged": true,
+  "records": [
+    {
+      "originalSrc": "/images/home-selected-20261012/cbb65-feature.png",
+      "sourceSha256": "27120b1e3ce9d6024b27ba7a54020aa438f7cd23df06c064d514b8eb5c7822b9",
+      "sourceBytes": 920150,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "zoomSrc": "/images/webp-delivery-20261105/cbb65-feature-969e45d-zoom.webp",
+      "zoomBytes": 138006,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/home-selected-20261012/hero-four-warm-v2.png",
+      "sourceSha256": "4620f12c6dbbe51f34fd631fddbd5386254a9cd87dd24564f27b90481c29d257",
+      "sourceBytes": 2373298,
+      "sourceWidth": 1817,
+      "sourceHeight": 866,
+      "zoomSrc": "/images/webp-delivery-20261105/hero-four-warm-v2-466dc34-zoom.webp",
+      "zoomBytes": 189106,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/01-film-control.jpg",
+      "sourceSha256": "e2a9ab099d79f79f0503a579ccd9ec1970a67e0aeae21f4099a2bcf6fd6a7a94",
+      "sourceBytes": 463650,
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "zoomSrc": "/images/webp-delivery-20261105/01-film-control-788ef66-zoom.webp",
+      "zoomBytes": 169614,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/02-film-machine.jpg",
+      "sourceSha256": "231e9ff8963f183ceecdaeed9a5cf77b733b8d731bc958eafa8d6bfdfa06dc46",
+      "sourceBytes": 386687,
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "zoomSrc": "/images/webp-delivery-20261105/02-film-machine-3b9694b-zoom.webp",
+      "zoomBytes": 131002,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/03-machine-output.jpg",
+      "sourceSha256": "ad9c554c850bee1f4beceffba2e3e504f81875eb7d1defdfb2b780fe67409290",
+      "sourceBytes": 504272,
+      "sourceWidth": 1080,
+      "sourceHeight": 1920,
+      "zoomSrc": "/images/webp-delivery-20261105/03-machine-output-c33e3ef-zoom.webp",
+      "zoomBytes": 267980,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/04-workstation-operator.jpg",
+      "sourceSha256": "a2489ce767dcb8efa8424723db97b3a74c43a5273c05e6b2e228bccc2424ce63",
+      "sourceBytes": 619855,
+      "sourceWidth": 1080,
+      "sourceHeight": 1920,
+      "zoomSrc": "/images/webp-delivery-20261105/04-workstation-operator-e585dc1-zoom.webp",
+      "zoomBytes": 336724,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/05-line-wide.jpg",
+      "sourceSha256": "6c0e5894e58d850aeefa86209e214afa3f5626b2b9ff53a7ec59bff9a527e67d",
+      "sourceBytes": 292485,
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "zoomSrc": "/images/webp-delivery-20261105/05-line-wide-a69a908-zoom.webp",
+      "zoomBytes": 189834,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/06-press-worker.jpg",
+      "sourceSha256": "df3203f1943c99b20e994cfc593ab8ad80c8179eda17453fcd5fba28028671e5",
+      "sourceBytes": 317897,
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "zoomSrc": "/images/webp-delivery-20261105/06-press-worker-2325136-zoom.webp",
+      "zoomBytes": 107268,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/07-reel-equipment.jpg",
+      "sourceSha256": "c82025e6adcf67131dd952e9c91f2b2f7fe80ca2c639cbf50ad3ba7166a2b315",
+      "sourceBytes": 572155,
+      "sourceWidth": 1080,
+      "sourceHeight": 1920,
+      "zoomSrc": "/images/webp-delivery-20261105/07-reel-equipment-c7c1781-zoom.webp",
+      "zoomBytes": 310644,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/08-can-sorting.jpg",
+      "sourceSha256": "83d68a51b0801815d74bb04559082edbc63c35ae5e33e5092f2bbfd2f390f9b6",
+      "sourceBytes": 535849,
+      "sourceWidth": 1080,
+      "sourceHeight": 1920,
+      "zoomSrc": "/images/webp-delivery-20261105/08-can-sorting-65e6455-zoom.webp",
+      "zoomBytes": 278042,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/09-assembly-machine.jpg",
+      "sourceSha256": "96fe5662cdbd100b9945b5cbade1dd8c82bdc5d33a178d8a85d021a27aa5bdfa",
+      "sourceBytes": 586191,
+      "sourceWidth": 1080,
+      "sourceHeight": 1920,
+      "zoomSrc": "/images/webp-delivery-20261105/09-assembly-machine-bce9c6c-zoom.webp",
+      "zoomBytes": 318482,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/10-assembly-hand.jpg",
+      "sourceSha256": "74f7f73a412c617651e37c0b043ef66e078845600b07e7567ece1e9d9d633c6c",
+      "sourceBytes": 628454,
+      "sourceWidth": 1080,
+      "sourceHeight": 1920,
+      "zoomSrc": "/images/webp-delivery-20261105/10-assembly-hand-af6a4aa-zoom.webp",
+      "zoomBytes": 349614,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/11-bench-detail.jpg",
+      "sourceSha256": "09a41638e2a5f17fece441b72c4cfb691069d7ad8423ce437356e1ceaf07640d",
+      "sourceBytes": 428663,
+      "sourceWidth": 1080,
+      "sourceHeight": 1920,
+      "zoomSrc": "/images/webp-delivery-20261105/11-bench-detail-5b70960-zoom.webp",
+      "zoomBytes": 209434,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/12-can-arrangement.jpg",
+      "sourceSha256": "9df1caf46048d3b5a400683c0a1e2c7d784aa41d823f72cb9125a577a94cb66e",
+      "sourceBytes": 493453,
+      "sourceWidth": 1080,
+      "sourceHeight": 1920,
+      "zoomSrc": "/images/webp-delivery-20261105/12-can-arrangement-d73ac8c-zoom.webp",
+      "zoomBytes": 252424,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/13-terminal-array.jpg",
+      "sourceSha256": "8c7a9bd9415c508dafa5805cd3c3d08404fe810623e88d0e81b65cf0902f2ce1",
+      "sourceBytes": 399564,
+      "sourceWidth": 1080,
+      "sourceHeight": 1920,
+      "zoomSrc": "/images/webp-delivery-20261105/13-terminal-array-176ace9-zoom.webp",
+      "zoomBytes": 177114,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/14-press-detail.jpg",
+      "sourceSha256": "ff56ba0494e94712afc1ad780104a96c0a9a8a6a71b43facd065e0eabc5bca49",
+      "sourceBytes": 446706,
+      "sourceWidth": 1080,
+      "sourceHeight": 1920,
+      "zoomSrc": "/images/webp-delivery-20261105/14-press-detail-d4a54cf-zoom.webp",
+      "zoomBytes": 220774,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/15-cans-on-table.jpg",
+      "sourceSha256": "1cebad5d9f0248fae33617a9e2af82f0fc7ac2c73c5f4f55deb8c46d61d9d0e2",
+      "sourceBytes": 425300,
+      "sourceWidth": 1080,
+      "sourceHeight": 1920,
+      "zoomSrc": "/images/webp-delivery-20261105/15-cans-on-table-4180606-zoom.webp",
+      "zoomBytes": 194108,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/16-gloved-can.jpg",
+      "sourceSha256": "e3a16b38bb4e06d59545cf5bf0017c0464fdfe4d73732939df9ddc2b1c008585",
+      "sourceBytes": 433809,
+      "sourceWidth": 1080,
+      "sourceHeight": 1920,
+      "zoomSrc": "/images/webp-delivery-20261105/16-gloved-can-0dac053-zoom.webp",
+      "zoomBytes": 188642,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/17-empty-cans.jpg",
+      "sourceSha256": "925b0b8b2292263e64f94c89066d5f4b05f43908f68e74333500115863b914c3",
+      "sourceBytes": 528775,
+      "sourceWidth": 1080,
+      "sourceHeight": 1920,
+      "zoomSrc": "/images/webp-delivery-20261105/17-empty-cans-7f22d8f-zoom.webp",
+      "zoomBytes": 265136,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/18-can-grid.jpg",
+      "sourceSha256": "afc8362a74789cdfb95b20c7fa5eef56cac81b858f861100b4adab8bbd057c23",
+      "sourceBytes": 544915,
+      "sourceWidth": 1080,
+      "sourceHeight": 1920,
+      "zoomSrc": "/images/webp-delivery-20261105/18-can-grid-0e59e25-zoom.webp",
+      "zoomBytes": 287368,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/19-equipment-station.jpg",
+      "sourceSha256": "47f5bd34ba35cc9361302f119304d6462b965d186ee9044e615a9c87e6d60155",
+      "sourceBytes": 465797,
+      "sourceWidth": 1080,
+      "sourceHeight": 1920,
+      "zoomSrc": "/images/webp-delivery-20261105/19-equipment-station-105194b-zoom.webp",
+      "zoomBytes": 236936,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/20-component-pile.jpg",
+      "sourceSha256": "6a9a14ffdc594dc0f71f142a81347358fbf86beb41d08d64e51e6bcb86de35a1",
+      "sourceBytes": 476164,
+      "sourceWidth": 1080,
+      "sourceHeight": 1920,
+      "zoomSrc": "/images/webp-delivery-20261105/20-component-pile-72c5821-zoom.webp",
+      "zoomBytes": 218632,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/21-can-machine.jpg",
+      "sourceSha256": "133c5158828f690f5a0cad4c87faedc8ec1a507ac0a3d11dcde6c5034d6a13f8",
+      "sourceBytes": 530576,
+      "sourceWidth": 1080,
+      "sourceHeight": 1920,
+      "zoomSrc": "/images/webp-delivery-20261105/21-can-machine-1e4b67c-zoom.webp",
+      "zoomBytes": 251186,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/22-blue-cartons.jpg",
+      "sourceSha256": "adec77a739b0967f35f422ff5e07deb38b2463fd1f47a70c2ffc9cd775b6e587",
+      "sourceBytes": 815277,
+      "sourceWidth": 1080,
+      "sourceHeight": 1920,
+      "zoomSrc": "/images/webp-delivery-20261105/22-blue-cartons-9293aac-zoom.webp",
+      "zoomBytes": 428222,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/23-tray-racks.jpg",
+      "sourceSha256": "28ec83af4c0a0bf71e46a80e9207b3d791518cc95222658363775accd78300e0",
+      "sourceBytes": 471949,
+      "sourceWidth": 1080,
+      "sourceHeight": 1920,
+      "zoomSrc": "/images/webp-delivery-20261105/23-tray-racks-a5cc683-zoom.webp",
+      "zoomBytes": 205580,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/24-test-display.jpg",
+      "sourceSha256": "84710b5a50c112c691af4d3827861fa4ba84646a059d4021157f992d6c8b66b8",
+      "sourceBytes": 390970,
+      "sourceWidth": 1080,
+      "sourceHeight": 1920,
+      "zoomSrc": "/images/webp-delivery-20261105/24-test-display-298fe5e-zoom.webp",
+      "zoomBytes": 157678,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/25-packing-worker.jpg",
+      "sourceSha256": "c5d111de277912bfec1ca91a6ad57a90c59199f9ec04acb6302edb0566cb7154",
+      "sourceBytes": 613683,
+      "sourceWidth": 1080,
+      "sourceHeight": 1920,
+      "zoomSrc": "/images/webp-delivery-20261105/25-packing-worker-97aecea-zoom.webp",
+      "zoomBytes": 297208,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/26-boxing-table.jpg",
+      "sourceSha256": "861ed6a4945111c8f6e500ce26a7f26074423700fe8ddaa1079a24db31401827",
+      "sourceBytes": 532910,
+      "sourceWidth": 1080,
+      "sourceHeight": 1920,
+      "zoomSrc": "/images/webp-delivery-20261105/26-boxing-table-71f0f65-zoom.webp",
+      "zoomBytes": 270378,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/27-bench-rows.jpg",
+      "sourceSha256": "6110850355db4a8af9037194ca86f327c7adbf84c96c48e7ace9289c29576f0c",
+      "sourceBytes": 499706,
+      "sourceWidth": 1080,
+      "sourceHeight": 1920,
+      "zoomSrc": "/images/webp-delivery-20261105/27-bench-rows-fcab5b0-zoom.webp",
+      "zoomBytes": 245228,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/28-outdoor-pallets.jpg",
+      "sourceSha256": "751ceac95f864757ff121d0539048cd0fec7442c41c8e4bab4d8aa055c04e624",
+      "sourceBytes": 727851,
+      "sourceWidth": 1080,
+      "sourceHeight": 1920,
+      "zoomSrc": "/images/webp-delivery-20261105/28-outdoor-pallets-05ade73-zoom.webp",
+      "zoomBytes": 439996,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/29-lift-to-truck.jpg",
+      "sourceSha256": "545524960d38e83e50753e43e57873175a5bf2257fa025ff063d61c7e3005808",
+      "sourceBytes": 739831,
+      "sourceWidth": 1080,
+      "sourceHeight": 1920,
+      "zoomSrc": "/images/webp-delivery-20261105/29-lift-to-truck-ab55af7-zoom.webp",
+      "zoomBytes": 442952,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/process-source-20261026/30-truck-handover.jpg",
+      "sourceSha256": "9e20f3020c37eb2dad2b901d9f29a1a54d651646da1238c37fd5232942e519c9",
+      "sourceBytes": 785065,
+      "sourceWidth": 1080,
+      "sourceHeight": 1920,
+      "zoomSrc": "/images/webp-delivery-20261105/30-truck-handover-a3c3dd2-zoom.webp",
+      "zoomBytes": 450608,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/real/batch-products.jpg",
+      "sourceSha256": "78b3aeb19e66653bc625e90629915f2398f1b7b3f768819de671123f05a4b4cd",
+      "sourceBytes": 503789,
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "zoomSrc": "/images/webp-delivery-20261105/batch-products-a0456b1-zoom.webp",
+      "zoomBytes": 254440,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/real/cbb60-16.jpg",
+      "sourceSha256": "cab95fba3abb1ede70a2a12af6aea6101e6a18969153a2b6c3958183cb08b188",
+      "sourceBytes": 902006,
+      "sourceWidth": 2000,
+      "sourceHeight": 2000,
+      "zoomSrc": "/images/webp-delivery-20261105/cbb60-16-2f9e180-zoom.webp",
+      "zoomBytes": 61990,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/real/cbb60-17.jpg",
+      "sourceSha256": "2670f565ffc3f87c337586d9b5b258d67a9aad2a13c605f23b92a3f9cf87c594",
+      "sourceBytes": 979776,
+      "sourceWidth": 2000,
+      "sourceHeight": 2000,
+      "zoomSrc": "/images/webp-delivery-20261105/cbb60-17-085d326-zoom.webp",
+      "zoomBytes": 78254,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/real/cbb60-18.jpg",
+      "sourceSha256": "01d608abf61bb2f3c251d0acdbeb698ec2041f85291f42f6f549dcdb990f0246",
+      "sourceBytes": 1016207,
+      "sourceWidth": 2000,
+      "sourceHeight": 2000,
+      "zoomSrc": "/images/webp-delivery-20261105/cbb60-18-7067e24-zoom.webp",
+      "zoomBytes": 80734,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/real/cbb60-hanxing-wired.jpg",
+      "sourceSha256": "1e4e671548be5fb2d702ff0c2bd4493d4ef39f9affaf3907a260ccf84bac2b63",
+      "sourceBytes": 895155,
+      "sourceWidth": 2000,
+      "sourceHeight": 2000,
+      "zoomSrc": "/images/webp-delivery-20261105/cbb60-hanxing-wired-e674d69-zoom.webp",
+      "zoomBytes": 61008,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/real/cbb61-13.jpg",
+      "sourceSha256": "741ddb07056a70a26f63643792e43eddf6e19d4d6e4cbba2a20c42d472dac5af",
+      "sourceBytes": 1243251,
+      "sourceWidth": 2000,
+      "sourceHeight": 2000,
+      "zoomSrc": "/images/webp-delivery-20261105/cbb61-13-bec578c-zoom.webp",
+      "zoomBytes": 213990,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/real/cbb61-14.jpg",
+      "sourceSha256": "457bdbb00e228ab42dc75d09b062c9d0ac2eea4e48c5755025b3a9545efb00d0",
+      "sourceBytes": 1124518,
+      "sourceWidth": 2000,
+      "sourceHeight": 2000,
+      "zoomSrc": "/images/webp-delivery-20261105/cbb61-14-65cbd98-zoom.webp",
+      "zoomBytes": 150790,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/real/cbb61-leads-10.jpg",
+      "sourceSha256": "031c2d91a0145d1068757433eb2586e90a039092089666637e4535f1f6bfb42d",
+      "sourceBytes": 1159976,
+      "sourceWidth": 2000,
+      "sourceHeight": 2000,
+      "zoomSrc": "/images/webp-delivery-20261105/cbb61-leads-10-fd725e7-zoom.webp",
+      "zoomBytes": 1508382,
+      "lossless": true,
+      "decodedPixelsMatch": true
+    },
+    {
+      "originalSrc": "/images/real/cbb65-2.jpg",
+      "sourceSha256": "fff00099373941c0323b84dfdc1452f3649537fa28327a970be5ce8ebc1376ea",
+      "sourceBytes": 1010907,
+      "sourceWidth": 2000,
+      "sourceHeight": 2000,
+      "zoomSrc": "/images/webp-delivery-20261105/cbb65-2-5bfd673-zoom.webp",
+      "zoomBytes": 107346,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/real/cbb65-4.jpg",
+      "sourceSha256": "100a6b371d5567c9725f53a1774e4f05db81f2a95912a050c763ee2c144bbe61",
+      "sourceBytes": 1376858,
+      "sourceWidth": 2000,
+      "sourceHeight": 2000,
+      "zoomSrc": "/images/webp-delivery-20261105/cbb65-4-0934e75-zoom.webp",
+      "zoomBytes": 270112,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/real/cbb65-dual-run-7.jpg",
+      "sourceSha256": "f8822bc9b6f2f925fe390c0f9d51631435c17ba8c80e75cdad3d6ef97f2087ce",
+      "sourceBytes": 1316031,
+      "sourceWidth": 2000,
+      "sourceHeight": 2000,
+      "zoomSrc": "/images/webp-delivery-20261105/cbb65-dual-run-7-b976945-zoom.webp",
+      "zoomBytes": 219228,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/real/cd60-25.jpg",
+      "sourceSha256": "f820dd107fd169e1c16b2c9bf971cb4ad20b263aec92db157dfecdb62dd0881e",
+      "sourceBytes": 952420,
+      "sourceWidth": 2000,
+      "sourceHeight": 2000,
+      "zoomSrc": "/images/webp-delivery-20261105/cd60-25-3e135e1-zoom.webp",
+      "zoomBytes": 53184,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/real/cd60-detail-69.jpg",
+      "sourceSha256": "73ed21e9e44236f3ff3e658549feb6ba1af6981feb75518d78e9314490b24e22",
+      "sourceBytes": 1605632,
+      "sourceWidth": 5168,
+      "sourceHeight": 3448,
+      "zoomSrc": "/images/webp-delivery-20261105/cd60-detail-69-779690c-zoom.webp",
+      "zoomBytes": 184382,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/real/cd60-nmd-300uf-250vac.jpg",
+      "sourceSha256": "2925eac98cd23bbacf49b9f5834f52c61e16a1f05a5669135674c4f7e5e8d948",
+      "sourceBytes": 812707,
+      "sourceWidth": 1080,
+      "sourceHeight": 1919,
+      "zoomSrc": "/images/webp-delivery-20261105/cd60-nmd-300uf-250vac-201df24-zoom.webp",
+      "zoomBytes": 102014,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/real/dispatch-pallets.jpg",
+      "sourceSha256": "eaaf74c0c682550c58a3e26f2f2e61cdc1243348d4a12a84c06849cda72131ba",
+      "sourceBytes": 11508880,
+      "sourceWidth": 4032,
+      "sourceHeight": 3024,
+      "zoomSrc": "/images/webp-delivery-20261105/dispatch-pallets-2f22777-zoom.webp",
+      "zoomBytes": 3328770,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/real/film-rolls.jpg",
+      "sourceSha256": "2c24f458a1c6699223c9a232fc172c5f4873715f0e3aa3ef5e18ed8257737e59",
+      "sourceBytes": 358989,
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "zoomSrc": "/images/webp-delivery-20261105/film-rolls-129ef56-zoom.webp",
+      "zoomBytes": 143438,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/real/inspection-station.jpg",
+      "sourceSha256": "63d9a264893a8c11fa033a1504fd1dc1f713f7cc21a9fbe36e31e1270bcc9d22",
+      "sourceBytes": 331935,
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "zoomSrc": "/images/webp-delivery-20261105/inspection-station-4e3aa17-zoom.webp",
+      "zoomBytes": 140022,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/real/packing-scene.jpg",
+      "sourceSha256": "dd67c1f0bf604c7fe48aa0f5dc3c22728ad63987735d3e1c149b640bbc0e7fbd",
+      "sourceBytes": 109696,
+      "sourceWidth": 540,
+      "sourceHeight": 960,
+      "zoomSrc": "/images/webp-delivery-20261105/packing-scene-8a19afd-zoom.webp",
+      "zoomBytes": 104746,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/real/test-area.jpg",
+      "sourceSha256": "8f034c299f7168c8815d9648064ea63da52c7394d5040759459317120be033d0",
+      "sourceBytes": 355406,
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "zoomSrc": "/images/webp-delivery-20261105/test-area-d3bb884-zoom.webp",
+      "zoomBytes": 135624,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/real/winding-equipment.jpg",
+      "sourceSha256": "c6195da093c3af2177a07352c60290e980fa3de4a3cbab5312264b2611c1b8df",
+      "sourceBytes": 367365,
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "zoomSrc": "/images/webp-delivery-20261105/winding-equipment-9643e38-zoom.webp",
+      "zoomBytes": 134896,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/source-cbb65.jpg",
+      "sourceSha256": "91aed58438357241a18173c9327bfb56a9d8f19f68210433de2055927b8fefb3",
+      "sourceBytes": 1474560,
+      "sourceWidth": 5168,
+      "sourceHeight": 3448,
+      "zoomSrc": "/images/webp-delivery-20261105/source-cbb65-0430fc7-zoom.webp",
+      "zoomBytes": 162130,
+      "lossless": false
+    },
+    {
+      "originalSrc": "/images/visual-directions-20261014/dark-capacitors.png",
+      "sourceSha256": "ef97fd3f501d636fa3fc67bacbff44cec618e3d710c980447cd7db8c5cc05375",
+      "sourceBytes": 1981222,
+      "sourceWidth": 1774,
+      "sourceHeight": 887,
+      "zoomSrc": "/images/webp-delivery-20261105/dark-capacitors-e5743bb-zoom.webp",
+      "zoomBytes": 163216,
+      "lossless": false
+    }
+  ]
+}

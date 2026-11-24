@@ -1,0 +1,9 @@
+---
+import { oemWorkshopImages, type OemWorkshopName } from '../../data/oemWorkshopPhotography';
+interface Props { name: OemWorkshopName; eager?: boolean; sizes?: string; }
+const { name, eager = false, sizes = '(max-width:800px) calc(100vw - 40px), (min-width:1360px) 660px, 50vw' } = Astro.props;
+const image = oemWorkshopImages[name];
+---
+<figure class="oe-workshop-image" data-image-kind="ai-refined-illustration">
+  <img src={image.src} srcset={image.srcset} sizes={sizes} width={image.width} height={image.height} alt={image.alt} loading={eager ? 'eager' : 'lazy'} fetchpriority={eager ? 'high' : undefined} decoding="async" />
+</figure>

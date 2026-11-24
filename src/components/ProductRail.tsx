@@ -1,7 +1,8 @@
+import {localizeTree} from '../i18n/react';
 import type { Product } from '../data/site';
 
 export default function ProductRail({ products }: { products: Product[] }) {
-  return <>
+  return localizeTree(<>
     <div className="section-head home-catalog-head">
       <div><h2>Find your capacitor</h2></div>
     </div>
@@ -16,5 +17,5 @@ export default function ProductRail({ products }: { products: Product[] }) {
         </dl>
       </article>)}
     </div>
-  </>;
+  </>);
 }

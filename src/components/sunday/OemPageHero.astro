@@ -1,0 +1,16 @@
+---
+interface Props {title:string; description:string; current:string; parent?:{label:string;href:string}; layout?:'wide'|'split'|'text';titleId?:string;}
+const {title,description,current,parent,layout='split',titleId='inner-title'}=Astro.props;
+---
+<header class:list={['oe-hero',`oe-hero--${layout}`]}>
+  <div class="oe-shell">
+    <nav class="oe-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span>{current==='OEM & quality'?<span aria-current="page">OEM &amp; quality</span>:<a href="/oem-quality/">OEM &amp; quality</a>}{parent && <><span aria-hidden="true">/</span><a href={parent.href}>{parent.label}</a></>}{current!=='OEM & quality' && <><span aria-hidden="true">/</span><span aria-current="page">{current}</span></>}</nav>
+    <div class="oe-hero-grid">
+      <div class="oe-hero-intro">
+        <div class="oe-hero-heading"><h1 id={titleId}>{title}</h1></div>
+        <div class="oe-hero-copy"><p>{description}</p>{Astro.slots.has('default') && <div class="oe-actions"><slot /></div>}</div>
+      </div>
+      {Astro.slots.has('media') && <div class="oe-hero-media"><slot name="media" /></div>}
+    </div>
+  </div>
+</header>

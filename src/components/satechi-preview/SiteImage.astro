@@ -5,9 +5,17 @@ import {findEditorialMedia} from '../../data/editorialMedia';
 import {findCoherenceMedia} from '../../data/coherenceMedia';
 import {findIndustrialApplication} from '../../data/industrialApplications';
 import {findBrochureMedia} from '../../data/brochureMedia';
+import {findReusedEditorial} from '../../data/reusedEditorial';
+import {findInnerEditorial} from '../../data/innerEditorial';
+import {findSourcePhotography} from '../../data/sourcePhotography';
+import {findComparisonPhotography} from '../../data/comparisonPhotography';
+import {findInteriorPhotography} from '../../data/interiorPhotography';
+import oemPhotography from '../../data/oemPhotography.generated.json';
+import { getImageDelivery } from '../../data/imageDelivery';
 interface Props { src:string; alt:string; width?:number; height?:number; sizes?:string; eager?:boolean; class?:string; }
 const {src,alt,width,height,sizes='(max-width: 600px) calc(100vw - 32px), (max-width: 1020px) 48vw, 46vw',eager=false,class:className} = Astro.props;
 const sundayAsset=findPolishedMedia(src) ?? findSundayIndustrial(src);
-const asset=sundayAsset ?? findEditorialMedia(src) ?? findCoherenceMedia(src) ?? findIndustrialApplication(src) ?? findBrochureMedia(src);
+const delivery=getImageDelivery(src);
+const asset=delivery ?? Object.values(oemPhotography).find(photo=>photo.src===src) ?? findInteriorPhotography(src) ?? findComparisonPhotography(src) ?? findSourcePhotography(src) ?? findInnerEditorial(src) ?? sundayAsset ?? findReusedEditorial(src) ?? findEditorialMedia(src) ?? findCoherenceMedia(src) ?? findIndustrialApplication(src) ?? findBrochureMedia(src);
 ---
-<img src={src} srcset={asset?.srcset} sizes={asset ? sizes : undefined} alt={sundayAsset?.alt ?? alt} width={width ?? asset?.width ?? 1536} height={height ?? asset?.height ?? 1024} class={className} loading={eager ? 'eager' : 'lazy'} fetchpriority={eager ? 'high' : undefined} decoding={eager ? 'sync' : 'async'} />
+<img src={delivery?.src ?? src} srcset={asset?.srcset} sizes={asset ? sizes : undefined} alt={sundayAsset?.alt ?? alt} width={width ?? asset?.width ?? 1536} height={height ?? asset?.height ?? 1024} class={className} loading={eager ? 'eager' : 'lazy'} fetchpriority={eager ? 'high' : 'low'} decoding={eager ? 'sync' : 'async'} />

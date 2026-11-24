@@ -1,0 +1,70 @@
+---
+import { aboutVisitPhotos } from '../../data/aboutVisitPhotos';
+---
+
+<section id="visit-photos" class="visit-gallery" aria-labelledby="visit-photos-title">
+  <div class="visit-gallery-inner">
+    <header class="visit-gallery-head">
+      <h2 id="visit-photos-title">Sample discussions and workshop visits</h2>
+    </header>
+    <div class="visit-gallery-grid">
+      {aboutVisitPhotos.map((photo, index) => (
+        <figure class:list={['visit-gallery-item', { 'visit-gallery-item--lead': index === 0 }]}>
+          <a class="visit-gallery-image" href={photo.fullSrc} target="_blank" rel="noopener" aria-label={`Open full image: ${photo.caption}`}>
+            <img src={photo.src} srcset={photo.srcset}
+              sizes={index === 0 ? '(max-width: 520px) calc(100vw - 40px), (max-width: 1000px) 48vw, 650px' : index === 1 ? '(max-width: 520px) calc(50vw - 26px), (max-width: 1000px) 48vw, 290px' : '(max-width: 520px) calc(50vw - 26px), (max-width: 1000px) 31vw, 290px'}
+              width={photo.width} height={photo.height} alt={photo.alt} loading="lazy" decoding="async" />
+          </a>
+          <figcaption>
+            <span class="visit-gallery-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+            <div class="visit-gallery-caption">
+              <span>{photo.caption}</span>
+            </div>
+          </figcaption>
+        </figure>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .visit-gallery { padding: 76px 24px; background: #f4f6f7; color: #14202a; }
+  .visit-gallery-inner { max-width: 1240px; margin-inline: auto; }
+  .visit-gallery-head { display: grid; grid-template-columns: minmax(0, 1.8fr) minmax(240px, 1fr); align-items: end; gap: 64px; margin-bottom: 36px; }
+  #visit-photos .visit-gallery-head h2 { max-width: 21ch; margin: 0 !important; font: 650 clamp(30px, 3.3vw, 44px)/1.1 'Sunday Jakarta', sans-serif !important; letter-spacing: -.04em !important; text-wrap: balance; }
+  #visit-photos .visit-gallery-head p { max-width: 310px; margin: 0 0 2px !important; font: 400 16px/1.65 'Sunday Geist', sans-serif; color: #52606b; }
+  .visit-gallery-grid { display: grid; grid-template-columns: minmax(0, 2.25fr) repeat(2, minmax(0, 1fr)); gap: 24px; align-items: stretch; }
+  .visit-gallery-item { display: flex; flex-direction: column; min-width: 0; margin: 0 !important; }
+  .visit-gallery-item--lead { grid-row: span 2; }
+  .visit-gallery-image { display: block; position: relative; overflow: hidden; flex: 0 0 auto; aspect-ratio: 3 / 4; width: 100%; border-radius: 14px; background: #e2e7ea; }
+  .visit-gallery-item--lead .visit-gallery-image { flex: 1 1 0; aspect-ratio: auto; min-height: 0; }
+  .visit-gallery-image img { display: block; position: absolute; inset: 0; width: 100%; height: 100% !important; object-fit: cover; object-position: center; transition: transform .4s ease; }
+  .visit-gallery-image:hover img { transform: scale(1.015); }
+  .visit-gallery-image:focus-visible { outline: 2px solid #a64106; outline-offset: 4px; }
+  .visit-gallery-item figcaption { display: flex; align-items: start; gap: 10px; min-height: 52px; padding: 12px 1px 0; }
+  .visit-gallery-number { color: #a64106; flex: 0 0 auto; padding-top: 2px; font: 500 11px/1.6 'Sunday Geist', sans-serif; letter-spacing: .06em; }
+  .visit-gallery-caption { font: 500 14px/1.4 'Sunday Geist', sans-serif; }
+  @media (max-width: 1000px) and (min-width: 521px) {
+    .visit-gallery-head { grid-template-columns: minmax(0, 1.6fr) minmax(220px, 1fr); gap: 32px; }
+    .visit-gallery-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 24px 18px; }
+    .visit-gallery-item:nth-child(-n+2) { grid-column: span 3; }
+    .visit-gallery-item:nth-child(n+3) { grid-column: span 2; }
+    .visit-gallery-item--lead { grid-row: auto; }
+    .visit-gallery-item--lead .visit-gallery-image { flex: 0 0 auto; aspect-ratio: 3 / 4; }
+  }
+  @media (max-width: 520px) {
+    .visit-gallery { padding: 52px 20px; }
+    .visit-gallery-head { grid-template-columns: 1fr; gap: 18px; margin-bottom: 28px; }
+    #visit-photos .visit-gallery-head h2 { max-width: 20ch; font-size: 30px !important; }
+    #visit-photos .visit-gallery-head p { max-width: 35ch; font-size: 15px; }
+    .visit-gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 12px; }
+    .visit-gallery-item--lead { grid-column: 1 / -1; grid-row: auto; }
+    .visit-gallery-item--lead .visit-gallery-image { flex: 0 0 auto; aspect-ratio: 3 / 4; }
+    .visit-gallery-image { border-radius: 10px; }
+    .visit-gallery-item figcaption { min-height: 44px; padding-top: 10px; gap: 7px; }
+    .visit-gallery-caption { font-size: 12px; line-height: 1.4; }
+    .visit-gallery-number { font-size: 10px; }
+    .visit-gallery-item--lead figcaption { min-height: 32px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .visit-gallery-image img { transition: none; } }
+</style>

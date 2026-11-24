@@ -1,0 +1,23 @@
+{
+  "hall": {
+    "src": "/images/manufacturing-real-products-20261027/factory-hall-1280.webp",
+    "srcset": "/images/manufacturing-real-products-20261027/factory-hall-480.webp 480w, /images/manufacturing-real-products-20261027/factory-hall-800.webp 800w, /images/manufacturing-real-products-20261027/factory-hall-1280.webp 1280w, /images/manufacturing-real-products-20261027/factory-hall-1536.webp 1536w",
+    "width": 1536,
+    "height": 1024,
+    "alt": "Production equipment and silver capacitor cans in a manufacturing hall."
+  },
+  "testing": {
+    "src": "/images/manufacturing-real-products-20261027/testing-1280.webp",
+    "srcset": "/images/manufacturing-real-products-20261027/testing-480.webp 480w, /images/manufacturing-real-products-20261027/testing-800.webp 800w, /images/manufacturing-real-products-20261027/testing-1280.webp 1280w, /images/manufacturing-real-products-20261027/testing-1536.webp 1536w",
+    "width": 1536,
+    "height": 1024,
+    "alt": "CBB60, CBB61 and CBB65 capacitor samples on an electrical testing workbench."
+  },
+  "packing": {
+    "src": "/images/manufacturing-real-products-20261027/packing-1280.webp",
+    "srcset": "/images/manufacturing-real-products-20261027/packing-480.webp 480w, /images/manufacturing-real-products-20261027/packing-800.webp 800w, /images/manufacturing-real-products-20261027/packing-1280.webp 1280w, /images/manufacturing-real-products-20261027/packing-1536.webp 1536w",
+    "width": 1536,
+    "height": 1024,
+    "alt": "Silver CBB65 cans and black CBB61 capacitors at a packing workstation."
+  }
+}

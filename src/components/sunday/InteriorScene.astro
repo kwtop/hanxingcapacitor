@@ -1,0 +1,14 @@
+---
+import { interiorPhotography } from '../../data/interiorPhotography';
+import SiteImage from '../satechi-preview/SiteImage.astro';
+interface Props {name:'factory-scene'|'testing-scene'|'packing-scene'; class?:string; eager?:boolean; sizes?:string;}
+const {name,class:className,eager=false,sizes}=Astro.props;
+const asset=interiorPhotography[name];
+---
+<figure class:list={['su-interior-scene',className]} data-image-kind="illustrative-environment">
+  <SiteImage src={asset.src} alt={asset.alt} eager={eager} sizes={sizes} />
+</figure>
+<style>
+ .su-interior-scene{position:relative;margin:0;overflow:hidden;border-radius:var(--su-photo-radius);background:var(--su-steel)}
+ .su-interior-scene img{display:block;width:100%;height:100%;object-fit:cover}
+</style>

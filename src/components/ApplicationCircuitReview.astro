@@ -1,0 +1,26 @@
+---
+import '../styles/hvac-circuit-review.css';
+interface CircuitImage {src:string;srcset:string;width:number;height:number;alt:string;focus?:string;}
+interface Props {
+  title:string;
+  image:CircuitImage;
+  paths:readonly {title:string;text:string}[];
+  links:readonly {href:string;label:string}[];
+}
+const {title,image,paths,links}=Astro.props;
+const extended=paths.length>3;
+// Account for cover-crop magnification when choosing a responsive image.
+const photoSizes=`(max-width:640px) calc(100vw - 48px), (max-width:900px) 80vw, (max-width:1100px) ${extended?'80':'46'}vw, (min-width:1440px) 640px, 46vw`;
+---
+<section class="hvr-section hvr-circuit-review" id="review" aria-labelledby="circuit-title" style={extended?'--review-photo-ratio:4/3;--review-photo-ratio-medium:4/5':undefined}>
+  <header class="hvr-review-heading"><h2 id="circuit-title">{title}</h2></header>
+  <div class="hvr-review-layout">
+    <div class="hvr-review-visual">
+      <figure class="hvr-review-photo" data-image-kind="illustrative-application-view" style={`--review-photo-position:${image.focus??'50% 50%'}`}>
+        <img src={image.src} srcset={image.srcset} sizes={photoSizes} alt={image.alt} width={image.width} height={image.height} loading="lazy" decoding="async" />
+      </figure>
+      <div class="hvr-review-actions">{links.map(link=><a class="context-link hvr-review-guide" href={link.href}>{link.label}</a>)}</div>
+    </div>
+    <ol class="hvr-review-paths" role="list">{paths.map((path,index)=><li><span class="hvr-review-number" aria-hidden="true">{String(index+1).padStart(2,'0')}</span><div><h3>{path.title}</h3><p>{path.text}</p></div></li>)}</ol>
+  </div>
+</section>

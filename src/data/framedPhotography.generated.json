@@ -1,0 +1,82 @@
+{
+  "/images/real/packing-scene.jpg": {
+    "slug": "packing-worktable",
+    "src": "/images/framed-editorial-20261030/packing-worktable-960.webp",
+    "srcset": "/images/framed-editorial-20261030/packing-worktable-640.webp 640w, /images/framed-editorial-20261030/packing-worktable-960.webp 960w, /images/framed-editorial-20261030/packing-worktable-1280.webp 1280w, /images/framed-editorial-20261030/packing-worktable-1536.webp 1536w",
+    "fullSrc": "/images/framed-editorial-20261030/packing-worktable-1536.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalSrc": "/images/real/packing-scene.jpg",
+    "note": "AI-reconstructed scene"
+  },
+  "/images/real/cbb65-2.jpg": {
+    "slug": "cbb65-single",
+    "src": "/images/framed-editorial-20261030/cbb65-single-960.webp",
+    "srcset": "/images/framed-editorial-20261030/cbb65-single-640.webp 640w, /images/framed-editorial-20261030/cbb65-single-960.webp 960w, /images/framed-editorial-20261030/cbb65-single-1280.webp 1280w, /images/framed-editorial-20261030/cbb65-single-1536.webp 1536w",
+    "fullSrc": "/images/framed-editorial-20261030/cbb65-single-1536.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalSrc": "/images/real/cbb65-2.jpg",
+    "note": "AI-retouched illustration"
+  },
+  "/images/real/cbb65-dual-run-7.jpg": {
+    "slug": "cbb65-dual",
+    "src": "/images/framed-editorial-20261030/cbb65-dual-960.webp",
+    "srcset": "/images/framed-editorial-20261030/cbb65-dual-640.webp 640w, /images/framed-editorial-20261030/cbb65-dual-960.webp 960w, /images/framed-editorial-20261030/cbb65-dual-1280.webp 1280w, /images/framed-editorial-20261030/cbb65-dual-1536.webp 1536w",
+    "fullSrc": "/images/framed-editorial-20261030/cbb65-dual-1536.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalSrc": "/images/real/cbb65-dual-run-7.jpg",
+    "note": "AI-retouched illustration"
+  },
+  "/images/real/cbb60-18.jpg": {
+    "slug": "cbb60-stud",
+    "src": "/images/framed-editorial-20261030/cbb60-stud-960.webp",
+    "srcset": "/images/framed-editorial-20261030/cbb60-stud-640.webp 640w, /images/framed-editorial-20261030/cbb60-stud-960.webp 960w, /images/framed-editorial-20261030/cbb60-stud-1280.webp 1280w, /images/framed-editorial-20261030/cbb60-stud-1536.webp 1536w",
+    "fullSrc": "/images/framed-editorial-20261030/cbb60-stud-1536.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalSrc": "/images/real/cbb60-18.jpg",
+    "note": "AI-retouched illustration"
+  },
+  "/images/real/cbb61-13.jpg": {
+    "slug": "cbb61-blades",
+    "src": "/images/framed-editorial-20261030/cbb61-blades-960.webp",
+    "srcset": "/images/framed-editorial-20261030/cbb61-blades-640.webp 640w, /images/framed-editorial-20261030/cbb61-blades-960.webp 960w, /images/framed-editorial-20261030/cbb61-blades-1280.webp 1280w, /images/framed-editorial-20261030/cbb61-blades-1536.webp 1536w",
+    "fullSrc": "/images/framed-editorial-20261030/cbb61-blades-1536.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalSrc": "/images/real/cbb61-13.jpg",
+    "note": "AI-retouched illustration"
+  },
+  "/images/real/cbb61-leads-10.jpg": {
+    "slug": "cbb61-leads",
+    "src": "/images/framed-editorial-20261030/cbb61-leads-960.webp",
+    "srcset": "/images/framed-editorial-20261030/cbb61-leads-640.webp 640w, /images/framed-editorial-20261030/cbb61-leads-960.webp 960w, /images/framed-editorial-20261030/cbb61-leads-1280.webp 1280w, /images/framed-editorial-20261030/cbb61-leads-1536.webp 1536w",
+    "fullSrc": "/images/framed-editorial-20261030/cbb61-leads-1536.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalSrc": "/images/real/cbb61-leads-10.jpg",
+    "note": "AI-retouched illustration"
+  },
+  "/images/real/cd60-25.jpg": {
+    "slug": "cd60-start",
+    "src": "/images/framed-editorial-20261030/cd60-start-960.webp",
+    "srcset": "/images/framed-editorial-20261030/cd60-start-640.webp 640w, /images/framed-editorial-20261030/cd60-start-960.webp 960w, /images/framed-editorial-20261030/cd60-start-1280.webp 1280w, /images/framed-editorial-20261030/cd60-start-1536.webp 1536w",
+    "fullSrc": "/images/framed-editorial-20261030/cd60-start-1536.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalSrc": "/images/real/cd60-25.jpg",
+    "note": "AI-retouched illustration"
+  },
+  "/images/source-checked-20261026/cbb60-wire-samples.webp": {
+    "slug": "cbb60-wire-group",
+    "src": "/images/framed-editorial-20261030/cbb60-wire-group-960.webp",
+    "srcset": "/images/framed-editorial-20261030/cbb60-wire-group-640.webp 640w, /images/framed-editorial-20261030/cbb60-wire-group-960.webp 960w, /images/framed-editorial-20261030/cbb60-wire-group-1280.webp 1280w, /images/framed-editorial-20261030/cbb60-wire-group-1536.webp 1536w",
+    "fullSrc": "/images/framed-editorial-20261030/cbb60-wire-group-1536.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalSrc": "/images/source-checked-20261026/cbb60-wire-samples.webp",
+    "note": "AI-retouched illustration"
+  }
+}

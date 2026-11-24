@@ -1,4 +1,5 @@
 ---
+import { displayImageUrl } from '../data/imageDelivery';
 interface Props {
   src: string;
   poster: string;
@@ -15,12 +16,12 @@ const portrait = frameRatio === '9/16';
 ---
 <figure class="media-figure video-figure">
   <div class:list={['media-image', 'video-frame', { 'video-frame--portrait': portrait, 'video-frame--editorial': !!cover }]} style={`aspect-ratio:${frameRatio}`}>
-    <video preload="none" playsinline poster={cover ? undefined : poster} data-original-poster={cover ? poster : undefined} aria-label={label} tabindex="-1">
+    <video preload="none" playsinline poster={cover ? undefined : displayImageUrl(poster)} data-original-poster={cover ? displayImageUrl(poster) : undefined} aria-label={label} tabindex="-1">
       <source src={src} type="video/mp4" />
       Your browser does not support inline video playback.
     </video>
     {cover && <img class="video-cover" src={cover.src} srcset={cover.srcset} sizes={coverSizes} width={cover.width} height={cover.height} alt="" aria-hidden="true" data-cover-source={cover.provenance} loading="lazy" decoding="async" />}
-    <button class="video-start" type="button" aria-label={`Play ${label}`}><span>Play footage</span></button>
+    <button class="video-start" type="button" aria-label={`Play ${label}`}><svg class="video-start-icon" viewBox="0 0 24 24" width="48" height="48" aria-hidden="true"><path d="M9 6.5 18 12l-9 5.5Z" fill="currentColor" /></svg></button>
     <button class="video-cancel button secondary" type="button" hidden>Cancel loading</button>
     <noscript><a href={src}>Open footage</a></noscript>
   </div>
@@ -44,12 +45,14 @@ const portrait = frameRatio === '9/16';
   .video-frame { position: relative; }
   .video-frame--editorial > video { position:absolute; inset:0; width:100%; height:100%; aspect-ratio:auto; object-fit:contain; }
   .video-cover { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; pointer-events:none; }
-  .video-frame--editorial:is([data-video-state="playing"], [data-video-state="paused"], [data-video-state="ended"]) > .video-cover { display:none; }
+  .video-frame--editorial:is([data-video-state="playing"], [data-video-state="paused"], [data-video-state="ended"]) > .video-cover {
+    visibility: hidden;
+  }
   .video-frame--editorial .video-start { z-index:1; }
   .video-frame--editorial .video-cancel { z-index:2; }
   .video-start { position: absolute; inset: 0; display: flex; align-items: end; padding: 16px; background: transparent; border: 0; cursor: pointer; text-align: left; }
   .video-start[hidden] { display: none; }
-  .video-start span { display: inline-block; padding: 8px 12px; background: #252a30; color: #fff; font: 600 14px/1.4 "Inter Variable", Arial, sans-serif; }
+  .video-start-icon { display: block; flex: 0 0 auto; padding: 10px; border-radius: 50%; background: #252a30; color: #fff; }
   .video-start:focus-visible { outline: 2px solid #b85d2c; outline-offset: -4px; }
   .video-start:disabled { cursor:wait; }
   .video-cancel { position:absolute; right:16px; top:16px; z-index:1; }

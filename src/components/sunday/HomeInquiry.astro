@@ -1,0 +1,48 @@
+---
+import SeriesInquiry from './SeriesInquiry.astro';
+import { PUBLIC_EMAIL, PUBLIC_PHONE, WHATSAPP_URL } from '../../data/site';
+---
+<section class="su-shell su-home-contact" id="home-inquiry" aria-labelledby="home-inquiry-title">
+  <div class="su-home-contact-panel">
+    <div class="su-home-contact-copy"><h2 id="home-inquiry-title">Discuss your capacitor order</h2><p>Send the original label or drawing, quantity and destination. We use these details to quote the capacitor, connections and packing.</p></div>
+    <div class="su-home-contact-actions">
+      <SeriesInquiry id="closing-inquiry" />
+      <dl class="su-home-contact-links"><div><dt>Email</dt><dd><a href={`mailto:${PUBLIC_EMAIL}`}>{PUBLIC_EMAIL}</a></dd></div><div><dt>WhatsApp</dt><dd><a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">{PUBLIC_PHONE}</a></dd></div></dl>
+    </div>
+  </div>
+</section>
+
+<style>
+  .su-home-contact { padding-bottom: 72px; scroll-margin-top: 100px; }
+  .su-home-contact-panel { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; padding: 48px; border-radius: 22px; background: #f2f4f5; }
+  .su-home-contact-copy h2 { max-width: 500px; margin: 0; font: 750 42px/1.12 var(--su-heading); letter-spacing: -.04em; }
+  .su-home-contact-copy p { max-width: 470px; margin: 20px 0 0; color: var(--su-muted); font-size: 16px; line-height: 1.65; }
+  .su-home-contact-actions { min-width: 0; }
+  .su-home-contact-actions :global(.su-inquiry) { max-width: none; margin: 0; }
+  .su-home-contact-actions :global(.su-inquiry select) { font-size: 14px; }
+  .su-home-contact-actions :global(.su-action) { font-size: 14px; padding-inline: 20px; }
+  .su-home-contact-links { display: flex; flex-wrap: wrap; gap: 24px 32px; margin: 28px 0 0; }
+  .su-home-contact-links dt { margin: 0 0 6px; color: var(--su-muted); font-size: 12px; line-height: 1.4; }
+  .su-home-contact-links dd { margin: 0; font-size: 14px; font-weight: 550; line-height: 1.5; }
+  .su-home-contact-links a { display: inline-block; padding-block: 4px; overflow-wrap: anywhere; }
+  .su-home-contact-links a:hover { color: var(--su-accent-hover); }
+  @media (max-width: 1079px) {
+    .su-home-contact-panel { gap: 36px; padding: 36px; }
+    .su-home-contact-copy h2 { font-size: 36px; }
+  }
+  @media (max-width: 800px) {
+    .su-home-contact { padding-bottom: 56px; }
+    .su-home-contact-panel { grid-template-columns: 1fr; gap: 28px; }
+    .su-home-contact-copy h2 { max-width: 600px; }
+    .su-home-contact-copy p { max-width: 620px; }
+  }
+  @media (max-width: 599px) {
+    .su-home-contact-panel { padding: 28px 24px; border-radius: 18px; }
+    .su-home-contact-copy h2 { font-size: 30px; }
+    .su-home-contact-copy p { margin-top: 16px; font-size: 15px; }
+    .su-home-contact-actions :global(.su-inquiry-field) { display: grid; grid-template-columns: 1fr; border-radius: 16px; padding: 5px; }
+    .su-home-contact-actions :global(.su-inquiry select) { width: 100%; min-height: 44px; }
+    .su-home-contact-actions :global(.su-action) { width: 100%; }
+    .su-home-contact-links { margin-top: 24px; gap: 18px; }
+  }
+</style>

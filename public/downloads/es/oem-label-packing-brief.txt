@@ -1,0 +1,52 @@
+HAN XING — Ficha de requisitos de etiquetado y embalaje
+
+Esta ficha sirve para solicitar una cotización. No es una ficha técnica,
+un informe de inspección, un certificado ni una especificación de embalaje aprobada.
+
+1. Contacto
+Nombre:
+Empresa:
+Correo electrónico:
+Teléfono / WhatsApp:
+País de destino:
+
+2. Condensador seleccionado
+Serie (CBB60 / CBB61 / CBB65 / CD60, o sin determinar):
+Modelo completo / referencia del proveedor actual:
+Aplicación y servicio de marcha o arranque:
+Capacitancia y tensión nominal de CA requeridas:
+Etiqueta original, ficha técnica o plano adjuntos:
+Cantidad del pedido:
+
+3. Etiqueta del producto
+Archivo de diseño de marca / logo:
+Texto e idioma de etiqueta requeridos:
+Nombre y revisión del archivo de diseño:
+Posición / tamaño de etiqueta:
+Distintivos de aprobación y documentos de respaldo necesarios, si corresponde:
+
+4. Embalaje
+Caja individual o protección requerida:
+Unidades por embalaje interior:
+Unidades por caja:
+Diseño de caja / idioma / marcas de envío:
+Dimensiones de caja o límites de peso:
+Requisitos de paletización / manipulación:
+Nombre y revisión del archivo de diseño de embalaje:
+
+5. Otros cambios solicitados
+Cambios de características eléctricas, carcasa, montaje o conexiones:
+Plano / especificación de esos cambios:
+Estos cambios requieren una cotización para el modelo concreto.
+
+6. Preguntas de muestras y pedido
+Cantidad de muestras:
+Fecha solicitada para muestras:
+Fecha solicitada para el pedido / condiciones de entrega:
+Documentos del modelo necesarios:
+Otras notas:
+
+Pegue esta ficha completada en el campo de requisitos de la página de contacto.
+Envíe diseños gráficos, planos y fotografías de etiquetas al correo de esa página.
+La cotización confirma modelo, alcance, condiciones de muestras y pedido y
+documentos incluidos.

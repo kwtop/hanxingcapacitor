@@ -1,24 +1,29 @@
 ---
 import PhotoDetail from './PhotoDetail.astro';
+import { getFramedPhotography } from '../data/framedPhotography';
+import { getGuidePhotoRetouch } from '../data/guidePhotoRetouch';
+import { zoomImageUrl, displayImageUrl } from '../data/imageDelivery';
 import MeasurementGuide from './MeasurementGuide.astro';
+import StartingDutyDiagram from './StartingDutyDiagram.astro';
 import type { GuideSection } from '../data/guideLayouts';
 interface Props { sections: GuideSection[]; }
 const { sections } = Astro.props;
 ---
 <div class="review-guide-sections">
-  {sections.map(section => <section class:list={['review-guide-section', section.layout && `is-${section.layout}`]} id={section.id}>
+  {sections.map(section => <section class:list={['review-guide-section', section.layout && `is-${section.layout}`, {'has-photos':!!section.photos,'is-text-section':!section.photos}]} id={section.id}>
     {section.aliases?.map(alias => <span id={alias} class="review-guide-anchor" aria-hidden="true"></span>)}
     <h2>{section.heading}</h2>
     <div class="review-guide-section-body">
       <div class="review-guide-copy">
-        {section.paragraphs?.map(paragraph => <p>{paragraph}</p>)}
+        {section.paragraphs?.map((paragraph,index) => <p>{paragraph}{section.citations?.filter(citation=>citation.paragraph===index).map(citation=><> <a class="guide-citation" href={citation.href}>{citation.label}</a></>)}</p>)}
+        {section.diagram === 'starting-duty' && <StartingDutyDiagram />}
         {section.id === 'measure-the-space-available' && <MeasurementGuide />}
         {section.records && <dl class="review-guide-records">{section.records.map(record => <div><dt>{record.label}</dt><dd>{record.text}</dd></div>)}</dl>}
         {section.points && (section.orderedPoints
           ? <ol class="review-guide-points">{section.points.map(point => <li>{point}</li>)}</ol>
           : <ul class="review-guide-points">{section.points.map(point => <li>{point}</li>)}</ul>)}
         {section.tables && <div class:list={['review-guide-tables', { 'has-two-tables': section.tables.length === 2 }]}>
-          {section.tables.map(table => <div class="review-guide-table-wrap"><table class="review-guide-table">
+          {section.tables.map(table => <div class="review-guide-table-wrap" tabindex="0" role="region" aria-label={table.caption}><table class="review-guide-table">
             <caption>{table.caption}</caption>
             <thead><tr>{table.headers.map(header => <th scope="col">{header}</th>)}</tr></thead>
             <tbody>{table.rows.map(row => <tr>{row.map((cell, index) => index === 0
@@ -27,7 +32,7 @@ const { sections } = Astro.props;
           </table></div>)}
         </div>}
         {section.note && <p class="review-guide-note">{section.note}</p>}
-        {section.links && <nav class="review-guide-section-links" aria-label={`Further reading for ${section.heading}`}>{section.links.map(link => <a class="card-link" href={link.href}>{link.label}</a>)}</nav>}
+        {section.links && <nav class="review-guide-section-links" aria-label={`Further reading for ${section.heading}`}>{section.links.map(link => <a class="context-link" href={link.href}>{link.label}</a>)}</nav>}
         {section.copyText && <div class="review-order-copy" data-copy-block>
           <pre class="review-order-notes" id="order-notes-text" tabindex="0" aria-label="Order confirmation notes to copy"><code>{section.copyText}</code></pre>
           <button class="button secondary" type="button" data-copy-order>Copy order notes</button>
@@ -35,12 +40,36 @@ const { sections } = Astro.props;
         </div>}
       </div>
       {section.photos && <div class:list={['review-guide-photos', { 'has-three-photos': section.photos.length === 3, 'photos-before': section.photoPlacement === 'before' }]}>
-        {section.photos.map(photo => <figure class="review-guide-photo">
-          <PhotoDetail src={photo.src} alt={photo.alt} complete />
-          {photo.showLabelDetail && <div class="review-label-detail"><img src={photo.src} alt="Enlarged label area from the same CBB65 original photograph: 20 µF ±5%, 450VAC and 50/60Hz." width="2000" height="2000" loading="lazy" /></div>}
+        {section.photos.map(photo => <figure class="review-guide-photo" data-source-kind={getGuidePhotoRetouch(photo.src)?.sourceKind}>
+          <button class="resource-photo-open" type="button" data-resource-photo={getGuidePhotoRetouch(photo.src)?.fullSrc ?? (photo.original ? zoomImageUrl(photo.src) : getFramedPhotography(photo.src)?.fullSrc ?? zoomImageUrl(photo.src))} data-photo-zoom aria-label={`Enlarge ${photo.title}`}><PhotoDetail src={photo.src} alt={photo.alt} original={photo.original} presentation={getGuidePhotoRetouch(photo.src)} complete /></button>
+          {photo.showLabelDetail && <div class:list={['review-label-detail',{'has-retouched-label':!!getGuidePhotoRetouch(photo.src)}]}><img src={getGuidePhotoRetouch(photo.src)?.src ?? displayImageUrl(photo.src)} alt="Close view of a CBB65 label marked 20 µF ±5%, 450 VAC and 50/60 Hz." width={getGuidePhotoRetouch(photo.src)?.width ?? 2000} height={getGuidePhotoRetouch(photo.src)?.height ?? 2000} loading="lazy" /></div>}
           <figcaption><h3>{photo.title}</h3><p>{photo.text}</p></figcaption>
         </figure>)}
       </div>}
     </div>
   </section>)}
 </div>
+<dialog class="resource-photo-dialog" aria-label="Sample photograph">
+  <form method="dialog"><button class="resource-photo-close" type="submit" aria-label="Close photograph">Close</button></form>
+  <img alt="" width="1536" height="1024" />
+  <p class="resource-photo-caption"></p>
+</dialog>
+<script>
+  const dialog=document.querySelector<HTMLDialogElement>('.resource-photo-dialog');
+  if(dialog){
+    const image=dialog.querySelector<HTMLImageElement>('img')!;
+    const caption=dialog.querySelector<HTMLElement>('.resource-photo-caption')!;
+    document.querySelectorAll<HTMLButtonElement>('[data-resource-photo]').forEach(button=>{
+      button.addEventListener('click',()=>{
+        const preview=button.querySelector('img');
+        image.width=Number(preview?.getAttribute('width')) || 1536;
+        image.height=Number(preview?.getAttribute('height')) || 1024;
+        image.src=button.dataset.resourcePhoto!;
+        image.alt=preview?.alt || 'Sample photograph';
+        caption.textContent=image.alt;
+        dialog.showModal();
+      });
+    });
+    dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close();});
+  }
+</script>

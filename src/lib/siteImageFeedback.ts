@@ -1,3 +1,4 @@
+import {t} from '../i18n/client';
 /** Keep all existing image nodes and layouts; add a local status only when needed. */
 export function initSiteImageFeedback() {
   const main=document.querySelector('main');if(!main)return;
@@ -33,9 +34,9 @@ export function initSiteImageFeedback() {
       clear();if(!img.isConnected)return;
       if(getComputedStyle(container).position==='static')container.style.position='relative';
       overlay=document.createElement('span');overlay.className='site-image-feedback';overlay.setAttribute('role','status');
-      const message=document.createElement('span');message.textContent=error ? 'Image could not load.' : 'Loading image…';overlay.append(message);
+      const message=document.createElement('span');message.textContent=t(error ? 'Image could not load.' : 'Loading image…');overlay.append(message);
       if(error || forced==='loading'){
-        const retry=document.createElement('button');retry.type='button';retry.className='media-retry';retry.textContent=forced==='loading' ? 'Load image' : 'Retry image';
+        const retry=document.createElement('button');retry.type='button';retry.className='media-retry';retry.textContent=t(forced==='loading' ? 'Load image' : 'Retry image');
         retry.addEventListener('click',()=>{
           const target=img.closest<HTMLElement>('a,button') || container;
           if(!target.matches('a,button,[tabindex]'))target.tabIndex=-1;

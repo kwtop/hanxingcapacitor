@@ -1,0 +1,42 @@
+{
+  "CBB60": {
+    "src": "/images/product-comparison-20261027/cbb60-1280.webp",
+    "srcset": "/images/product-comparison-20261027/cbb60-480.webp 480w, /images/product-comparison-20261027/cbb60-800.webp 800w, /images/product-comparison-20261027/cbb60-1280.webp 1280w, /images/product-comparison-20261027/cbb60-1536.webp 1536w",
+    "width": 1536,
+    "height": 1024,
+    "alt": "CBB60 cylindrical capacitor with insulated wire leads.",
+    "provenance": "imagegen-presentation-from-supplied-product-reference"
+  },
+  "CBB61": {
+    "src": "/images/product-comparison-20261027/cbb61-1280.webp",
+    "srcset": "/images/product-comparison-20261027/cbb61-480.webp 480w, /images/product-comparison-20261027/cbb61-800.webp 800w, /images/product-comparison-20261027/cbb61-1280.webp 1280w, /images/product-comparison-20261027/cbb61-1536.webp 1536w",
+    "width": 1536,
+    "height": 1024,
+    "alt": "CBB61 rectangular capacitor with two blade terminals.",
+    "provenance": "imagegen-presentation-from-supplied-product-reference"
+  },
+  "CBB65": {
+    "src": "/images/product-comparison-20261027/cbb65-1280.webp",
+    "srcset": "/images/product-comparison-20261027/cbb65-480.webp 480w, /images/product-comparison-20261027/cbb65-800.webp 800w, /images/product-comparison-20261027/cbb65-1280.webp 1280w, /images/product-comparison-20261027/cbb65-1536.webp 1536w",
+    "width": 1536,
+    "height": 1024,
+    "alt": "CBB65 single-run metal-can capacitor with two terminal groups.",
+    "provenance": "imagegen-presentation-from-supplied-product-reference"
+  },
+  "CD60": {
+    "src": "/images/cd60-presentation-20261110/landscape-1280.webp",
+    "srcset": "/images/cd60-presentation-20261110/landscape-480.webp 480w, /images/cd60-presentation-20261110/landscape-800.webp 800w, /images/cd60-presentation-20261110/landscape-1280.webp 1280w, /images/cd60-presentation-20261110/landscape-1536.webp 1536w",
+    "width": 1536,
+    "height": 1024,
+    "alt": "CD60 cylindrical start capacitor with blade terminals.",
+    "provenance": "imagegen-presentation-from-supplied-product-reference"
+  },
+  "CBB65-dual": {
+    "src": "/images/product-comparison-20261027/cbb65-dual-1280.webp",
+    "srcset": "/images/product-comparison-20261027/cbb65-dual-480.webp 480w, /images/product-comparison-20261027/cbb65-dual-800.webp 800w, /images/product-comparison-20261027/cbb65-dual-1280.webp 1280w, /images/product-comparison-20261027/cbb65-dual-1536.webp 1536w",
+    "width": 1536,
+    "height": 1024,
+    "alt": "CBB65 dual-run metal-can capacitor with three terminal groups.",
+    "provenance": "imagegen-presentation-from-supplied-product-reference"
+  }
+}

@@ -1,3 +1,4 @@
+import {localizeTree} from '../i18n/react';
 import { useState, type ChangeEvent, type SyntheticEvent } from 'react';
 type Spec = { series:string; function:string; capacitance:string; voltage:string; dimensions:string; terminals:string; notes:string };
 const blank = ():Spec => ({ series:'', function:'', capacitance:'', voltage:'', dimensions:'', terminals:'', notes:'' });
@@ -23,7 +24,7 @@ export default function QuoteForm() {
     try{const response=await fetch('/api/inquiries/',{method:'POST',body:form});const result=await response.json();if(!response.ok)throw new Error(result.id?`${result.error} Reference: ${result.id}`:result.error||'Unable to submit inquiry.');sessionStorage.setItem('hanxing-inquiry-result',JSON.stringify(result));window.location.assign('/thank-you/');}
     catch(cause){setError(cause instanceof Error?cause.message:'Unable to submit inquiry.');setBusy(false);}
   }
-  return <form className="quote-form" onSubmit={submit} encType="multipart/form-data">
+  return localizeTree(<form className="quote-form" onSubmit={submit} encType="multipart/form-data">
     <input className="visually-hidden" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" />
     <input type="hidden" name="context" value={initialSeries||query.get('application')||''} />
     <div className="form-section">
@@ -69,5 +70,5 @@ export default function QuoteForm() {
       </div></details>
     </div>
     <div className="form-section"><p className="small">By submitting this form, you agree to the use of your information to review and respond to the inquiry. See our <a href="/privacy-policy/" style={{textDecoration:'underline'}}>privacy notice</a>.</p>{error&&<p role="alert" className="form-error">{error}</p>}<button className="button" type="submit" disabled={busy}>{busy?'Submitting...':'Submit inquiry'}</button></div>
-  </form>;
+  </form>);
 }

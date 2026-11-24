@@ -1,15 +1,23 @@
 ---
 import {guideVisuals} from '../../data/satechiSite';
 import SiteImage from './SiteImage.astro';
+import {resourceGuidePhotography} from '../../data/resourcePhotography';
+import Cbb65Samples from './Cbb65Samples.astro';
 interface Props { slug:string; class?:string; eager?:boolean; sizes?:string; }
 const {slug,class:className,eager=false,sizes}=Astro.props;
-const visual=guideVisuals[slug];
+const resourcePhoto=resourceGuidePhotography[slug];
+const visual=resourcePhoto ?? guideVisuals[slug];
 const isLabel=slug==='read-motor-capacitor-label';
 const isRatings=slug==='capacitance-voltage-guide';
+const isSeries=slug==='cbb60-vs-cbb61-vs-cbb65';
+const isDual=slug==='single-vs-dual-run-capacitors';
 ---
-<figure class:list={['co-guide-visual',className,{'co-guide-visual--label':isLabel,'co-guide-visual--ratings':isRatings,'zi-guide-photo':visual.src.startsWith('/images/brochure/')}]} data-guide-visual={slug}>
-  {isRatings ? <div class="co-rating-fields" role="img" aria-label="µF identifies capacitance. VAC identifies rated AC voltage.">
+<figure class:list={['co-guide-visual',className,{'co-guide-visual--label':isLabel,'co-guide-visual--ratings':isRatings,'co-guide-visual--series':isSeries,'co-guide-visual--dual':isDual,'zi-guide-photo':visual.src.startsWith('/images/brochure/')}]} data-guide-visual={slug} data-source-kind={resourcePhoto ? resourcePhoto.sourceKind ?? 'illustrative-product-photography' : undefined}>
+  {resourcePhoto ? <img src={resourcePhoto.src} srcset={resourcePhoto.srcset} sizes={sizes || '(max-width: 700px) calc(100vw - 40px), 46vw'} width={resourcePhoto.width} height={resourcePhoto.height} alt={resourcePhoto.alt} loading={eager ? 'eager' : 'lazy'} fetchpriority={eager ? 'high' : undefined} decoding="async" />
+  : isRatings ? <div class="co-rating-fields" role="img" aria-label="µF identifies capacitance. VAC identifies rated AC voltage.">
     <div aria-hidden="true"><strong>µF</strong><span>Capacitance</span></div>
     <div aria-hidden="true"><strong>VAC</strong><span>Rated AC voltage</span></div>
-  </div> : <SiteImage src={visual.src} alt={visual.alt} sizes={sizes} eager={eager} />}
+  </div>
+  : isDual ? <Cbb65Samples eager={eager} sizes={sizes} />
+  : <SiteImage src={visual.src} alt={visual.alt} sizes={sizes} eager={eager} />}
 </figure>

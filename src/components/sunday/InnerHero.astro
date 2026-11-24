@@ -1,11 +1,15 @@
 ---
 import SiteImage from '../satechi-preview/SiteImage.astro';
-interface Props {title: string; description: string; image: string; alt: string; trail?: string; dark?: boolean; compact?: boolean; showImage?: boolean; titleId?: string;}
-const {title,description,image,alt,trail=title,dark=false,compact=false,showImage=true,titleId='inner-title'} = Astro.props;
+interface Props {title: string; description: string; image: string; alt: string; trail?: string; dark?: boolean; compact?: boolean; showImage?: boolean; titleId?: string; caption?: string; layout?:'split'|'feature';}
+const {title,description,image,alt,trail=title,dark=false,compact=false,showImage=true,titleId='inner-title',caption,layout='split'} = Astro.props;
 ---
-<section class:list={['su-inner-hero', {'su-inner-hero--dark': dark, 'su-inner-hero--collection': compact, 'su-inner-hero--text': !showImage}]} aria-labelledby={titleId}>
+<section class:list={['su-inner-hero', {'su-inner-hero--dark': dark, 'su-inner-hero--collection': compact, 'su-inner-hero--text': !showImage,'su-inner-hero--feature':layout==='feature'}]} aria-labelledby={titleId}>
   <div class="su-shell su-inner-hero-grid">
     <div class="su-inner-hero-copy"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span>{trail}</span></nav><h1 id={titleId}>{title}</h1><p class="su-inner-lead">{description}</p><slot /></div>
-    {showImage && <figure><SiteImage src={image} alt={alt} eager sizes="(max-width: 800px) calc(100vw - 48px), 55vw" /></figure>}
+    {showImage && <figure><SiteImage src={image} alt={alt} eager sizes={layout==='feature'?'(min-width:1420px) 1372px, calc(100vw - 48px)':'(max-width: 800px) calc(100vw - 48px), 55vw'} />{caption && <figcaption>{caption}</figcaption>}</figure>}
   </div>
 </section>
+<style>
+  .su-inner-hero figure { position: relative; }
+  .su-inner-hero figcaption { position: absolute; right: 12px; bottom: 12px; max-width: calc(100% - 24px); padding: 5px 9px; border-radius: 5px; background: rgba(255,255,255,.9); color: #39454d; font: 500 11px/1.3 'Sunday Geist', sans-serif; }
+</style>

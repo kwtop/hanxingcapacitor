@@ -1,60 +1,58 @@
 ---
-import InnerHero from '../../components/sunday/InnerHero.astro';
-import {sundayIndustrial} from '../../data/sundayIndustrial';
-import { isSatechiPreview } from '../../lib/visualPreview';
-import OemPhoto from '../../components/satechi-preview/OemPhoto.astro';
-import { oemMedia } from '../../data/oemMedia';
-import BrochurePhoto from '../../components/satechi-preview/BrochurePhoto.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import OemPageHero from '../../components/sunday/OemPageHero.astro';
+import OemFeature from '../../components/sunday/OemFeature.astro';
+import OemReading from '../../components/sunday/OemReading.astro';
+import OemPhotoCollection from '../../components/sunday/OemPhotoCollection.astro';
+import OemPhotography from '../../components/sunday/OemPhotography.astro';
+import BrochurePhoto from '../../components/satechi-preview/BrochurePhoto.astro';
 import InquiryCallout from '../../components/InquiryCallout.astro';
 import VideoFigure from '../../components/VideoFigure.astro';
-import WorkshopPhotoStory from '../../components/sunday/WorkshopPhotoStory.astro';
-import { workshopStorySets } from '../../data/workshopPhotos';
-const checklist = '/resources/motor-capacitor-order-shipment-checklist/';
-const requirements = [
-  { name: 'Individual protection', description: 'Space around terminals and leads, with protection against contact or movement.', values: 'The protection and clearance agreed for the model.' },
-  { name: 'Inner pack and carton', description: 'Dividers or other protection, quantity per inner pack and units per carton.', values: 'Pack and carton quantities, carton dimensions, net weight and gross weight.' },
-  { name: 'Marks and pallets', description: 'Shipping marks and language, pallet layout and handling requirements.', values: 'Approved marks, pallet arrangement and any special handling instructions.' },
+import { oemWorkshopImages, oemWorkshopPhoto } from '../../data/oemWorkshopPhotography';
+import '../../styles/oem-editorial.css';
+import { procurementPolicy } from '../../data/site';
+const checklist='/resources/motor-capacitor-order-shipment-checklist/';
+const requirements=[
+ {name:'Individual protection',description:'Space around terminals and leads, with protection against contact or movement.',values:'Protection method and clearance agreed for the model.'},
+ {name:'Inner pack and carton',description:'Dividers or other protection, quantity per inner pack and units per carton.',values:'Pack and carton quantities, carton dimensions, net weight and gross weight.'},
+ {name:'Marks and pallets',description:'Shipping marks and language, pallet layout and handling requirements.',values:'Approved marks, pallet arrangement and any special handling instructions.'}
 ];
-const shippingRecords = [
-  ['Invoice', 'Match the order reference, parties, model description and quantities to the approved order.'],
-  ['Packing list', 'Match model quantities, package counts, shipping marks and net or gross weights to the packout record.'],
-  ['Transport record', 'Match the transport method, consignee, package count and transport reference to the handover record.'],
+const shippingRecords=[
+ ['Invoice','Seller and buyer details, invoice and order references, model description, quantities, value and currency.'],
+ ['Packing list','Unit quantities by model, carton and pallet counts, shipping marks, dimensions and net and gross weights.'],
+ ['Transport record','The consignee, transport method, package count and carrier reference for the shipment.']
 ];
 ---
-<BaseLayout title="Packing, Dispatch & Order Records" description="Capacitor packing requirements, carton quantities, shipping marks and the documents to check before carrier handover.">
-  <article class:list={['procurement-page procurement-packing', {'oem-editorial-page': isSatechiPreview}]}>
-    <InnerHero titleId="packing-title" title="Packing and dispatch" description="Product protection, carton quantities and clear records for carrier handover." image={sundayIndustrial.packing.src} alt={sundayIndustrial.packing.alt} trail="OEM & quality / Packing & dispatch"><nav class="procurement-actions" aria-label="Packing information"><a class="card-link" href="/contact/?request=packing#inquiry-form">Discuss your packing</a></nav></InnerHero>
-    <section class="procurement-section" id="packing-requirements" aria-labelledby="pack-title"><div class="container">
-      <h2 id="pack-title">Packing requirements</h2>
-      <div class:list={{'ss-packing-spec':isSatechiPreview}}>
-      {isSatechiPreview && <BrochurePhoto name="cbb65-packaging" class="zi-packing-spec-photo" zoom label="CBB65 product and individual box" sizes="(max-width: 1020px) calc(100vw - 48px), 36vw"><h3>Product and individual box</h3></BrochurePhoto>}
-      <table class="procurement-table procurement-packing-requirements">
-        <caption class="visually-hidden">Packing requirements and values to record</caption>
-        <thead><tr><th scope="col">Requirement</th><th scope="col">Details for the packing specification</th></tr></thead>
-        <tbody>{requirements.map(item => <tr><th scope="row"><strong>{item.name}</strong><span>{item.description}</span></th><td><span class="procurement-mobile-label" aria-hidden="true">Packing specification</span>{item.values}</td></tr>)}</tbody>
-      </table>
-      </div>
-      <a class="card-link" href="/oem/#configuration-approval">Agree label and packing revisions</a>
+<BaseLayout title="Motor Capacitor Packing & Dispatch" description="Motor capacitor packing requirements for leads, terminals, cartons and pallets, with packing-list and carrier-handover records.">
+  <article class="oem-suite oe-packing">
+    <OemPageHero titleId="packing-title" title="Packing and dispatch" description="Protect the case and connections in transit. Agree the unit protection, carton quantities and shipping marks for your order." current="Packing & dispatch" layout="split">
+      <a class="button" href="/contact/?request=packing#inquiry-form">Discuss your packing</a>
+      <OemPhotography slot="media" name="packing-clearance" caption="Clearance around capacitor leads and terminals" eager sizes="(max-width:800px) calc(100vw - 40px), 55vw" />
+    </OemPageHero>
+    <section class="oe-section" id="packing-requirements"><div class="oe-shell">
+      <header class="oe-section-heading"><h2 id="pack-title">Protection for leads and terminals</h2><p>Flexible leads need room for a loose bend. Blade terminals need clearance from the carton and adjacent products. The packing layout depends on the selected model and order quantity.</p></header>
+        <table class="procurement-table oe-table procurement-packing-requirements"><caption class="visually-hidden">Motor capacitor packing requirements and values to record</caption><thead><tr><th scope="col">Requirement</th><th scope="col">Packing specification</th></tr></thead><tbody>{requirements.map(item=><tr><th scope="row"><strong>{item.name}</strong><span>{item.description}</span></th><td><span class="procurement-mobile-label" aria-hidden="true">Packing specification</span>{item.values}</td></tr>)}</tbody></table>
+      <p>{procurementPolicy.packing}</p>
+      <details class="oe-sample-reference"><summary>Product and individual box<span class="oe-disclosure-icon" aria-hidden="true"></span></summary><BrochurePhoto name="cbb65-packaging" zoom label="CBB65 product and individual box" sizes="(max-width:600px) calc(100vw - 40px), 520px" /></details>
+      <div class="oe-section-tail"><a class="oe-link" href="/oem/#configuration-approval">Agree label and packing revisions</a></div>
     </div></section>
-    <section class="procurement-section" id="packing-clip" aria-labelledby="packing-footage-title"><div class="container procurement-packing-footage">
-      <div class="procurement-packing-footage-copy"><h2 id="packing-footage-title">Packing footage</h2><ul><li>Keep terminals and leads clear of pressure or contact.</li><li>Check dividers, inner protection and package counts.</li><li>Match the marks to the model and order reference.</li></ul></div>
-      <div class:list={['procurement-video', isSatechiPreview ? 'oem-packing-player' : 'procurement-video--portrait']}><VideoFigure src="/videos/packing-scene.mp4" poster="/images/real/packing-scene.jpg" label="Supplied footage of small product boxes being handled at a packing worktable" ratio="9/16" displayRatio={isSatechiPreview ? '3/2' : undefined} cover={isSatechiPreview ? oemMedia['packing-worktable'] : undefined} /></div>
+    <OemFeature id="packing-clip" titleId="packing-footage-title" title="At the packing table" reverse tone="steel">
+      <div slot="media"><VideoFigure src="/videos/packing-scene.mp4" poster="/images/real/packing-scene.jpg" label="Individual product boxes being handled at a packing worktable" displayRatio="3/2" cover={oemWorkshopImages['25-packing-worker']} /></div>
+      <p>Review the sample pack with the complete capacitor inside, including leads, terminals and fixing parts. The insert should support the body and leave the connections clear.</p>
+      <p>The label and box artwork should use the agreed wording and model reference. Record the units per inner pack and carton on the packing specification.</p>
+      <a class="oe-link" href="/resources/oem-capacitor-sample-approval/#approve-labels-and-packing">Include packing in sample approval</a>
+    </OemFeature>
+    <OemPhotoCollection id="packing-dispatch-photos" title="Pallets and the loading lane" intro="Wrapped cartons, pallet arrangement and loading clearance." photos={[oemWorkshopPhoto('28-outdoor-pallets','Pallets in the loading lane'),oemWorkshopPhoto('29-lift-to-truck','Loading at the warehouse')]} moreHref="/factory/process-gallery/#dispatch" moreLabel="More packing and dispatch views" />
+    <section class="oe-section" id="handover"><div class="oe-shell oe-terms-layout">
+      <div><h2>From packing to pickup</h2><p>Keep packing completion, carrier pickup and delivery as separate milestones. Record actual or estimated dates and who to contact for the next update.</p></div>
+      <dl class="oe-records"><div><dt>Dispatch options</dt><dd>{procurementPolicy.dispatch}</dd></div><div><dt>Packing completion</dt><dd>The final packout record gives the unit and package counts, dimensions, weights and marks.</dd></div><div><dt>Carrier handover</dt><dd>The pickup record gives the date and package count. The bill of lading, air waybill or courier reference identifies the shipment for the agreed transport method.</dd></div><div><dt>Delivery update</dt><dd>The carrier reference connects tracking updates to the order. Add the delivery confirmation when it is available.</dd></div></dl>
     </div></section>
-    <WorkshopPhotoStory id="packing-dispatch-photos" eyebrow="Packing and dispatch stills" title="Boxes, pallets and the loading lane" intro="Video frames follow the visible work from individual boxes through pallet staging and truck loading. The wider overview is an illustrative reconstruction." photos={workshopStorySets.packing} moreHref="/factory/process-gallery/#finish-pack" moreLabel="See the full packing and dispatch sequence" />
-    <section class="procurement-section" id="handover" aria-labelledby="handover-title"><div class="container">
-      <h2 id="handover-title">Packout &amp; carrier handover</h2>
-      <div class="procurement-handover-layout">
-        <div><dl class="procurement-handover-records"><div><dt>Packout record</dt><dd>Model and unit counts, carton and pallet counts, shipping marks, carton dimensions, net and gross weights.</dd></div><div><dt>Carrier handover record</dt><dd>Pickup date, package count and the bill of lading, air waybill or courier reference for the agreed transport method.</dd></div></dl><p>Record production completion, inspection release, pickup, departure and estimated arrival separately. Track transport with the carrier record and delivery confirmation.</p></div>
-        {isSatechiPreview ? <OemPhoto name="dispatch-area" class="procurement-dispatch-photo" sizes="(max-width: 800px) calc(100vw - 48px), 48vw" /> : <figure class="procurement-dispatch-photo"><img src="/images/real/dispatch-pallets.jpg" alt="Wrapped cartons on pallets in a dispatch-area reference image." width="4032" height="3024" loading="lazy" /></figure>}
-      </div>
+    <section class="oe-section oe-section--steel" aria-labelledby="records-title"><div class="oe-shell">
+      <header class="oe-section-heading"><h2 id="records-title">Shipping documents</h2><p>Use the purchase-order reference, model descriptions and quantities consistently across the invoice, packing list and transport record. Additional origin or compliance documents depend on the destination and contract.</p></header>
+      <table class="procurement-table oe-table procurement-shipping-records"><caption class="visually-hidden">Documents to check against the order and handover record</caption><thead><tr><th scope="col">Record</th><th scope="col">Check against the order</th></tr></thead><tbody>{shippingRecords.map(([name,description])=><tr><th scope="row">{name}</th><td><span class="procurement-mobile-label" aria-hidden="true">Check against the order</span>{description}</td></tr>)}</tbody></table>
+      <div class="oe-section-tail"><a class="oe-link" href={checklist}>Delivery terms, payment and document responsibilities</a></div>
     </div></section>
-    <section class="procurement-section" aria-labelledby="records-title"><div class="container">
-      <h2 id="records-title">Match the documents</h2>
-      <table class="procurement-table procurement-shipping-records"><caption class="visually-hidden">Documents to match to the order, packout and handover records</caption><thead><tr><th scope="col">Record</th><th scope="col">Check against the order</th></tr></thead><tbody>{shippingRecords.map(([name, description]) => <tr><th scope="row">{name}</th><td><span class="procurement-mobile-label" aria-hidden="true">Check against the order</span>{description}</td></tr>)}</tbody></table>
-      <p class="procurement-section-intro">File inspection and sample records with the order. List the issuer and scope of origin or compliance documents required for the destination and contract.</p>
-      <a class="card-link" href={checklist}>Check delivery terms, payment and document responsibilities</a>
-    </div></section>
-    <InquiryCallout href="/contact/?request=packing#inquiry-form" heading="Discuss packing and delivery" description="Share the model, quantity and destination." />
+    <OemReading links={[{title:'Order and shipping checklist',description:'Product references, dates, responsibilities and delivery terms.',href:checklist},{title:'OEM sample approval',description:'Record the label and packing revision before confirming an order.',href:'/resources/oem-capacitor-sample-approval/'},{title:'Model documents',description:'Drawings, inspection results and the selected model reference.',href:'/factory/#model-records'}]} />
+    <InquiryCallout showVisual={false} href="/contact/?request=packing#inquiry-form" defaultSeries="unknown" heading="Discuss packing and delivery" description="Share the model, quantity and destination." />
   </article>
 </BaseLayout>

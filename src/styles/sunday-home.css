@@ -68,6 +68,7 @@ body.sunday-site{accent-color:var(--su-accent)}
 .sunday-site .su-hero--closing .su-hero-copy>p{font-size:17px;line-height:1.65;max-width:430px}
 .sunday-site .su-hero--closing .su-hero-art{grid-column:2;grid-row:1;order:1;position:relative;inset:auto;transform:none;width:100%;height:100%;min-height:498px;margin:0}
 .sunday-site .su-hero--closing .su-hero-art img{width:100%;height:100%;max-width:none;object-fit:cover;object-position:center}
+.sunday-site .su-hero-illustration-note{position:absolute;right:14px;bottom:14px;padding:6px 9px;border-radius:5px;background:#101820bd;color:#fff;font:500 11px/1.2 var(--su-font)}
 .sunday-site .su-hero--closing .su-inquiry{max-width:none}
 .sunday-site .su-hero--closing .su-inquiry-field{gap:4px}
 .sunday-site .su-hero--closing .su-inquiry select{padding-left:10px;font-size:14px}
@@ -97,6 +98,7 @@ body.sunday-site{accent-color:var(--su-accent)}
 .sunday-site .su-series-card{min-width:0;overflow:hidden;border-radius:var(--su-photo-radius);background:#f4f5f6}
 .sunday-site .su-series-card>a{display:flex;flex-direction:column;height:100%}
 .sunday-site .su-series-card img{width:100%;aspect-ratio:1/1.08;object-fit:cover;object-position:50% 24%;height:auto}
+.sunday-site .su-series-card--3 img{object-position:50% 48%}
 .sunday-site .su-series-label{border-top:1px solid #dde2e6;padding:24px 16px 28px;text-align:center;flex:1;background:#f4f5f6;color:var(--su-ink)}
 .sunday-site .su-series-label h2{font-size:26px;line-height:1.2;letter-spacing:-.6px}
 .sunday-site .su-series-label>p{font-size:14px;color:var(--su-muted);margin-top:6px}
@@ -275,3 +277,24 @@ body.sunday-site header.su-header .header-cta:hover{background:var(--su-accent-h
 .sunday-site .su-hero-copy h1 span,.sunday-site .su-hero-copy h2 span{text-decoration-color:var(--su-accent);text-decoration-thickness:5px}
 
 body.sunday-site header.su-header .brand{position:static!important;inset:auto!important;transform:none!important;margin:0!important;width:auto!important;order:0;flex:0 0 auto}
+
+/* Let the homepage photograph continue behind the navigation at the top. */
+body.sunday-home header.su-header:not(.is-scrolled):not(:has(.mobile-menu[data-open="true"])) .header-inner{background:transparent!important;backdrop-filter:none!important;border-color:transparent!important;color:#fff}
+body.sunday-home header.su-header:not(.is-scrolled):not(:has(.mobile-menu[data-open="true"])) :is(.brand,.brand-wordmark,.nav-link,.menu-toggle){color:#fff!important}
+body.sunday-home header.su-header:not(.is-scrolled):not(:has(.mobile-menu[data-open="true"])) .nav-link:hover{color:var(--su-accent-on-dark)!important}
+body.sunday-home header.su-header:has(.mobile-menu[data-open="true"]) .header-inner{background:#fffffff2!important;border-color:var(--su-border)!important}
+
+/* Give light navigation states a contour while preserving the initial transparency. */
+body.sunday-site.sunday-inner header.su-header:is(:hover,:focus-within,.is-scrolled,:has(.mobile-menu[data-open="true"])) .header-inner,
+body.sunday-home header.su-header:is(.is-scrolled,:has(.mobile-menu[data-open="true"])) .header-inner{
+  background:rgb(242 244 246 / .97)!important;
+  border-color:#d8dee4!important;
+}
+body.sunday-site.sunday-inner header.su-header .nav-link:hover,
+body.sunday-home header.su-header.is-scrolled .nav-link:hover{color:var(--su-accent-hover)!important}
+
+/* Contact icons shared by the homepage and inner-page footer. */
+.sunday-site .su-footer .su-footer-brand > a.su-footer-contact { display: flex; align-items: center; gap: 10px; }
+.sunday-site .su-footer address.su-footer-address { display: flex; align-items: flex-start; gap: 10px; }
+.sunday-site .su-footer .su-footer-address > svg { margin-top: 2px; }
+.sunday-site .su-footer :is(.su-footer-contact, .su-footer-address) > span { min-width: 0; overflow-wrap: anywhere; }

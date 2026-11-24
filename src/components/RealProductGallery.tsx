@@ -1,3 +1,4 @@
+import {localizeTree} from '../i18n/react';
 import {useState,useRef} from 'react';
 import type {ProductGalleryPhoto} from '../data/productPhotos';
 export default function RealProductGallery({photos,code}:{photos:ProductGalleryPhoto[];code:string}){
@@ -10,7 +11,7 @@ export default function RealProductGallery({photos,code}:{photos:ProductGalleryP
   setActive(next);
   thumbs.current?.querySelectorAll('button')[next]?.scrollIntoView({block:'nearest',inline:'nearest'});
  }
- return <div className="real-product-gallery" id="sample-photographs">
+ return localizeTree(<div className="real-product-gallery" id="sample-photographs">
   <button type="button" className="real-gallery-main" onClick={()=>dialog.current?.showModal()} aria-label={`Enlarge ${code} sample photograph: ${photo.label}`}><img src={photo.src} alt={photo.alt} width="2000" height="2000"/></button>
   {photos.length>1&&<div ref={thumbs} className="real-gallery-thumbs" aria-label={`${code} sample photographs`} onKeyDown={e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();const next=(active+(e.key==='ArrowRight'?1:-1)+photos.length)%photos.length;select(next);thumbs.current?.querySelectorAll('button')[next]?.focus();}}}>
    {photos.map((p,i)=><button key={p.src} type="button" aria-pressed={active===i} aria-label={p.label} onClick={()=>setActive(i)}><img src={p.thumb||p.src} alt="" loading="lazy"/></button>)}
@@ -22,5 +23,5 @@ export default function RealProductGallery({photos,code}:{photos:ProductGalleryP
    <div className="gallery-viewer-controls"><button type="button" onClick={()=>select(active-1)}>Previous</button><span>{active+1} / {photos.length}</span><button type="button" onClick={()=>select(active+1)}>Next</button></div>
    <p>{photo.label}</p>
   </dialog>
- </div>;
+ </div>);
 }

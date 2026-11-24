@@ -1,3 +1,4 @@
+import {isSpanish,t} from '../i18n/client';
 /** Enhance the existing document structure rather than copy its content into another UI. */
 export function initContentSearch() {
   document.querySelectorAll<HTMLElement>('[data-content-filter]').forEach(control => {
@@ -11,11 +12,12 @@ export function initContentSearch() {
     input.value=(new URLSearchParams(location.search).get('q') || '').slice(0,120);
     const items=[...directory.querySelectorAll<HTMLElement>('[data-search-item]')];
     const groups=[...directory.querySelectorAll<HTMLElement>('[data-search-group]')];
-    const text=new Map(items.map(item=>[item,(item.textContent || '').toLocaleLowerCase()]));
+    const normalize=(value:string)=>value.normalize('NFD').replace(/\p{M}/gu,'').toLocaleLowerCase();
+    const text=new Map(items.map(item=>[item,normalize(item.textContent || '')]));
     let searching=false;
     let opened=new Map<HTMLDetailsElement,boolean>();
     function render() {
-      const tokens=input!.value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
+      const tokens=normalize(input!.value.trim()).split(/\s+/).filter(Boolean);
       const hasQuery=tokens.length>0;
       if(hasQuery && !searching) opened=new Map(items.filter((item):item is HTMLDetailsElement=>item instanceof HTMLDetailsElement).map(item=>[item,item.open]));
       let visible=0;
@@ -28,7 +30,7 @@ export function initContentSearch() {
       });
       groups.forEach(group=>{const hidden=!group.querySelector('[data-search-item]:not([data-filter-hidden])');group.toggleAttribute('data-filter-hidden',hidden);group.hidden=hidden;});
       searching=hasQuery;
-      count!.textContent=`${visible} of ${items.length} ${control.dataset.noun} shown`;
+      count!.textContent=isSpanish()?`Se muestran ${visible} de ${items.length} ${t(control.dataset.noun||'')}`:`${visible} of ${items.length} ${control.dataset.noun} shown`;
       empty!.hidden=visible>0;clear!.hidden=!input!.value;
     }
     const updateUrl=()=>{

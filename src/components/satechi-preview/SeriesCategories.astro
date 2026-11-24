@@ -10,7 +10,7 @@ const descriptions = ['Pumps & single-phase motors', 'Fans & blowers', 'HVAC & r
     <div class="ha-series-grid">
       {products.map((product, index) => <article class="ha-series-card">
         <a class="ha-series-photo" href={productHref(product)} aria-label={`Explore ${product.code} ${product.shortName.toLowerCase()} capacitors`}>
-          <img src={`/images/previews/satechi-site-20261018/product-${product.code.toLowerCase()}.webp`} width="1200" height="1200" loading="lazy" decoding="async" alt={`Illustrative ${product.code} product display based on the supplied sample.`} />
+          <img src={`/images/previews/satechi-site-20261018/product-${product.code.toLowerCase()}.webp`} width="1200" height="1200" loading="lazy" decoding="async" alt={`${product.code} motor capacitor`} />
         </a>
         <div class="ha-series-copy">
           <div class="ha-series-title">

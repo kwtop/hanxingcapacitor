@@ -1,0 +1,412 @@
+{
+  "01-film-control": {
+    "src": "/images/source-photography-20261027/01-film-control-1600.webp",
+    "srcset": "/images/source-photography-20261027/01-film-control-480.webp 480w, /images/source-photography-20261027/01-film-control-800.webp 800w, /images/source-photography-20261027/01-film-control-1280.webp 1280w, /images/source-photography-20261027/01-film-control-1600.webp 1600w",
+    "width": 1600,
+    "height": 900,
+    "alt": "Control display beside film-processing equipment.",
+    "original": "/images/process-source-20261026/01-film-control.jpg",
+    "provenance": "original-video-frame",
+    "frame": "landscape"
+  },
+  "02-film-machine": {
+    "src": "/images/source-photography-20261027/02-film-machine-1600.webp",
+    "srcset": "/images/source-photography-20261027/02-film-machine-480.webp 480w, /images/source-photography-20261027/02-film-machine-800.webp 800w, /images/source-photography-20261027/02-film-machine-1280.webp 1280w, /images/source-photography-20261027/02-film-machine-1600.webp 1600w",
+    "width": 1600,
+    "height": 900,
+    "alt": "Enclosed film-processing machinery and feed rollers.",
+    "original": "/images/process-source-20261026/02-film-machine.jpg",
+    "provenance": "original-video-frame",
+    "frame": "landscape"
+  },
+  "03-machine-output": {
+    "src": "/images/source-photography-20261027/03-machine-output-1080.webp",
+    "srcset": "/images/source-photography-20261027/03-machine-output-480.webp 480w, /images/source-photography-20261027/03-machine-output-720.webp 720w, /images/source-photography-20261027/03-machine-output-1080.webp 1080w",
+    "width": 1080,
+    "height": 1920,
+    "alt": "Metal-can tooling and the machine output path.",
+    "original": "/images/process-source-20261026/03-machine-output.jpg",
+    "provenance": "original-video-frame",
+    "frame": "portrait"
+  },
+  "04-workstation-operator": {
+    "src": "/images/source-photography-20261027/04-workstation-operator-1080.webp",
+    "srcset": "/images/source-photography-20261027/04-workstation-operator-480.webp 480w, /images/source-photography-20261027/04-workstation-operator-720.webp 720w, /images/source-photography-20261027/04-workstation-operator-1080.webp 1080w",
+    "width": 1080,
+    "height": 1920,
+    "alt": "Operator beside capacitor assembly equipment.",
+    "original": "/images/process-source-20261026/04-workstation-operator.jpg",
+    "provenance": "original-video-frame",
+    "frame": "portrait"
+  },
+  "05-line-wide": {
+    "src": "/images/source-photography-20261027/05-line-wide-1600.webp",
+    "srcset": "/images/source-photography-20261027/05-line-wide-480.webp 480w, /images/source-photography-20261027/05-line-wide-800.webp 800w, /images/source-photography-20261027/05-line-wide-1280.webp 1280w, /images/source-photography-20261027/05-line-wide-1600.webp 1600w",
+    "width": 1600,
+    "height": 900,
+    "alt": "Operator alongside a row of production equipment.",
+    "original": "/images/process-source-20261026/05-line-wide.jpg",
+    "provenance": "original-video-frame",
+    "frame": "landscape"
+  },
+  "06-press-worker": {
+    "src": "/images/source-photography-20261027/06-press-worker-1600.webp",
+    "srcset": "/images/source-photography-20261027/06-press-worker-480.webp 480w, /images/source-photography-20261027/06-press-worker-800.webp 800w, /images/source-photography-20261027/06-press-worker-1280.webp 1280w, /images/source-photography-20261027/06-press-worker-1600.webp 1600w",
+    "width": 1600,
+    "height": 900,
+    "alt": "Operator working beside a press.",
+    "original": "/images/process-source-20261026/06-press-worker.jpg",
+    "provenance": "original-video-frame",
+    "frame": "landscape"
+  },
+  "07-reel-equipment": {
+    "src": "/images/source-photography-20261027/07-reel-equipment-1080.webp",
+    "srcset": "/images/source-photography-20261027/07-reel-equipment-480.webp 480w, /images/source-photography-20261027/07-reel-equipment-720.webp 720w, /images/source-photography-20261027/07-reel-equipment-1080.webp 1080w",
+    "width": 1080,
+    "height": 1920,
+    "alt": "Film reels and processing equipment.",
+    "original": "/images/process-source-20261026/07-reel-equipment.jpg",
+    "provenance": "original-video-frame",
+    "frame": "portrait"
+  },
+  "08-can-sorting": {
+    "src": "/images/source-photography-20261027/08-can-sorting-1080.webp",
+    "srcset": "/images/source-photography-20261027/08-can-sorting-480.webp 480w, /images/source-photography-20261027/08-can-sorting-720.webp 720w, /images/source-photography-20261027/08-can-sorting-1080.webp 1080w",
+    "width": 1080,
+    "height": 1920,
+    "alt": "Worker sorting metal capacitor can bodies.",
+    "original": "/images/process-source-20261026/08-can-sorting.jpg",
+    "provenance": "original-video-frame",
+    "frame": "portrait"
+  },
+  "09-assembly-machine": {
+    "src": "/images/source-photography-20261027/09-assembly-machine-1080.webp",
+    "srcset": "/images/source-photography-20261027/09-assembly-machine-480.webp 480w, /images/source-photography-20261027/09-assembly-machine-720.webp 720w, /images/source-photography-20261027/09-assembly-machine-1080.webp 1080w",
+    "width": 1080,
+    "height": 1920,
+    "alt": "Gloved hands handling a component at an assembly machine.",
+    "original": "/images/process-source-20261026/09-assembly-machine.jpg",
+    "provenance": "original-video-frame",
+    "frame": "portrait"
+  },
+  "10-assembly-hand": {
+    "src": "/images/source-photography-20261027/10-assembly-hand-1080.webp",
+    "srcset": "/images/source-photography-20261027/10-assembly-hand-480.webp 480w, /images/source-photography-20261027/10-assembly-hand-720.webp 720w, /images/source-photography-20261027/10-assembly-hand-1080.webp 1080w",
+    "width": 1080,
+    "height": 1920,
+    "alt": "Gloved hand guiding a metal can at assembly equipment.",
+    "original": "/images/process-source-20261026/10-assembly-hand.jpg",
+    "provenance": "original-video-frame",
+    "frame": "portrait"
+  },
+  "11-bench-detail": {
+    "src": "/images/source-photography-20261027/11-bench-detail-1080.webp",
+    "srcset": "/images/source-photography-20261027/11-bench-detail-480.webp 480w, /images/source-photography-20261027/11-bench-detail-720.webp 720w, /images/source-photography-20261027/11-bench-detail-1080.webp 1080w",
+    "width": 1080,
+    "height": 1920,
+    "alt": "Hands working on a component at a workbench.",
+    "original": "/images/process-source-20261026/11-bench-detail.jpg",
+    "provenance": "original-video-frame",
+    "frame": "portrait"
+  },
+  "12-can-arrangement": {
+    "src": "/images/source-photography-20261027/12-can-arrangement-1080.webp",
+    "srcset": "/images/source-photography-20261027/12-can-arrangement-480.webp 480w, /images/source-photography-20261027/12-can-arrangement-720.webp 720w, /images/source-photography-20261027/12-can-arrangement-1080.webp 1080w",
+    "width": 1080,
+    "height": 1920,
+    "alt": "Worker arranging metal can bodies at a workstation.",
+    "original": "/images/process-source-20261026/12-can-arrangement.jpg",
+    "provenance": "original-video-frame",
+    "frame": "portrait"
+  },
+  "13-terminal-array": {
+    "src": "/images/source-photography-20261027/13-terminal-array-1080.webp",
+    "srcset": "/images/source-photography-20261027/13-terminal-array-480.webp 480w, /images/source-photography-20261027/13-terminal-array-720.webp 720w, /images/source-photography-20261027/13-terminal-array-1080.webp 1080w",
+    "width": 1080,
+    "height": 1920,
+    "alt": "Metal capacitor cans with terminal ends arranged in rows.",
+    "original": "/images/process-source-20261026/13-terminal-array.jpg",
+    "provenance": "original-video-frame",
+    "frame": "portrait"
+  },
+  "14-press-detail": {
+    "src": "/images/source-photography-20261027/14-press-detail-1080.webp",
+    "srcset": "/images/source-photography-20261027/14-press-detail-480.webp 480w, /images/source-photography-20261027/14-press-detail-720.webp 720w, /images/source-photography-20261027/14-press-detail-1080.webp 1080w",
+    "width": 1080,
+    "height": 1920,
+    "alt": "Press tooling at a metal-can workstation.",
+    "original": "/images/process-source-20261026/14-press-detail.jpg",
+    "provenance": "original-video-frame",
+    "frame": "portrait"
+  },
+  "15-cans-on-table": {
+    "src": "/images/source-photography-20261027/15-cans-on-table-1080.webp",
+    "srcset": "/images/source-photography-20261027/15-cans-on-table-480.webp 480w, /images/source-photography-20261027/15-cans-on-table-720.webp 720w, /images/source-photography-20261027/15-cans-on-table-1080.webp 1080w",
+    "width": 1080,
+    "height": 1920,
+    "alt": "Metal capacitor can assemblies on a worktable.",
+    "original": "/images/process-source-20261026/15-cans-on-table.jpg",
+    "provenance": "original-video-frame",
+    "frame": "portrait"
+  },
+  "16-gloved-can": {
+    "src": "/images/source-photography-20261027/16-gloved-can-1080.webp",
+    "srcset": "/images/source-photography-20261027/16-gloved-can-480.webp 480w, /images/source-photography-20261027/16-gloved-can-720.webp 720w, /images/source-photography-20261027/16-gloved-can-1080.webp 1080w",
+    "width": 1080,
+    "height": 1920,
+    "alt": "Gloved hands working on an open metal can.",
+    "original": "/images/process-source-20261026/16-gloved-can.jpg",
+    "provenance": "original-video-frame",
+    "frame": "portrait"
+  },
+  "17-empty-cans": {
+    "src": "/images/source-photography-20261027/17-empty-cans-1080.webp",
+    "srcset": "/images/source-photography-20261027/17-empty-cans-480.webp 480w, /images/source-photography-20261027/17-empty-cans-720.webp 720w, /images/source-photography-20261027/17-empty-cans-1080.webp 1080w",
+    "width": 1080,
+    "height": 1920,
+    "alt": "Empty metal can bodies arranged in trays.",
+    "original": "/images/process-source-20261026/17-empty-cans.jpg",
+    "provenance": "original-video-frame",
+    "frame": "portrait"
+  },
+  "18-can-grid": {
+    "src": "/images/source-photography-20261027/18-can-grid-1080.webp",
+    "srcset": "/images/source-photography-20261027/18-can-grid-480.webp 480w, /images/source-photography-20261027/18-can-grid-720.webp 720w, /images/source-photography-20261027/18-can-grid-1080.webp 1080w",
+    "width": 1080,
+    "height": 1920,
+    "alt": "Metal capacitor can bodies arranged in a grid.",
+    "original": "/images/process-source-20261026/18-can-grid.jpg",
+    "provenance": "original-video-frame",
+    "frame": "portrait"
+  },
+  "19-equipment-station": {
+    "src": "/images/source-photography-20261027/19-equipment-station-1080.webp",
+    "srcset": "/images/source-photography-20261027/19-equipment-station-480.webp 480w, /images/source-photography-20261027/19-equipment-station-720.webp 720w, /images/source-photography-20261027/19-equipment-station-1080.webp 1080w",
+    "width": 1080,
+    "height": 1920,
+    "alt": "Close view of a capacitor production workstation.",
+    "original": "/images/process-source-20261026/19-equipment-station.jpg",
+    "provenance": "original-video-frame",
+    "frame": "portrait"
+  },
+  "20-component-pile": {
+    "src": "/images/source-photography-20261027/20-component-pile-1080.webp",
+    "srcset": "/images/source-photography-20261027/20-component-pile-480.webp 480w, /images/source-photography-20261027/20-component-pile-720.webp 720w, /images/source-photography-20261027/20-component-pile-1080.webp 1080w",
+    "width": 1080,
+    "height": 1920,
+    "alt": "Small white components collected in a work bin.",
+    "original": "/images/process-source-20261026/20-component-pile.jpg",
+    "provenance": "original-video-frame",
+    "frame": "portrait"
+  },
+  "21-can-machine": {
+    "src": "/images/source-photography-20261027/21-can-machine-1080.webp",
+    "srcset": "/images/source-photography-20261027/21-can-machine-480.webp 480w, /images/source-photography-20261027/21-can-machine-720.webp 720w, /images/source-photography-20261027/21-can-machine-1080.webp 1080w",
+    "width": 1080,
+    "height": 1920,
+    "alt": "Metal can body positioned at assembly tooling.",
+    "original": "/images/process-source-20261026/21-can-machine.jpg",
+    "provenance": "original-video-frame",
+    "frame": "portrait"
+  },
+  "22-blue-cartons": {
+    "src": "/images/source-photography-20261027/22-blue-cartons-1080.webp",
+    "srcset": "/images/source-photography-20261027/22-blue-cartons-480.webp 480w, /images/source-photography-20261027/22-blue-cartons-720.webp 720w, /images/source-photography-20261027/22-blue-cartons-1080.webp 1080w",
+    "width": 1080,
+    "height": 1920,
+    "alt": "Blue individual product boxes stacked at a workstation.",
+    "original": "/images/process-source-20261026/22-blue-cartons.jpg",
+    "provenance": "original-video-frame",
+    "frame": "portrait"
+  },
+  "23-tray-racks": {
+    "src": "/images/source-photography-20261027/23-tray-racks-1080.webp",
+    "srcset": "/images/source-photography-20261027/23-tray-racks-480.webp 480w, /images/source-photography-20261027/23-tray-racks-720.webp 720w, /images/source-photography-20261027/23-tray-racks-1080.webp 1080w",
+    "width": 1080,
+    "height": 1920,
+    "alt": "Rows of metal can bodies separated by cardboard trays.",
+    "original": "/images/process-source-20261026/23-tray-racks.jpg",
+    "provenance": "original-video-frame",
+    "frame": "portrait"
+  },
+  "24-test-display": {
+    "src": "/images/source-photography-20261027/24-test-display-1080.webp",
+    "srcset": "/images/source-photography-20261027/24-test-display-480.webp 480w, /images/source-photography-20261027/24-test-display-720.webp 720w, /images/source-photography-20261027/24-test-display-1080.webp 1080w",
+    "width": 1080,
+    "height": 1920,
+    "alt": "Display panel on electrical equipment.",
+    "original": "/images/process-source-20261026/24-test-display.jpg",
+    "provenance": "original-video-frame",
+    "frame": "portrait"
+  },
+  "25-packing-worker": {
+    "src": "/images/source-photography-20261027/25-packing-worker-1080.webp",
+    "srcset": "/images/source-photography-20261027/25-packing-worker-480.webp 480w, /images/source-photography-20261027/25-packing-worker-720.webp 720w, /images/source-photography-20261027/25-packing-worker-1080.webp 1080w",
+    "width": 1080,
+    "height": 1920,
+    "alt": "Worker placing blue product boxes at a packing workstation.",
+    "original": "/images/process-source-20261026/25-packing-worker.jpg",
+    "provenance": "original-video-frame",
+    "frame": "portrait"
+  },
+  "26-boxing-table": {
+    "src": "/images/source-photography-20261027/26-boxing-table-1080.webp",
+    "srcset": "/images/source-photography-20261027/26-boxing-table-480.webp 480w, /images/source-photography-20261027/26-boxing-table-720.webp 720w, /images/source-photography-20261027/26-boxing-table-1080.webp 1080w",
+    "width": 1080,
+    "height": 1920,
+    "alt": "Worker arranging individual product boxes on a table.",
+    "original": "/images/process-source-20261026/26-boxing-table.jpg",
+    "provenance": "original-video-frame",
+    "frame": "portrait"
+  },
+  "27-bench-rows": {
+    "src": "/images/source-photography-20261027/27-bench-rows-1080.webp",
+    "srcset": "/images/source-photography-20261027/27-bench-rows-480.webp 480w, /images/source-photography-20261027/27-bench-rows-720.webp 720w, /images/source-photography-20261027/27-bench-rows-1080.webp 1080w",
+    "width": 1080,
+    "height": 1920,
+    "alt": "Worker beside rows of metal capacitor cans.",
+    "original": "/images/process-source-20261026/27-bench-rows.jpg",
+    "provenance": "original-video-frame",
+    "frame": "portrait"
+  },
+  "28-outdoor-pallets": {
+    "src": "/images/source-photography-20261027/28-outdoor-pallets-1080.webp",
+    "srcset": "/images/source-photography-20261027/28-outdoor-pallets-480.webp 480w, /images/source-photography-20261027/28-outdoor-pallets-720.webp 720w, /images/source-photography-20261027/28-outdoor-pallets-1080.webp 1080w",
+    "width": 1080,
+    "height": 1920,
+    "alt": "Wrapped cartons on pallets outside a warehouse.",
+    "original": "/images/process-source-20261026/28-outdoor-pallets.jpg",
+    "provenance": "original-video-frame",
+    "frame": "portrait"
+  },
+  "29-lift-to-truck": {
+    "src": "/images/source-photography-20261027/29-lift-to-truck-1080.webp",
+    "srcset": "/images/source-photography-20261027/29-lift-to-truck-480.webp 480w, /images/source-photography-20261027/29-lift-to-truck-720.webp 720w, /images/source-photography-20261027/29-lift-to-truck-1080.webp 1080w",
+    "width": 1080,
+    "height": 1920,
+    "alt": "Forklift lifting wrapped pallet cartons toward a truck.",
+    "original": "/images/process-source-20261026/29-lift-to-truck.jpg",
+    "provenance": "original-video-frame",
+    "frame": "portrait"
+  },
+  "30-truck-handover": {
+    "src": "/images/source-photography-20261027/30-truck-handover-1080.webp",
+    "srcset": "/images/source-photography-20261027/30-truck-handover-480.webp 480w, /images/source-photography-20261027/30-truck-handover-720.webp 720w, /images/source-photography-20261027/30-truck-handover-1080.webp 1080w",
+    "width": 1080,
+    "height": 1920,
+    "alt": "People handling cartons beside a red truck.",
+    "original": "/images/process-source-20261026/30-truck-handover.jpg",
+    "provenance": "original-video-frame",
+    "frame": "portrait"
+  },
+  "film-floor": {
+    "src": "/images/source-photography-20261027/film-floor-1600.webp",
+    "srcset": "/images/source-photography-20261027/film-floor-480.webp 480w, /images/source-photography-20261027/film-floor-800.webp 800w, /images/source-photography-20261027/film-floor-1280.webp 1280w, /images/source-photography-20261027/film-floor-1600.webp 1600w",
+    "width": 1600,
+    "height": 900,
+    "alt": "Film-processing equipment arranged along a workshop floor.",
+    "original": "/images/workshop-stories-20261026/film-floor.webp",
+    "provenance": "original-video-frame",
+    "frame": "landscape"
+  },
+  "inspection": {
+    "src": "/images/source-photography-20261027/inspection-1600.webp",
+    "srcset": "/images/source-photography-20261027/inspection-480.webp 480w, /images/source-photography-20261027/inspection-800.webp 800w, /images/source-photography-20261027/inspection-1280.webp 1280w, /images/source-photography-20261027/inspection-1600.webp 1600w",
+    "width": 1600,
+    "height": 900,
+    "alt": "Operator beside capacitor production equipment.",
+    "original": "/images/real/inspection-station.jpg",
+    "provenance": "original-video-frame",
+    "frame": "landscape"
+  },
+  "film": {
+    "src": "/images/source-photography-20261027/film-1600.webp",
+    "srcset": "/images/source-photography-20261027/film-480.webp 480w, /images/source-photography-20261027/film-800.webp 800w, /images/source-photography-20261027/film-1280.webp 1280w, /images/source-photography-20261027/film-1600.webp 1600w",
+    "width": 1600,
+    "height": 900,
+    "alt": "Film reels and a red lever on processing equipment.",
+    "original": "/images/real/film-rolls.jpg",
+    "provenance": "original-video-frame",
+    "frame": "landscape"
+  },
+  "winding": {
+    "src": "/images/source-photography-20261027/winding-1600.webp",
+    "srcset": "/images/source-photography-20261027/winding-480.webp 480w, /images/source-photography-20261027/winding-800.webp 800w, /images/source-photography-20261027/winding-1280.webp 1280w, /images/source-photography-20261027/winding-1600.webp 1600w",
+    "width": 1600,
+    "height": 900,
+    "alt": "Enclosed production equipment and its control panel.",
+    "original": "/images/real/winding-equipment.jpg",
+    "provenance": "original-video-frame",
+    "frame": "landscape"
+  },
+  "testing": {
+    "src": "/images/source-photography-20261027/testing-1600.webp",
+    "srcset": "/images/source-photography-20261027/testing-480.webp 480w, /images/source-photography-20261027/testing-800.webp 800w, /images/source-photography-20261027/testing-1280.webp 1280w, /images/source-photography-20261027/testing-1600.webp 1600w",
+    "width": 1600,
+    "height": 900,
+    "alt": "Worker beside equipment in an electrical test area.",
+    "original": "/images/real/test-area.jpg",
+    "provenance": "original-video-frame",
+    "frame": "landscape"
+  },
+  "packing-table": {
+    "src": "/images/source-photography-20261027/packing-table-540.webp",
+    "srcset": "/images/source-photography-20261027/packing-table-480.webp 480w, /images/source-photography-20261027/packing-table-540.webp 540w",
+    "width": 540,
+    "height": 960,
+    "alt": "Worker handling blue individual product boxes at a packing table.",
+    "original": "/images/real/packing-scene.jpg",
+    "provenance": "original-video-frame",
+    "frame": "portrait"
+  },
+  "dispatch": {
+    "src": "/images/source-photography-20261027/dispatch-1600.webp",
+    "srcset": "/images/source-photography-20261027/dispatch-480.webp 480w, /images/source-photography-20261027/dispatch-800.webp 800w, /images/source-photography-20261027/dispatch-1280.webp 1280w, /images/source-photography-20261027/dispatch-1600.webp 1600w",
+    "width": 1600,
+    "height": 1200,
+    "alt": "Wrapped cartons stacked on pallets in a dispatch area.",
+    "original": "/images/real/dispatch-pallets.jpg",
+    "provenance": "original-photograph",
+    "frame": "landscape"
+  },
+  "batch": {
+    "src": "/images/source-photography-20261027/batch-1600.webp",
+    "srcset": "/images/source-photography-20261027/batch-480.webp 480w, /images/source-photography-20261027/batch-800.webp 800w, /images/source-photography-20261027/batch-1280.webp 1280w, /images/source-photography-20261027/batch-1600.webp 1600w",
+    "width": 1600,
+    "height": 900,
+    "alt": "Metal-can capacitor samples grouped on a work surface.",
+    "original": "/images/real/batch-products.jpg",
+    "provenance": "original-video-frame",
+    "frame": "landscape"
+  },
+  "cbb65-single": {
+    "src": "/images/source-photography-20261027/cbb65-single-1600.webp",
+    "srcset": "/images/source-photography-20261027/cbb65-single-480.webp 480w, /images/source-photography-20261027/cbb65-single-800.webp 800w, /images/source-photography-20261027/cbb65-single-1280.webp 1280w, /images/source-photography-20261027/cbb65-single-1600.webp 1600w",
+    "width": 1600,
+    "height": 1600,
+    "alt": "HAN XING CBB65 single-run capacitor with two terminal groups.",
+    "original": "/images/real/cbb65-2.jpg",
+    "provenance": "original-product-photograph",
+    "frame": "landscape"
+  },
+  "cbb65-dual": {
+    "src": "/images/source-photography-20261027/cbb65-dual-1600.webp",
+    "srcset": "/images/source-photography-20261027/cbb65-dual-480.webp 480w, /images/source-photography-20261027/cbb65-dual-800.webp 800w, /images/source-photography-20261027/cbb65-dual-1280.webp 1280w, /images/source-photography-20261027/cbb65-dual-1600.webp 1600w",
+    "width": 1600,
+    "height": 1600,
+    "alt": "HAN XING CBB65 dual-run capacitor with three terminal groups.",
+    "original": "/images/real/cbb65-dual-run-7.jpg",
+    "provenance": "original-product-photograph",
+    "frame": "landscape"
+  },
+  "cbb65-packaging": {
+    "src": "/images/source-photography-20261027/cbb65-packaging-1600.webp",
+    "srcset": "/images/source-photography-20261027/cbb65-packaging-480.webp 480w, /images/source-photography-20261027/cbb65-packaging-800.webp 800w, /images/source-photography-20261027/cbb65-packaging-1280.webp 1280w, /images/source-photography-20261027/cbb65-packaging-1600.webp 1600w",
+    "width": 1600,
+    "height": 1600,
+    "alt": "HAN XING CBB65 capacitor beside its blue product carton.",
+    "original": "/images/real/cbb65-4.jpg",
+    "provenance": "original-product-photograph",
+    "frame": "landscape"
+  }
+}

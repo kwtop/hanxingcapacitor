@@ -1,4 +1,5 @@
-import {sundayIndustrial} from './sundayIndustrial';
+import { interiorPhotography as sundayIndustrial } from './interiorPhotography';
+import oemPhotography from './oemPhotography.generated.json';
 import {editorialMedia} from './editorialMedia';
 import {coherenceMedia} from './coherenceMedia';
 import {industrialApplications} from './industrialApplications';
@@ -32,11 +33,12 @@ export const applicationVisuals: Record<string, string> = {
   'hvac-and-refrigeration': siteVisual('application-hvac'),
 };
 export const guideVisuals: Record<string, { src: string; alt: string }> = {
+  'oem-capacitor-sample-approval': oemPhotography['oem-lineup'],
   'read-motor-capacitor-label': {src: siteVisual('guide-label'), alt: sundayIndustrial.technical.alt},
   'start-vs-run-capacitors': {src: siteVisual('guide-duty'), alt: sundayIndustrial.catalog.alt},
   'cbb60-vs-cbb61-vs-cbb65': {src: siteVisual('guide-series'), alt: sundayIndustrial.connections.alt},
   'single-vs-dual-run-capacitors': {src: siteVisual('guide-dual'), alt: coherenceMedia.terminals.alt},
-  'capacitance-voltage-guide': {src: siteVisual('guide-ratings'), alt: 'Illustrative close view of the capacitance and voltage printed on the supplied CBB65 sample.'},
+  'capacitance-voltage-guide': {src: siteVisual('guide-ratings'), alt: 'Close view of the capacitance and voltage markings on a CBB65 capacitor.'},
   'dimensions-terminals-mounting': {src: siteVisual('guide-fit'), alt: sundayIndustrial.connections.alt},
   'motor-capacitor-order-shipment-checklist': {src: siteVisual('guide-shipping'), alt: sundayIndustrial.packing.alt},
 };

@@ -1,0 +1,48 @@
+HAN XING — Solicitud de documentación del modelo
+
+Envíe la solicitud cumplimentada junto con una fotografía de la etiqueta
+del condensador o el plano existente.
+
+1. EQUIPO Y COMPONENTE NECESARIO
+Modelo del equipo o motor:
+Modelo del condensador existente y referencia de su etiqueta:
+Serie propuesta: CBB60 / CBB61 / CBB65 simple / CBB65 doble / CD60
+Referencia completa del componente propuesto:
+Capacidad nominal (µF; ambos valores si es un condensador doble):
+Tensión nominal de CA (VAC), frecuencia (Hz) y tolerancia de capacidad:
+Temperatura de funcionamiento y régimen de servicio:
+Solo CD60 — tiempo de activación permitido e intervalo mínimo entre arranques:
+
+2. COMPATIBILIDAD MECÁNICA
+Número y revisión del plano acotado:
+Dimensiones de la carcasa (mm), fijación y espacio libre de instalación:
+Disposición de terminales o longitud de cables y tipo de conector:
+Marcha doble — identificación de los grupos de terminales en el plano aprobado:
+
+3. DOCUMENTOS QUE SE SOLICITAN
+[ ] Ficha técnica vigente del modelo, revisión y fecha de emisión.
+[ ] Plano acotado de carcasa, fijación y conexiones.
+[ ] Informe de inspección que identifique la muestra ensayada.
+[ ] Informe de inspección del lote, con identificación y alcance del muestreo.
+[ ] Certificado requerido: titular, emisor, número, modelos y valores cubiertos,
+    edición de la norma, vigencia y posibles condiciones de instalación.
+
+Para cada informe de inspección, solicite la fecha, el método y las condiciones
+del ensayo, la referencia del instrumento, los límites de aceptación,
+los resultados medidos y la persona responsable de la revisión.
+
+4. ALCANCE DEL PEDIDO Y DE LA DOCUMENTACIÓN
+Cantidad por referencia y destino:
+Requisito aplicable del equipo o del destino:
+Requisitos de etiquetado y embalaje:
+Idioma de la documentación:
+Documentos acordados en la oferta:
+Referencias del plano y de la muestra aprobados para el pedido:
+
+Conserve las referencias del catálogo y las fotografías de las muestras
+junto con sus propios valores. Confirme la configuración final con
+la documentación aprobada del modelo.
+
+Contacto: ManuelaMusio570@gmail.com
+Empresa: Hangzhou Zebang Refrigeration Equipment Co., Ltd.
+Marca: HAN XING

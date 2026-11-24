@@ -13,7 +13,8 @@ export const productSpecificationBasis: Record<string, { source: string; scope: 
   CBB65: {
     source: 'Zebang catalogue · pages 3–4',
     scope: 'Single-run dimensions below cover the listed 2–100 µF rows. Dual-run ratings are from the catalogue summary.',
-    note: 'The dual-run summary extends to 15+80 µF, while its dimension table lists combinations only up to 10+80 µF. Request the drawing for the exact pair of values.',
+    // The source summary extends to 15+80 µF; its dimension table ends at 10+80 µF.
+    note: 'Dual-run dimensions depend on the two capacitance values. Include both values when requesting the drawing for your model.',
   },
   CD60: {
     source: 'Zebang catalogue · page 8',

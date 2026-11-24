@@ -3,7 +3,12 @@ import {resolve,join,relative,sep} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {spawn} from 'node:child_process';
 import {tmpdir} from 'node:os';
-const root=fileURLToPath(new URL('../',import.meta.url)),staging=await mkdtemp(join(tmpdir(),'hanxing-pages-build-')),output=join(root,'.cloudflare-site'),stagedOutput=join(staging,'dist');
+import {prepareAgentMarkdown} from './prepare-agent-markdown.mjs';
+const root=fileURLToPath(new URL('../',import.meta.url));
+const publicRelease=process.env.HANXING_PUBLIC_RELEASE==='1';
+const publicOrigin='https://www.hanxingcapacitor.com';
+if(publicRelease&&process.env.PUBLIC_SITE_URL!==publicOrigin)throw new Error('Public release requires PUBLIC_SITE_URL=https://www.hanxingcapacitor.com');
+const staging=await mkdtemp(join(tmpdir(),'hanxing-pages-build-')),output=join(root,'.cloudflare-site'),stagedOutput=join(staging,'dist');
 // Build outside the live workspace to avoid restarting its development server.
 // Astro moves its intermediate assets with rename(), so keep output on the staging drive.
 try {
@@ -14,20 +19,22 @@ await cp(join(root,'public'),join(staging,'public'),{recursive:true,filter:path=
 await cp(join(root,'package.json'),join(staging,'package.json'));await cp(join(root,'tsconfig.json'),join(staging,'tsconfig.json'));await cp(join(root,'tokens.css'),join(staging,'tokens.css'));
 for(const name of ['PRODUCT-PHOTO-SOURCES.json','REAL-MEDIA-SOURCES.json'])await cp(join(root,name),join(staging,name));
 await symlink(join(root,'node_modules'),join(staging,'node_modules'),process.platform==='win32'?'junction':'dir');
-await writeFile(join(staging,'src','lib','visualPreview.ts'),'export const isSatechiPreview = true;\n');
 async function staticEndpoints(directory){for(const entry of await readdir(directory,{withFileTypes:true})){const path=join(directory,entry.name);if(entry.isDirectory())await staticEndpoints(path);else if(/\.(ts|astro)$/.test(path)){const source=await readFile(path,'utf8');if(source.includes('export const prerender = false'))await writeFile(path,source.replaceAll('export const prerender = false','export const prerender = true'));}}}
 await staticEndpoints(join(staging,'src','pages'));
 const site=process.env.PUBLIC_SITE_URL||'https://hanxing-capacitor-preview.pages.dev';
-await writeFile(join(staging,'astro.config.mjs'),`import {defineConfig} from 'astro/config';import react from '@astrojs/react';export default defineConfig({site:${JSON.stringify(site)},output:'static',outDir:${JSON.stringify(stagedOutput)},integrations:[react()],vite:{cacheDir:${JSON.stringify(join(root,'node_modules','.vite-hanxing-pages-backend'))}},devToolbar:{enabled:false},trailingSlash:'always'});\n`);
+await writeFile(join(staging,'astro.config.mjs'),`import {defineConfig} from 'astro/config';import react from '@astrojs/react';export default defineConfig({site:${JSON.stringify(site)},output:'static',outDir:${JSON.stringify(stagedOutput)},integrations:[react()],build:{inlineStylesheets:'always'},vite:{cacheDir:${JSON.stringify(join(root,'node_modules','.vite-hanxing-pages-backend'))}},devToolbar:{enabled:false},trailingSlash:'always'});\n`);
 await run([join(root,'node_modules','astro','bin','astro.mjs'),'build']);
 // Replace only the verified generated output, after a successful build.
 for(const target of [join(root,'.cloudflare-site-build'),output]){const absolute=resolve(target);if(!absolute.startsWith(resolve(root)+sep)||!['.cloudflare-site-build','.cloudflare-site'].includes(relative(root,absolute)))throw new Error('Unsafe build target');await rm(absolute,{recursive:true,force:true});}
 await mkdir(output,{recursive:true});
 await cp(stagedOutput,output,{recursive:true});
-await writeFile(join(output,'_routes.json'),JSON.stringify({version:1,include:['/api/*','/admin','/admin/*'],exclude:[]},null,2));
-await writeFile(join(output,'_headers'),'/*\n  X-Robots-Tag: noindex, nofollow, noarchive\n  X-Content-Type-Options: nosniff\n/admin-assets/*\n  Cache-Control: public, max-age=300\n');
-await writeFile(join(output,'_redirects'),'/es/* /:splat 301\n/ar/* /:splat 301\n/certificates/ /factory/#model-records 301\n/case-studies/ /applications/ 301\n/markets/ /buying-guide/ 301\n/request-a-quote/ /contact/ 301\n');
-console.log('已构建 Pages 静态网站。functions/ 将在 Pages 发布时编译。当前产物保持 noindex；没有发布。');
+await prepareAgentMarkdown(output,site,{required:publicRelease});
+await writeFile(join(output,'_headers'),publicRelease
+  ? '/*\n  X-Content-Type-Options: nosniff\n/robots.txt\n  Cache-Control: public, max-age=300, must-revalidate\n/llms.txt\n  Cache-Control: public, max-age=300, must-revalidate\n/sitemap*.xml\n  Cache-Control: public, max-age=3600, must-revalidate\nhttps://hanxing-capacitor-preview.pages.dev/*\n  X-Robots-Tag: noindex, nofollow, noarchive\nhttps://:deployment.hanxing-capacitor-preview.pages.dev/*\n  X-Robots-Tag: noindex, nofollow, noarchive\n/admin-assets/*\n  Cache-Control: public, max-age=300\n'
+  : '/*\n  X-Robots-Tag: noindex, nofollow, noarchive\n  X-Content-Type-Options: nosniff\n/admin-assets/*\n  Cache-Control: public, max-age=300\n');
+// Pages _redirects accepts paths, not domain-level source patterns.
+await writeFile(join(output,'_redirects'),'/es/certificates/ /es/factory/#model-records 301\n/es/case-studies/ /es/applications/ 301\n/es/markets/ /es/buying-guide/ 301\n/es/request-a-quote/ /es/contact/ 301\n/ar/* /:splat 301\n/certificates/ /factory/#model-records 301\n/case-studies/ /applications/ 301\n/markets/ /buying-guide/ 301\n/request-a-quote/ /contact/ 301\n');
+console.log(publicRelease?'已构建韩兴正式域名产物，Pages 预览域名保持 noindex；没有发布。':'已构建 Pages 静态网站。functions/ 将在 Pages 发布时编译。当前产物保持 noindex；没有发布。');
 } finally {
 if(!resolve(staging).startsWith(resolve(tmpdir())+sep)||!relative(tmpdir(),staging).startsWith('hanxing-pages-build-'))throw new Error('Unsafe temporary build path');
 await rm(staging,{recursive:true,force:true});

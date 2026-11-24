@@ -15,11 +15,11 @@ const records = sampleEvidence.filter(sample => sample.series === series);
         <td data-label="Rated AC voltage">{sample.voltage}</td>
         <td data-label="Tolerance / frequency"><span>{sample.tolerance}<br />{sample.frequency}</span></td>
         <td data-label="Visible connection">{sample.connection}</td>
-        <td data-label="Inquiry"><a class="sample-evidence-action" href={`/contact/?series=${series}&configuration=${sample.id}&request=documents#inquiry-form`}>Request model details</a></td>
+        <td data-label="Inquiry"><a class="sample-evidence-action" href={`/contact/?series=${series}&configuration=${sample.id}&request=documents#inquiry-form`} aria-label={`Request model details for ${series}: ${sample.reference}, ${sample.capacitance}, ${sample.voltage}`}>Model details</a></td>
       </tr>)}</tbody>
     </table>
   </div>
-  <p class="sample-evidence-note">{sampleEvidenceNotes[series]}</p>
+  {sampleEvidenceNotes[series] && <p class="sample-evidence-note">{sampleEvidenceNotes[series]}</p>}
 </div>
 <style>
  .sample-evidence{margin:24px 0 36px}
@@ -31,13 +31,16 @@ const records = sampleEvidence.filter(sample => sample.series === series);
  .sample-evidence-table thead{background:#eeefec}.sample-evidence-table th{font-weight:550}
  .sample-evidence-table th span{display:block;font-size:13px;font-weight:400;color:#596167;margin-top:6px}
  .sample-evidence-table a,.sample-evidence-note a{text-decoration:underline;text-underline-offset:3px}
- .sample-evidence-table .sample-evidence-action{display:inline-flex;border:1px solid #899299;border-radius:2px;padding:9px 12px;text-decoration:none;font-size:13px;line-height:1.5;max-width:180px}
- .sample-evidence-action:hover{background:#e9ece7}
+ .sample-evidence-table thead th:last-child,.sample-evidence-table td:last-child{text-align:center;vertical-align:middle}
+ .sample-evidence-table .sample-evidence-action{display:inline-flex;align-items:center;justify-content:center;justify-self:start;min-height:44px;width:max-content;max-width:100%;border:1px solid #dce1e5;border-radius:99px;background:#f6f7f8;color:var(--su-ink,#252a30);padding:10px 16px;text-decoration:none;font-size:13px;font-weight:500;line-height:1.5;white-space:nowrap}
+ .sample-evidence-table .sample-evidence-action:hover{background:var(--su-accent-tint,#ffe5d3);border-color:var(--su-accent,#c55000);color:var(--su-accent-hover,#a63d00)}
+ .sample-evidence-table .sample-evidence-action:focus-visible{outline:2px solid var(--su-accent,#c55000);outline-offset:4px}
  @media(max-width:800px){
   .sample-evidence-table :is(table,tbody,tr,th,td){display:block;width:100%}.sample-evidence-table thead{display:none}
   .sample-evidence-table tr{padding:18px 0;border-top:1px solid #d5dadd}.sample-evidence-table :is(th,td){border:0;padding:7px 0}
   .sample-evidence-table tbody th{font-size:16px;padding-bottom:12px}.sample-evidence-table td{display:grid;grid-template-columns:1fr 1.2fr;gap:12px}
   .sample-evidence-table td::before{content:attr(data-label);color:#60686e;font-weight:400}
+  .sample-evidence-table td:last-child{text-align:left;align-items:center}
   .sample-evidence-table caption{display:block;width:100%}
   .sample-evidence-intro,.sample-evidence-note{font-size:14px}
  }

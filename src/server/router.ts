@@ -7,7 +7,7 @@ import { collect } from './tracking';
 import { ensureVisit } from './visits';
 import { rateLimit } from './rate';
 import { addNote, exportInquiries, inquiryDetail, listInquiries, updateInquiry } from './adminData';
-import { facets, journey, overview, visitors } from './insights';
+import { facets, journey, overview, records, visitors } from './insights';
 
 function withCookies(response: Response, values: string[]) { values.forEach(value => response.headers.append('Set-Cookie',value)); return response; }
 export async function handleBackend(request: Request, env: BackendEnv): Promise<Response> {
@@ -52,6 +52,7 @@ export async function handleBackend(request: Request, env: BackendEnv): Promise<
         if(!inquiry[2]&&method==='PATCH') return json(await updateInquiry(env,inquiry[1],await readJson(request,4096),user));
       }
       if(path==='/api/admin/overview'&&method==='GET') return json(await overview(env,url));
+      if(path==='/api/admin/records'&&method==='GET') return json(await records(env,url));
       if(path==='/api/admin/facets'&&method==='GET') return json(await facets(env,url));
       if(path==='/api/admin/visitors'&&method==='GET') return json(await visitors(env,url));
       const visitor=path.match(/^\/api\/admin\/visitors\/([a-f0-9-]{36})$/i);

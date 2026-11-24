@@ -1,0 +1,34 @@
+/* Sunday application comparisons own their display modes and product proportions. */
+body.sunday-site.sunday-inner #main .hvr-reference .hvr-desktop-comparison { display:block; margin-top:32px; }
+body.sunday-site.sunday-inner #main .hvr-reference .hvr-mobile-comparison { display:none; }
+body.sunday-site.sunday-inner #main .hvr-reference .hvr-sample-photo { position:relative; display:block; width:100%; height:auto!important; min-height:0; aspect-ratio:3/2; overflow:hidden; border-radius:12px; background:#e9edf0; }
+body.sunday-site.sunday-inner #main .hvr-reference .hvr-sample-photo img { display:block; width:100%!important; height:100%!important; max-width:100%; max-height:none; object-fit:contain!important; object-position:center!important; transform:none!important; filter:none; }
+body.sunday-site.sunday-inner #main .hvr-reference .hvr-sample-pair { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; align-items:start; }
+body.sunday-site.sunday-inner #main .hvr-reference .hvr-sample-pair:has(>figure:only-child) { grid-template-columns:1fr; }
+body.sunday-site.sunday-inner #main .hvr-reference .hvr-sample-pair figure { min-width:0; margin:0; }
+body.sunday-site.sunday-inner #main .hvr-reference .hvr-sample-pair figcaption { margin-top:12px; color:var(--su-muted); font-size:12px; line-height:1.5; text-align:center; }
+body.sunday-site.sunday-inner #main .hvr-reference .hvr-series-actions td { text-align:center; vertical-align:middle; }
+body.sunday-site.sunday-inner #main .hvr-reference .hvr-series-link { display:inline-flex; justify-content:center; align-items:center; min-height:44px; max-width:100%; padding:10px 22px; border:1px solid var(--su-accent); border-radius:99px; background:#fff; color:var(--su-accent); font:500 14px/1.4 var(--su-font); text-align:center; text-decoration:none; }
+body.sunday-site.sunday-inner #main .hvr-reference .hvr-series-link:is(:hover,:active) { background:var(--su-accent); color:#fff; }
+body.sunday-site.sunday-inner #main .hvr-reference .hvr-series-link:focus-visible { outline:2px solid var(--su-accent); outline-offset:3px; }
+body.sunday-site.sunday-inner #main .hvr-reference .hvr-fit-image { display:block; width:100%; height:auto; aspect-ratio:4/3; max-height:480px; overflow:hidden; border-radius:var(--su-photo-radius); background:#f2f4f6; }
+body.sunday-site.sunday-inner #main .hvr-reference .hvr-fit-image img { display:block; width:100%; height:100%; object-fit:contain; object-position:center; transform:none; }
+body.sunday-site.sunday-inner #main .hvr-reference .hvr-fit-image.hvr-fit-image--framed { aspect-ratio:3/2; max-height:none; }
+@media(max-width:900px) {
+ body.sunday-site.sunday-inner #main .hvr-reference .hvr-desktop-comparison { display:none; }
+ body.sunday-site.sunday-inner #main .hvr-reference .hvr-mobile-comparison { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; margin-top:32px; }
+ body.sunday-site.sunday-inner #main .hvr-reference .hvr-series-summary { min-width:0; padding:24px; border:1px solid var(--su-border); border-radius:20px; background:#fff; }
+ body.sunday-site.sunday-inner #main .hvr-reference .hvr-series-summary h3 { margin:0 0 20px; font:700 25px/1.2 var(--su-heading); letter-spacing:-.035em; }
+ body.sunday-site.sunday-inner #main .hvr-reference .hvr-series-summary h3 a { color:var(--su-ink); text-decoration:none; }
+ body.sunday-site.sunday-inner #main .hvr-reference .hvr-series-summary dl { margin:24px 0 0; }
+ body.sunday-site.sunday-inner #main .hvr-reference .hvr-series-summary dl>div { padding:16px 0; border-top:1px solid var(--su-border); }
+ body.sunday-site.sunday-inner #main .hvr-reference .hvr-series-summary dt { margin:0 0 8px; font-size:12px; line-height:1.5; color:var(--su-muted); }
+ body.sunday-site.sunday-inner #main .hvr-reference .hvr-series-summary dd { margin:0; font-size:15px; line-height:1.6; }
+ body.sunday-site.sunday-inner #main .hvr-reference .hvr-series-summary>.hvr-series-link { display:flex; width:fit-content; margin:20px auto 0; }
+ body.sunday-site.sunday-inner #main .hvr-reference .hvr-sample-pair { gap:10px; }
+}
+@media(max-width:599px) {
+ body.sunday-site.sunday-inner #main .hvr-reference .hvr-mobile-comparison { grid-template-columns:1fr; }
+ body.sunday-site.sunday-inner #main .hvr-reference .hvr-series-summary { padding:24px 20px; }
+ body.sunday-site.sunday-inner #main .hvr-reference .hvr-sample-pair { grid-template-columns:1fr; gap:20px; }
+}

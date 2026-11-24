@@ -1,5 +1,73 @@
 [
   {
+    "mediaType": "video",
+    "published": "/videos/dispatch-20261110/pallets-by-container.mp4",
+    "source": "User-supplied video 3526968bf317955eb4f3b08ad4c243fe.mp4 (2026-11-10)",
+    "sourceSha256": "3d5d0d20a4404fc5d26010e7f83a2bd5ea88d2dcb3c03e361bfe9c1bddf7aa6d",
+    "treatment": "H.264 MP4 transcode at original 720x1280 and 30 fps; AAC audio retained; MP4 fast start; no cropping or cuts"
+  },
+  {
+    "mediaType": "image",
+    "published": "/images/real/dispatch-20261110/pallets-by-container.webp",
+    "source": "User-supplied video 3526968bf317955eb4f3b08ad4c243fe.mp4 (2026-11-10)",
+    "second": 6.7,
+    "treatment": "Source frame resized to 540x960 and encoded as WebP; no retouching or cropping"
+  },
+  {
+    "mediaType": "video",
+    "published": "/videos/dispatch-20261110/forklift-at-flatbed.mp4",
+    "source": "User-supplied video d7871038a4f5d86536cb457663443b5a.mp4 (2026-11-10)",
+    "sourceSha256": "4215ff68befdfafc6eef16d880b63c08cededfc1f864bd2ece1055b03402aafa",
+    "treatment": "H.264 MP4 transcode at original 720x1280 and 30 fps; AAC audio retained; MP4 fast start; no cropping or cuts"
+  },
+  {
+    "mediaType": "image",
+    "published": "/images/real/dispatch-20261110/forklift-at-flatbed.webp",
+    "source": "User-supplied video d7871038a4f5d86536cb457663443b5a.mp4 (2026-11-10)",
+    "second": 1.25,
+    "treatment": "Source frame resized to 540x960 and encoded as WebP; no retouching or cropping"
+  },
+  {
+    "mediaType": "video",
+    "published": "/videos/dispatch-20261110/wrapped-pallets-on-flatbed.mp4",
+    "source": "User-supplied video 70d9e320c8077eae9dd41f539e62d360.mp4 (2026-11-10)",
+    "sourceSha256": "d575149baa4700d540684ff1cf9d6e8d56890460393afeaac247f643155e44af",
+    "treatment": "H.264 MP4 transcode at original 720x1280 and 30 fps; AAC audio retained; MP4 fast start; no cropping or cuts"
+  },
+  {
+    "mediaType": "image",
+    "published": "/images/real/dispatch-20261110/wrapped-pallets-on-flatbed.webp",
+    "source": "User-supplied video 70d9e320c8077eae9dd41f539e62d360.mp4 (2026-11-10)",
+    "second": 3,
+    "treatment": "Source frame resized to 540x960 and encoded as WebP; no retouching or cropping"
+  },
+  {
+    "mediaType": "video",
+    "published": "/videos/dispatch-20261110/container-truck.mp4",
+    "source": "User-supplied video 8e37ca34d696bbc42d0bae5d204b5d13.mp4 (2026-11-10)",
+    "sourceSha256": "b3d341617eed5df7472fb1bb3180975cf7e21fc319c4c71e3324e61ec4dd2555",
+    "treatment": "H.264 MP4 transcode at original 720x1280 and 30 fps; AAC audio retained; MP4 fast start; no cropping or cuts"
+  },
+  {
+    "mediaType": "image",
+    "published": "/images/real/dispatch-20261110/container-truck.webp",
+    "source": "User-supplied video 8e37ca34d696bbc42d0bae5d204b5d13.mp4 (2026-11-10)",
+    "second": 1.3,
+    "treatment": "Source frame resized to 540x960 and encoded as WebP; no retouching or cropping"
+  },
+  {
+    "published": "/videos/hanxing-company-overview-20261110.mp4",
+    "source": "User-supplied video 477dd967a0489e9f0f2bda393de705aa.mp4 (2026-11-10)",
+    "sourceSha256": "ffcf34983470ca793edc5f8c22736699f5efdae26c4a3b9dcbad3dda4aff8c0d",
+    "treatment": "Full 125.6-second video re-encoded for web delivery; original AAC audio retained; MP4 fast start; no cropping or cuts"
+  },
+  {
+    "published": "/images/about/hanxing-company-overview-20261110.webp",
+    "source": "User-supplied video 477dd967a0489e9f0f2bda393de705aa.mp4 (2026-11-10)",
+    "second": 3,
+    "treatment": "Original frame encoded as WebP; no retouching or cropping"
+  },
+  {
     "published": "/images/real/cbb60-16.jpg",
     "source": "原始素材\\全系电容照片\\CBB60\\16.jpg",
     "treatment": "Original file; CSS crop only"
@@ -53,6 +121,12 @@
     "published": "/images/real/cd60-detail-69.jpg",
     "source": "原始素材\\全系电容照片\\CD60\\DSC01169.JPG",
     "treatment": "Original file; CSS crop only"
+  },
+  {
+    "published": "/images/real/cd60-nmd-300uf-250vac.jpg",
+    "source": "原始素材\\全系电容照片\\CD60\\cd60-nmd-300uf-250vac-20261110.jpg",
+    "sourceSha256": "2925EAC98CD23BBACF49B9F5834F52C61E16A1F05A5669135674C4F7E5E8D948",
+    "treatment": "User-supplied original photograph. WebP delivery copies preserve the full frame and label."
   },
   {
     "published": "/images/real/film-rolls.jpg",

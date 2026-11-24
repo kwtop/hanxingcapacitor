@@ -1,0 +1,45 @@
+HAN XING — Model document request
+
+Send the completed request with the capacitor label photograph or existing drawing.
+
+1. EQUIPMENT AND REQUIRED PART
+Equipment or motor model:
+Existing capacitor model and label reference:
+Proposed series: CBB60 / CBB61 / CBB65 single run / CBB65 dual run / CD60
+Full proposed part number:
+Nominal capacitance (µF; both values for a dual-run part):
+Rated AC voltage (VAC), frequency (Hz) and capacitance tolerance:
+Operating temperature and circuit duty:
+CD60 only — permitted energized time and minimum interval between starts:
+
+2. MECHANICAL FIT
+Dimensioned drawing number and revision:
+Case dimensions (mm), mounting and installed clearance:
+Terminal layout or wire length and connector:
+Dual run — terminal group identification on the approved drawing:
+
+3. RECORDS TO REQUEST
+[ ] Current model datasheet, revision and issue date.
+[ ] Dimensioned case, mounting and connection drawing.
+[ ] Sample inspection report identifying the actual sample tested.
+[ ] Batch inspection report identifying the production lot and sampling scope.
+[ ] Required certificate: holder, issuer, number, model and rating coverage,
+    standard edition, validity and any installation conditions.
+
+For each inspection report, request the test date, method, conditions,
+instrument reference, acceptance limits, measured results and reviewer.
+
+4. PURCHASE AND DOCUMENT SCOPE
+Quantity by part number and destination:
+Applicable equipment requirement or destination requirement:
+Label and packing requirements:
+Required document language:
+Documents agreed with the quotation:
+Approved drawing and sample references for the order:
+
+Retain catalogue references and sample photographs alongside their own ratings.
+Confirm the final configuration against the approved model documents.
+
+Contact: ManuelaMusio570@gmail.com
+Company: Hangzhou Zebang Refrigeration Equipment Co., Ltd.
+Brand: HAN XING

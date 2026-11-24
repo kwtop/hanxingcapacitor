@@ -1,0 +1,169 @@
+1631|Guías y recursos sobre condensadores | Hanxing Capacitor
+1632|Recursos sobre condensadores para motores
+1633|Guías de etiquetas, comparaciones de series y listas de pedido para ingenieros de equipos y departamentos de compras.
+1634|Interprete µF, VAC, tolerancia, frecuencia y categoría climática en las etiquetas. Consulte ejemplos y los datos necesarios para solicitar un repuesto.
+1635|Guías de selección y pedidos
+1636|Compare condensadores de marcha cilíndricos CBB60, rectangulares CBB61 y metálicos CBB65 según su servicio, características, conexiones y ajuste en la instalación.
+1637|Lista de pedido de condensadores con especificaciones del modelo, aprobación de muestras, embalaje, inspección, fechas de entrega y documentos de envío.
+1638|Documentos de empresa y modelos
+1639|Categorías de recursos
+1640|Condensador CBB65 con carcasa metálica, etiqueta y grupos de terminales visibles.
+1641|Condensadores cilíndricos CBB60, rectangulares CBB61 y metálicos CBB65.
+1642|Guías de selección y listas de compra de condensadores. Lea etiquetas, compare series y prepare las especificaciones y documentos de su pedido.
+1643|Guías y recursos sobre condensadores
+1644|Guías técnicas de condensadores para motores | HAN XING
+1645|Guías técnicas de condensadores para motores
+1646|Compare características y dimensiones, interprete etiquetas de muestras o compruebe el resultado de una medición de capacitancia.
+1647|Buscar guías técnicas
+1648|No hay guías que coincidan
+1649|Pruebe otro término o borre la búsqueda para ver todas las guías.
+1650|Características eléctricas, servicio y seguridad
+1651|Compare el servicio de marcha y arranque, la construcción de película y electrolítica, y el marcado que debe comprobar antes de pedir un repuesto.
+1652|Cómo influyen los µF, VAC y la tolerancia en la selección, incluida la diferencia entre tensión nominal del condensador y tensión de alimentación del motor.
+1653|Consulte las clases de seguridad S0 a S3, el marcado P anterior y las horas de vida de diseño de las clases de funcionamiento A a D. Vea cómo aparecen C y P1 en una etiqueta CBB65.
+1654|Especifique un CBB65 para aire acondicionado por los valores de cada sección, VAC, terminales y montaje. Compare 35/5 y 45/5 y prepare una solicitud de cotización de repuestos.
+1655|Selección de productos
+1656|Especifique un condensador de marcha para bomba de agua por sus µF nominales, VAC, conexiones y dimensiones de instalación. Interprete la muestra de 35 µF y prepare una solicitud de plano CBB60.
+1657|Especifique un CBB61 para ventilador de techo por el modelo del ventilador, µF, VAC, conexiones y dimensiones. Utilice la lista de cotización para preparar un pedido de repuestos por volumen.
+1658|El marcado 40/85/21 indica −40 °C, +85 °C y una categoría de ensayo de calor húmedo de 21 días. Interprete la etiqueta CBB65 y compárela con 40/70/21.
+1659|Seleccione un CD60 por sus µF, VAC y sistema de desconexión. Compruebe el tiempo de conexión, el reposo y la repetición de arranques frente a los límites del modelo propuesto.
+1660|Ensayos e inspección
+1661|Mida la capacitancia fuera del circuito y compare la lectura con la tolerancia marcada en µF. Vea cómo afecta la exactitud del instrumento a las lecturas cercanas al límite.
+1662|Ajuste y aprobación de muestras
+1663|Consulte el diámetro y la altura de carcasa del CBB60 en el catálogo HAN XING, incluido el ejemplo de 35 µF y 450 VAC y la comprobación del espacio de montaje.
+1664|Prepare un plano con el cuerpo, fijaciones, terminales, cables y espacio con las conexiones instaladas. Compare las muestras propuestas con el espacio disponible.
+1665|Qué enviar al fabricante de condensadores de marcha: desde la cotización inicial hasta la aprobación de muestra, plano, etiqueta y embalaje.
+1666|Fichas técnicas y planos
+1667|Indique las características, la carcasa y las conexiones necesarias al solicitar una ficha técnica y un plano acotado.
+1668|p. ej., CBB61, 35/5 o multímetro
+1669|µF identifica la capacitancia. VAC identifica la tensión nominal de CA.
+1670|Condensador CBB65 de marcha simple con embalaje protector y un subconjunto de climatización en un taller industrial.
+1671|Condensador CBB60 junto a un motor de bomba en una mesa de ensamblaje industrial.
+1672|Condensador CBB61 y componentes de motor de ventilador en una mesa de ensamblaje industrial.
+1673|Condensador de arranque CD60, contactor y relé en un puesto de preparación de componentes de fábrica.
+1674|Condensador CBB60 con cables junto a un calibrador.
+1675|Documentación de modelos y compras
+1676|Guías sobre dimensiones CBB60, selección de CBB61 para ventiladores, valores dobles CBB65, clases de seguridad IEC, medición de capacitancia y aprobación OEM.
+1677|Capacitancia y tensión de condensadores | Hanxing Capacitor
+1678|µF indica capacitancia; VAC, tensión nominal de CA. Ambos deben ajustarse a la especificación del motor. La tensión nominal del condensador es distinta de la tensión de alimentación del motor.
+1679|µF, VAC y tolerancia
+1680|Capacitancia, tensión y tolerancia
+1681|Significado
+1682|Qué debe comprobar
+1683|Capacitancia. En un motor de condensador permanente contribuye al desfase previsto por el fabricante del motor.
+1684|La especificación del motor y el marcado en µF del condensador original.
+1685|La tensión nominal de CA del condensador.
+1686|El marcado VAC original y la ficha técnica del modelo, contrastados con los requisitos del circuito del equipo.
+1687|Tolerancia
+1688|Variación permitida respecto a la capacitancia marcada. No cambia el valor nominal en µF que se necesita.
+1689|El marcado exacto de tolerancia y la especificación del modelo requerido.
+1690|Cálculo de tolerancia de un condensador para motores
+1691|Errores habituales de interpretación
+1692|Aumentar los µF
+1693|Utilice la capacitancia especificada por el fabricante del motor. Un valor mayor no supone un repuesto mejor.
+1694|Tomar los VAC de la placa del motor
+1695|La placa del motor indica la tensión de alimentación. Los VAC del condensador deben cumplir el requisito del circuito indicado en la especificación del equipo.
+1696|Cambiar servicio de arranque por marcha
+1697|Los condensadores de arranque y marcha cumplen funciones distintas. El de arranque también necesita los límites de conexión y repetición especificados para el circuito del motor.
+1698|Elegir un CBB60 para una bomba de agua
+1699|Marcado de la muestra
+1700|La capacitancia impresa en esta muestra CBB65.
+1701|La tensión nominal de CA en la misma etiqueta.
+1702|La variación permitida respecto a la capacitancia marcada.
+1703|Copie todos los datos de la etiqueta
+1705|En esta etiqueta CBB65, 20 µF ±5% indica la capacitancia y la tolerancia. La tensión nominal es de 450 VAC.
+1706|Solicite las características eléctricas del modelo
+1707|Indique la especificación del motor y las características del condensador original al pedir una ficha técnica.
+1708|Solicitar ficha técnica de un modelo
+1709|Especificación del motor y características del condensador original
+1710|Servicio de marcha o arranque especificado para el circuito
+1711|Configuración necesaria y referencia de muestra original
+1712|Recursos relacionados
+1713|Registros del modelo
+1714|Todos los recursos
+1719|Vista retocada de muestra. Etiqueta CBB65 con 20 µF ±5%, 450 VAC y 50/60 Hz.
+1720|Detalle retocado de una etiqueta CBB65 marcada 20 µF ±5%, 450 VAC y 50/60 Hz.
+1721|Fotografía de muestra
+1722|Fotografía de detalle
+1723|Referencias de consulta
+1724|Tabla de dimensiones CBB60 | Hanxing Capacitor
+1725|Busque los µF necesarios en la columna izquierda y siga la fila hasta el grupo de tensión del modelo propuesto. La tabla indica el diámetro y la altura de la carcasa. Compruebe en el plano el espacio adicional para la fijación y las conexiones instaladas.
+1726|Dimensiones de carcasa CBB60 por µF y VAC
+1727|La tabla transcribe las filas CBB60 de la página impresa 7 del catálogo Zebang Refrigeration. Cada celda indica diámetro × altura en milímetros. Los grupos de tensión se solapan; pregunte qué columna corresponde al modelo exacto cotizado.
+1728|Dimensiones de carcasa CBB60 del catálogo, Ø × H (mm)
+1731|Son dimensiones de referencia del catálogo. La tabla no especifica elementos de montaje, espacio de instalación ni tolerancias dimensionales. Solicite un plano para características no incluidas y para la configuración exacta que vaya a pedir.
+1732|Mida por separado el espárrago y el espacio de conexión
+1733|Mida el diámetro disponible y la altura del cuerpo; después compruebe el volumen total con el condensador fijado y conectado. Un espárrago de base necesita sus propios datos de rosca, longitud útil y espacio de montaje. Un modelo con lengüetas necesita espacio para el conector acoplado y su recorrido de inserción.
+1734|En un modelo con cables, anote su salida, longitud final y conector. Al revisar la muestra, cierre la tapa del equipo con el conector instalado y los cables tendidos según la especificación.
+1735|Lista de dimensiones y montaje para otras series
+1736|Espárrago roscado y salida de cables del CBB60
+1737|Utilice el plano del modelo para medir el espárrago y la altura con las conexiones instaladas.
+1738|¿Qué dimensiones tiene un CBB60 de 35 µF y 450 VAC?
+1739|La columna de 370–450 VAC indica una carcasa de Ø45 × 90 mm para 35 µF. Confirme las dimensiones de su modelo exacto de 450 VAC en el plano. La fotografía enlazada muestra la etiqueta y la salida de cables de la muestra.
+1740|Si la pieza propuesta es demasiado alta, envíe la altura máxima instalada y el método de fijación, junto con los µF y VAC necesarios.
+1741|Leer la etiqueta de la muestra CBB60 de 35 µF
+1742|Incluya la fila seleccionada en la solicitud del plano
+1743|Indique los µF solicitados y los VAC exactos en la consulta. Pida al proveedor que identifique el grupo de tensión del catálogo utilizado entre los que se solapan y que indique el modelo propuesto. Conserve esa referencia con la cotización y el plano.
+1744|Anote el diámetro máximo y la altura instalada disponibles en el conjunto de bomba o motor. Después solicite las dimensiones del cuerpo, tolerancias dimensionales, fijación y conjunto completo de cables o terminales. Así podrá utilizar la referencia del catálogo para revisar el montaje de la muestra.
+1745|Selección de repuestos CBB60 para bombas de agua
+1746|Lista completa de medidas de instalación
+1747|Solicite el plano del modelo CBB60
+1748|Envíe las características eléctricas necesarias y un croquis del espacio de instalación disponible.
+1749|Solicitar un plano CBB60
+1750|µF nominales, VAC necesarios y modelo del equipo.
+1751|Diámetro máximo, altura instalada, fijación y detalles del conector.
+1752|Comparar CBB60 y CBB61
+1755|Vista retocada de muestra. Fotografía de un CBB60 horizontal de 25 µF con espárrago de base y cables aislados.
+1758|Comparación de CBB60, CBB61 y CBB65 | Hanxing Capacitor
+1759|Defina primero los requisitos eléctricos a partir del servicio, los µF y los VAC que necesita el motor. Después compare la carcasa cilíndrica CBB60, rectangular CBB61 o metálica CBB65 con el montaje y las conexiones. Una propuesta CBB65 de marcha doble también debe identificar sus dos secciones capacitivas y los terminales asignados.
+1760|CBB60, CBB61 y CBB65 por carcasa y aplicación
+1761|Carcasas, conexiones y aplicaciones
+1762|Carcasa
+1763|Detalles de conexión
+1764|Cilíndrica
+1765|Cables o terminales de lengüeta, con espárrago de montaje cuando se especifique.
+1766|Bombas y motores monofásicos que requieren este formato.
+1767|Rectangular compacta
+1768|Disposición de cables o lengüetas, con espacio para el tendido y el conector.
+1769|Motores de ventiladores y electrodomésticos que requieren este formato de marcha.
+1770|Configuración de marcha simple o doble y disposición de grupos de terminales.
+1771|Motores de climatización y refrigeración que requieren condensadores de marcha.
+1772|¿Puede un CBB60 sustituir a un CBB61?
+1773|Compruebe si la lista de piezas del equipo contempla un repuesto aprobado. Si permite otro formato de carcasa, respete los µF y VAC nominales originales y compruebe la asignación de terminales y el montaje. Oriental Motor especifica que deben coincidir la capacitancia y la tensión de la pieza suministrada con sus motores.
+1774|Oriental Motor: orientación sobre condensadores de motores de CA
+1775|Una abrazadera redonda de bomba necesita el diámetro y la altura instalada adecuados. Un alojamiento rectangular de ventilador necesita las dimensiones de carcasa, la pestaña de montaje y el espacio del mazo de cables correctos. Contraste estas medidas con el plano del modelo propuesto.
+1776|Dimensiones CBB60 por µF y tensión
+1777|Selección de CBB61 para ventiladores de techo
+1778|Carcasas de muestras CBB60, CBB61 y CBB65
+1779|CBB60: cables y fijación por espárrago
+1780|Las muestras vertical y horizontal muestran los cables aislados y el espárrago de base roscado. Reserve espacio para el espárrago y los cables a la salida de la carcasa.
+1781|CBB61: carcasas parecidas, características distintas
+1782|Las tres muestras CBB61 están marcadas 4.5 µF, 5 µF y 6 µF. Cada una es un condensador independiente con sus propias características eléctricas.
+1783|CBB65: carcasa metálica y grupos de terminales
+1784|Dos grupos de terminales aislados, cada uno con varias lengüetas. Anote por separado grupos y lengüetas en el plano de conexiones.
+1785|Compare la pieza instalada
+1786|La documentación del motor identifica el circuito y el tipo de servicio necesario.
+1788|Anote las características originales. En los CBB65 dobles, conserve ambos valores en µF tal como están impresos.
+1789|Cuerpo y montaje
+1790|Mida el cuerpo y el montaje y compruebe el espacio necesario para la pieza completa.
+1791|Cables o terminales
+1792|Fotografíe las conexiones. Las piezas CBB61 pueden tener disposiciones de cables distintas aunque coincidan sus dimensiones de carcasa.
+1793|Plano del modelo
+1794|El modelo propuesto debe cumplir los requisitos de la pieza original y el plano del motor.
+1795|CBB60 frente a CBB65 para un pedido de repuestos
+1796|Compare CBB60 y CBB65 para la misma posición del motor. Un CBB65 doble tiene dos secciones capacitivas que deben especificarse; las muestras cilíndricas CBB60 de este sitio tienen un único valor nominal. Identifique primero las secciones necesarias en la documentación del equipo.
+1797|Para proponer un repuesto de un solo valor, compare servicio, µF, VAC, frecuencia y condiciones de funcionamiento; después, carcasa, fijación y conexiones. Cualquier cambio de serie o construcción debe revisarse para ese equipo. La forma redonda por sí sola no resuelve estos requisitos.
+1798|Selección de CBB65 de marcha simple y doble
+1799|Diámetro y altura CBB60 del catálogo
+1800|Busque un modelo dentro de la serie
+1801|Envíenos la etiqueta y el plano del motor, con medidas y fotografías de conexiones, para consultar un modelo de la serie adecuada.
+1802|Consultar sobre un modelo compatible
+1803|Etiqueta original y plano del motor
+1804|Dimensiones de carcasa, montaje y disposición de conexiones
+1805|Cantidad del pedido y destino
+1806|Comparar series de productos
+1807|Leer la etiqueta original
+1810|Vista retocada de muestra. Dos CBB60 que muestran salidas de cables y un espárrago de montaje roscado.
+1812|Vista retocada de muestra. Tres CBB61 marcados 4.5 µF, 5 µF y 6 µF.
+1814|Vista retocada de muestra. CBB65 con dos grupos de terminales aislados visibles en la parte superior.
+1817|Selección de CBB60 para bombas de agua | Hanxing Capacitor

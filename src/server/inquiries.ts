@@ -39,7 +39,7 @@ export async function submitInquiry(request: Request, env: BackendEnv, body: Rec
   const country = field(body.country, 100), message = field(body.message, 4000);
   const selected = [...new Set((Array.isArray(body.products) ? body.products : []).filter(v => inquiryProducts.includes(v as typeof inquiryProducts[number])))].sort() as string[];
   if (selected.includes('unknown') && selected.length > 1) throw new HttpError(400, 'validation', '请选择具体产品，或仅选择尚未确定。');
-  if (!name || !country || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || message.length < 10 || !selected.length) throw new HttpError(400, 'validation', '请填写姓名、有效邮箱、国家、产品和至少 10 个字符的需求。');
+  if (!name || !country || (!email && !phone) || (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) || message.length < 10 || !selected.length) throw new HttpError(400, 'validation', '请填写姓名、国家、产品和至少 10 个字符的需求，并提供有效邮箱或电话 / WhatsApp。');
   const idempotency = field(body.idempotencyKey, 80);
   if (!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(idempotency)) throw new HttpError(400, 'invalid_idempotency', '提交编号无效，请刷新表单。');
   const context = field(body.context, 1000);

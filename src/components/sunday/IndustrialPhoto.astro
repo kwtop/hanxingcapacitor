@@ -1,5 +1,5 @@
 ---
-import {sundayIndustrial} from '../../data/sundayIndustrial';
+import { interiorPhotography as sundayIndustrial } from '../../data/interiorPhotography';
 import SiteImage from '../satechi-preview/SiteImage.astro';
 interface Props {name:keyof typeof sundayIndustrial;class?:string;eager?:boolean;sizes?:string;}
 const {name,class:className,eager=false,sizes}=Astro.props;

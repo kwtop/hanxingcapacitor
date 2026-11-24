@@ -1,0 +1,12 @@
+---
+import photo from '../../data/factoryExterior.generated.json';
+interface Props { eager?: boolean; sizes?: string; class?: string; }
+const { eager = false, sizes = '(max-width: 800px) calc(100vw - 48px), 52vw', class: className } = Astro.props;
+---
+<figure class:list={['zi-photo', 'su-factory-exterior', className]} data-photo-kind={photo.kind} data-source-id={photo.sourceId} data-original-src={photo.originalSrc}>
+  <img src={photo.src} srcset={photo.srcset} sizes={sizes} width={photo.width} height={photo.height} alt={photo.alt} loading={eager ? 'eager' : 'lazy'} fetchpriority={eager ? 'high' : undefined} decoding={eager ? 'sync' : 'async'} />
+</figure>
+<style>
+  .su-factory-exterior { position: relative; margin: 0; min-width: 0; overflow: hidden; border-radius: var(--su-photo-radius, 18px); background: #edf0f3; }
+  .su-factory-exterior img { display: block; width: 100%; height: auto; }
+</style>

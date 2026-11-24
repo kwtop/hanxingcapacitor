@@ -1,54 +1,66 @@
 ---
-import InnerHero from '../components/sunday/InnerHero.astro';
-import {sundayIndustrial} from '../data/sundayIndustrial';
-import { isSatechiPreview } from '../lib/visualPreview';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import OemPageHero from '../components/sunday/OemPageHero.astro';
+import OemPhotography from '../components/sunday/OemPhotography.astro';
+import OemFeature from '../components/sunday/OemFeature.astro';
+import OemReading from '../components/sunday/OemReading.astro';
 import InquiryCallout from '../components/InquiryCallout.astro';
-import WorkshopPhotoStory from '../components/sunday/WorkshopPhotoStory.astro';
-import { workshopStorySets } from '../data/workshopPhotos';
-import { STANDARD_MOQ_DESCRIPTION } from '../data/site';
-const configuration = [
-  { name: 'Electrical', requirement: 'Run or start duty, capacitance (µF), rated voltage (VAC), tolerance and frequency.', approval: 'The agreed model specification and datasheet or drawing revision.' },
-  { name: 'Case and mounting', requirement: 'Body dimensions, fixing method and the available installation space.', approval: 'The dimensioned drawing revision and agreed sample reference.' },
-  { name: 'Connections', requirement: 'Lead count and length, connectors or terminal layout, and the required connection.', approval: 'The connection details on the drawing and approval sample.' },
-  { name: 'Label and packing', requirement: 'Label artwork, unit protection, inner pack, carton quantities, dimensions, weights and marks.', approval: 'The approved artwork revision and packing specification.' },
+import { products, STANDARD_MOQ_DESCRIPTION, procurementPolicy, PUBLIC_EMAIL } from '../data/site';
+import '../styles/oem-editorial.css';
+const configuration=[
+ {name:'Electrical specification',requirement:'Run or start duty, capacitance (µF), rated voltage (VAC), tolerance and frequency.',approval:'The selected model datasheet, including its ratings and operating conditions.'},
+ {name:'Case and mounting',requirement:'Body dimensions, fixing method and the available installation space.',approval:'A dimensioned drawing showing the body, fixing parts and complete installed dimensions.'},
+ {name:'Connections',requirement:'Wire count, length and connectors, or the blade dimensions and terminal-group layout.',approval:'The connection drawing and sample reference, with the lead or terminal arrangement identified.'},
+ {name:'Label and packing',requirement:'Your artwork, label language, unit protection, inner-pack and carton quantities, and shipping marks.',approval:'The label artwork and packing layout approved for the selected model and order.'}
 ];
-const sampleTerms = [
-  ['Samples', 'Agree the quantity, charges, freight and preparation date for the configuration you want to approve.'],
-  ['Standard MOQ', STANDARD_MOQ_DESCRIPTION],
-  ['Production timing', 'The written quotation sets out production lead time and delivery terms for the approved configuration.'],
+const familyNotes:Record<string,{duty:string;description:string}>={
+ CBB60:{duty:'Film motor-run capacitor',description:'Cylindrical case for water-pump and other single-phase motor applications.'},
+ CBB61:{duty:'Film fan-run capacitor',description:'Rectangular case for fans and blowers.'},
+ CBB65:{duty:'Film motor-run capacitor',description:'Metal case, with single-run and dual-run models for HVAC and refrigeration.'},
+ CD60:{duty:'Electrolytic motor-start capacitor',description:'Start duty in a circuit that disconnects the capacitor after the motor starts.'}
+};
+const steps=[
+ {title:'Send the model and artwork',text:'Identify the existing part from its label or datasheet. Include your artwork, quantity and delivery destination.',href:'/buying-guide/#rfq-template',label:'Quotation checklist'},
+ {title:'Review the proposal',text:'The proposal identifies the model, label and packing revisions, price and order terms.',href:'/factory/packing-and-dispatch/#packing-requirements',label:'Packing requirements'},
+ {title:'Approve the sample',text:'Compare the sample with the agreed dimensions, connections, artwork and packing. List any changes against the affected drawing or artwork revision.',href:'/resources/oem-capacitor-sample-approval/',label:'Sample approval guide'},
+ {title:'Place the order',text:'Use the approved model and artwork references in the purchase order, along with the quantity, price and delivery terms.',href:'/resources/motor-capacitor-order-shipment-checklist/',label:'Order terms checklist'}
 ];
 ---
-<BaseLayout title="OEM & Private Label Motor Capacitors" description="Prepare OEM motor capacitor requirements for electrical ratings, cases, connections, labels and packing, with sample approval and quotation terms.">
-  <article class:list={['procurement-page procurement-oem', {'oem-editorial-page': isSatechiPreview}]}>
-    <InnerHero title="OEM motor capacitors" description="Agree the rating, connections, label and packing before approving the sample." image={sundayIndustrial.connections.src} alt={sundayIndustrial.connections.alt} trail="OEM & quality / OEM"><a class="button" href="/contact/?request=oem#inquiry-form">Prepare an OEM inquiry</a></InnerHero>
-    <section class="procurement-section" id="configuration-approval"><div class="container">
-      <h2>Specify the capacitor you need</h2>
-      <div class:list={{'zi-configuration-table':isSatechiPreview}}>
-      <table class="procurement-table procurement-configuration-table">
-        <caption class="visually-hidden">Configuration requirements and the approval record to agree</caption>
-        <thead><tr><th scope="col">Requirement</th><th scope="col">Approval record</th></tr></thead>
-        <tbody>{configuration.map(item => <tr><th scope="row"><strong>{item.name}</strong><span>{item.requirement}</span></th><td><span class="procurement-mobile-label" aria-hidden="true">Approval record</span>{item.approval}</td></tr>)}</tbody>
-      </table>
+<BaseLayout title="Custom Motor Run Capacitor Manufacturer" description="Request OEM motor run capacitors with your label and packing. HAN XING quotes changes to ratings, connections and cases for the selected model.">
+  <article class="oem-suite oe-oem">
+    <OemPageHero title="OEM motor capacitors" description="We manufacture motor run and start capacitors for OEM orders. Your label and packaging can be specified with the model; electrical and mechanical changes are reviewed before quotation." current="OEM">
+      <a class="button" href="/contact/?request=oem#inquiry-form">Discuss your OEM order</a>
+      <OemPhotography slot="media" name="oem-lineup" eager sizes="(max-width:800px) calc(100vw - 40px), (min-width:1360px) 660px, 50vw" />
+    </OemPageHero>
+    <section class="oe-section" id="oem-product-families" aria-labelledby="oem-families-title"><div class="oe-shell">
+      <header class="oe-section-heading"><h2 id="oem-families-title">Choose the capacitor family</h2><p>Start with the duty and ratings specified for your motor, then compare the case and connections in each series.</p></header>
+      <ul class="oe-family-list">{products.map(product=><li><a href={`/products/${product.slug}/`} aria-label={`View ${product.code} specifications`}><h3>{product.code}</h3><div><strong>{familyNotes[product.code].duty}</strong><p>{familyNotes[product.code].description}</p></div><span class="oe-family-link">Specifications</span></a></li>)}</ul>
+    </div></section>
+    <section class="oe-section" id="configuration-approval"><div class="oe-shell">
+      <header class="oe-section-heading"><h2>What to send for an OEM quote</h2><p>Send the original label or datasheet and a dimensioned drawing, together with your artwork, quantity and destination.</p></header>
+      <table class="procurement-table oe-table procurement-configuration-table"><caption class="visually-hidden">OEM capacitor requirements and approval records</caption><thead><tr><th scope="col">Requirement</th><th scope="col">Approval record</th></tr></thead><tbody>{configuration.map(item=><tr><th scope="row"><strong>{item.name}</strong><span>{item.requirement}</span></th><td><span class="procurement-mobile-label" aria-hidden="true">Approval record</span>{item.approval}</td></tr>)}</tbody></table>
+      <div class="oe-section-tail">
+        <a class="oe-link" href="/downloads/oem-label-packing-brief.txt" download="hanxing-oem-label-packing-brief.txt">Download the label and packing brief (TXT)</a>
+        <p class="oe-brief-help">Paste the completed brief into the inquiry form. Send artwork, drawings and label photos <a href={`mailto:${PUBLIC_EMAIL}`}>by email</a>.</p>
       </div>
     </div></section>
-    <section class="procurement-section" id="approval-process"><div class="container">
-      <h2>From specification to approval</h2>
-      <div class:list={{'ss-approval-layout co-approval-flow':isSatechiPreview}}>
-      <ol class="procurement-approval-steps">
-        <li><span class="procurement-step-number" aria-hidden="true">01</span><h3>Send the specification</h3><p>Send the original label or drawing, duty, ratings, quantity and destination.</p><a class="card-link" href="/buying-guide/#rfq-template">Quotation checklist</a></li>
-        <li><span class="procurement-step-number" aria-hidden="true">02</span><h3>Agree the drawings</h3><p>Agree case, mounting, connections, artwork and packing revisions.</p><a class="card-link" href="/factory/packing-and-dispatch/#packing-requirements">Packing requirements</a></li>
-        <li><span class="procurement-step-number" aria-hidden="true">03</span><h3>Approve the sample</h3><p>Approve the sample, drawing, label and packing revisions in writing.</p><a class="card-link" href="/factory/#model-records">Product document checklist</a></li>
-        <li><span class="procurement-step-number" aria-hidden="true">04</span><h3>Confirm the order</h3><p>Reference the approved configuration; record price, payment and delivery terms.</p><a class="card-link" href="/resources/motor-capacitor-order-shipment-checklist/">Order terms checklist</a></li>
-      </ol>
-      </div>
+    <OemFeature id="oem-workbench-photos" title="Connections and installation space" reverse tone="steel">
+      <OemPhotography slot="media" name="terminal-detail" />
+      <p>For blade terminals, specify blade size, direction and spacing. For wire leads, specify the count, finished length and connector.</p>
+      <p>Include the space used by the mating connector and wire routing. For a dual-run model, identify both capacitance values and the terminal groups on the drawing.</p>
+      <a class="oe-link" href="/resources/dimensions-terminals-mounting/">Dimensions, connections and mounting</a>
+    </OemFeature>
+    <section class="oe-section" id="approval-process"><div class="oe-shell">
+      <header class="oe-section-heading"><h2>From quotation to order</h2><p>Approve the capacitor, artwork and packing layout before placing the order.</p></header>
+      <ol class="oe-steps">{steps.map((step,index)=><li><span class="oe-step-number" aria-hidden="true">{String(index+1).padStart(2,'0')}</span><h3>{step.title}</h3><p>{step.text}</p>{(index === 0 || index === 3) && <a class="context-link" href={step.href}>{step.label}</a>}</li>)}</ol>
     </div></section>
-    <WorkshopPhotoStory id="oem-workbench-photos" eyebrow="Samples and workbench" title="Details to review with a sample" intro="The supplied material shows metal can forms, component handling and individual packing. Confirm dimensions, terminals and labels against the approved drawing and sample." photos={workshopStorySets.oem} moreHref="/factory/process-gallery/#can-assembly" moreLabel="See more component and assembly views" />
-    <section class="procurement-section"><div class="container">
+    <section class="oe-section oe-section--steel" id="sample-terms"><div class="oe-shell oe-terms-layout">
       <h2>Samples and order terms</h2>
-      <dl class="procurement-terms">{sampleTerms.map(([name, description]) => <div><dt>{name}</dt><dd>{description}</dd></div>)}</dl>
-      <a class="card-link" href="/contact/?request=samples#inquiry-form">Request sample terms</a>
+      <p>For an ODM request, describe the equipment, electrical performance and installation space. We will review the proposed changes and agree the sample approval scope before production.</p>
+      <dl class="oe-records"><div><dt>Samples</dt><dd>{procurementPolicy.samples}</dd></div><div><dt>Standard MOQ</dt><dd>{STANDARD_MOQ_DESCRIPTION}</dd></div><div><dt>Production timing</dt><dd>{procurementPolicy.leadTime}</dd></div></dl>
+      <a class="oe-link oe-terms-link" href="/contact/?request=samples#inquiry-form">Request sample terms</a>
     </div></section>
-    <InquiryCallout href="/contact/?request=oem#inquiry-form" heading="Send your OEM requirements" description="Include ratings, artwork, quantity and destination." buttonLabel="Prepare an OEM inquiry" />
+    <OemReading links={[{title:'Approve an OEM sample',description:'Keep the sample, drawing and artwork under the same approval reference.',href:'/resources/oem-capacitor-sample-approval/'},{title:'Product documents',description:'Drawings, test conditions and inspection records for the selected model.',href:'/factory/#model-records'},{title:'Packing requirements',description:'Protection, carton quantities and shipping marks.',href:'/factory/packing-and-dispatch/#packing-requirements'}]} />
+    <InquiryCallout showVisual={false} href="/contact/?request=oem#inquiry-form" defaultSeries="unknown" heading="Send your OEM requirements" description="Share the selected model, your artwork, quantity and destination." buttonLabel="Discuss your OEM order" />
   </article>
 </BaseLayout>

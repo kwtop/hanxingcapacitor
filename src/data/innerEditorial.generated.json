@@ -1,0 +1,30 @@
+{
+  "catalog": {
+    "src": "/images/inner-sunday-20261027/catalog-1280.webp",
+    "srcset": "/images/inner-sunday-20261027/catalog-480.webp 480w, /images/inner-sunday-20261027/catalog-800.webp 800w, /images/inner-sunday-20261027/catalog-1280.webp 1280w, /images/inner-sunday-20261027/catalog-1536.webp 1536w",
+    "width": 1536,
+    "height": 1024,
+    "alt": "CBB60, CBB61, CBB65 and CD60 capacitor samples on a steel workbench."
+  },
+  "connections": {
+    "src": "/images/inner-sunday-20261027/connections-1280.webp",
+    "srcset": "/images/inner-sunday-20261027/connections-480.webp 480w, /images/inner-sunday-20261027/connections-800.webp 800w, /images/inner-sunday-20261027/connections-1280.webp 1280w, /images/inner-sunday-20261027/connections-1536.webp 1536w",
+    "width": 1536,
+    "height": 1024,
+    "alt": "CBB60 wire leads beside CBB61 blade terminals."
+  },
+  "packing": {
+    "src": "/images/inner-sunday-20261027/packing-1280.webp",
+    "srcset": "/images/inner-sunday-20261027/packing-480.webp 480w, /images/inner-sunday-20261027/packing-800.webp 800w, /images/inner-sunday-20261027/packing-1280.webp 1280w, /images/inner-sunday-20261027/packing-1536.webp 1536w",
+    "width": 1536,
+    "height": 1024,
+    "alt": "CBB65 capacitor and HAN XING product box beside a divided carton."
+  },
+  "technical": {
+    "src": "/images/inner-sunday-20261027/technical-1280.webp",
+    "srcset": "/images/inner-sunday-20261027/technical-480.webp 480w, /images/inner-sunday-20261027/technical-800.webp 800w, /images/inner-sunday-20261027/technical-1280.webp 1280w, /images/inner-sunday-20261027/technical-1536.webp 1536w",
+    "width": 1536,
+    "height": 1024,
+    "alt": "CBB60 and CBB65 capacitors beside a caliper and a drawing sheet."
+  }
+}

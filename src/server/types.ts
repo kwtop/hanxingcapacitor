@@ -19,11 +19,11 @@ export interface BackendEnv {
 export interface AdminIdentity { email: string; csrf: string; mode: 'password' | 'access' }
 export interface Visit {
   id: string; visitor_id: string; started_at: number; last_seen: number; entry_page: string;
-  source: string; channel: string; referrer_host: string; country: string; device: string;
+  source: string; channel: string; referrer_host: string; referrer_url: string; utm_medium: string; utm_campaign: string; country: string; city: string; device: string; browser_language: string;
   language: string; is_internal: number; is_bot: number;
 }
 export type RecordData = Record<string, unknown>;
 export const products = ['CBB60', 'CBB61', 'CBB65', 'CD60'] as const;
 export const inquiryProducts = [...products, 'unknown'] as const;
 export const statuses = ['pending', 'following', 'completed', 'spam'] as const;
-export const publicEvents = new Set(['page_view', 'product_view', 'spec_expand', 'image_view', 'download_click', 'inquiry_click', 'whatsapp_click', 'email_click', 'form_start', 'form_failure']);
+export const publicEvents = new Set(['page_view', 'product_view', 'spec_expand', 'image_view', 'download_click', 'inquiry_click', 'whatsapp_click', 'email_click', 'wechat_click', 'form_start', 'form_failure']);

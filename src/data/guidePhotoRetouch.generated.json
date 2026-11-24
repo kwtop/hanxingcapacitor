@@ -1,0 +1,56 @@
+{
+  "/images/real/cbb60-hanxing-wired.jpg": {
+    "src": "/images/guide-photo-retouch-20261105/cbb60-wired-1280.webp",
+    "srcset": "/images/guide-photo-retouch-20261105/cbb60-wired-480.webp 480w, /images/guide-photo-retouch-20261105/cbb60-wired-800.webp 800w, /images/guide-photo-retouch-20261105/cbb60-wired-1280.webp 1280w, /images/guide-photo-retouch-20261105/cbb60-wired-1536.webp 1536w",
+    "fullSrc": "/images/guide-photo-retouch-20261105/cbb60-wired-1536.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalSrc": "/images/real/cbb60-hanxing-wired.jpg",
+    "sourceKind": "ai-retouched-source-photograph"
+  },
+  "/images/real/cbb60-18.jpg": {
+    "src": "/images/guide-photo-retouch-20261105/cbb60-stud-1280.webp",
+    "srcset": "/images/guide-photo-retouch-20261105/cbb60-stud-480.webp 480w, /images/guide-photo-retouch-20261105/cbb60-stud-800.webp 800w, /images/guide-photo-retouch-20261105/cbb60-stud-1280.webp 1280w, /images/guide-photo-retouch-20261105/cbb60-stud-1536.webp 1536w",
+    "fullSrc": "/images/guide-photo-retouch-20261105/cbb60-stud-1536.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalSrc": "/images/real/cbb60-18.jpg",
+    "sourceKind": "ai-retouched-source-photograph"
+  },
+  "/images/real/cbb61-13.jpg": {
+    "src": "/images/guide-photo-retouch-20261105/cbb61-ratings-1280.webp",
+    "srcset": "/images/guide-photo-retouch-20261105/cbb61-ratings-480.webp 480w, /images/guide-photo-retouch-20261105/cbb61-ratings-800.webp 800w, /images/guide-photo-retouch-20261105/cbb61-ratings-1280.webp 1280w, /images/guide-photo-retouch-20261105/cbb61-ratings-1536.webp 1536w",
+    "fullSrc": "/images/guide-photo-retouch-20261105/cbb61-ratings-1536.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalSrc": "/images/real/cbb61-13.jpg",
+    "sourceKind": "ai-retouched-source-photograph"
+  },
+  "/images/real/cbb65-2.jpg": {
+    "src": "/images/guide-photo-retouch-20261105/cbb65-single-1280.webp",
+    "srcset": "/images/guide-photo-retouch-20261105/cbb65-single-480.webp 480w, /images/guide-photo-retouch-20261105/cbb65-single-800.webp 800w, /images/guide-photo-retouch-20261105/cbb65-single-1280.webp 1280w, /images/guide-photo-retouch-20261105/cbb65-single-1536.webp 1536w",
+    "fullSrc": "/images/guide-photo-retouch-20261105/cbb65-single-1536.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalSrc": "/images/real/cbb65-2.jpg",
+    "sourceKind": "ai-retouched-source-photograph"
+  },
+  "/images/real/cbb65-dual-run-7.jpg": {
+    "src": "/images/guide-photo-retouch-20261105/cbb65-dual-1280.webp",
+    "srcset": "/images/guide-photo-retouch-20261105/cbb65-dual-480.webp 480w, /images/guide-photo-retouch-20261105/cbb65-dual-800.webp 800w, /images/guide-photo-retouch-20261105/cbb65-dual-1280.webp 1280w, /images/guide-photo-retouch-20261105/cbb65-dual-1536.webp 1536w",
+    "fullSrc": "/images/guide-photo-retouch-20261105/cbb65-dual-1536.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalSrc": "/images/real/cbb65-dual-run-7.jpg",
+    "sourceKind": "ai-retouched-source-photograph"
+  },
+  "/images/real/cd60-25.jpg": {
+    "src": "/images/guide-photo-retouch-20261105/cd60-1280.webp",
+    "srcset": "/images/guide-photo-retouch-20261105/cd60-480.webp 480w, /images/guide-photo-retouch-20261105/cd60-800.webp 800w, /images/guide-photo-retouch-20261105/cd60-1280.webp 1280w, /images/guide-photo-retouch-20261105/cd60-1536.webp 1536w",
+    "fullSrc": "/images/guide-photo-retouch-20261105/cd60-1536.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalSrc": "/images/real/cd60-25.jpg",
+    "sourceKind": "ai-retouched-source-photograph"
+  }
+}

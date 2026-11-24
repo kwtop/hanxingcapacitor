@@ -1,9 +1,9 @@
 ---
 import InnerHero from '../sunday/InnerHero.astro';
-import { sundayIndustrial } from '../../data/sundayIndustrial';
+import { interiorPhotography as innerEditorial } from '../../data/interiorPhotography';
 import { industrialApplications } from '../../data/industrialApplications';
 interface Props {title:string;description:string;image:string;alt:string;product?:boolean;mobileImage?:string;}
 const {title,description,product=false}=Astro.props;
-const asset=product?sundayIndustrial.catalog:industrialApplications['pumps-and-water-systems'];
+const asset=product?innerEditorial.catalog:industrialApplications['pumps-and-water-systems'];
 ---
-<InnerHero compact showImage={product} title={title} description={description} image={asset.src} alt={asset.alt} trail={product?'Products':'Applications'} titleId="collection-title"><slot /></InnerHero>
+<InnerHero compact showImage={product} title={title} description={description} image={asset.src} alt={asset.alt} trail={product?'Products':'Applications'} titleId="collection-title" ><slot /></InnerHero>

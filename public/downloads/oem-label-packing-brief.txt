@@ -1,0 +1,52 @@
+HANXING — OEM label and packing brief
+
+Blank inquiry template. This is not a product datasheet, inspection report,
+certificate or approved packing specification.
+
+1. Contact
+Name:
+Company:
+Email:
+Phone / WhatsApp:
+Destination country:
+
+2. Selected capacitor
+Series (CBB60 / CBB61 / CBB65 / CD60, or unknown):
+Full model / existing supplier reference:
+Application and run or start duty:
+Required capacitance and rated AC voltage:
+Original label, datasheet or drawing attached:
+Order quantity:
+
+3. Product label
+Brand / logo artwork file:
+Required label text and language:
+Artwork file name and revision:
+Label position / size:
+Required approval marks and supporting documents, if applicable:
+
+4. Packing
+Individual box or protection requirement:
+Units per inner pack:
+Units per carton:
+Carton artwork / language / shipping marks:
+Carton dimensions or weight limits:
+Pallet / handling requirements:
+Packing artwork file name and revision:
+
+5. Other requested changes
+Electrical ratings, case, mounting or connection changes:
+Drawing / specification for those changes:
+These changes require a quotation for the specific model.
+
+6. Sample and order questions
+Sample quantity:
+Requested sample date:
+Requested order date / delivery terms:
+Model documents needed:
+Other notes:
+
+Paste the completed brief into the requirements field on the contact page.
+Send artwork, drawings and label photos to the email address on that page.
+The quotation confirms the model, scope, sample terms, order terms and
+documents included.

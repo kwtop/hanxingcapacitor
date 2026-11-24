@@ -1,12 +1,17 @@
 ---
 import ProductReferenceGallery from './ProductReferenceGallery';
 import InquiryCallout from './InquiryCallout.astro';
-import { isSatechiPreview } from '../lib/visualPreview';
+import { usesEditorialPresentation } from '../lib/visualPreview';
+const useEditorial = usesEditorialPresentation(Astro.url.pathname);
 import { siteVisual } from '../data/satechiSite';
+import { comparisonProduct } from '../data/comparisonPhotography';
 import { polishedProducts } from '../data/imagePolish';
 import { type Product } from '../data/site';
 import { productReference, seriesFormats, type ReferenceGalleryPhoto } from '../data/productReference';
 import { sampleConfigurations } from '../data/sampleConfigurations';
+import { configurationPhotography } from '../data/configurationPhotography';
+import { zoomImageUrl } from '../data/imageDelivery';
+import SiteImage from './satechi-preview/SiteImage.astro';
 import SampleEvidence from './SampleEvidence.astro';
 import '../styles/product-reference.css';
 import ProductStory from './satechi-preview/ProductStory.astro';
@@ -15,11 +20,13 @@ import ConnectionFormats from './satechi-preview/ConnectionFormats.astro';
 import ProductOrderDetails from './ProductOrderDetails.astro';
 import ProductSpecifications from './ProductSpecifications.astro';
 import { applicationVisuals } from '../data/satechiSite';
+import { industrialApplications } from '../data/industrialApplications';
 interface Props { product: Product; photos: ReferenceGalleryPhoto[]; others: Product[]; }
 const { product, photos, others } = Astro.props;
 const { code } = product;
 const content = productReference[code];
-const applicationImage = applicationVisuals[code === 'CBB60' ? 'pumps-and-water-systems' : code === 'CBB61' ? 'fans-and-ventilation' : 'hvac-and-refrigeration'];
+const applicationSlug = code === 'CBB60' ? 'pumps-and-water-systems' : code === 'CBB61' ? 'fans-and-ventilation' : 'hvac-and-refrigeration';
+const applicationImage = applicationVisuals[applicationSlug];
 const samples = sampleConfigurations.filter(sample => sample.series === code);
 const rfq = '/contact/?series=' + code + '&request=quote#inquiry-form';
 const sampleChecks: Record<string, string[]> = {
@@ -33,8 +40,8 @@ const sampleChecks: Record<string, string[]> = {
 const documents = [
   ['Current datasheet', 'Exact model number and revision, µF, VAC, tolerance, frequency and operating temperature.'],
   ['Dimensioned drawing & revision', content.documentDimensions + ' ' + content.documentConnections],
-  ['Duty information', content.documentDuty + (code === 'CD60' ? ' Confirm permitted start duration and repeat-start cycle.' : '')],
-  ['Test reports & certificates', 'Model and destination coverage, issuer, certificate or report number, and validity.'],
+  ['Duty information', content.documentDuty],
+  ['Test reports & certificates', 'Tested model or batch, method, conditions and results; certificate holder, issuer, covered ratings, standard edition and validity where certification is required.'],
 ];
 ---
 <article class="pdr-reference" data-series={code}>
@@ -42,8 +49,8 @@ const documents = [
     <section class="pdr-hero" aria-labelledby="pdr-title">
       <nav class="pdr-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/products/">Products</a><span>/</span><span aria-current="page">{code}</span></nav>
       <div class="pdr-hero-copy">
-        <h1 id="pdr-title">{code}<br />{code === 'CBB65' ? 'single & dual-run capacitors' : product.title.slice(code.length).trim()}</h1>
-        {isSatechiPreview && <p class="pdr-hero-summary">{product.tagline}</p>}
+        <h1 id="pdr-title">{code} <br />{code === 'CBB65' ? 'single & dual-run capacitors' : product.title.slice(code.length).trim()}</h1>
+        {useEditorial && <p class="pdr-hero-summary">{product.tagline}</p>}
         <dl class="pdr-key-facts">
           <div class="pdr-duty-fact"><dt>Duty</dt><dd>{product.function}<small>{content.dutyContext}</small></dd></div>
           {code === 'CBB65' ? <>
@@ -54,41 +61,41 @@ const documents = [
         {code === 'CD60' && <p class="pdr-hero-scope">The circuit must disconnect CD60 after startup. Follow the rated starting time and interval between starts.</p>}
         <a class="pdr-button" href={rfq}>Request a {code} quote</a>
       </div>
-      <ProductReferenceGallery client:load photos={photos} code={code} display={isSatechiPreview ? {src:siteVisual('product-' + code.toLowerCase()),alt:`Studio illustration of a ${code} capacitor.`} : undefined} />
+      <ProductReferenceGallery client:load photos={photos} code={code} display={useEditorial ? {src:comparisonProduct(code)?.src ?? siteVisual('product-' + code.toLowerCase()),alt:comparisonProduct(code)?.alt ?? polishedProducts[code].alt} : undefined} />
     </section>
 
-    {isSatechiPreview && <>
+    <ProductSpecifications product={product} showIntroduction={!useEditorial || code === 'CBB61' || code === 'CD60'} />
+
+    {useEditorial && code !== 'CBB61' && code !== 'CD60' && <>
       <!-- Keep the series study separate from the original sample gallery. -->
       <ProductStory product={product} />
     </>}
 
-    <ProductSpecifications product={product} />
-
     <section class="pdr-section" id="sample-configurations">
       <h2>Sample configurations & fit</h2>
-      {isSatechiPreview && code === 'CBB60' && <ConnectionFormats />}
+      {useEditorial && code === 'CBB60' && <ConnectionFormats />}
       <SampleEvidence series={code} />
-      <div class:list={['pdr-sample-configurations', { 'pdr-sample-pair': samples.length > 1 }]}>{samples.map(sample => {
-        const reference = photos.find(photo => photo.src === sample.image);
-        return <div class="pdr-sample-configuration"><figure><div class="pdr-detail-photo"><img src={sample.image} alt={code + ': ' + sample.name + '. ' + sample.connection + '.'} width="2000" height="2000" loading="lazy" /></div>{code !== 'CBB60' && reference?.id && <figcaption>{reference.id}</figcaption>}</figure><div class="pdr-sample-copy"><h3>{sample.name}</h3><dl><div><dt>Visible markings</dt><dd>{sample.rating}</dd></div><div><dt>Connection / fixing</dt><dd>{sample.connection}</dd></div></dl>{sampleChecks[sample.id].length > 0 && <ul>{sampleChecks[sample.id].map(check => <li>{check}</li>)}</ul>}</div></div>;
+      <div class:list={['pdr-sample-configurations', { 'pdr-sample-pair': samples.length > 1 }]}>{samples.map((sample, index) => {
+        const reference = photos.find(photo => photo.originalSrc === sample.image || photo.src === sample.image);
+        const photography = configurationPhotography(sample.id);
+        return <div class="pdr-sample-configuration" data-configuration={sample.id}><figure><a class="pdr-detail-photo" href={zoomImageUrl(sample.image)} target="_blank" rel="noopener" aria-label={'Open full image: ' + sample.name}><img {...photography} sizes="(max-width: 800px) calc(100vw - 48px), 45vw" loading="lazy" /></a>{code !== 'CBB60' && reference?.id && <figcaption><a href={zoomImageUrl(sample.image)} target="_blank" rel="noopener">{reference.id}</a></figcaption>}</figure><div class="pdr-sample-copy"><h3>{sample.name}</h3><dl><div><dt>Visible markings</dt><dd>{sample.rating}</dd></div><div><dt>Connection / fixing</dt><dd>{sample.connection}</dd></div></dl>{sampleChecks[sample.id].length > 0 && <ul>{sampleChecks[sample.id].map(check => <li>{check}</li>)}</ul>}{index === 0 && <a class="context-link" href={content.technicalGuide.href}>{content.technicalGuide.label}</a>}</div></div>;
       })}</div>
-      <div class="pdr-fit-record"><div class="pdr-fit-actions"><a class="pdr-text-link" href="/resources/dimensions-terminals-mounting/">Dimensions & connection guide</a></div></div>
     </section>
 
-    {isSatechiPreview ? <section class="pdr-section ss-product-applications" id="pdr-applications"><figure><img src={applicationImage} alt="Illustration of equipment using motor capacitors." width="1536" height="1024" loading="lazy" /></figure><div><h2>Applications</h2><ul class="pdr-applications">{content.applications.map(application => <li><h3>{application.href ? <a href={application.href}>{application.title}</a> : application.title}</h3><p>{application.examples}</p></li>)}</ul><p class="pdr-note"><a href={product.decisionGuide.href}>{product.decisionGuide.label}</a></p></div></section> : <section class="pdr-section" id="pdr-applications"><h2>Applications</h2><ul class="pdr-applications">{content.applications.map(application => <li><h3>{application.href ? <a href={application.href}>{application.title}</a> : application.title}</h3><p>{application.examples}</p></li>)}</ul><p class="pdr-note"><a href={product.decisionGuide.href}>{product.decisionGuide.label}</a></p></section>}
+    {useEditorial ? <section class="pdr-section ss-product-applications" id="pdr-applications"><figure><SiteImage src={applicationImage} alt={industrialApplications[applicationSlug].alt} sizes="(max-width: 800px) calc(100vw - 48px), 46vw" /></figure><div><h2>Applications</h2><ul class="pdr-applications">{content.applications.map(application => <li><h3>{application.href ? <a href={application.href}>{application.title}</a> : application.title}</h3><p>{application.examples}</p></li>)}</ul>{code !== 'CBB61' && code !== 'CBB65' && <p class="pdr-note"><a class="context-link" href={product.decisionGuide.href}>{product.decisionGuide.label}</a></p>}</div></section> : <section class="pdr-section" id="pdr-applications"><h2>Applications</h2><ul class="pdr-applications">{content.applications.map(application => <li><h3>{application.href ? <a href={application.href}>{application.title}</a> : application.title}</h3><p>{application.examples}</p></li>)}</ul>{code !== 'CBB61' && code !== 'CBB65' && <p class="pdr-note"><a class="context-link" href={product.decisionGuide.href}>{product.decisionGuide.label}</a></p>}</section>}
 
     <section class="pdr-section pdr-document-section" id="model-documents">
-      <div class="pdr-document-intro"><h2>{code} datasheets &amp; drawings</h2><p>Include the model configuration and destination when requesting these documents.</p><div class="pdr-resource-actions"><a class="pdr-button" href={'/contact/?series=' + code + '&request=documents#inquiry-form'}>Request model documents</a><a class="pdr-secondary" href="/factory/#model-records">Document checklist</a></div></div>
+      <div class="pdr-document-intro"><h2>{code} datasheets &amp; drawings</h2><p>Use the full part number and drawing revision to connect the quoted rating, sample and inspection record. Include your destination and any required certification when requesting documents.</p><div class="pdr-resource-actions"><a class="pdr-button" href={'/contact/?series=' + code + '&request=documents#inquiry-form'}>Request model documents</a><a class="pdr-secondary" href="/downloads/model-document-request.txt" download="hanxing-model-document-request.txt">Download document request checklist</a></div></div>
       <dl class="pdr-document-list">{documents.map(([label,value]) => <div><dt>{label}</dt><dd>{value}</dd></div>)}</dl>
     </section>
 
-    <section class:list={['pdr-section', {'pdr-purchasing--pictured': isSatechiPreview && code === 'CBB65'}]} id="pdr-purchasing"><h2>Ordering &amp; samples</h2>
-      {isSatechiPreview && code === 'CBB65' ? <div class="zi-purchase-layout"><BrochurePhoto name="cbb65-packaging" zoom label="CBB65 product and packaging" sizes="(max-width: 800px) calc(100vw - 32px), 46vw" /><div><ProductOrderDetails /></div></div> : <ProductOrderDetails />}
+    <section class:list={['pdr-section', {'pdr-purchasing--pictured': useEditorial && code === 'CBB65'}]} id="pdr-purchasing"><h2>Ordering &amp; samples</h2>
+      {useEditorial && code === 'CBB65' ? <div class="zi-purchase-layout"><BrochurePhoto name="cbb65-packaging" zoom label="CBB65 product and packaging" sizes="(max-width: 800px) calc(100vw - 32px), 46vw" /><div><ProductOrderDetails /></div></div> : <ProductOrderDetails />}
     </section>
 
-    <InquiryCallout id="prepare-rfq" contained href={rfq} defaultSeries={code} heading={`Request a ${code} quote`} description="Send the original part reference and the quantity you need." buttonLabel={`Prepare a ${code} inquiry`}><ul><li>Motor model and capacitor label or specification</li><li>Drawing or measurements for the case, mounting and connections</li>{code === 'CD60' && <li>Starting circuit, switching arrangement and duty limits</li>}<li>Quantity by rating and destination</li></ul><a class="card-link" href="/buying-guide/#rfq-template">Quotation checklist</a></InquiryCallout>
+    <InquiryCallout id="prepare-rfq" contained href={rfq} defaultSeries={code} heading={`Request a ${code} quote`} description="Send the capacitor label or model number, quantity and delivery destination." buttonLabel={`Ask about ${code}`}><ul><li>Motor model and capacitor label or specification</li><li>Drawing or measurements for the case, mounting and connections</li>{code === 'CD60' && <li>Starting circuit, switching arrangement and duty limits</li>}<li>Quantity by rating and destination</li></ul><a class="card-link" href="/buying-guide/#rfq-template">Quotation checklist</a></InquiryCallout>
 
-    <section class="pdr-related"><h2>Other capacitor series</h2><div class="pdr-related-grid">{others.map(p => <a href={'/products/' + p.slug + '/'}><img src={isSatechiPreview ? polishedProducts[p.code].thumb : p.image} alt={isSatechiPreview ? `Studio illustration of a ${p.code} capacitor.` : p.imageAlt} width="240" height="360" loading="lazy" /><div><h3>{p.code}</h3><p>{p.function} duty · {seriesFormats[p.code].case}</p></div></a>)}</div></section>
+    <section class="pdr-related"><h2>Other capacitor series</h2><div class="pdr-related-grid">{others.map(p => <a href={'/products/' + p.slug + '/'}><img src={useEditorial ? polishedProducts[p.code].thumb : p.image} alt={useEditorial ? polishedProducts[p.code].alt : p.imageAlt} width="240" height="360" loading="lazy" /><div><h3>{p.code}</h3><p>{p.function} duty · {seriesFormats[p.code].case}</p></div></a>)}</div></section>
   </div>
 </article>
 <style>

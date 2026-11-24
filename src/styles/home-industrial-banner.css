@@ -22,7 +22,7 @@
   height: 100%;
   max-width: none;
   object-fit: cover;
-  object-position: center;
+  object-position: right center;
 }
 .sunday-home .su-home-banner::after {
   content: '';
@@ -81,6 +81,7 @@
   .sunday-home .su-home-banner .su-action { padding: 12px 20px; font-size: 14px; gap: 0; }
 }
 @media (min-width: 600px) and (max-width: 1023px) {
+  .sunday-home .su-home-banner-photo img { object-position: center; }
   .sunday-home .su-home-banner { height: max(100svh, 132vw); min-height: 1000px; }
   .sunday-home .su-home-banner::after { background: #0a14221a; }
   .sunday-home .su-home-banner-inner {
@@ -95,25 +96,36 @@
   .sunday-home .su-home-banner + .su-series { padding-top: 96px; }
 }
 @media (max-width: 599px) {
-  .sunday-home .su-home-banner { height: max(100svh, 224vw); min-height: 820px; }
-  .sunday-home .su-home-banner::after { background: #0a14220d; }
-  .sunday-home .su-home-banner-inner {
-    align-items: flex-start;
-    justify-content: center;
-    padding: 112px 24px 0;
+  .sunday-home .su-home-banner {
+    grid-template-rows: minmax(auto, 1fr) auto;
+    height: auto;
+    min-height: 100svh;
+    background: #424a57;
   }
-  .sunday-home .su-home-banner-copy { width: 100%; max-width: none; text-align: center; }
-  .sunday-home .su-home-banner h1 { font-size: 34px; line-height: 1.12; letter-spacing: -.035em; }
-  .sunday-home .su-home-banner-copy > p { margin: 18px auto 0; font-size: 15px; line-height: 1.55; }
-  .sunday-home .su-banner-desktop-break { display: none; }
+  .sunday-home .su-home-banner::after { display: none; }
+  .sunday-home .su-home-banner-inner {
+    grid-row: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 104px 24px 20px;
+  }
+  .sunday-home .su-home-banner-copy { width: 100%; max-width: 440px; text-align: center; }
+  .sunday-home .su-home-banner h1 { font-size: clamp(32px, 8.5vw, 40px); line-height: 1.1; letter-spacing: -.035em; }
+  .sunday-home .su-home-banner-copy > p { margin: 16px auto 0; font-size: 15px; line-height: 1.6; }
   .sunday-home .su-home-banner .su-inquiry { margin: 24px auto 0; text-align: left; }
   .sunday-home .su-home-banner .su-inquiry-field { padding: 5px; gap: 4px; }
   .sunday-home .su-home-banner .su-inquiry select { min-width: 94px; min-height: 44px; padding: 10px 2px 10px 8px; font-size: 13px; }
   .sunday-home .su-home-banner .su-action { min-height: 44px; padding: 10px 16px; gap: 0; font-size: 13px; }
+  /* Keep the complete product group in its own row instead of enlarging a tall background. */
+  .sunday-home .su-home-banner-photo { grid-row: 2; position: relative; inset: auto; z-index: 0; height: 94vw; overflow: hidden; }
+  .sunday-home .su-home-banner-photo img { position: absolute; right: -6vw; bottom: -14vw; width: auto; height: 120vw; object-fit: contain; }
+  .sunday-home .su-home-banner-photo::after { content: ''; position: absolute; inset: 0 0 auto; height: 32px; background: linear-gradient(#424a57, transparent); pointer-events: none; }
   .sunday-home .su-home-banner + .su-series { padding-top: 80px; }
 }
 @media (max-width: 359px) {
-  .sunday-home .su-home-banner-inner { padding-inline: 20px; padding-top: 104px; }
-  .sunday-home .su-home-banner h1 { font-size: 30px; }
+  .sunday-home .su-home-banner-inner { padding-inline: 20px; padding-top: 96px; }
   .sunday-home .su-home-banner-copy > p { font-size: 14px; }
+  .sunday-home .su-home-banner .su-inquiry-field { display: grid; grid-template-columns: minmax(0, 1fr); border-radius: 20px; }
+  .sunday-home .su-home-banner .su-inquiry select { width: 100%; padding-inline: 14px; }
+  .sunday-home .su-home-banner .su-action { width: 100%; justify-content: center; }
 }

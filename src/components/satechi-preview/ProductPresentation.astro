@@ -1,0 +1,9 @@
+---
+import { comparisonProduct } from '../../data/comparisonPhotography';
+import SiteImage from './SiteImage.astro';
+interface Props { code: string; sizes?: string; }
+const { code, sizes = '(max-width: 599px) calc(100vw - 96px), (max-width: 900px) 40vw, 30vw' } = Astro.props;
+const image = comparisonProduct(code);
+if (!image) throw new Error(`Missing product presentation: ${code}`);
+---
+<SiteImage src={image.src} alt={image.alt} width={image.width} height={image.height} sizes={sizes} />

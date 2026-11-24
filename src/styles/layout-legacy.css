@@ -1,0 +1,25 @@
+/* Preserve the complete historical cascade for non-indexable and legacy layouts. */
+@import './media-provenance.css';
+@import './legacy.css';
+@import './system.css';
+@import './homepage.css';
+@import './site-editorial.css';
+@import './site-upgrade.css';
+@import './finesse-redesign.css';
+@import './site-porcelain.css';
+@import './review-products.css';
+@import './review-resources.css';
+@import './review-procurement.css';
+@import './review-site.css';
+@import './reference-system.css';
+@import './reference-products.css';
+@import './reference-support.css';
+@import './selected-site.css';
+@import './internal-links.css';
+@import './content-alignment.css';
+@import './product-gallery.css';
+@import './navigation.css';
+@import './inquiry-actions.css';
+@import './page-rhythm.css';
+@import './application-editorial.css';
+@import './layout-balance.css';

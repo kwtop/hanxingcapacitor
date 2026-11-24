@@ -1,5 +1,5 @@
 ---
-import {sundayIndustrial} from '../../data/sundayIndustrial';
+import { interiorPhotography as sundayIndustrial } from '../../data/interiorPhotography';
 import {type EditorialMediaName} from '../../data/editorialMedia';
 import {originalFactoryVisuals} from '../../data/factoryVisuals';
 import SiteImage from './SiteImage.astro';
@@ -7,7 +7,12 @@ interface Props { name:EditorialMediaName; class?:string; eager?:boolean; sizes?
 const {name,class:className='',eager=false,sizes}=Astro.props;
 const isPacking=/packing|shipping|carton|dispatch/.test(name);
 const isConnection=/oem|connection/.test(name);
-const image=name === 'quality-process-detail' ? originalFactoryVisuals.workshop : isPacking ? sundayIndustrial.packing : isConnection ? sundayIndustrial.connections : sundayIndustrial.technical;
+const image=name === 'quality-process-detail' ? originalFactoryVisuals.workshop
+  : name === 'buyer-photo-details' ? sundayIndustrial.catalog
+  : name === 'buying-inquiry' ? sundayIndustrial.packing
+  : name === 'label-carton' ? sundayIndustrial.connections
+  : name === 'packing-protection' ? sundayIndustrial['packing-scene']
+  : isPacking ? sundayIndustrial.packing : isConnection ? sundayIndustrial.connections : sundayIndustrial.technical;
 ---
 <figure class:list={['ss-refined-photo',className]} data-editorial-media={name} data-documentary={name === 'quality-process-detail' ? 'true' : undefined}>
   <SiteImage src={image.src} alt={image.alt} width={image.width} height={image.height} sizes={sizes} eager={eager} />

@@ -11,19 +11,27 @@
     "db:migrate:local": "wrangler d1 migrations apply DB --local --config wrangler.backend.jsonc --persist-to .wrangler/state",
     "admin:password": "node scripts/admin-password.mjs",
     "build:cloudflare": "node scripts/build-cloudflare.mjs",
+    "build:public": "node scripts/publish-public.mjs",
+    "deploy:public": "node scripts/publish-public.mjs --deploy",
     "test:backend": "node --test tests/backend.test.mjs",
+    "test:access": "node --test tests/admin-access.test.mjs",
     "test:pages": "node --test tests/pages-smoke.test.mjs",
+    "test:markdown": "node --test tests/markdown-negotiation.test.mjs",
+    "test:i18n": "node --test tests/schema-localization.test.mjs",
     "build": "astro build",
     "preview": "astro preview --host 127.0.0.1",
     "start": "node ./dist/server/entry.mjs",
     "check": "astro check",
-    "check:release": "node scripts/check-release.mjs"
+    "check:release": "node scripts/check-release.mjs",
+    "prepare:images": "node scripts/prepare-image-delivery.mjs",
+    "check:content": "node scripts/check-audit-content.mjs"
   },
   "dependencies": {
     "@astrojs/node": "^11.1.6",
     "@astrojs/react": "^7.0.0",
     "@fontsource-variable/inter": "^5.3.0",
     "astro": "^7.3.4",
+    "cheerio": "^1.2.0",
     "jose": "^6.2.13",
     "react": "^19.3.0",
     "react-dom": "^19.3.0"
@@ -34,6 +42,9 @@
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "sharp": "^0.35.5",
+    "turndown": "^7.2.2",
+    "turndown-plugin-gfm": "^1.0.2",
     "typescript": "^5.9.0",
     "wrangler": "^4.151.3"
   }

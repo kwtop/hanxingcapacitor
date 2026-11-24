@@ -1,0 +1,47 @@
+---
+import Action from './Action.astro';
+import SiteImage from '../satechi-preview/SiteImage.astro';
+import { innerEditorial as reusedEditorial } from '../../data/innerEditorial';
+const requirements = [
+  { title: 'Ratings & fit', text: 'Capacitance, voltage, case dimensions and mounting.' },
+  { title: 'Leads & terminals', text: 'Wire length, connectors and terminal layout.' },
+  { title: 'Labels & packing', text: 'Brand artwork, inner packs and carton marks.' },
+];
+---
+<section class="su-shell su-oem-overview" id="fit" aria-labelledby="home-oem-title">
+  <figure class="su-oem-photo"><SiteImage src={reusedEditorial.connections.src} alt={reusedEditorial.connections.alt} sizes="(max-width: 800px) calc(100vw - 48px), 47vw" /></figure>
+  <div class="su-oem-copy">
+    <h2 id="home-oem-title">OEM motor capacitors</h2>
+    <dl>{requirements.map(item => <div><dt>{item.title}</dt><dd>{item.text}</dd></div>)}</dl>
+    <Action href="/oem/">Explore OEM options</Action>
+  </div>
+</section>
+
+<style>
+  .su-oem-overview { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; padding-block: 96px; scroll-margin-top: 100px; }
+  .su-oem-photo { position: relative; margin: 0; overflow: hidden; border-radius: var(--su-photo-radius); }
+  .su-oem-photo :global(img) { display: block; width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; object-position: 50% 50%; }
+  .su-oem-copy h2 { margin: 0; max-width: 600px; font: 750 40px/1.12 var(--su-heading); letter-spacing: -.04em; }
+  .su-oem-copy dl { margin: 32px 0; }
+  .su-oem-copy dl > div { display: grid; grid-template-columns: 145px minmax(0, 1fr); gap: 24px; padding: 20px 0; border-top: 1px solid var(--su-border); }
+  .su-oem-copy dt { font-size: 15px; font-weight: 650; }
+  .su-oem-copy dd { margin: 0; color: var(--su-muted); font-size: 14px; line-height: 1.5; }
+  @media (max-width: 1079px) {
+    .su-oem-overview { gap: 36px; }
+    .su-oem-copy h2 { font-size: 34px; }
+    .su-oem-copy dl > div { grid-template-columns: 120px minmax(0, 1fr); gap: 14px; }
+  }
+  @media (max-width: 800px) {
+    .su-oem-overview { grid-template-columns: 1fr; padding-block: 64px; gap: 28px; }
+    .su-oem-copy { grid-row: 1; }
+    .su-oem-copy h2 { max-width: 620px; }
+    .su-oem-copy dl { margin-block: 24px; }
+    .su-oem-photo :global(img) { aspect-ratio: 3/2; }
+  }
+  @media (max-width: 599px) {
+    .su-oem-copy h2 { font-size: 30px; }
+    .su-oem-copy dl > div { grid-template-columns: 112px minmax(0, 1fr); gap: 12px; }
+    .su-oem-copy dt { font-size: 14px; }
+    .su-oem-copy dd { font-size: 13px; }
+  }
+</style>

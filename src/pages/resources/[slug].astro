@@ -3,49 +3,82 @@ import ReviewGuideContent from '../../components/ReviewGuideContent.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import InquiryCallout from '../../components/InquiryCallout.astro';
 import { guides, type Guide } from '../../data/guides';
+import { OFFICIAL_SITE, PUBLIC_COMPANY_NAME } from '../../data/site';
+import { contentModifiedAt } from '../../data/contentRevisions';
 import { guideLayouts } from '../../data/guideLayouts';
-import { isSatechiPreview } from '../../lib/visualPreview';
+import { usesEditorialPresentation } from '../../lib/visualPreview';
+const useEditorial = usesEditorialPresentation(Astro.url.pathname);
 import GuideCover from '../../components/satechi-preview/GuideCover.astro';
 import WorkshopPhotoStory from '../../components/sunday/WorkshopPhotoStory.astro';
 import { guideWorkshopStories } from '../../data/workshopPhotos';
+import '../../styles/oem-editorial.css';
+import '../../styles/resource-editorial.css';
 export const prerender = true;
 export function getStaticPaths() { return guides.map(guide => ({ params: { slug: guide.slug }, props: { guide } })); }
 interface Props { guide: Guide; }
 const { guide } = Astro.props;
+const showPublisherByline = !guide.author && !guide.hidePublisherByline;
+const modifiedAt = contentModifiedAt[`/resources/${guide.slug}/`];
 const layout = guideLayouts[guide.slug];
-const workshopStory = guideWorkshopStories[guide.slug];
+// Keep dispatch context; sample photos are already shown beside the relevant explanation.
+const workshopStory = guide.slug === 'motor-capacitor-order-shipment-checklist' ? guideWorkshopStories[guide.slug] : undefined;
 const isOrderGuide = guide.slug === 'motor-capacitor-order-shipment-checklist';
+const isOemGuide = guide.slug === 'oem-capacitor-sample-approval';
+const isProductTechnicalGuide = !isOrderGuide;
+const defaultSeries = guide.defaultSeries ?? (isOemGuide ? 'unknown' : guide.slug === 'single-vs-dual-run-capacitors' ? 'CBB65' : 'CBB60');
 const discussHref = `/contact/?guide=${guide.slug}&request=${guide.inquiry.request}#inquiry-form`;
 const sectionId = (heading: string) => heading.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const relatedInBody = new Set(layout.sections.flatMap(section => (section.links || []).map(link => link.href)));
 const related = guide.related.filter(link => !relatedInBody.has(link.href) && link.href !== '/buying-guide/').slice(0, 3);
+const sourceKey = (href: string) => {
+  const url = new URL(href, OFFICIAL_SITE);
+  url.hash = '';
+  return url.href;
+};
+// Keep reference documents accessible without repeating links already in the article.
+const linkedSources = new Set([
+  ...layout.sections.flatMap(section => [
+    ...(section.citations || []).filter(citation => section.paragraphs?.[citation.paragraph] !== undefined).map(citation => citation.href),
+    ...(section.links || []).map(link => link.href),
+    ...(section.tables || []).flatMap(table => table.rows.flatMap(row => row.flatMap(cell => typeof cell === 'string' ? [] : [cell.href]))),
+  ]),
+  ...(layout.inquiryLinks || []).map(link => link.href),
+  ...related.map(link => link.href),
+].map(sourceKey));
+const referenceLinks = guide.sources.filter(source => !linkedSources.has(sourceKey(source.href)));
 ---
-<BaseLayout title={guide.title} description={guide.summary}>
-  <div class:list={['review-resource-page',{'co-reading-page':isSatechiPreview}]}>
+<BaseLayout title={guide.seoTitle ?? guide.title} description={guide.summary}>
+  <div class:list={['review-resource-page resource-suite resource-article',{'co-reading-page':useEditorial,'oem-suite oe-approval-article':isOemGuide,'product-technical-guide':isProductTechnicalGuide}]}>
     <section class="page-hero guide-hero review-guide-hero"><div class="container">
       <p class="breadcrumbs"><a href="/">Home</a> / <a href="/resources/">Resources</a> / <a href={isOrderGuide ? '/buying-guide/' : '/resources/articles/'}>{isOrderGuide ? 'Buying & shipping' : 'Technical guides'}</a> / {guide.title}</p>
-      {isSatechiPreview ? <div class="ss-article-introduction co-reading-heading"><div><h1>{guide.title}</h1><p>{guide.summary}</p></div></div> : <h1>{guide.title}</h1>}
+      {useEditorial ? <div class="resource-article-intro"><div class="resource-article-heading"><h1>{guide.title}</h1><p>{guide.summary}</p></div><GuideCover slug={guide.slug} class="resource-article-cover" sizes="(max-width: 800px) calc(100vw - 40px), (max-width: 1280px) 48vw, 620px" eager /></div> : <h1>{guide.title}</h1>}
     </div></section>
     <section class="section guide-body review-guide-body"><div class="container review-guide-reading">
       <article class="editorial review-guide-article">
+        {(guide.author || showPublisherByline || modifiedAt) && <div class="guide-editorial-meta">
+          {guide.author && <p><span>By</span> {guide.author.url ? <a href={guide.author.url}>{guide.author.name}</a> : guide.author.name}</p>}
+          {showPublisherByline && <p><span>Published by</span> <a href="/about/#supplier-records">{PUBLIC_COMPANY_NAME}</a></p>}
+          {modifiedAt && <p><span>Updated</span> <time datetime={modifiedAt}>{modifiedAt.slice(0, 10)}</time></p>}
+        </div>}
         <p class="article-overview">{guide.answer}</p>
-        {isSatechiPreview && <GuideCover slug={guide.slug} class="co-article-visual" sizes="(max-width:1288px) calc(100vw - 48px), 1240px" eager />}
         <ReviewGuideContent sections={layout.sections} />
-        {workshopStory && <WorkshopPhotoStory id="guide-workshop-photos" eyebrow={workshopStory.eyebrow} title={workshopStory.title} intro={workshopStory.intro} photos={workshopStory.photos} compact />}
-        <InquiryCallout id="details-to-send" contained href={discussHref} heading={guide.inquiry.heading} description={guide.inquiry.note} buttonLabel={guide.inquiry.label} defaultSeries={guide.slug === 'single-vs-dual-run-capacitors' ? 'CBB65' : 'CBB60'}>
-          <span id={sectionId(guide.inquiry.heading)} class="review-guide-anchor" aria-hidden="true"></span>
+        {workshopStory && <WorkshopPhotoStory id="guide-workshop-photos" eyebrow={workshopStory.eyebrow} title={workshopStory.title} intro="See how individual packing and loading fit into the dispatch process." photos={workshopStory.photos.slice(0,3)} compact />}
+        <span id={sectionId(guide.inquiry.heading)} class="review-guide-anchor" aria-hidden="true"></span>
+        <InquiryCallout id="details-to-send" contained href={discussHref} heading={guide.inquiry.heading} description={guide.inquiry.note} buttonLabel={guide.inquiry.label} defaultSeries={defaultSeries} showDetails={layout.details.length > 0 || !!layout.inquiryLinks?.length || isOrderGuide}>
           
-          <ul>{layout.details.map(detail => <li>{detail}</li>)}</ul>
-          {layout.inquiryLinks && <nav class="review-guide-section-links" aria-label="Relevant product and application">{layout.inquiryLinks.map(link => <a class="card-link" href={link.href}>{link.label}</a>)}</nav>}
+          {layout.details.length > 0 && <ul>{layout.details.map(detail => <li>{detail}</li>)}</ul>}
+          {layout.inquiryLinks && <nav class="review-guide-section-links" aria-label="Relevant product and application">{layout.inquiryLinks.map(link => <a class="context-link" href={link.href}>{link.label}</a>)}</nav>}
           
-          <nav aria-label="Inquiry references">
+          {!isProductTechnicalGuide && <nav aria-label="Inquiry references">
             {isOrderGuide && <a class="card-link" href={`/contact/?guide=${guide.slug}&request=after-sales#inquiry-form`}>Ask about an existing order</a>}
-            <a class="card-link" href="/buying-guide/#rfq-template">Use the quotation checklist</a>
-          </nav>
+          </nav>}
         </InquiryCallout>
         <span id="references" class="review-guide-anchor" aria-hidden="true"></span>
+        {referenceLinks.length > 0 && <nav class="review-guide-related" aria-label="Technical references"><h2>Technical references</h2>
+          {referenceLinks.map(source => <a class="context-link" href={source.href}>{source.label}</a>)}
+        </nav>}
         <nav class="review-guide-related" aria-label="Related resources"><h2>Related resources</h2>
-          {related.map(link => <a class="card-link" href={link.href}>{link.label}</a>)}<a class="card-link" href="/resources/">All resources</a>
+          {related.map(link => <a class="context-link" href={link.href}>{link.label}</a>)}<a class="card-link" href="/resources/">All resources</a>
         </nav>
       </article>
     </div></section>
@@ -57,3 +90,9 @@ const related = guide.related.filter(link => !relatedInBody.has(link.href) && li
     });
   </script>
 </BaseLayout>
+<style>
+  .guide-editorial-meta{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 24px;margin:0 0 24px;color:#596167;font-size:14px;line-height:1.6}
+  .review-guide-article .guide-editorial-meta p{margin:0!important;font-size:14px!important;line-height:1.6!important}
+  .guide-editorial-meta a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+  .guide-editorial-meta time{white-space:nowrap;font-variant-numeric:tabular-nums}
+</style>

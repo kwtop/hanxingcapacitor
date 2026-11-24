@@ -1,28 +1,22 @@
 /** Studio presentations derived from supplied samples; never technical or shipment evidence. */
+import { innerEditorial } from './innerEditorial';
+import { sourcePhotography } from './sourcePhotography';
 export type PolishedMedia = { src: string; srcset: string; width: number; height: number; alt: string; thumb?: string };
 const root = '/images/industrial-polish-20261026/';
-const product = (name: string, alt: string): PolishedMedia => ({
-  src: `${root}${name}-1024.webp`,
-  srcset: [480, 800, 1024].map(w => `${root}${name}-${w}.webp ${w}w`).join(', '),
-  width: 1024, height: 1536, alt, thumb: `${root}${name}-240.webp`,
-});
-const editorial = (name: string, alt: string): PolishedMedia => ({
-  src: `${root}${name}-1280.webp`,
-  srcset: [480, 800, 1280, 1536].map(w => `${root}${name}-${w}.webp ${w}w`).join(', '),
-  width: 1536, height: 1024, alt,
+const product = (name: string, alt: string, directory = root): PolishedMedia => ({
+  src: `${directory}${name}-1024.webp`,
+  srcset: [480, 800, 1024].map(w => `${directory}${name}-${w}.webp ${w}w`).join(', '),
+  width: 1024, height: 1536, alt, thumb: `${directory}${name}-240.webp`,
 });
 export const polishedProducts: Record<string, PolishedMedia> = {
-  CBB60: product('cbb60', 'Illustrative studio view based on the supplied Hanxing CBB60 wired sample.'),
-  CBB61: product('cbb61', 'Illustrative studio view based on the supplied 4.5 microfarad CBB61 blade-terminal sample.'),
-  CBB65: product('cbb65', 'Illustrative studio view based on the supplied Hanxing 20 microfarad CBB65 single-run sample.'),
-  CD60: product('cd60', 'Illustrative studio view based on the supplied 500 microfarad CD60 start-capacitor sample.'),
+  CBB60: product('cbb60', 'HAN XING CBB60 cylindrical capacitor with two insulated wire leads.'),
+  CBB61: product('cbb61', 'Black CBB61 rectangular capacitor with two blade terminals.'),
+  CBB65: product('cbb65', 'HAN XING CBB65 single-run metal-can capacitor with two terminal groups.'),
+  CD60: product('portrait', 'CD60 cylindrical start capacitor with blade terminals.', '/images/cd60-presentation-20261110/'),
 };
 export const polishedEditorial = {
-  connections: editorial('connections', 'Illustrative Hanxing CBB60 wired sample and CBB61 blade-terminal sample on a brushed-steel surface.'),
-  terminals: editorial('terminals', 'Illustrative close view of the two terminal groups and rolled rim on a CBB65 single-run sample.'),
-  packing: editorial('packing', 'Illustrative Hanxing CBB65 sample, branded box and plain protective carton based on the supplied product photographs.'),
-  technical: editorial('technical', 'Illustrative Hanxing CBB60 and CBB65 samples beside an open caliper and an unnumbered outline drawing.'),
-  catalog: editorial('catalog', 'Illustrative CBB60, CBB61, CBB65 and CD60 product family on a brushed-steel studio bench.'),
+  ...innerEditorial,
+  terminals: sourcePhotography['cbb65-single'],
 };
-const entries = [...Object.values(polishedProducts), ...Object.values(polishedEditorial)];
+const entries: PolishedMedia[] = [...Object.values(polishedProducts), ...Object.values(polishedEditorial)];
 export const findPolishedMedia = (src: string) => entries.find(asset => src.startsWith(asset.src.replace(/-\d+\.webp$/, '-')));

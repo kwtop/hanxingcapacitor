@@ -136,3 +136,15 @@ The four H1 font sizes, line heights, weights and letter spacing match the refer
 Completed initial capture plus three correction passes: `round-1` → `round-2` → `round-3` → `final`. Final image decoding was checked; offscreen horizontal lazy images are not treated as broken requests. Reference screenshots were refreshed after images loaded. Geometry, remaining differences and actual functional checks are in `sunday-home-20261025/REVIEW.md` and `final/metrics-comparison.json`. `comparison.html` presents the full pages and matched-viewport hero overlays.
 
 Reference hero emphasis is a rough-notation SVG stroke, measured `#E50914` / `5px` in the final mobile observation (`reference/underline.json`). Hanxing uses a static underline in this measured color/weight; the animated hand-drawn path and rotating customer-brand colors are not reproduced. Header CTA retains the measured circular arrow treatment.
+
+## Inner-page refresh, 2026-10-27
+
+The current Catalog and About reference routes were also inspected in real Chromium at all four viewports. Their H1 is48px/48px, weight600 on desktop, and36px/36px at390px; some About H2s use700. Both use Plus Jakarta Sans. These are inner-route measurements and do not replace the previously measured homepage type scale. Raw computed styles and complete screenshots are in `.qa/inner-editorial-refresh-20261027/reference/`.
+
+The Hanxing inner-page adaptation uses large equipment photography, asymmetric7/5 and5/7 application entries, split editorial introductions, full-width manufacturing/resource photography and ruled technical sections. It retains the approved orange and established heavier Hanxing title weights, plus original navigation, parameter records and inquiry behavior. Product presentation photography is edited against the supplied sample photographs; documentary factory, people, label and video evidence remain separate. Final scope, three correction passes and four-viewport evidence are in `docs/inner-editorial-refresh-20261027/README.md`. The selected homepage is unchanged.
+
+## OEM editorial refinement, 2026-10-27
+
+The five OEM/quality routes now use `oem-editorial.css` and the OemPageHero, OemFeature, OemPhotoCollection and OemReading components. They adapt the measured Sunday hierarchy with48px desktop /36px mobile H1 at weight650,112px desktop section spacing, asymmetric image/text pairs, separated process videos and ruled document tables. Typography is an adaptation: the measured reference H1 weight remains600. Orange and the current navigation are retained.
+
+The gallery keeps all30 original stills, with two selected frames per chapter visible initially and the rest in native disclosures. Portrait frames retain their original proportions. Two new product photographs are generated from supplied capacitor references; documentary media and generated environments retain distinct provenance. Four-viewport screenshots, correction notes, content records and source manifests are in `docs/oem-layout-20261027/README.md`. This is a local update and does not change the selected homepage layout.

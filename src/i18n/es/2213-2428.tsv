@@ -1,0 +1,182 @@
+2213|IEC 60252-1 utiliza S0 a S3 para describir la protección en caso de fallo del condensador. Las clases de funcionamiento A a D describen la vida probable de diseño en condiciones nominales. Compruebe ambas con el modelo exacto y su tensión nominal antes de especificar un condensador.
+2214|Qué significan S0, S1, S2 y S3
+2215|IEC 60252-1 cubre prestaciones, características, ensayos y seguridad de condensadores para motores de CA dentro de su alcance. IEC 60252-2 trata por separado los condensadores de arranque.
+2217|IEC 60252-2: condensadores de arranque de motores
+2218|El resumen de TDK presenta las cuatro clases de protección e identifica las designaciones anteriores P0, P1 y P2. Utilice la edición especificada para el equipo y verifique la clase en los documentos del modelo propuesto.
+2219|TDK AC Film Capacitors: clases de seguridad y funcionamiento
+2220|Clases de protección según IEC 60252-1+A1:2013
+2221|Protección frente a fallos descrita
+2222|S0 (antes P0)
+2223|Sin protección específica frente a fallos.
+2224|S1 (antes P1)
+2225|Puede fallar en circuito abierto o cortocircuito; la clase incluye protección frente a incendios o descargas eléctricas.
+2226|S2 (antes P2)
+2227|Diseñado para fallar en circuito abierto; la clase incluye protección frente a incendios o descargas eléctricas.
+2229|Película segmentada con baja capacitancia residual tras el fallo y protección frente a incendios y descargas eléctricas.
+2230|Cómo interpretar las clases de vida de diseño A a D
+2231|Una clase de funcionamiento describe la vida probable de diseño al servicio, tensión, temperatura y frecuencia declarados. No predice cuántas horas durará una pieza individual en un motor concreto.
+2232|La ficha B32350/B32352 de TDK muestra por qué importan las condiciones: indica clase A a 400 VAC y clase B a 450 VAC, con la clase de seguridad S3 por separado. Estas cifras se aplican a las piezas TDK cubiertas por esa ficha.
+2233|Ficha TDK B32350/B32352: clase de vida a 400 y 450 VAC
+2234|Clases de funcionamiento IEC 60252-1 según el resumen de TDK
+2235|Clase de funcionamiento
+2236|Vida de diseño en condiciones nominales
+2238|30000 horas
+2240|10000 horas
+2242|3000 horas
+2243|1000 horas
+2244|Verifique el marcado del modelo cotizado
+2245|La etiqueta original HAN XING CBB65 indica «40/85/21 C P1». El primer grupo es la categoría climática, C la clase de funcionamiento y P1 el marcado de protección anterior. Consulte en la ficha técnica la edición de la norma y las condiciones nominales que sustentan ese marcado.
+2246|Cuando se requiera un certificado, coteje modelo, edición de norma, emisor y alcance con los requisitos del equipo.
+2247|Cómo leer 40/85/21 en una etiqueta CBB65
+2248|Lista de documentos del modelo
+2249|C y P1 en una etiqueta original CBB65
+2250|Los documentos del modelo indican las condiciones y el alcance del marcado.
+2251|Solicite los datos de seguridad y vida del modelo
+2252|Especifique la edición de la norma, la clase requerida, la tensión de funcionamiento y las aprobaciones necesarias para su equipo.
+2253|Solicitar documentación del modelo
+2254|Modelo exacto, edición IEC y clase de seguridad requeridas.
+2255|Clase de funcionamiento a la tensión, temperatura, frecuencia y servicio necesarios.
+2256|Alcance del certificado o informe de ensayo requerido para el pedido.
+2257|Leer la etiqueta de un condensador para motores
+2260|Vista retocada de muestra. Condensador CBB65 marcado 40/85/21 C P1.
+2261|Lista de pedido y envío de condensadores | Hanxing Capacitor
+2262|Utilice una misma referencia de pedido para la especificación, los planos aprobados, el embalaje, los registros de inspección y los documentos de envío. Acuerde las condiciones antes de producir y compruebe los registros finales antes de la recogida del transportista.
+2263|1. Especifique el producto y el pedido
+2264|Utilice la misma serie, modelo, características, revisión del plano, conexiones y cantidades en la cotización y la orden de compra. Apruebe las alternativas por escrito. Conserve las aprobaciones de muestra, diseño gráfico y embalaje para pedidos con marca propia.
+2265|La cotización debe indicar precio, moneda, fechas de pago y vigencia, además de los costes de muestras o útiles. Acuerde cuándo empieza a contar el plazo de producción.
+2266|Deje por escrito la condición de entrega y el lugar convenido, junto con el medio de transporte y quién paga el flete.
+2267|Revisar la aprobación de etiqueta y muestra
+2268|2. Apruebe el embalaje
+2269|Especifique protección individual y espacio de terminales, unidades por embalaje interior y caja, marcas de envío e idioma, además de requisitos de paletización y manipulación.
+2270|Conserve las revisiones aprobadas de diseño gráfico y embalaje para comprobar cambios posteriores. Anote el número y dimensiones de cajas y los pesos bruto y neto para el comprador y el agente de carga.
+2271|Revisar embalaje y expedición
+2272|Protección dentro de la caja
+2273|Compare las fotografías del embalaje con la protección, los separadores y las unidades por caja aprobados.
+2274|3. Registre las fechas de expedición y la inspección
+2275|La finalización de producción, la recogida y la llegada son hitos distintos. Indique si las fechas son confirmadas o estimadas y nombre el contacto para actualizaciones, retrasos y aprobación de envíos parciales.
+2276|Acuerde el alcance y los criterios de aceptación de la inspección antes de producir. Especifique el formato del informe, los ensayos de muestra, la identificación de lote o muestra y las fotografías de embalaje necesarias.
+2277|Conserve los resultados de ensayos eléctricos y el contenido de las cajas en registros separados, junto a las fotografías de embalaje.
+2278|Hito
+2279|Fecha / confirmada o estimada
+2280|Contacto de seguimiento
+2281|Producción terminada
+2282|Autorización tras la inspección
+2283|Recogida del transportista
+2284|Salida
+2285|Llegada estimada
+2286|________ / estimada
+2287|Comprobar registros del modelo e inspección
+2288|4. Compruebe los documentos de envío
+2289|Revise los borradores de factura y lista de empaque con la orden de compra aprobada antes de la expedición.
+2290|Compruebe el destinatario y la referencia de envío en el conocimiento de embarque, carta de porte aéreo o guía de mensajería de la ruta acordada.
+2291|Acuerde el emisor y alcance de los documentos de origen, inspección, exportación o conformidad exigidos por el destino y el contrato.
+2292|Documentos que deben cotejarse con el pedido
+2293|Documento
+2294|Requisitos del pedido
+2295|Factura y lista de empaque
+2296|Vendedor/comprador, descripción, modelo, cantidad, número de bultos, pesos, importe, moneda y condición de entrega.
+2297|Conocimiento de embarque, carta de porte aéreo o guía de mensajería según la ruta; destinatario y referencia de envío.
+2298|Origen / inspección / exportación / conformidad
+2299|Documentos exigidos por el destino y el contrato, con emisor, alcance y referencia de modelo o pedido.
+2300|5. Acuerde cómo tratar las discrepancias
+2301|Antes de enviar, acuerde a quién contactar si las especificaciones, embalaje o cantidades son incorrectos, faltan artículos o llegan dañados. Incluya el procedimiento para comunicar productos no conformes y aprobar cambios.
+2302|Deje constancia del plazo de garantía, el plazo de reclamación y la parte responsable en las condiciones del pedido.
+2303|Archive juntos el plano aprobado, registro de muestra, cotización, orden de compra, registros de inspección y documentos finales de envío.
+2304|Consultar sobre un pedido existente
+2305|Notas de confirmación de pedido
+2306|Copie la plantilla e introduzca las condiciones acordadas por escrito. Mantenga los puntos pendientes bajo la misma referencia de pedido.
+2307|Copiar notas del pedido
+2308|De las cajas individuales a la carga
+2309|Vea cómo el embalaje individual y la carga forman parte de la expedición.
+2310|Cajas individuales en la mesa de embalaje
+2311|Cajas preparadas sobre palés
+2312|Cajas sobre el camión
+2313|Consultar los requisitos del pedido
+2314|Incluya la referencia del pedido y cualquier requisito pendiente de especificación, embalaje o entrega.
+2315|Consultar las condiciones del pedido
+2316|Referencia del pedido, modelo exacto y revisión del plano
+2317|Requisitos aprobados de embalaje e inspección, con fechas de producción y envío
+2318|Condición de entrega y lugar convenido, con la documentación necesaria
+2319|Condiciones pendientes del pedido
+2320|Preguntas de pedidos y envíos
+2324|Cajas de producto y trabajo de embalaje de condensadores en una mesa.
+2327|Notas de confirmación de pedido para copiar
+2328|Ampliar imagen: Cajas individuales en la mesa de embalaje
+2329|Operario colocando cajas individuales azules en una mesa de embalaje.
+2330|Ampliar imagen: Cajas preparadas sobre palés
+2331|Pilas de cajas sobre palés.
+2332|Ampliar imagen: Cajas sobre el camión
+2333|Cajas apiladas en un camión durante la carga.
+2334|Cómo comprobar un condensador con multímetro | Hanxing
+2335|Un técnico cualificado mide la capacitancia con un instrumento adecuado después de aislar el equipo, descargar el condensador y desconectarlo del circuito. Una etiqueta de 20 µF ±5% da un intervalo calculado de 19 a 21 µF. Utilice el método especificado y la exactitud del instrumento para evaluar lecturas cercanas a los límites.
+2336|Medir capacitancia con un multímetro
+2337|Un condensador puede conservar carga después de cortar la alimentación. Este procedimiento es para personal cualificado. Siga las instrucciones de servicio del equipo y el manual del instrumento para el aislamiento, la descarga aprobada y la verificación antes de manipular los terminales.
+2338|Fluke: medición de capacitancia con multímetro digital
+2339|Aísle todas las alimentaciones y verifique el aislamiento. Descargue el condensador por el método aprobado y compruebe la ausencia de tensión en los terminales antes de manipularlo.
+2340|Identifique el modelo y las características exactos y desconecte del circuito el condensador descargado de forma segura. En una pieza doble, identifique las dos secciones capacitivas mediante el esquema.
+2341|Seleccione el modo de capacitancia en un multímetro adecuado, o utilice el instrumento LCR y los ajustes especificados. Mida entre el par de terminales definido por la documentación y anote la lectura estable en µF de cada sección.
+2342|Compare cada lectura con sus propios límites de tolerancia y la exactitud declarada del instrumento. Una indicación fuera de rango requiere comprobar el rango y la configuración antes de concluir que la pieza falla.
+2343|Esta es una comprobación de capacitancia fuera del circuito. Los ensayos de resistencia de aislamiento y rigidez dieléctrica requieren equipos controlados, métodos y criterios de aceptación propios.
+2344|Distinguir servicio de marcha y arranque
+2345|Ejemplos de tolerancia de capacitancia CBB60, CBB61 y CBB65
+2346|Parta del valor nominal y la tolerancia impresos en la pieza o especificados para el modelo. Para una tolerancia porcentual simétrica, calcule la desviación y réstela y súmela a la capacitancia nominal.
+2347|En el CBB65 fotografiado, 20 µF × 5% da 1 µF. El límite inferior es 20 − 1 = 19 µF; el superior, 20 + 1 = 21 µF. El mismo cálculo da los intervalos de las etiquetas CBB60 y CBB61 de la tabla.
+2348|Límite inferior
+2349|µF nominales × (1 − porcentaje de tolerancia ÷ 100).
+2350|Límite superior
+2351|µF nominales × (1 + porcentaje de tolerancia ÷ 100).
+2352|Desviación medida
+2353|(µF medidos − µF nominales) ÷ µF nominales × 100%.
+2354|Intervalos nominales calculados a partir de etiquetas originales
+2355|Etiqueta
+2356|Desviación
+2369|Utilice el valor nominal de la pieza que ensaya
+2370|Carcasas similares pueden contener valores distintos. Por ejemplo, la fotografía original CBB61 muestra condensadores independientes de 4.5, 5 y 6 µF. Cada valor tiene su propio intervalo de tolerancia. El informe necesita el modelo exacto y la referencia de muestra o lote para asignar la lectura a la pieza correcta.
+2371|En un condensador doble, calcule y evalúe cada sección por separado según su valor nominal y el esquema de conexiones. Sumar ambos valores impide la comparación sección por sección.
+2372|Utilice el requisito de aceptación de la etapa de ensayo correspondiente. La tolerancia inicial de entrega y el cambio permitido después de un ensayo de calificación son límites distintos. Identifique la especificación y el ensayo aplicables junto al resultado.
+2373|20 µF ±5% en la etiqueta original
+2374|20 µF ±5% da límites calculados de 19 y 21 µF.
+2375|Lea las condiciones de medición junto al valor en µF
+2376|Anote modelo de instrumento, rango o ajustes y condiciones requeridas por el método. Para una medición LCR, incluya frecuencia y ajuste de señal. Añada temperatura y cualquier acondicionamiento o estabilización especificados.
+2377|Un multímetro portátil y un instrumento LCR pueden utilizar métodos distintos; una diferencia de lectura debe revisarse con esos ajustes. Utilice el método acordado para la aceptación. El manual y el estado de calibración del instrumento forman parte de esa revisión.
+2378|Como ejemplo de cálculo, suponga que una pieza nominal de 20 µF mide 20.4 µF. Su desviación es (20.4 − 20) ÷ 20 × 100 = +2%. El valor mostrado está dentro del intervalo calculado de ±5%. La aceptación sigue dependiendo del método especificado y de la exactitud de medición.
+2379|Lecturas próximas al límite y exactitud del instrumento
+2380|La resolución de pantalla indica el menor incremento visible. La exactitud indica cuánto representa la medición el valor bajo las condiciones declaradas del instrumento. Mostrar más decimales no elimina la incertidumbre de medición.
+2381|Considere una lectura hipotética de 19.02 µF para una pieza de 20 µF ±5%. Está solo 0.02 µF por encima del límite inferior calculado de 19 µF. Si la exactitud aplicable fuera ±0.10 µF, el intervalo iría de 18.92 a 19.12 µF y cruzaría ese límite.
+2382|Aplique la regla de decisión acordada a un resultado próximo al límite. Si es necesario repetir la medición, utilice un método e incertidumbre adecuados al límite y conserve la primera lectura y la razón de repetirla. La lectura y exactitud del ejemplo son supuestas; utilice las especificaciones del instrumento real.
+2383|Ejemplos para una pieza de 20 µF ±5% con margen instrumental supuesto de ±0.10 µF
+2384|Lectura mostrada
+2385|Intervalo de ejemplo
+2386|Comparación con 19–21 µF
+2389|Dentro del intervalo. Aplique el método y la regla de aceptación acordados.
+2392|Cruza el límite inferior. Resuelva el resultado próximo al límite según la regla acordada.
+2395|Por debajo del intervalo. Verifique la configuración y registre el resultado fuera de límite si se confirma.
+2396|Registre el resultado junto a su límite y método
+2397|Utilice una fila por muestra o sección capacitiva con lectura numérica, límite aplicable y decisión de aceptación. Identifique la pieza y el método en el mismo registro.
+2398|Registre la fecha de inspección, la identificación del instrumento y la persona responsable cuando se realice el ensayo.
+2399|Campos del registro de inspección de capacitancia
+2400|Qué debe introducir
+2401|Pieza
+2402|Modelo, referencia de muestra o lote e identificación de la sección.
+2403|µF nominales, tolerancia, límite aplicable y revisión de la especificación.
+2404|Método
+2405|Identificación del instrumento, ajustes, condiciones y referencia del método.
+2406|Resultado
+2407|µF medidos, desviación calculada y decisión de aceptación.
+2408|Fecha de inspección, operario o revisor y notas de lecturas repetidas.
+2409|La capacitancia es solo una parte de la inspección eléctrica
+2410|Una lectura dentro de tolerancia no demuestra resistencia de aislamiento, rigidez dieléctrica, servicio de arranque ni vida útil. Indique los demás ensayos necesarios y sus condiciones al solicitar un informe.
+2411|La ficha CBB65A-1 de TDK enumera por separado tolerancia de capacitancia, resistencia de aislamiento y ensayos de rigidez dieléctrica. Esas condiciones se aplican a ese modelo TDK. Una inspección HAN XING utiliza los límites de la especificación del modelo HAN XING correspondiente.
+2412|Acuerde el alcance de inspección del pedido
+2413|Para una inspección de compra, identifique modelo y lote, las muestras que se medirán y la regla de aceptación acordada. Un resultado de capacitancia corresponde a la muestra y las condiciones registradas con él.
+2414|Pregunte cómo trata el informe un resultado próximo al límite o una repetición. Conserve la primera lectura y el motivo de repetirla. Los requisitos de muestreo y aceptación del pedido necesitan su propio acuerdo, además de los límites eléctricos.
+2415|Documentos para aprobar con una muestra OEM
+2416|Selección de modelo y conexiones CBB61
+2417|Especifique la inspección de condensadores que necesita
+2418|Identifique modelo, ensayos necesarios y criterios de aceptación del informe.
+2419|Solicitar información de ensayos del modelo
+2420|Referencia de modelo o muestra y ensayos de inspección necesarios.
+2421|Límites de aceptación, método de medición y formato de informe.
+2422|Capacitancia y tensión nominal
+2425|Vista retocada de muestra. Etiqueta CBB65 con 20 µF y tolerancia de ±5%.
+2428|Cotización OEM y aprobación de muestras | Hanxing Capacitor

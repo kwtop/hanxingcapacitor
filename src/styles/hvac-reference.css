@@ -118,7 +118,7 @@ body.porcelain-site.reference-site #main article.hvr-reference[data-application=
 #main .hvr-reference[data-application] .hvr-sample-photo[data-series="CBB61"] img{transform:none;object-position:50% 84%}
 #main .hvr-fit-photo>a{display:block;position:relative;aspect-ratio:1.5;overflow:hidden;background:#f3f4f4}
 #main .hvr-fit-photo img{display:block;width:100%;height:100%;object-fit:cover}
-#main .hvr-fit-photo span{position:absolute;right:10px;bottom:10px;padding:6px 10px;background:white;color:#454c54;font-size:12px;box-shadow:0 0 0 1px #dfe1e3}
+#main .hvr-fit-photo > a > span{position:absolute;right:10px;bottom:10px;padding:6px 10px;background:white;color:#454c54;font-size:12px;box-shadow:0 0 0 1px #dfe1e3}
 #main .hvr-reference[data-application] .hvr-equipment ul{grid-template-columns:repeat(3,minmax(0,1fr))}
 @media(max-width:650px){#main .hvr-reference[data-application] .hvr-equipment ul{grid-template-columns:1fr;gap:0}#main .hvr-reference[data-application] .hvr-equipment li{border:0;border-bottom:1px solid var(--hvr-line);padding:12px 0;text-align:left}#main .hvr-reference[data-application] .hvr-equipment li:last-child{border:0}#main .hvr-reference[data-application] .hvr-actions a{width:100%}#main .hvr-reference[data-application] .hvr-fit-photo>a{aspect-ratio:1.5}}
 

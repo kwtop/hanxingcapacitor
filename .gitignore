@@ -39,6 +39,7 @@ dist/
 !/CONTENT_SOURCES.md
 !/MEDIA-AUDIT.md
 !/IMAGEGEN-NOTES.md
+!/AGENTS.md
 
 # Editor and operating-system files
 .DS_Store

@@ -1,0 +1,23 @@
+{
+  "banner-desktop": {
+    "src": "/images/home-hero-20261119/home-desktop-1672.webp",
+    "srcset": "/images/home-hero-20261119/home-desktop-1280.webp 1280w, /images/home-hero-20261119/home-desktop-1672.webp 1672w, /images/home-hero-20261119/home-desktop-2560.webp 2560w",
+    "width": 1672,
+    "height": 941,
+    "alt": "CBB60, CBB61, CBB65 and CD60 motor capacitors on a steel workbench."
+  },
+  "banner-tablet": {
+    "src": "/images/home-hero-20261119/home-tablet-1086.webp",
+    "srcset": "/images/home-hero-20261119/home-tablet-800.webp 800w, /images/home-hero-20261119/home-tablet-1086.webp 1086w, /images/home-hero-20261119/home-tablet-1440.webp 1440w",
+    "width": 1086,
+    "height": 1448,
+    "alt": "CBB60, CBB61, CBB65 and CD60 motor capacitors on a steel workbench."
+  },
+  "banner-mobile": {
+    "src": "/images/home-hero-20261119/home-mobile-872.webp",
+    "srcset": "/images/home-hero-20261119/home-mobile-480.webp 480w, /images/home-hero-20261119/home-mobile-640.webp 640w, /images/home-hero-20261119/home-mobile-872.webp 872w, /images/home-hero-20261119/home-mobile-1200.webp 1200w",
+    "width": 872,
+    "height": 941,
+    "alt": "CBB60, CBB61, CBB65 and CD60 motor capacitors on a steel workbench."
+  }
+}

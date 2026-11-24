@@ -1,3 +1,4 @@
+import {localizeTree} from '../i18n/react';
 import { useEffect, useMemo, useState, type CSSProperties, type KeyboardEvent } from 'react';
 
 type Scheme = {
@@ -74,7 +75,7 @@ export default function TypographyPreview() {
     step(event.key === 'ArrowRight' ? 1 : -1);
   };
 
-  return (
+  return localizeTree((
     <div className="typography-preview" style={options} onKeyDown={handleSwitcherKeyDown}>
       <div className="tp-container">
         <header className="tp-heading">
@@ -244,5 +245,5 @@ export default function TypographyPreview() {
         <footer className="tp-footer-note">Inter Variable is applied site-wide. Switching schemes changes this preview only.</footer>
       </div>
     </div>
-  );
+  ));
 }

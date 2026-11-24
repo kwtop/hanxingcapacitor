@@ -1,0 +1,164 @@
+1818|Parta de la especificación del motor de la bomba y de la etiqueta original del condensador. Compruebe los µF nominales, VAC, frecuencia y condiciones de funcionamiento; después compare fijación, conexiones y dimensiones de instalación del CBB60 propuesto. Mantenga una especificación independiente para cada versión de bomba.
+1819|Cómo elegir el valor y las dimensiones del condensador de una bomba
+1820|Al solicitar un condensador, «tamaño» puede referirse al valor en µF o a las dimensiones físicas. Determine primero el valor eléctrico. En una bomba existente, consulte la etiqueta original junto con el modelo del motor y su esquema eléctrico. Para un conjunto nuevo, utilice los requisitos de condensador facilitados con el motor.
+1821|La potencia en kW o caballos no describe el diseño del bobinado ni la disposición de condensadores del motor. Dos motores con la misma potencia pueden necesitar capacitancias diferentes. Utilice el valor nominal especificado en lugar de convertir la potencia de la bomba a µF mediante una tabla general.
+1822|Identifique también la función del condensador en el circuito. El CBB60 es un formato de marcha. Si el motor tiene un condensador de arranque independiente, identifíquelo por separado: la coincidencia de µF no hace intercambiables ambos servicios.
+1823|Oriental Motor recomienda respetar la capacitancia y la tensión nominal especificadas al sustituir condensadores. También explica que una capacitancia incorrecta puede reducir el par, provocar vibración o sobrecalentar el motor. Aumentar los µF supone modificar el circuito del motor, no mejorar la bomba.
+1824|Oriental Motor: orientación sobre condensadores de repuesto
+1825|Servicio de condensadores de arranque y marcha
+1826|Muestra CBB60 con cables de 35 µF y 450 VAC
+1827|La muestra con cables marcada Hanxing que aparece a continuación indica 35 µF ±5%, 450 VAC, 50/60 Hz y 40/70/21. Este marcado sirve de referencia inicial para una bomba cuyo motor requiera esas características eléctricas.
+1828|El valor nominal sigue siendo 35 µF. Su tolerancia de ±5% da un intervalo calculado de 33.25 a 36.75 µF en las condiciones de ensayo aplicables. El intervalo describe la variación de una pieza de 35 µF; no constituye una lista de valores nominales alternativos para el pedido.
+1829|Distinga los VAC del condensador de la tensión de alimentación de la placa del motor. Ambos datos deben figurar en la solicitud técnica, pero describen magnitudes distintas. Si la etiqueta antigua es ilegible, consulte la especificación del condensador del motor en lugar de deducir el valor de una pieza parecida.
+1830|Interpretación de la muestra CBB60 con cables
+1831|Marcado visible
+1832|Criterio de selección
+1833|Capacitancia nominal
+1834|El motor debe requerir este valor nominal.
+1835|Intervalo nominal calculado: 33.25–36.75 µF.
+1836|Características de CA
+1838|Mantenga la tensión y frecuencia necesarias.
+1839|Categoría climática
+1840|Utilice la categoría de temperatura de esta muestra.
+1841|Muestra CBB60 con cables de 35 µF
+1842|Se ven la etiqueta original completa y ambos cables aislados.
+1843|Conexiones y montaje en el conjunto de la bomba
+1844|Una vez comprobadas las características eléctricas, compare el conjunto conectado. Una pieza con cables necesita longitud suficiente para llegar a su punto de conexión, con curvas y espacio para manipular el conector. Una pieza con lengüetas necesita espacio para el conector instalado por encima y al lado de la carcasa.
+1845|Mida el cilindro por separado de la fijación. La muestra horizontal de 25 µF de la imagen tiene un espárrago roscado; la pieza vertical marcada D&L es otra muestra. La fotografía muestra la disposición, pero el plano debe indicar la rosca y la longitud útil del espárrago.
+1846|Si la bomba tiene una tapa de condensador, mida el espacio disponible con la tapa en su posición normal. Incluya el conector instalado y el recorrido de cables. Un cilindro más corto con un conector más alto puede ocupar más espacio que el conjunto original.
+1847|Detalles que pueden impedir el montaje
+1848|Elemento
+1849|Qué comparar con el conjunto instalado
+1850|Diámetro y altura del cuerpo.
+1851|Fijación
+1852|Espárrago o abrazadera, posición de montaje y acceso para fijar.
+1853|Longitud final y terminación de cables, o geometría de lengüetas y conector acoplado.
+1854|Conjunto completo
+1855|Espacio ocupado por la fijación, el conector instalado y los cables tendidos.
+1856|Tabla de diámetro y altura CBB60
+1857|Lista de dimensiones y conexiones
+1858|Salida de cables y espárrago de base
+1859|La altura del cuerpo, la longitud del espárrago y el espacio de conexión son medidas independientes.
+1860|Dedique una línea de pedido a cada motor de bomba
+1861|Una línea de pedido útil identifica el motor y sus requisitos de condensador juntos. Agrupar varios modelos de bomba como «CBB60, 2–100 µF» deja sin definir los valores reales. Asigne una cantidad a cada configuración necesaria.
+1862|Para un motor que especifique las características fotografiadas, la descripción eléctrica puede ser «condensador de marcha CBB60, 35 µF ±5%, 450 VAC, 50/60 Hz». Añada la categoría climática y el plano de conexión y montaje de esa bomba. El marcado 40/70/21 de la muestra no debe sustituirse por el valor general de +85 °C del catálogo.
+1863|Distinga el requisito original de un cambio propuesto. Una carcasa más corta, otra terminación de cable o una fijación alternativa deben revisarse para el mismo conjunto de motor. Los cambios eléctricos y estructurales se cotizan por modelo.
+1864|Motor
+1865|Modelo de bomba y motor, con la especificación de condensador aplicable.
+1866|Condensador
+1867|µF nominales, tolerancia, VAC, frecuencia y categoría climática requerida.
+1868|Conjunto
+1869|Plano de conexión y montaje, con la cantidad de esa configuración.
+1870|Apruebe el montaje con el conector instalado
+1871|Pruebe la muestra propuesta en la fijación prevista, con el conector instalado y los cables siguiendo su recorrido normal. Compruebe el acceso a la tuerca, las curvas cerradas en la salida de cables y las interferencias con la tapa. Un cilindro que cabe en un alojamiento vacío puede resultar difícil de montar una vez conectado.
+1872|Cualquier cambio acordado durante esa revisión debe constar en el plano del pedido. Para compras repetidas, utilice las mismas referencias de motor y plano para evitar sustituir el conjunto aprobado por una pieza de fotografía similar.
+1873|Complete los datos con la documentación del motor y del condensador
+1874|Para sustituir un CBB60, obtenga la referencia original del motor y la ficha técnica del modelo antes de completar un dato ilegible. Una etiqueta parcial o la potencia de la bomba necesitan completarse con la información eléctrica de la documentación del equipo.
+1875|Una solicitud de 10 µF, 20 µF o 35 µF también necesita VAC, tolerancia, frecuencia y dimensiones de instalación. La tabla del catálogo puede dar una referencia de carcasa para una fila incluida. El plano del modelo propuesto define la fijación y las conexiones reales del pedido.
+1876|Documentos para completar una solicitud CBB60 de bomba de agua
+1877|Dato pendiente
+1878|Documento que debe solicitar
+1879|Decisión que permite tomar
+1880|µF nominales o servicio en el circuito
+1881|Especificación del motor y esquema eléctrico.
+1882|Identificar el condensador de marcha necesario y cualquier condensador de arranque con desconexión independiente.
+1883|VAC, frecuencia o categoría de funcionamiento
+1884|Ficha técnica del condensador y registro de la etiqueta original.
+1885|Mantener las características eléctricas y condiciones de funcionamiento necesarias.
+1886|Carcasa y fijación
+1887|Plano acotado del modelo.
+1888|Comprobar diámetro, altura del cuerpo y espárrago o abrazadera.
+1889|Cables o terminales de conexión rápida
+1890|Plano de conexiones y referencia del conector acoplado.
+1891|Comprobar el conjunto final de cables o la geometría de lengüetas.
+1892|Requisito de inspección
+1893|Especificación acordada del modelo y formato del registro de ensayo.
+1894|Definir los límites y el método para revisar la muestra propuesta.
+1895|Especificaciones del condensador de marcha CBB60
+1896|Datos de selección de capacitancia y tensión
+1897|Encuentre un CBB60 para el motor de su bomba
+1898|Envíe la referencia del motor, los µF y VAC necesarios y una fotografía o plano de las conexiones.
+1899|Solicitar cotización del CBB60
+1900|Referencia del motor de bomba y características del condensador de marcha especificado.
+1901|Plano de conexión y montaje, con cantidad por configuración.
+1904|Vista retocada de muestra. CBB60 marcado Hanxing con 35 µF ±5%, 450 VAC, 50/60 Hz y 40/70/21.
+1907|Vista retocada de muestra. Fotografía CBB60 con una muestra horizontal de 25 µF y su espárrago de base roscado.
+1909|Selección de condensadores CBB60 para bombas de agua
+1910|Selección de CBB61 para ventiladores de techo | Hanxing
+1911|Especifique el condensador CBB61 para el modelo exacto de ventilador de techo, la capacitancia necesaria y la tensión nominal. El pedido también necesita un plano de conexiones y las dimensiones de instalación. Para importadores y distribuidores de repuestos, mantenga una especificación por versión de ventilador, de modo que características aprobadas, mazo de cables y montaje queden vinculados a una referencia de artículo.
+1912|Identifique el ventilador y la pieza que se sustituye
+1913|Empiece por la lista de piezas y la información de servicio del fabricante del ventilador. Anote el modelo y cualquier versión o número de pieza que distinga el conjunto. Por ejemplo, Hunter pide identificar el modelo del ventilador al buscar repuestos. Conserve una fotografía clara de la etiqueta original del condensador con ese registro.
+1914|Hunter: buscar repuestos por modelo de ventilador
+1915|Pida a personal de servicio cualificado que identifique el componente averiado mediante el procedimiento de diagnóstico del fabricante. Un problema de velocidad debe diagnosticarse antes de preparar un pedido de repuestos.
+1916|Hunter: diagnóstico de ventiladores de techo
+1917|Para un diseño nuevo de ventilador, obtenga la especificación del condensador y los requisitos de ensayo aprobados por el ingeniero del motor antes de pedir muestras. Esa especificación será la referencia de revisión eléctrica y mecánica.
+1918|Respete la capacitancia y la tensión nominal de CA
+1919|La capacitancia se expresa en microfaradios (µF). Utilice el valor nominal especificado para el motor. Oriental Motor recomienda la misma capacitancia y tensión nominal al elegir un repuesto de emergencia para el condensador suministrado con sus motores de CA. También señala pérdida de par, vibración y sobrecalentamiento como posibles efectos de una capacitancia incorrecta.
+1920|Copie la tensión nominal de corriente alterna (VAC) del condensador de la especificación aprobada. Si un proveedor propone pasar de 250 VAC a 450 VAC, solicite al fabricante del equipo que revise ese repuesto concreto en cuanto a requisitos eléctricos y montaje.
+1921|La fotografía original muestra tres condensadores CBB61 independientes, cada uno con su etiqueta. Las tres muestras están marcadas 450 VAC y tolerancia de ±5%.
+1922|En la muestra de 5 µF, ±5% da un intervalo calculado de capacitancia de 4.75 a 5.25 µF. La especificación del repuesto sigue necesitando un valor nominal de 5 µF. Anote la tolerancia por separado y utilice el método de medición acordado al evaluar una muestra. Una pieza de 4.5 µF sigue teniendo un valor nominal distinto.
+1923|Características visibles en las tres muestras originales CBB61
+1924|Muestra
+1925|Tolerancia marcada
+1926|Izquierda
+1927|Centro
+1928|Derecha
+1929|Cálculo de tolerancia de capacitancia y límites de medición
+1930|Tres valores CBB61 independientes
+1931|Cada carcasa contiene un condensador independiente con su valor nominal impreso en la etiqueta.
+1932|Defina los cables o terminales de conexión rápida
+1933|Un CBB61 con cables necesita un conjunto de cables definido. Una versión con terminales de conexión rápida necesita un plano de lengüetas y un conector acoplado identificado. Incluya estos datos junto con las características eléctricas al solicitar cotización.
+1934|Utilice el esquema del ventilador para asignar cada cable o terminal. Vincule los colores a ese esquema. Si la etiqueta enumera varias capacitancias, anote las conexiones de cada valor según el diagrama.
+1935|Para cables, indique dónde empieza y termina la medida de longitud. La medida hasta el extremo del hilo pelado describe un conjunto distinto de la medida hasta la cara de un enchufe instalado. Para lengüetas, reserve espacio para el cuerpo del conector y su recorrido de inserción.
+1936|Datos de conexión que deben figurar en el plano CBB61
+1937|Detalle
+1938|Terminales de conexión rápida
+1939|Identificación de conexiones
+1940|Identificación de cables y puntos de conexión en el esquema del ventilador.
+1941|Identificación de terminales y puntos de conexión en el esquema del ventilador.
+1942|Dimensiones
+1943|Salida de cables, longitud final y preparación de extremos.
+1944|Ancho, espesor, separación y orientación de lengüetas.
+1945|Pieza de acoplamiento
+1946|Referencia del contacto o enchufe, cuando exista.
+1947|Referencia del conector acoplado.
+1948|Espacio de instalación
+1949|Recorrido de cables y acceso a la conexión.
+1950|Conector instalado y acceso para insertarlo.
+1951|Carcasas con cables y pestaña de montaje
+1952|La fotografía muestra las salidas de cables y los elementos de fijación. Consulte el plano y la ficha técnica del modelo para las dimensiones y características eléctricas.
+1953|Compruebe las dimensiones completas de instalación
+1954|Anote largo, ancho y alto de la carcasa en milímetros. Sitúe la pestaña, el orificio o la abrazadera respecto al extremo de conexión. Compruebe el acceso al tornillo y el espacio dentro de la carcasa del ventilador.
+1955|Revise el condensador con el conector previsto instalado y los cables tendidos. El volumen instalado incluye conexiones y fijaciones. Por ello, carcasas de iguales dimensiones pueden necesitar espacios de montaje diferentes.
+1956|Una fotografía ayuda a identificar la disposición. Obtenga dimensiones y tolerancias del plano propuesto y revise la muestra montada en el conjunto previsto.
+1957|Lista de dimensiones, terminales y montaje
+1958|Apruebe el plano y una muestra instalada
+1959|Solicite una ficha técnica CBB61 y un plano acotado que identifiquen el modelo propuesto. Anote la revisión de cada documento. Compruebe las características y condiciones de funcionamiento junto con los detalles de carcasa, fijación y conexión.
+1960|Si cambia el conector, el conjunto de cables o la carcasa, revise la muestra con el mazo de cables del ventilador previsto. Compruebe el acoplamiento del conector, el recorrido de cables y el acceso de montaje. El ingeniero responsable debe evaluar el funcionamiento eléctrico mediante el método y los límites acordados.
+1961|Conserve la referencia de la muestra aprobada y las revisiones del plano y ficha técnica en la especificación de compra. Identifique cada certificado o informe de inspección solicitado por el modelo que cubre.
+1962|Aprobación de muestras OEM y control documental
+1963|Envíe una solicitud de cotización por modelo
+1964|Una solicitud de cotización (RFQ) debe identificar cada versión del condensador por separado. Indique la cantidad de cada combinación de características y conexiones, el destino y los requisitos de etiqueta o embalaje. Puede utilizar la siguiente lista para preparar la solicitud.
+1965|Información de compra para pedidos de repuestos CBB61
+1966|Información que debe enviar
+1967|Referencia del equipo
+1968|Modelo del ventilador y motor, referencia de repuesto y fotografía de la etiqueta original.
+1969|Requisito eléctrico
+1970|Servicio de marcha, cada valor nominal en µF, tolerancia, VAC nominales y frecuencia.
+1971|Dimensiones del cuerpo en mm, detalles de montaje y espacio disponible.
+1972|Plano de cables o lengüetas, asignación de conexiones y referencia del conector acoplado.
+1973|Documentos de aprobación
+1974|Cantidad de muestras necesaria, revisiones de plano y ficha técnica, ensayos y criterios de aceptación.
+1975|Desglose del pedido
+1976|Cantidad por versión, destino, diseño de etiqueta y requisitos de embalaje.
+1977|Pida que la cotización indique el pedido mínimo de cada versión, el coste y plazo de preparación de muestras y el plazo de producción. Acuerde qué aprobación o hito comercial inicia el periodo de producción cotizado.
+1978|Especificaciones del CBB61 para ventiladores
+1979|Preguntas sobre cantidades, muestras y entrega
+1980|Especifique las conexiones de su CBB61
+1981|Envíe la referencia del ventilador y su especificación para solicitar una ficha técnica CBB61 y un plano del modelo propuesto.
+1982|Solicitar documentos CBB61
+1983|Modelo del ventilador y referencias de plano o muestra correspondientes.
+1984|Cantidades por versión, destino y condiciones de muestras solicitadas.
+1987|Vista retocada de muestra. CBB61 de 4.5, 5 y 6 µF, cada uno de 450 VAC y tolerancia de ±5%.
+1989|Carcasas CBB61 rojas originales con cables y pestaña de montaje visible.
+1993|Significado de 40/85/21 en el CBB65 | Hanxing Capacitor

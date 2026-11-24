@@ -1,0 +1,3533 @@
+[
+  {
+    "guide": {
+      "slug": "cbb60-capacitor-selection",
+      "defaultSeries": "CBB60",
+      "title": "CBB60 capacitors: ratings, uses and replacement choices",
+      "seoTitle": "CBB60 Capacitor Ratings and Replacement Selection",
+      "summary": "Choose a CBB60 motor run capacitor by µF, VAC, duty and installed fit. Compare 25 µF and 35 µF samples and understand the published range.",
+      "answer": "CBB60 is a cylindrical film motor run capacitor. Choose its capacitance from the motor specification, then match the rated AC voltage, operating conditions and physical installation. A CBB60 designation identifies the family; it does not identify a complete replacement part.",
+      "sources": [
+        {
+          "label": "Oriental Motor: replacement capacitor guidance",
+          "href": "https://faq.orientalmotor.com/can-i-use-capacitors-other-than-the-one-that-comes-with-the-ac-motor"
+        },
+        {
+          "label": "HAN XING CBB60",
+          "href": "/products/cbb60-motor-run-capacitor/"
+        }
+      ],
+      "category": "Compare & select",
+      "inquiry": {
+        "heading": "Find the CBB60 for your motor",
+        "note": "Send the motor reference, required rating and available installation space. We can quote the matching configuration and its drawing.",
+        "label": "Request a CBB60 quote",
+        "request": "quote"
+      },
+      "related": [
+        {
+          "label": "Compare capacitor families",
+          "href": "/resources/cbb60-vs-cbb61-vs-cbb65/"
+        },
+        {
+          "label": "Capacitor purchasing and quotations",
+          "href": "/resources/motor-capacitor-wholesale-rfq/"
+        }
+      ]
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "run-capacitor-applications",
+          "heading": "Where does a CBB60 belong?",
+          "paragraphs": [
+            "In a capacitor-run single-phase motor, the capacitor remains connected to the auxiliary winding during operation. CBB60 applications include water pumps and selected washing-machine, blower and smoke-exhaust motors designed for this arrangement. An inverter-driven motor or a motor with a different starting circuit needs its own specified component.",
+            "The HAN XING catalogue describes metallized polypropylene film in an insulated plastic case. Its published family range is 2–100 µF and 110–450 VAC. Those endpoints describe the catalogue range; the quoted model determines the available combination of capacitance, voltage and case."
+          ]
+        },
+        {
+          "id": "cbb60-replacement-values",
+          "heading": "25 µF and 35 µF are different motor requirements",
+          "paragraphs": [
+            "The supplied wired HAN XING sample is marked 35 µF ±5%, 450 VAC and 50/60 Hz. The horizontal sample in photograph P003 is 25 µF, also at 450 VAC. A motor specified for 25 µF still requires that value even if the 35 µF case fits its bracket. Increasing capacitance changes the auxiliary-winding current and motor behavior.",
+            "For a replacement, keep the specified nominal µF. A higher AC voltage rating is an option only within the motor maker’s approved replacement specification, with the same duty and suitable dimensions. A 450 VAC label describes the capacitor rating, not a requirement to run the motor from a 450 V supply."
+          ],
+          "citations": [
+            {
+              "paragraph": 1,
+              "label": "Oriental Motor: replacement capacitor guidance",
+              "href": "https://faq.orientalmotor.com/can-i-use-capacitors-other-than-the-one-that-comes-with-the-ac-motor"
+            }
+          ],
+          "photos": [
+            {
+              "src": "/images/real/cbb60-hanxing-wired.jpg",
+              "title": "35 µF wired CBB60 sample",
+              "alt": "Hanxing-marked CBB60 sample showing 35 µF ±5%, 450 VAC, 50/60 Hz and 40/70/21.",
+              "text": "The complete original label and both insulated leads are visible.",
+              "original": true,
+              "showLabelDetail": false
+            }
+          ]
+        },
+        {
+          "id": "temperature-and-installation",
+          "heading": "Temperature category and installed fit",
+          "paragraphs": [
+            "The 35 µF sample carries 40/70/21. The catalogue lists −40 to +85 °C for the series, while the selected model defines its own temperature category. Neither source establishes a universal CBB60 life class. Any Class B or other life claim needs its rated voltage, temperature and supporting model document.",
+            "Wire leads suit an assembly with a routed harness. Quick-connect blades suit a defined mating connector. A base stud changes the mounting envelope, while a twin-core cable needs its exit direction and finished length specified. The body diameter alone cannot describe these installations."
+          ],
+          "links": [
+            {
+              "label": "CBB60 dimensions chart",
+              "href": "/resources/cbb60-capacitor-dimensions-chart/"
+            },
+            {
+              "label": "Water-pump selection example",
+              "href": "/resources/cbb60-water-pump-capacitor-selection/"
+            }
+          ]
+        }
+      ],
+      "details": []
+    }
+  },
+  {
+    "guide": {
+      "slug": "cbb60-capacitor-dimensions-chart",
+      "defaultSeries": "CBB60",
+      "title": "CBB60 capacitor dimensions chart",
+      "seoTitle": "CBB60 Dimensions: Diameter, Height and Mounting",
+      "summary": "Find CBB60 case dimensions by µF and voltage, including the 35 µF 450 VAC example. Allow separate space for leads, connectors and a mounting stud.",
+      "answer": "The catalogue gives a 35 µF CBB60 in the 370–450 VAC group a body size of Ø45 × 90 mm. The complete installed height also includes the connections and mounting hardware. Use the table to shortlist a case, then use the selected model drawing for the assembly.",
+      "sources": [
+        {
+          "label": "HAN XING CBB60",
+          "href": "/products/cbb60-motor-run-capacitor/"
+        }
+      ],
+      "category": "Prepare your RFQ",
+      "publishedAt": "2026-11-05",
+      "inquiry": {
+        "heading": "Get the drawing for the selected case",
+        "note": "Include the µF, VAC, maximum installed size and fixing method with your drawing request.",
+        "label": "Request a CBB60 drawing",
+        "request": "documents"
+      },
+      "related": [
+        {
+          "label": "Compare capacitor families",
+          "href": "/resources/cbb60-vs-cbb61-vs-cbb65/"
+        },
+        {
+          "label": "Capacitor purchasing and quotations",
+          "href": "/resources/motor-capacitor-wholesale-rfq/"
+        }
+      ]
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "catalogue-dimensions",
+          "heading": "Case diameter and height by rating",
+          "paragraphs": [
+            "Each cell below is diameter × body height in millimetres, transcribed from printed page 7 of the Zebang Refrigeration catalogue. The voltage groups overlap. A quote should identify the actual model and the column used, so two suppliers are comparing the same construction."
+          ],
+          "tables": [
+            {
+              "caption": "CBB60 catalogue case dimensions, Ø × H (mm)",
+              "headers": [
+                "µF",
+                "110–300 VAC",
+                "250–400 VAC",
+                "370–450 VAC"
+              ],
+              "rows": [
+                [
+                  "2",
+                  "30 × 60",
+                  "30 × 60",
+                  "30 × 60"
+                ],
+                [
+                  "5",
+                  "30 × 60",
+                  "30 × 60",
+                  "30 × 60"
+                ],
+                [
+                  "10",
+                  "30 × 60",
+                  "30 × 60",
+                  "34 × 60"
+                ],
+                [
+                  "15",
+                  "30 × 60",
+                  "34 × 60",
+                  "34 × 70"
+                ],
+                [
+                  "20",
+                  "34 × 60",
+                  "36 × 70",
+                  "40 × 70"
+                ],
+                [
+                  "25",
+                  "36 × 70",
+                  "40 × 70",
+                  "45 × 70"
+                ],
+                [
+                  "30",
+                  "40 × 70",
+                  "45 × 70",
+                  "45 × 80"
+                ],
+                [
+                  "35",
+                  "40 × 70",
+                  "45 × 70",
+                  "45 × 90"
+                ],
+                [
+                  "40",
+                  "45 × 70",
+                  "45 × 80",
+                  "45 × 100"
+                ],
+                [
+                  "45",
+                  "45 × 70",
+                  "50 × 90",
+                  "50 × 100"
+                ],
+                [
+                  "50",
+                  "45 × 70",
+                  "50 × 90",
+                  "50 × 100"
+                ],
+                [
+                  "60",
+                  "45 × 90",
+                  "50 × 90",
+                  "50 × 110"
+                ],
+                [
+                  "70",
+                  "50 × 90",
+                  "50 × 100",
+                  "50 × 125"
+                ],
+                [
+                  "80",
+                  "50 × 90",
+                  "50 × 100",
+                  "50 × 125"
+                ],
+                [
+                  "90",
+                  "50 × 100",
+                  "55 × 100",
+                  "55 × 125"
+                ],
+                [
+                  "100",
+                  "50 × 125",
+                  "55 × 125",
+                  "60 × 125"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "match-the-drawing",
+          "heading": "Why a 35 µF 450 VAC part needs more than 90 mm",
+          "paragraphs": [
+            "The 90 mm catalogue dimension is the case height. A fitted blade connector projects above the terminal end; wire leads need a route that avoids pinching beneath the cover. A base stud extends below the case. Adding these features to a 90 mm body can exceed a compartment that appears adequate from the catalogue alone.",
+            "For an existing pump bracket, record its usable internal diameter and maximum installed height. The model drawing adds the body tolerances, stud thread and usable length. Dimensions for unlisted ratings must come from their own model drawings."
+          ]
+        },
+        {
+          "id": "measure-installed-clearance",
+          "heading": "Allow room to connect and fasten the part",
+          "paragraphs": [
+            "A wired capacitor needs a defined lead length, connector and exit direction. For quick-connect terminals, blade width, thickness and spacing belong on the drawing along with the clearance for inserting the mating connector. Twin-core cable and separate leads can occupy different paths even when the capacitor body is identical.",
+            "The P003 photograph also includes a separate D&L-marked part. The horizontal 25 µF sample is the reference used here; the photograph does not establish the other part’s full specification or availability.",
+            "Fit the sample with its fixing tightened, connector seated and harness routed as intended, then close the equipment cover. Keep that arrangement with the approved drawing revision so the production order reproduces the same fit."
+          ],
+          "links": [
+            {
+              "label": "Measure terminals and mounting",
+              "href": "/resources/dimensions-terminals-mounting/"
+            }
+          ],
+          "photos": [
+            {
+              "src": "/images/real/cbb60-18.jpg",
+              "title": "CBB60 threaded base stud and lead exit",
+              "alt": "Horizontal CBB60 sample marked 25 µF, with insulated leads and a threaded base stud.",
+              "text": "Use the model drawing to measure the stud and connected height.",
+              "original": true,
+              "showLabelDetail": false
+            }
+          ],
+          "aliases": [
+            "cbb60-chart-to-drawing"
+          ]
+        }
+      ],
+      "details": []
+    }
+  },
+  {
+    "guide": {
+      "slug": "cbb61-capacitor-ratings-replacement",
+      "defaultSeries": "CBB61",
+      "title": "Choosing the right CBB61 fan capacitor replacement",
+      "seoTitle": "CBB61 Replacement: 4.5 µF, 5 µF and Voltage",
+      "summary": "Compare CBB61 fan capacitor values, tolerance and 250 VAC versus 450 VAC ratings. Choose a replacement for the motor, with the correct connections and fit.",
+      "answer": "Keep the fan motor’s specified capacitance when replacing a CBB61. A 5 µF part is not a direct substitute for 4.5 µF. The replacement also needs the specified AC voltage rating, temperature category and connection arrangement, even if its rectangular case looks identical.",
+      "sources": [
+        {
+          "label": "Oriental Motor: replacement capacitor guidance",
+          "href": "https://faq.orientalmotor.com/can-i-use-capacitors-other-than-the-one-that-comes-with-the-ac-motor"
+        },
+        {
+          "label": "HAN XING CBB61",
+          "href": "/products/cbb61-fan-capacitor/"
+        }
+      ],
+      "category": "Compare & select",
+      "inquiry": {
+        "heading": "Match a CBB61 to the fan model",
+        "note": "A label photo and the fan model identify the required value. Include the case and connection dimensions for a replacement quote.",
+        "label": "Request a CBB61 quote",
+        "request": "quote"
+      },
+      "related": [
+        {
+          "label": "Compare capacitor families",
+          "href": "/resources/cbb60-vs-cbb61-vs-cbb65/"
+        },
+        {
+          "label": "Capacitor purchasing and quotations",
+          "href": "/resources/motor-capacitor-wholesale-rfq/"
+        }
+      ]
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "cbb61-values",
+          "heading": "What changes between 4.5 µF, 5 µF and 6 µF?",
+          "paragraphs": [
+            "The three supplied blade-terminal samples carry 4.5 µF, 5 µF and 6 µF, each at 450 VAC and ±5%. These are separate nominal values. The 4.5 µF tolerance band is 4.275–4.725 µF, while 5 µF ±5% gives 4.75–5.25 µF. The bands do not overlap. These figures are calculations from the labels, not measured inspection results.",
+            "Increasing capacitance changes the auxiliary-winding current. It is not an approved way to recover fan speed or starting torque. A slow ceiling fan or humming exhaust fan needs a diagnosis of its capacitor, supply, connections and mechanical load before a replacement value is chosen."
+          ],
+          "citations": [
+            {
+              "paragraph": 1,
+              "label": "Oriental Motor: replacement capacitor guidance",
+              "href": "https://faq.orientalmotor.com/can-i-use-capacitors-other-than-the-one-that-comes-with-the-ac-motor"
+            }
+          ],
+          "photos": [
+            {
+              "src": "/images/real/cbb61-13.jpg",
+              "title": "Three individual CBB61 ratings",
+              "alt": "CBB61 samples marked 4.5, 5 and 6 µF, each rated 450 VAC with ±5% tolerance.",
+              "text": "Each housing contains a separate capacitor with the nominal value printed on its label.",
+              "original": true
+            }
+          ]
+        },
+        {
+          "id": "cbb61-voltage",
+          "heading": "250 VAC and 450 VAC describe voltage capability",
+          "paragraphs": [
+            "The HAN XING CBB61 catalogue lists 0.5–35 µF across voltage groups spanning 250–450 VAC. A part marked 450 VAC can only replace a lower-voltage part when the motor maker’s replacement specification permits it and the remaining electrical and installation requirements match. Selecting a lower rating because the mains supply is lower ignores the voltage across the capacitor in its motor circuit.",
+            "The photographed samples show 50/60 Hz and 40/70/21. Their labels document those particular samples; they do not establish the temperature category of every rectangular polypropylene capacitor sold as CBB61. Use the datasheet for the offered model when the equipment runs near a heat source."
+          ]
+        },
+        {
+          "id": "cbb61-model-fit",
+          "heading": "The fan model determines the complete replacement",
+          "paragraphs": [
+            "CBB61 film capacitors serve selected ceiling, table, stand, ventilation and air-conditioner fan motors, as well as compatible blower or appliance motors. The equipment name alone does not select the component. Some assemblies use cylindrical capacitors; electronically controlled motors can have a different circuit entirely.",
+            "For the same electrical value, a lead-wire version and a blade-terminal version can require different assembly work. Case length, width and height, mounting tabs and the connector must all suit the fan. If the original part number is missing, the motor model and wiring diagram are more useful than matching the shell color."
+          ],
+          "links": [
+            {
+              "label": "CBB61 leads and blade terminals",
+              "href": "/resources/cbb61-wire-leads-blade-terminals/"
+            },
+            {
+              "label": "Fan and blower selection",
+              "href": "/resources/fan-blower-motor-capacitor-selection/"
+            }
+          ]
+        }
+      ],
+      "details": []
+    }
+  },
+  {
+    "guide": {
+      "slug": "cbb61-wire-leads-blade-terminals",
+      "defaultSeries": "CBB61",
+      "title": "CBB61 wire leads and blade terminals: which fits your fan?",
+      "seoTitle": "CBB61 Leads vs Blade Terminals: Wiring and Fit",
+      "summary": "Choose CBB61 lead wires or blade terminals for the fan assembly. Define lead length, terminal size, mounting tabs and wiring without relying on wire colors.",
+      "answer": "Use wire leads when the fan assembly needs a routed harness, and blade terminals when it uses a matching quick-connect plug. Both versions still need the fan’s specified electrical rating. The connection drawing determines which wires or terminal groups belong to each capacitor section.",
+      "sources": [
+        {
+          "label": "HAN XING CBB61",
+          "href": "/products/cbb61-fan-capacitor/"
+        }
+      ],
+      "category": "Compare & select",
+      "publishedAt": "2026-11-01",
+      "inquiry": {
+        "heading": "Get the connection drawing for your fan",
+        "note": "Include the original connection photo, motor diagram and required lead or connector details.",
+        "label": "Request CBB61 connection details",
+        "request": "documents"
+      },
+      "related": [
+        {
+          "label": "Compare capacitor families",
+          "href": "/resources/cbb60-vs-cbb61-vs-cbb65/"
+        },
+        {
+          "label": "Capacitor purchasing and quotations",
+          "href": "/resources/motor-capacitor-wholesale-rfq/"
+        }
+      ]
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "ceiling-fan-capacitor-selection",
+          "heading": "Start with the fan assembly",
+          "paragraphs": [
+            "Two fan versions can share a CBB61 capacitance value and still need different harnesses. One places the capacitor beside the terminal block; another routes its leads through a narrow housing. Specify each harness against the fan model and connection drawing so each order line identifies the right assembly."
+          ]
+        },
+        {
+          "id": "wire-lead-routing",
+          "heading": "Specify what the connector actually mates with",
+          "paragraphs": [
+            "A lead specification includes finished length, measurement points, exit direction, conductor arrangement and end termination. For a crimped connector, identify the mating part or its drawing. An extra length allowance can solve routing problems, but loose cable also needs enough protected space inside the enclosure.",
+            "For quick-connect blades, the relevant dimensions are width, thickness, spacing and position relative to the case. A nominal terminal width alone does not establish a reliable fit. The installed female connector adds height and needs room for insertion and removal."
+          ],
+          "aliases": [
+            "blade-terminal-geometry"
+          ],
+          "photos": [
+            {
+              "src": "/images/real/cbb61-leads-10.jpg",
+              "title": "Wire-lead housings and a mounting tab",
+              "alt": "Original red CBB61 housings with wire leads and a visible mounting tab.",
+              "text": "The photograph shows the lead exits and fixing features. Use the model drawing and datasheet for dimensions and electrical ratings.",
+              "original": true
+            }
+          ]
+        },
+        {
+          "id": "cbb61-electrical-requirement",
+          "heading": "Wire colors do not identify a circuit",
+          "paragraphs": [
+            "A replacement with the same wire count can have a different internal connection. This is particularly important on fan-speed assemblies with several capacitance sections. The motor wiring diagram and the capacitor connection drawing establish the section values and common connections; colors alone cannot do that.",
+            "The blade-terminal samples shown here are marked 4.5 µF, 5 µF and 6 µF at 450 VAC. The red wire-lead housings show a different connection and mounting format. Their electrical ratings are not documented in the supplied photograph."
+          ],
+          "aliases": [
+            "cbb61-connection-photos"
+          ],
+          "photos": [
+            {
+              "src": "/images/real/cbb61-13.jpg",
+              "title": "Three individual CBB61 ratings",
+              "alt": "CBB61 samples marked 4.5, 5 and 6 µF, each rated 450 VAC with ±5% tolerance.",
+              "text": "Each housing contains a separate capacitor with the nominal value printed on its label.",
+              "original": true
+            }
+          ]
+        },
+        {
+          "id": "cbb61-mounting",
+          "heading": "Approve the part with the fan cover closed",
+          "paragraphs": [
+            "The installed envelope includes case length, width and height, mounting-tab holes, screw clearance and the connected harness. A component can fit on an open bench and foul the cover after the plug is fitted. A mounted sample makes that interference visible before a bulk order.",
+            "Keep the approved lead length, connector and drawing revision with the sample reference. If any of those changes, review the affected fit again. Electrical or structural changes to HAN XING models are quoted by model; label and packaging customization have a separate artwork approval."
+          ],
+          "links": [
+            {
+              "label": "OEM sample and artwork approval",
+              "href": "/resources/oem-capacitor-sample-approval/"
+            }
+          ],
+          "aliases": [
+            "connection-approval",
+            "cbb61-rfq-checklist"
+          ]
+        }
+      ],
+      "details": []
+    }
+  },
+  {
+    "guide": {
+      "slug": "single-vs-dual-run-capacitors",
+      "defaultSeries": "CBB65",
+      "title": "Single or dual-run capacitor for an air conditioner?",
+      "seoTitle": "CBB65 Single vs Dual Run Capacitors for HVAC",
+      "summary": "Select a CBB65 HVAC capacitor by its single or dual µF values, VAC and terminals. Compare 35/5 with 45/5 and identify compressor and fan requirements.",
+      "answer": "A single-run capacitor has one capacitance section. A dual-run capacitor combines two sections, commonly serving the compressor and fan in an air conditioner. Match every required µF value and the terminal assignments to the equipment documentation; the can shape does not establish compatibility.",
+      "sources": [
+        {
+          "label": "AmRad: dual-run terminal markings",
+          "href": "https://amradmanufacturing.com/wp-content/uploads/2025/04/TES5-Instruction-Sheet.pdf"
+        },
+        {
+          "label": "Oriental Motor: replacement capacitor guidance",
+          "href": "https://faq.orientalmotor.com/can-i-use-capacitors-other-than-the-one-that-comes-with-the-ac-motor"
+        },
+        {
+          "label": "HAN XING CBB65",
+          "href": "/products/cbb65-air-conditioner-capacitor/"
+        }
+      ],
+      "category": "Compare & select",
+      "inquiry": {
+        "heading": "Source the required CBB65 configuration",
+        "note": "Send the equipment reference and the original single value or dual pair, together with the terminal-end photo and bracket dimensions.",
+        "label": "Request a CBB65 quote",
+        "request": "quote"
+      },
+      "related": [
+        {
+          "label": "Compare capacitor families",
+          "href": "/resources/cbb60-vs-cbb61-vs-cbb65/"
+        },
+        {
+          "label": "Capacitor purchasing and quotations",
+          "href": "/resources/motor-capacitor-wholesale-rfq/"
+        }
+      ]
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "keep-the-two-values-separate",
+          "heading": "Read a dual value as two separate requirements",
+          "paragraphs": [
+            "A 50+5 µF label identifies separate 50 µF and 5 µF sections. It does not specify a single 55 µF component. In a conventional dual-run HVAC layout, the common terminal is shared by the two sections. C, HERM and FAN markings identify the intended connections on models using those markings; terminal position and the number of blades are not a wiring diagram.",
+            "The supplied HAN XING photographs show a 20 µF single-run capacitor and a 50+5 µF dual-run capacitor, both marked 450 VAC. Use the equipment documentation to identify the single value or dual pair required for your replacement."
+          ],
+          "citations": [
+            {
+              "paragraph": 0,
+              "label": "AmRad: dual-run terminal markings",
+              "href": "https://amradmanufacturing.com/wp-content/uploads/2025/04/TES5-Instruction-Sheet.pdf"
+            }
+          ],
+          "aliases": [
+            "match-the-connections",
+            "sample-examples"
+          ],
+          "photos": [
+            {
+              "src": "/images/real/cbb65-2.jpg",
+              "title": "20 µF single-run sample",
+              "alt": "CBB65 capacitor marked 20 µF ±5%, 450 VAC and 50/60 Hz.",
+              "text": "The label records one nominal capacitance.",
+              "original": true
+            },
+            {
+              "src": "/images/real/cbb65-dual-run-7.jpg",
+              "title": "50+5 µF dual-run sample",
+              "alt": "CBB65 dual-run capacitor marked 50+5 µF and 450 VAC beside its carton.",
+              "text": "The two capacitance values belong to the two specified circuit sections.",
+              "original": true
+            }
+          ]
+        },
+        {
+          "id": "35-5-vs-45-5",
+          "heading": "Can 45/5 replace 35/5?",
+          "paragraphs": [
+            "The fan sections are both rated 5 µF, but a 45 µF section does not match a compressor specified for 35 µF. Use the specified pair or an alternative expressly approved for the equipment. Matching the fan section alone is not enough to select a compatible dual-run capacitor.",
+            "The same principle applies to 370 VAC, 440 VAC and 450 VAC replacement questions. Preserve both capacitance values and use a voltage rating allowed by the equipment specification. The available HAN XING CBB65 dual-run catalogue range is 1+15 to 15+80 µF at 370–450 VAC; that range does not guarantee every possible pair."
+          ]
+        },
+        {
+          "id": "refrigeration-circuit",
+          "heading": "A compressor can need run duty, start duty or both",
+          "paragraphs": [
+            "Air conditioners, heat pumps, condensing units and refrigerated air dryers use different motor circuits. In a refrigerated dryer for a compressed-air system, select the compressor and fan capacitors against their respective motor specifications. The circuit determines whether a CBB65 run capacitor is suitable.",
+            "A compressor starting circuit can also use an intermittent-duty start capacitor and switching device. A run capacitor cannot be selected from a start-capacitor value, including a 330 V starting specification. Small refrigerator compressors and electronically controlled systems need the compressor maker’s actual circuit and part reference."
+          ],
+          "links": [
+            {
+              "label": "Start and run capacitor differences",
+              "href": "/resources/start-vs-run-capacitors/"
+            }
+          ]
+        },
+        {
+          "id": "cbb65-installed-fit",
+          "heading": "Match the terminal end as well as the can",
+          "paragraphs": [
+            "For a CBB65 cross-reference, retain the OEM part number, electrical values and terminal-end photo together. Round and oval cans can need different brackets. Body dimensions, fastened height and connected terminal clearance determine whether the proposed part will fit. The frequency, tolerance, temperature and safety requirements belong to the same model record."
+          ],
+          "links": [
+            {
+              "label": "CBB65 temperature markings",
+              "href": "/resources/cbb65-capacitor-temperature-ratings/"
+            }
+          ],
+          "aliases": [
+            "record-the-values-separately",
+            "cbb65-sample-and-quotation"
+          ]
+        }
+      ],
+      "details": []
+    }
+  },
+  {
+    "guide": {
+      "slug": "cbb65-capacitor-temperature-ratings",
+      "defaultSeries": "CBB65",
+      "title": "What does 40/85/21 mean on a CBB65 capacitor?",
+      "seoTitle": "40/85/21 Meaning: CBB65 Temperature Ratings",
+      "summary": "Read 40/85/21 and 40/70/21 capacitor temperature markings. Understand damp-heat categories, installed temperature and the limits of a life-class claim.",
+      "answer": "On the photographed CBB65, 40/85/21 identifies a lower category temperature of −40 °C, an upper category temperature of +85 °C and a 21-day damp-heat test category. The last number describes a test category. It does not specify a service-life period.",
+      "sources": [
+        {
+          "label": "TDK: climatic category and operating conditions",
+          "href": "https://www.tdk-electronics.tdk.com/inf/20/25/ds/B32350_B32352.pdf"
+        },
+        {
+          "label": "TDK: capacitor safety and operation classes",
+          "href": "https://in.tdk-electronics.tdk.com/download/3146718/f510b4914732a9f88af87ed4b3ed65ae/ac-filmcapacitors-po-pdf.pdf"
+        },
+        {
+          "label": "HAN XING CBB65",
+          "href": "/products/cbb65-air-conditioner-capacitor/"
+        }
+      ],
+      "category": "Understand capacitors",
+      "publishedAt": "2026-11-01",
+      "inquiry": {
+        "heading": "Get the operating data for your CBB65",
+        "note": "Include the required µF value or pair, VAC and the temperature conditions at the mounting position.",
+        "label": "Request CBB65 model data",
+        "request": "documents"
+      },
+      "related": [
+        {
+          "label": "Compare capacitor families",
+          "href": "/resources/cbb60-vs-cbb61-vs-cbb65/"
+        },
+        {
+          "label": "Capacitor purchasing and quotations",
+          "href": "/resources/motor-capacitor-wholesale-rfq/"
+        }
+      ]
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "climatic-category-code",
+          "heading": "40/70/21 and 40/85/21 have different upper limits",
+          "paragraphs": [
+            "Both markings specify the same lower category temperature and damp-heat duration. Their upper limits differ: +70 °C for 40/70/21 and +85 °C for 40/85/21. The original CBB65 sample carries 40/85/21. Other models need their own stated category, even when the case looks the same.",
+            "TDK’s climatic-data example separates lower temperature, upper temperature and damp-heat test conditions in its datasheet. Use that distinction when reading a category code; the TDK model’s electrical and life ratings remain specific to TDK."
+          ],
+          "citations": [
+            {
+              "paragraph": 1,
+              "label": "TDK: climatic category and operating conditions",
+              "href": "https://www.tdk-electronics.tdk.com/inf/20/25/ds/B32350_B32352.pdf"
+            }
+          ],
+          "aliases": [
+            "original-temperature-label"
+          ],
+          "photos": [
+            {
+              "src": "/images/real/cbb65-2.jpg",
+              "title": "40/85/21 on the CBB65 label",
+              "alt": "CBB65 label marked 20 µF ±5%, 450 VAC, 50/60 Hz and 40/85/21.",
+              "text": "The climatic code is printed below the voltage and frequency.",
+              "original": true,
+              "showLabelDetail": true
+            }
+          ]
+        },
+        {
+          "id": "installed-thermal-environment",
+          "heading": "Use the temperature at the capacitor location",
+          "paragraphs": [
+            "An outdoor air temperature does not describe the space beside a compressor or inside a closed electrical compartment. Nearby heat sources, airflow and the operating cycle affect that location. For an OEM selection, provide the equipment’s defined operating environment and temperature at the proposed mounting position.",
+            "Leave the clearance required by the model drawing around the can and connections. A bracket must secure the intended body without obstructing any specified safety mechanism. The terminal cover, connector and adjacent wiring are part of the thermal and installation review too."
+          ],
+          "aliases": [
+            "humidity-and-installation"
+          ]
+        },
+        {
+          "id": "temperature-and-life",
+          "heading": "A temperature category does not establish a life class",
+          "paragraphs": [
+            "The C and P1 printed after 40/85/21 on the original label concern operation class and an older protection designation. They answer different questions from the climatic code. A defined life claim needs its rated voltage, frequency, temperature and duty conditions in the model documentation.",
+            "Storage conditions belong in the datasheet or packing instructions. The operating-temperature marking does not specify warehouse humidity, storage time or handling requirements. Use the model’s storage instructions when holding stock before assembly."
+          ],
+          "links": [
+            {
+              "label": "Safety classes and design life",
+              "href": "/resources/iec-60252-1-capacitor-safety-classes/"
+            },
+            {
+              "label": "Reading an inspection report",
+              "href": "/resources/motor-capacitor-inspection-report-checklist/"
+            }
+          ],
+          "aliases": [
+            "thermal-purchase-specification"
+          ]
+        }
+      ],
+      "details": []
+    }
+  },
+  {
+    "guide": {
+      "slug": "cd60-start-capacitor-duty-cycle",
+      "defaultSeries": "CD60",
+      "title": "CD60 start capacitor duty cycle and restart limits",
+      "seoTitle": "CD60 Duty Cycle: On-Time and Restart Limits",
+      "summary": "Calculate start capacitor duty cycle from on-time and rest time. Compare two starting patterns and specify CD60 timing limits for a pump or compressor motor.",
+      "answer": "A CD60 is an intermittent-duty AC motor start capacitor. Its permitted on-time and restart interval come from the selected model’s duty rating. Calculate duty cycle as energized time divided by the complete start-to-start cycle, and retain the maximum on-time as a separate limit.",
+      "sources": [
+        {
+          "label": "KEMET: MS/MD starting-duty example",
+          "href": "https://yageogroup.com/content/datasheet/asset/file/KEM_A4041_MS_MD"
+        },
+        {
+          "label": "IEC 60252-2: motor start capacitors",
+          "href": "https://webstore.iec.ch/en/publication/1157"
+        },
+        {
+          "label": "HAN XING CD60",
+          "href": "/products/cd60-start-capacitor/"
+        }
+      ],
+      "category": "Understand capacitors",
+      "publishedAt": "2026-11-01",
+      "inquiry": {
+        "heading": "Specify the CD60 starting pattern",
+        "note": "Send the motor circuit, required rating and longest on-time with the shortest restart interval. The model proposal needs to cover that duty.",
+        "label": "Request CD60 duty data",
+        "request": "documents"
+      },
+      "related": [
+        {
+          "label": "Compare capacitor families",
+          "href": "/resources/cbb60-vs-cbb61-vs-cbb65/"
+        },
+        {
+          "label": "Capacitor purchasing and quotations",
+          "href": "/resources/motor-capacitor-wholesale-rfq/"
+        }
+      ]
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "cd60-switched-starting",
+          "heading": "The switching device ends the starting interval",
+          "paragraphs": [
+            "A start capacitor helps the auxiliary winding produce starting torque. The motor’s switching arrangement disconnects it after startup. The relay, switch or other specified device must perform that function; using the right µF value cannot compensate for a start capacitor left connected during continuous running.",
+            "For a pump or compressor, describe the longest starting interval under the specified load and the shortest interval before another start. Automatic restart attempts after a fault belong in that description. A nominal starts-per-hour figure can hide a closely spaced group of starts."
+          ],
+          "aliases": [
+            "starting-duty-fields",
+            "cd60-original-sample"
+          ],
+          "photos": [
+            {
+              "src": "/images/real/cd60-25.jpg",
+              "title": "500 µF / 300 VAC start-capacitor sample",
+              "alt": "CD60 sample showing 500 µF ±5%, 300 VAC and 50/60 Hz.",
+              "text": "The visible label gives electrical markings but no on-time or repeat-start limit.",
+              "original": true,
+              "showLabelDetail": false
+            }
+          ]
+        },
+        {
+          "id": "duty-cycle-calculation",
+          "heading": "Two sequences with the same percentage",
+          "paragraphs": [
+            "For a calculation example, 2 seconds energized followed by 118 seconds off gives a 120-second cycle. Duty cycle is 2 ÷ 120 × 100 = 1.67%, with 30 evenly spaced starts per hour. A 3-second on-time and 177-second rest also gives 1.67%, but only 20 starts per hour. The second sequence has a longer individual energized interval.",
+            "These are arithmetic examples, not HAN XING CD60 ratings or recorded tests. KEMET’s MS/MD datasheet gives a model-specific starting-duty example and shows that voltage and frequency can change the permitted duty. Its limits cannot be transferred to a CD60 by matching the percentage alone."
+          ],
+          "diagram": "starting-duty",
+          "citations": [
+            {
+              "paragraph": 1,
+              "label": "KEMET: MS/MD starting-duty example",
+              "href": "https://yageogroup.com/content/datasheet/asset/file/KEM_A4041_MS_MD"
+            }
+          ]
+        },
+        {
+          "id": "repeat-start-pattern",
+          "heading": "Specify the worst restart pattern",
+          "paragraphs": [
+            "A motor can take longer to accelerate under a different load. Repeated unsuccessful starts add energized time without bringing the motor to running speed. The equipment protection and switching system must handle that condition. Replacing the capacitor will not repair a failed relay or free a mechanically stalled motor.",
+            "Specify the required µF and VAC, frequency, maximum energized time, minimum rest interval and sequence of starts. Use the discharge arrangement required by the motor design, including any specified resistor, as part of the complete circuit."
+          ],
+          "links": [
+            {
+              "label": "CD60 replacement specifications",
+              "href": "/resources/cd60-capacitor-replacement-specifications/"
+            }
+          ],
+          "aliases": [
+            "cd60-rating-and-duty-selection",
+            "cd60-duty-request"
+          ]
+        }
+      ],
+      "details": []
+    }
+  },
+  {
+    "guide": {
+      "slug": "cd60-capacitor-replacement-specifications",
+      "defaultSeries": "CD60",
+      "title": "How to choose a CD60 start capacitor replacement",
+      "seoTitle": "CD60 Replacement: Ratings, Terminals and Duty",
+      "summary": "Read CD60 replacement ratings, including a 500 µF 300 VAC sample. Match duty, terminals and fit while keeping catalogue ranges separate from sample labels.",
+      "answer": "Choose an AC motor start capacitor with the motor’s specified capacitance and voltage, the required starting-duty limits and a compatible installation. CD60 uses an aluminium electrolytic construction intended for intermittent AC starting. A general-purpose polarized DC electrolytic is unsuitable for that circuit.",
+      "sources": [
+        {
+          "label": "KEMET: MS/MD starting-duty example",
+          "href": "https://yageogroup.com/content/datasheet/asset/file/KEM_A4041_MS_MD"
+        },
+        {
+          "label": "IEC 60252-2: motor start capacitors",
+          "href": "https://webstore.iec.ch/en/publication/1157"
+        },
+        {
+          "label": "HAN XING CD60",
+          "href": "/products/cd60-start-capacitor/"
+        }
+      ],
+      "category": "Compare & select",
+      "inquiry": {
+        "heading": "Get a CD60 replacement proposal",
+        "note": "Include the original label, motor reference, starting pattern and the connection and mounting dimensions.",
+        "label": "Request a CD60 quote",
+        "request": "quote"
+      },
+      "related": [
+        {
+          "label": "Compare capacitor families",
+          "href": "/resources/cbb60-vs-cbb61-vs-cbb65/"
+        },
+        {
+          "label": "Capacitor purchasing and quotations",
+          "href": "/resources/motor-capacitor-wholesale-rfq/"
+        }
+      ]
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "cd60-label-and-catalogue",
+          "heading": "The 500 µF sample and the catalogue describe different scopes",
+          "paragraphs": [
+            "The photographed CD60 P038 sample reads 500 µF, 300 VAC, ±5% and 50/60 Hz, with a −40 °C / 70 °C / 21 marking. The catalogue lists a family range of 20–1500 µF, 110–330 VAC, ±10% or ±20%, and −20 to +65 °C. Keep those sources separate: the photographed sample does not extend every model’s temperature or tolerance rating.",
+            "Where the label and catalogue differ, use the exact model datasheet to settle the capacitance tolerance, operating temperature and intermittent-duty conditions. Maximum starting time is a separate model rating; it cannot be read from the CD60 name or a 300 VAC marking."
+          ],
+          "photos": [
+            {
+              "src": "/images/real/cd60-25.jpg",
+              "title": "500 µF / 300 VAC start-capacitor sample",
+              "alt": "CD60 sample showing 500 µF ±5%, 300 VAC and 50/60 Hz.",
+              "text": "The visible label gives electrical markings but no on-time or repeat-start limit.",
+              "original": true,
+              "showLabelDetail": false
+            }
+          ]
+        },
+        {
+          "id": "start-capacitor-voltage",
+          "heading": "Keep voltage selection tied to starting duty",
+          "paragraphs": [
+            "The motor documentation determines the starting capacitance or specified capacitance band. Preserve that requirement rather than increasing µF to compensate for difficult starts. The rated AC voltage must suit the capacitor’s circuit, and its duty rating must cover the starting sequence at that voltage and frequency.",
+            "A motor with both start and run capacitors needs each component kept in its assigned circuit. The start device’s disconnection and any specified discharge provision remain part of the replacement design. The CD60 cannot stay connected as a continuous-duty run capacitor."
+          ],
+          "links": [
+            {
+              "label": "Calculate on-time and rest time",
+              "href": "/resources/cd60-start-capacitor-duty-cycle/"
+            }
+          ]
+        },
+        {
+          "id": "cd60-terminal-and-storage",
+          "heading": "Terminals, mounting and storage still affect the order",
+          "paragraphs": [
+            "Blade terminals and wire leads need their own connection drawing. Specify the case dimensions, bracket or other fixing, and the clearance around the fitted connector. A photograph helps identify the arrangement, but it does not supply dimensional tolerances or an approved terminal assignment.",
+            "For stock held before assembly, obtain the model’s storage conditions and shelf-life instructions. Another manufacturer’s shelf-life or endurance figure is not a CD60 guarantee. Acceptance testing also needs the start-capacitor method and model limits; a test regime intended for a different construction cannot be copied without review."
+          ]
+        }
+      ],
+      "details": []
+    }
+  },
+  {
+    "guide": {
+      "slug": "start-vs-run-capacitors",
+      "defaultSeries": "unknown",
+      "title": "Motor start vs run capacitors: what is the difference?",
+      "seoTitle": "Start vs Run Capacitors: Function and Replacement",
+      "summary": "Understand how motor run and start capacitors serve the auxiliary winding, when each stays connected and why their µF values are not interchangeable.",
+      "answer": "A run capacitor remains connected during motor operation. A start capacitor operates during the starting interval and is then disconnected by the specified switching arrangement. Some single-phase motors use both. The motor circuit, rather than the equipment name or case shape, identifies which component you need.",
+      "sources": [
+        {
+          "label": "Oriental Motor: why AC motors use capacitors",
+          "href": "https://faq.orientalmotor.com/why-do-single-phase-ac-motors-need-capacitors"
+        },
+        {
+          "label": "Oriental Motor: replacement capacitor guidance",
+          "href": "https://faq.orientalmotor.com/can-i-use-capacitors-other-than-the-one-that-comes-with-the-ac-motor"
+        },
+        {
+          "label": "KEMET: MS/MD starting-duty example",
+          "href": "https://yageogroup.com/content/datasheet/asset/file/KEM_A4041_MS_MD"
+        }
+      ],
+      "category": "Understand capacitors",
+      "inquiry": {
+        "heading": "Identify the required motor capacitor",
+        "note": "Send the motor diagram and original capacitor labels to identify the run or start requirement for a model proposal.",
+        "label": "Request motor capacitor details",
+        "request": "documents"
+      },
+      "related": [
+        {
+          "label": "Compare capacitor families",
+          "href": "/resources/cbb60-vs-cbb61-vs-cbb65/"
+        },
+        {
+          "label": "Capacitor purchasing and quotations",
+          "href": "/resources/motor-capacitor-wholesale-rfq/"
+        }
+      ]
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "read-the-motor-circuit-first",
+          "heading": "Why the auxiliary winding uses a capacitor",
+          "paragraphs": [
+            "In a capacitor motor, the capacitor changes the phase of current in the auxiliary winding relative to the main winding. The winding arrangement and phase displacement help produce the rotating magnetic field needed for torque. The motor designer selects capacitance for that winding and its intended duty.",
+            "A permanent split capacitor, or PSC, motor keeps its run capacitor in circuit for starting and running. A capacitor-start design uses a start capacitor during acceleration. A capacitor-start, capacitor-run motor includes both functions. Those arrangements explain why a run capacitor can contribute to starting even though it is not an intermittent-duty start capacitor."
+          ],
+          "citations": [
+            {
+              "paragraph": 0,
+              "label": "Oriental Motor: why AC motors use capacitors",
+              "href": "https://faq.orientalmotor.com/why-do-single-phase-ac-motors-need-capacitors"
+            }
+          ]
+        },
+        {
+          "id": "can-start-and-run-capacitors-be-interchanged",
+          "heading": "Construction follows the intended duty",
+          "paragraphs": [
+            "The HAN XING CBB60, CBB61 and CBB65 families are film motor run capacitors. Their insulated cylindrical, rectangular and metal-can formats suit different assemblies. CD60 uses an AC aluminium electrolytic construction for intermittent starting. Select each family for the duty specified in the motor circuit.",
+            "A start capacitor cannot replace a run capacitor for continuous operation. Likewise, a run capacitor with a convenient case cannot be assumed to meet a motor’s starting requirement. The approved replacement specification must cover construction, µF, VAC and duty together."
+          ],
+          "aliases": [
+            "sample-examples"
+          ],
+          "photos": [
+            {
+              "src": "/images/real/cbb65-2.jpg",
+              "alt": "CBB65 sample label showing 20 µF ±5%, 450 VAC and 50/60 Hz.",
+              "title": "Ratings on a CBB65 label",
+              "text": "The label gives 20 µF ±5%, 450 VAC and 50/60 Hz.",
+              "focus": "50%",
+              "zoom": 1.25
+            },
+            {
+              "src": "/images/real/cd60-25.jpg",
+              "alt": "CD60 sample marked 500 µF and 300 VAC, with its blade terminals visible.",
+              "title": "CD60 start-capacitor sample",
+              "text": "CD60 start-capacitor sample marked 500 µF and 300 VAC.",
+              "focus": "50%",
+              "zoom": 1.25
+            }
+          ]
+        },
+        {
+          "id": "identify-the-capacitor-circuit",
+          "heading": "Identify the circuit before buying a replacement",
+          "paragraphs": [
+            "For a pump with a failed external capacitor, the useful starting point is the motor model and original circuit diagram. They distinguish the permanently connected part from a switched starting component. In a two-capacitor motor, label photographs for both parts prevent the run and start ratings from being mixed in the order.",
+            "If the motor hums, turns slowly or overheats, those symptoms do not prove which component failed. Supply, wiring, mechanical load and the starting switch also affect operation. A replacement decision follows diagnosis; increasing capacitance is not a substitute for it."
+          ],
+          "links": [
+            {
+              "label": "Motor capacitor fault diagnosis",
+              "href": "/resources/motor-capacitor-failure-diagnosis/"
+            },
+            {
+              "label": "Compare CBB60, CBB61, CBB65 and CD60",
+              "href": "/resources/cbb60-vs-cbb61-vs-cbb65/"
+            }
+          ],
+          "aliases": [
+            "information-needed-for-a-replacement"
+          ]
+        }
+      ],
+      "details": []
+    }
+  },
+  {
+    "guide": {
+      "slug": "cbb60-water-pump-capacitor-selection",
+      "defaultSeries": "CBB60",
+      "title": "How to choose a capacitor for a water-pump motor",
+      "seoTitle": "Water Pump Capacitor: CBB60 Selection and Fit",
+      "summary": "Find the right water-pump motor capacitor from the motor rating and circuit. Compare run and start duty, a 35 µF CBB60 sample and installed mounting space.",
+      "answer": "Use the pump motor’s specified capacitance, rated AC voltage and capacitor duty. Pump power alone does not determine µF. A CBB60 is suitable where the motor design calls for a cylindrical film run capacitor; a switched starting circuit needs its specified start capacitor instead.",
+      "sources": [
+        {
+          "label": "Oriental Motor: replacement capacitor guidance",
+          "href": "https://faq.orientalmotor.com/can-i-use-capacitors-other-than-the-one-that-comes-with-the-ac-motor"
+        },
+        {
+          "label": "HAN XING CBB60",
+          "href": "/products/cbb60-motor-run-capacitor/"
+        }
+      ],
+      "category": "Compare & select",
+      "publishedAt": "2026-11-01",
+      "inquiry": {
+        "heading": "Quote the capacitor for your pump motor",
+        "note": "Send the motor model, original label and installation dimensions. Keep each pump version on its own order line.",
+        "label": "Request a pump capacitor quote",
+        "request": "quote"
+      },
+      "related": [
+        {
+          "label": "Compare capacitor families",
+          "href": "/resources/cbb60-vs-cbb61-vs-cbb65/"
+        },
+        {
+          "label": "Capacitor purchasing and quotations",
+          "href": "/resources/motor-capacitor-wholesale-rfq/"
+        }
+      ]
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "pump-motor-specification",
+          "heading": "The same pump power can use a different motor circuit",
+          "paragraphs": [
+            "A centrifugal pump, pool pump or circulation pump can use different motor versions. The pump brand and horsepower are useful identification fields, but the motor model and component schedule determine the capacitor. For a two-speed pool pump, retain the wiring diagram for that exact motor rather than borrowing a value from another pump with the same rated output.",
+            "Some motors use a permanently connected run capacitor, some use a switched start capacitor, and some have both. Hot-tub and spa pumps also follow their own motor specification. Inverter-controlled equipment can have a different electrical arrangement, so an external capacitor is not a universal requirement for every pump."
+          ]
+        },
+        {
+          "id": "cbb60-sample-label",
+          "heading": "A complete example: 35 µF, 450 VAC, wire leads",
+          "paragraphs": [
+            "The supplied HAN XING CBB60 wired sample is marked 35 µF ±5%, 450 VAC and 50/60 Hz. For a pump motor that specifies this rating, the calculated capacitance limits are 33.25–36.75 µF. These are the nominal tolerance limits from the label; the photograph does not provide a measured test result.",
+            "A 25 µF part with the same 450 VAC marking is a different selection. Preserve the specified nominal capacitance and use the voltage rating required by the motor documentation. The voltage across the capacitor in its circuit is separate from the mains supply voltage."
+          ],
+          "citations": [
+            {
+              "paragraph": 1,
+              "label": "Oriental Motor: replacement capacitor guidance",
+              "href": "https://faq.orientalmotor.com/can-i-use-capacitors-other-than-the-one-that-comes-with-the-ac-motor"
+            }
+          ],
+          "photos": [
+            {
+              "src": "/images/real/cbb60-hanxing-wired.jpg",
+              "title": "35 µF wired CBB60 sample",
+              "alt": "Hanxing-marked CBB60 sample showing 35 µF ±5%, 450 VAC, 50/60 Hz and 40/70/21.",
+              "text": "The complete original label and both insulated leads are visible.",
+              "original": true,
+              "showLabelDetail": false
+            }
+          ]
+        },
+        {
+          "id": "leads-and-terminals",
+          "heading": "Will it fit beneath the pump cover?",
+          "paragraphs": [
+            "A pump enclosure can restrict diameter, height and the path of the leads. A stud-mounted capacitor needs its thread and length matched to the mounting point. A quick-connect version needs the correct blade geometry and room for the seated plug. The total connected height can rule out a part whose body fits comfortably.",
+            "Record the largest installed envelope the pump allows, then compare it with the proposed drawing. For a sample approval, fasten the part, connect the actual harness and close the cover. Keep that fitted arrangement with the pump motor reference and drawing revision."
+          ],
+          "links": [
+            {
+              "label": "CBB60 case dimensions",
+              "href": "/resources/cbb60-capacitor-dimensions-chart/"
+            }
+          ],
+          "aliases": [
+            "body-and-mounting",
+            "sample-fit-approval"
+          ],
+          "photos": [
+            {
+              "src": "/images/real/cbb60-18.jpg",
+              "title": "Lead exit and base stud",
+              "alt": "Horizontal CBB60 sample marked 25 µF, with insulated leads and a threaded base stud.",
+              "text": "Body height, stud length and connection space are separate measurements.",
+              "original": true,
+              "showLabelDetail": false
+            }
+          ]
+        },
+        {
+          "id": "pump-capacitor-requirement",
+          "heading": "If the pump hums but will not start",
+          "paragraphs": [
+            "A failed capacitor is one possible cause. Low supply voltage, a loose connection, a locked load or a defective starting switch can produce a similar complaint. A qualified technician needs to isolate the fault before ordering a replacement; repeatedly energizing a stalled motor can overheat it."
+          ],
+          "links": [
+            {
+              "label": "Fault diagnosis before replacement",
+              "href": "/resources/motor-capacitor-failure-diagnosis/"
+            }
+          ],
+          "aliases": [
+            "cbb60-datasheet-for-replacement"
+          ]
+        }
+      ],
+      "details": []
+    }
+  },
+  {
+    "guide": {
+      "slug": "well-irrigation-pump-capacitor-control-box",
+      "defaultSeries": "unknown",
+      "title": "Replacing a well-pump or irrigation-pump capacitor",
+      "seoTitle": "Well Pump Control Box Capacitor Replacement Guide",
+      "summary": "Identify a well-pump control box capacitor from the motor and control model. Separate run and start duty and match relay, ratings and physical installation.",
+      "answer": "Use the control-box model together with the submersible motor reference. The box’s parts list and circuit identify the run capacitor, start capacitor and switching components fitted to that motor. A generic well-pump capacitor value cannot replace that model-specific information.",
+      "sources": [
+        {
+          "label": "Franklin Electric: motor control boxes",
+          "href": "https://www.franklinwater.com/products/submersible-motors-and-control-boxes/submersible-motor-control-boxes/motor-control-boxes/"
+        },
+        {
+          "label": "KEMET: MS/MD starting-duty example",
+          "href": "https://yageogroup.com/content/datasheet/asset/file/KEM_A4041_MS_MD"
+        }
+      ],
+      "category": "Compare & select",
+      "inquiry": {
+        "heading": "Identify the control-box capacitor",
+        "note": "Send both model plates and the capacitor label, plus the control-box diagram if available.",
+        "label": "Request model matching",
+        "request": "documents"
+      },
+      "related": [
+        {
+          "label": "Compare capacitor families",
+          "href": "/resources/cbb60-vs-cbb61-vs-cbb65/"
+        },
+        {
+          "label": "Capacitor purchasing and quotations",
+          "href": "/resources/motor-capacitor-wholesale-rfq/"
+        }
+      ]
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "control-box-identification",
+          "heading": "Identify the motor and box as a pair",
+          "paragraphs": [
+            "A pump assembly can keep the same hydraulic section while its motor or control box changes. Photograph both identification plates and retain the box’s wiring diagram. The motor’s power rating helps find the correct documents, but it does not establish the starting capacitance or relay specification.",
+            "Franklin Electric specifies its control boxes for defined motor ranges, with different capacitor and switching arrangements across box types. That is why both references matter. For the installed well-pump system, use the documents for its own motor and control-box models."
+          ],
+          "citations": [
+            {
+              "paragraph": 1,
+              "label": "Franklin Electric: motor control boxes",
+              "href": "https://www.franklinwater.com/products/submersible-motors-and-control-boxes/submersible-motor-control-boxes/motor-control-boxes/"
+            }
+          ]
+        },
+        {
+          "id": "pump-start-run-paths",
+          "heading": "Run and start capacitors have different jobs",
+          "paragraphs": [
+            "Where a film run capacitor is fitted, it remains in the circuit during operation. Where an electrolytic start capacitor is fitted, the switching system removes it after the starting interval. A box containing both requires each original value and connection to be recorded separately.",
+            "For a start-capacitor replacement, include the maximum energized time and restart pattern. Irrigation controls that retry after a failed start can impose a different duty from evenly spaced normal starts. The capacitor and the relay have to suit that complete sequence."
+          ],
+          "links": [
+            {
+              "label": "CD60 timing and duty calculation",
+              "href": "/resources/cd60-start-capacitor-duty-cycle/"
+            }
+          ]
+        },
+        {
+          "id": "control-box-fit",
+          "heading": "Keep the replacement inside its intended environment",
+          "paragraphs": [
+            "A capacitor used for a submersible-pump system is not automatically suitable for immersion. A component located inside a dry control box follows that enclosure’s installation conditions. Water exposure, humidity and storage requirements need explicit model documentation.",
+            "The replacement drawing needs case dimensions, fixing points and connected clearance. Preserve the specified µF, tolerance, VAC and frequency with the connection assignment. If the old label is unreadable, use the matched motor and control-box records to identify the missing rating before buying."
+          ]
+        }
+      ],
+      "details": []
+    }
+  },
+  {
+    "guide": {
+      "slug": "fan-blower-motor-capacitor-selection",
+      "defaultSeries": "CBB61",
+      "title": "Choosing a capacitor for a fan or blower motor",
+      "seoTitle": "Fan and Blower Capacitor Selection and Replacement",
+      "summary": "Find a fan or blower motor capacitor from its circuit and specified µF. Cover ceiling-fan wiring, PSC motors, case formats and slow-running symptoms.",
+      "answer": "Use the fan motor’s specified µF and AC voltage rating. There is no universal capacitance calculator based only on fan diameter, speed or motor power. The motor circuit also determines whether it uses a permanent run capacitor, a switched start component or electronic control.",
+      "sources": [
+        {
+          "label": "Oriental Motor: replacement capacitor guidance",
+          "href": "https://faq.orientalmotor.com/can-i-use-capacitors-other-than-the-one-that-comes-with-the-ac-motor"
+        },
+        {
+          "label": "Oriental Motor: why AC motors use capacitors",
+          "href": "https://faq.orientalmotor.com/why-do-single-phase-ac-motors-need-capacitors"
+        },
+        {
+          "label": "Fluke: measuring capacitance",
+          "href": "https://www.fluke.com/en-us/learn/blog/digital-multimeters/how-to-measure-capacitance"
+        },
+        {
+          "label": "HAN XING CBB61",
+          "href": "/products/cbb61-fan-capacitor/"
+        }
+      ],
+      "category": "Compare & select",
+      "inquiry": {
+        "heading": "Source the capacitor for your fan range",
+        "note": "Group the required ratings and harness drawings by fan model so each version has its own quoted configuration.",
+        "label": "Request fan capacitor options",
+        "request": "quote"
+      },
+      "related": [
+        {
+          "label": "Compare capacitor families",
+          "href": "/resources/cbb60-vs-cbb61-vs-cbb65/"
+        },
+        {
+          "label": "Capacitor purchasing and quotations",
+          "href": "/resources/motor-capacitor-wholesale-rfq/"
+        }
+      ]
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "fan-motor-circuit",
+          "heading": "Ceiling fans and industrial blowers need different records",
+          "paragraphs": [
+            "A ceiling fan, table fan, stand fan, axial extractor, cross-flow fan or range-hood motor can use a capacitor-run design, but these names do not specify a common capacitor. A centrifugal blower can use a different case format from a compact ceiling-fan assembly. The motor model and circuit settle that choice.",
+            "In a permanent split capacitor motor, the run capacitor serves the auxiliary winding during starting and running. Electronically controlled fan motors need their own component schedule. A condenser fan in HVAC equipment also needs its assigned value kept separate from the compressor’s value, even when both sections share a dual-run can."
+          ]
+        },
+        {
+          "id": "fan-value-and-conditions",
+          "heading": "Keep the motor’s µF value through the replacement",
+          "paragraphs": [
+            "A larger capacitor changes the current in the auxiliary winding and can affect heating and torque. It is not a general speed upgrade. Keep the required nominal µF, tolerance and frequency with the replacement specification. A 50/60 Hz marking on a capacitor is useful only when the motor and the proposed duty also suit the intended supply frequency.",
+            "For a fan operating near a hot motor or inside a closed housing, the selected capacitor’s temperature category matters. The family name alone does not supply that limit. Material and test requirements, including insulation resistance, dissipation factor and voltage withstand, need their own model data and acceptance conditions."
+          ]
+        },
+        {
+          "id": "ceiling-fan-wiring",
+          "heading": "Choose the harness for the fan model",
+          "paragraphs": [
+            "A fan-speed capacitor assembly can contain several sections with a shared connection. Two parts with the same number of wires can have different internal arrangements. Wire colors, blade positions and a similar rectangular shell cannot replace the fan’s wiring diagram.",
+            "Wire leads suit a routed harness; blade terminals suit a defined mating plug. Case dimensions, mounting tabs and clearance with the cover closed determine the fit. The CBB61 connection guide explains how to specify the lead length, mating connector and mounting geometry."
+          ],
+          "links": [
+            {
+              "label": "CBB61 connection and mounting choices",
+              "href": "/resources/cbb61-wire-leads-blade-terminals/"
+            }
+          ]
+        },
+        {
+          "id": "slow-fan-diagnosis",
+          "heading": "When the fan is slow or will not start",
+          "paragraphs": [
+            "Capacitance loss is one possible fault. Supply problems, poor connections and mechanical drag also deserve diagnosis. A qualified technician can measure capacitance after safe isolation and compare the reading with the marked tolerance; that measurement does not replace insulation or dielectric testing when those are required."
+          ],
+          "links": [
+            {
+              "label": "Capacitance measurement and tolerance",
+              "href": "/resources/motor-capacitor-tolerance-test-results/"
+            }
+          ]
+        }
+      ],
+      "details": []
+    }
+  },
+  {
+    "guide": {
+      "slug": "washing-machine-motor-capacitor-selection",
+      "defaultSeries": "unknown",
+      "title": "Washing-machine motor capacitor replacement guide",
+      "seoTitle": "Washing Machine Capacitor Replacement",
+      "summary": "Identify a washing-machine motor capacitor, separate it from the mains filter and match µF, voltage, terminals and mounting to the appliance model.",
+      "answer": "Use the appliance and motor model to identify the original capacitor’s function and part number. A motor run capacitor and a mains interference filter have different jobs. Their appearance or a shared 450 V marking does not establish that they are interchangeable.",
+      "sources": [
+        {
+          "label": "Oriental Motor: replacement capacitor guidance",
+          "href": "https://faq.orientalmotor.com/can-i-use-capacitors-other-than-the-one-that-comes-with-the-ac-motor"
+        },
+        {
+          "label": "Fluke: measuring capacitance",
+          "href": "https://www.fluke.com/en-us/learn/blog/digital-multimeters/how-to-measure-capacitance"
+        }
+      ],
+      "category": "Compare & select",
+      "inquiry": {
+        "heading": "Find a motor capacitor for the appliance",
+        "note": "Include the appliance model, motor reference, original label and terminal-end photo for a replacement proposal.",
+        "label": "Request appliance capacitor details",
+        "request": "documents"
+      },
+      "related": [
+        {
+          "label": "Compare capacitor families",
+          "href": "/resources/cbb60-vs-cbb61-vs-cbb65/"
+        },
+        {
+          "label": "Capacitor purchasing and quotations",
+          "href": "/resources/motor-capacitor-wholesale-rfq/"
+        }
+      ]
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "washer-component-identification",
+          "heading": "First distinguish the motor capacitor from the mains filter",
+          "paragraphs": [
+            "A capacitor-run motor uses a film capacitor in its auxiliary-winding circuit. The mains filter suppresses electrical interference at another point in the appliance. An inverter-driven washer can use a different motor and power-electronics arrangement. Locate the part on the correct appliance diagram before selecting a replacement.",
+            "Cylindrical CBB60 and rectangular CBB61 formats are used on selected compatible appliance motors. Neither format is a universal washing-machine part. The exact motor specification establishes µF, VAC, run or start duty and frequency, including any 50 Hz or 60 Hz version difference."
+          ]
+        },
+        {
+          "id": "washer-connections",
+          "heading": "What do four terminals mean?",
+          "paragraphs": [
+            "Some terminal ends provide more than one blade for the same electrical connection. Other assemblies have multiple capacitor sections. The model drawing identifies which applies. Counting blades or copying wire positions from another appliance risks connecting the wrong section or node.",
+            "For a stud-mounted replacement, record the stud thread, nut arrangement and the space beneath the mounting surface. For a wired part, retain the lead length, connector and exit direction. The connected envelope includes the plug and wire route, so the case dimensions alone are insufficient."
+          ],
+          "links": [
+            {
+              "label": "Dimension and connection drawings",
+              "href": "/resources/dimensions-terminals-mounting/"
+            }
+          ]
+        },
+        {
+          "id": "washer-inspection",
+          "heading": "Testing a suspected motor capacitor",
+          "paragraphs": [
+            "A swollen or cracked case, leakage or damaged terminals calls for the part to be removed from service and the cause investigated. A normal-looking case does not establish a good capacitor. Poor starting or rotation can also result from wiring, controls, supply or mechanical faults.",
+            "A qualified technician measures capacitance with the appliance isolated, the capacitor safely discharged and disconnected from the circuit. Compare the result with the marked nominal value and tolerance. Insulation-resistance tests require a suitable instrument and specified method; a capacitance reading alone does not certify insulation quality."
+          ],
+          "links": [
+            {
+              "label": "Multimeter readings and acceptance limits",
+              "href": "/resources/motor-capacitor-tolerance-test-results/"
+            }
+          ]
+        }
+      ],
+      "details": []
+    }
+  },
+  {
+    "guide": {
+      "slug": "read-motor-capacitor-label",
+      "defaultSeries": "unknown",
+      "category": "Understand capacitors",
+      "title": "How to read a motor capacitor label",
+      "seoTitle": "Motor Capacitor Markings: µF, MFD and VAC",
+      "summary": "Decode motor capacitor markings for µF or MFD, VAC, tolerance, 50/60 Hz and climatic category. Read actual CBB65 labels and identify missing information.",
+      "answer": "µF gives capacitance, VAC gives rated AC voltage, and a percentage such as ±5% gives capacitance tolerance. On motor capacitor labels, MFD is commonly used for microfarads. Frequency, climatic category and class markings describe additional conditions; the model and batch codes keep the part identifiable.",
+      "sources": [
+        {
+          "label": "TDK: climatic category and operating conditions",
+          "href": "https://www.tdk-electronics.tdk.com/inf/20/25/ds/B32350_B32352.pdf"
+        },
+        {
+          "label": "TDK: capacitor safety and operation classes",
+          "href": "https://in.tdk-electronics.tdk.com/download/3146718/f510b4914732a9f88af87ed4b3ed65ae/ac-filmcapacitors-po-pdf.pdf"
+        }
+      ],
+      "inquiry": {
+        "heading": "Identify an unreadable capacitor",
+        "note": "Send the full label photo and motor model, including any visible model or batch code.",
+        "label": "Request identification help",
+        "request": "documents"
+      },
+      "related": [
+        {
+          "label": "Compare capacitor families",
+          "href": "/resources/cbb60-vs-cbb61-vs-cbb65/"
+        },
+        {
+          "label": "Capacitor purchasing and quotations",
+          "href": "/resources/motor-capacitor-wholesale-rfq/"
+        }
+      ]
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "electrical-markings",
+          "heading": "Read the electrical value before the family name",
+          "paragraphs": [
+            "A CBB65 label showing 20 µF ±5%, 450 VAC and 50/60 Hz identifies one nominal 20 µF section at the stated AC voltage and frequencies. VAC refers to the capacitor rating, separately from the motor supply voltage. In this label context, 20 MFD also means 20 microfarads, not millifarads.",
+            "CBB60, CBB61, CBB65 and CD60 identify product families, not complete orderable specifications. Two capacitors carrying the same family designation can differ in value, duty, terminal arrangement and size. Preserve the complete label when recording a replacement."
+          ],
+          "aliases": [
+            "sample-examples"
+          ],
+          "photos": [
+            {
+              "src": "/images/real/cbb65-2.jpg",
+              "alt": "CBB65 sample label showing 20 µF ±5%, 450 VAC and 50/60 Hz.",
+              "title": "Ratings on a CBB65 label",
+              "text": "The label gives 20 µF ±5%, 450 VAC and 50/60 Hz.",
+              "focus": "50%",
+              "zoom": 1.25
+            }
+          ],
+          "layout": "label"
+        },
+        {
+          "id": "worked-label-examples",
+          "heading": "A dual value and a tolerance tell you different things",
+          "paragraphs": [
+            "On the supplied 50+5 µF CBB65, the two numbers identify two capacitor sections. Each belongs to its assigned circuit connection. Adding them into a single 55 µF requirement loses that distinction. A percentage alongside the capacitance is a permitted deviation from the nominal value, not an extra selectable capacitance section.",
+            "For 20 µF ±5%, the calculated band is 19–21 µF. A meter reading can be compared with that band under the applicable test conditions. The label does not report the measured value of the individual part or the accuracy of the meter used to inspect it."
+          ],
+          "links": [
+            {
+              "label": "Testing and tolerance calculations",
+              "href": "/resources/motor-capacitor-tolerance-test-results/"
+            }
+          ],
+          "photos": [
+            {
+              "src": "/images/real/cbb65-dual-run-7.jpg",
+              "alt": "CBB65 dual-run capacitor marked 50+5 µF and 450 VAC, with terminal groups visible.",
+              "title": "Dual-run sample: 50+5 µF · 450 VAC",
+              "text": "The label shows 50+5 µF ±5% and 450 VAC. A replacement must match both capacitance values and the terminal connections specified for the original circuit.",
+              "focus": "50%",
+              "zoom": 1.2
+            }
+          ]
+        },
+        {
+          "id": "climate-class-and-codes",
+          "heading": "Keep climate, safety and batch markings separate",
+          "paragraphs": [
+            "The CBB65 sample’s 40/85/21 marking describes a climatic category: −40 °C, +85 °C and a 21-day damp-heat test category. The following C and P1 concern operation class and an older protection designation. Those are separate classifications, with their conditions established in the model documents.",
+            "An unfamiliar final code can be a model, manufacturing or batch reference. Its meaning belongs to the manufacturer’s coding system. Do not turn an unexplained number into a date or rating. A full-label photograph preserves it for identification even when its meaning is unresolved."
+          ],
+          "links": [
+            {
+              "label": "40/85/21 explained",
+              "href": "/resources/cbb65-capacitor-temperature-ratings/"
+            },
+            {
+              "label": "Safety and operation classes",
+              "href": "/resources/iec-60252-1-capacitor-safety-classes/"
+            }
+          ]
+        },
+        {
+          "id": "if-a-marking-is-missing",
+          "heading": "When part of the label is unreadable",
+          "paragraphs": [
+            "Use the motor or equipment model, original parts list and wiring diagram to recover the missing specification. Photos of the terminal end and mounting help identify the construction, but a matching shell cannot recover a missing µF value. A previous purchase record is useful only when it belongs to the same equipment version."
+          ],
+          "aliases": [
+            "dimensions-and-connections"
+          ]
+        }
+      ],
+      "details": []
+    }
+  },
+  {
+    "guide": {
+      "slug": "capacitance-voltage-guide",
+      "defaultSeries": "unknown",
+      "category": "Understand capacitors",
+      "title": "Can you change a motor capacitor’s µF or voltage rating?",
+      "seoTitle": "Capacitor Replacement: Higher µF or Higher VAC?",
+      "summary": "Understand higher-voltage motor capacitor replacements, why µF must match and how tolerance differs from a new nominal value. Compare 370, 440 and 450 VAC.",
+      "answer": "Keep the motor’s specified nominal capacitance. A higher AC voltage rating is only a replacement option within the equipment maker’s approved specification and with the correct duty, frequency and fit. Capacitance and voltage are separate selection decisions.",
+      "sources": [
+        {
+          "label": "Oriental Motor: replacement capacitor guidance",
+          "href": "https://faq.orientalmotor.com/can-i-use-capacitors-other-than-the-one-that-comes-with-the-ac-motor"
+        }
+      ],
+      "inquiry": {
+        "heading": "Compare a proposed replacement",
+        "note": "Send the original motor requirement and the proposed capacitor data so the differences can be identified in one model record.",
+        "label": "Request replacement specifications",
+        "request": "documents"
+      },
+      "related": [
+        {
+          "label": "Compare capacitor families",
+          "href": "/resources/cbb60-vs-cbb61-vs-cbb65/"
+        },
+        {
+          "label": "Capacitor purchasing and quotations",
+          "href": "/resources/motor-capacitor-wholesale-rfq/"
+        }
+      ]
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "match-the-specified-capacitance",
+          "heading": "More µF changes the motor circuit",
+          "paragraphs": [
+            "Capacitance affects current and phase displacement in the auxiliary winding. A larger value can change torque, vibration and heating. For a motor specified at 20 µF, choosing 25 µF to improve starting is an electrical change, not an ordinary like-for-like replacement. Use the motor’s approved value.",
+            "Tolerance describes variation around a nominal value. A 20 µF ±5% label gives 19–21 µF; ±10% gives 18–22 µF. A wider tolerance is not permission to order an unrelated nominal value. For dual-run capacitors, preserve the specified value and tolerance of each section."
+          ],
+          "citations": [
+            {
+              "paragraph": 0,
+              "label": "Oriental Motor: replacement capacitor guidance",
+              "href": "https://faq.orientalmotor.com/can-i-use-capacitors-other-than-the-one-that-comes-with-the-ac-motor"
+            }
+          ],
+          "aliases": [
+            "sample-examples"
+          ],
+          "photos": [
+            {
+              "src": "/images/real/cbb65-2.jpg",
+              "alt": "CBB65 sample label showing 20 µF ±5%, 450 VAC and 50/60 Hz.",
+              "title": "20 µF · 450 VAC · ±5%",
+              "text": "On this CBB65 label, 20 µF ±5% gives the capacitance and tolerance. The voltage rating is 450 VAC.",
+              "focus": "50%",
+              "zoom": 1.25,
+              "showLabelDetail": true
+            }
+          ],
+          "layout": "compact-photo"
+        },
+        {
+          "id": "common-reading-mistakes",
+          "heading": "Capacitor voltage is not the mains supply voltage",
+          "paragraphs": [
+            "VAC is the capacitor’s rated AC voltage. The voltage across a capacitor in the motor circuit can differ from the line voltage. A motor supplied at a lower voltage can therefore still specify a 450 VAC run capacitor. Select from the motor requirement rather than reducing the capacitor rating to the supply value.",
+            "Questions about 370 versus 440 VAC, or 440 versus 450 VAC, need the full replacement specification. A higher printed voltage does not resolve differences in construction, operation class, temperature or duty. Never infer starting-duty compatibility from the voltage alone."
+          ],
+          "aliases": [
+            "check-the-capacitor-s-voltage-rating"
+          ]
+        },
+        {
+          "id": "replacement-compatibility",
+          "heading": "The electrical match still needs an installed fit",
+          "paragraphs": [
+            "A run capacitor can use a round or oval case, wire leads or quick-connect terminals. The replacement must fit the bracket and provide the right connection geometry with the connector installed. Temperature category and any required design-life class stay tied to the selected model and its rated conditions.",
+            "For an approved substitution, retain the original equipment reference beside the new model datasheet and drawing. That creates a usable cross-reference for future orders. A list containing only µF and VAC loses the connection, mounting and operating limits that made the replacement suitable."
+          ],
+          "links": [
+            {
+              "label": "Motor capacitor mounting dimensions",
+              "href": "/resources/dimensions-terminals-mounting/"
+            },
+            {
+              "label": "Single and dual-run requirements",
+              "href": "/resources/single-vs-dual-run-capacitors/"
+            }
+          ]
+        }
+      ],
+      "details": []
+    }
+  },
+  {
+    "guide": {
+      "slug": "dimensions-terminals-mounting",
+      "defaultSeries": "unknown",
+      "title": "Motor capacitor dimensions, terminals and mounting",
+      "seoTitle": "Motor Capacitor Dimensions and Connections",
+      "summary": "Specify a motor capacitor’s body size, mounting and connected clearance. Define terminal geometry, lead length and the complete installed envelope.",
+      "answer": "A useful drawing separates the capacitor body from the complete installed envelope. Include the fixing, terminal or lead arrangement, fitted connector and the space needed to assemble it. Two parts with the same body dimensions can require different installation space.",
+      "sources": [],
+      "category": "Prepare your RFQ",
+      "inquiry": {
+        "heading": "Request a dimensioned model drawing",
+        "note": "Include your available space, fixing method and mating connector along with the electrical rating.",
+        "label": "Request a connection drawing",
+        "request": "documents"
+      },
+      "related": [
+        {
+          "label": "Compare capacitor families",
+          "href": "/resources/cbb60-vs-cbb61-vs-cbb65/"
+        },
+        {
+          "label": "Capacitor purchasing and quotations",
+          "href": "/resources/motor-capacitor-wholesale-rfq/"
+        }
+      ]
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "measure-the-space-available",
+          "heading": "Measure the assembly’s limits first",
+          "paragraphs": [
+            "Measure diameter and body height for a cylindrical part, or length, width and height for a rectangular part. Then record the maximum space available in the equipment. The drawing needs both the part dimensions and the limits of the compartment that will hold it.",
+            "Include the fixing surface and the closed cover in that envelope. A stud projects below the body; a plug projects above a terminal. If there is no room to insert a connector or tighten a nut, a nominally fitting case still cannot be assembled as intended."
+          ]
+        },
+        {
+          "id": "show-the-connection-end",
+          "heading": "Terminal and lead dimensions",
+          "paragraphs": [
+            "For blade terminals, specify width, thickness, spacing and position. Identify the mating connector and its seated height. A photograph can show the orientation, while the dimensioned drawing provides the geometry and tolerances needed for repeatable assembly.",
+            "For wire leads, state finished length and the points between which it is measured. Include exit direction, wire arrangement and termination. A mounting lug or tab needs its hole size and position; a bracket needs a usable clamping range; a stud needs thread, usable length and the required hardware."
+          ]
+        },
+        {
+          "id": "sample-examples",
+          "heading": "A base stud changes the fit of a cylindrical capacitor",
+          "paragraphs": [
+            "The supplied CBB60 photographs show lead exits and a threaded base stud. A body-height measurement excludes that stud and the routed leads. Use the proposed model drawing to define the completed arrangement rather than scaling dimensions from the photograph.",
+            "For a CBB65 metal can, include the terminal-end arrangement and bracket. Where a model uses a safety mechanism that requires movement or clearance, its installation instructions govern the space around it. A tighter bracket is not automatically a better mounting."
+          ],
+          "photos": [
+            {
+              "src": "/images/real/cbb60-18.jpg",
+              "alt": "Two CBB60 samples showing lead exits and a threaded mounting stud.",
+              "title": "The stud extends beyond the case",
+              "text": "Record the CBB60 body and base-stud dimensions separately, with the space required for leads and the fitted connector.",
+              "focus": "50%",
+              "zoom": 1.14
+            },
+            {
+              "src": "/images/real/cbb61-leads-10.jpg",
+              "original": true,
+              "alt": "Two rectangular CBB61 samples with red lead wires, visible wire ends and a mounting lug on one case.",
+              "title": "Leads and mounting lug",
+              "text": "Red leads on both CBB61 samples; one case has a mounting lug. Measure the body, mounting position and full lead route against the drawing."
+            }
+          ]
+        },
+        {
+          "id": "model-drawing-approval",
+          "heading": "Use a fitted sample to approve the drawing",
+          "paragraphs": [
+            "The drawing revision and sample reference should describe the same configuration. Fasten the capacitor in the real assembly, connect the intended harness and close the enclosure. Record any interference before approving the production configuration; preserve the approved geometry with the order."
+          ],
+          "links": [
+            {
+              "label": "OEM drawing and sample approval",
+              "href": "/resources/oem-capacitor-sample-approval/"
+            }
+          ]
+        }
+      ],
+      "details": []
+    }
+  },
+  {
+    "guide": {
+      "slug": "cbb60-vs-cbb61-vs-cbb65",
+      "defaultSeries": "unknown",
+      "title": "CBB60 vs CBB61 vs CBB65: which capacitor family fits?",
+      "seoTitle": "CBB60 vs CBB61 vs CBB65, Compared with CD60",
+      "summary": "Compare CBB60, CBB61 and CBB65 run capacitors with CD60 start capacitors. Understand case formats, applications and the limits of family-level specifications.",
+      "answer": "CBB60, CBB61 and CBB65 are film run-capacitor families in different case formats. CD60 is an electrolytic start-capacitor family for intermittent duty. Replacements across families need the motor’s approved electrical specification and a compatible installation; matching µF and VAC alone is insufficient.",
+      "sources": [
+        {
+          "label": "Oriental Motor: replacement capacitor guidance",
+          "href": "https://faq.orientalmotor.com/can-i-use-capacitors-other-than-the-one-that-comes-with-the-ac-motor"
+        },
+        {
+          "label": "TDK: capacitor safety and operation classes",
+          "href": "https://in.tdk-electronics.tdk.com/download/3146718/f510b4914732a9f88af87ed4b3ed65ae/ac-filmcapacitors-po-pdf.pdf"
+        }
+      ],
+      "category": "Compare & select",
+      "inquiry": {
+        "heading": "Compare the right configurations",
+        "note": "Include the original motor requirement and the proposed family so the electrical and installation differences can be reviewed together.",
+        "label": "Request a model comparison",
+        "request": "documents"
+      },
+      "related": [
+        {
+          "label": "Capacitor purchasing and quotations",
+          "href": "/resources/motor-capacitor-wholesale-rfq/"
+        }
+      ]
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "three-different-case-formats",
+          "heading": "Compare the formats by their intended role",
+          "paragraphs": [
+            "The table summarizes HAN XING catalogue families. It is a selection overview, not a list of every available combination. A quoted model specifies its own tolerance, temperature category, dimensions and connections."
+          ],
+          "tables": [
+            {
+              "caption": "HAN XING capacitor family comparison",
+              "headers": [
+                "Family",
+                "Construction and duty",
+                "Published capacitance range",
+                "Case format"
+              ],
+              "rows": [
+                [
+                  "CBB60",
+                  "Polypropylene film; run",
+                  "2–100 µF",
+                  "Insulated cylinder"
+                ],
+                [
+                  "CBB61",
+                  "Polypropylene film; run",
+                  "0.5–35 µF",
+                  "Insulated rectangle"
+                ],
+                [
+                  "CBB65",
+                  "Film; single or dual run",
+                  "Single 2–100 µF; dual 1+15 to 15+80 µF",
+                  "Metal can"
+                ],
+                [
+                  "CD60",
+                  "AC aluminium electrolytic; intermittent start",
+                  "20–1500 µF",
+                  "Model-specific cylinder and terminals"
+                ]
+              ]
+            }
+          ],
+          "aliases": [
+            "sample-examples"
+          ],
+          "photos": [
+            {
+              "src": "/images/real/cbb60-18.jpg",
+              "alt": "Two CBB60 samples showing lead exits and a threaded mounting stud.",
+              "title": "CBB60: leads and stud mounting",
+              "text": "The upright and horizontal samples show the insulated leads and threaded base stud. Allow space for the stud and for the leads where they leave the case.",
+              "focus": "50%",
+              "zoom": 1.14
+            },
+            {
+              "src": "/images/real/cbb61-13.jpg",
+              "alt": "Three CBB61 samples marked 4.5 µF, 5 µF and 6 µF.",
+              "title": "CBB61: similar housings, different ratings",
+              "text": "The three CBB61 samples are marked 4.5 µF, 5 µF and 6 µF. Each is a separate capacitor with its own electrical rating.",
+              "focus": "50%",
+              "zoom": 1.3
+            },
+            {
+              "src": "/images/real/cbb65-2.jpg",
+              "alt": "CBB65 sample with two insulated terminal groups visible at the top.",
+              "title": "CBB65: metal can and terminal groups",
+              "text": "Two insulated terminal groups, each with several blades. Record groups and blades separately on the connection drawing.",
+              "focus": "50%",
+              "zoom": 1.25
+            }
+          ]
+        },
+        {
+          "id": "cbb60-vs-cbb61-replacement",
+          "heading": "CBB60 and CBB61 differ in assembly as well as shape",
+          "paragraphs": [
+            "A rectangular CBB61 can suit a compact fan housing, while a cylindrical CBB60 can suit a pump bracket. That does not make either family exclusive to one appliance. A cross-family proposal needs the same required nominal capacitance, voltage, duty and operating conditions, followed by the full mounting and connection review.",
+            "Wire exits, mounting tabs, a base stud or blade terminals can make an electrically suitable alternative impractical to install. Keep the approved equipment drawing as the reference for those differences."
+          ]
+        },
+        {
+          "id": "cbb60-vs-cbb65-replacement",
+          "heading": "A metal can or dual value adds another selection question",
+          "paragraphs": [
+            "A CBB65 dual-run model contains two capacitance sections and their assigned terminal connections. A single CBB60 with one matching value cannot replace that complete function. For a single-run comparison, the model’s protection, temperature and installation requirements still matter.",
+            "A CD60 comparison starts with duty. CBB60 and CBB65 remain in run circuits; CD60 is disconnected after starting. A CD60 with the same capacitance as a run part is therefore not an interchangeable construction."
+          ]
+        },
+        {
+          "id": "compare-the-installed-part",
+          "heading": "Class markings belong to the model, not the family name",
+          "paragraphs": [
+            "Safety classes S0–S3 and operation classes A–D describe separate characteristics. The operation class’s design-life figure depends on rated conditions. Do not assign a class or lifetime to every CBB65 or CBB60 from one sample label. Use the selected model documents for that requirement."
+          ],
+          "links": [
+            {
+              "label": "IEC safety and life classes",
+              "href": "/resources/iec-60252-1-capacitor-safety-classes/"
+            }
+          ]
+        }
+      ],
+      "details": []
+    }
+  },
+  {
+    "guide": {
+      "slug": "motor-capacitor-tolerance-test-results",
+      "defaultSeries": "unknown",
+      "category": "Understand capacitors",
+      "title": "How to test a motor capacitor with a multimeter",
+      "seoTitle": "Motor Capacitor Test: Readings and Tolerance",
+      "summary": "Test motor capacitor capacitance out of circuit, interpret OL or low readings and calculate tolerance limits. Allow for meter accuracy near a limit.",
+      "answer": "Compare an out-of-circuit capacitance measurement with the part’s nominal value and tolerance under the specified test conditions. For 20 µF ±5%, the calculated limits are 19–21 µF. A reading near a limit also needs the meter’s accuracy and the agreed acceptance rule.",
+      "sources": [
+        {
+          "label": "Fluke: measuring capacitance",
+          "href": "https://www.fluke.com/en-us/learn/blog/digital-multimeters/how-to-measure-capacitance"
+        }
+      ],
+      "publishedAt": "2026-11-01",
+      "inquiry": {
+        "heading": "Define the inspection for your order",
+        "note": "Include the model, required tests and acceptance conditions with the report format you need.",
+        "label": "Request inspection details",
+        "request": "documents"
+      },
+      "related": [
+        {
+          "label": "Compare capacitor families",
+          "href": "/resources/cbb60-vs-cbb61-vs-cbb65/"
+        },
+        {
+          "label": "Capacitor purchasing and quotations",
+          "href": "/resources/motor-capacitor-wholesale-rfq/"
+        }
+      ]
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "measure-run-capacitor-safely",
+          "heading": "Measure with the equipment isolated",
+          "paragraphs": [
+            "This work belongs to a qualified technician. Isolate the equipment, prevent re-energization and follow its approved discharge procedure. Verify the absence of hazardous voltage with a suitable instrument before disconnecting the capacitor for measurement. Stored charge can remain after the supply is removed.",
+            "Use capacitance mode on a meter with a suitable range and known accuracy. Measuring the isolated component avoids parallel circuit paths affecting the reading. Follow the meter instructions for lead compensation, settling time and any connection requirements. An LCR meter used for acceptance testing also needs the specified test frequency and signal conditions."
+          ],
+          "citations": [
+            {
+              "paragraph": 1,
+              "label": "Fluke: measuring capacitance",
+              "href": "https://www.fluke.com/en-us/learn/blog/digital-multimeters/how-to-measure-capacitance"
+            }
+          ],
+          "aliases": [
+            "measurement-conditions"
+          ]
+        },
+        {
+          "id": "calculate-tolerance-band",
+          "heading": "Calculate the band from the nominal value",
+          "paragraphs": [
+            "Multiply the nominal capacitance by the tolerance percentage to obtain the allowed deviation. Subtract and add that deviation for the lower and upper limits. The examples below are calculations from nominal labels; they are not measured sample or batch results."
+          ],
+          "tables": [
+            {
+              "caption": "Calculated ±5% capacitance limits",
+              "headers": [
+                "Nominal",
+                "Lower limit",
+                "Upper limit"
+              ],
+              "rows": [
+                [
+                  "4.5 µF",
+                  "4.275 µF",
+                  "4.725 µF"
+                ],
+                [
+                  "20 µF",
+                  "19 µF",
+                  "21 µF"
+                ],
+                [
+                  "25 µF",
+                  "23.75 µF",
+                  "26.25 µF"
+                ],
+                [
+                  "35 µF",
+                  "33.25 µF",
+                  "36.75 µF"
+                ]
+              ]
+            }
+          ],
+          "aliases": [
+            "retain-model-reference"
+          ],
+          "photos": [
+            {
+              "src": "/images/real/cbb65-2.jpg",
+              "title": "20 µF ±5% on the original label",
+              "alt": "CBB65 label showing 20 µF with ±5% tolerance.",
+              "text": "20 µF ±5% gives calculated limits of 19 and 21 µF.",
+              "original": true,
+              "showLabelDetail": true
+            }
+          ]
+        },
+        {
+          "id": "borderline-readings",
+          "heading": "A borderline display needs an accuracy allowance",
+          "paragraphs": [
+            "Suppose a 20 µF ±5% component displays 19.0 µF. That is the calculated lower boundary, but the display is not an exact value. Meter accuracy, resolution and the agreed measurement uncertainty determine whether the result supports acceptance. Use the inspection decision rule rather than rounding the reading into the permitted band.",
+            "OL depends on the meter mode and range. It can indicate an over-range or other condition defined in the instrument manual; it does not by itself prove an open capacitor. A zero or unexpectedly low reading also needs the range, connections and measurement setup resolved before classifying the fault."
+          ]
+        },
+        {
+          "id": "inspection-record-fields",
+          "heading": "Record enough information to reproduce the decision",
+          "paragraphs": [
+            "A useful test record names the model, sample or lot, nominal value, tolerance, measured result, method and date. Add instrument identification, calibration status and test conditions. For a dual-run capacitor, record each section against its assigned terminal pair and its own nominal value.",
+            "Capacitance alone does not establish insulation resistance, dielectric strength, dissipation factor or endurance. A damaged case or leaking part also needs removal from service and investigation regardless of one capacitance reading. Additional electrical tests require the correct equipment, model limits and safe procedure."
+          ],
+          "links": [
+            {
+              "label": "Inspection reports and certificate scope",
+              "href": "/resources/motor-capacitor-inspection-report-checklist/"
+            }
+          ],
+          "aliases": [
+            "other-electrical-tests",
+            "inspection-sampling-and-decision"
+          ]
+        }
+      ],
+      "details": []
+    }
+  },
+  {
+    "guide": {
+      "slug": "motor-capacitor-failure-diagnosis",
+      "defaultSeries": "unknown",
+      "category": "Understand capacitors",
+      "title": "Motor capacitor failure symptoms and what else to investigate",
+      "seoTitle": "Motor Capacitor Failure Symptoms and Diagnosis",
+      "summary": "Understand humming, slow running, overheating and repeated start-capacitor failure. Separate capacitor symptoms from supply, wiring, load and switching faults.",
+      "answer": "A motor that hums, starts poorly or overheats can have a capacitor fault, but the same symptoms can come from supply, wiring, a mechanical load or a starting-switch problem. Diagnose the circuit and measure the isolated capacitor before deciding which part needs replacement.",
+      "sources": [
+        {
+          "label": "Oriental Motor: AC motor troubleshooting",
+          "href": "https://blog.orientalmotor.com/troubleshooting-basics-ac-motors"
+        },
+        {
+          "label": "KEMET: MS/MD starting-duty example",
+          "href": "https://yageogroup.com/content/datasheet/asset/file/KEM_A4041_MS_MD"
+        },
+        {
+          "label": "Fluke: measuring capacitance",
+          "href": "https://www.fluke.com/en-us/learn/blog/digital-multimeters/how-to-measure-capacitance"
+        }
+      ],
+      "inquiry": {
+        "heading": "Identify the replacement after diagnosis",
+        "note": "Send the original label, motor model and the required duty and fit. Describe any established fault separately from the replacement rating.",
+        "label": "Request replacement data",
+        "request": "documents"
+      },
+      "related": [
+        {
+          "label": "Compare capacitor families",
+          "href": "/resources/cbb60-vs-cbb61-vs-cbb65/"
+        },
+        {
+          "label": "Capacitor purchasing and quotations",
+          "href": "/resources/motor-capacitor-wholesale-rfq/"
+        }
+      ]
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "symptoms-and-causes",
+          "heading": "A symptom narrows the investigation",
+          "paragraphs": [
+            "A weak run capacitor can affect auxiliary-winding current, torque and heating. A loose terminal or an incorrect connection can interrupt the same circuit. Supply problems or mechanical drag can prevent acceleration even when the capacitor is within its marked capacitance band.",
+            "For a heat pump or air conditioner, separate the compressor circuit from the fan circuit. One complaint can involve either motor, its controls or its capacitor section. Preserve the OEM part reference and wiring diagram during diagnosis; a generic HVAC capacitor cross-reference does not identify the failed circuit."
+          ],
+          "citations": [
+            {
+              "paragraph": 0,
+              "label": "Oriental Motor: AC motor troubleshooting",
+              "href": "https://blog.orientalmotor.com/troubleshooting-basics-ac-motors"
+            }
+          ]
+        },
+        {
+          "id": "visible-capacitor-damage",
+          "heading": "Visible damage is a reason to stop using the part",
+          "paragraphs": [
+            "Bulging, leakage, a cracked case or damaged terminals calls for the component to be removed from service and the cause investigated. A case that looks normal can still contain a faulty capacitor. Visual inspection therefore helps identify damage but cannot establish electrical condition on its own.",
+            "A qualified technician isolates the equipment, follows the approved discharge procedure and measures the disconnected component. A low capacitance result is compared with the nominal tolerance and measurement conditions. Open-circuit and short-circuit diagnoses need an appropriate method; a single OL or zero display in an unspecified meter mode is inconclusive."
+          ],
+          "links": [
+            {
+              "label": "Interpret multimeter readings",
+              "href": "/resources/motor-capacitor-tolerance-test-results/"
+            }
+          ]
+        },
+        {
+          "id": "repeated-start-failure",
+          "heading": "If a start capacitor fails again, investigate disconnection",
+          "paragraphs": [
+            "A start capacitor helps produce torque during acceleration and must leave the circuit after the specified interval. A defective switch or relay can keep it energized. A stalled load or repeated automatic retries can also extend the starting duty beyond the intended pattern. Fitting another capacitor without resolving that condition can leave the cause in place.",
+            "Record the maximum on-time, shortest rest and actual restart sequence against the selected model’s limits. Neither a higher voltage label nor more µF makes an intermittent-duty component suitable for permanent connection."
+          ],
+          "links": [
+            {
+              "label": "Start-capacitor timing limits",
+              "href": "/resources/cd60-start-capacitor-duty-cycle/"
+            }
+          ]
+        },
+        {
+          "id": "replacement-after-diagnosis",
+          "heading": "Order from the diagnosed motor requirement",
+          "paragraphs": [
+            "Keep the original nominal µF, required VAC, duty and connection assignment with the approved replacement. On a dual-run HVAC part, retain both section values. Record the equipment model and any diagnosed switching or wiring fault alongside the replacement reference so future orders do not repeat an incorrect substitution."
+          ]
+        }
+      ],
+      "details": []
+    }
+  },
+  {
+    "guide": {
+      "slug": "motor-capacitor-manufacturer-qualification",
+      "defaultSeries": "unknown",
+      "category": "Prepare your RFQ",
+      "title": "How to qualify a motor capacitor manufacturer",
+      "seoTitle": "Motor Capacitor Manufacturer Qualification",
+      "summary": "Evaluate a motor capacitor factory through its legal identity, relevant production, model documents and sample records. Understand HAN XING’s roles.",
+      "answer": "Evaluate the supplier against the capacitor you intend to buy. Identify the legal seller and manufacturing site, then connect the proposed model to its datasheet, drawing and sample inspection. A factory visit or production video adds context, but it does not establish a model’s ratings or certification.",
+      "sources": [],
+      "inquiry": {
+        "heading": "Start a model-specific supplier review",
+        "note": "Name the capacitor configuration and the documents needed for your equipment or destination market.",
+        "label": "Request qualification documents",
+        "request": "documents"
+      },
+      "related": [
+        {
+          "label": "Compare capacitor families",
+          "href": "/resources/cbb60-vs-cbb61-vs-cbb65/"
+        },
+        {
+          "label": "Capacitor purchasing and quotations",
+          "href": "/resources/motor-capacitor-wholesale-rfq/"
+        }
+      ]
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "company-and-factory-role",
+          "heading": "Establish who sells, manufactures and issues the documents",
+          "paragraphs": [
+            "HAN XING is the capacitor brand of Hangzhou Zebang Refrigeration Equipment Co., Ltd., headquartered in Hangzhou, Zhejiang. Its manufacturing facility is in Pingxiang County, Xingtai, Hebei, China. These are distinct company and production roles; the commercial records should identify the responsible legal entity and location.",
+            "For any factory-direct proposal, the purchase order, invoice and model documents need consistent references. If another company handles export or distribution, record that responsibility explicitly. A supplier’s country or use of the word manufacturer does not by itself establish which work it performs."
+          ],
+          "links": [
+            {
+              "label": "About HAN XING",
+              "href": "/about/"
+            }
+          ]
+        },
+        {
+          "id": "relevant-manufacturing-process",
+          "heading": "Review the process relevant to your capacitor",
+          "paragraphs": [
+            "Film run capacitors and AC electrolytic start capacitors have different constructions and duty requirements. For a film-capacitor order, relevant production evidence concerns the specified material, winding, assembly, connections and testing. A tour of unrelated products cannot answer how the proposed capacitor is controlled.",
+            "During a factory visit, follow the workflow and the records used to control it. Capacity and equipment claims need current production records; certification claims need documents covering the quoted model. Record the evidence for each requirement in the supplier review."
+          ],
+          "links": [
+            {
+              "label": "Manufacturing and quality",
+              "href": "/factory/"
+            }
+          ]
+        },
+        {
+          "id": "qualification-through-samples",
+          "heading": "Follow one model from quotation to production",
+          "paragraphs": [
+            "Follow one model from quotation through drawing, sample and inspection. The sample’s rating and connections should match the agreement, and its inspection record should identify that sample and the test method. The factory’s revision records then show how the approved configuration stays linked to production. This gives a buyer evidence for a specific order.",
+            "Certification is a separate evidence request. Its issuer, holder, exact model, standard edition and covered ratings must match the purchase requirement. A certificate for one run-capacitor model does not certify the whole factory catalogue or a CD60 start-capacitor range."
+          ],
+          "links": [
+            {
+              "label": "Inspection reports and certification scope",
+              "href": "/resources/motor-capacitor-inspection-report-checklist/"
+            }
+          ]
+        }
+      ],
+      "details": []
+    }
+  },
+  {
+    "guide": {
+      "slug": "motor-capacitor-wholesale-rfq",
+      "defaultSeries": "unknown",
+      "category": "Prepare your RFQ",
+      "title": "Buying motor capacitors in bulk: how to compare quotations",
+      "seoTitle": "Motor Capacitor Wholesale: Prices and Lead Time",
+      "summary": "Prepare one comparable motor capacitor RFQ for CBB60, CBB61, CBB65 or CD60. Define model quantities, sample charges, MOQ, lead time and export responsibilities.",
+      "answer": "Give each required capacitor configuration its own order line, with the electrical specification, drawing, quantity and destination. Compare prices only after the sample, inspection, label, packing and delivery scope are aligned. A lower unit price can cover a different product or a different share of the shipment costs.",
+      "sources": [],
+      "inquiry": {
+        "heading": "Get a quotation by model and quantity",
+        "note": "Send the ratings, drawing references, quantities and destination. Include sample and inspection requirements so the offer covers the complete order.",
+        "label": "Request a wholesale quote",
+        "request": "quote"
+      },
+      "related": [
+        {
+          "label": "Compare capacitor families",
+          "href": "/resources/cbb60-vs-cbb61-vs-cbb65/"
+        }
+      ]
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "quote-one-configuration",
+          "heading": "Separate ratings that will become separate stock items",
+          "paragraphs": [
+            "For a pump-parts distributor, a CBB60 wired model and a stud-mounted version are separate configurations even if both are 35 µF. For a ceiling-fan range, the harness and mounting tabs can change by motor version. Keep the drawing revision with each item so a combined bulk quantity does not conceal smaller quantities per configuration."
+          ],
+          "tables": [
+            {
+              "caption": "What changes the quotation for each family",
+              "headers": [
+                "Family",
+                "Configuration to price"
+              ],
+              "rows": [
+                [
+                  "CBB60",
+                  "Nominal µF and VAC, lead or terminal arrangement, fixing and case size."
+                ],
+                [
+                  "CBB61",
+                  "Rating, rectangular case, fan harness or blades and mounting tabs."
+                ],
+                [
+                  "CBB65",
+                  "Single value or dual pair, terminal assignment, can and bracket."
+                ],
+                [
+                  "CD60",
+                  "Start rating, on-time and restart duty, connections and case."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "price-moq-and-samples",
+          "heading": "Separate the unit price from the approval costs",
+          "paragraphs": [
+            "HAN XING’s standard minimum is 5,000 pieces in total across mixed models. List the quantity for each configuration, including any private-label version, so the quotation identifies exactly what the mixed order includes.",
+            "HAN XING offers free test samples for eligible models. Agree sample quantity, any customisation or tooling charges, freight and preparation date before dispatch. A CBB60, CBB61, CBB65 or CD60 sample approval identifies the exact configuration; a general sample pack does not approve every rating in a bulk order."
+          ],
+          "links": [
+            {
+              "label": "Sample and private-label approval",
+              "href": "/resources/oem-capacitor-sample-approval/"
+            }
+          ]
+        },
+        {
+          "id": "lead-time-and-shipping",
+          "heading": "What starts the production lead time?",
+          "paragraphs": [
+            "Production lead time needs a stated trigger, such as drawing approval, artwork approval or the agreed payment event. Keep sample preparation, production completion and carrier pickup as separate dates. No single standard lead time covers every electrical rating, harness and packaging combination.",
+            "For an Australian import order, state the destination and required market documents in the RFQ. An export quotation does not establish Australian warehouse stock, local distribution or a particular compliance approval. The same principle applies to other destinations: name the required documents and the delivery term with its named place."
+          ]
+        },
+        {
+          "id": "inspection-and-quote-comparison",
+          "heading": "Compare the inspection scope before comparing totals",
+          "paragraphs": [
+            "A datasheet describes the proposed model; an inspection report records tests on identified samples or a batch. Define required capacitance, insulation-resistance, dissipation-factor or withstand tests by their method and acceptance limits. A life-class requirement, including Class B, also needs the relevant rated conditions and model evidence.",
+            "Put currency, quotation validity, payment terms, packing units, freight scope and required documents alongside the unit price. This gives an importer, distributor or OEM a comparison of the same order rather than unrelated prices attached to a family name."
+          ],
+          "links": [
+            {
+              "label": "Inspection reports",
+              "href": "/resources/motor-capacitor-inspection-report-checklist/"
+            },
+            {
+              "label": "Order and shipment records",
+              "href": "/resources/motor-capacitor-order-shipment-checklist/"
+            }
+          ]
+        }
+      ],
+      "details": []
+    }
+  },
+  {
+    "guide": {
+      "slug": "oem-capacitor-sample-approval",
+      "defaultSeries": "unknown",
+      "category": "Prepare your RFQ",
+      "title": "Private-label capacitors: artwork, samples and OEM approval",
+      "seoTitle": "OEM Capacitor Labels and Sample Approval",
+      "summary": "Plan private-label capacitor artwork and packaging, separate model changes from printing changes and approve the sample, drawing and commercial terms together.",
+      "answer": "HAN XING offers label and packaging customization. Changes to electrical ratings, cases, leads, terminals or mounting are quoted by model. Keep the approved capacitor configuration, artwork and packing revisions together so a private-label order reproduces the intended product.",
+      "sources": [],
+      "inquiry": {
+        "heading": "Plan your label and packaging order",
+        "note": "Send the model requirement, artwork and intended packing. Describe electrical or structural changes separately for a model-specific quote.",
+        "label": "Request an OEM quote",
+        "request": "quote"
+      },
+      "related": [
+        {
+          "label": "Compare capacitor families",
+          "href": "/resources/cbb60-vs-cbb61-vs-cbb65/"
+        },
+        {
+          "label": "Capacitor purchasing and quotations",
+          "href": "/resources/motor-capacitor-wholesale-rfq/"
+        }
+      ]
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "custom-motor-capacitor-rfq",
+          "heading": "Separate a new label from a new capacitor configuration",
+          "paragraphs": [
+            "Printing a buyer’s brand on an established capacitor and changing its lead length are different requests. Artwork concerns presentation and required markings. A different electrical value, case or connection changes the product definition and needs a model-specific feasibility review and quote.",
+            "Describe the intended equipment, required µF and VAC, duty and installation. For custom leads, define finished length, connector and exit direction. For blades or a mounting stud, provide the mating geometry and fixing requirement. These details allow an existing configuration or a proposed change to be identified accurately."
+          ]
+        },
+        {
+          "id": "label-and-packing-approval",
+          "heading": "Approve the artwork against the actual model",
+          "paragraphs": [
+            "The brand artwork must leave the product’s required electrical and traceability markings readable. A private-label capacitor still needs the correct rating, model identification and applicable markings. Copying another product’s certification logo or temperature category onto new artwork does not establish the underlying approval.",
+            "For packaging, define the individual box, inner protection, units per carton and carton marks. The approved layout and revision should identify the model it contains. A rendering can approve a design position, but the packed sample establishes how the product and its leads or terminals are actually protected."
+          ]
+        },
+        {
+          "id": "sample-and-drawing-approval",
+          "heading": "Use one sample reference for the agreed configuration",
+          "paragraphs": [
+            "The sample record should identify the model, drawing revision, electrical results and installed fit. Artwork and packing approval can be separate entries in the same file. A sample inspection report records what was tested; it should not imply unperformed tests or approval of other ratings.",
+            "For a prototype or first sample, state which features are production-representative and which remain pending. An accepted wire route does not approve an unresolved electrical specification. Keep outstanding items visible in the approval record before releasing the production order."
+          ]
+        },
+        {
+          "id": "engineering-changes",
+          "heading": "Review the affected approval when the product changes",
+          "paragraphs": [
+            "A later connector change can alter installed height; a new label can change the stock-item reference; a different case can alter the mounting. Name the changed drawing or artwork revision and the related sample evidence. This keeps a repeat order from mixing an old electrical approval with a new physical configuration.",
+            "Agree sample quantity, charges, freight and preparation date in writing. The production quote also needs the minimum quantity for the selected version and the event that starts lead time. There is no published universal sample fee or delivery period for every custom combination."
+          ],
+          "links": [
+            {
+              "label": "Compare quotation scope",
+              "href": "/resources/motor-capacitor-wholesale-rfq/"
+            }
+          ],
+          "aliases": [
+            "start-with-one-model-reference",
+            "check-the-drawing-against-the-sample",
+            "review-the-test-record",
+            "approve-labels-and-packing",
+            "write-the-approval-and-carry-it-into-the-order",
+            "compare-model-quotations"
+          ]
+        }
+      ],
+      "details": []
+    }
+  },
+  {
+    "guide": {
+      "slug": "motor-capacitor-order-shipment-checklist",
+      "defaultSeries": "unknown",
+      "category": "Prepare your RFQ",
+      "title": "From approved capacitor sample to shipment",
+      "seoTitle": "Motor Capacitor Order and Shipping Checklist",
+      "summary": "Keep capacitor model approvals, packing, inspection and shipment records tied to one order. Define dates, delivery terms and discrepancy handling.",
+      "answer": "Use the same order and model references from sample approval through production, packing and dispatch. Record the approved revisions and the delivery responsibilities before production starts. Separate production completion, inspection release and carrier pickup so each date has a clear meaning.",
+      "sources": [],
+      "inquiry": {
+        "heading": "Discuss a specific order or shipment",
+        "note": "Include the order reference and affected model when discussing packing, inspection or shipment records.",
+        "label": "Contact the order team",
+        "request": "quote"
+      },
+      "related": [
+        {
+          "label": "Compare capacitor families",
+          "href": "/resources/cbb60-vs-cbb61-vs-cbb65/"
+        },
+        {
+          "label": "Capacitor purchasing and quotations",
+          "href": "/resources/motor-capacitor-wholesale-rfq/"
+        }
+      ]
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "1-set-the-product-and-order-details",
+          "heading": "Lock the product definition into the order",
+          "paragraphs": [
+            "The order should identify the exact capacitor model, ratings, drawing revision and quantity for each configuration. Attach the approved sample reference, label artwork and agreed alternatives. An old order description can specify a superseded harness or packing layout by mistake."
+          ]
+        },
+        {
+          "id": "2-approve-the-packout",
+          "heading": "Packing approval concerns the product inside the box",
+          "paragraphs": [
+            "Specify the individual protection and carton arrangement, with units, marks and any pallet requirement. Capacitor leads and terminals need protection from pressure and contact. The actual packing list should reconcile quantities and carton counts with the order; it also supplies the recorded dimensions and weights used for shipment."
+          ],
+          "aliases": [
+            "sample-examples"
+          ],
+          "photos": [
+            {
+              "src": "/images/real/packing-scene.jpg",
+              "alt": "Product boxes and capacitor packing work at a worktable.",
+              "title": "Protection inside the carton",
+              "text": "Compare packing photos with the approved protection, dividers and units per carton."
+            }
+          ],
+          "layout": "compact-photo"
+        },
+        {
+          "id": "3-record-dispatch-dates-and-checks",
+          "heading": "An inspection release is different from a departure date",
+          "paragraphs": [
+            "Production completion means the product is made. Inspection release means the agreed acceptance step is complete. Carrier pickup and departure are later logistics events. Record each date as confirmed or estimated and name the contact responsible for updates. This prevents one estimated production date from becoming a promised arrival date.",
+            "Partial shipments, delayed approvals and failed inspections need an agreed decision route. Preserve the affected model and quantity with the release record so unaffected items do not conceal unresolved parts of the order."
+          ]
+        },
+        {
+          "id": "4-check-documents-against-the-shipping-route",
+          "heading": "Define the delivery responsibility and document set",
+          "paragraphs": [
+            "The delivery term needs its named place and the agreed allocation of freight and other costs. The commercial invoice, packing list and transport record must refer to the same goods and quantities. Any required origin, inspection or compliance document needs a named issuer and scope; it is not automatically supplied by a general export description."
+          ]
+        },
+        {
+          "id": "5-agree-a-route-for-discrepancies",
+          "heading": "Keep a usable record if something differs on arrival",
+          "paragraphs": [
+            "Agree the reporting procedure and commercial claim terms before dispatch. On arrival, preserve order references, carton marks, quantities and photographs of any discrepancy. These records help the supplier compare the received goods with the order and identify the affected cartons or batch."
+          ]
+        },
+        {
+          "id": "order-confirmation-notes",
+          "heading": "Order notes to keep together",
+          "paragraphs": [],
+          "copyText": "Order reference:\nSeries / exact model / electrical ratings:\nDrawing revision / connection layout:\nQuantity by model / approved alternatives:\nSample approval / label artwork revision:\nPrice / currency / payment / quotation validity / sample or tooling charges:\nApproved packing revision / protection / units / marks / language / pallet:\nCarton count / dimensions / net and gross weights:\nInspection scope / acceptance criteria / record format / lot or sample reference:\nProduction complete: ______  confirmed or estimated: ______  contact: ______\nInspection release: ______  confirmed or estimated: ______  contact: ______\nCarrier pickup: ______  confirmed or estimated: ______  contact: ______\nDeparture: ______  confirmed or estimated: ______  contact: ______\nEstimated arrival: ______  update contact: ______\nDelay / partial-shipment approval contact:\nDelivery term and named place / shipping method / who pays freight:\nRequired documents / issuer / scope / matching order details:\nContact for discrepancies / reporting procedure / warranty and claim terms:\nOrder file reference / items still to agree:"
+        }
+      ],
+      "details": []
+    }
+  },
+  {
+    "guide": {
+      "slug": "motor-capacitor-inspection-report-checklist",
+      "defaultSeries": "unknown",
+      "category": "Prepare your RFQ",
+      "title": "How to read a motor capacitor inspection report",
+      "seoTitle": "Motor Capacitor Test Reports and Certificates",
+      "summary": "Read capacitor test results for an identified model, sample or batch. Review capacitance, insulation, withstand tests and certificate scope.",
+      "answer": "A useful report identifies the tested model and sample or batch, states the method and conditions, and places measured results beside the acceptance limits. A certificate serves a different purpose: its holder, covered models, ratings and standard edition must match the purchase requirement.",
+      "sources": [
+        {
+          "label": "IEC 60252-1: AC motor capacitors",
+          "href": "https://webstore.iec.ch/en/publication/1154"
+        },
+        {
+          "label": "IEC 60252-2: motor start capacitors",
+          "href": "https://webstore.iec.ch/en/publication/1157"
+        },
+        {
+          "label": "IECEE: motor start capacitor test report form",
+          "href": "https://webstore.iec.ch/en/publication/63361"
+        },
+        {
+          "label": "UL: certification directory",
+          "href": "https://www.ul.com/software/product-sourcing-and-certifications-database"
+        }
+      ],
+      "inquiry": {
+        "heading": "Request records for the quoted model",
+        "note": "Name the required tests, certificate scope and whether the record must cover an approval sample or the production batch.",
+        "label": "Request model inspection records",
+        "request": "documents"
+      },
+      "related": [
+        {
+          "label": "Compare capacitor families",
+          "href": "/resources/cbb60-vs-cbb61-vs-cbb65/"
+        },
+        {
+          "label": "Capacitor purchasing and quotations",
+          "href": "/resources/motor-capacitor-wholesale-rfq/"
+        }
+      ]
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "model-and-report-identity",
+          "heading": "Connect the record to the goods",
+          "paragraphs": [
+            "Start with the full model reference, rating and drawing revision. A sample report applies to its identified sample; a batch report needs the batch reference, sampling plan and quantity covered. A datasheet describes a model’s specification and is not a record that the delivered lot passed inspection.",
+            "The record should identify the test date, method, instrument and calibration status. Material declarations also need to identify the covered construction or model. Together, these fields allow the buyer to trace the results to the purchased model and batch."
+          ]
+        },
+        {
+          "id": "electrical-test-scope",
+          "heading": "Read the limit beside the method",
+          "paragraphs": [
+            "Capacitance results need the nominal value, tolerance and measurement conditions. For a dual-run part, each section needs its own result and terminal assignment. Insulation resistance, dissipation factor and dielectric-strength tests measure different properties; a good µF result cannot stand in for them."
+          ],
+          "tables": [
+            {
+              "caption": "Information needed to interpret each test",
+              "headers": [
+                "Test",
+                "Conditions and result to retain"
+              ],
+              "rows": [
+                [
+                  "Capacitance",
+                  "Nominal value, tolerance, test frequency, measured value and decision."
+                ],
+                [
+                  "Insulation resistance",
+                  "Applied DC test conditions, duration, measured result and limit."
+                ],
+                [
+                  "Voltage withstand / dielectric strength",
+                  "Test points, voltage, duration and specified acceptance criterion."
+                ],
+                [
+                  "Dissipation factor",
+                  "Frequency, temperature, measured factor and model limit."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "routine-type-endurance",
+          "heading": "Routine inspection, type testing and endurance",
+          "paragraphs": [
+            "Routine production inspection covers the agreed checks on the identified production scope. Type testing evaluates a defined design under a standard or test programme. Endurance testing adds specified operating conditions and duration. The report should name the tests performed and the samples or production they cover.",
+            "Agree the sampling and decision rules before the order. Near a capacitance limit, instrument uncertainty can affect acceptance. If a report has only a pass label with no test reference or scope, obtain the missing detail before using it as evidence for that purchase."
+          ],
+          "links": [
+            {
+              "label": "Tolerance and borderline measurements",
+              "href": "/resources/motor-capacitor-tolerance-test-results/"
+            }
+          ]
+        },
+        {
+          "id": "start-capacitor-report",
+          "heading": "Starting-duty evidence under IEC 60252-2",
+          "paragraphs": [
+            "IEC 60252-2 covers motor start capacitors within its scope, while IEC 60252-1 covers AC motor capacitors within its separate scope. For a CD60 proposal, the relevant report needs the offered ratings and the starting-duty conditions, including energized time and restart interval. A report for a film run model is not evidence for an electrolytic start model.",
+            "An IECEE test report form is a reporting template. It is not a completed CB test report or a certificate for the supplier’s model. A completed report needs the tested product, issuing body, results and referenced certificate where applicable."
+          ],
+          "citations": [
+            {
+              "paragraph": 0,
+              "label": "IEC 60252-2: motor start capacitors",
+              "href": "https://webstore.iec.ch/en/publication/1157"
+            },
+            {
+              "paragraph": 1,
+              "label": "IECEE: motor start capacitor test report form",
+              "href": "https://webstore.iec.ch/en/publication/63361"
+            }
+          ]
+        },
+        {
+          "id": "certificate-scope",
+          "heading": "Verify certification through the issuer",
+          "paragraphs": [
+            "Match the certificate holder, model list, ratings, standard edition and validity or status with the order. Use the issuer’s directory or verification route where available. A logo on a label and a certificate for another model do not establish coverage of the purchased configuration."
+          ],
+          "citations": [
+            {
+              "paragraph": 0,
+              "label": "UL: certification directory",
+              "href": "https://www.ul.com/software/product-sourcing-and-certifications-database"
+            }
+          ]
+        }
+      ],
+      "details": []
+    }
+  },
+  {
+    "guide": {
+      "slug": "iec-60252-1-capacitor-safety-classes",
+      "defaultSeries": "unknown",
+      "category": "Understand capacitors",
+      "title": "IEC 60252-1 safety classes and capacitor design life",
+      "seoTitle": "IEC 60252-1: S0–S3 Safety and A–D Life Classes",
+      "summary": "Separate S0–S3 safety classes from A–D operation classes, read older P0–P2 markings and understand why life figures depend on rated voltage and conditions.",
+      "answer": "Safety classes describe protection in a capacitor failure; operation classes describe probable design life under rated conditions. They are separate classifications. Specify the required class, standard edition and operating conditions for the exact model rather than assigning a class to a whole capacitor family.",
+      "sources": [
+        {
+          "label": "IEC 60252-1: AC motor capacitors",
+          "href": "https://webstore.iec.ch/en/publication/1154"
+        },
+        {
+          "label": "IEC 60252-2: motor start capacitors",
+          "href": "https://webstore.iec.ch/en/publication/1157"
+        },
+        {
+          "label": "TDK: capacitor safety and operation classes",
+          "href": "https://in.tdk-electronics.tdk.com/download/3146718/f510b4914732a9f88af87ed4b3ed65ae/ac-filmcapacitors-po-pdf.pdf"
+        },
+        {
+          "label": "TDK: climatic category and operating conditions",
+          "href": "https://www.tdk-electronics.tdk.com/inf/20/25/ds/B32350_B32352.pdf"
+        }
+      ],
+      "publishedAt": "2026-11-05",
+      "inquiry": {
+        "heading": "Specify the class required by your equipment",
+        "note": "Include the standard edition, required safety and operation classes, rated conditions and certificate scope.",
+        "label": "Request class and model evidence",
+        "request": "documents"
+      },
+      "related": [
+        {
+          "label": "Compare capacitor families",
+          "href": "/resources/cbb60-vs-cbb61-vs-cbb65/"
+        },
+        {
+          "label": "Capacitor purchasing and quotations",
+          "href": "/resources/motor-capacitor-wholesale-rfq/"
+        }
+      ]
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "safety-protection-classes",
+          "heading": "What S0, S1, S2 and S3 describe",
+          "paragraphs": [
+            "IEC 60252-1 addresses AC motor capacitor ratings, performance, testing and safety within its stated scope. IEC 60252-2 separately addresses motor start capacitors. Use the edition required by the equipment and the model’s supporting documents. TDK’s published overview summarizes the safety categories below."
+          ],
+          "citations": [
+            {
+              "paragraph": 0,
+              "label": "IEC 60252-1: AC motor capacitors",
+              "href": "https://webstore.iec.ch/en/publication/1154"
+            },
+            {
+              "paragraph": 0,
+              "label": "TDK: capacitor safety and operation classes",
+              "href": "https://in.tdk-electronics.tdk.com/download/3146718/f510b4914732a9f88af87ed4b3ed65ae/ac-filmcapacitors-po-pdf.pdf"
+            }
+          ],
+          "tables": [
+            {
+              "caption": "Safety classes summarized in the TDK overview",
+              "headers": [
+                "Class",
+                "Failure protection"
+              ],
+              "rows": [
+                [
+                  "S0 (P0)",
+                  "No specific failure protection."
+                ],
+                [
+                  "S1 (P1)",
+                  "Open or short-circuit failure is possible, with protection against fire or shock hazards."
+                ],
+                [
+                  "S2 (P2)",
+                  "Designed to fail open circuit, with protection against fire or shock hazards."
+                ],
+                [
+                  "S3",
+                  "Segmented-film protection with low residual capacitance on failure and protection against fire and shock hazards."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "life-classes",
+          "heading": "A life class needs its rated conditions",
+          "paragraphs": [
+            "TDK summarizes operation classes A, B, C and D as 30,000, 10,000, 3,000 and 1,000 hours respectively under rated conditions. These figures are design-life classifications, not a forecast of one component’s service interval or a warranty for every installation.",
+            "The same TDK B32350/B32352 datasheet lists Class A at 400 VAC and Class B at 450 VAC, with safety class S3 stated separately. That example shows why a class must stay attached to voltage and operating conditions. Those ratings belong to the TDK models in that document, not to HAN XING products."
+          ],
+          "citations": [
+            {
+              "paragraph": 1,
+              "label": "TDK: climatic category and operating conditions",
+              "href": "https://www.tdk-electronics.tdk.com/inf/20/25/ds/B32350_B32352.pdf"
+            }
+          ]
+        },
+        {
+          "id": "markings-and-model-evidence",
+          "heading": "Read C and P1 on the original CBB65 label",
+          "paragraphs": [
+            "The supplied CBB65 label reads 40/85/21 C P1. The climatic code, operation class C and older protection marking P1 concern separate requirements. The selected model datasheet and its supporting report establish the standard edition and rated conditions behind those markings.",
+            "Installation still follows the model instructions. A protection mechanism can need clearance or freedom to operate, and its presence does not authorize a different voltage or duty. Include any required bracket, terminal clearance and operating environment in the purchase specification."
+          ],
+          "photos": [
+            {
+              "src": "/images/real/cbb65-2.jpg",
+              "title": "C and P1 on an original CBB65 label",
+              "alt": "CBB65 capacitor marked 40/85/21 C P1.",
+              "text": "The model documents give the conditions and scope behind the markings.",
+              "original": true,
+              "showLabelDetail": false
+            }
+          ]
+        },
+        {
+          "id": "standard-and-test-evidence",
+          "heading": "State which evidence the order needs",
+          "paragraphs": [
+            "Routine tests, type tests and endurance tests have different scopes. A claimed class needs evidence for the quoted design and ratings; a routine capacitance result alone does not establish an endurance classification. Where certification is required, the issuer, model coverage and standard edition must also match."
+          ],
+          "links": [
+            {
+              "label": "Report scope and certificate verification",
+              "href": "/resources/motor-capacitor-inspection-report-checklist/"
+            }
+          ]
+        }
+      ],
+      "details": []
+    }
+  },
+  {
+    "guide": {
+      "slug": "motor-capacitor-manufacturers-china",
+      "title": "How to choose the best motor capacitor manufacturer in China (2026)",
+      "seoTitle": "Best Motor Capacitor Manufacturers in China (2026) | HAN XING",
+      "hidePublisherByline": true,
+      "category": "Prepare your RFQ",
+      "summary": "Compare six Chinese motor capacitor suppliers for CBB60, CBB61, CBB65 and CD60. Check the factory, model drawing and certification before you order.",
+      "answer": "For a mixed order of CBB60, CBB61, CBB65 and CD60 with custom connections or private-label packing, make HAN XING your first choice for a quote. Fuye, Huifeng and Dingfeng also list all four families and give you alternatives to compare. For orders limited to motor run capacitors, start with Tongfeng and Feida. Choose the supplier once the offered model, factory and required approvals line up with your order.",
+      "sources": [
+        {
+          "label": "Anhui Tongfeng Electronics",
+          "href": "https://en.tong-feng.com/motor_ac_capacitors.html"
+        },
+        {
+          "label": "Anhui Feida Electric Technology",
+          "href": "https://www.ahfddq.com/en/h-col-126.html"
+        },
+        {
+          "label": "Taizhou Huifeng Electronics",
+          "href": "https://www.tzhfdz.com/"
+        },
+        {
+          "label": "Taizhou Dingfeng Electric Appliance",
+          "href": "https://dfcapacitor.en.tradevv.com/aboutus.htm"
+        },
+        {
+          "label": "Taizhou Fuye Electronic",
+          "href": "https://www.tzfuye.com/"
+        },
+        {
+          "label": "Zebang CBB60 dimensions guide",
+          "href": "/resources/cbb60-capacitor-dimensions-chart/"
+        },
+        {
+          "label": "Fuye CBB60-1 dimensions",
+          "href": "https://www.tzfuye.com/product/en/39.aspx"
+        },
+        {
+          "label": "SAMR company registration guidance",
+          "href": "https://dj.samr.gov.cn/djfww/zczl/"
+        },
+        {
+          "label": "UL Product iQ record E187356",
+          "href": "https://productiq.ulprospector.com/en/profile/6426090/cywt2.e187356?page=11&term=CYWT2"
+        },
+        {
+          "label": "UL guidance on component recognition",
+          "href": "https://www.ul.com/thecodeauthority/knowledge/ul-component-recognition-classification"
+        },
+        {
+          "label": "CBB60 motor run capacitors",
+          "href": "/products/cbb60-motor-run-capacitor/"
+        },
+        {
+          "label": "CBB61 fan capacitors",
+          "href": "/products/cbb61-fan-capacitor/"
+        },
+        {
+          "label": "CBB65 single and dual run capacitors",
+          "href": "/products/cbb65-air-conditioner-capacitor/"
+        },
+        {
+          "label": "CD60 motor start capacitors",
+          "href": "/products/cd60-start-capacitor/"
+        }
+      ],
+      "inquiry": {
+        "heading": "Ask for a model drawing and records",
+        "note": "Send the motor specification or capacitor label, the configuration you want and the destination. List the documents your approval process requires.",
+        "label": "Request model documents",
+        "request": "documents"
+      },
+      "related": [
+        {
+          "label": "Motor capacitor supplier qualification checklist",
+          "href": "/resources/motor-capacitor-manufacturer-qualification/"
+        },
+        {
+          "label": "Factory quotes and mixed-model orders",
+          "href": "/resources/wholesale-motor-capacitors-china/"
+        }
+      ],
+      "defaultSeries": "unknown"
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "manufacturer-catalogue-comparison",
+          "heading": "Which suppliers list the motor capacitor families you need?",
+          "paragraphs": [
+            "The November 2026 comparison includes our own HAN XING catalogue and five other suppliers’ published ranges. Dingfeng’s details come from its supplier storefront. Start with family coverage, then compare case and terminal fit, who sells and makes the part, and the model records available for inspection or certification."
+          ],
+          "tables": [
+            {
+              "caption": "Six Chinese motor capacitor suppliers",
+              "headers": [
+                "Supplier and catalogue",
+                "Published families",
+                "What to check in the quote"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "HAN XING",
+                    "href": "/products/"
+                  },
+                  "CBB60, CBB61, CBB65 and CD60",
+                  "Ask for the drawing and a quoted part number for each line. Confirm any custom lead or packing requirements."
+                ],
+                [
+                  {
+                    "text": "Taizhou Fuye Electronic",
+                    "href": "https://www.tzfuye.com/"
+                  },
+                  "CBB60, CBB61, CBB65 and CD60",
+                  "Use the published CBB60-1 case dimensions to check how the part fits in your equipment."
+                ],
+                [
+                  {
+                    "text": "Taizhou Huifeng Electronics",
+                    "href": "https://www.tzhfdz.com/"
+                  },
+                  "CBB60, CBB61, CBB65 and CD60",
+                  "Match the catalogue reference to the lead or terminal layout needed for your circuit."
+                ],
+                [
+                  {
+                    "text": "Taizhou Dingfeng Electric Appliance",
+                    "href": "https://dfcapacitor.en.tradevv.com/aboutus.htm"
+                  },
+                  "CBB60, CBB61, CBB65 and CD60",
+                  "Ask the seller to name the factory and supply the model drawings behind its wholesale listings."
+                ],
+                [
+                  {
+                    "text": "Anhui Tongfeng Electronics",
+                    "href": "https://en.tong-feng.com/motor_ac_capacitors.html"
+                  },
+                  "CBB60, CBB61 and CBB65 motor run families",
+                  "Confirm the life and safety classes for the voltage and model being offered."
+                ],
+                [
+                  {
+                    "text": "Anhui Feida Electric Technology",
+                    "href": "https://www.ahfddq.com/en/h-col-126.html"
+                  },
+                  "CBB60, CBB61 and CBB65A variants",
+                  "Use the full CBB65A suffix to check the case construction and safety class of that variant."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hanxing-mixed-oem-orders",
+          "heading": "HAN XING for mixed OEM orders",
+          "paragraphs": [
+            "If you are buying for several equipment models, keep the capacitor specification and quantity on each line of the request for quotation (RFQ). Include the existing part label and any drawing that shows the lead exit, terminal orientation or mounting space. Send your label or packing artwork when the order calls for private labelling."
+          ],
+          "records": [
+            {
+              "label": "Brand and company",
+              "text": "HAN XING is the capacitor brand of Hangzhou Zebang Refrigeration Equipment Co., Ltd., headquartered in Hangzhou, Zhejiang."
+            },
+            {
+              "label": "Manufacturing facility",
+              "text": "Pingxiang County, Xingtai, Hebei, China."
+            },
+            {
+              "label": "Documents to request",
+              "text": "Ask for a drawing for each quoted model, a sample for approval and the inspection or certificate records your customer requires."
+            }
+          ],
+          "links": [
+            {
+              "label": "Company and factory details",
+              "href": "/about/#supplier-records"
+            }
+          ]
+        },
+        {
+          "id": "compare-one-part",
+          "heading": "Compare two CBB60 catalogue sizes at the same rating",
+          "paragraphs": [
+            "A buyer specifying 35 µF and 450 VAC can start with the following two catalogue rows. The Fuye row shows a nominal body height 3 mm greater than the HAN XING row. Check the complete installed outline on the proposed drawing, including the lead exit, stud or bracket, before approving the part."
+          ],
+          "tables": [
+            {
+              "caption": "Published dimensions for 35 µF CBB60 cases",
+              "headers": [
+                "Catalogue row",
+                "Voltage column",
+                "Case diameter × height"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "HAN XING CBB60 dimensions",
+                    "href": "/resources/cbb60-capacitor-dimensions-chart/"
+                  },
+                  "370–450 VAC",
+                  "45 × 90 mm"
+                ],
+                [
+                  {
+                    "text": "Fuye CBB60-1 dimensions",
+                    "href": "https://www.tzfuye.com/product/en/39.aspx"
+                  },
+                  "450 VAC",
+                  "45 × 93 mm"
+                ]
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "CBB60 motor run capacitor specifications",
+              "href": "/products/cbb60-motor-run-capacitor/#specifications"
+            },
+            {
+              "label": "Sourcing by equipment and circuit",
+              "href": "/resources/china-motor-capacitor-suppliers-pumps-fans-hvac/"
+            }
+          ]
+        },
+        {
+          "id": "verify-seller-and-factory",
+          "heading": "How to verify a motor capacitor manufacturer in China",
+          "paragraphs": [
+            "Ask for the registered Chinese name and Unified Social Credit Code. Use them to look up the supplier in China’s National Enterprise Credit Information Publicity System. Check that the registered name matches the entity on the quotation. If another company will invoice or receive payment, ask for its role in writing.",
+            "Verify the production site for your quoted model separately. Ask for its address and review a current walkthrough or audit that shows the operations relevant to the part. Identify where winding, assembly and final inspection take place, including any work done by an outside factory."
+          ],
+          "citations": [
+            {
+              "paragraph": 0,
+              "label": "SAMR company registration guidance",
+              "href": "https://dj.samr.gov.cn/djfww/zczl/"
+            }
+          ],
+          "links": [
+            {
+              "label": "Manufacturing footage and model records",
+              "href": "/factory/#model-records"
+            }
+          ],
+          "photos": [
+            {
+              "src": "/images/real/film-rolls.jpg",
+              "alt": "Film rolls and a red lever on processing equipment.",
+              "title": "Film processing at the factory",
+              "text": "This frame shows the equipment used to handle the film. Ask which operations apply to the model you are reviewing.",
+              "original": true
+            }
+          ]
+        },
+        {
+          "id": "check-inspection-and-certification",
+          "heading": "How to compare quality records and certifications",
+          "paragraphs": [
+            "Use the same acceptance criteria for every supplier. Match the test report to the sample label and the drawing revision. Check the test conditions, measured results and acceptance limits. For production orders, agree how the lot will be identified and what the batch inspection will cover before approving shipment.",
+            "If the equipment requires a UL Recognized Component, Tongfeng is one supplier with a public record you can check. UL Product iQ file E187356 names Anhui Tong Feng Electronics Co., Ltd. and includes specified CBB61 and CBB65 variants. Compare the full quoted designation and ratings with the record and check the conditions that apply to its use in your equipment.",
+            "For any supplier, ask for the certificate or file number and check the holder, model and scope with the issuer. If the order changes the case, connection or label, confirm the scope for the offered build before you rely on that approval."
+          ],
+          "citations": [
+            {
+              "paragraph": 1,
+              "label": "UL Product iQ record E187356",
+              "href": "https://productiq.ulprospector.com/en/profile/6426090/cywt2.e187356?page=11&term=CYWT2"
+            },
+            {
+              "paragraph": 1,
+              "label": "UL guidance on component recognition",
+              "href": "https://www.ul.com/thecodeauthority/knowledge/ul-component-recognition-classification"
+            }
+          ],
+          "links": [
+            {
+              "label": "Read a model inspection report",
+              "href": "/resources/motor-capacitor-inspection-report-checklist/"
+            },
+            {
+              "label": "VDE certificate search",
+              "href": "https://www.vde.com/tic-en/marks-and-certificates/vde-approved-products/search"
+            }
+          ]
+        },
+        {
+          "id": "supplier-questions",
+          "heading": "Questions buyers ask when comparing suppliers",
+          "records": [
+            {
+              "label": "Does a CBB65 listing tell me whether it is single run or dual run?",
+              "text": "Ask whether the offered part has one or two capacitance values. For a dual-run capacitor, ask for both values and a labelled terminal drawing so you can match the compressor and fan circuits."
+            },
+            {
+              "label": "How do I qualify a second supplier for an approved part?",
+              "text": "Share the same electrical and mounting requirements with the second supplier. Approve its sample against its own part number and drawing revision. Keep both sets of approval records so each delivery can be traced to the source you approved."
+            }
+          ],
+          "links": [
+            {
+              "label": "Single versus dual-run capacitors",
+              "href": "/resources/single-vs-dual-run-capacitors/"
+            }
+          ]
+        },
+        {
+          "id": "request-a-matching-offer",
+          "heading": "Request comparable quotes by model",
+          "paragraphs": [
+            "Send each shortlisted supplier the same list of capacitor values, voltages, connections, mounting requirements and quantities. Ask for the quoted part number and drawing revision on every line. If you need tooling, special labels or different cartons, ask suppliers to quote those charges separately so you can compare the same build."
+          ],
+          "links": [
+            {
+              "label": "CBB60 motor run capacitors",
+              "href": "/products/cbb60-motor-run-capacitor/"
+            },
+            {
+              "label": "CBB61 fan capacitors",
+              "href": "/products/cbb61-fan-capacitor/"
+            },
+            {
+              "label": "CBB65 single and dual run capacitors",
+              "href": "/products/cbb65-air-conditioner-capacitor/"
+            },
+            {
+              "label": "CD60 motor start capacitors",
+              "href": "/products/cd60-start-capacitor/"
+            }
+          ]
+        }
+      ],
+      "details": [
+        "Equipment model and capacitor rating",
+        "Drawing revision, connection and mounting requirements",
+        "Quantity by model, destination and required records"
+      ]
+    }
+  },
+  {
+    "guide": {
+      "slug": "china-motor-capacitor-suppliers-pumps-fans-hvac",
+      "title": "Sourcing motor capacitors for pumps, fans and HVAC",
+      "seoTitle": "Motor Capacitors from China for Pumps, Fans & HVAC | HAN XING",
+      "category": "Compare & select",
+      "summary": "Prepare a sourcing list for a Chinese motor capacitor supplier. Match CBB60, CBB61, CBB65 or CD60 to the circuit, connections and installed fit.",
+      "answer": "When sourcing motor capacitors from China, give the supplier one line for each capacitor position on the equipment drawing. A pump can have a run capacitor and a separate start capacitor. An air conditioner can use a single-run part or call for two capacitance sections in one can. Put the circuit duty and the approved part reference on the list before asking for a price.",
+      "sources": [
+        {
+          "label": "CBB60 motor run capacitors",
+          "href": "/products/cbb60-motor-run-capacitor/"
+        },
+        {
+          "label": "CBB61 fan capacitors",
+          "href": "/products/cbb61-fan-capacitor/"
+        },
+        {
+          "label": "CBB65 air conditioner capacitors",
+          "href": "/products/cbb65-air-conditioner-capacitor/"
+        },
+        {
+          "label": "CD60 motor start capacitors",
+          "href": "/products/cd60-start-capacitor/"
+        }
+      ],
+      "inquiry": {
+        "heading": "Send your equipment requirements",
+        "note": "Include the motor model, capacitor label or approved drawing, quantity by configuration and delivery destination.",
+        "label": "Request a capacitor quote",
+        "request": "quote"
+      },
+      "related": [
+        {
+          "label": "Compare motor capacitor manufacturers in China",
+          "href": "/resources/motor-capacitor-manufacturers-china/"
+        },
+        {
+          "label": "Capacitor dimensions, terminals and mounting",
+          "href": "/resources/dimensions-terminals-mounting/"
+        }
+      ],
+      "defaultSeries": "unknown"
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "water-pump-run-capacitor",
+          "heading": "Water pumps with a cylindrical run capacitor",
+          "paragraphs": [
+            "If the pump motor specifies a wired 35 µF, 450 VAC run capacitor, the photographed HAN XING CBB60 is one reference to discuss. For the actual order, read the motor documentation and check the case diameter, body height and fixing method. A stud extends below the case. The cable bend and connector need room above or beside it.",
+            "Use separate fields for the capacitor’s rated voltage from the approved specification and the supply voltage on the motor nameplate. If the old capacitor label is unreadable, check the motor parts list or drawing before asking for a replacement."
+          ],
+          "links": [
+            {
+              "label": "CBB60 motor run capacitors",
+              "href": "/products/cbb60-motor-run-capacitor/"
+            },
+            {
+              "label": "Water pump capacitor selection",
+              "href": "/resources/cbb60-water-pump-capacitor-selection/"
+            }
+          ]
+        },
+        {
+          "id": "fan-and-blower-connections",
+          "heading": "Fans and blowers need the right connection",
+          "paragraphs": [
+            "The CBB61 blade-terminal samples show 4.5 µF, 5 µF and 6 µF as separate parts at 450 VAC. If your fan calls for 5 µF, use that value and confirm the terminal spacing, mounting point and cover clearance. For a wire-lead version, send the harness drawing with the finished wire length and connector type.",
+            "If the fan’s wiring harness changes, mark the new lead length or connector on the drawing. Keep the approved electrical ratings on that drawing or on the datasheet it references. The supplier can then quote the change for the specified part, and your assembly team can check the sample in the fan housing."
+          ],
+          "photos": [
+            {
+              "src": "/images/real/cbb61-leads-10.jpg",
+              "alt": "Two rectangular CBB61 samples with red lead wires, visible wire ends and a mounting lug on one case.",
+              "title": "CBB61 leads and mounting lug",
+              "text": "The wire exit and lug on these samples are useful details to show on a fan assembly drawing.",
+              "original": true
+            }
+          ],
+          "links": [
+            {
+              "label": "CBB61 fan capacitors",
+              "href": "/products/cbb61-fan-capacitor/"
+            },
+            {
+              "label": "Compare leads and blade terminals",
+              "href": "/resources/cbb61-wire-leads-blade-terminals/"
+            }
+          ]
+        },
+        {
+          "id": "hvac-single-and-dual-run",
+          "heading": "Single and dual run capacitors for HVAC",
+          "paragraphs": [
+            "Read each capacitance section on the equipment diagram. The P029 CBB65 sample has one value, 20 µF at 450 VAC. Sample P034 is marked 50+5 µF at 450 VAC. For a dual-run enquiry, copy both values to the line item and identify the terminal groups from the approved drawing. Include the space needed for the fitted connectors above the can."
+          ],
+          "photos": [
+            {
+              "src": "/images/real/cbb65-2.jpg",
+              "alt": "Metal-can CBB65 sample P029 with two insulated terminal groups.",
+              "title": "P029 single-run configuration",
+              "text": "The 20 µF label refers to one capacitance section."
+            },
+            {
+              "src": "/images/real/cbb65-dual-run-7.jpg",
+              "alt": "CBB65 dual-run sample P034 beside its blue product box.",
+              "title": "P034 dual-run configuration",
+              "text": "The 50+5 µF marking gives the two section values on this sample."
+            }
+          ],
+          "links": [
+            {
+              "label": "CBB65 air conditioner capacitors",
+              "href": "/products/cbb65-air-conditioner-capacitor/"
+            },
+            {
+              "label": "Compare single and dual run capacitors",
+              "href": "/resources/single-vs-dual-run-capacitors/"
+            }
+          ]
+        },
+        {
+          "id": "separate-starting-circuit",
+          "heading": "Specify the CD60 starting duty",
+          "paragraphs": [
+            "Check the switching arrangement when a pump or compressor has a separate starting circuit. A CD60 is an electrolytic start capacitor. The circuit must disconnect it after startup. For equipment that can restart frequently, request the allowed time under voltage and the minimum rest interval for the specific part. Confirm enclosure temperature and terminal fit on the same proposal."
+          ],
+          "links": [
+            {
+              "label": "CD60 motor start capacitors",
+              "href": "/products/cd60-start-capacitor/"
+            },
+            {
+              "label": "CD60 starting time and restart interval",
+              "href": "/resources/cd60-start-capacitor-duty-cycle/"
+            }
+          ]
+        },
+        {
+          "id": "equipment-sourcing-sheet",
+          "heading": "List each capacitor position in the quote request",
+          "paragraphs": [
+            "Identify the reference currently approved for each position and place any proposed substitute on its own line. Add the equipment model, electrical ratings, drawing revision and an annual or first-order quantity where you have one. Specify which dimensions the supplier can change and which the assembly fixes.",
+            "If a supplier proposes a different connector, ask its engineer to mark that change on the drawing. Check the sample in the assembly before adding it to the approved parts list. For a required test or certificate, tell the supplier which model needs the document and where the equipment will be sold."
+          ],
+          "links": [
+            {
+              "label": "OEM capacitor options and approval",
+              "href": "/oem/"
+            },
+            {
+              "label": "Model drawings and inspection records",
+              "href": "/factory/#model-records"
+            }
+          ]
+        }
+      ],
+      "details": [
+        "Equipment model and capacitor position",
+        "Capacitance, rated AC voltage and duty",
+        "Drawing or label, connection, quantity and destination"
+      ]
+    }
+  },
+  {
+    "guide": {
+      "slug": "wholesale-motor-capacitors-china",
+      "title": "Buying wholesale motor capacitors from China (2026)",
+      "seoTitle": "Wholesale Motor Capacitors from China | HAN XING",
+      "category": "Prepare your RFQ",
+      "summary": "Plan a factory order for motor capacitors. Check HAN XING’s mixed-model MOQ, what to put on each quote line and what to agree before shipment.",
+      "answer": "HAN XING’s standard minimum order quantity (MOQ) is 5,000 pieces in total across mixed models. Send the requested quantity for each approved rating and connection. The quotation confirms the accepted mix and the unit price for each line, along with sample, packing and delivery terms.",
+      "sources": [
+        {
+          "label": "WCO Harmonized System, chapter 85",
+          "href": "https://www.wcoomd.org/-/media/wco/public/global/pdf/topics/nomenclature/instruments-and-tools/hs-nomenclature-2022/2022/1685_2022e.pdf?la=en"
+        },
+        {
+          "label": "ICC guidance on choosing an Incoterms rule",
+          "href": "https://library.iccwbo.org/content/clp/Others/incoterms_2020_checklist_2024-update.pdf"
+        },
+        {
+          "label": "HAN XING ordering and sample FAQ",
+          "href": "/faq/"
+        },
+        {
+          "label": "Quotation and order terms",
+          "href": "/terms/"
+        }
+      ],
+      "inquiry": {
+        "heading": "Send your mixed-model order for quotation",
+        "note": "List the approved parts and quantities, the sample or packing requirements and your delivery destination.",
+        "label": "Request a bulk order quote",
+        "request": "quote"
+      },
+      "related": [
+        {
+          "label": "Compare Chinese motor capacitor catalogues",
+          "href": "/resources/motor-capacitor-manufacturers-china/"
+        },
+        {
+          "label": "Buying and shipping checklist",
+          "href": "/buying-guide/#rfq-template"
+        }
+      ],
+      "defaultSeries": "unknown"
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "mixed-model-moq",
+          "heading": "How the 5,000-piece minimum works",
+          "paragraphs": [
+            "Start with the parts on your purchasing list. Give each capacitance and connection combination its own line, even if several lines use the same case. For a wholesale CBB65 order, identify single-run and dual-run parts separately and include both capacitances on each dual-run line.",
+            "The example below shows how quantities can add up for a mixed-model enquiry. The actual allocation and any preparation charge for a particular item belong in the quotation."
+          ],
+          "tables": [
+            {
+              "caption": "Example of a mixed-model quantity request",
+              "headers": [
+                "Part family",
+                "Requirement on the quote line",
+                "Requested pieces"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "CBB60",
+                    "href": "/products/cbb60-motor-run-capacitor/"
+                  },
+                  "Approved run rating, case fixing and lead drawing",
+                  "2,400"
+                ],
+                [
+                  {
+                    "text": "CBB61",
+                    "href": "/products/cbb61-fan-capacitor/"
+                  },
+                  "Approved fan rating, connector and mounting position",
+                  "1,600"
+                ],
+                [
+                  {
+                    "text": "CBB65",
+                    "href": "/products/cbb65-air-conditioner-capacitor/"
+                  },
+                  "Specified single or dual run configuration and terminal drawing",
+                  "1,000"
+                ],
+                [
+                  "Total",
+                  "Illustrative quantities for the enquiry",
+                  "5,000"
+                ]
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "CD60 motor start capacitors",
+              "href": "/products/cd60-start-capacitor/"
+            },
+            {
+              "label": "HAN XING ordering and sample FAQ",
+              "href": "/faq/"
+            }
+          ]
+        },
+        {
+          "id": "wholesale-quote-by-model",
+          "heading": "What goes into the wholesale quote",
+          "paragraphs": [
+            "Ask for the per-piece price and currency for each line. Use the same drawing, quantity, carton specification and delivery point when comparing factories. A new connector or printed box can carry a separate charge. Keep sample freight and any inspection fees separate so you can see what changes between offers.",
+            "Confirm stock for the exact model, label and quantity if you have a tight delivery window. For production orders, ask when the quoted period starts, such as after sample approval or payment. Record the sample readiness date, production completion and estimated arrival as separate milestones.",
+            "HAN XING accepts T/T bank transfers and L/C letters of credit. The published warranty is at least three years. Record the payment schedule, warranty start date, coverage and claim procedure in the written quotation or order terms."
+          ],
+          "links": [
+            {
+              "label": "Compare bulk capacitor quotations",
+              "href": "/resources/motor-capacitor-wholesale-rfq/"
+            },
+            {
+              "label": "Quotation and order terms",
+              "href": "/terms/"
+            }
+          ]
+        },
+        {
+          "id": "sample-and-purchase-order",
+          "heading": "Carry the approved sample into the purchase order",
+          "paragraphs": [
+            "Approve the part, drawing revision, label and packing sheet together. If you only have an old capacitor, send a readable label photo, the terminal end, a side view with the mounting and the motor plate. Use the resulting drawing to confirm fit. Free test samples may be available for eligible models. Confirm the quantity, preparation cost and freight for the sample shipment.",
+            "Put the accepted model quantities, approval references and any inspection requirements on the purchase order. Agree whether you need a report for the sample, the production lot or both. At receipt, use the carton marks and packing list to count by model. Keep any discrepancy separate until you can check it against the approved sample."
+          ],
+          "photos": [
+            {
+              "src": "/images/real/batch-products.jpg",
+              "alt": "Metal-can HAN XING capacitor samples grouped on a work surface.",
+              "title": "Metal-can samples",
+              "text": "The terminal end is visible here. Use the sample and lot references on the agreed inspection record to identify the product being checked.",
+              "original": true
+            }
+          ],
+          "links": [
+            {
+              "label": "OEM sample approval checklist",
+              "href": "/resources/oem-capacitor-sample-approval/"
+            },
+            {
+              "label": "Order and shipment checklist",
+              "href": "/resources/motor-capacitor-order-shipment-checklist/"
+            }
+          ]
+        },
+        {
+          "id": "import-and-delivery",
+          "heading": "Agree how the order will be imported and handed over",
+          "paragraphs": [
+            "Ask your customs broker to confirm the tariff classification and documents for each model before dispatch. Electrical capacitors fall under heading 85.32 of the Harmonized System. The applicable subheading and national code depend on the part and destination. Check any declaration of origin or compliance document the importer will need.",
+            "Put the Incoterms® 2020 rule and named delivery point in the quotation and contract. Discuss FCA when the carrier takes custody at a terminal before loading, including many container shipments. Under FOB, delivery takes place on board the vessel at the named port of shipment. Confirm the handover with your freight forwarder.",
+            "HAN XING lists Ningbo, Shanghai and Tianjin as port options, with logistics handover also possible in Yiwu. Agree one route for the order. Check that the commercial invoice and packing list agree on the descriptions, quantities and order references. Confirm the transport document and any additional papers with your forwarder."
+          ],
+          "citations": [
+            {
+              "paragraph": 0,
+              "label": "WCO Harmonized System, chapter 85",
+              "href": "https://www.wcoomd.org/-/media/wco/public/global/pdf/topics/nomenclature/instruments-and-tools/hs-nomenclature-2022/2022/1685_2022e.pdf?la=en"
+            },
+            {
+              "paragraph": 1,
+              "label": "ICC guidance on choosing an Incoterms rule",
+              "href": "https://library.iccwbo.org/content/clp/Others/incoterms_2020_checklist_2024-update.pdf"
+            }
+          ],
+          "links": [
+            {
+              "label": "Packing and dispatch options",
+              "href": "/factory/packing-and-dispatch/"
+            },
+            {
+              "label": "Landed cost and stock planning for distributors",
+              "href": "/resources/wholesale-motor-capacitors-resale-private-label/"
+            }
+          ]
+        }
+      ],
+      "details": [
+        "Exact part number or label and drawing reference for each line",
+        "Quantities, carton requirements and destination",
+        "Any sample, inspection or certificate requirements"
+      ]
+    }
+  },
+  {
+    "guide": {
+      "slug": "wholesale-motor-capacitors-resale-private-label",
+      "title": "Wholesale motor capacitors for resale and private label",
+      "seoTitle": "Wholesale Motor Capacitors for Resale & Private Label | HAN XING",
+      "category": "Prepare your RFQ",
+      "summary": "Build a resale range from actual demand. Set distinct capacitor SKUs, approve private-label packs and calculate landed cost and reorder quantities.",
+      "answer": "Build your first wholesale assortment around the equipment your customers already service. Give each combination of rating, terminals and mounting its own stock code. Then use that code on your catalogue, the approved artwork and the carton label so staff can pick the same part the customer ordered.",
+      "sources": [
+        {
+          "label": "OEM and private-label capacitor packing",
+          "href": "/oem/"
+        },
+        {
+          "label": "Approve the part, artwork and packing",
+          "href": "/resources/oem-capacitor-sample-approval/"
+        }
+      ],
+      "inquiry": {
+        "heading": "Send your first assortment and packing brief",
+        "note": "Share the proposed stock codes, model references and quantities. Attach the label or box artwork if you plan to sell the parts under your own brand.",
+        "label": "Discuss a private-label order",
+        "request": "quote"
+      },
+      "related": [
+        {
+          "label": "Capacitor sourcing by equipment",
+          "href": "/resources/china-motor-capacitor-suppliers-pumps-fans-hvac/"
+        },
+        {
+          "label": "Buyer FAQ on orders, samples and packing",
+          "href": "/faq/"
+        }
+      ],
+      "defaultSeries": "unknown"
+    },
+    "layout": {
+      "sections": [
+        {
+          "id": "resale-stock-codes",
+          "heading": "Give each replacement a stock code your team can use",
+          "paragraphs": [
+            "Start with repair records, customer enquiries and repeat sales. You might stock two CBB61 parts with nearly identical cases if one is 4.5 µF and the other is 5 µF. Give them separate stock keeping units (SKUs) and show the terminal end in the reseller listing. The same rating with a different fixing or lead arrangement also deserves a separate code if it changes where the part fits."
+          ],
+          "tables": [
+            {
+              "caption": "What to record for each capacitor SKU",
+              "headers": [
+                "Stock family",
+                "Details for the catalogue and warehouse"
+              ],
+              "rows": [
+                [
+                  {
+                    "text": "CBB60 run capacitors for pumps",
+                    "href": "/products/cbb60-motor-run-capacitor/"
+                  },
+                  "Capacitance and voltage, drawing reference, lead length and stud or clamp fixing."
+                ],
+                [
+                  {
+                    "text": "CBB61 fan replacement capacitors",
+                    "href": "/products/cbb61-fan-capacitor/"
+                  },
+                  "Exact capacitance, blade or wire connection, case and mounting position."
+                ],
+                [
+                  {
+                    "text": "CBB65 HVAC run capacitors",
+                    "href": "/products/cbb65-air-conditioner-capacitor/"
+                  },
+                  "Single or dual run, both capacitance values for a dual unit, terminal drawing and installed height."
+                ],
+                [
+                  {
+                    "text": "CD60 start capacitors",
+                    "href": "/products/cd60-start-capacitor/"
+                  },
+                  "Model, rated voltage, capacitance, terminal arrangement and the approved starting duty."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "opening-assortment",
+          "heading": "Buy deeper where there is repeat demand",
+          "paragraphs": [
+            "A pump repair distributor may put most of its first order into wired CBB60 parts. A refrigeration wholesaler may need more CBB65 models, split between single and dual run. Base the quantities on open orders and customer enquiries. Keep the trial quantity small when testing a new part for a known customer or equipment project.",
+            "HAN XING’s standard minimum is 5,000 pieces across mixed models. When you send the assortment, put the required quantity next to each model and ask the factory to confirm the split. If you are comparing a second source, use the same model requirements and packing on both enquiries."
+          ],
+          "links": [
+            {
+              "label": "How the mixed-model minimum works",
+              "href": "/resources/wholesale-motor-capacitors-china/#mixed-model-moq"
+            },
+            {
+              "label": "Compare Chinese motor capacitor catalogues",
+              "href": "/resources/motor-capacitor-manufacturers-china/"
+            }
+          ]
+        },
+        {
+          "id": "landed-cost-for-resale",
+          "heading": "Work out landed cost by SKU",
+          "paragraphs": [
+            "Begin with the quoted price for each item. Add charges outside the quoted delivery terms, such as inspection, freight, insurance and applicable clearance charges or duties. If the quote already includes a freight leg, record it once. Confirm destination charges with your broker and forwarder.",
+            "Suppose a shipment of 6,000 capacitors has USD 900 in additional charges outside the goods quote. If you divide those costs equally, they add USD 0.15 per piece. In a mixed shipment a metal-can capacitor may take up more carton space than a small fan capacitor. Allocate volume-based freight by carton volume when that reflects how the forwarder billed you.",
+            "Before taking a price break for a larger order, compare the cash tied up by item and the expected time to sell it. Extra units of a slow model take up budget that could cover a faster seller. The numbers above are a calculation example."
+          ]
+        },
+        {
+          "id": "private-label-packing-approval",
+          "heading": "Approve the part and private-label pack together",
+          "paragraphs": [
+            "Keep your stock code and the factory part reference next to the same drawing revision. Ask for an assembled sample of the unit pack. Check that the rating is readable, the terminals are protected and the item code on the box agrees with the capacitor inside. Put any required batch marks on the packing specification.",
+            "Prepare the approved artwork, label language and pack quantity for each model. Ask what needs new artwork or tooling before the quote is final. If your market requires a conformity mark, use it only where the documentation covers the exact part and allows that marking."
+          ],
+          "photos": [
+            {
+              "src": "/images/real/packing-scene.jpg",
+              "alt": "Worker handling small blue boxes at a capacitor packing table.",
+              "title": "Individual boxes at the packing table",
+              "text": "Use the final packed sample to approve how your part and label will appear when the carton is opened.",
+              "original": true
+            }
+          ],
+          "links": [
+            {
+              "label": "OEM and private-label capacitor packing",
+              "href": "/oem/"
+            },
+            {
+              "label": "Approve the part, artwork and packing",
+              "href": "/resources/oem-capacitor-sample-approval/"
+            }
+          ]
+        },
+        {
+          "id": "receive-and-reorder",
+          "heading": "Receive the order by SKU and set a reorder point",
+          "paragraphs": [
+            "At receipt, check quantities by stock code and keep the carton and batch references. Put aside any item with a different connector, marking or packing until you can match it to the approved sample. Record returns caused by selection errors so you can improve the next catalogue listing or pick label.",
+            "For example, a SKU that sells 120 pieces per month and takes three months to replenish needs 360 pieces to cover that interval. A buffer of 60 pieces puts the reorder point at 420. Compare that figure with what you have in stock plus confirmed incoming units, less those already promised to customers. Adjust your assumed replenishment time using actual sample approvals, production and transit.",
+            "On a repeat order, carry forward the approved part and artwork revisions. Change the quantities to reflect what sold. If the connector, drawing or box changes, approve the affected part or packaging before ordering it again."
+          ],
+          "links": [
+            {
+              "label": "Order records to retain for repeat purchasing",
+              "href": "/resources/motor-capacitor-order-shipment-checklist/"
+            }
+          ]
+        }
+      ],
+      "details": [
+        "Stock code, approved part reference and quantity for each line",
+        "Label language, artwork and packing requirements",
+        "Delivery destination and sample approval requirements"
+      ]
+    }
+  }
+]

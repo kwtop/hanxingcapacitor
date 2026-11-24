@@ -1,0 +1,29 @@
+---
+import type { WorkshopPhoto } from '../../data/workshopPhotos';
+type GalleryPhoto = WorkshopPhoto & { fullSrc?: string };
+interface Props {id:string;title:string;intro?:string;photos:readonly GalleryPhoto[];moreHref?:string;moreLabel?:string;expandLabel?:string;}
+const {id,title,intro,photos,moreHref,moreLabel='View the full process gallery',expandLabel}=Astro.props;
+const preview=Astro.slots.has('media') ? [] : photos.slice(0,3);
+const remaining=photos.slice(preview.length);
+const url=(p:WorkshopPhoto)=>p.src??`/images/workshop-stories-20261026/${p.slug}.webp`;
+---
+<section id={id} class="oe-collection" aria-labelledby={`${id}-title`}>
+  <div class="oe-shell">
+    <header class="oe-section-heading">
+      <h2 id={`${id}-title`}>{title}</h2>
+      {(intro || moreHref) && <div>{intro && <p>{intro}</p>}{moreHref && <a class="oe-link" href={moreHref}>{moreLabel}</a>}</div>}
+    </header>
+    <slot name="media">
+      <div class:list={['oe-gallery-leads',{'oe-gallery-leads--three':preview.length===3}]}>
+        {preview.map(item=><figure class="oe-gallery-photo" data-image-kind={item.illustrative?'ai-refined-illustration':'source-photograph'}>
+          <a href={item.fullSrc??item.originalSrc??url(item)} target="_blank" rel="noopener" aria-label={`Open full image: ${item.caption}`}><img src={url(item)} srcset={item.srcset} sizes={preview.length===3?'(max-width:600px) calc(100vw - 40px), (min-width:1360px) 410px, 31vw':'(max-width:600px) calc(100vw - 40px), (min-width:1360px) 624px, 46vw'} alt={item.alt} width={item.width} height={item.height} loading="lazy" decoding="async" /></a><figcaption>{item.caption}</figcaption>
+        </figure>)}
+      </div>
+    </slot>
+    {remaining.length>0&&<details class="oe-gallery-more"><summary>{expandLabel??`View all ${photos.length} images`}<span class="oe-disclosure-icon" aria-hidden="true"></span></summary><div class="oe-gallery-grid">
+      {remaining.map(item=><figure class="oe-gallery-photo" data-image-kind={item.illustrative?'ai-refined-illustration':'source-photograph'}>
+        <a href={item.fullSrc??item.originalSrc??url(item)} target="_blank" rel="noopener" aria-label={`Open full image: ${item.caption}`}><img src={url(item)} srcset={item.srcset} sizes="(max-width:600px) calc(100vw - 40px), (min-width:1360px) 410px, 31vw" alt={item.alt} width={item.width} height={item.height} loading="lazy" decoding="async" /></a><figcaption>{item.caption}</figcaption>
+      </figure>)}
+    </div></details>}
+  </div>
+</section>

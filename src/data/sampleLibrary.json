@@ -670,5 +670,13 @@
     "label": "Full product collection",
     "thumb": "/images/product-samples/sample-95-thumb.webp",
     "src": "/images/product-samples/sample-95.webp"
+  },
+  {
+    "id": "P097",
+    "series": "CD60",
+    "label": "NMD-marked case with screw terminals · 300 µF · 250 VAC",
+    "thumb": "/images/webp-delivery-20261105/cd60-nmd-300uf-250vac-201df24-thumb-240.webp",
+    "src": "/images/webp-delivery-20261105/cd60-nmd-300uf-250vac-201df24-1080.webp",
+    "originalSrc": "/images/real/cd60-nmd-300uf-250vac.jpg"
   }
 ]

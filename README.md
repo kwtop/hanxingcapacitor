@@ -1,6 +1,6 @@
 # Hanxing independent site
 
-An Astro 7 + React 19 B2B motor capacitor website, with a Chinese admin, Cloudflare Pages Functions and D1 inquiry storage. The backend is implemented and tested locally; this revision has **not been published**.
+An English and Spanish Astro 7 + React 19 site for HAN XING motor capacitors, with an inquiry and visitor admin backed by Cloudflare Pages Functions and D1.
 
 ## Run locally
 
@@ -11,7 +11,7 @@ npm ci
 npm run dev
 ```
 
-Open the local URL printed by Astro. `npm run check` validates Astro/TypeScript and `npm run build` creates a Node standalone build. `npm run start` runs that build.
+Open the local URL printed by Astro. Use Node.js 22.12 or newer. Run `npm run build:public` to validate and build the English and Spanish public pages.
 
 ### Current visual preview
 
@@ -57,9 +57,11 @@ Anonymous activity records contain paths and interaction metadata, not keystroke
 
 ## Publication status
 
-The confirmed canonical target is `https://www.hanxingcapacitor.com`. Existing Cloudflare previews use `hanxing-capacitor-preview`. The current backend has not been uploaded to that project, and a dedicated Hanxing D1 must be created and bound before publication. No other business database is reused.
+The public and canonical target is `https://www.hanxingcapacitor.com`, as clarified on 2026-11-05. Cloudflare publication is initiated separately from a Git push. The existing Cloudflare Pages project `hanxing-capacitor-preview`, production branch `main`, serves both custom domains and its Pages preview hostname. It retains the existing `hanxing-site` D1 binding. Public pages allow anonymous visitors and crawlers; authenticated admin and inquiry/CSV data remain protected. Pages preview hostnames retain `noindex`.
 
-`npm run build:cloudflare` exports the current visual presentation to `.cloudflare-site`; `functions/` supplies its backend at deployment. The isolated export keeps noindex headers and existing migration redirects. It does not deploy anything. The ordinary `npm run build` remains a Node standalone baseline build; it does not supply a production D1 backend. See the admin setup document before choosing a deployment command. Public legal identity, certificates and model records retain the existing business review boundary.
+`npm run build:public` checks the project and prepares the public `.cloudflare-site` artifact with matching canonical, sitemap and indexing settings; it does not upload. `npm run deploy:public` additionally runs the isolated local Pages/D1 smoke check, deploys that artifact and the existing `functions/` backend to the production branch, then verifies the live public release, backend health and unauthenticated admin API rejection. `npm run build:cloudflare` remains the low-level exporter; public mode requires `HANXING_PUBLIC_RELEASE=1` and `PUBLIC_SITE_URL=https://www.hanxingcapacitor.com`. Public legal identity, certificates and model records retain their source-evidence boundary.
+
+The 2026-11-05 production release and live access checks are recorded in [public-release-20261105](docs/public-release-20261105/README.md).
 
 Technical SEO/GEO results, priorities and release commands: [SEO-GEO-AUDIT-20261012.md](docs/SEO-GEO-AUDIT-20261012.md). Existing robots and sitemap routes share an automatic route/content index with `llms.txt`; no fabricated modification dates are generated. `npm run check:release -- <candidate> https://www.hanxingcapacitor.com` performs read-only initial-HTML, Meta, Schema, asset, utility-page and migration checks.
 
@@ -70,10 +72,10 @@ For the current visual version, see [the image provenance manifest](docs/CURRENT
 ## Validation
 
 ```bash
-npm run check
-npm run build
+npm run build:public
 npm run test:backend
-npm run build:cloudflare
+npm run test:access
+npm run setup:admin
 npm run test:pages
 ```
 

@@ -1,0 +1,199 @@
+1994|El código 40/85/21 indica una temperatura de categoría inferior de −40 °C, una superior de +85 °C y una categoría de ensayo de calor húmedo de 21 días. Aparece en la muestra CBB65 que se muestra aquí. El «21» describe la categoría de ensayo, no la vida útil del condensador ni un intervalo de sustitución.
+1995|¿Qué significa 40/85/21 en un condensador?
+1996|Interprete el código como tres campos. Los dos primeros identifican categorías de temperatura; el tercero, la duración de la categoría de ensayo de calor húmedo. La ficha técnica CBB65A-1 de TDK explica esta interpretación en sus datos climáticos y de marcado.
+1997|TDK CBB65A-1: datos climáticos e información de marcado
+1998|En esta notación, el primer campo se escribe «40», aunque la temperatura de categoría inferior es −40 °C. No significa +40 °C.
+1999|La capacitancia, tensión, frecuencia y cualquier clase de vida o seguridad declarada tienen campos independientes en la etiqueta o ficha técnica.
+2000|Los tres campos de 40/85/21
+2001|Marcado
+2002|Unidad
+2003|Temperatura de categoría inferior: −40
+2005|Temperatura de categoría superior: +85
+2006|Duración del ensayo de calor húmedo
+2007|Días
+2008|40/70/21 frente a 40/85/21
+2009|La diferencia entre estos códigos es la temperatura de categoría superior: +70 °C frente a +85 °C. La temperatura inferior y la categoría de calor húmedo de 21 días son iguales.
+2010|El CBB60 con cables de 35 µF está marcado 40/70/21; el CBB65 de 20 µF, 40/85/21. Las dos muestras también tienen capacitancias y formatos de carcasa diferentes.
+2011|Utilice la categoría del modelo cotizado. Un intervalo de catálogo que llega a +85 °C no cambia el marcado de una muestra de +70 °C. Al cotizar un CBB65, indique la categoría requerida junto a los µF nominales y VAC.
+2012|Categorías climáticas de dos muestras originales
+2013|Código
+2014|Temperaturas de categoría
+2015|Muestra CBB60 con cables: 35 µF
+2016|De −40 °C a +70 °C
+2017|Muestra CBB65 de marcha simple: 20 µF
+2018|De −40 °C a +85 °C
+2019|40/85/21 en la etiqueta CBB65
+2020|El código climático está impreso debajo de la tensión y la frecuencia.
+2021|Temperatura nominal y vida útil
+2022|La vida útil se especifica por separado de la categoría climática. Una cifra de horas de vida necesita indicar el modelo, la tensión aplicada, la temperatura y la base del ensayo.
+2023|Compare las horas de vida bajo las mismas condiciones de funcionamiento y el mismo criterio final. Una temperatura superior de +85 °C no demuestra por sí sola una vida útil mayor que +70 °C. Anote por separado las horas de vida y la categoría climática en la cotización.
+2024|La etiqueta indica la categoría climática. Las horas de vida, aprobaciones y resultados de ensayo necesitan los datos del modelo HAN XING correspondiente; la ficha de otro fabricante se refiere a su propio producto.
+2025|Temperatura del condensador instalado
+2026|Describa la ubicación del condensador dentro del equipo de climatización, incluidos compresores cercanos, compartimentos eléctricos cerrados y circulación de aire limitada. Mida la temperatura en el punto definido por la ficha técnica del modelo.
+2027|Al evaluar el equipo, anote dónde se coloca el sensor y cómo está funcionando el equipo. Una lectura con el armario abierto representa condiciones distintas del funcionamiento normal con los paneles instalados. Incluya carga, condiciones ambientales y si la temperatura se había estabilizado.
+2028|Haga coincidir el punto de medición con la definición de la ficha técnica. Un límite de aire circundante, de temperatura de carcasa y de temperatura interna definida son magnitudes distintas. El personal cualificado debe medir durante el funcionamiento conforme a los procedimientos del equipo.
+2029|Ubicación
+2030|Ubicación del condensador, cerramiento, fuentes de calor próximas y circulación de aire.
+2031|Condiciones de funcionamiento
+2032|Carga del equipo, condiciones ambientales, paneles instalados y tiempo en funcionamiento.
+2033|Resultado de temperatura
+2034|Valor medido, posición del sensor y límite correspondiente del modelo.
+2035|Humedad y espacio de instalación
+2036|Una categoría de ensayo de calor húmedo no hace impermeable al condensador. La condensación y la entrada de agua en el cerramiento son problemas de instalación independientes. Describa la exposición prevista a la humedad y la protección que proporciona el equipo.
+2037|Reserve espacio para la fijación y los conectores instalados. Respete el plano del modelo para cualquier espacio de movimiento que necesite su dispositivo de seguridad. El código climático no identifica ese dispositivo.
+2038|Especifique todas las condiciones de funcionamiento del CBB65
+2039|Incluya la categoría climática necesaria junto con las características eléctricas y la configuración en su solicitud. Para un CBB65 doble, indique ambos valores en µF y la disposición de grupos de terminales. Una categoría ambiental adecuada no compensa una capacitancia o conexión incorrectas.
+2040|Facilite las condiciones de instalación conocidas e identifique el punto de medición de cualquier dato de temperatura. Si la especificación del equipo incluye una vida objetivo o requisito de humedad, indíquelo por separado. Así podrá revisarse el modelo propuesto frente a esas condiciones concretas.
+2041|Para pedidos repetidos, utilice el modelo y el plano correspondientes a ese conjunto. Cambiar la ubicación, el cerramiento o la circulación de aire también exige revisar las condiciones de funcionamiento, aunque no cambie la capacitancia.
+2042|Configuraciones CBB65 de marcha simple y doble
+2043|Defina el requisito de temperatura del CBB65
+2044|Incluya las características eléctricas, la categoría climática necesaria y las condiciones dentro del equipo.
+2045|Solicitar datos térmicos del CBB65
+2046|Valor o pareja de µF requeridos, VAC nominales y categoría climática.
+2047|Posición de instalación, condiciones de funcionamiento y cualquier requisito de vida definido.
+2048|Interpretación de la etiqueta completa del condensador
+2050|Vista retocada de muestra. Etiqueta CBB65 marcada 20 µF ±5%, 450 VAC, 50/60 Hz y 40/85/21.
+2052|Significado de 40/85/21 en el CBB65
+2053|Selección y ciclo de servicio del CD60 | Hanxing Capacitor
+2054|Especifique un CD60 de arranque según los µF y VAC del motor, su sistema de desconexión y el patrón de arranques. El ciclo de servicio es el tiempo conectado dividido entre el ciclo completo de un arranque al siguiente. Anote también el tiempo máximo de conexión y el intervalo mínimo de reposo y compruebe todos los límites con la documentación del modelo propuesto.
+2055|Tiempo de conexión, reposo y ciclo completo
+2056|El CD60 es un condensador electrolítico de aluminio para arranque. El circuito lo conecta durante el arranque y debe desconectarlo al terminar esa función. No es adecuado para la posición de condensador de marcha conectado permanentemente.
+2057|Para calcular el ciclo de servicio, el tiempo de conexión es el periodo en que el condensador permanece conectado. El reposo es el periodo desconectado antes del siguiente arranque. Súmelos para obtener el periodo completo, medido desde un arranque hasta el siguiente.
+2058|Aclare los puntos de medición al describir un intervalo. «Tres minutos entre arranques» y «tres minutos de reposo después de desconectar» son requisitos distintos. Un breve diagrama temporal suele ser más claro que un intervalo sin principio ni final definidos.
+2059|Datos temporales para solicitar un CD60
+2060|Qué describe
+2061|Tiempo de conexión
+2062|Periodo máximo conectado durante un arranque.
+2063|Tiempo de reposo
+2064|Periodo mínimo desconectado antes de otro arranque.
+2065|Periodo del ciclo
+2066|Tiempo de conexión más reposo, medido de un arranque al siguiente.
+2067|Arranques por hora
+2068|Número de arranques, indicando si están distribuidos uniformemente o agrupados.
+2069|Cómo calcular el ciclo de servicio de un condensador de arranque
+2070|Utilice la misma unidad para ambos tiempos. Divida el tiempo conectado entre el periodo completo y multiplique por 100. Tres segundos conectado y 177 segundos desconectado forman un ciclo de 180 segundos, no de 177.
+2071|La ficha MS/MD de KEMET indica aproximadamente un 1.67% de servicio y 20 arranques uniformemente distribuidos por hora para esta secuencia. También incluye un ciclo de 60 segundos con un segundo conectado. Ambas secuencias proceden de esa ficha; un HAN XING CD60 necesita sus propios límites de servicio especificados.
+2072|KEMET MS/MD: ejemplos de servicio de arranque
+2073|Conectado: 3 s
+2074|Desconectado: 177 s
+2075|Ciclo 1: 180 s
+2076|Ciclo 2: 180 s
+2077|Ciclo de servicio
+2078|Arranques uniformemente distribuidos
+2079|3600 ÷ 180 = 20 por hora
+2080|Ejemplo temporal publicado de KEMET MS/MD. Las proporciones representan 3 segundos conectado por cada ciclo completo de 180 segundos.
+2081|Tiempo conectado ÷ (tiempo conectado + reposo) × 100%.
+2082|3600 segundos ÷ periodo completo del ciclo en segundos.
+2083|El número de arranques por hora puede ocultar un patrón diferente
+2084|Ambas secuencias dan un 1.67% de servicio y 60 segundos conectado por hora. Una contiene veinte arranques de 3 segundos y la otra sesenta de 1 segundo. Evalúe los límites de conexión y repetición del modelo exacto.
+2085|Un total horario tampoco muestra los arranques agrupados. Veinte arranques repartidos en una hora difieren de veinte arranques consecutivos. Incluya el intervalo mínimo de reposo y cualquier secuencia de intentos repetidos, no solo el recuento por hora.
+2086|Un arranque individual prolongado necesita su propio límite. Varios periodos cortos no pueden sustituirse por uno largo solo porque sumen el mismo tiempo. Si el circuito no desconecta o el motor queda bloqueado, el equipo necesita la protección de fallo adecuada; cambiar la capacitancia no resuelve ese fallo de desconexión.
+2087|Cálculos a partir de los ejemplos temporales KEMET MS/MD
+2088|Ciclo
+2089|Servicio calculado
+2093|20 por hora
+2097|60 por hora
+2098|Compare los VAC solicitados y las condiciones de arranque
+2099|Cuando el equipo requiere un CD60 de 250 VAC o 330 VAC, solicite los datos de servicio de arranque para esa tensión y frecuencia. Mantenga los µF nominales especificados y el dispositivo que desconecta el condensador al comparar propuestas.
+2100|La ficha MS/MD de KEMET muestra que los datos de servicio de arranque aprobados pueden variar con la tensión y la frecuencia. Esos datos describen los modelos KEMET. El modelo HAN XING propuesto necesita sus propios límites de conexión, reposo y repetición de arranques.
+2101|Una solicitud de 200 µF o 300 µF también necesita una especificación eléctrica y temporal completa. Asigne una cantidad a cada configuración y solicite un plano del modelo. Así el proveedor podrá identificar qué configuración está cotizando.
+2102|Motor existente
+2103|Utilice las características del condensador y el sistema de desconexión de su documentación de servicio.
+2104|Conjunto de motor nuevo
+2105|Utilice la especificación y los requisitos de patrón de arranque aprobados por el ingeniero.
+2106|Pedido repetido
+2107|Identifique el modelo, la revisión del plano y la referencia de muestra aprobados previamente.
+2108|Especificaciones y documentos del modelo CD60
+2109|Anote las dimensiones y la geometría de terminales
+2110|Etiqueta CD60 de 500 µF y 300 VAC y datos de servicio
+2111|La muestra original que aparece a continuación está marcada 500 µF ±5%, 300 VAC, 50/60 Hz y −40 °C / 70 °C / 21. En su etiqueta no se ve un tiempo máximo de conexión ni una indicación de repetición de arranques.
+2112|Su tolerancia y marcado de temperatura difieren del resumen de la serie del catálogo utilizado en este sitio. Mantenga juntos esos valores de muestra y solicite la ficha técnica correspondiente, incluida la especificación de servicio de arranque. La etiqueta no permite completar por sí sola los datos temporales que faltan.
+2113|Solicite los datos de servicio a la frecuencia y tensión especificadas. Una indicación temporal solo se aplica a las características eléctricas y condiciones de funcionamiento que cubre.
+2114|Muestra de condensador de arranque de 500 µF / 300 VAC
+2115|La etiqueta visible indica características eléctricas, pero no límites de conexión o repetición de arranques.
+2116|Redacte el requisito de servicio del motor
+2117|Enumere el condensador, motor y dispositivo de arranque con sus propias referencias. Incluya el esquema del motor que muestra el dispositivo que desconecta el condensador de arranque. «Para una bomba» o «para un compresor» no identifica esa disposición.
+2118|Describa el arranque más largo requerido, el reposo mínimo y cualquier arranque agrupado. Añada carga, alimentación y condiciones de temperatura previstas, incluidas las que producen el arranque más exigente. El proveedor necesita ese patrón para revisar el modelo propuesto.
+2119|La cotización y la ficha técnica deben referirse al mismo modelo, µF y VAC. Si se exige un informe de ensayo o aprobación, su alcance debe cubrir la pieza propuesta y las condiciones indicadas. Solicite la especificación de servicio completa antes de aprobar el modelo.
+2120|µF nominales, tolerancia, VAC nominales y frecuencia.
+2121|Requisito temporal
+2122|Tiempo máximo conectado, reposo mínimo y secuencia de arranques.
+2123|Equipo
+2124|Referencias del motor y dispositivo de desconexión, esquema y condiciones de funcionamiento.
+2125|Envíe el patrón de arranque en su solicitud CD60
+2126|Incluya el circuito del motor, las características necesarias, el arranque más largo y el reposo mínimo.
+2127|Solicitar datos de servicio del CD60
+2128|µF, VAC y frecuencia requeridos y referencia del circuito del motor.
+2129|Tiempo máximo conectado, intervalo mínimo de reposo y patrón de repetición de arranques.
+2130|Dos ciclos consecutivos de 180 segundos. En cada ciclo, el condensador permanece conectado 3 segundos y desconectado 177. Los segmentos naranjas ocupan 3 de los 180 segundos.
+2133|Vista retocada de muestra. CD60 que muestra 500 µF ±5%, 300 VAC y 50/60 Hz.
+2134|Selección y ciclo de servicio del condensador de arranque CD60
+2135|Dimensiones, terminales y montaje de condensadores | Hanxing
+2136|Un repuesto necesita los µF y VAC correctos y espacio suficiente para instalarse. Mida el cuerpo por separado del volumen de la pieza completa, incluidos espárrago, terminales, cables y conector.
+2137|Dimensiones que debe anotar
+2138|Mida primero el cuerpo y después el espacio de la pieza completa. En un croquis acotado, indique la posición de montaje y deje espacio para terminales, fijaciones, cables y conectores.
+2139|Anote las dimensiones del cuerpo y los espacios de conexión en mm. Utilice el plano aprobado del modelo para la instalación.
+2140|Condensador cilíndrico: diámetro D, altura del cuerpo H y altura total instalada con terminales y montaje.
+2143|Altura
+2144|total
+2145|Incluya terminales y fijación
+2146|El diámetro y la altura del cuerpo son independientes del espacio para terminales, espárrago y conector.
+2147|Condensador rectangular: largo L, ancho W, altura del cuerpo H y espacios independientes de montaje y conexión.
+2150|Anote por separado el espacio de cables / lengüetas
+2151|Anote largo, ancho y alto, las posiciones de las pestañas de montaje y el espacio para cables o lengüetas.
+2152|Su medida
+2153|Diámetro D
+2155|Altura del cuerpo H
+2156|Altura total instalada
+2157|Posición de montaje / dimensiones del espárrago
+2158|Espacio para terminales y conector
+2159|Longitud de cables / espacio de tendido
+2160|Largo del cuerpo L
+2161|Ancho del cuerpo W
+2162|Posición de montaje / dimensiones de fijación
+2163|Espacio para cables y conector
+2164|Espacio de montaje y conexión
+2165|El espárrago sobresale de la carcasa
+2166|Anote por separado las dimensiones del cuerpo y del espárrago del CBB60, con el espacio necesario para los cables y el conector instalado.
+2167|Cables y orejeta de montaje
+2168|Ambas muestras CBB61 tienen cables rojos; una carcasa incorpora una orejeta de montaje. Compare el cuerpo, la posición de fijación y el recorrido completo de cables con el plano.
+2169|Conexiones que debe anotar
+2170|Datos de conexión de la pieza original
+2171|Datos que debe registrar
+2172|Vista superior con todas las etiquetas de grupos y el número de lengüetas visibles.
+2173|Dimensiones de lengüetas
+2174|Ancho, orientación y separación en mm, cotejados con el plano.
+2175|Cables
+2176|Número, colores especificados, longitud en mm y recorrido.
+2177|Conector
+2178|Forma, tamaño y referencia del conector cuando esté disponible.
+2179|Datos del conector, abrazadera o fijación correspondiente. Incluya una muestra o plano para disposiciones poco habituales.
+2180|Tome fotografías de los terminales y del lateral para mostrar todas las conexiones. Envíe también el esquema eléctrico: piezas con igual número de cables pueden tener conexiones distintas.
+2181|Revise el plano propuesto antes de pedir muestras
+2182|Utilice una unidad común e identifique los puntos de medición en el plano propuesto. Distinga las dimensiones del cuerpo de las fijaciones y del conjunto completo conectado. Esto permite comparar carcasas CBB60 y CBB65 con CBB61 rectangulares y CD60 de arranque.
+2183|Revisión del plano acotado para comprar condensadores
+2184|Campo del plano
+2185|Qué debe definir
+2186|Referencia
+2187|Número de modelo, revisión del plano y posición en el equipo.
+2188|Cuerpo
+2189|Diámetro y altura, o largo, ancho y alto, en mm.
+2190|Rosca y longitud útil del espárrago, o detalles de orificios de montaje y abrazadera.
+2191|Extremo de terminales
+2192|Ancho y espesor de lengüetas, disposición de grupos, separación y orientación.
+2193|Cables terminados
+2194|Puntos de medición de longitud, preparación de extremos y referencia del conector.
+2195|Volumen instalado
+2196|Espacio para fijaciones, cables tendidos, conector acoplado y acceso de montaje.
+2197|Variación permitida en las dimensiones que determinan el ajuste.
+2198|Tabla numérica de dimensiones CBB60
+2199|Especificaciones de pedidos de repuestos CBB61
+2200|Solicite un plano acotado del modelo
+2201|Adjunte el croquis acotado y las fotografías de conexiones al solicitar el plano.
+2202|Solicitar plano de un modelo
+2203|Croquis acotado del cuerpo y espacio completo de instalación en mm
+2204|Fotografías superiores y laterales
+2205|Datos de conexión y montaje, incluido el conector o la abrazadera correspondiente
+2206|Referencia de muestra original o modelo
+2209|Dos muestras rectangulares CBB61 con cables rojos, extremos de cable visibles y orejeta de montaje en una carcasa.
+2212|Clases de seguridad y vida IEC 60252-1 | Hanxing Capacitor

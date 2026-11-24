@@ -1,0 +1,19 @@
+---
+import { sourcePhotography } from '../../data/sourcePhotography';
+import SiteImage from './SiteImage.astro';
+interface Props { eager?: boolean; sizes?: string; }
+const { eager = false, sizes = '(max-width: 600px) 44vw, 24vw' } = Astro.props;
+const samples = [
+  { image: sourcePhotography['cbb65-single'], title: 'Single run' },
+  { image: sourcePhotography['cbb65-dual'], title: 'Dual run' },
+];
+---
+<div class="co-dual-samples" data-source-kind="original-product-photographs">
+  {samples.map(({image,title}) => <figure><SiteImage src={image.src} alt={image.alt} eager={eager} sizes={sizes} /><figcaption>{title}</figcaption></figure>)}
+</div>
+<style>
+  .co-dual-samples { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; align-items: start; }
+  figure { min-width: 0; margin: 0; }
+  figure :global(img) { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; background: #f2f4f5; }
+  figcaption { padding: 12px 0; font: 500 14px/1.4 var(--su-font,sans-serif); color: #52606d; text-align: center; }
+</style>

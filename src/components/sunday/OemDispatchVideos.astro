@@ -1,0 +1,72 @@
+---
+import VideoFigure from '../VideoFigure.astro';
+
+const clips = [
+  { slug: 'pallets-by-container', title: 'Pallets by the container' },
+  { slug: 'forklift-at-flatbed', title: 'Forklift at the flatbed' },
+  { slug: 'wrapped-pallets-on-flatbed', title: 'Wrapped pallets on the flatbed' },
+  { slug: 'container-truck', title: 'Container truck at the warehouse' },
+];
+---
+
+<ul class="oe-dispatch-videos" data-dispatch-videos role="list">
+  {clips.map(({ slug, title }) => {
+    const poster = `/images/real/dispatch-20261110/${slug}.webp`;
+    return (
+      <li>
+        <VideoFigure
+          src={`/videos/dispatch-20261110/${slug}.mp4`}
+          poster={poster}
+          cover={{ src: poster, width: 540, height: 960, alt: '' }}
+          label={title}
+          ratio="9/16"
+        />
+        <span class="oe-dispatch-caption">{title}</span>
+      </li>
+    );
+  })}
+</ul>
+
+<script>
+  const grid = document.querySelector('[data-dispatch-videos]');
+  grid?.addEventListener('playing', (event) => {
+    for (const video of grid.querySelectorAll('video')) {
+      if (video !== event.target && !video.paused) video.pause();
+    }
+  }, { capture: true });
+</script>
+
+<style>
+  .oe-dispatch-videos {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: clamp(16px, 2.25vw, 32px);
+    align-items: start;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .oe-dispatch-videos > li { min-width: 0; }
+  .oe-dispatch-videos :global(.video-frame) {
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--oe-radius);
+  }
+  .oe-dispatch-caption {
+    display: block;
+    margin-top: 14px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--su-ink);
+  }
+  @media (max-width: 720px) {
+    .oe-dispatch-videos {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      row-gap: 24px;
+    }
+    .oe-dispatch-caption {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  }
+</style>

@@ -1,7 +1,15 @@
 ---
-interface Props { src: string; alt: string; focus?: string; zoom?: number; complete?: boolean; }
-const {src,alt,focus='60%',zoom=1.14,complete=false}=Astro.props;
-const isSourcePhoto=src.startsWith('/images/real/');
-const dimensions=src.endsWith('/packing-scene.jpg')?{width:540,height:960}:isSourcePhoto?{width:2000,height:2000}:{width:1536,height:1024};
+import FramedImage from './FramedImage.astro';
+import { getFramedPhotography } from '../data/framedPhotography';
+import type { GuidePhotoRetouch } from '../data/guidePhotoRetouch';
+import { getImageDelivery } from '../data/imageDelivery';
+interface Props { src: string; alt: string; focus?: string; zoom?: number; complete?: boolean; original?: boolean; presentation?: GuidePhotoRetouch; }
+const {src,alt,focus='60%',zoom=1.14,complete=false,original=false,presentation}=Astro.props;
+const framedPhoto=original || presentation ? undefined : getFramedPhotography(src);
+const delivery=getImageDelivery(src);
+const isSourcePhoto=!presentation && !framedPhoto && src.startsWith('/images/real/');
+const dimensions=presentation ?? delivery ?? (src.endsWith('/packing-scene.jpg')?{width:540,height:960}:isSourcePhoto?{width:2000,height:2000}:{width:1536,height:1024});
 ---
-<div class="photo-detail-wrap"><div class:list={['photo-detail',{'is-source-photo':isSourcePhoto,'shows-complete-photo':complete}]} style={`--photo-zoom:${zoom};--photo-y:${focus}`}><img src={src} alt={alt} loading="lazy" decoding="async" width={dimensions.width} height={dimensions.height} /></div></div>
+<div class="photo-detail-wrap"><div class:list={['photo-detail',{'is-source-photo':isSourcePhoto,'shows-complete-photo':complete,'has-framed-image':!!framedPhoto,'has-retouched-image':!!presentation}]} style={`--photo-zoom:${zoom};--photo-y:${focus}`}>
+  {framedPhoto ? <FramedImage src={src} alt={alt} /> : <img src={presentation?.src ?? delivery?.src ?? src} srcset={presentation?.srcset ?? delivery?.srcset} sizes={presentation || delivery ? '(max-width: 700px) calc(100vw - 40px), 40vw' : undefined} alt={alt} loading="lazy" decoding="async" width={dimensions.width} height={dimensions.height} data-retouched-source={presentation?.originalSrc} />}
+</div></div>

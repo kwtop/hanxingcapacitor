@@ -1,19 +1,25 @@
 ---
 import { applications, products } from '../data/site';
 import InquiryCallout from './InquiryCallout.astro';
-import { isSatechiPreview } from '../lib/visualPreview';
+import { usesEditorialPresentation } from '../lib/visualPreview';
+const useEditorial = usesEditorialPresentation(Astro.url.pathname);
 import { applicationVisuals } from '../data/satechiSite';
 import { industrialApplications } from '../data/industrialApplications';
 import SiteImage from './satechi-preview/SiteImage.astro';
+import ProductPresentation from './satechi-preview/ProductPresentation.astro';
+import ApplicationCircuitReview from './ApplicationCircuitReview.astro';
+import circuitPhotos from '../data/applicationCircuitPhotography.generated.json';
+import FramedImage from './FramedImage.astro';
 import '../styles/hvac-reference.css';
+import '../styles/application-comparison.css';
 const application = applications.find(a => a.slug === 'hvac-and-refrigeration')!;
 const run = products.find(p => p.code === 'CBB65')!;
 const start = products.find(p => p.code === 'CD60')!;
 const inquiry = '/contact/?application=hvac-and-refrigeration&request=quote#inquiry-form';
 const paths = [
   { title: 'Identify each motor', text: 'List the compressor and other motors separately. Photograph each capacitor label and show where it connects on the equipment diagram.', href: '/resources/read-motor-capacitor-label/', link: 'Read capacitor labels' },
-  { title: 'Single or dual run', text: 'Use the original part and wiring diagram to identify the run configuration. For dual run, keep both µF values and their terminal mapping together.', href: '/products/cbb65-air-conditioner-capacitor/', link: 'CBB65 run configurations' },
-  { title: 'Separate start circuit', text: 'CD60 serves a separately switched starting circuit. Specify its starting time and interval between starts.', href: '/products/cd60-start-capacitor/', link: 'CD60 starting duty' },
+  { title: 'Single or dual run', text: 'Use the original part and wiring diagram to identify the run configuration. For a dual-run part, record both µF values and which terminal group each belongs to.', href: '/products/cbb65-air-conditioner-capacitor/', link: 'CBB65 run configurations' },
+  { title: 'Separate start circuit', text: 'CD60 is used in a separately switched starting circuit. Include its rated starting time and interval between starts.', href: '/products/cd60-start-capacitor/', link: 'CD60 starting duty' },
 ];
 const fields = [
   'Equipment and motor model, with the original capacitor label and circuit diagram.',
@@ -23,7 +29,7 @@ const fields = [
 const fitChecks = [
   ['Terminal groups', 'Show each group marking in a terminal-end photo or drawing, then match it to the original motor diagram.'],
   ['Can and mounting', 'Measure the can diameter and height, then check the fixing point and clearance above the terminals against the model drawing.'],
-  ['Starting duty', 'A start circuit has separate requirements from single or dual-run duty. Request the start-capacitor model’s duty and time limits.'],
+  ['Starting duty', 'For the start capacitor, specify maximum on-time, minimum rest interval and the device that disconnects it after startup.'],
 ];
 const compared = [
   { product: run, rows: [
@@ -31,17 +37,17 @@ const compared = [
     ['Case / connection', 'Metal can; model-specific terminal groups.'],
     ['Single-run range', '2–100 µF · 110–450 VAC'],
     ['Dual-run range', '1+15 to 15+80 µF · 370–450 VAC'],
-    ['Important check', 'Both dual-run µF values and their terminal mapping.'],
+    ['Installation requirement', 'Both dual-run µF values and their terminal mapping.'],
   ], samples: [
-    { image: '/images/real/cbb65-2.jpg', alt: 'CBB65 single-run sample marked 20 µF and 450 VAC.', caption: 'Single · 20 µF / 450 VAC' },
-    { image: '/images/real/cbb65-dual-run-7.jpg', alt: 'CBB65 dual-run sample marked 50+5 µF and 450 VAC.', caption: 'Dual · 50+5 µF / 450 VAC' },
+    { presentation: 'CBB65', image: '/images/real/cbb65-2.jpg', alt: 'CBB65 single-run sample marked 20 µF and 450 VAC.', caption: 'Single · 20 µF / 450 VAC' },
+    { presentation: 'CBB65-dual', image: '/images/real/cbb65-dual-run-7.jpg', alt: 'CBB65 dual-run sample marked 50+5 µF and 450 VAC.', caption: 'Dual · 50+5 µF / 450 VAC' },
   ] },
   { product: start, rows: [
     ['Duty', 'Start; separately switched starting circuit.'],
     ['Case / connection', 'Electrolytic start-capacitor case; blade terminals or wire leads.'],
     ['Start range', start.capacitance + ' · ' + start.voltage],
-    ['Important check', 'Rated starting time, interval between starts and switching arrangement.'],
-  ], samples: [{ image: start.image, alt: start.imageAlt, caption: 'Start · 500 µF / 300 VAC sample' }] },
+    ['Installation requirement', 'Rated starting time, interval between starts and switching arrangement.'],
+  ], samples: [{ presentation: 'CD60', image: start.image, alt: start.imageAlt, caption: 'Start · 500 µF / 300 VAC sample' }] },
 ];
 ---
 <article class="hvr-reference review-application-reference" data-application="hvac-and-refrigeration">
@@ -49,16 +55,13 @@ const compared = [
     <section class="hvr-hero" aria-labelledby="hvac-title">
       <div class="hvr-introduction">
         <nav class="hvr-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/applications/">Applications</a><span>/</span><span aria-current="page">{application.shortName}</span></nav>
-        <h1 id="hvac-title">{application.shortName}</h1>
-        <p class="hvr-hero-summary">{application.listing}</p>
+        <h1 id="hvac-title">HVAC and refrigeration capacitors</h1>
+        <p class="hvr-hero-summary">{application.intro}</p>
       </div>
-      <figure class="hvr-hero-photo"><SiteImage src={isSatechiPreview ? applicationVisuals[application.slug] : application.image} alt={isSatechiPreview ? industrialApplications[application.slug].alt : application.imageAlt} width={isSatechiPreview ? 1536 : 1200} height={isSatechiPreview ? 1024 : application.imageHeight} eager /></figure>
+      <figure class="hvr-hero-photo"><SiteImage src={useEditorial ? applicationVisuals[application.slug] : application.image} alt={useEditorial ? industrialApplications[application.slug].alt : application.imageAlt} width={useEditorial ? 1536 : 1200} height={useEditorial ? 1024 : application.imageHeight} eager /></figure>
     </section>
 
-    <section class="hvr-section" id="review" aria-labelledby="circuit-title">
-      <h2 id="circuit-title">Motor circuits &amp; original capacitors</h2>
-      <div class="hvr-circuit-paths">{paths.map(path => <div><h3>{path.title}</h3><p>{path.text}</p><a class="hvr-path-link" href={path.href}>{path.link}</a></div>)}</div>
-    </section>
+    <ApplicationCircuitReview title="Compressor and fan capacitor circuits" image={circuitPhotos['hvac-and-refrigeration']} paths={paths} links={[{href:paths[0].href,label:paths[0].link}]} />
 
     <section class="hvr-section" id="series-comparison" aria-labelledby="comparison-title">
       <h2 id="comparison-title">CBB65 run and CD60 start capacitors</h2>
@@ -71,18 +74,18 @@ const compared = [
           <tr><th scope="row">Single-run µF / VAC</th><td>2–100 µF · 110–450 VAC</td><td>Not applicable</td></tr>
           <tr><th scope="row">Dual-run µF / VAC</th><td>1+15 to 15+80 µF · 370–450 VAC</td><td>Not applicable</td></tr>
           <tr><th scope="row">Start µF / VAC</th><td>Not applicable</td><td>{start.capacitance} · {start.voltage}</td></tr>
-          <tr><th scope="row">Important check</th><td>Retain both dual-run values and confirm their terminal mapping.</td><td>Confirm permitted start duration, repeat-start cycle and switching arrangement.</td></tr>
-          <tr class="hvr-sample-row"><th scope="row">Sample photographs</th>{compared.map(item => <td><div class="hvr-sample-pair">{item.samples.map(sample => <figure><div class="hvr-sample-photo"><img src={sample.image} alt={sample.alt} width="2000" height="2000" loading="lazy" /></div><figcaption>{sample.caption}</figcaption></figure>)}</div></td>)}</tr>
+          <tr><th scope="row">Installation requirement</th><td>Both dual-run µF values and their assigned terminal groups.</td><td>Permitted on-time, repeat-start cycle and switching arrangement.</td></tr>
+          <tr class="hvr-sample-row"><th scope="row">{useEditorial ? 'Product views' : 'Sample photographs'}</th>{compared.map(item => <td><div class="hvr-sample-pair">{item.samples.map(sample => <figure><div class="hvr-sample-photo">{useEditorial ? <ProductPresentation code={sample.presentation} sizes="(max-width: 900px) 36vw, 18vw" /> : <img src={sample.image} alt={sample.alt} width="2000" height="2000" loading="lazy" />}</div><figcaption>{sample.caption}</figcaption></figure>)}</div></td>)}</tr>
           <tr class="hvr-series-actions"><th scope="row">Full series details</th>{compared.map(({product:p}) => <td><a class="hvr-series-link" href={'/products/' + p.slug + '/'}>View {p.code}</a></td>)}</tr>
         </tbody></table></div>
-      <div class="hvr-mobile-comparison">{compared.map(item => <div class="hvr-series-summary"><h3><a href={'/products/' + item.product.slug + '/'}>{item.product.code}</a></h3><dl>{item.rows.map(([label,value]) => <div><dt>{label}</dt><dd>{value}</dd></div>)}</dl><div class="hvr-sample-pair">{item.samples.map(sample => <figure><div class="hvr-sample-photo"><img src={sample.image} alt={sample.alt} width="2000" height="2000" loading="lazy" /></div><figcaption>{sample.caption}</figcaption></figure>)}</div><a class="hvr-series-link" href={'/products/' + item.product.slug + '/'}>View {item.product.code} details</a></div>)}</div>
-      <p class="hvr-note">Use the model datasheet and drawing for ratings, temperature, tolerance and installation dimensions.</p>
+      <div class="hvr-mobile-comparison">{compared.map(item => <div class="hvr-series-summary"><h3><a href={'/products/' + item.product.slug + '/'}>{item.product.code}</a></h3><div class="hvr-sample-pair">{item.samples.map(sample => <figure><div class="hvr-sample-photo">{useEditorial ? <ProductPresentation code={sample.presentation} sizes="(max-width: 599px) 38vw, 28vw" /> : <img src={sample.image} alt={sample.alt} width="2000" height="2000" loading="lazy" />}</div><figcaption>{sample.caption}</figcaption></figure>)}</div><dl>{item.rows.map(([label,value]) => <div><dt>{label}</dt><dd>{value}</dd></div>)}</dl><a class="hvr-series-link" href={'/products/' + item.product.slug + '/'}>View {item.product.code} details</a></div>)}</div>
+      <p class="hvr-note">The model datasheet and drawing define the electrical ratings, temperature, tolerance and installed dimensions.</p>
       <div class="hvr-other-formats" id="other-run-formats"><h3>Other run-capacitor formats</h3><p>CBB61 is another run-capacitor format used in selected air-conditioner motors. Compare its rectangular case and connections with the original part.</p><a class="hvr-secondary" href="/products/cbb61-fan-capacitor/#pdr-applications">CBB61 applications</a></div>
     </section>
 
     <section class="hvr-section" id="fit-check" aria-labelledby="checks-title">
       <h2 id="checks-title">Terminal mapping and installed fit</h2>
-      <div class="hvr-check-layout"><figure class="hvr-fit-photo"><div class="hvr-fit-image"><img src={run.image} alt="CBB65 single-run sample marked 20 µF and 450 VAC with terminal groups visible." width="2000" height="2000" loading="lazy" /></div><figcaption>20 µF / 450 VAC single-run sample · terminal groups</figcaption></figure>
+      <div class="hvr-check-layout"><figure class="hvr-fit-photo"><div class="hvr-fit-image hvr-fit-image--framed"><FramedImage src={run.image} alt="CBB65 single-run sample marked 20 µF and 450 VAC with terminal groups visible." sizes="(max-width: 800px) calc(100vw - 48px), 35vw" /></div><figcaption>20 µF / 450 VAC single-run sample · terminal groups</figcaption></figure>
         <div><ul class="hvr-inquiry-checklist">{fitChecks.map(([title,description]) => <li><h3>{title}</h3><p>{description}</p></li>)}</ul><div class="hvr-fit-guides"><a class="hvr-secondary hvr-guide" href="/resources/single-vs-dual-run-capacitors/">Compare single and dual run</a><a class="hvr-secondary hvr-guide" href="/resources/dimensions-terminals-mounting/">Record dimensions & connections</a></div></div>
       </div>
     </section>

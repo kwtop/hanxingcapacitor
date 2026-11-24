@@ -1,0 +1,27 @@
+<figure class="starting-duty-diagram" aria-labelledby="starting-duty-caption">
+  <div class="starting-duty-key"><span><i class="duty-on-key" aria-hidden="true"></i>Energized: 3 s</span><span><i class="duty-off-key" aria-hidden="true"></i>Disconnected: 177 s</span></div>
+  <div class="starting-duty-track" role="img" aria-label="Two consecutive 180-second cycles. In each cycle the capacitor is energized for 3 seconds and disconnected for 177 seconds. Orange segments occupy 3 out of 180 seconds.">
+    {[1,2].map(cycle=><div class="starting-duty-cycle"><span class="starting-duty-on"></span><span class="starting-duty-off"></span><span class="starting-duty-cycle-label">Cycle {cycle}: 180 s</span></div>)}
+  </div>
+  <dl class="starting-duty-values"><div><dt>Duty cycle</dt><dd>3 ÷ 180 × 100 = 1.67%</dd></div><div><dt>Evenly spaced starts</dt><dd>3,600 ÷ 180 = 20 per hour</dd></div></dl>
+  <figcaption id="starting-duty-caption">KEMET MS/MD published timing example. The proportions show 3 seconds energized in each complete 180-second cycle.</figcaption>
+</figure>
+
+<style>
+  .starting-duty-diagram{margin:32px 0;padding:28px;background:#f2f3f4;border-radius:12px;min-width:0}
+  .starting-duty-key{display:flex;flex-wrap:wrap;gap:12px 24px;font-size:14px;line-height:1.6}
+  .starting-duty-key>span{display:flex;align-items:center;gap:8px}
+  .starting-duty-key i{width:12px;height:12px;border-radius:2px;display:inline-block;flex-shrink:0}
+  .duty-on-key,.starting-duty-on{background:var(--su-accent,#c55000)}
+  .duty-off-key,.starting-duty-off{background:#d4d9dd}
+  .starting-duty-track{display:grid;grid-template-columns:1fr 1fr;margin:28px 0 56px}
+  .starting-duty-cycle{position:relative;display:flex;height:32px;border-right:1px solid #fff}
+  .starting-duty-on{flex:0 0 calc(100% / 60)}
+  .starting-duty-off{flex:1}
+  .starting-duty-cycle-label{position:absolute;top:42px;left:0;font-size:13px;line-height:1.4;color:#505b64}
+  .starting-duty-values{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:0}
+  .starting-duty-values dt{font-size:13px;color:#505b64;margin-bottom:8px}
+  .starting-duty-values dd{margin:0;font-size:17px;font-weight:500;line-height:1.5;font-variant-numeric:tabular-nums}
+  .starting-duty-diagram figcaption{margin-top:24px;font-size:14px;line-height:1.7;color:#505b64;max-width:65ch}
+  @media(max-width:560px){.starting-duty-diagram{padding:20px}.starting-duty-values{grid-template-columns:1fr}.starting-duty-track{margin-bottom:52px}.starting-duty-cycle-label{font-size:12px}.starting-duty-values dd{font-size:16px}}
+</style>

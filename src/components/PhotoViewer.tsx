@@ -1,3 +1,4 @@
+import {localizeTree} from '../i18n/react';
 import { useEffect, useId, useRef } from 'react';
 import ImageWithFeedback from './ImageWithFeedback';
 
@@ -29,7 +30,7 @@ export default function PhotoViewer({ photos, active, onSelect, onClose, preview
   }, [open]);
 
   const step = (delta: number) => onSelect((active! + delta + photos.length) % photos.length);
-  return <dialog ref={dialog} className="interactive-photo-viewer" aria-labelledby={heading} onCancel={event => { event.preventDefault(); onClose(); }}
+  return localizeTree(<dialog ref={dialog} className="interactive-photo-viewer" aria-labelledby={heading} onCancel={event => { event.preventDefault(); onClose(); }}
     onPointerDown={event => {
       const rect = event.currentTarget.getBoundingClientRect();
       outside.current = event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom;
@@ -51,8 +52,8 @@ export default function PhotoViewer({ photos, active, onSelect, onClose, preview
     {photo && <div className="photo-viewer-content">
       <div className="photo-viewer-header"><h2 id={heading}>{photo.id || photo.series || 'Photograph'}</h2><button type="button" className="viewer-close" onClick={onClose} autoFocus>Close <span aria-hidden="true">×</span></button></div>
       <div className="photo-viewer-image"><ImageWithFeedback key={photo.src} src={photo.src} alt={photo.alt || photo.label} previewState={active === 0 ? previewState : undefined} /></div>
-      <div className="photo-viewer-controls">{photos.length > 1 && <button type="button" onClick={() => step(-1)} aria-label="Previous photograph">← Previous</button>}<span role="status" aria-live="polite">{active! + 1} / {photos.length}</span>{photos.length > 1 && <button type="button" onClick={() => step(1)} aria-label="Next photograph">Next →</button>}</div>
+      <div className="photo-viewer-controls">{photos.length > 1 && <button type="button" onClick={() => step(-1)} aria-label="Previous photograph">Previous</button>}<span role="status" aria-live="polite">{active! + 1} / {photos.length}</span>{photos.length > 1 && <button type="button" onClick={() => step(1)} aria-label="Next photograph">Next</button>}</div>
       <div className="photo-viewer-caption"><p>{photo.label}</p>{photo.note && <p className="photo-viewer-note">{photo.note}</p>}{photo.inquiryHref && <a className="button" href={photo.inquiryHref}>Ask about this sample</a>}</div>
     </div>}
-  </dialog>;
+  </dialog>);
 }

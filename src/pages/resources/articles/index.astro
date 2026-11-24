@@ -1,26 +1,33 @@
 ---
-import { isSatechiPreview } from '../../../lib/visualPreview';
+import { usesEditorialPresentation } from '../../../lib/visualPreview';
+const useEditorial = usesEditorialPresentation(Astro.url.pathname);
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { guides, guideHref } from '../../../data/guides';
 import '../../../styles/resource-hubs.css';
+import '../../../styles/resource-editorial.css';
 import FeaturedGuide from '../../../components/satechi-preview/FeaturedGuide.astro';
 import GuideCover from '../../../components/satechi-preview/GuideCover.astro';
 import DirectorySearch from '../../../components/DirectorySearch.astro';
 const featured = guides.find(guide => guide.slug === 'read-motor-capacitor-label')!;
 const groups = [
-  { title: 'Electrical ratings and duty', slugs: ['read-motor-capacitor-label', 'start-vs-run-capacitors', 'capacitance-voltage-guide'] },
+  { title: 'Electrical ratings, duty and safety', slugs: ['read-motor-capacitor-label', 'start-vs-run-capacitors', 'capacitance-voltage-guide', 'iec-60252-1-capacitor-safety-classes'] },
   { title: 'Compare capacitor series', slugs: ['cbb60-vs-cbb61-vs-cbb65', 'single-vs-dual-run-capacitors'] },
-  { title: 'Dimensions & connections', slugs: ['dimensions-terminals-mounting'] },
+  { title: 'Product selection', className: 'resource-product-selection', slugs: ['cbb60-capacitor-selection', 'cbb61-capacitor-ratings-replacement', 'cbb61-wire-leads-blade-terminals', 'cbb65-capacitor-temperature-ratings', 'cd60-start-capacitor-duty-cycle', 'cd60-capacitor-replacement-specifications'] },
+  { title: 'Applications and replacement', slugs: ['cbb60-water-pump-capacitor-selection', 'well-irrigation-pump-capacitor-control-box', 'fan-blower-motor-capacitor-selection', 'washing-machine-motor-capacitor-selection'] },
+  { title: 'Testing and inspection', className: 'resource-testing-guides', slugs: ['motor-capacitor-tolerance-test-results', 'motor-capacitor-failure-diagnosis', 'motor-capacitor-inspection-report-checklist'] },
+  { title: 'Fit and sample approval', slugs: ['cbb60-capacitor-dimensions-chart', 'dimensions-terminals-mounting', 'oem-capacitor-sample-approval'] },
+  { id: 'supplier-guides', title: 'Suppliers and sourcing', slugs: ['motor-capacitor-manufacturers-china', 'china-motor-capacitor-suppliers-pumps-fans-hvac', 'motor-capacitor-manufacturer-qualification'] },
+  { id: 'wholesale-guides', title: 'Wholesale orders and resale', slugs: ['wholesale-motor-capacitors-china', 'wholesale-motor-capacitors-resale-private-label', 'motor-capacitor-wholesale-rfq'] },
 ];
 ---
-<BaseLayout title="Motor Capacitor Technical Guides | HAN XING" description="Motor capacitor guides on µF, VAC and circuit duty, with series comparisons and measurement checklists for cases, mounting and connections.">
-  <div class:list={['review-resource-page resource-hub', {'ss-guide-index':isSatechiPreview}]}>
-    <section class="page-hero"><div class="container"><p class="breadcrumbs"><a href="/">Home</a> / <a href="/resources/">Resources</a> / Technical guides</p><h1>Technical guides</h1><p class="lead">Practical guides to capacitor ratings, case formats, wiring and installation dimensions.</p></div></section>
+<BaseLayout title="Motor Capacitor Technical Guides | HAN XING" description="Motor capacitor guides on CBB60 dimensions, CBB61 fan selection, CBB65 dual-run ratings, IEC safety classes, capacitance testing and OEM approval.">
+  <div class:list={['review-resource-page resource-hub resource-suite', {'ss-guide-index':useEditorial}]}>
+    <section class="page-hero"><div class="container"><p class="breadcrumbs"><a href="/">Home</a> / <a href="/resources/">Resources</a> / Technical guides</p><h1>Motor capacitor technical guides</h1><p class="lead">Compare capacitor ratings and case sizes, read sample labels, or check a capacitance test result.</p></div></section>
     <div class="container resource-hub-body">
-      <DirectorySearch directory="technical-guides" label="Search technical guides" placeholder="e.g. terminals or run duty" noun="guides" emptyTitle="No matching guides" />
+      <DirectorySearch directory="technical-guides" label="Search technical guides" placeholder="e.g. CBB61, 35/5 or multimeter" noun="guides" emptyTitle="No matching guides" />
       <div id="technical-guides" data-content-directory>
-      {isSatechiPreview && <FeaturedGuide guide={featured} filterable />}
-      {groups.map(group => <section class="resource-hub-section" data-search-group><h2>{group.title}</h2><div class="resource-article-list">{group.slugs.filter(slug => !isSatechiPreview || slug !== featured.slug).map(slug => guides.find(guide => guide.slug === slug)!).map(guide => <a data-search-item href={guideHref(guide)}>{isSatechiPreview && <GuideCover class="ss-resource-cover" slug={guide.slug} sizes="(max-width:600px) calc(100vw - 32px), (max-width:800px) 45vw, 34vw" />}<h3>{guide.title}</h3><p>{guide.summary}</p></a>)}</div></section>)}
+      {useEditorial && <FeaturedGuide guide={featured} filterable />}
+      {groups.map(group => <section id={group.id} class:list={['resource-hub-section',group.className]} data-search-group><h2>{group.title}</h2><div class="resource-article-list">{group.slugs.filter(slug => !useEditorial || slug !== featured.slug).map(slug => guides.find(guide => guide.slug === slug)!).map(guide => <a data-search-item href={guideHref(guide)}>{useEditorial && <GuideCover class="ss-resource-cover" slug={guide.slug} sizes="(max-width:600px) calc(100vw - 32px), (max-width:800px) 45vw, 34vw" />}<h3>{guide.title}</h3><p>{guide.summary}</p></a>)}</div></section>)}
       </div>
       <section class="resource-hub-section"><h2>Datasheets &amp; drawings</h2><p>Specify the required rating, case and connections when requesting a datasheet and dimensioned drawing.</p><nav class="resource-hub-actions" aria-label="Model documents and purchasing"><a class="card-link" href="/factory/#model-records">Product document checklist</a><a class="card-link" href="/products/">Product series</a><a class="card-link" href="/buying-guide/">Buying &amp; shipping</a></nav></section>
     </div>

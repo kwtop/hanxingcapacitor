@@ -1,29 +1,22 @@
 import type { WorkshopPhoto } from './workshopPhotos';
+import { sourcePhotography } from './sourcePhotography';
 
-const sourceFrames = new Set([
-  '01-film-control', '22-blue-cartons', '24-test-display',
-  '26-boxing-table', '29-lift-to-truck', '30-truck-handover',
-]);
-const landscapeFrames = new Set([
-  '01-film-control', '02-film-machine', '03-machine-output', '05-line-wide', '06-press-worker',
-  '07-reel-equipment', '09-assembly-machine', '13-terminal-array', '14-press-detail',
-  '17-empty-cans', '20-component-pile', '23-tray-racks', '28-outdoor-pallets',
-]);
-
-const photo = (slug: string, caption: string, alt: string): WorkshopPhoto => ({
-  slug,
-  caption,
-  alt: `${alt} — ${sourceFrames.has(slug) ? 'source video frame' : 'illustrative ImageGen refinement of supplied footage'}.`,
-  illustrative: !sourceFrames.has(slug),
-  frame: landscapeFrames.has(slug) ? 'landscape' : 'portrait',
-});
+const photo = (slug: keyof typeof sourcePhotography, caption: string, alt: string): WorkshopPhoto => {
+  const source = sourcePhotography[slug];
+  return {
+    slug, caption, alt,
+    src: source.src, srcset: source.srcset, width: source.width, height: source.height,
+    originalSrc: source.original, illustrative: false,
+    frame: source.frame === 'portrait' ? 'portrait' : 'landscape',
+  };
+};
 
 export const processGallery = [
   {
     id: 'film-equipment',
     eyebrow: '01 / Equipment',
     title: 'Film and production equipment',
-    intro: 'A look at the machines, reels and operators visible in the supplied production clips.',
+    intro: 'Film reels and rollers at the processing equipment, with closer views of tooling, controls and operator workstations.',
     photos: [
       photo('02-film-machine', 'Film-processing equipment', 'Enclosed film-processing equipment and rollers'),
       photo('07-reel-equipment', 'Reels on the line', 'Reels and automated equipment'),
@@ -38,7 +31,7 @@ export const processGallery = [
     id: 'can-assembly',
     eyebrow: '02 / Assembly',
     title: 'Can bodies and component work',
-    intro: 'Close views of metal can bodies, tooling and manual handling. These images show visible work, not a complete or certified process order.',
+    intro: 'Metal can bodies at assembly benches. The close views show open ends, fixtures and terminal arrangements.',
     photos: [
       photo('09-assembly-machine', 'Assembly equipment', 'Gloved hands beside metal cans at assembly equipment'),
       photo('08-can-sorting', 'Sorting can bodies', 'Worker sorting metal can bodies at a table'),
@@ -59,8 +52,8 @@ export const processGallery = [
   {
     id: 'finish-pack',
     eyebrow: '03 / Finish',
-    title: 'Testing views and packing work',
-    intro: 'Scenes show equipment, cartons and hands at packing tables. Screen readings and printed marks must be checked against the original footage and order records.',
+    title: 'Electrical equipment and packing',
+    intro: 'An electrical equipment display, can bodies separated in trays and individual product boxes at the packing workstations.',
     photos: [
       photo('23-tray-racks', 'Can bodies in trays', 'Rows of metal can bodies held in cardboard trays'),
       photo('25-packing-worker', 'Packing individual boxes', 'Worker handling blue individual boxes at a packing station'),
@@ -74,7 +67,7 @@ export const processGallery = [
     id: 'dispatch',
     eyebrow: '04 / Dispatch',
     title: 'Pallets and loading',
-    intro: 'The source clips show outdoor pallet staging and truck loading. Shipment status still depends on the matching transport record.',
+    intro: 'Wrapped cartons on pallets outside the warehouse, a forklift at the loading area and cartons being handled at the truck.',
     photos: [
       photo('28-outdoor-pallets', 'Pallets outside', 'Wrapped cartons on pallets outside a warehouse'),
       photo('29-lift-to-truck', 'Lift toward the truck', 'Forklift lifting wrapped cartons toward a truck'),

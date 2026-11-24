@@ -3,6 +3,24 @@
   "name": "hanxing-capacitor-preview",
   "pages_build_output_dir": ".cloudflare-site",
   "compatibility_date": "2026-10-20",
-  "compatibility_flags": ["nodejs_compat"],
-  "d1_databases": [{ "binding": "DB", "database_name": "hanxing-site", "database_id": "00000000-0000-0000-0000-000000000000", "migrations_dir": "migrations" }]
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "vars": {
+    "APP_ENV": "production",
+    "ADMIN_AUTH_MODE": "access",
+    "ADMIN_EMAIL": "admin@hanxing.local",
+    "ACCESS_TEAM_DOMAIN": "rapid-violet-447d.cloudflareaccess.com",
+    "ACCESS_AUD": "4f66b03cdf36d182435b21053ba863470a3531adeb4e8a6581797cdb5b3198b7",
+    "ACCESS_ALLOWED_EMAILS": "",
+    "TURNSTILE_SITE_KEY": "0x4AAAAAAFsU87v_xetZeeBZ"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "hanxing-site",
+      "database_id": "556402da-2704-404e-910b-939c13f84280",
+      "migrations_dir": "migrations"
+    }
+  ]
 }

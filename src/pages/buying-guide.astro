@@ -1,10 +1,16 @@
 ---
-import { isSatechiPreview } from '../lib/visualPreview';
+import DeliveryImage from '../components/satechi-preview/SiteImage.astro';
+import { usesEditorialPresentation } from '../lib/visualPreview';
+const useEditorial = usesEditorialPresentation(Astro.url.pathname);
 import RefinedPhoto from '../components/satechi-preview/RefinedPhoto.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import InquiryCallout from '../components/InquiryCallout.astro';
 import '../styles/resource-hubs.css';
+import '../styles/resource-editorial.css';
 import SelectionAssistant from '../components/SelectionAssistant';
+import WorkshopPhotoStory from '../components/sunday/WorkshopPhotoStory.astro';
+import { workshopStorySets } from '../data/workshopPhotos';
+import { STANDARD_MOQ_DESCRIPTION, procurementPolicy } from '../data/site';
 const requestTemplate = [
   'Equipment / motor model:',
   'Original capacitor model:',
@@ -17,15 +23,15 @@ const requestTemplate = [
   'Documents required:',
 ].join('\n');
 ---
-<BaseLayout title="Motor Capacitor Buying & Shipping Guide | HAN XING" description="Use the capacitor quotation checklist, approve sample details and confirm order terms. Check packing, dispatch dates and shipping documents before pickup.">
-  <div class="rfq-field-guide review-rfq-page buying-hub">
+<BaseLayout title="Motor Capacitor Buying & Shipping Guide | HAN XING" description="Motor capacitor ordering requirements, from electrical ratings and sample approval to packing specifications, delivery dates and shipping documents.">
+  <div class="rfq-field-guide review-rfq-page buying-hub resource-suite">
     <section class="rfq-hero" aria-labelledby="rfq-title"><div class="container">
       <p class="breadcrumbs"><a href="/">Home</a> / <a href="/resources/">Resources</a> / Buying &amp; shipping</p>
-      <div class="rfq-hero-copy"><h1 id="rfq-title">Buying &amp; shipping</h1>{isSatechiPreview && <p class="ss-media-lead">From a clear product specification to sample approval, ordering and shipping.</p>}</div>
-      {isSatechiPreview && <RefinedPhoto name="buying-inquiry" eager />}
+      <div class="rfq-hero-copy"><h1 id="rfq-title">Ordering motor capacitors</h1>{useEditorial && <p class="ss-media-lead">From the first model request to sample approval, order terms and carrier handover.</p>}</div>
+      {useEditorial && <RefinedPhoto name="buying-inquiry" eager />}
     </div></section>
     <section class="rfq-message" id="rfq-template" aria-labelledby="rfq-template-title"><div class="container">
-      <h2 id="rfq-template-title">Prepare your inquiry</h2><p class="buying-intro">Copy the checklist into your message and fill in the original specifications, quantity and destination.</p><h3 class="buying-checklist-label">Quotation checklist</h3>
+      <h2 id="rfq-template-title">Prepare your inquiry</h2><p class="buying-intro">Copy this checklist into your message and add the details you have. Include the original ratings, quantity and destination.</p><h3 class="buying-checklist-label">Quotation checklist</h3>
       <div class="rfq-message-grid">
         <div><pre class="rfq-template" id="request-template" tabindex="0" aria-label="Inquiry checklist to copy"><code>{requestTemplate}</code></pre><button class="button secondary" type="button" id="copy-template">Copy checklist</button><p id="template-status" role="status" aria-live="polite"></p></div>
         <InquiryCallout contained />
@@ -35,17 +41,18 @@ const requestTemplate = [
       <p class="technical-body-copy">Use the online form for written requirements and send photos or drawings by <a href="/contact/">email or WhatsApp</a>. If you have already submitted the form, include your inquiry reference with the files.</p>
       <details class="buying-checklist-help"><summary id="rfq-notes-title">Help completing the checklist</summary>
       <div class="rfq-field-rows">
-        <div><h3 id="rfq-label-title">Motor and electrical specifications</h3><div><p>Record the equipment and motor model, circuit duty and wiring diagram. Copy µF, VAC, tolerance and frequency from the original label. For dual run, include both capacitance values.</p><nav aria-label="Electrical guidance"><a class="rfq-guide-link" href="/resources/read-motor-capacitor-label/">Read a capacitor label</a><a class="rfq-guide-link" href="/resources/start-vs-run-capacitors/">Check start and run duty</a></nav><figure class="review-rfq-sample"><img src="/images/real/cbb65-dual-run-7.jpg" alt="Original CBB65 dual-run sample marked 50+5 µF and 450 VAC" width="2000" height="2000" loading="lazy" decoding="async" /><figcaption>CBB65 dual-run sample · 50+5 µF / 450 VAC</figcaption></figure></div></div>
+        <div><h3 id="rfq-label-title">Motor and electrical specifications</h3><div><p>Record the equipment and motor model, circuit duty and wiring diagram. Copy µF, VAC, tolerance and frequency from the original label. For dual run, include both capacitance values.</p><nav aria-label="Electrical guidance"><a class="rfq-guide-link" href="/resources/read-motor-capacitor-label/">Read a capacitor label</a><a class="rfq-guide-link" href="/resources/start-vs-run-capacitors/">Check start and run duty</a></nav><figure class="review-rfq-sample"><DeliveryImage src="/images/real/cbb65-dual-run-7.jpg" alt="CBB65 dual-run capacitor marked 50+5 µF and 450 VAC." sizes="(max-width: 700px) calc(100vw - 48px), 500px" /><figcaption>CBB65 dual-run sample · 50+5 µF / 450 VAC</figcaption></figure></div></div>
         <div><h3 id="rfq-fit-title">Dimensions and connections</h3><div><p>Give body and installed dimensions in mm, including fixing hardware and connection clearance. Show the lead or terminal layout, connectors and terminal groups.</p><a class="rfq-guide-link" href="/resources/dimensions-terminals-mounting/">Measure the case and connections</a></div></div>
-        <div><h3 id="rfq-order-title">Quantity and model documents</h3><div><p>State the order quantity or forecast, destination and label requirements. List the samples, drawing, datasheet, certificates and test reports needed for the selected configuration and market.</p><nav aria-label="Model and order guidance"><a class="rfq-guide-link" href="/factory/#model-records">Product document checklist</a><a class="rfq-guide-link" href="/resources/motor-capacitor-order-shipment-checklist/">Order &amp; shipping checklist</a></nav></div></div>
+        <div><h3 id="rfq-order-title">Quantity and model documents</h3><div><p>State the order quantity or forecast, destination and label requirements. List the samples, drawing, datasheet, certificates and test reports needed for the selected configuration and market.</p><p>{STANDARD_MOQ_DESCRIPTION}</p><p>{procurementPolicy.samples}</p><nav aria-label="Model and order guidance"><a class="rfq-guide-link" href="/factory/#model-records">Product document checklist</a><a class="rfq-guide-link" href="/resources/motor-capacitor-order-shipment-checklist/">Order &amp; shipping checklist</a></nav></div></div>
       </div>
       </details>
       <div class="buying-next-stages">
-        <section id="approve-sample" class:list={{'ss-buying-photo-stage':isSatechiPreview}}>{isSatechiPreview && <RefinedPhoto name="label-carton" />}<h2>Approve the sample</h2><div><p>Check the sample's ratings and connections against the agreed drawing. For a customized order, keep a record of the approved label artwork and packing version.</p><a class="card-link" href="/oem/">OEM requirements and sample approval</a></div></section>
-        <section id="confirm-order"><h2>Confirm the order</h2><div><p>Put the exact model, drawing revision, quantities, price and delivery terms in the order. Keep all approvals under the same reference, and agree alternatives or changes in writing.</p><a class="card-link" href="/resources/motor-capacitor-order-shipment-checklist/">Order &amp; shipping checklist</a></div></section>
-        <section id="check-dispatch" class:list={{'ss-buying-photo-stage':isSatechiPreview}}>{isSatechiPreview && <RefinedPhoto name="packing-protection" />}<h2>Check packing &amp; dispatch</h2><div><p>Check the packing and labels against the approved order. Record inspection release, carrier pickup and departure as separate dates, marking each as confirmed or estimated.</p><a class="card-link" href="/factory/packing-and-dispatch/">Packing and dispatch details</a></div></section>
+        <section id="approve-sample" class:list={{'ss-buying-photo-stage':useEditorial}}>{useEditorial && <RefinedPhoto name="label-carton" />}<h2>Approve the sample</h2><div><p>Compare the sample’s ratings and connections with the agreed drawing. Keep the approved label artwork and packing revision with a customised order.</p><a class="card-link" href="/oem/">OEM requirements and sample approval</a></div></section>
+        <section id="confirm-order"><h2>Confirm the order</h2><div><p>Your order should name the exact model and drawing revision, quantities, price and delivery terms. Keep the approvals together and put any agreed changes in writing.</p><a class="card-link" href="/resources/motor-capacitor-order-shipment-checklist/">Order &amp; shipping checklist</a></div></section>
+        <section id="check-dispatch" class:list={{'ss-buying-photo-stage':useEditorial}}>{useEditorial && <RefinedPhoto name="packing-protection" />}<h2>Check packing &amp; dispatch</h2><div><p>The packing record should match the approved labels, protection and quantities. List inspection release, carrier pickup and departure separately, with each date marked confirmed or estimated.</p><a class="card-link" href="/factory/packing-and-dispatch/">Packing and dispatch details</a></div></section>
         <section id="shipping-documents"><h2>Review shipping documents</h2><div><p>Compare the invoice, packing list and transport record with the order. Agree any extra documents required for the destination or shipping route.</p><a class="card-link" href="/resources/motor-capacitor-order-shipment-checklist/#4-check-documents-against-the-shipping-route">Shipping document checklist</a></div></section>
       </div>
+      <WorkshopPhotoStory id="buying-visual-context" eyebrow="Sample and packing" title="Samples, packing and loading" intro="A look at sample discussions, individual packing and loading." photos={workshopStorySets.buying} compact />
       <section class="review-rfq-selection" aria-labelledby="rfq-selection-title"><h2 id="rfq-selection-title">Choose a capacitor series</h2><a class="card-link" href="/applications/">Browse applications</a><details class="rfq-application-help"><summary>Help choosing a series</summary><div><SelectionAssistant client:load variant="compact" /></div></details></section>
     </div></section>
   </div>

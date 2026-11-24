@@ -1,11 +1,13 @@
+import {localizeTree} from '../i18n/react';
 import { useEffect, useRef, useState } from 'react';
 import type { ReferenceGalleryPhoto } from '../data/productReference';
 import ImageWithFeedback from './ImageWithFeedback';
 import PhotoViewer from './PhotoViewer';
 import { findPolishedMedia } from '../data/imagePolish';
+import { getImageDelivery, zoomImageUrl } from '../data/imageDelivery';
 
 export default function ProductReferenceGallery({ photos: originals, code, display }: { photos: ReferenceGalleryPhoto[]; code: string; display?: {src: string; alt: string} }) {
-  const photos: ReferenceGalleryPhoto[] = display ? [{...display, thumb:findPolishedMedia(display.src)?.thumb, label: `${code} product view`}, ...originals] : originals;
+  const photos: ReferenceGalleryPhoto[] = display ? [{...display, ...getImageDelivery(display.src), thumb:getImageDelivery(display.src)?.thumb ?? findPolishedMedia(display.src)?.thumb, label: `${code} product view`}, ...originals] : originals;
   const [active, setActive] = useState(0);
   const [viewing, setViewing] = useState(false);
   const rail = useRef<HTMLDivElement>(null);
@@ -27,8 +29,8 @@ export default function ProductReferenceGallery({ photos: originals, code, displ
 
   if (!photo) return null;
   const viewerPhotos = photos.map((item, index) => ({
-    ...item, src: item.originalSrc || item.src, series: code,
-    note: display && index === 0 ? 'Illustrative studio view. Check the original sample photographs and model documents for specification approval.' : 'Original supplied sample photograph. The photographed part is a reference, not a confirmed order configuration.',
+    ...item, src: item.zoomSrc ?? zoomImageUrl(item.src), series: code,
+    note: display && index === 0 ? undefined : 'The photographed part is a reference, not a confirmed order configuration.',
     inquiryHref: `/contact/?series=${code}${display && index === 0 ? '' : '&photo=' + encodeURIComponent(item.id || `${code}-photo-${index + 1 - (display ? 1 : 0)}`)}`,
   }));
   const swipe = {
@@ -41,11 +43,11 @@ export default function ProductReferenceGallery({ photos: originals, code, displ
     },
   };
 
-  return <div className={'pdr-gallery pg-gallery' + (display ? ' ss-product-gallery' : '')} id="sample-photographs" data-photo-kind={display && active === 0 ? 'display' : 'sample'}>
+  return localizeTree(<div className={'pdr-gallery pg-gallery' + (display ? ' ss-product-gallery' : '')} id="sample-photographs" data-photo-kind={display && active === 0 ? 'display' : 'sample'}>
     <div className="pg-stage" {...swipe}>
-      <button type="button" className="pdr-main-photo pg-main" onClick={() => setViewing(true)} aria-label={`Enlarge ${photo.label}`}><ImageWithFeedback key={photo.src} src={photo.src} alt={photo.alt} width={2000} height={2000} sizes="(max-width: 800px) calc(100vw - 48px), (max-width: 1420px) 50vw, 686px" retryable={false} /></button>
-      <button className="pg-step pg-previous" type="button" onClick={() => step(-1)} aria-label={display ? 'Previous product view' : 'Previous sample photograph'}><span aria-hidden="true">←</span></button>
-      <button className="pg-step pg-next" type="button" onClick={() => step(1)} aria-label={display ? 'Next product view' : 'Next sample photograph'}><span aria-hidden="true">→</span></button>
+      <button type="button" className="pdr-main-photo pg-main" onClick={() => setViewing(true)} aria-label={`Enlarge ${photo.label}`}><ImageWithFeedback key={photo.src} src={photo.src} alt={photo.alt} width={photo.width ?? 2000} height={photo.height ?? 2000} sizes="(max-width: 800px) calc(100vw - 48px), (max-width: 1199px) 54vw, (max-width: 1420px) 58vw, 800px" fetchPriority={active === 0 ? 'high' : 'auto'} retryable={false} /></button>
+      <button className="pg-step pg-previous" type="button" onClick={() => step(-1)} aria-label={display ? 'Previous product view' : 'Previous sample photograph'}><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m14 6-6 6 6 6" /></svg></button>
+      <button className="pg-step pg-next" type="button" onClick={() => step(1)} aria-label={display ? 'Next product view' : 'Next sample photograph'}><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m10 6 6 6-6 6" /></svg></button>
     </div>
     <div ref={rail} className="pg-filmstrip" role="group" aria-label={`${code} sample photographs`} onKeyDown={event => {
       if (event.key === 'ArrowRight' || event.key === 'ArrowLeft' || event.key === 'Home' || event.key === 'End') {
@@ -53,8 +55,8 @@ export default function ProductReferenceGallery({ photos: originals, code, displ
         const next = event.key === 'Home' ? 0 : event.key === 'End' ? photos.length - 1 : (active + (event.key === 'ArrowRight' ? 1 : -1) + photos.length) % photos.length;
         setActive(next); (rail.current?.children[next] as HTMLElement | undefined)?.focus();
       }
-    }}>{photos.map((p, index) => <button key={p.src} type="button" aria-label={`Select photograph ${index + 1}: ${p.label}`} aria-pressed={active === index} onClick={() => setActive(index)}><img src={p.thumb || p.src} alt="" width="120" height="120" loading="lazy" /></button>)}</div>
+    }}>{photos.map((p, index) => <button key={p.src} type="button" aria-label={`Select photograph ${index + 1}: ${p.label}`} aria-pressed={active === index} onClick={() => setActive(index)}><img src={p.thumb || p.src} srcSet={p.thumbSrcset} sizes={p.thumbSrcset ? '(max-width: 800px) 78px, 96px' : undefined} alt="" width={p.thumbWidth ?? 120} height={p.thumbHeight ?? 120} loading="lazy" fetchPriority="low" decoding="async" /></button>)}</div>
     <div className="pg-caption-row"><div className="pg-caption" aria-live="polite"><strong>{photo.label}</strong><span>{active + 1} / {photos.length}</span></div></div>
     <PhotoViewer photos={viewerPhotos} active={viewing ? active : null} onSelect={setActive} onClose={() => setViewing(false)} />
-  </div>;
+  </div>);
 }

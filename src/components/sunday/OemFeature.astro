@@ -1,0 +1,10 @@
+---
+interface Props {id?:string; title:string; reverse?:boolean; portrait?:boolean; tone?:'white'|'steel';titleId?:string;}
+const {id,title,reverse=false,portrait=false,tone='white',titleId=id?`${id}-title`:undefined}=Astro.props;
+---
+<section id={id} aria-labelledby={titleId} class:list={['oe-feature',`oe-feature--${tone}`,{'oe-feature--reverse':reverse,'oe-feature--portrait':portrait}]}>
+  <div class="oe-shell oe-feature-grid">
+    <div class="oe-feature-media"><slot name="media" /></div>
+    <div class="oe-feature-copy"><h2 id={titleId}>{title}</h2><slot /></div>
+  </div>
+</section>
