@@ -16,6 +16,8 @@ export const companyProfile = {
     address: 'Jiegu Village, Jiegu Township, Pingxiang County, Xingtai, Hebei, China',
     postalAddress: { streetAddress: 'Jiegu Village, Jiegu Township, Pingxiang County', addressLocality: 'Xingtai', addressRegion: 'Hebei', addressCountry: 'CN' },
   },
+  // Owner-confirmed founding year, 2026-11-24. Used in structured data only.
+  founded: 2014,
   contact: {
     email: 'ManuelaMusio570@gmail.com', whatsapp: '+86 153 3339 4111',
     officeMobile: '+86 193 0339 1011', officePhone: '+86 571 8521 3638',

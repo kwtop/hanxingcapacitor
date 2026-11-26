@@ -38,6 +38,7 @@ export function pageSeo(path: string, title: string, description: string, canoni
     { '@type': 'Organization', '@id': organizationId, name: PUBLIC_COMPANY_NAME, brand: { '@id': brandId },
       url: absolute('/'), email: PUBLIC_EMAIL, telephone: PUBLIC_PHONE,
       description: PUBLIC_COMPANY_RELATIONSHIP,
+      foundingDate: String(companyProfile.founded),
       address: { '@type': 'PostalAddress', ...companyProfile.headquarters.postalAddress },
       location: { '@id': absolute('/#manufacturing-facility') },
       contactPoint: { '@type': 'ContactPoint', contactType: 'Sales inquiries', email: PUBLIC_EMAIL,
