@@ -1,0 +1,167 @@
+/* Site-wide refinement pass, loaded after the Sunday home/inner styles.
+   1. Contrast  2. Line length and wrapping  3. Readable sizes and darker secondary text
+   4. No cards inside cards  5. One radius scale; logo blue as the accent, orange only for inquiry actions.
+   `:not(#hx)` lifts specificity above the historical `body.sunday-site.sunday-inner #main …!important` rules. */
+
+body.sunday-site:not(#hx){
+  --su-brand:#1e3a66;--su-brand-hover:#142847;
+  --su-cta:#c55000;--su-cta-hover:#a63d00;
+  --su-accent:var(--su-brand);--su-accent-hover:var(--su-brand-hover);--su-accent-tint:#e4eaf3;--su-accent-on-dark:#a8bddc;
+  --su-accent-shadow:#1e3a6640;--su-accent-shadow-hover:#1e3a6659;
+  --accent:var(--su-brand);--accent-hover:var(--su-brand-hover);--accent-active:var(--su-brand-hover);
+  --su-muted:#4d545b;
+  --su-radius:8px;--su-control-radius:6px;--su-photo-radius:var(--su-radius);
+}
+
+/* 1. Contrast */
+body.sunday-site:not(#hx) .hx-language a{color:inherit}
+body.sunday-site:not(#hx) #main .sample-library-filters button[aria-pressed=true] span{color:inherit;opacity:.8}
+
+/* 2. Line length (Geist averages ~0.49em per character, so `ch` limits ran to 100+ characters) and wrapping */
+body.sunday-site:not(#hx) :is(h1,h2,h3){text-wrap:balance}
+body.sunday-site:not(#hx) :is(p,dd,li,figcaption){text-wrap:pretty}
+body.sunday-site:not(#hx) p.su-factory-context{max-width:37em}
+body.sunday-site:not(#hx) #main .resource-article .article-overview{max-width:35em!important}
+body.sunday-site:not(#hx) #main .resource-article .review-guide-copy>p{max-width:37em}
+body.sunday-site:not(#hx) #main .contact-draft-note{max-width:38em}
+
+/* 3. Readable sizes */
+body.sunday-site:not(#hx) .su-series-label>p{font-size:15px}
+body.sunday-site:not(#hx) .su-series-values{font-size:15px}
+body.sunday-site:not(#hx) .su-oem-copy dd{font-size:15px;line-height:1.55}
+body.sunday-site:not(#hx) .su-inquiry label{font-size:14px}
+body.sunday-site:not(#hx) #main :is(.pdr-note,.sample-evidence-note){font-size:14px!important}
+body.sunday-site:not(#hx) #main .breadcrumbs{font-size:13px}
+
+/* 4. Flatten cards nested in panels */
+body.sunday-site:not(#hx) #main .pdr-variant-summary{background:none;border:0;border-top:1px solid #cfd6dd;border-radius:0;padding:24px 0 0;box-shadow:none}
+@media(max-width:900px){
+  body.sunday-site:not(#hx) #main .hvr-series-summary{background:none;border:0;border-top:1px solid #cfd6dd;border-radius:0;padding:20px 0;box-shadow:none}
+}
+body.sunday-site:not(#hx) .su-home-contact-panel .su-inquiry-field{background:none;border:0;padding:0;gap:8px}
+body.sunday-site:not(#hx) .su-home-contact-panel .su-inquiry select{background:#fff;border:1px solid var(--su-border)}
+
+/* 5a. One radius scale: 8px surfaces and media, 6px controls */
+body.sunday-site:not(#hx) :is(.su-series-card,.su-factory-image,.su-oem-photo,.su-home-contact-panel,.su-company-photo,.su-guide-images,.su-hero--closing,.su-wall-tile,.su-photo-story-image){border-radius:var(--su-radius)!important}
+body.sunday-site:not(#hx) #main :is(.product-card,.compare-wrap,.pdr-main-photo,.pdr-detail-photo,.pdr-section,.hvr-section,.hvr-overview,.hvr-comparison-wrap,.hvr-hero-photo,.hvr-fit-image,.hvr-sample-photo,.hvr-review-photo,.hvr-comparison,.inquiry-callout,.ss-documents-band,.ss-featured-guide,.ss-featured-guide-image,.contact-focused-form,.co-guide-visual,.ss-resource-cover,.ss-factory-visual,.zi-photo,.zi-about-film,.co-product-study,.ss-editorial-visual,.ss-inquiry-visual,.oe-feature-media,.oe-hero-media,.oe-product-photo,.media-image,.video-frame,.resource-photo-open,.visit-gallery-image,.procurement-route-photo,.procurement-approval-steps li,.procurement-dispatch-photo,.application-card-image,.sample-library-card,.su-inner-hero figure,.zi-about-hero>figure,.ss-product-story figure,.ss-product-applications figure,.ss-factory-intro figure,figure img,a>img){border-radius:var(--su-radius)!important}
+body.sunday-site:not(#hx) :is(.su-action,.su-footer-quote,.su-mobile-inquiry,.button:not(.header-cta),.pdr-button,.pdr-secondary,.hvr-button,.hvr-secondary,.card-link,.context-link,.oe-link,.catalog-series-link,.hvr-series-link,.sample-evidence-action,.inquiry-callout-button,.filter-chip,select,input:not([type=checkbox]):not([type=radio]),textarea){border-radius:var(--su-control-radius)!important}
+body.sunday-site:not(#hx) .su-inquiry-field{border-radius:var(--su-radius)!important}
+
+/* 5b. Orange is reserved for inquiry actions */
+body.sunday-site:not(#hx) :is(.header-cta,.su-footer-quote,.su-mobile-inquiry,.su-inquiry .su-action,.inquiry-callout-button,.contact-focused-form button[type=submit],#main a:is([href^="/contact/"],[href^="/request-a-quote/"]):is(.button,.pdr-button,.hvr-button,.su-action)){background:var(--su-cta)!important;border-color:var(--su-cta)!important;color:#fff!important}
+body.sunday-site:not(#hx) :is(.header-cta,.su-footer-quote,.su-mobile-inquiry,.su-inquiry .su-action,.inquiry-callout-button,.contact-focused-form button[type=submit],#main a:is([href^="/contact/"],[href^="/request-a-quote/"]):is(.button,.pdr-button,.hvr-button,.su-action)):hover{background:var(--su-cta-hover)!important;border-color:var(--su-cta-hover)!important}
+
+/* Historical inner rules use `body.sunday-site.sunday-inner #main .x.y!important`; match them with a second id-level guard. */
+body.sunday-site:not(#hx):not(#hx2) #main :is(.button,.button.secondary,.pdr-button,.pdr-secondary,.hvr-button,.hvr-secondary,.hvr-guide,.card-link,.context-link,.oe-link,.catalog-series-link,.hvr-series-link,.sample-evidence-action,.filter-chip,select,textarea,input:not([type=checkbox]):not([type=radio])){border-radius:var(--su-control-radius)!important}
+body.sunday-site:not(#hx):not(#hx2) #main :is(figure,a:has(>img),a:has(>picture)){border-radius:var(--su-radius)!important}
+
+/* 3b. Readable sizes on the product catalog cards and specification tables */
+body.sunday-site:not(#hx):not(#hx2) #main .product-card :is(.catalog-purpose,.catalog-series-duty,dd,dd span){font-size:15px}
+body.sunday-site:not(#hx):not(#hx2) #main .product-card .catalog-purpose{color:var(--su-muted)}
+body.sunday-site:not(#hx):not(#hx2) #main .catalog-series-link{font-size:14px}
+body.sunday-site:not(#hx):not(#hx2) #main :is(.pdr-specifications,.pdr-variant-summary) dt{font-size:14px}
+body.sunday-site:not(#hx):not(#hx2) #main :is(.pdr-specifications,.pdr-variant-summary) dd{font-size:15px}
+body.sunday-site:not(#hx):not(#hx2) #main :is(.pdr-note,.sample-evidence-note){font-size:14px!important}
+
+/* 7. Calmer display type: the headings were tracked very tight (-0.04em); a little air reads more considered. */
+body.sunday-site:not(#hx) :is(h1,h2){letter-spacing:-.025em!important}
+body.sunday-site:not(#hx) h3{letter-spacing:-.015em!important}
+
+/* 8. Quiet, consistent image feedback on linked photographs. */
+body.sunday-site:not(#hx) :is(.su-series-card,.su-factory-image,.su-customer-photo a,.su-oem-photo,.product-card) img{transition:transform .5s cubic-bezier(.22,1,.36,1)}
+@media (hover:hover){body.sunday-site:not(#hx) :is(.su-series-card a,.su-factory-image,.su-customer-photo a,.product-card a):hover img{transform:scale(1.03)}}
+@media (prefers-reduced-motion:reduce){body.sunday-site:not(#hx) img{transition:none!important;transform:none!important}}
+
+/* 9. Catalogue numerals: lining, tabular figures for every rating, dimension and table value. */
+body.sunday-site:not(#hx) :is(td,th,dd,.su-series-values,.catalog-voltage,.pdr-hero dd,.hvr-comparison){font-variant-numeric:lining-nums tabular-nums}
+body.sunday-site:not(#hx):not(#hx2) #main :is(table thead th,.pdr-specifications dt,.pdr-variant-summary dt){font-size:12.5px!important;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#4d545b}
+
+/* 10. One cool steel scale: sections #e9eef3, cards #f2f5f8 with a hairline, replacing ~10 near-identical greys. */
+body.sunday-site:not(#hx){--su-steel:#e9eef3;--su-surface:#f2f5f8;--su-border:#d9e0e7}
+body.sunday-site:not(#hx) :is(.su-factory-overview,.visit-gallery,.su-home-contact-panel){background:var(--su-steel)!important}
+body.sunday-site:not(#hx):not(#hx2) #main :is(.oe-collection,.oe-reading,#specifications,.hvr-overview,.hvr-comparison-wrap,.inquiry-callout){background:var(--su-steel)!important}
+body.sunday-site:not(#hx) :is(.su-series-card,.su-series-label){background:var(--su-surface)!important}
+body.sunday-site:not(#hx) .su-series-card{border:1px solid var(--su-border)}
+body.sunday-site:not(#hx):not(#hx2) #main :is(.product-card,.pdr-detail-photo,.co-guide-visual,.photo-detail){background:var(--su-surface)!important}
+body.sunday-site:not(#hx):not(#hx2) #main .product-card{border:1px solid var(--su-border)!important}
+
+/* 11. Applications: two even columns with one image ratio, so the directory reads as a catalogue rather than a collage. */
+body.sunday-site:not(#hx):not(#hx2) #main .application-directory .grid.two{grid-template-columns:repeat(2,minmax(0,1fr));gap:56px 32px}
+body.sunday-site:not(#hx):not(#hx2) #main .application-directory .app-card,body.sunday-site:not(#hx):not(#hx2) #main .application-directory .app-card:is(:nth-child(4n+1),:nth-child(4n)){grid-column:auto}
+body.sunday-site:not(#hx):not(#hx2) #main .app-card .card-body{padding:20px 0 0!important;border-top:0}
+body.sunday-site:not(#hx):not(#hx2) #main .app-card h2{font-size:24px!important;margin-bottom:8px}
+@media(max-width:700px){body.sunday-site:not(#hx):not(#hx2) #main .application-directory .grid.two{grid-template-columns:1fr;gap:40px}}
+
+/* 12. About exhibitions: heading above one even row of four booth photographs instead of two 320px tiles beside empty space. */
+body.sunday-site:not(#hx):not(#hx2) #main .zi-exhibition{display:block}
+body.sunday-site:not(#hx):not(#hx2) #main .zi-exhibition .zi-short-copy{margin-bottom:28px}
+body.sunday-site:not(#hx):not(#hx2) #main .zi-exhibition-pair{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;justify-content:stretch}
+body.sunday-site:not(#hx):not(#hx2) #main .zi-exhibition-pair .zi-photo{margin:0;aspect-ratio:4/3;overflow:hidden}
+body.sunday-site:not(#hx):not(#hx2) #main .zi-exhibition-pair img{width:100%;height:100%;object-fit:cover;display:block}
+@media(max-width:800px){body.sunday-site:not(#hx):not(#hx2) #main .zi-exhibition-pair{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+
+/* 13. Resources documents band: a ruled link row on the page background, not another grey box after the guide list. */
+body.sunday-site:not(#hx):not(#hx2) #main .ss-documents-band{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px 40px;background:none!important;border:0;border-top:1px solid var(--su-border);border-bottom:1px solid var(--su-border);border-radius:0!important;padding:32px 0!important}
+body.sunday-site:not(#hx):not(#hx2) #main .ss-documents-band h2{font-size:24px!important}
+
+/* 14. One page frame: every section edge sits at the same line (1280px content, 40px gutters) instead of 34/80/84px by page. */
+@media(min-width:1024px){
+  body.sunday-site:not(#hx):not(#hx2) :is(#main,footer) :is(.su-shell,.container,.pdr-wrap,.hvr-wrap,.oe-shell),body.sunday-site:not(#hx):not(#hx2) #main .resource-article :is(.page-hero>.container,.review-guide-reading){max-width:1360px!important;padding-inline:40px!important;margin-inline:auto!important;box-sizing:border-box}
+  body.sunday-site:not(#hx):not(#hx2) .su-closing{max-width:1360px;padding-inline:40px}
+  body.sunday-site:not(#hx):not(#hx2) #main :is(.visit-gallery-inner,.su-photo-story-inner){max-width:none!important}
+}
+/* One inner-page title size (home hero keeps its own). */
+body.sunday-site.sunday-inner:not(#hx):not(#hx2) #main h1{font-size:clamp(38px,3.75vw,54px)!important;line-height:1.04!important}
+@media(min-width:1024px){
+  body.sunday-site:not(#hx):not(#hx2) .su-series{padding-inline:40px}
+  body.sunday-site:not(#hx):not(#hx2) .su-series-rail{max-width:1280px}
+  body.sunday-site:not(#hx):not(#hx2) #main .visit-gallery-inner{max-width:1280px!important}
+}
+
+/* 15. Home: tighten the gap between the hero and the series cards. */
+@media(min-width:1024px){body.sunday-site:not(#hx) .su-home-banner + .su-series{padding-top:88px}}
+
+/* 16. Product pages. */
+@media(min-width:1024px){
+  /* CBB65 single/dual samples: two square photographs at a readable size, not two 200px crops. */
+  body.sunday-site:not(#hx):not(#hx2) #main .ss-product-story:has(.co-dual-samples){grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:64px}
+  /* A single application reads as one compact row instead of a half-page image beside one line. */
+  body.sunday-site:not(#hx):not(#hx2) #main .ss-product-applications:has(.pdr-applications>li:only-child){grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px}
+  body.sunday-site:not(#hx):not(#hx2) #main .ss-product-applications:has(.pdr-applications>li:only-child)>figure img{aspect-ratio:3/2!important}
+  /* Ordering terms: a 2x3 grid beside the packaging photograph, both starting at the same line. */
+  body.sunday-site:not(#hx):not(#hx2) #main .pdr-purchasing--pictured .zi-purchase-layout{grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:start}
+  body.sunday-site:not(#hx):not(#hx2) #main .pdr-purchasing--pictured .zi-purchase-layout>figure{position:sticky;top:112px}
+  body.sunday-site:not(#hx):not(#hx2) #main .zi-purchase-layout .pdr-purchase-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:32px;margin-top:0}
+  body.sunday-site:not(#hx):not(#hx2) #main .zi-purchase-layout .pdr-purchase-list>div{padding:20px 0 24px;border-top:1px solid var(--su-border);border-bottom:0}
+}
+body.sunday-site:not(#hx):not(#hx2) #main .ss-product-story .co-dual-samples img{aspect-ratio:1!important;height:auto!important;object-fit:cover}
+body.sunday-site:not(#hx):not(#hx2) #main .ss-product-story .co-dual-samples figcaption{text-align:left;padding:12px 0 0;font-size:14px;font-weight:600;color:var(--su-ink,#16181b);background:none}
+body.sunday-site:not(#hx):not(#hx2) #main .co-product-study:has(.co-dual-samples),body.sunday-site:not(#hx):not(#hx2) #main .ss-product-story .co-dual-samples figure{background:none!important;overflow:visible}
+body.sunday-site:not(#hx):not(#hx2) #main .ss-product-story .co-dual-samples figcaption{font-family:inherit}
+body.sunday-site:not(#hx):not(#hx2) #main .zi-purchase-layout .pdr-purchase-list>div{align-content:start;gap:8px}
+
+/* 17. Application detail pages: sections sit on the page, separated by hairlines; the comparison table is the only framed object. */
+body.sunday-site:not(#hx):not(#hx2) #main .hvr-reference .hvr-section{background:none!important;border-radius:0!important;padding:72px 0!important;border-top:1px solid var(--su-border)}
+body.sunday-site:not(#hx):not(#hx2) #main .hvr-reference .hvr-hero+.hvr-section{border-top:0;padding-top:24px!important}
+body.sunday-site:not(#hx):not(#hx2) #main .hvr-reference .hvr-comparison{border:1px solid var(--su-border)}
+body.sunday-site:not(#hx):not(#hx2) #main .hvr-reference .hvr-note{margin-top:20px}
+body.sunday-site:not(#hx):not(#hx2) #main .hvr-reference .hvr-other-formats{margin-top:40px!important;padding-top:32px;border-top:1px solid var(--su-border)}
+@media(max-width:1023px){body.sunday-site:not(#hx):not(#hx2) #main .hvr-reference .hvr-section{padding:48px 0!important}}
+
+/* 18. Contact: a titled form with paired short fields, and contact details as one ruled list. */
+body.sunday-site:not(#hx):not(#hx2) #main .contact-form-title{margin:0;font-size:28px!important;line-height:1.15}
+body.sunday-site:not(#hx):not(#hx2) #main .contact-focused-form .contact-draft-note{margin-top:-10px;font-size:15px;max-width:60ch}
+@media(min-width:1024px){
+  body.sunday-site:not(#hx):not(#hx2) #main .contact-focused-form{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:20px}
+  body.sunday-site:not(#hx):not(#hx2) #main .contact-focused-form>*{grid-column:1/-1}
+  body.sunday-site:not(#hx):not(#hx2) #main .contact-focused-form>label.field:is([for=inquiry-name],[for=inquiry-company],#email-field,[for=inquiry-phone]){grid-column:auto;align-content:start}
+}
+body.sunday-site:not(#hx):not(#hx2) #main .contact-focused-details{gap:0;font-size:15px}
+body.sunday-site:not(#hx):not(#hx2) #main .contact-focused-details .contact-entity-note{margin:0 0 8px;color:var(--su-muted);line-height:1.65}
+body.sunday-site:not(#hx):not(#hx2) #main .contact-focused-details>:is(a,address){width:100%;margin:0;padding:16px 0;border-top:1px solid var(--su-border);box-sizing:border-box}
+body.sunday-site:not(#hx):not(#hx2) #main .contact-focused-details address{color:var(--su-muted);max-width:none}
+body.sunday-site:not(#hx):not(#hx2) #main .contact-focused-details address strong{margin-bottom:4px}
+/* Series cards: the ratings row sits on one line across all four cards even when a subtitle wraps. */
+body.sunday-site:not(#hx) .su-series-label{display:flex;flex-direction:column}
+body.sunday-site:not(#hx) .su-series-values{margin-top:auto!important}
+body.sunday-site:not(#hx) .su-series-label>p{margin-bottom:20px}

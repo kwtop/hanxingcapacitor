@@ -5,7 +5,9 @@ import InquiryCallout from '../InquiryCallout.astro';
 import AboutVisitGallery from '../sunday/AboutVisitGallery.astro';
 import AboutHeroVideo from '../sunday/AboutHeroVideo.astro';
 import AboutChatContacts from '../sunday/AboutChatContacts.astro';
+import { customerVisits } from '../../data/customerVisits';
 import { PUBLIC_BRAND_NAME, PUBLIC_HEADQUARTERS_ADDRESS, PUBLIC_FACTORY_ADDRESS, PUBLIC_COMPANY_RELATIONSHIP, PUBLIC_OFFICE_MOBILE, PUBLIC_OFFICE_PHONE, PUBLIC_COMPANY_NAME, PUBLIC_EMAIL } from '../../data/site';
+const exhibitionVisits = customerVisits.filter(photo => photo.id === 'exhibition-group' || photo.id === 'sample-discussion');
 ---
 <article class="procurement-page zi-about">
   <section class="zi-about-hero container">
@@ -55,6 +57,7 @@ import { PUBLIC_BRAND_NAME, PUBLIC_HEADQUARTERS_ADDRESS, PUBLIC_FACTORY_ADDRESS,
     <div class="zi-exhibition-pair">
       <BrochurePhoto name="exhibition-meeting" sizes="(max-width: 600px) min(320px, calc(100vw - 48px)), 320px" />
       <BrochurePhoto name="exhibition-products" sizes="(max-width: 600px) min(320px, calc(100vw - 48px)), 320px" />
+      {exhibitionVisits.map(photo => <figure class="zi-photo"><img src={photo.src} srcset={photo.srcset} sizes="(max-width: 700px) calc(50vw - 24px), 320px" alt={photo.alt} width={photo.width} height={photo.height} loading="lazy" decoding="async" /></figure>)}
     </div>
   </section>
 

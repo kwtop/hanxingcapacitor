@@ -685,9 +685,9 @@ body.sunday-site.sunday-inner #main a:is(.card-link, .context-link, .rfq-guide-l
   max-width: 100%;
   min-height: 44px;
   padding: 10px 17px !important;
-  border: 1px solid #efd5c4 !important;
-  border-radius: 99px;
-  background: #fff4ec !important;
+  border: 1px solid #b7c3d1 !important;
+  border-radius: 6px;
+  background: #fff !important;
   color: var(--su-accent-hover) !important;
   font: 600 14px/1.45 var(--su-font) !important;
   text-align: center;
@@ -697,8 +697,8 @@ body.sunday-site.sunday-inner #main a:is(.card-link, .context-link, .rfq-guide-l
   transition: background-color .15s ease, border-color .15s ease;
 
   &:is(:hover, :active) {
-    background: var(--su-accent-tint) !important;
-    border-color: #ddad8d !important;
+    background: #eef2f7 !important;
+    border-color: var(--su-accent) !important;
   }
 
   @media (prefers-reduced-motion: reduce) {

@@ -12,12 +12,13 @@ import FeaturedGuide from '../../components/satechi-preview/FeaturedGuide.astro'
 import SiteImage from '../../components/satechi-preview/SiteImage.astro';
 import InnerHero from '../../components/sunday/InnerHero.astro';
 import {interiorPhotography as innerEditorial} from '../../data/interiorPhotography';
-const sectionVisuals: Record<string,typeof sundayIndustrial.catalog> = {'/resources/articles/':sundayIndustrial.connections,'/buying-guide/':sundayIndustrial.packing,'/faq/':sundayIndustrial.catalog};
+import { hanxingPackaging } from '../../data/hanxingPackaging';
+const sectionVisuals: Record<string,{src:string;alt:string}> = {'/resources/articles/':sundayIndustrial.connections,'/buying-guide/':hanxingPackaging['22-blue-cartons'],'/faq/':hanxingPackaging['26-boxing-table']};
 const featured = ['read-motor-capacitor-label', 'cbb60-vs-cbb61-vs-cbb65', 'motor-capacitor-order-shipment-checklist'].map(slug => guides.find(guide => guide.slug === slug)!);
 ---
 <BaseLayout title="Motor Capacitor Guides & Resources" description="Motor capacitor selection guides and buying checklists. Read labels, compare series and prepare the specifications and documents for your order.">
   <div class="review-resource-page resource-hub resource-suite resource-landing">
-    <InnerHero layout="split" title="Motor capacitor resources" description="Motor capacitor label guides, series comparisons and order checklists for equipment engineers and procurement teams." image={innerEditorial.technical.src} alt={innerEditorial.technical.alt} trail="Resources" />
+    <InnerHero layout="split" title="Motor capacitor resources" description="Motor capacitor label guides, series comparisons and order checklists for equipment engineers and procurement teams." image={innerEditorial['testing-scene'].src} alt={innerEditorial['testing-scene'].alt} trail="Resources" />
     <div class="container resource-hub-body">
       <nav class="resource-hub-routes" aria-label="Resource categories">
         {resourceSections.map(section => <a href={section.href}>{useEditorial && <SiteImage class="ss-resource-cover" src={sectionVisuals[section.href].src} alt={sectionVisuals[section.href].alt} sizes="(max-width:600px) calc(100vw - 32px), 30vw" />}<h2 id={section.href === '/resources/articles/' ? 'resource-electrical' : section.href === '/buying-guide/' ? 'resource-ordering' : undefined}>{section.href === '/resources/articles/' && <><span id="resource-formats" aria-hidden="true"></span><span id="resource-mechanical" aria-hidden="true"></span></>}{section.label}</h2><p>{section.description}</p></a>)}

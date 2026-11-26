@@ -42,6 +42,7 @@ const previewState = ['validation', 'draft-ready', 'copy-error', 'prepare-error'
       </div>
       <form id="contact-inquiry-form" method="post" action="/api/inquiries/" class="contact-focused-form" data-preview-state={previewState} data-configurations={JSON.stringify(configurationNames)} data-photo-references={JSON.stringify(photoReferences)} data-guides={JSON.stringify(guideNames)} data-email={PUBLIC_EMAIL} data-whatsapp={WHATSAPP_NUMBER}>
         <div id="contact-context" class="contact-context" hidden><h2>Your reference</h2><ul id="contact-context-value"></ul><a id="contact-reference-link" class="card-link" href="/products/">Return to the reference</a></div>
+        <h2 class="contact-form-title">Send an inquiry</h2>
         <p class="contact-draft-note">Tell us about the capacitor and quantity you need. Send photos or drawings by email or WhatsApp; if you submit this form first, include your inquiry reference with the files.</p>
         <div id="contact-errors" class="contact-error-summary" role="alert" hidden><p>Check the highlighted fields.</p><ul id="contact-error-list"></ul></div>
         <label class="field" for="inquiry-name"><span id="inquiry-name-label">Name *</span><input id="inquiry-name" name="name" type="text" autocomplete="name" maxlength="120" placeholder="Your name" aria-labelledby="inquiry-name-label" aria-describedby="inquiry-name-error" required /><span id="inquiry-name-error" class="field-error" hidden></span></label>

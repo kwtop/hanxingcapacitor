@@ -1,4 +1,4 @@
-.contact-entity-note{margin:0;color:#58636d;font-size:14px;line-height:1.7}.pdr-variant-specifications .pdr-note a,.pdr-variant-specifications .pdr-note a:visited{color:#a63d00!important}.pdr-variant-specifications .pdr-note a:is(:hover,:focus-visible){color:#8f3400!important;text-decoration:underline}
+.contact-entity-note{margin:0;color:#58636d;font-size:14px;line-height:1.7}.pdr-variant-specifications .pdr-note a,.pdr-variant-specifications .pdr-note a:visited{color:var(--su-accent,#a63d00)!important}.pdr-variant-specifications .pdr-note a:is(:hover,:focus-visible){color:#8f3400!important;text-decoration:underline}
 /* Reuse the selected site's loaded typefaces in legacy labels and the offscreen menu. */
 body.sunday-home{--font-body:var(--su-font)!important}
 body.sunday-home #main dt{font-family:var(--su-font)!important}

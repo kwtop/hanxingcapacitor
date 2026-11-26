@@ -26,6 +26,8 @@ import sundayCss from '../styles/sunday-home.css?url';
 import sundayInnerCss from '../styles/sunday-inner.css?url';
 import sundayInlineCss from '../styles/sunday-home.css?inline';
 import sundayInnerInlineCss from '../styles/sunday-inner.css?inline';
+import sundayRefinementCss from '../styles/sunday-refinement.css?url';
+import sundayRefinementInlineCss from '../styles/sunday-refinement.css?inline';
 import { SITE_NAME } from '../data/site';
 import { publicSiteReady } from '../lib/publicSite';
 import { pageBreadcrumbs } from '../lib/pageBreadcrumbs';
@@ -75,7 +77,7 @@ const breadcrumbs = noindex || seo.schema['@graph'].some(node => node['@type'] =
     {isSatechiPreview && !sundayTheme && <><link rel="stylesheet" href={fidelityCss} /><link rel="stylesheet" href={sitePreviewCss} /><link rel="stylesheet" href={innerPreviewCss} /><link rel="stylesheet" href={mediaPreviewCss} /><link rel="stylesheet" href={linkNavigationCss} /><link rel="stylesheet" href={footerPreviewCss} /><link rel="stylesheet" href={typographyPreviewCss} /><link rel="stylesheet" href={coherencePreviewCss} /><link rel="stylesheet" href={oemImageryCss} /><link rel="stylesheet" href={rhythmPreviewCss} /><link rel="stylesheet" href={brochurePreviewCss} /></>}
     {useSelectedLayout ? <style is:inline set:html={interactionInlineCss}></style> : <link rel="stylesheet" href={interactionCss} />}
     {!useSelectedLayout && <link rel="stylesheet" href={interCss} />}
-    {sundayTheme && <><link rel="preload" href="/fonts/sunday/jakarta-latin.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/fonts/sunday/geist-latin.woff2" as="font" type="font/woff2" crossorigin />{useSelectedLayout ? <style is:inline set:html={sundayInlineCss}></style> : <link rel="stylesheet" href={sundayCss} />}{!homeDesign && (useSelectedLayout ? <style is:inline set:html={sundayInnerInlineCss}></style> : <link rel="stylesheet" href={sundayInnerCss} />)}</>}
+    {sundayTheme && <><link rel="preload" href="/fonts/sunday/jakarta-latin.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/fonts/sunday/geist-latin.woff2" as="font" type="font/woff2" crossorigin />{useSelectedLayout ? <style is:inline set:html={sundayInlineCss}></style> : <link rel="stylesheet" href={sundayCss} />}{!homeDesign && (useSelectedLayout ? <style is:inline set:html={sundayInnerInlineCss}></style> : <link rel="stylesheet" href={sundayInnerCss} />)}{useSelectedLayout ? <style is:inline set:html={sundayRefinementInlineCss}></style> : <link rel="stylesheet" href={sundayRefinementCss} />}</>}
     <style is:inline data-layout-styles={useSelectedLayout ? 'selected' : 'legacy'} set:html={useSelectedLayout ? selectedLayoutCss : legacyLayoutCss}></style>
   </head>
   <body class:list={[homeDesign ? 'sunday-home sunday-site' : sundayTheme ? 'sunday-site sunday-inner' : isSatechiPreview ? 'satechi-preview satechi-site' : 'porcelain-site reference-site', {'is-home': isSatechiPreview && Astro.url.pathname === '/', 'has-collection-cover':!homeDesign && ['/products/','/applications/'].includes(Astro.url.pathname)}]}>

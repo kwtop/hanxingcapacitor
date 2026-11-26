@@ -7,6 +7,8 @@ import OemReading from '../components/sunday/OemReading.astro';
 import InquiryCallout from '../components/InquiryCallout.astro';
 import { products, STANDARD_MOQ_DESCRIPTION, procurementPolicy, PUBLIC_EMAIL } from '../data/site';
 import '../styles/oem-editorial.css';
+import { hanxingPackaging } from '../data/hanxingPackaging';
+const packingHero = hanxingPackaging['26-boxing-table'];
 const configuration=[
  {name:'Electrical specification',requirement:'Run or start duty, capacitance (µF), rated voltage (VAC), tolerance and frequency.',approval:'The selected model datasheet, including its ratings and operating conditions.'},
  {name:'Case and mounting',requirement:'Body dimensions, fixing method and the available installation space.',approval:'A dimensioned drawing showing the body, fixing parts and complete installed dimensions.'},
@@ -30,7 +32,7 @@ const steps=[
   <article class="oem-suite oe-oem">
     <OemPageHero title="OEM motor capacitors" description="We manufacture motor run and start capacitors for OEM orders. Your label and packaging can be specified with the model; electrical and mechanical changes are reviewed before quotation." current="OEM">
       <a class="button" href="/contact/?request=oem#inquiry-form">Discuss your OEM order</a>
-      <OemPhotography slot="media" name="oem-lineup" eager sizes="(max-width:800px) calc(100vw - 40px), (min-width:1360px) 660px, 50vw" />
+      <figure slot="media" class="oe-product-photo"><img src={packingHero.src} srcset={packingHero.srcset} sizes="(max-width:800px) calc(100vw - 40px), (min-width:1360px) 660px, 50vw" width={packingHero.width} height={packingHero.height} alt={packingHero.alt} loading="eager" fetchpriority="high" decoding="async" /></figure>
     </OemPageHero>
     <section class="oe-section" id="oem-product-families" aria-labelledby="oem-families-title"><div class="oe-shell">
       <header class="oe-section-heading"><h2 id="oem-families-title">Choose the capacitor family</h2><p>Start with the duty and ratings specified for your motor, then compare the case and connections in each series.</p></header>
